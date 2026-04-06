@@ -61,7 +61,7 @@ export default function AboutPage() {
     <>
       {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">About Us</p>
@@ -150,7 +150,7 @@ export default function AboutPage() {
       </section>
 
       {/* SAGUNDO */}
-      <section className="bg-[#0D1F0F] py-16 lg:py-20">
+      <section className="bg-[#111111] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="max-w-3xl">
             <AnimatedSection>

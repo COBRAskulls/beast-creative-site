@@ -12,7 +12,7 @@ export default function CoinlinePage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">

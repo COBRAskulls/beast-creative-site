@@ -12,7 +12,7 @@ export default function BrandingPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Service — Branding & Identity</p>

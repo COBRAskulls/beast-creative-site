@@ -115,7 +115,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center bg-beast-black overflow-hidden">
         {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] via-beast-black to-[#111111]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] via-beast-black to-[#111111]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(46,204,64,0.08)_0%,transparent_60%)]" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
@@ -154,7 +154,7 @@ export default function HomePage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-[#0D1F0F] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
             <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" />
@@ -292,7 +292,7 @@ export default function HomePage() {
             {services.map((svc, i) => (
               <AnimatedSection key={svc.href} delay={i * 0.07}>
                 <Link href={svc.href} className="group block">
-                  <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-pink/40 hover:bg-[#0D1F0F] transition-all duration-300 h-full">
+                  <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-pink/40 hover:bg-[#111111] transition-all duration-300 h-full">
                     <div className="text-2xl mb-4">{svc.icon}</div>
                     <h3 className="font-display text-xl font-bold text-white mb-2">{svc.name}</h3>
                     <p className="text-sm text-gray-400 leading-relaxed mb-4">{svc.desc}</p>
@@ -390,7 +390,7 @@ export default function HomePage() {
       />
 
       {/* FINAL CTA */}
-      <section className="bg-[#162B1A] py-16 lg:py-24">
+      <section className="bg-[#111111] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <AnimatedSection>

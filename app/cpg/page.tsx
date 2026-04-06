@@ -111,7 +111,7 @@ export default function CpgPage() {
 
       {/* HERO */}
       <section className="relative min-h-[90vh] flex items-center bg-beast-black overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] via-beast-black to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] via-beast-black to-beast-black" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(46,204,64,0.1)_0%,transparent_60%)]" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
@@ -143,7 +143,7 @@ export default function CpgPage() {
       </section>
 
       {/* CPG STATS BAR */}
-      <section className="bg-[#0D1F0F] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <StatCounter value={36581} label="Consumer Emails Collected" sublabel="Sun-Bird, $6K budget" />
@@ -444,7 +444,7 @@ export default function CpgPage() {
       </section>
 
       {/* SAGUNDO */}
-      <section className="bg-[#0D1F0F] py-16 lg:py-20">
+      <section className="bg-[#111111] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="max-w-3xl">

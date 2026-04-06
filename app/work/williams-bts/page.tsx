@@ -13,7 +13,7 @@ export default function WilliamsBtsPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
@@ -33,7 +33,7 @@ export default function WilliamsBtsPage() {
         </div>
       </section>
 
-      <section className="bg-[#0D1F0F] py-12 lg:py-16">
+      <section className="bg-[#111111] py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             <StatCounter value={22043} label="Total Entries" sublabel="vs 10K goal" />

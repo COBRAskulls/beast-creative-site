@@ -23,7 +23,7 @@ export default function SunBirdPage() {
     <>
       {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
@@ -46,7 +46,7 @@ export default function SunBirdPage() {
       </section>
 
       {/* STATS */}
-      <section className="bg-[#0D1F0F] py-12 lg:py-16">
+      <section className="bg-[#111111] py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {results.map((r) => (
@@ -124,7 +124,7 @@ export default function SunBirdPage() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#0D1F0F] rounded-2xl p-6 border border-beast-pink/20">
+                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">vs Industry Benchmark</h3>
                   {[
                     { metric: "CTR", beast: "7.03%", industry: "0.89%", lift: "7.9x" },
