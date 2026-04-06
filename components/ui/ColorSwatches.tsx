@@ -29,18 +29,13 @@ export default function ColorSwatches() {
         >
           {/* Swatch */}
           <div
-            className="relative h-20 rounded-xl mb-3 border border-white/10 overflow-hidden transition-all duration-300 cursor-pointer"
-            style={{
-              backgroundColor: c.hex,
-              boxShadow: "0 0 0 rgba(0,0,0,0)",
-            }}
+            className="relative h-20 rounded-xl mb-3 overflow-hidden transition-all duration-300 cursor-pointer border-2 border-transparent group-hover:border-current"
+            style={{ backgroundColor: c.hex, borderColor: "transparent" }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLDivElement).style.boxShadow = `0 0 24px 6px ${c.glow}, 0 0 48px 12px ${c.glow.replace("0.6", "0.3")}`;
-              (e.currentTarget as HTMLDivElement).style.transform = "scale(1.04)";
+              (e.currentTarget as HTMLDivElement).style.borderColor = c.hex === "#0A0A0A" ? "#ffffff40" : c.hex;
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLDivElement).style.boxShadow = "0 0 0 rgba(0,0,0,0)";
-              (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
+              (e.currentTarget as HTMLDivElement).style.borderColor = "transparent";
             }}
           >
             {/* Copied overlay */}
