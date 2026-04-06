@@ -238,8 +238,6 @@ export default function HomePage() {
               <AnimatedSection key={cs.href} delay={i * 0.1} className="h-full">
                 <Link href={cs.href} className="group block h-full">
                   <article className="h-full bg-beast-black rounded-2xl overflow-hidden border border-white/10 hover:border-beast-pink/50 hover:shadow-[0_0_40px_rgba(255,17,152,0.15)] transition-all duration-300 hover:-translate-y-1 flex flex-col">
-                    {/* Top accent bar */}
-                    <div className="h-1 bg-beast-pink w-full" />
                     <div className="p-7 flex flex-col flex-1">
                       {/* Client + category */}
                       <div className="flex items-center justify-between mb-5">
