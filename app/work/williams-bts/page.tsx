@@ -95,6 +95,26 @@ export default function WilliamsBtsPage() {
                   ))}
                 </div>
               </AnimatedSection>
+
+              <AnimatedSection delay={0.1}>
+                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">vs Industry Benchmark</h3>
+                  {[
+                    { metric: "CTR", beast: "3.89%", industry: "0.89%", lift: "4.4x" },
+                    { metric: "CPC", beast: "$0.18", industry: "$0.28", lift: "36% lower" },
+                    { metric: "Entries", beast: "22,043", industry: "10,000 goal", lift: "2.2x" },
+                  ].map((row) => (
+                    <div key={row.metric} className="mb-4">
+                      <p className="text-xs text-gray-600 uppercase tracking-widest mb-1">{row.metric}</p>
+                      <div className="flex items-center gap-3">
+                        <span className="font-display font-bold text-beast-pink text-xl">{row.beast}</span>
+                        <span className="text-xs text-gray-600">vs {row.industry}</span>
+                      </div>
+                      <span className="text-xs bg-beast-pink/15 text-beast-pink px-2 py-0.5 rounded-full font-semibold">{row.lift}</span>
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </div>
