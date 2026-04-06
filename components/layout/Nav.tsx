@@ -4,6 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const caseStudies = [
+  { name: "Sun-Bird Seasonings", href: "/work/sun-bird", stat: "36,581 emails" },
+  { name: "Williams — Back-to-School", href: "/work/williams-bts", stat: "22,043 entries" },
+  { name: "Williams — All-Stars", href: "/work/williams-allstars", stat: "13,660 entries" },
+  { name: "Williams Bowl", href: "/work/williams-bowl", stat: "6,020 entries" },
+  { name: "Sweet Sensi", href: "/work/sweet-sensi", stat: "500%+ MRR" },
+  { name: "Coinline", href: "/work/coinline", stat: "Branding" },
+];
+
 const services = [
   { name: "CPG Marketing", href: "/services/cpg-marketing", badge: "Flagship" },
   { name: "SEO + AEO", href: "/services/seo-aeo" },
@@ -16,6 +25,7 @@ const services = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [workOpen, setWorkOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
 
@@ -54,8 +64,43 @@ export default function Nav() {
 
           {/* Desktop nav */}
           <ul className="hidden lg:flex items-center gap-8">
-            <li>
-              <Link href="/work" className="nav-link">Work</Link>
+            <li
+              className="relative"
+              onMouseEnter={() => setWorkOpen(true)}
+              onMouseLeave={() => setWorkOpen(false)}
+            >
+              <button
+                className="nav-link flex items-center gap-1"
+                onClick={() => setWorkOpen(!workOpen)}
+              >
+                Work
+                <svg className={`w-3.5 h-3.5 transition-transform duration-200 ${workOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {workOpen && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-64">
+                  <div className="bg-[#1A1A1A] border border-[#2E2E2E] rounded-2xl shadow-2xl overflow-hidden">
+                    <Link
+                      href="/work"
+                      className="flex items-center justify-between px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors border-b border-[#2E2E2E]"
+                    >
+                      All Case Studies
+                      <span className="text-xs bg-white/8 text-gray-400 px-2 py-0.5 rounded-full">6</span>
+                    </Link>
+                    {caseStudies.map((cs) => (
+                      <Link
+                        key={cs.href}
+                        href={cs.href}
+                        className="flex items-center justify-between px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
+                      >
+                        {cs.name}
+                        <span className="text-xs text-gray-500">{cs.stat}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
             </li>
             <li
               className="relative"
