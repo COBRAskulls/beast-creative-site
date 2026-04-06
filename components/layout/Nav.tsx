@@ -5,11 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
-  { name: "Sun-Bird Seasonings", href: "/work/sun-bird", stat: "36,581 emails" },
-  { name: "Williams — Back-to-School", href: "/work/williams-bts", stat: "22,043 entries" },
-  { name: "Williams — All-Stars", href: "/work/williams-allstars", stat: "13,660 entries" },
-  { name: "Williams Bowl", href: "/work/williams-bowl", stat: "6,020 entries" },
-  { name: "Sweet Sensi", href: "/work/sweet-sensi", stat: "500%+ MRR" },
+  { name: "Sun-Bird Seasonings", href: "/work/sun-bird", stat: "36,581" },
+  { name: "Williams — BTS", href: "/work/williams-bts", stat: "22,043" },
+  { name: "Williams — All-Stars", href: "/work/williams-allstars", stat: "13,660" },
+  { name: "Williams Bowl", href: "/work/williams-bowl", stat: "6,020" },
+  { name: "Sweet Sensi", href: "/work/sweet-sensi", stat: "500%+" },
   { name: "Coinline", href: "/work/coinline", stat: "Branding" },
 ];
 
@@ -79,23 +79,23 @@ export default function Nav() {
                 </svg>
               </button>
               {workOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-64">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72">
                   <div className="bg-[#1A1A1A] border border-[#2E2E2E] rounded-2xl shadow-2xl overflow-hidden">
                     <Link
                       href="/work"
-                      className="flex items-center justify-between px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors border-b border-[#2E2E2E]"
+                      className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-white hover:bg-white/5 transition-colors border-b border-[#2E2E2E]"
                     >
                       All Case Studies
-                      <span className="text-xs bg-white/8 text-gray-400 px-2 py-0.5 rounded-full">6</span>
+                      <span className="text-xs bg-white/10 text-gray-400 px-2 py-0.5 rounded-full tabular-nums">6</span>
                     </Link>
                     {caseStudies.map((cs) => (
                       <Link
                         key={cs.href}
                         href={cs.href}
-                        className="flex items-center justify-between px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
+                        className="flex items-center justify-between px-5 py-2.5 hover:bg-white/5 transition-colors group"
                       >
-                        {cs.name}
-                        <span className="text-xs text-gray-500">{cs.stat}</span>
+                        <span className="text-sm text-gray-300 group-hover:text-white transition-colors truncate pr-3">{cs.name}</span>
+                        <span className="text-xs text-beast-yellow font-bold tabular-nums shrink-0">{cs.stat}</span>
                       </Link>
                     ))}
                   </div>
