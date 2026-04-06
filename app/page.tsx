@@ -368,9 +368,6 @@ export default function HomePage() {
             {process.map((step, i) => (
               <AnimatedSection key={step.step} delay={i * 0.1}>
                 <div className="relative">
-                  {i < process.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-beast-pink/30 to-transparent z-10 -translate-y-1/2" />
-                  )}
                   <div className="bg-[#FAFAFA] rounded-2xl p-6 border border-gray-100">
                     <span className="font-mono text-xs font-bold text-beast-pink tracking-widest">{step.step}</span>
                     <h3 className="font-display text-xl font-bold text-beast-black mt-2 mb-3">{step.name}</h3>
