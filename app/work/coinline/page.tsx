@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import StatCounter from "@/components/ui/StatCounter";
+import ColorSwatches from "@/components/ui/ColorSwatches";
 
 export const metadata: Metadata = {
   title: "Coinline Barcade Brand Identity | Beast Creative Agency Case Study",
@@ -147,21 +148,8 @@ export default function CoinlinePage() {
 
                   <div>
                     <h3 className="font-display text-xl font-bold text-beast-black mb-2">4. Color System</h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">The brand color palette was built to capture the visual language of arcade culture at its peak — neon-lit, high-contrast, electric:</p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                      {[
-                        { name: "Coinline Pink", desc: "Hero color. Electric, energetic — the neon pink of classic arcade marquees.", bg: "#E91E8C" },
-                        { name: "Deep Purple", desc: "The foundation. Dark, atmospheric. The color of an arcade in low light.", bg: "#1A0A2E" },
-                        { name: "Electric Yellow", desc: "The accent. The color of a coin, a scoreboard flash, a PLAYER 1 START prompt.", bg: "#F5E642" },
-                        { name: "Black", desc: "Structure and depth. Grounds the palette and makes every color pop harder.", bg: "#0A0A0A" },
-                      ].map((c) => (
-                        <div key={c.name}>
-                          <div className="h-14 rounded-lg mb-2 border border-white/10" style={{ backgroundColor: c.bg }} />
-                          <p className="font-display font-bold text-beast-black text-xs">{c.name}</p>
-                          <p className="text-xs text-gray-500 leading-relaxed mt-0.5">{c.desc}</p>
-                        </div>
-                      ))}
-                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">The brand color palette was built to capture the visual language of arcade culture at its peak — neon-lit, high-contrast, electric. <span className="text-beast-pink font-semibold">Click any swatch to copy the hex code.</span></p>
+                    <ColorSwatches />
                   </div>
 
                   <div>
