@@ -55,7 +55,16 @@ export default function Nav() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-20 flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0 flex items-center gap-2">
+          <Link
+            href="/"
+            className="flex-shrink-0 flex items-center gap-2"
+            onClick={(e) => {
+              if (pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             <div className="font-display font-extrabold text-xl tracking-normal">
               <span className="text-beast-green">BEAST</span>
               <span className="text-white"> CREATIVE</span>
