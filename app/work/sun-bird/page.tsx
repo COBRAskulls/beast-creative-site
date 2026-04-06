@@ -147,29 +147,77 @@ export default function SunBirdPage() {
         </div>
       </section>
 
-      {/* RELATED + CTA */}
-      <section className="bg-beast-black py-16 lg:py-20">
+      {/* RELATED CASE STUDIES */}
+      <section className="bg-[#111111] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <AnimatedSection>
-              <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Related Case Studies</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  { client: "Williams Foods", campaign: "Back-to-School Sweepstakes", stat: "22,043 entries", href: "/work/williams-bts" },
-                  { client: "Sweet Sensi", campaign: "E-Commerce Growth", stat: "500%+ MRR", href: "/work/sweet-sensi" },
-                ].map((cs) => (
-                  <Link key={cs.href} href={cs.href} className="group bg-[#1A1A1A] rounded-xl p-5 border border-[#2E2E2E] hover:border-beast-pink/30 transition-colors">
-                    <p className="text-xs text-beast-pink font-semibold mb-1">{cs.client}</p>
-                    <p className="text-sm font-semibold text-white mb-2">{cs.campaign}</p>
-                    <p className="text-lg font-bold text-white">{cs.stat}</p>
-                  </Link>
-                ))}
-              </div>
-            </AnimatedSection>
+          <AnimatedSection className="mb-10">
+            <p className="section-eyebrow text-beast-pink mb-2">More Work</p>
+            <h2 className="font-display text-3xl font-bold text-white">Related Case Studies</h2>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
+            {[
+              {
+                client: "Williams Foods",
+                campaign: "Back-to-School Sweepstakes",
+                stat: "22,043",
+                statLabel: "entries on $4K budget",
+                category: "CPG Marketing",
+                href: "/work/williams-bts",
+                img: "/assets/work/williams-bts/cover.jpg",
+                gradient: "from-[#1a1a2e] to-[#16213e]",
+              },
+              {
+                client: "Sweet Sensi",
+                campaign: "CBD E-Commerce Growth",
+                stat: "500%+",
+                statLabel: "MRR growth",
+                category: "SEO + Social",
+                href: "/work/sweet-sensi",
+                img: "/assets/work/sweet-sensi/cover.jpg",
+                gradient: "from-[#1a1a1a] to-[#2a1a2a]",
+              },
+            ].map((cs) => (
+              <AnimatedSection key={cs.href}>
+                <Link href={cs.href} className="group block">
+                  <article className="bg-beast-black rounded-2xl overflow-hidden border border-white/8 hover:border-beast-pink/40 hover:shadow-[0_0_40px_rgba(255,17,152,0.12)] transition-all duration-300 hover:-translate-y-1">
+                    {/* Image area */}
+                    <div className={`relative h-48 bg-gradient-to-br ${cs.gradient} overflow-hidden`}>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="font-display text-5xl font-extrabold text-beast-yellow tracking-wide opacity-20 select-none">
+                          {cs.stat}
+                        </span>
+                      </div>
+                      <div className="absolute bottom-4 left-5">
+                        <span className="text-xs font-bold uppercase tracking-widest text-gray-500 bg-black/40 px-2 py-1 rounded-full backdrop-blur-sm">
+                          {cs.category}
+                        </span>
+                      </div>
+                      {/* Image placeholder comment — swap with next/image when assets added */}
+                    </div>
+                    {/* Content */}
+                    <div className="p-6">
+                      <p className="text-xs font-bold uppercase tracking-widest text-beast-pink mb-2">{cs.client}</p>
+                      <h3 className="font-display text-lg font-bold text-white mb-4 leading-tight">{cs.campaign}</h3>
+                      <div className="mb-4">
+                        <span className="font-display text-3xl font-extrabold text-beast-yellow tracking-wide">{cs.stat}</span>
+                        <span className="text-xs text-gray-500 ml-2 uppercase tracking-widest">{cs.statLabel}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm font-bold text-beast-pink group-hover:text-white transition-colors">
+                        View Case Study
+                        <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              </AnimatedSection>
+            ))}
           </div>
 
-          <div className="border-t border-[#2E2E2E] pt-12 text-center">
-            <h2 className="font-display text-3xl font-bold text-white mb-4">Let&apos;s Build Your Story →</h2>
+          <div className="border-t border-white/8 pt-12 text-center">
+            <h2 className="font-display text-3xl font-bold text-white mb-4">Let&apos;s Build Your Story</h2>
             <p className="text-gray-400 mb-8">Ready to put real numbers behind your brand?</p>
             <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">
               Get My Free Strategy Call →
