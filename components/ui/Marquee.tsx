@@ -19,12 +19,12 @@ export default function Marquee({
   const doubled = [...items, ...items];
 
   return (
-    <div className={`${bg} py-3 overflow-hidden`}>
+    <div className={`${bg} py-4 overflow-hidden`}>
       <div className="marquee-track">
         {doubled.map((item, i) => (
           <span
             key={i}
-            className={`font-display font-bold text-xs tracking-widest uppercase whitespace-nowrap ${textColor} ${className}`}
+            className={`font-display font-bold text-sm lg:text-base tracking-widest uppercase whitespace-nowrap ${textColor} ${className}`}
           >
             {item}&nbsp;&nbsp;{separator}&nbsp;&nbsp;
           </span>
