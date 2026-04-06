@@ -364,15 +364,13 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {process.map((step, i) => (
-              <AnimatedSection key={step.step} delay={i * 0.1}>
-                <div className="relative">
-                  <div className="bg-[#FAFAFA] rounded-2xl p-6 border border-gray-100">
-                    <span className="font-mono text-xs font-bold text-beast-pink tracking-widest">{step.step}</span>
-                    <h3 className="font-display text-xl font-bold text-beast-black mt-2 mb-3">{step.name}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{step.desc}</p>
-                  </div>
+              <AnimatedSection key={step.step} delay={i * 0.1} className="h-full">
+                <div className="h-full bg-white rounded-2xl p-8 border-2 border-gray-200 shadow-md hover:border-beast-pink hover:shadow-lg transition-all duration-200 flex flex-col">
+                  <span className="font-mono text-xs font-bold text-beast-pink tracking-widest mb-3">{step.step}</span>
+                  <h3 className="font-display text-xl font-bold text-beast-black mb-3">{step.name}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed flex-1">{step.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
