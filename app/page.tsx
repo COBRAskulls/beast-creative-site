@@ -4,6 +4,7 @@ import Marquee from "@/components/ui/Marquee";
 import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import ContactForm from "@/components/forms/ContactForm";
+import ClientListSection from "@/components/ui/ClientListSection";
 
 export const metadata: Metadata = {
   title: "Beast Creative Agency | AI-Powered Digital Marketing in San Antonio, TX",
@@ -164,19 +165,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CLIENT LOGOS MARQUEE */}
-      <section className="bg-[#111111] py-8 overflow-hidden">
-        <p className="section-eyebrow text-gray-600 text-center mb-6">Client List</p>
-        <div className="relative overflow-hidden">
-          <div className="marquee-track">
-            {["Williams Foods", "Sun-Bird Seasonings", "Coinline", "Sweet Sensi", "Pioneer", "RFSA", "Williams Foods", "Sun-Bird Seasonings", "Coinline", "Sweet Sensi", "Pioneer", "RFSA"].map((client, i) => (
-              <span key={i} className="font-display font-bold text-xl text-white/20 whitespace-nowrap hover:text-white/60 transition-colors px-8">
-                {client}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ClientListSection />
 
       {/* INTRO COPY */}
       <section className="bg-[#FAFAFA] py-16 lg:py-24">

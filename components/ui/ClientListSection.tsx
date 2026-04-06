@@ -1,0 +1,108 @@
+"use client";
+
+import { useState } from "react";
+import GetStartedModal from "@/components/ui/GetStartedModal";
+
+const clients = [
+  "Williams Foods",
+  "Sun-Bird Seasonings",
+  "Sweet Sensi",
+  "Coinline",
+  "Pioneer",
+  "RFSA",
+];
+
+const services = [
+  "CPG Marketing",
+  "Paid Media",
+  "SEO + AEO",
+  "AI Content Production",
+  "Branding & Identity",
+  "Web Design & CRO",
+  "Social Media",
+  "Email Marketing",
+  "Other",
+];
+
+export default function ClientListSection() {
+  const [selected, setSelected] = useState<string[]>([]);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggle = (s: string) =>
+    setSelected((prev) =>
+      prev.includes(s) ? prev.filter((x) => x !== s) : [...prev, s]
+    );
+
+  return (
+    <>
+      <section className="bg-beast-black py-16 lg:py-20 border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {/* Left — client grid */}
+            <div>
+              <p className="section-eyebrow text-gray-600 mb-8">Client List</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-white/5 border border-white/5 rounded-xl overflow-hidden">
+                {clients.map((client) => (
+                  <div
+                    key={client}
+                    className="bg-beast-black flex items-center justify-center px-4 py-7 hover:bg-white/5 transition-colors"
+                  >
+                    <span className="font-display font-bold text-lg text-white/50 hover:text-white/80 transition-colors text-center leading-tight">
+                      {client}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right — service selector */}
+            <div>
+              <p className="section-eyebrow text-gray-600 mb-3">What can we help with?</p>
+              <h2 className="font-display text-3xl font-bold text-white mb-6">
+                Select Your Services.
+              </h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-6">
+                {services.map((s) => {
+                  const active = selected.includes(s);
+                  return (
+                    <button
+                      key={s}
+                      onClick={() => toggle(s)}
+                      className={`flex items-center gap-2.5 px-3 py-3 rounded-xl border text-sm font-medium text-left transition-all duration-150 ${
+                        active
+                          ? "bg-beast-pink/15 border-beast-pink text-beast-pink"
+                          : "bg-white/4 border-white/10 text-gray-400 hover:border-white/25 hover:text-white"
+                      }`}
+                    >
+                      <span className={`w-4 h-4 rounded flex-shrink-0 border-2 flex items-center justify-center transition-colors ${
+                        active ? "bg-beast-pink border-beast-pink" : "border-gray-600"
+                      }`}>
+                        {active && (
+                          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          </svg>
+                        )}
+                      </span>
+                      {s}
+                    </button>
+                  );
+                })}
+              </div>
+              <button
+                onClick={() => setModalOpen(true)}
+                className="btn-primary w-full justify-center text-base py-4"
+              >
+                Get Started →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {modalOpen && (
+        <GetStartedModal selected={selected} onClose={() => setModalOpen(false)} />
+      )}
+    </>
+  );
+}
