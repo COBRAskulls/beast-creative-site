@@ -381,7 +381,6 @@ export default function HomePage() {
       {/* MARQUEE DIVIDER */}
       <Marquee
         items={["AI-Powered Results", "Real Numbers", "Proven CPG Growth", "Data-Driven Strategy", "Radical Transparency"]}
-        rotate
       />
 
       {/* FINAL CTA */}

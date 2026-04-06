@@ -499,7 +499,6 @@ export default function CpgPage() {
 
       <Marquee
         items={["CPG Marketing", "First-Party Data", "Retail Readiness", "National Growth", "Proven Results"]}
-        rotate
       />
     </>
   );
