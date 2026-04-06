@@ -266,7 +266,6 @@ select.form-input option {
   gap: 48px;
   width: max-content;
 }
-.marquee-track:hover { animation-play-state: paused; }
 
 /* ── Scrollbar ───────────────────────────────────── */
 ::-webkit-scrollbar       { width: 6px; }

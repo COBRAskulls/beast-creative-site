@@ -166,7 +166,7 @@ export default function HomePage() {
 
       {/* CLIENT LOGOS MARQUEE */}
       <section className="bg-[#111111] py-8 overflow-hidden">
-        <p className="section-eyebrow text-gray-600 text-center mb-6">ROAS-Driven Clients</p>
+        <p className="section-eyebrow text-gray-600 text-center mb-6">Client List</p>
         <div className="relative overflow-hidden">
           <div className="marquee-track">
             {["Williams Foods", "Sun-Bird Seasonings", "Coinline", "Sweet Sensi", "Pioneer", "RFSA", "Williams Foods", "Sun-Bird Seasonings", "Coinline", "Sweet Sensi", "Pioneer", "RFSA"].map((client, i) => (
