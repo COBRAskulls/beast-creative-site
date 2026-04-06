@@ -233,33 +233,47 @@ export default function HomePage() {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-stretch">
             {caseStudies.map((cs, i) => (
-              <AnimatedSection key={cs.href} delay={i * 0.1}>
-                <Link href={cs.href} className="group block">
-                  <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 h-full">
-                    {/* Top color bar */}
-                    <div className={`h-1.5 bg-beast-pink`} />
-                    <div className="p-6">
-                      <p className="text-xs font-semibold uppercase tracking-widest text-beast-pink mb-2">
-                        {cs.client}
-                      </p>
-                      <h3 className="font-display text-xl font-bold text-beast-black mb-4 leading-tight">
+              <AnimatedSection key={cs.href} delay={i * 0.1} className="h-full">
+                <Link href={cs.href} className="group block h-full">
+                  <article className="h-full bg-beast-black rounded-2xl overflow-hidden border border-white/10 hover:border-beast-pink/50 hover:shadow-[0_0_40px_rgba(255,17,152,0.15)] transition-all duration-300 hover:-translate-y-1 flex flex-col">
+                    {/* Top accent bar */}
+                    <div className="h-1 bg-beast-pink w-full" />
+                    <div className="p-7 flex flex-col flex-1">
+                      {/* Client + category */}
+                      <div className="flex items-center justify-between mb-5">
+                        <p className="text-xs font-bold uppercase tracking-widest text-beast-pink">
+                          {cs.client}
+                        </p>
+                        <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-white/8 text-gray-400 border border-white/10">
+                          {cs.category}
+                        </span>
+                      </div>
+                      {/* Campaign title */}
+                      <h3 className="font-display text-xl font-bold text-white mb-6 leading-tight">
                         {cs.campaign}
                       </h3>
-                      <div className="flex items-baseline gap-2 mb-3">
-                        <span className="font-display text-4xl font-extrabold text-beast-black tracking-normal">
+                      {/* Hero stat — large + prominent */}
+                      <div className="mb-5">
+                        <div className="font-display text-5xl font-extrabold text-beast-yellow tracking-wide leading-none mb-1">
                           {cs.heroStat}
-                        </span>
-                        <span className="text-sm text-gray-500 font-medium">{cs.heroStatLabel}</span>
+                        </div>
+                        <div className="text-xs font-semibold uppercase tracking-widest text-gray-500">
+                          {cs.heroStatLabel}
+                        </div>
                       </div>
-                      <p className="text-sm text-gray-600 leading-relaxed mb-5">{cs.description}</p>
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 mb-4 mr-2">
-                        {cs.category}
-                      </span>
-                      <div className="mt-2">
-                        <span className="btn-ghost-pink text-sm group-hover:gap-3">
-                          View Case Study →
+                      {/* Description */}
+                      <p className="text-sm text-gray-400 leading-relaxed flex-1">{cs.description}</p>
+                      {/* CTA */}
+                      <div className="mt-6 pt-5 border-t border-white/8 flex items-center justify-between">
+                        <span className="text-sm font-bold text-beast-pink group-hover:text-white transition-colors">
+                          View Case Study
+                        </span>
+                        <span className="w-8 h-8 rounded-full bg-beast-pink/15 border border-beast-pink/30 flex items-center justify-center group-hover:bg-beast-pink transition-all duration-200">
+                          <svg className="w-3.5 h-3.5 text-beast-pink group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                          </svg>
                         </span>
                       </div>
                     </div>
