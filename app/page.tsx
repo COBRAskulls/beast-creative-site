@@ -189,6 +189,7 @@ export default function HomePage() {
                 <ul className="space-y-4">
                   {[
                     "CPG food & beverage brands going from regional to national distribution",
+                    "Emerging CPG brands breaking into Walmart, Target, Kroger, or regional chains",
                     "Multi-brand holding companies with fragmented digital presence",
                     "Ambitious brands ready to grow nationally",
                   ].map((item, i) => (
