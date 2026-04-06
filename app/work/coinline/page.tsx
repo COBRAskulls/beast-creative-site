@@ -309,7 +309,7 @@ export default function CoinlinePage() {
         </div>
       </section>
 
-      <RelatedCaseStudies related={["sweet-sensi", "williams-allstars"]} />
+      <RelatedCaseStudies related={["sweet-sensi", "williams-allstars", "sun-bird"]} />
 
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">
