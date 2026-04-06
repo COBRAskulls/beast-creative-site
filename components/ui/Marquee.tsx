@@ -7,7 +7,6 @@ interface MarqueeProps {
   bg?: string;
   textColor?: string;
   separator?: string;
-  rotate?: boolean;
 }
 
 export default function Marquee({
@@ -16,14 +15,11 @@ export default function Marquee({
   bg = "bg-beast-pink",
   textColor = "text-beast-black",
   separator = "·",
-  rotate = false,
 }: MarqueeProps) {
   const doubled = [...items, ...items];
 
   return (
-    <div
-      className={`${bg} py-3 overflow-hidden ${rotate ? "-rotate-1 scale-105" : ""}`}
-    >
+    <div className={`${bg} py-3 overflow-hidden`}>
       <div className="marquee-track">
         {doubled.map((item, i) => (
           <span
