@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import StatCounter from "@/components/ui/StatCounter";
 
 export const metadata: Metadata = {
@@ -82,6 +83,8 @@ export default function SweetSensiPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedCaseStudies related={["sun-bird", "williams-bts", "coinline"]} />
 
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">

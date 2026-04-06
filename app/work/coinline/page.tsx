@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 
 export const metadata: Metadata = {
   title: "Coinline Brand Identity Case Study | Beast Creative Agency",
@@ -72,6 +73,8 @@ export default function CoinlinePage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedCaseStudies related={["sweet-sensi", "sun-bird", "williams-bts"]} />
 
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">
