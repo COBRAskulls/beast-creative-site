@@ -3,9 +3,9 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Branding Agency San Antonio | Brand Identity & Naming | Beast Creative",
+  title: "Branding Agency | Brand Identity & Naming | Beast Creative",
   description:
-    "Brand naming, visual systems, and identities that create instant recognition. Beast Creative Agency, San Antonio TX — creators of Coinline and other standout brands.",
+    "Brand naming, visual systems, and identities that create instant recognition. Beast Creative Agency, creators of Coinline and other standout brands.",
 };
 
 export default function BrandingPage() {

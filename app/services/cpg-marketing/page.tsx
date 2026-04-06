@@ -5,9 +5,9 @@ import { faqSchema, serviceSchema } from "@/lib/schema";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "CPG Marketing Agency San Antonio | Sweepstakes & Consumer Data | Beast",
+  title: "CPG Marketing Agency | Sweepstakes & Consumer Data | Beast Creative",
   description:
-    "Specialized CPG marketing: sweepstakes campaigns, first-party data collection, retail readiness decks, and AI-powered content pipelines. San Antonio, TX.",
+    "Specialized CPG marketing: sweepstakes campaigns, first-party data collection, retail readiness decks, and AI-powered content pipelines. Working with brands nationwide.",
 };
 
 const faqs = [
@@ -15,7 +15,7 @@ const faqs = [
   { question: "How do you build first-party consumer data?", answer: "Primarily through contest and sweepstakes mechanics that capture consumer name, email, and zip code. We've collected 36,581 emails on a $6,000 budget for Sun-Bird Seasonings." },
   { question: "How much does a sweepstakes campaign cost?", answer: "Campaign production starts at $2,500–$5,000. Ad spend is client-direct to platforms — we recommend $3,000–$10,000 for meaningful data volume." },
   { question: "How long before we see results?", answer: "Sweepstakes campaigns deliver data in real-time. Our Williams BTS campaign hit 22,043 entries in the campaign window on $4,000." },
-  { question: "Do you work with brands outside of Texas?", answer: "Absolutely. Our CPG clients include national brands. We're based in San Antonio but all digital services are location-agnostic." },
+  { question: "Do you work with brands across the country?", answer: "Absolutely. We work with brands nationally — all our digital services are fully location-agnostic. We've run campaigns for brands across the US." },
 ];
 
 export default function CpgMarketingServicePage() {

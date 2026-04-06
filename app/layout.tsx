@@ -8,11 +8,11 @@ import { organizationSchema, localBusinessSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: {
     default:
-      "Beast Creative Agency | AI-Powered Digital Marketing in San Antonio, TX",
+      "Beast Creative Agency | AI-Powered Digital Marketing | National",
     template: "%s | Beast Creative Agency",
   },
   description:
-    "Beast Creative Agency is San Antonio's premier AI-powered digital marketing agency. CPG marketing, SEO, paid media, and branding with proven results: 7.03% CTR, 36,581 campaign entries, 500%+ MRR growth.",
+    "Beast Creative Agency is a national AI-powered digital marketing agency. CPG marketing, SEO, paid media, and branding with proven results: 7.03% CTR, 36,581 campaign entries, 500%+ MRR growth.",
   metadataBase: new URL("https://beastcreativeagency.com"),
   openGraph: {
     siteName: "Beast Creative Agency",

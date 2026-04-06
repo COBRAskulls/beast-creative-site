@@ -5,7 +5,7 @@ import ContactForm from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Beast Creative Agency | Free Strategy Call",
   description:
-    "Book a free 15-minute strategy call or send a message. No pitch deck, no commitments — just an honest conversation. Based in San Antonio, TX.",
+    "Book a free 15-minute strategy call or send a message. No pitch deck, no commitments — just an honest conversation. Working with brands nationwide.",
 };
 
 export default function ContactPage() {

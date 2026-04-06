@@ -3,9 +3,9 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Web Design Agency San Antonio | CRO & Performance Web Design | Beast Creative",
+  title: "Web Design Agency | CRO & Performance Web Design | Beast Creative",
   description:
-    "Conversion-focused web design from Beast Creative Agency. Mobile-first, Lighthouse 90+ scores, built to turn traffic into revenue. San Antonio, TX.",
+    "Conversion-focused web design from Beast Creative Agency. Mobile-first, Lighthouse 90+ scores, built to turn traffic into revenue. Serving brands nationwide.",
 };
 
 export default function WebDesignPage() {

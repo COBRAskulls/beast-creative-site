@@ -40,9 +40,9 @@ const faqs = [
       "Sweepstakes campaigns deliver data in real-time — you can see entries within hours of launch. Our Williams BTS campaign hit 22,043 entries in the campaign window on $4,000. SEO and AEO results build over 3–6 months. Paid media results typically stabilize within 60–90 days as we optimize targeting.",
   },
   {
-    question: "Do you work with brands outside of Texas?",
+    question: "Do you work with brands across the country?",
     answer:
-      "Absolutely. Our CPG clients include national brands. We're based in San Antonio but operate nationally. Sun-Bird's campaign was a national Walmart rollout announcement. All our digital services are location-agnostic.",
+      "Absolutely. We work with brands nationally. Sun-Bird's campaign was a national Walmart rollout announcement. All our digital services are fully location-agnostic — we've run campaigns for brands across the US.",
   },
   {
     question: "What makes Beast different from other CPG marketing agencies?",
@@ -118,7 +118,7 @@ export default function CpgPage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-6">
-              CPG Marketing Agency · San Antonio, TX
+              CPG Marketing Agency · National
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>

@@ -6,20 +6,8 @@ export function organizationSchema() {
     url: "https://beastcreativeagency.com",
     logo: "https://beastcreativeagency.com/images/beast-logo-green.svg",
     description:
-      "Beast Creative Agency is San Antonio's premier AI-powered digital marketing agency specializing in CPG marketing, SEO, paid media, and branding.",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "San Antonio",
-      addressRegion: "TX",
-      addressCountry: "US",
-    },
-    telephone: "+12103320567",
-    sameAs: [
-      "https://www.facebook.com/beastcreativeagency",
-      "https://www.instagram.com/beastcreativeagency",
-      "https://www.linkedin.com/company/beast-creative-agency",
-    ],
-    areaServed: ["San Antonio, TX", "Texas", "United States"],
+      "Beast Creative Agency is a national AI-powered digital marketing agency specializing in CPG marketing, SEO, paid media, and branding.",
+    areaServed: "United States",
     serviceType: [
       "CPG Marketing",
       "Digital Marketing",

@@ -5,7 +5,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 export const metadata: Metadata = {
   title: "Our Work | Case Studies | Beast Creative Agency",
   description:
-    "Real campaigns. Real numbers. See how Beast Creative Agency delivers 8x industry benchmarks for CPG brands and San Antonio businesses.",
+    "Real campaigns. Real numbers. See how Beast Creative Agency delivers 8x industry benchmarks for CPG brands and ambitious businesses nationwide.",
 };
 
 const caseStudies = [

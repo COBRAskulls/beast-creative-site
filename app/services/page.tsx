@@ -3,9 +3,9 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Services | Beast Creative Agency San Antonio",
+  title: "Digital Marketing Services | Beast Creative Agency | National",
   description:
-    "Full-service digital marketing from San Antonio's Beast Creative Agency: CPG marketing, SEO + AEO, paid social, AI content production, branding, and web design.",
+    "Full-service digital marketing from Beast Creative Agency: CPG marketing, SEO + AEO, paid social, AI content production, branding, and web design.",
 };
 
 const services = [

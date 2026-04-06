@@ -54,7 +54,7 @@ export default function SeoAeoPage() {
             <AnimatedSection delay={0.1}>
               <h2 className="font-display text-3xl font-bold text-beast-black mb-6">What We Deliver</h2>
               <ul className="space-y-3">
-                {["Technical SEO audit and remediation", "Keyword and topic cluster strategy", "On-page optimization", "Schema.org structured data implementation", "FAQ markup for People Also Ask", "AEO content strategy and formatting", "Entity and relationship mapping", "Local SEO (San Antonio + regional)", "Monthly ranking reports", "Competitor gap analysis"].map((item) => (
+                {["Technical SEO audit and remediation", "Keyword and topic cluster strategy", "On-page optimization", "Schema.org structured data implementation", "FAQ markup for People Also Ask", "AEO content strategy and formatting", "Entity and relationship mapping", "Local SEO (national + regional)", "Monthly ranking reports", "Competitor gap analysis"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
                     <span className="text-beast-pink font-bold shrink-0">✓</span>
                     <span className="text-gray-700">{item}</span>

@@ -122,7 +122,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-6">
-              AI-Powered Digital Marketing Agency · San Antonio, TX
+              AI-Powered Digital Marketing Agency · National
             </p>
           </AnimatedSection>
 
@@ -180,7 +180,7 @@ export default function HomePage() {
                 At Beast Creative Agency, we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We&apos;re a team of strategists, creatives, and AI-powered operators based in San Antonio, TX. We work with CPG brands scaling from regional to national, and with ambitious local businesses who are tired of agencies that talk more than they deliver.
+                We&apos;re a team of strategists, creatives, and AI-powered operators working with brands nationwide. We specialize in CPG brands scaling from regional to national — and with ambitious businesses who are tired of agencies that talk more than they deliver.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
@@ -190,7 +190,7 @@ export default function HomePage() {
                   {[
                     "CPG food & beverage brands going from regional to national distribution",
                     "Multi-brand holding companies with fragmented digital presence",
-                    "San Antonio and South Texas businesses ready to grow",
+                    "Ambitious brands ready to grow nationally",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-beast-pink mt-0.5 font-bold text-lg leading-none">→</span>
