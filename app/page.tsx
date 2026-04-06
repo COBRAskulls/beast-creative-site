@@ -127,7 +127,8 @@ export default function HomePage() {
 
           <AnimatedSection delay={0.1}>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6">
-              Marketing That Doesn&apos;t Just Look Good.{" "}
+              Marketing That Doesn&apos;t Just Look Good.
+              <br />
               <span className="text-beast-pink">It Performs.</span>
             </h1>
           </AnimatedSection>
