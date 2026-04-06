@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const colors = [
-  { name: "Coinline Pink", hex: "#E91E8C", desc: "Hero color. Electric, energetic — the neon pink of classic arcade marquees.", glow: "rgba(233,30,140,0.6)" },
-  { name: "Deep Purple", hex: "#1A0A2E", desc: "The foundation. Dark, atmospheric. The color of an arcade in low light.", glow: "rgba(90,30,140,0.6)" },
-  { name: "Electric Yellow", hex: "#F5E642", desc: "The accent. The color of a coin, a scoreboard flash, a PLAYER 1 START prompt.", glow: "rgba(245,230,66,0.6)" },
-  { name: "Black", hex: "#0A0A0A", desc: "Structure and depth. Grounds the palette and makes every color pop harder.", glow: "rgba(255,255,255,0.15)" },
+  { name: "Coinline Pink", hex: "#E91E8C", desc: "Hero color. Electric, energetic — the neon pink of classic arcade marquees.", border: "#F5E642" },
+  { name: "Deep Purple", hex: "#1A0A2E", desc: "The foundation. Dark, atmospheric. The color of an arcade in low light.", border: "#E91E8C" },
+  { name: "Electric Yellow", hex: "#F5E642", desc: "The accent. The color of a coin, a scoreboard flash, a PLAYER 1 START prompt.", border: "#1A0A2E" },
+  { name: "Black", hex: "#0A0A0A", desc: "Structure and depth. Grounds the palette and makes every color pop harder.", border: "#F5E642" },
 ];
 
 export default function ColorSwatches() {
@@ -32,7 +32,7 @@ export default function ColorSwatches() {
             className="relative h-20 rounded-xl mb-3 overflow-hidden transition-all duration-300 cursor-pointer border-2 border-transparent group-hover:border-current"
             style={{ backgroundColor: c.hex, borderColor: "transparent" }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLDivElement).style.borderColor = c.hex === "#0A0A0A" ? "#ffffff40" : c.hex;
+              (e.currentTarget as HTMLDivElement).style.borderColor = c.border;
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLDivElement).style.borderColor = "transparent";
