@@ -128,7 +128,6 @@ export default function WorkPage() {
               <AnimatedSection key={cs.href} delay={i * 0.08}>
                 <Link href={cs.href} className="group block h-full">
                   <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
-                    <div className="h-1.5 bg-beast-pink" />
                     <div className="p-6 flex-1 flex flex-col">
                       <div className="flex items-start justify-between mb-3">
                         <p className="text-xs font-semibold uppercase tracking-widest text-beast-pink">

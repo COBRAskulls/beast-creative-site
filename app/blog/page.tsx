@@ -67,7 +67,6 @@ export default function BlogPage() {
           <AnimatedSection>
             <Link href={`/blog/${posts[0].slug}`} className="group block">
               <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300">
-                <div className="h-1.5 bg-beast-pink" />
                 <div className="p-8 lg:p-12">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
@@ -96,7 +95,6 @@ export default function BlogPage() {
               <AnimatedSection key={post.slug} delay={i * 0.08}>
                 <Link href={`/blog/${post.slug}`} className="group block h-full">
                   <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
-                    <div className="h-1.5 bg-beast-pink" />
                     <div className="p-6 flex-1 flex flex-col">
                       <div className="flex items-center gap-3 mb-3">
                         <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">
