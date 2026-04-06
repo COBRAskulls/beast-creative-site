@@ -161,7 +161,7 @@ export default function CpgPage() {
             <p className="section-eyebrow text-beast-pink mb-4">The Problem We Solve</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal max-w-3xl mx-auto">
               Your Brand is Ready to Scale.{" "}
-              <span className="text-red-500/80">Your Marketing Isn&apos;t.</span>
+              <span className="text-beast-pink">Your Marketing Isn&apos;t.</span>
             </h2>
           </AnimatedSection>
 
