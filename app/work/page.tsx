@@ -74,7 +74,7 @@ const caseStudies = [
     campaign: "Brand Naming & Identity",
     heroStat: "0",
     heroStatLabel: "explanation needed — name speaks itself",
-    year: "2024–2025",
+    year: "2022",
     categories: ["Branding", "Naming", "Identity Design"],
     href: "/work/coinline",
     highlight: false,

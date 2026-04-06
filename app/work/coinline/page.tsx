@@ -23,7 +23,7 @@ export default function CoinlinePage() {
                 <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
-            <p className="section-eyebrow text-gray-500 mb-3">Case Study — Coinline Barcade · 2024–2025</p>
+            <p className="section-eyebrow text-gray-500 mb-3">Case Study — Coinline Barcade · 2022</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               From a Concept to a{" "}
               <span className="text-beast-pink">Complete Brand Universe.</span>
@@ -253,7 +253,7 @@ export default function CoinlinePage() {
                     { label: "Industry", value: "Entertainment / Hospitality" },
                     { label: "Project Type", value: "Full Brand Identity & Launch Strategy" },
                     { label: "Timeline", value: "6-Month Sprint" },
-                    { label: "Year", value: "2024–2025" },
+                    { label: "Year", value: "2022" },
                     { label: "Services", value: "Naming, Logo Design, Visual Identity, Tone of Voice, Marketing Strategy, Apparel, Digital Strategy" },
                   ].map((item) => (
                     <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
