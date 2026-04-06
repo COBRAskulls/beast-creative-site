@@ -56,8 +56,8 @@ export default function ContactForm({
   if (submitted) {
     return (
       <div className="flex flex-col items-center text-center py-12 gap-4">
-        <div className="w-16 h-16 rounded-full bg-beast-green/15 border border-beast-green/30 flex items-center justify-center">
-          <svg className="w-8 h-8 text-beast-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <div className="w-16 h-16 rounded-full bg-beast-pink/15 border border-beast-pink/30 flex items-center justify-center">
+          <svg className="w-8 h-8 text-beast-pink" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>

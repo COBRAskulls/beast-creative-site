@@ -82,7 +82,7 @@ export default function Nav() {
                     >
                       {s.name}
                       {s.badge && (
-                        <span className="text-xs bg-beast-green/15 text-beast-green border border-beast-green/20 px-2 py-0.5 rounded-full font-semibold">
+                        <span className="text-xs bg-beast-pink/15 text-beast-pink border border-beast-pink/20 px-2 py-0.5 rounded-full font-semibold">
                           {s.badge}
                         </span>
                       )}
@@ -136,7 +136,7 @@ export default function Nav() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block font-display text-4xl font-bold text-white hover:text-beast-green transition-colors py-2"
+                className="block font-display text-4xl font-bold text-white hover:text-beast-pink transition-colors py-2"
               >
                 {item.name}
               </Link>
@@ -148,7 +148,7 @@ export default function Nav() {
             </Link>
             <a
               href="sms:+12103320567"
-              className="block text-center text-sm text-gray-500 hover:text-beast-green transition-colors"
+              className="block text-center text-sm text-gray-500 hover:text-beast-pink transition-colors"
             >
               (210) 332-0567 — text or call
             </a>

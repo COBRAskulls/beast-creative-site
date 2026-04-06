@@ -64,7 +64,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">About Us</p>
+            <p className="section-eyebrow text-beast-pink mb-4">About Us</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-3xl mb-6">
               Born to Dominate Digital.
             </h1>
@@ -80,7 +80,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="max-w-3xl">
             <AnimatedSection>
-              <p className="section-eyebrow text-beast-green-muted mb-4">Our Story</p>
+              <p className="section-eyebrow text-beast-pink mb-4">Our Story</p>
               <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-6">
                 San Antonio Roots. National Reach.
               </h2>
@@ -102,7 +102,7 @@ export default function AboutPage() {
       <section className="bg-beast-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green mb-4">What We Stand For</p>
+            <p className="section-eyebrow text-beast-pink mb-4">What We Stand For</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
               Three Values. No Exceptions.
             </h2>
@@ -111,8 +111,8 @@ export default function AboutPage() {
             {values.map((val, i) => (
               <AnimatedSection key={val.name} delay={i * 0.1}>
                 <div className="bg-[#1A1A1A] rounded-2xl p-8 border border-[#2E2E2E] h-full">
-                  <div className="w-12 h-12 rounded-xl bg-beast-green/10 flex items-center justify-center mb-6">
-                    <span className="text-beast-green font-bold text-lg">{i + 1}</span>
+                  <div className="w-12 h-12 rounded-xl bg-beast-pink/10 flex items-center justify-center mb-6">
+                    <span className="text-beast-pink font-bold text-lg">{i + 1}</span>
                   </div>
                   <h3 className="font-display text-xl font-bold text-white mb-3">{val.name}</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">{val.desc}</p>
@@ -127,7 +127,7 @@ export default function AboutPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green-muted mb-4">The Team</p>
+            <p className="section-eyebrow text-beast-pink mb-4">The Team</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
               The People Behind the Results.
             </h2>
@@ -137,10 +137,10 @@ export default function AboutPage() {
               <AnimatedSection key={member.name} delay={i * 0.1}>
                 <div className="flex flex-col items-start">
                   <div className="w-16 h-16 rounded-2xl bg-beast-black flex items-center justify-center mb-4">
-                    <span className="font-display font-bold text-beast-green text-xl">{member.initials}</span>
+                    <span className="font-display font-bold text-beast-pink text-xl">{member.initials}</span>
                   </div>
                   <h3 className="font-display text-xl font-bold text-beast-black mb-1">{member.name}</h3>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-beast-green-muted mb-3">{member.title}</p>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-beast-pink mb-3">{member.title}</p>
                   <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
                 </div>
               </AnimatedSection>
@@ -154,14 +154,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="max-w-3xl">
             <AnimatedSection>
-              <p className="section-eyebrow text-beast-green mb-4">Our Proprietary AI</p>
+              <p className="section-eyebrow text-beast-pink mb-4">Our Proprietary AI</p>
               <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-4">
                 Sagundo: Beast&apos;s AI Agent
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Sagundo is an internally-deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It&apos;s what makes our team faster, our content cheaper, and our campaigns smarter than agencies twice our size.
               </p>
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-green/15 text-beast-green border border-beast-green/20">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
                 In active development — available to Scale-tier clients
               </span>
             </AnimatedSection>

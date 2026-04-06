@@ -120,7 +120,7 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-6">
+            <p className="section-eyebrow text-beast-pink mb-6">
               AI-Powered Digital Marketing Agency · San Antonio, TX
             </p>
           </AnimatedSection>
@@ -130,7 +130,7 @@ export default function HomePage() {
               Marketing That Doesn&apos;t Just{" "}
               <br className="hidden md:block" />
               Look Good.{" "}
-              <span className="text-beast-green">It Performs.</span>
+              <span className="text-beast-pink">It Performs.</span>
             </h1>
           </AnimatedSection>
 
@@ -154,7 +154,7 @@ export default function HomePage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-[#0D1F0F] border-y border-beast-green/20 py-12 lg:py-16">
+      <section className="bg-[#0D1F0F] border-y border-beast-pink/20 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
             <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" />
@@ -184,7 +184,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
             <AnimatedSection>
-              <p className="section-eyebrow text-beast-green-muted mb-4">Who We Are</p>
+              <p className="section-eyebrow text-beast-pink mb-4">Who We Are</p>
               <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-6">
                 We Are Beast.
               </h2>
@@ -205,13 +205,13 @@ export default function HomePage() {
                     "San Antonio and South Texas businesses ready to grow",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-beast-green mt-0.5 font-bold text-lg leading-none">→</span>
+                      <span className="text-beast-pink mt-0.5 font-bold text-lg leading-none">→</span>
                       <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
                 <div className="mt-8 pt-6 border-t border-gray-100">
-                  <Link href="/about" className="btn-ghost-green text-sm">
+                  <Link href="/about" className="btn-ghost-pink text-sm">
                     Meet the Team →
                   </Link>
                 </div>
@@ -225,7 +225,7 @@ export default function HomePage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green-muted mb-4">Proven Results</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Proven Results</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-4">
               Work That Speaks For Itself.
             </h2>
@@ -240,9 +240,9 @@ export default function HomePage() {
                 <Link href={cs.href} className="group block">
                   <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 h-full">
                     {/* Top color bar */}
-                    <div className={`h-1.5 bg-beast-green`} />
+                    <div className={`h-1.5 bg-beast-pink`} />
                     <div className="p-6">
-                      <p className="text-xs font-semibold uppercase tracking-widest text-beast-green-muted mb-2">
+                      <p className="text-xs font-semibold uppercase tracking-widest text-beast-pink mb-2">
                         {cs.client}
                       </p>
                       <h3 className="font-display text-xl font-bold text-beast-black mb-4 leading-tight">
@@ -259,7 +259,7 @@ export default function HomePage() {
                         {cs.category}
                       </span>
                       <div className="mt-2">
-                        <span className="btn-ghost-green text-sm group-hover:gap-3">
+                        <span className="btn-ghost-pink text-sm group-hover:gap-3">
                           View Case Study →
                         </span>
                       </div>
@@ -282,7 +282,7 @@ export default function HomePage() {
       <section className="bg-beast-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green mb-4">What We Do</p>
+            <p className="section-eyebrow text-beast-pink mb-4">What We Do</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
               Full-Service. Full Commitment.
             </h2>
@@ -292,11 +292,11 @@ export default function HomePage() {
             {services.map((svc, i) => (
               <AnimatedSection key={svc.href} delay={i * 0.07}>
                 <Link href={svc.href} className="group block">
-                  <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-green/40 hover:bg-[#0D1F0F] transition-all duration-300 h-full">
+                  <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-pink/40 hover:bg-[#0D1F0F] transition-all duration-300 h-full">
                     <div className="text-2xl mb-4">{svc.icon}</div>
                     <h3 className="font-display text-xl font-bold text-white mb-2">{svc.name}</h3>
                     <p className="text-sm text-gray-400 leading-relaxed mb-4">{svc.desc}</p>
-                    <span className="text-beast-green text-sm font-semibold group-hover:underline">
+                    <span className="text-beast-pink text-sm font-semibold group-hover:underline">
                       Learn More →
                     </span>
                   </div>
@@ -311,10 +311,10 @@ export default function HomePage() {
       <section className="bg-[#F5F5F5] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green-muted mb-4">Why Beast</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Why Beast</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
               Not Just Another Agency.{" "}
-              <span className="text-beast-green-muted">Your Partners in Growth.</span>
+              <span className="text-beast-pink">Your Partners in Growth.</span>
             </h2>
           </AnimatedSection>
 
@@ -322,8 +322,8 @@ export default function HomePage() {
             {whyBeast.map((item, i) => (
               <AnimatedSection key={item.title} delay={i * 0.1}>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100 h-full">
-                  <div className="w-10 h-10 rounded-xl bg-beast-green/10 flex items-center justify-center mb-4">
-                    <div className="w-2 h-2 rounded-full bg-beast-green" />
+                  <div className="w-10 h-10 rounded-xl bg-beast-pink/10 flex items-center justify-center mb-4">
+                    <div className="w-2 h-2 rounded-full bg-beast-pink" />
                   </div>
                   <h3 className="font-display text-lg font-bold text-beast-black mb-3">{item.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
@@ -339,10 +339,10 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(46,204,64,0.06)_0%,transparent_70%)]" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">For CPG Brands</p>
+            <p className="section-eyebrow text-beast-pink mb-4">For CPG Brands</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6 max-w-3xl mx-auto">
               Is Your Brand Ready for Walmart?{" "}
-              <span className="text-beast-green">Your Marketing Should Be First.</span>
+              <span className="text-beast-pink">Your Marketing Should Be First.</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
               We&apos;ve helped CPG food and beverage brands build the consumer databases, engagement metrics, and retail-readiness proof that retail buyers demand. Walk in with data — not hope.
@@ -358,7 +358,7 @@ export default function HomePage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green-muted mb-4">How We Work</p>
+            <p className="section-eyebrow text-beast-pink mb-4">How We Work</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
               From Discovery to Domination.
             </h2>
@@ -369,10 +369,10 @@ export default function HomePage() {
               <AnimatedSection key={step.step} delay={i * 0.1}>
                 <div className="relative">
                   {i < process.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-beast-green/30 to-transparent z-10 -translate-y-1/2" />
+                    <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-beast-pink/30 to-transparent z-10 -translate-y-1/2" />
                   )}
                   <div className="bg-[#FAFAFA] rounded-2xl p-6 border border-gray-100">
-                    <span className="font-mono text-xs font-bold text-beast-green tracking-widest">{step.step}</span>
+                    <span className="font-mono text-xs font-bold text-beast-pink tracking-widest">{step.step}</span>
                     <h3 className="font-display text-xl font-bold text-beast-black mt-2 mb-3">{step.name}</h3>
                     <p className="text-sm text-gray-600 leading-relaxed">{step.desc}</p>
                   </div>
@@ -394,7 +394,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <AnimatedSection>
-              <p className="section-eyebrow text-beast-green mb-4">Let&apos;s Talk</p>
+              <p className="section-eyebrow text-beast-pink mb-4">Let&apos;s Talk</p>
               <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
                 Ready to Stop Guessing and Start Growing?
               </h2>
@@ -411,7 +411,7 @@ export default function HomePage() {
               </a>
               <p className="text-gray-500 text-sm">
                 Or text us directly:{" "}
-                <a href="sms:+12103320567" className="text-beast-green hover:underline">(210) 332-0567</a>
+                <a href="sms:+12103320567" className="text-beast-pink hover:underline">(210) 332-0567</a>
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>

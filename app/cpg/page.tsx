@@ -116,14 +116,14 @@ export default function CpgPage() {
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-6">
+            <p className="section-eyebrow text-beast-pink mb-6">
               CPG Marketing Agency · San Antonio, TX
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               The CPG Agency That Turns{" "}
-              <span className="text-beast-green">Ad Spend Into Retail Proof.</span>
+              <span className="text-beast-pink">Ad Spend Into Retail Proof.</span>
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -143,7 +143,7 @@ export default function CpgPage() {
       </section>
 
       {/* CPG STATS BAR */}
-      <section className="bg-[#0D1F0F] border-y border-beast-green/20 py-12 lg:py-16">
+      <section className="bg-[#0D1F0F] border-y border-beast-pink/20 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <StatCounter value={36581} label="Consumer Emails Collected" sublabel="Sun-Bird, $6K budget" />
@@ -158,7 +158,7 @@ export default function CpgPage() {
       <section className="bg-[#F5F5F5] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green-muted mb-4">The Problem We Solve</p>
+            <p className="section-eyebrow text-beast-pink mb-4">The Problem We Solve</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight max-w-3xl mx-auto">
               Your Brand is Ready to Scale.{" "}
               <span className="text-red-500/80">Your Marketing Isn&apos;t.</span>
@@ -190,7 +190,7 @@ export default function CpgPage() {
             ].map((pain) => (
               <AnimatedSection key={pain.n}>
                 <div className="bg-white rounded-2xl p-8 border border-gray-100 flex gap-6">
-                  <span className="font-mono text-beast-green font-bold text-sm shrink-0 mt-1">{pain.n}</span>
+                  <span className="font-mono text-beast-pink font-bold text-sm shrink-0 mt-1">{pain.n}</span>
                   <div>
                     <h3 className="font-display text-xl font-bold text-beast-black mb-2">{pain.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">{pain.desc}</p>
@@ -206,7 +206,7 @@ export default function CpgPage() {
       <section className="bg-beast-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green mb-4">Our CPG Services</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Our CPG Services</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
               Everything a CPG Brand Needs to Go National.
             </h2>
@@ -240,7 +240,7 @@ export default function CpgPage() {
               },
             ].map((svc, i) => (
               <AnimatedSection key={svc.title} delay={i * 0.07}>
-                <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-green/30 transition-colors h-full">
+                <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-pink/30 transition-colors h-full">
                   <h3 className="font-display text-lg font-bold text-white mb-3">{svc.title}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed">{svc.desc}</p>
                 </div>
@@ -254,12 +254,12 @@ export default function CpgPage() {
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green-muted mb-4">Case Study — CPG Marketing</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Case Study — CPG Marketing</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-6">
                   36,581 Contest Entries.{" "}
-                  <span className="text-beast-green-muted">One $6,000 Budget.</span>
+                  <span className="text-beast-pink">One $6,000 Budget.</span>
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Sun-Bird Seasonings was announcing their national rollout into Walmart. They needed consumer excitement, earned media, and first-party data that proves consumer demand for retail buyer meetings.
@@ -282,7 +282,7 @@ export default function CpgPage() {
                     <div className="font-display text-3xl font-extrabold text-beast-black tracking-tighter mb-1">
                       {stat.prefix}{stat.value.toLocaleString()}{stat.suffix}
                     </div>
-                    <div className="text-xs font-semibold uppercase tracking-widest text-beast-green-muted">{stat.label}</div>
+                    <div className="text-xs font-semibold uppercase tracking-widest text-beast-pink">{stat.label}</div>
                     <div className="text-xs text-gray-400 mt-1">{stat.sub}</div>
                   </div>
                 ))}
@@ -296,7 +296,7 @@ export default function CpgPage() {
       <section className="bg-beast-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green mb-4">The Roadmap</p>
+            <p className="section-eyebrow text-beast-pink mb-4">The Roadmap</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
               Three Stages. One Direction: National.
             </h2>
@@ -329,7 +329,7 @@ export default function CpgPage() {
               <AnimatedSection key={stage.stage} delay={i * 0.1}>
                 <div className="bg-[#1A1A1A] rounded-2xl p-8 border border-[#2E2E2E] h-full">
                   <div className="flex items-center gap-3 mb-6">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-green/15 text-beast-green border border-beast-green/20">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
                       {stage.stage}
                     </span>
                     <span className="text-xs text-gray-500">{stage.period}</span>
@@ -338,7 +338,7 @@ export default function CpgPage() {
                   <p className="text-gray-400 text-sm leading-relaxed mb-6">{stage.desc}</p>
                   <div className="border-t border-[#2E2E2E] pt-4">
                     <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest mb-2">Key Deliverable</p>
-                    <p className="text-sm text-beast-green">{stage.deliverable}</p>
+                    <p className="text-sm text-beast-pink">{stage.deliverable}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -351,7 +351,7 @@ export default function CpgPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green-muted mb-4">Investment</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Investment</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
               Transparent Pricing. No Surprises.
             </h2>
@@ -361,9 +361,9 @@ export default function CpgPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {pricing.map((plan) => (
               <AnimatedSection key={plan.tier}>
-                <div className={`rounded-2xl p-8 h-full flex flex-col ${plan.highlight ? "bg-beast-black text-white border-2 border-beast-green" : "bg-[#FAFAFA] border border-gray-100"}`}>
+                <div className={`rounded-2xl p-8 h-full flex flex-col ${plan.highlight ? "bg-beast-black text-white border-2 border-beast-pink" : "bg-[#FAFAFA] border border-gray-100"}`}>
                   {plan.highlight && (
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-green/20 text-beast-green mb-4 self-start">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/20 text-beast-pink mb-4 self-start">
                       Most Popular
                     </span>
                   )}
@@ -371,7 +371,7 @@ export default function CpgPage() {
                     {plan.tier}
                   </h3>
                   <div className="flex items-baseline gap-1 mb-2">
-                    <span className={`font-display text-3xl font-extrabold tracking-tight ${plan.highlight ? "text-beast-green" : "text-beast-black"}`}>
+                    <span className={`font-display text-3xl font-extrabold tracking-tight ${plan.highlight ? "text-beast-pink" : "text-beast-black"}`}>
                       {plan.price}
                     </span>
                     <span className={`text-sm ${plan.highlight ? "text-gray-400" : "text-gray-500"}`}>{plan.period}</span>
@@ -380,7 +380,7 @@ export default function CpgPage() {
                   <ul className="space-y-3 flex-1 mb-8">
                     {plan.features.map((f) => (
                       <li key={f} className="flex items-start gap-3 text-sm">
-                        <span className="text-beast-green mt-0.5 font-bold shrink-0">✓</span>
+                        <span className="text-beast-pink mt-0.5 font-bold shrink-0">✓</span>
                         <span className={plan.highlight ? "text-gray-300" : "text-gray-700"}>{f}</span>
                       </li>
                     ))}
@@ -414,7 +414,7 @@ export default function CpgPage() {
                 <p className="text-gray-600 leading-relaxed mb-6">
                   You&apos;re building something real. Maybe it&apos;s at farmers markets, maybe it&apos;s in regional grocery. You&apos;re ready to get serious about digital marketing but you need proof before commitment.
                 </p>
-                <p className="text-beast-green-muted font-medium text-sm mb-8">
+                <p className="text-beast-pink font-medium text-sm mb-8">
                   → Start with our Starter tier. One sweepstakes campaign. Real data. Real results. Then we&apos;ll talk about what&apos;s next.
                 </p>
                 <a href="#contact" className="btn-primary inline-flex">
@@ -424,14 +424,14 @@ export default function CpgPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
               <div className="bg-beast-black rounded-2xl p-8 border border-[#2E2E2E] h-full">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-green/15 text-beast-green border border-beast-green/20 mb-6">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/15 text-beast-pink border border-beast-pink/20 mb-6">
                   Path B
                 </span>
                 <h3 className="font-display text-2xl font-bold text-white mb-4">The Regional Brand Going National</h3>
                 <p className="text-gray-400 leading-relaxed mb-6">
                   You have traction. A retail conversation is happening. Your buyer needs consumer pull-through data and you need a partner who knows how to build it.
                 </p>
-                <p className="text-beast-green font-medium text-sm mb-8">
+                <p className="text-beast-pink font-medium text-sm mb-8">
                   → Our Growth and Scale tiers are built for this exact moment.
                 </p>
                 <a href="#contact" className="btn-primary inline-flex">
@@ -448,14 +448,14 @@ export default function CpgPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="max-w-3xl">
-              <p className="section-eyebrow text-beast-green mb-4">Our Proprietary AI</p>
+              <p className="section-eyebrow text-beast-pink mb-4">Our Proprietary AI</p>
               <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-6">
                 Meet Sagundo — Beast&apos;s In-House AI Agent.
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
                 Sagundo isn&apos;t a chatbot. It&apos;s an internally-deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation for Beast and our Scale-tier clients. It&apos;s what makes our team faster, our content cheaper, and our campaigns smarter than agencies twice our size.
               </p>
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-green/15 text-beast-green border border-beast-green/20">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
                 Available for Scale-tier CPG clients as a self-hosted deployment
               </span>
             </div>
@@ -467,7 +467,7 @@ export default function CpgPage() {
       <section id="contact" className="bg-beast-black py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-10">
-            <p className="section-eyebrow text-beast-green mb-4">Let&apos;s Talk</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Let&apos;s Talk</p>
             <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-4">
               Let&apos;s Talk About Your Brand.
             </h2>
@@ -485,7 +485,7 @@ export default function CpgPage() {
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-green-muted mb-4">FAQ</p>
+            <p className="section-eyebrow text-beast-pink mb-4">FAQ</p>
             <h2 className="font-display text-4xl font-bold text-beast-black tracking-tight">
               Common Questions
             </h2>

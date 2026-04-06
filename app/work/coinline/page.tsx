@@ -17,13 +17,13 @@ export default function CoinlinePage() {
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
               {["Branding", "Naming", "Identity Design"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-green/15 text-beast-green border border-beast-green/20">{tag}</span>
+                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
             <p className="section-eyebrow text-gray-500 mb-3">Case Study — Coinline · 2024–2025</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               A Name That Needs{" "}
-              <span className="text-beast-green">Zero Explanation.</span>
+              <span className="text-beast-pink">Zero Explanation.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Brand naming and identity for a modern arcade concept — where retro gaming nostalgia meets next-generation culture.
@@ -58,12 +58,12 @@ export default function CoinlinePage() {
                 "Built-in brand narrative: nostalgia meets next-generation",
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-gray-600">
-                  <span className="text-beast-green font-bold shrink-0 mt-0.5">✓</span>
+                  <span className="text-beast-pink font-bold shrink-0 mt-0.5">✓</span>
                   {item}
                 </li>
               ))}
             </ul>
-            <blockquote className="border-l-4 border-beast-green pl-6 mt-8">
+            <blockquote className="border-l-4 border-beast-pink pl-6 mt-8">
               <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                 &quot;Extensive gaming-culture research revealed the perfect name: Coinline. Its retro-modern edge made brand identity effortless, fusing classic and modern graphics with plenty of momentum for go-to-market strategies.&quot;
               </p>

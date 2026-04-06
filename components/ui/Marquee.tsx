@@ -13,7 +13,7 @@ interface MarqueeProps {
 export default function Marquee({
   items,
   className = "",
-  bg = "bg-beast-green",
+  bg = "bg-beast-pink",
   textColor = "text-beast-black",
   separator = "·",
   rotate = false,

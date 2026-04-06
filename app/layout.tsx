@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { syne, inter, jetbrainsMono } from "@/lib/fonts";
+import { barlowCondensed, inter } from "@/lib/fonts";
 import "@/styles/globals.css";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${barlowCondensed.variable} ${inter.variable}`}
     >
       <head>
         <script

@@ -109,7 +109,7 @@ export default function WorkPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Our Work</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Our Work</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-3xl mb-6">
               Work That Wins.
             </h1>
@@ -128,10 +128,10 @@ export default function WorkPage() {
               <AnimatedSection key={cs.href} delay={i * 0.08}>
                 <Link href={cs.href} className="group block h-full">
                   <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
-                    <div className="h-1.5 bg-beast-green" />
+                    <div className="h-1.5 bg-beast-pink" />
                     <div className="p-6 flex-1 flex flex-col">
                       <div className="flex items-start justify-between mb-3">
-                        <p className="text-xs font-semibold uppercase tracking-widest text-beast-green-muted">
+                        <p className="text-xs font-semibold uppercase tracking-widest text-beast-pink">
                           {cs.client}
                         </p>
                         <span className="text-xs text-gray-400">{cs.year}</span>
@@ -166,7 +166,7 @@ export default function WorkPage() {
                       </div>
 
                       <div className="mt-auto">
-                        <span className="btn-ghost-green text-sm">View Case Study →</span>
+                        <span className="btn-ghost-pink text-sm">View Case Study →</span>
                       </div>
                     </div>
                   </article>

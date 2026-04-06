@@ -28,7 +28,7 @@ export default function SunBirdPage() {
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
               {["CPG Marketing", "Paid Social", "Sweepstakes", "Consumer Data"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-green/15 text-beast-green border border-beast-green/20">
+                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
                   {tag}
                 </span>
               ))}
@@ -36,7 +36,7 @@ export default function SunBirdPage() {
             <p className="section-eyebrow text-gray-500 mb-3">Case Study — Sun-Bird Seasonings · 2021</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               36,581 Consumer Emails.{" "}
-              <span className="text-beast-green">One $6,000 Budget.</span>
+              <span className="text-beast-pink">One $6,000 Budget.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Bird Herd — the national Walmart rollout campaign that achieved 7.03% CTR, nearly 8x the industry average, at $0.12 CPC.
@@ -87,7 +87,7 @@ export default function SunBirdPage() {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   Beast&apos;s audience targeting found the sweet spot between reach and relevance, keeping CPC low while CTR soared to nearly 8x the industry benchmark. The low-friction entry mechanic minimized drop-off while the brand story — celebrating a national launch — gave consumers emotional investment in the campaign.
                 </p>
-                <blockquote className="border-l-4 border-beast-green pl-6 my-6">
+                <blockquote className="border-l-4 border-beast-pink pl-6 my-6">
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                     &quot;No competitor can walk into a pitch meeting with a 7.03% CTR and $0.12 CPC on a $6,000 budget. That&apos;s our proof of concept.&quot;
                   </p>
@@ -124,7 +124,7 @@ export default function SunBirdPage() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#0D1F0F] rounded-2xl p-6 border border-beast-green/20">
+                <div className="bg-[#0D1F0F] rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">vs Industry Benchmark</h3>
                   {[
                     { metric: "CTR", beast: "7.03%", industry: "0.89%", lift: "7.9x" },
@@ -134,10 +134,10 @@ export default function SunBirdPage() {
                     <div key={row.metric} className="mb-4">
                       <p className="text-xs text-gray-600 uppercase tracking-widest mb-1">{row.metric}</p>
                       <div className="flex items-center gap-3">
-                        <span className="font-display font-bold text-beast-green text-xl">{row.beast}</span>
+                        <span className="font-display font-bold text-beast-pink text-xl">{row.beast}</span>
                         <span className="text-xs text-gray-600">vs {row.industry}</span>
                       </div>
-                      <span className="text-xs bg-beast-green/15 text-beast-green px-2 py-0.5 rounded-full font-semibold">{row.lift}</span>
+                      <span className="text-xs bg-beast-pink/15 text-beast-pink px-2 py-0.5 rounded-full font-semibold">{row.lift}</span>
                     </div>
                   ))}
                 </div>
@@ -158,8 +158,8 @@ export default function SunBirdPage() {
                   { client: "Williams Foods", campaign: "Back-to-School Sweepstakes", stat: "22,043 entries", href: "/work/williams-bts" },
                   { client: "Sweet Sensi", campaign: "E-Commerce Growth", stat: "500%+ MRR", href: "/work/sweet-sensi" },
                 ].map((cs) => (
-                  <Link key={cs.href} href={cs.href} className="group bg-[#1A1A1A] rounded-xl p-5 border border-[#2E2E2E] hover:border-beast-green/30 transition-colors">
-                    <p className="text-xs text-beast-green font-semibold mb-1">{cs.client}</p>
+                  <Link key={cs.href} href={cs.href} className="group bg-[#1A1A1A] rounded-xl p-5 border border-[#2E2E2E] hover:border-beast-pink/30 transition-colors">
+                    <p className="text-xs text-beast-pink font-semibold mb-1">{cs.client}</p>
                     <p className="text-sm font-semibold text-white mb-2">{cs.campaign}</p>
                     <p className="text-lg font-bold text-white">{cs.stat}</p>
                   </Link>

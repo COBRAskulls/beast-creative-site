@@ -26,10 +26,10 @@ export default function SeoAeoPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Service — SEO + AEO</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Service — SEO + AEO</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               Rank in Google.{" "}
-              <span className="text-beast-green">Get Cited by AI.</span>
+              <span className="text-beast-pink">Get Cited by AI.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Beast is one of the few agencies offering AEO (Answer Engine Optimization) — structuring content to be cited by ChatGPT, Gemini, Perplexity, and Claude alongside traditional SEO.
@@ -55,7 +55,7 @@ export default function SeoAeoPage() {
               <ul className="space-y-3">
                 {["Technical SEO audit and remediation", "Keyword and topic cluster strategy", "On-page optimization", "Schema.org structured data implementation", "FAQ markup for People Also Ask", "AEO content strategy and formatting", "Entity and relationship mapping", "Local SEO (San Antonio + regional)", "Monthly ranking reports", "Competitor gap analysis"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-green font-bold shrink-0">✓</span>
+                    <span className="text-beast-pink font-bold shrink-0">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

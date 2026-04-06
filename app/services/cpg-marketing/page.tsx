@@ -27,10 +27,10 @@ export default function CpgMarketingServicePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Service — CPG Marketing</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Service — CPG Marketing</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               CPG Marketing Services That Build Brands,{" "}
-              <span className="text-beast-green">Databases, and Retail Proof.</span>
+              <span className="text-beast-pink">Databases, and Retail Proof.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               From emerging founders to multi-brand holding companies — Beast&apos;s CPG playbook has generated over 72,000 campaign entries for food and beverage brands at a fraction of industry cost.
@@ -69,7 +69,7 @@ export default function CpgMarketingServicePage() {
                   "Retail readiness deck (Growth/Scale tiers)",
                 ].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-green font-bold shrink-0 mt-0.5">✓</span>
+                    <span className="text-beast-pink font-bold shrink-0 mt-0.5">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
@@ -82,7 +82,7 @@ export default function CpgMarketingServicePage() {
       <section className="bg-beast-black py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-3">Case Study</p>
+            <p className="section-eyebrow text-beast-pink mb-3">Case Study</p>
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Sun-Bird: 36,581 Entries. $6,000 Budget. 7.03% CTR.
             </h2>
@@ -97,7 +97,7 @@ export default function CpgMarketingServicePage() {
       <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green-muted mb-4 text-center">Pricing</p>
+            <p className="section-eyebrow text-beast-pink mb-4 text-center">Pricing</p>
             <h2 className="font-display text-3xl font-bold text-beast-black tracking-tight text-center mb-8">Starting Investment</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {[
@@ -105,9 +105,9 @@ export default function CpgMarketingServicePage() {
                 { tier: "Growth", range: "$3,000–$7,000/mo", best: "Regional brands going national", highlight: true },
                 { tier: "Scale", range: "$7,000–$20,000/mo", best: "Multi-brand holding companies" },
               ].map((p) => (
-                <div key={p.tier} className={`rounded-2xl p-6 text-center ${p.highlight ? "bg-beast-black text-white border-2 border-beast-green" : "bg-gray-50 border border-gray-100"}`}>
+                <div key={p.tier} className={`rounded-2xl p-6 text-center ${p.highlight ? "bg-beast-black text-white border-2 border-beast-pink" : "bg-gray-50 border border-gray-100"}`}>
                   <h3 className={`font-display text-xl font-bold mb-2 ${p.highlight ? "text-white" : "text-beast-black"}`}>{p.tier}</h3>
-                  <p className={`font-display text-2xl font-extrabold mb-1 ${p.highlight ? "text-beast-green" : "text-beast-black"}`}>{p.range}</p>
+                  <p className={`font-display text-2xl font-extrabold mb-1 ${p.highlight ? "text-beast-pink" : "text-beast-black"}`}>{p.range}</p>
                   <p className={`text-sm ${p.highlight ? "text-gray-400" : "text-gray-500"}`}>{p.best}</p>
                 </div>
               ))}

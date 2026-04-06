@@ -15,10 +15,10 @@ export default function PaidMediaPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Service — Paid Media</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Service — Paid Media</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               Paid Media That Pays{" "}
-              <span className="text-beast-green">You Back.</span>
+              <span className="text-beast-pink">You Back.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               AI-optimized campaigns on Facebook, Instagram, TikTok, and Google — with real-time creative testing and daily optimization. Our CPG campaigns average $0.12 CPC vs $0.28 industry standard.
@@ -44,7 +44,7 @@ export default function PaidMediaPage() {
               <ul className="space-y-3">
                 {["Facebook + Instagram ad management", "TikTok ads (organic + paid)", "Google Search + Display campaigns", "AI-powered audience segmentation", "Dynamic creative testing (A/B + multivariate)", "Daily monitoring and real-time optimization", "Retargeting and lookalike audiences", "Monthly performance reporting with revenue attribution"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-green font-bold shrink-0">✓</span>
+                    <span className="text-beast-pink font-bold shrink-0">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

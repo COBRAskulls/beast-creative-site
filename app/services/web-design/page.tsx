@@ -15,10 +15,10 @@ export default function WebDesignPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Service — Web Design & CRO</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Service — Web Design & CRO</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               Websites That{" "}
-              <span className="text-beast-green">Convert, Not Just Look Good.</span>
+              <span className="text-beast-pink">Convert, Not Just Look Good.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Mobile-first, performance-optimized, conversion-focused builds. Every page has a purpose and a next step. Lighthouse 90+ scores. Built on proven funnel architecture.
@@ -44,7 +44,7 @@ export default function WebDesignPage() {
               <ul className="space-y-3">
                 {["Marketing and landing pages", "E-commerce stores (Shopify, Next.js)", "CPG brand websites with multi-brand architecture", "Lead generation funnels", "CRO audits and optimization", "Mobile-first responsive design", "Lighthouse Performance 90+", "SEO-optimized from day one", "GA4 + conversion tracking setup"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-green font-bold shrink-0">✓</span>
+                    <span className="text-beast-pink font-bold shrink-0">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

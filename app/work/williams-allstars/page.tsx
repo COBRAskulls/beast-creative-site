@@ -18,13 +18,13 @@ export default function WilliamsAllstarsPage() {
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
               {["CPG Marketing", "Campaign Design", "Paid Social"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-green/15 text-beast-green border border-beast-green/20">{tag}</span>
+                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
             <p className="section-eyebrow text-gray-500 mb-3">Case Study — Williams Foods · 2022</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               Digital Trading Cards.{" "}
-              <span className="text-beast-green">13,660 Entries. 24 Days.</span>
+              <span className="text-beast-pink">13,660 Entries. 24 Days.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               The March Madness campaign that turned passive viewers into active collectors — and proved gamification drives CPG results.
@@ -66,7 +66,7 @@ export default function WilliamsAllstarsPage() {
             <p className="text-gray-600 leading-relaxed mb-4">
               The collect-and-win mechanic created a sense of urgency and completionism that standard sweepstakes don&apos;t achieve. Each card was tied to a recipe, reinforcing product usage while building collector behavior. The prize structure was aspirational enough to drive sharing without being off-brand.
             </p>
-            <blockquote className="border-l-4 border-beast-green pl-6 my-6">
+            <blockquote className="border-l-4 border-beast-pink pl-6 my-6">
               <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                 &quot;We built and deployed Williams a ground-up campaign: digital sneaker trading cards with signature recipes and prizes — igniting fan frenzy.&quot;
               </p>

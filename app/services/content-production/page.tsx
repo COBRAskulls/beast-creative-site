@@ -15,10 +15,10 @@ export default function ContentProductionPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Service — AI Content Production</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Service — AI Content Production</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               Content at Scale.{" "}
-              <span className="text-beast-green">Not at a Premium.</span>
+              <span className="text-beast-pink">Not at a Premium.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Recipe videos, product demos, and social content at scale — produced with AI at 90%+ lower cost than traditional production. We&apos;ve processed 900+ recipe assets for CPG clients.
@@ -44,7 +44,7 @@ export default function ContentProductionPage() {
               <ul className="space-y-3">
                 {["Recipe videos (short-form and long-form)", "Product demo and unboxing content", "Social media graphics and carousels", "AI-written captions and hashtag strategy", "Email newsletter content", "Blog posts and SEO articles", "Product photography variations (AI-enhanced)", "Seasonal campaign content batches"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-green font-bold shrink-0">✓</span>
+                    <span className="text-beast-pink font-bold shrink-0">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

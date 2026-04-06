@@ -15,10 +15,10 @@ export default function BrandingPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Service — Branding & Identity</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Service — Branding & Identity</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               Brands That Don&apos;t Need{" "}
-              <span className="text-beast-green">An Explanation.</span>
+              <span className="text-beast-pink">An Explanation.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Brand naming, visual systems, and identities built for instant recognition and long-term equity. We created Coinline — a name that required zero explanation the moment people heard it.
@@ -44,7 +44,7 @@ export default function BrandingPage() {
               <ul className="space-y-3">
                 {["Brand naming (primary + tagline)", "Logo design + variations", "Color palette with usage rules", "Typography system", "Brand voice and tone guide", "Visual identity system", "Brand standards document", "Go-to-market assets package"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-green font-bold shrink-0">✓</span>
+                    <span className="text-beast-pink font-bold shrink-0">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

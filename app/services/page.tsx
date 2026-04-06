@@ -61,7 +61,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">What We Do</p>
+            <p className="section-eyebrow text-beast-pink mb-4">What We Do</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mx-auto mb-6">
               Marketing That&apos;s Built to Perform.
             </h1>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
                     <div className="flex items-start justify-between mb-4">
                       <span className="text-2xl">{svc.icon}</span>
                       {svc.badge && (
-                        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-beast-green/10 text-beast-green-muted border border-beast-green/20">
+                        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                           {svc.badge}
                         </span>
                       )}
@@ -90,8 +90,8 @@ export default function ServicesPage() {
                     <h2 className="font-display text-xl font-bold text-beast-black mb-3">{svc.name}</h2>
                     <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">{svc.pitch}</p>
                     <div className="border-t border-gray-100 pt-4 mt-2 flex items-center justify-between">
-                      <span className="text-xs font-mono text-beast-green-muted font-semibold">{svc.stats}</span>
-                      <span className="btn-ghost-green text-sm">Learn More →</span>
+                      <span className="text-xs font-mono text-beast-pink font-semibold">{svc.stats}</span>
+                      <span className="btn-ghost-pink text-sm">Learn More →</span>
                     </div>
                   </div>
                 </Link>

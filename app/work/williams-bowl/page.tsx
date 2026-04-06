@@ -18,13 +18,13 @@ export default function WilliamsBowlPage() {
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
               {["CPG Marketing", "Paid Social", "Sweepstakes"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-green/15 text-beast-green border border-beast-green/20">{tag}</span>
+                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
             <p className="section-eyebrow text-gray-500 mb-3">Case Study — Williams Foods · 2021</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               The $1,500 Campaign That{" "}
-              <span className="text-beast-green">Proved the Model.</span>
+              <span className="text-beast-pink">Proved the Model.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Williams Bowl was Beast&apos;s entry point with Williams Foods — a lean budget that proved the sweepstakes playbook before scaling to larger campaigns.

@@ -16,7 +16,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1F0F] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-green mb-4">Let&apos;s Talk</p>
+            <p className="section-eyebrow text-beast-pink mb-4">Let&apos;s Talk</p>
             <h1 className="font-display text-5xl lg:text-7xl font-extrabold text-white tracking-tight mb-6">
               Start the Conversation.
             </h1>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                     <p className="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-1">Phone / SMS</p>
                     <a
                       href="sms:+12103320567"
-                      className="text-white hover:text-beast-green transition-colors font-medium text-lg"
+                      className="text-white hover:text-beast-pink transition-colors font-medium text-lg"
                     >
                       (210) 332-0567
                     </a>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                       "No pitch deck — just honest numbers",
                     ].map((item) => (
                       <li key={item} className="flex items-center gap-3 text-sm">
-                        <span className="text-beast-green font-bold shrink-0">✓</span>
+                        <span className="text-beast-pink font-bold shrink-0">✓</span>
                         <span className="text-gray-300">{item}</span>
                       </li>
                     ))}
