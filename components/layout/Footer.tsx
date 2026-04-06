@@ -12,7 +12,7 @@ export default function Footer() {
               <span className="text-white"> CREATIVE</span>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
-              AI-powered marketing that actually moves the needle. San Antonio&apos;s premier CPG and digital marketing agency.
+              AI-powered marketing that actually moves the needle. CPG and digital marketing for brands scaling nationally.
             </p>
             <div className="flex gap-4">
               {/* Social icons */}

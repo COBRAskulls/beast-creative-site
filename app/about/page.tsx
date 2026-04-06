@@ -85,7 +85,7 @@ export default function AboutPage() {
                 Built for Performance. Built for Scale.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                We serve ambitious brands across the US. Our specialty is CPG marketing, but our expertise spans everything a modern brand needs to compete and win.
+                Founded in San Antonio, TX and serving brands nationwide — our specialty is CPG marketing, but our expertise spans everything a modern brand needs to compete and win.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 We believe the best agencies are the ones that treat every campaign like it&apos;s their own money on the line — because the transparency we demand of ourselves is the same transparency we deliver to clients. You&apos;ll always know exactly where your budget went and what it returned.
