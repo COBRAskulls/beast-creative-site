@@ -57,11 +57,13 @@ export default function Nav() {
             <li>
               <Link href="/work" className="nav-link">Work</Link>
             </li>
-            <li className="relative">
+            <li
+              className="relative"
+              onMouseEnter={() => setServicesOpen(true)}
+              onMouseLeave={() => setServicesOpen(false)}
+            >
               <button
                 className="nav-link flex items-center gap-1"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
                 onClick={() => setServicesOpen(!servicesOpen)}
               >
                 Services
@@ -70,11 +72,8 @@ export default function Nav() {
                 </svg>
               </button>
               {servicesOpen && (
-                <div
-                  className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-[#1A1A1A] border border-[#2E2E2E] rounded-2xl shadow-2xl overflow-hidden"
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
-                >
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-64">
+                <div className="bg-[#1A1A1A] border border-[#2E2E2E] rounded-2xl shadow-2xl overflow-hidden">
                   {services.map((s) => (
                     <Link
                       key={s.href}
@@ -89,6 +88,7 @@ export default function Nav() {
                       )}
                     </Link>
                   ))}
+                </div>
                 </div>
               )}
             </li>
