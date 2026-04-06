@@ -17,7 +17,7 @@ export default function ContactPage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Let&apos;s Talk</p>
-            <h1 className="font-display text-5xl lg:text-7xl font-extrabold text-white tracking-tight mb-6">
+            <h1 className="font-display text-5xl lg:text-7xl font-extrabold text-white tracking-normal mb-6">
               Start the Conversation.
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl mx-auto">

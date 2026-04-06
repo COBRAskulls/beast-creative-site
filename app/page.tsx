@@ -185,7 +185,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Who We Are</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-6">
+              <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal mb-6">
                 We Are Beast.
               </h2>
               <p className="text-body-lead text-gray-600 mb-4">
@@ -226,7 +226,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">Proven Results</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-4">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal mb-4">
               Work That Speaks For Itself.
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
@@ -249,7 +249,7 @@ export default function HomePage() {
                         {cs.campaign}
                       </h3>
                       <div className="flex items-baseline gap-2 mb-3">
-                        <span className="font-display text-4xl font-extrabold text-beast-black tracking-tighter">
+                        <span className="font-display text-4xl font-extrabold text-beast-black tracking-normal">
                           {cs.heroStat}
                         </span>
                         <span className="text-sm text-gray-500 font-medium">{cs.heroStatLabel}</span>
@@ -283,7 +283,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">What We Do</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-normal">
               Full-Service. Full Commitment.
             </h2>
           </AnimatedSection>
@@ -312,7 +312,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">Why Beast</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
               Not Just Another Agency.{" "}
               <span className="text-beast-pink">Your Partners in Growth.</span>
             </h2>
@@ -340,7 +340,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">For CPG Brands</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6 max-w-3xl mx-auto">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-normal mb-6 max-w-3xl mx-auto">
               Is Your Brand Ready for Walmart?{" "}
               <span className="text-beast-pink">Your Marketing Should Be First.</span>
             </h2>
@@ -359,7 +359,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">How We Work</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
               From Discovery to Domination.
             </h2>
           </AnimatedSection>
@@ -395,7 +395,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Let&apos;s Talk</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
+              <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-normal mb-6">
                 Ready to Stop Guessing and Start Growing?
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">

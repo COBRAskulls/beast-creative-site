@@ -98,7 +98,7 @@ export default function CpgMarketingServicePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4 text-center">Pricing</p>
-            <h2 className="font-display text-3xl font-bold text-beast-black tracking-tight text-center mb-8">Starting Investment</h2>
+            <h2 className="font-display text-3xl font-bold text-beast-black tracking-normal text-center mb-8">Starting Investment</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {[
                 { tier: "Starter", range: "$1,500–$3,000/mo", best: "Emerging CPG brands" },

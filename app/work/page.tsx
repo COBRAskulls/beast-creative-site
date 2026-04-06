@@ -140,7 +140,7 @@ export default function WorkPage() {
                         {cs.campaign}
                       </h3>
                       <div className="flex items-baseline gap-2 mb-2">
-                        <span className="font-display text-4xl font-extrabold text-beast-black tracking-tighter">
+                        <span className="font-display text-4xl font-extrabold text-beast-black tracking-normal">
                           {cs.heroStat}
                         </span>
                         <span className="text-sm text-gray-500 font-medium">{cs.heroStatLabel}</span>
@@ -181,7 +181,7 @@ export default function WorkPage() {
       <section className="bg-beast-black py-16 lg:py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
-            <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-4">
+            <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-4">
               Ready to Be Our Next Case Study?
             </h2>
             <p className="text-gray-400 text-lg mb-8">

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Col 1: Brand */}
           <div>
-            <div className="font-display font-extrabold text-xl tracking-tight mb-4">
+            <div className="font-display font-extrabold text-xl tracking-normal mb-4">
               <span className="text-beast-green">BEAST</span>
               <span className="text-white"> CREATIVE</span>
             </div>

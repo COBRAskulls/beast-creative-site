@@ -159,7 +159,7 @@ export default function CpgPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">The Problem We Solve</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight max-w-3xl mx-auto">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal max-w-3xl mx-auto">
               Your Brand is Ready to Scale.{" "}
               <span className="text-red-500/80">Your Marketing Isn&apos;t.</span>
             </h2>
@@ -207,7 +207,7 @@ export default function CpgPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">Our CPG Services</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-normal">
               Everything a CPG Brand Needs to Go National.
             </h2>
           </AnimatedSection>
@@ -257,7 +257,7 @@ export default function CpgPage() {
             <p className="section-eyebrow text-beast-pink mb-4">Case Study — CPG Marketing</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-6">
+                <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal mb-6">
                   36,581 Contest Entries.{" "}
                   <span className="text-beast-pink">One $6,000 Budget.</span>
                 </h2>
@@ -279,7 +279,7 @@ export default function CpgPage() {
                   { value: 208431, label: "Paid Reach", sub: "national campaign" },
                 ].map((stat) => (
                   <div key={stat.label} className="bg-white rounded-2xl p-6 border border-gray-100 text-center">
-                    <div className="font-display text-3xl font-extrabold text-beast-black tracking-tighter mb-1">
+                    <div className="font-display text-3xl font-extrabold text-beast-black tracking-normal mb-1">
                       {stat.prefix}{stat.value.toLocaleString()}{stat.suffix}
                     </div>
                     <div className="text-xs font-semibold uppercase tracking-widest text-beast-pink">{stat.label}</div>
@@ -297,7 +297,7 @@ export default function CpgPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">The Roadmap</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-normal">
               Three Stages. One Direction: National.
             </h2>
           </AnimatedSection>
@@ -352,7 +352,7 @@ export default function CpgPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">Investment</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
               Transparent Pricing. No Surprises.
             </h2>
             <p className="text-gray-500 mt-4 text-lg">Ad spend is client-direct to platforms. Campaign production quoted separately.</p>
@@ -371,7 +371,7 @@ export default function CpgPage() {
                     {plan.tier}
                   </h3>
                   <div className="flex items-baseline gap-1 mb-2">
-                    <span className={`font-display text-3xl font-extrabold tracking-tight ${plan.highlight ? "text-beast-pink" : "text-beast-black"}`}>
+                    <span className={`font-display text-3xl font-extrabold tracking-normal ${plan.highlight ? "text-beast-pink" : "text-beast-black"}`}>
                       {plan.price}
                     </span>
                     <span className={`text-sm ${plan.highlight ? "text-gray-400" : "text-gray-500"}`}>{plan.period}</span>
@@ -399,7 +399,7 @@ export default function CpgPage() {
       <section className="bg-[#F5F5F5] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
               Two Types of CPG Brands. Both Welcome.
             </h2>
           </AnimatedSection>
@@ -449,7 +449,7 @@ export default function CpgPage() {
           <AnimatedSection>
             <div className="max-w-3xl">
               <p className="section-eyebrow text-beast-pink mb-4">Our Proprietary AI</p>
-              <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-6">
+              <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-6">
                 Meet Sagundo — Beast&apos;s In-House AI Agent.
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
@@ -468,7 +468,7 @@ export default function CpgPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-10">
             <p className="section-eyebrow text-beast-pink mb-4">Let&apos;s Talk</p>
-            <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-4">
+            <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-4">
               Let&apos;s Talk About Your Brand.
             </h2>
             <p className="text-gray-400 text-lg">
@@ -486,7 +486,7 @@ export default function CpgPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">FAQ</p>
-            <h2 className="font-display text-4xl font-bold text-beast-black tracking-tight">
+            <h2 className="font-display text-4xl font-bold text-beast-black tracking-normal">
               Common Questions
             </h2>
           </AnimatedSection>

@@ -104,7 +104,7 @@ export default function ServicesPage() {
       <section className="bg-beast-black py-16 lg:py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
-            <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-4">Not Sure Where to Start?</h2>
+            <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-4">Not Sure Where to Start?</h2>
             <p className="text-gray-400 text-lg mb-8">
               Book a free 15-minute strategy call. We&apos;ll tell you exactly which service would move the needle most for your brand — no pitch, no commitment.
             </p>

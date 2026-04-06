@@ -81,7 +81,7 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Our Story</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight mb-6">
+              <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal mb-6">
                 San Antonio Roots. National Reach.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
@@ -103,7 +103,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">What We Stand For</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-normal">
               Three Values. No Exceptions.
             </h2>
           </AnimatedSection>
@@ -128,7 +128,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">The Team</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-tight">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
               The People Behind the Results.
             </h2>
           </AnimatedSection>
@@ -155,7 +155,7 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Our Proprietary AI</p>
-              <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-4">
+              <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-4">
                 Sagundo: Beast&apos;s AI Agent
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
@@ -173,7 +173,7 @@ export default function AboutPage() {
       <section className="bg-beast-black py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
-            <h2 className="font-display text-4xl font-bold text-white tracking-tight mb-6">
+            <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-6">
               Ready to Work With Us?
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto mb-8">

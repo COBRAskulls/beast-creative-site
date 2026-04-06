@@ -24,7 +24,7 @@ export default function StatCounter({
 
   return (
     <div ref={ref} className="flex flex-col items-center text-center px-6">
-      <div className="font-display text-4xl lg:text-5xl xl:text-6xl font-extrabold text-beast-yellow tracking-tighter leading-none">
+      <div className="font-display text-4xl lg:text-5xl xl:text-6xl font-extrabold text-beast-yellow tracking-wide leading-none">
         {prefix}
         {inView ? (
           <CountUp
