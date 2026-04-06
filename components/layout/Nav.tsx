@@ -11,6 +11,7 @@ const caseStudies = [
   { name: "Williams Bowl", href: "/work/williams-bowl", stat: "6,020" },
   { name: "Sweet Sensi", href: "/work/sweet-sensi", stat: "500%+" },
   { name: "Coinline", href: "/work/coinline", stat: "Branding" },
+  { name: "Pioneer", href: "/work/pioneer", stat: "ROAS" },
 ];
 
 const services = [

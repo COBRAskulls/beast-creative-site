@@ -1,127 +1,171 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import StatCounter from "@/components/ui/StatCounter";
+import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 
 export const metadata: Metadata = {
-  title: "Williams All-Stars March Madness Case Study | Beast Creative Agency",
+  title: "Williams All-Stars March Madness Campaign | 13,660 Entries in 24 Days | Beast Creative",
   description:
-    "Digital trading card campaign generated 13,660 entries in 24 days for Williams Foods. A gamified March Madness mechanic that created repeat engagement and brand loyalty.",
+    "How Beast Creative Agency designed a digital trading card collection campaign for Williams Foods that generated 13,660 entries, 200,475 reach, and a 9.5% email click rate across a 24-day March Madness window.",
 };
-
-const results = [
-  { value: 13660, label: "Total Entries", sublabel: "in 24 days" },
-  { value: 200475, label: "Total Reach", sublabel: "campaign total" },
-  { value: 3273, label: "Link Clicks", sublabel: "direct" },
-  { value: 8, label: "Trading Cards", sublabel: "unique designs" },
-];
 
 export default function WilliamsAllstarsPage() {
   return (
     <>
-      {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
-              {["CPG Marketing", "Campaign Design", "Paid Social"].map((tag) => (
+              {["CPG Marketing", "Sweepstakes", "Creative Campaign", "Paid Social", "Email Marketing"].map((tag) => (
                 <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
             <p className="section-eyebrow text-gray-500 mb-3">Case Study — Williams Foods · 2022</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               Digital Trading Cards.{" "}
-              <span className="text-beast-pink">13,660 Entries. 24 Days.</span>
+              <span className="text-beast-pink">Real Fan Frenzy.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
-              The March Madness campaign that turned passive viewers into active collectors — and proved gamification drives CPG results.
+              13,660 entries across 8 card drops in 24 days. 9.5% email click rate — 11x the industry average.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="bg-[#111111] py-12 lg:py-16">
+      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {results.map((r) => (
-              <StatCounter key={r.label} {...r} />
-            ))}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
+            <StatCounter value={13660} label="Total Entries" sublabel="across 8 card drops" />
+            <StatCounter value={200475} label="Total Reach" sublabel="Facebook + Instagram" />
+            <StatCounter value={9.5} suffix="%" decimals={1} label="Email Click Rate" sublabel="vs 0.82% industry avg" />
+            <StatCounter value={24} label="Day Campaign" sublabel="March Madness window" />
           </div>
         </div>
       </section>
 
-      {/* CONTENT */}
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Main content */}
-            <div className="lg:col-span-2 space-y-10">
+            <div className="lg:col-span-2 space-y-12">
+
               <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Brief</h2>
-                <p className="text-gray-600 leading-relaxed">
-                  Williams Foods needed a March Madness campaign that would break through the noise and generate genuine consumer engagement — not just impressions. The brand wanted something fans would actively participate in and share, while building a consumer database for future marketing use.
-                </p>
-              </AnimatedSection>
-              <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Our Solution</h2>
+                <p className="section-eyebrow text-beast-pink mb-2">The Brief</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Make March Madness Mean Something for Williams Fans.</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Beast designed a <strong className="text-beast-black">digital sneaker trading card collection mechanic</strong> — 8 unique Williams-branded collector cards featuring signature recipes and redeemable for real prizes: custom Williams sneakers, a Williams cooler, and a custom grill. Consumers collected cards by engaging with the campaign across digital touchpoints across a 24-day window.
+                  Williams Foods came to Beast with a clear seasonal opportunity and a creative challenge: March Madness is one of the biggest cultural moments of the year in American households. How do you tap into that energy authentically for a seasoning brand, drive meaningful consumer engagement, and build a first-party database at the same time?
                 </p>
-                <p className="text-gray-600 leading-relaxed">
-                  This gamified approach transformed passive viewers into active participants, driving repeat engagement and social sharing organically.
-                </p>
-              </AnimatedSection>
-              <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Why It Worked</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  The collect-and-win mechanic created a sense of urgency and completionism that standard sweepstakes don&apos;t achieve. Each card was tied to a recipe, reinforcing product usage while building collector behavior. The prize structure was aspirational enough to drive sharing without being off-brand.
+                  The previous Williams campaigns had proven the model — Beast&apos;s sweepstakes architecture reliably outperformed industry benchmarks. But this time the brief pushed further. The client wanted something collectible, something that rewarded loyal fans across the full tournament window, and something that made Williams feel like a cultural participant in March Madness.
                 </p>
-                <blockquote className="border-l-4 border-beast-pink pl-6 my-6">
+                <div className="bg-white rounded-xl p-5 border border-gray-100">
+                  <p className="font-display font-bold text-beast-black text-sm mb-2">The Challenge</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">Standard sweepstakes create a single touchpoint and then go cold. Williams needed a mechanism that brought fans back multiple times across the 24-day window, rewarded participation, and made the brand feel genuinely fun to interact with — not just transactional.</p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Idea</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-6">Take It Back to Where Sneakers and Trading Cards Were the Culture.</h2>
+                <div className="space-y-6">
+                  {[
+                    { step: "1", label: "The Creative Concept", detail: "Beast's answer was rooted in nostalgia — the same cultural territory that makes March Madness resonate. Digital sneaker trading cards: custom Williams-branded Chuck Taylor-style sneakers, each featuring a different Williams seasoning flavor, designed as collectible digital trading cards that fans could unlock over the course of the campaign. Basketball and sneaker culture are deeply intertwined — it's authentic to the March Madness moment." },
+                    { step: "2", label: "The Mechanic — 8 Card Drops", detail: "Every entry earned a digital trading card — a unique, downloadable collectible. One new card dropped every three days across 8 windows: Chili, Spicy Wings, Sloppy Joe, Spaghetti, Gravy, Taco, Meatloaf, and Tex-Mex Chili. Each card window was a new entry opportunity. The more cards a fan collected, the more times they entered — driving repeat engagement and a sense of genuine progression through the campaign." },
+                    { step: "3", label: "The Prize Architecture", detail: "Grand Prize (1 winner): $500 gift card, custom Williams sneakers (winner's choice from 8 designs), physical pack of all 8 Williams trading cards printed like real cards, winner's favorite basketball team's jersey, and Williams Seasonings product bundle. Superfan Prizes (25 winners): selected based on social media engagement throughout the campaign — a deliberate mechanic that incentivized shares, comments, and organic social amplification beyond the entry form." },
+                    { step: "4", label: "Email Strategy", detail: "Using Constant Contact, Beast deployed email campaigns to the growing Williams subscriber list to announce each new card release and drive repeat traffic. Total sends: 26,413. Open rate: 29.1% (vs. 24% industry avg). Click rate: 9.5% (vs. 0.82% industry avg — 11.6x the benchmark). When Beast sent an email announcing a new card drop, nearly 1 in 10 recipients clicked through immediately." },
+                  ].map((item) => (
+                    <div key={item.step} className="flex gap-4">
+                      <span className="w-8 h-8 rounded-full bg-beast-pink/10 border border-beast-pink/20 text-beast-pink font-display font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">{item.step}</span>
+                      <div>
+                        <p className="font-display font-bold text-beast-black mb-1">{item.label}</p>
+                        <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Results</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">24 Days. 13,660 Fans. A Database That Belongs to Williams.</h2>
+                <div className="overflow-hidden rounded-xl border border-gray-100 mb-6">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-beast-black">
+                        <th className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
+                        <th className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Result</th>
+                        <th className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">vs Benchmark</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { metric: "Total Entries", result: "13,660", benchmark: "—" },
+                        { metric: "Total Reach", result: "200,475", benchmark: "—" },
+                        { metric: "Total Link Clicks", result: "3,273", benchmark: "—" },
+                        { metric: "Email Open Rate", result: "29.1%", benchmark: "+21% vs 24% avg" },
+                        { metric: "Email Click Rate", result: "9.5%", benchmark: "11.6x vs 0.82% avg" },
+                        { metric: "Email Total Sends", result: "26,413", benchmark: "—" },
+                        { metric: "Website Sessions", result: "6,399", benchmark: "—" },
+                        { metric: "New Website Users", result: "4,632", benchmark: "90.4% of all users" },
+                        { metric: "Superfan Winners", result: "25", benchmark: "—" },
+                      ].map((row, i) => (
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                          <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
+                          <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.result}</td>
+                          <td className="px-4 py-3 text-right text-beast-pink text-xs font-semibold">{row.benchmark}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <blockquote className="border-l-4 border-beast-pink pl-6">
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
-                    &quot;We built and deployed Williams a ground-up campaign: digital sneaker trading cards with signature recipes and prizes — igniting fan frenzy.&quot;
+                    &quot;Working with Beast was a game changer. Their custom social media campaign didn&apos;t just build awareness — it delivered over 13,000 real email subscribers.&quot;
                   </p>
-                  <footer className="mt-3 text-sm text-gray-500">— Kyle Ossinger, Creative Director</footer>
+                  <footer className="mt-3 text-sm text-gray-500">— Williams Foods / C.H. Guenther &amp; Son</footer>
                 </blockquote>
               </AnimatedSection>
+
             </div>
 
-            {/* Sidebar */}
             <div className="space-y-6">
               <AnimatedSection>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-5">Campaign Overview</h3>
                   {[
                     { label: "Client", value: "Williams Foods" },
-                    { label: "Industry", value: "CPG / Food & Beverage" },
-                    { label: "Year", value: "2022" },
-                    { label: "Campaign", value: "March Madness Trading Cards" },
+                    { label: "Campaign", value: "All-Stars — March Madness" },
+                    { label: "Dates", value: "Mar 14 – Apr 6, 2022" },
                     { label: "Duration", value: "24 days" },
-                    { label: "Result", value: "13,660 entries" },
+                    { label: "Card Drops", value: "8 unique designs" },
+                    { label: "Platforms", value: "Facebook, Instagram" },
+                    { label: "Services", value: "Strategy, Creative Design, Landing Page, Paid Social, Email Marketing" },
                   ].map((item) => (
-                    <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0">
-                      <span className="text-sm text-gray-500">{item.label}</span>
-                      <span className="text-sm font-semibold text-beast-black text-right max-w-[60%]">{item.value}</span>
+                    <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
+                      <span className="text-sm text-gray-500 shrink-0">{item.label}</span>
+                      <span className="text-sm font-semibold text-beast-black text-right">{item.value}</span>
                     </div>
                   ))}
                 </div>
               </AnimatedSection>
-
               <AnimatedSection delay={0.1}>
                 <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Campaign Mechanics</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Email Performance</h3>
                   {[
-                    { metric: "Format", beast: "Trading Cards", detail: "8 unique designs" },
-                    { metric: "Prizes", beast: "Sneakers + Grill", detail: "aspirational rewards" },
-                    { metric: "Entries", beast: "13,660", detail: "24-day window" },
+                    { metric: "Open Rate", beast: "29.1%", industry: "24%", lift: "+21%" },
+                    { metric: "Click Rate", beast: "9.5%", industry: "0.82%", lift: "11.6x" },
+                    { metric: "Total Sends", beast: "26,413", industry: "—", lift: "—" },
                   ].map((row) => (
-                    <div key={row.metric} className="mb-4">
-                      <p className="text-xs text-gray-600 uppercase tracking-widest mb-1">{row.metric}</p>
-                      <div className="flex items-center gap-3">
-                        <span className="font-display font-bold text-beast-pink text-lg">{row.beast}</span>
-                        <span className="text-xs text-gray-600">{row.detail}</span>
+                    <div key={row.metric} className="mb-4 last:mb-0 pb-4 last:pb-0 border-b border-white/5 last:border-0">
+                      <div className="flex justify-between items-center mb-1">
+                        <span className="text-xs text-gray-500 uppercase tracking-widest">{row.metric}</span>
+                        <span className="text-xs font-bold text-beast-pink">{row.lift}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="font-display font-bold text-white text-lg">{row.beast}</span>
+                        <span className="text-xs text-gray-600 self-end pb-0.5">{row.industry !== "—" ? `avg: ${row.industry}` : ""}</span>
                       </div>
                     </div>
                   ))}
@@ -137,8 +181,9 @@ export default function WilliamsAllstarsPage() {
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-white mb-4">Let&apos;s Build Your Story →</h2>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <h2 className="font-display text-3xl font-bold text-white mb-4">Ready to Turn Your Next Campaign Into a Collector&apos;s Item?</h2>
+            <p className="text-gray-400 mb-8">Beast builds campaign mechanics that keep fans coming back. Let&apos;s build something your audience will actually want to collect.</p>
+            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Start My Campaign →</Link>
           </AnimatedSection>
         </div>
       </section>

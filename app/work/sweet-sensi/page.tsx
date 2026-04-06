@@ -1,137 +1,172 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import StatCounter from "@/components/ui/StatCounter";
+import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 
 export const metadata: Metadata = {
-  title: "Sweet Sensi E-Commerce Growth Case Study | 500%+ MRR | Beast Creative",
+  title: "Sweet Sensi CBD E-Commerce | 500%+ MRR Growth | Beast Creative Agency",
   description:
-    "How Beast Creative Agency drove 500%+ MRR growth for Sweet Sensi CBD brand through SEO + social strategy in a highly regulated industry.",
+    "Beast Creative Agency grew Sweet Sensi's monthly recurring revenue by over 500% through a precision SEO and social media strategy in the highly regulated CBD industry — without relying on traditional paid advertising.",
 };
-
-const results = [
-  { value: 500, suffix: "%+", label: "MRR Growth", sublabel: "e-commerce" },
-  { value: 9.5, suffix: "%", decimals: 1, label: "Email CTR", sublabel: "vs 0.82% avg" },
-  { value: 29.1, suffix: "%", decimals: 1, label: "Email Open Rate", sublabel: "vs 24% avg" },
-];
 
 export default function SweetSensiPage() {
   return (
     <>
-      {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
-              {["SEO", "Social Media", "E-Commerce"].map((tag) => (
+              {["SEO", "Social Media Marketing", "E-Commerce", "CBD Industry", "Content Strategy"].map((tag) => (
                 <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
             <p className="section-eyebrow text-gray-500 mb-3">Case Study — Sweet Sensi · 2023–2024</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-              <span className="text-beast-pink">500%+</span>{" "}
-              MRR Growth in a Regulated Industry.
+              500% MRR Growth.{" "}
+              <span className="text-beast-pink">In the Industry That Bans Most Ads.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
-              The SEO + social combo that cracked CBD marketing — and proved the compounding effect of two channels working together.
+              CBD brands can&apos;t run Google or Facebook ads. So Beast built an organic engine instead — and grew Sweet Sensi&apos;s monthly recurring revenue by over 500%.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="bg-[#111111] py-12 lg:py-16">
+      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {results.map((r) => (
-              <StatCounter key={r.label} {...r} />
-            ))}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
+            <StatCounter value={500} suffix="%+" label="MRR Growth" sublabel="e-commerce revenue" />
+            <StatCounter value={9.5} suffix="%" decimals={1} label="Email Click Rate" sublabel="vs 0.82% industry avg" />
+            <StatCounter value={2} label="Channels Combined" sublabel="SEO + Social as one system" />
+            <StatCounter value={0} label="Paid Ad Dependency" sublabel="built to work without them" />
           </div>
         </div>
       </section>
 
-      {/* CONTENT */}
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Main content */}
-            <div className="lg:col-span-2 space-y-10">
+            <div className="lg:col-span-2 space-y-12">
+
               <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Challenge</h2>
-                <p className="text-gray-600 leading-relaxed">
-                  Sweet Sensi needed to grow e-commerce MRR in the highly regulated CBD industry — where most ad platforms restrict or ban direct advertising. Traditional paid social wasn&apos;t a viable primary channel. They needed a strategy that worked within the rules and still scaled.
-                </p>
-              </AnimatedSection>
-              <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Our Solution</h2>
+                <p className="section-eyebrow text-beast-pink mb-2">The Brief</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Grow Sales in an Industry Where Most Marketing Roads Are Closed.</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Beast developed a two-channel strategy that worked within CBD advertising constraints:
+                  Sweet Sensi came to Beast with a real problem — one that most CBD brands face and most agencies don&apos;t know how to solve. Their products were good. Their brand was compelling. But the CBD industry operates under some of the most restrictive advertising conditions in digital marketing.
                 </p>
-                <ul className="space-y-4">
-                  {[
-                    { title: "Rigorous SEO", desc: "Technical optimization + content strategy targeting CBD product and wellness keywords that convert. Built domain authority through compliant content." },
-                    { title: "Scroll-Stopping Social Campaigns", desc: "Organic and compliant paid social content that built community and drove traffic — within platform rules." },
-                    { title: "Pairing Test", desc: "Systematic A/B testing proved the SEO + social combo had a compounding effect — each channel amplified the other." },
-                  ].map((item) => (
-                    <li key={item.title} className="flex gap-4">
-                      <span className="text-beast-pink font-bold mt-1 shrink-0">→</span>
-                      <div>
-                        <strong className="text-beast-black">{item.title}:</strong>{" "}
-                        <span className="text-gray-600">{item.desc}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Google won&apos;t run CBD ads. Facebook and Instagram ban most direct CBD product promotion. Traditional paid acquisition channels — the backbone of e-commerce growth for almost every other product category — were largely off the table.
+                </p>
+                <div className="bg-white rounded-xl p-5 border border-gray-100">
+                  <p className="font-display font-bold text-beast-black text-sm mb-2">The Real Opportunity</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">The CBD market is one of the fastest-growing wellness categories in the US — but the brands that win aren&apos;t the ones with the biggest ad budgets. They&apos;re the ones that show up where consumers are looking, build genuine community, and earn trust in a category where consumers are understandably cautious. Beast had to build a marketing engine that worked without the most common tools. That constraint produced a strategy more durable, more cost-efficient, and more compounding than a standard paid approach would have been.</p>
+                </div>
               </AnimatedSection>
+
               <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Results</h2>
+                <p className="section-eyebrow text-beast-pink mb-2">The Strategy</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-6">When You Can&apos;t Buy Attention, You Have to Earn It.</h2>
+                <div className="space-y-6">
+                  {[
+                    { step: "1", label: "The Diagnosis", detail: "Beast started with a full audit of Sweet Sensi's digital presence: website technical health, content depth, keyword positioning, social media performance, and conversion funnel from traffic to purchase. The audit revealed the pattern Beast sees across most small e-commerce brands: significant organic search traffic being left on the table, social media presence without a clear content strategy, no tested messaging framework, and two channels that could work — SEO and organic social — being used without coordination." },
+                    { step: "2", label: "The SEO Foundation", detail: "Beast built Sweet Sensi's SEO strategy around one core insight: CBD consumers are searchers, not browsers. When someone wants to try CBD for sleep, anxiety, pain, or wellness, they search. They research. They read. Beast delivered: technical optimization (speed, mobile, structured data), a keyword strategy around high-purchase-intent queries, content development building trust and depth, and domain authority signals that told search engines Sweet Sensi was legitimate — not a fly-by-night operation in a category full of low-quality players." },
+                    { step: "3", label: "The Social Media Strategy", detail: "Social media for a CBD brand requires a completely different playbook. Direct product promotion is restricted on most platforms. Beast developed a content strategy built around wellness content that genuinely served Sweet Sensi's audience — sleep, stress, recovery — without hitting CBD advertising policy tripwires. Brand storytelling that built the trust CBD consumers need before they buy. User-generated content amplification within platform guidelines. Community building that converts, not just vanity follower counts." },
+                    { step: "4", label: "The A/B Testing Engine", detail: "Beast ran continuous A/B tests across both channels — identifying the combinations of message, creative, and audience that drove actual purchases rather than just traffic. Which SEO content drove the highest purchase-intent traffic. Which social content formats drove website clicks. Which product page variations converted best. Which email follow-up sequences turned site visitors into buyers. This rigorous, iterative approach is what separated Beast's results from what most agencies deliver." },
+                    { step: "5", label: "The Compounding Effect", detail: "The most important discovery was what Beast came to call the SEO + Social combo effect. SEO content that ranks and drives traffic also gets shared on social. Social content builds brand awareness that increases branded search volume, which improves SEO signals. Email capture from SEO-driven traffic gets nurtured through social retargeting. Brand trust built through social content increases the conversion rate of organic search visitors. Each channel amplified the other. The longer the system ran, the more efficient it got." },
+                  ].map((item) => (
+                    <div key={item.step} className="flex gap-4">
+                      <span className="w-8 h-8 rounded-full bg-beast-pink/10 border border-beast-pink/20 text-beast-pink font-display font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">{item.step}</span>
+                      <div>
+                        <p className="font-display font-bold text-beast-black mb-1">{item.label}</p>
+                        <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Results</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Over 500% MRR Growth. In the Industry That Said It Couldn&apos;t Be Done With Ads.</h2>
+                <div className="overflow-hidden rounded-xl border border-gray-100 mb-6">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-beast-black">
+                        <th className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
+                        <th className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Result</th>
+                        <th className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">vs Benchmark</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { metric: "E-Commerce MRR Growth", result: "+500%+", benchmark: "—" },
+                        { metric: "Email Click Rate", result: "9.5%", benchmark: "11.6x vs 0.82% avg" },
+                        { metric: "Strategy", result: "SEO + Social", benchmark: "dual-channel compounding" },
+                        { metric: "Paid Ad Dependency", result: "0%", benchmark: "built around organic" },
+                      ].map((row, i) => (
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                          <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
+                          <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.result}</td>
+                          <td className="px-4 py-3 text-right text-beast-pink text-xs font-semibold">{row.benchmark}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="bg-[#111111] rounded-xl p-5 mb-6">
+                  <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-2">The Durability Advantage</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">Paid advertising stops working the moment you stop paying. A well-executed SEO strategy keeps generating organic traffic and revenue for years after the initial investment. Sweet Sensi&apos;s content rankings, domain authority, and social community are assets that continue to compound — making each future dollar of marketing investment more efficient than the last. Beast built Sweet Sensi an engine, not a campaign. That&apos;s the difference.</p>
+                </div>
+
                 <blockquote className="border-l-4 border-beast-pink pl-6">
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
-                    &quot;Beast Creative Agency sent Sweet Sensi&apos;s sales through the roof and grew their MRR over 500%. Rigorous testing proved the SEO + social combo prints money.&quot;
+                    &quot;Beast improved our monthly recurring revenue — it jumped by 566%, thanks to their SEO and social media strategy. They didn&apos;t just drive traffic — they brought the right people to us consistently. It&apos;s the most impactful marketing investment we&apos;ve made.&quot;
                   </p>
-                  <footer className="mt-3 text-sm text-gray-500">— Rubi Navarro, Social Media Manager</footer>
+                  <footer className="mt-3 text-sm text-gray-500">— Sweet Sensi</footer>
                 </blockquote>
               </AnimatedSection>
+
             </div>
 
-            {/* Sidebar */}
             <div className="space-y-6">
               <AnimatedSection>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-5">Campaign Overview</h3>
                   {[
                     { label: "Client", value: "Sweet Sensi" },
-                    { label: "Industry", value: "CBD / E-Commerce" },
-                    { label: "Year", value: "2023–2024" },
-                    { label: "Services", value: "SEO, Content, Social Media" },
-                    { label: "Challenge", value: "Restricted ad platforms" },
+                    { label: "Industry", value: "CBD / Wellness / E-Commerce" },
+                    { label: "Years", value: "2023–2024" },
+                    { label: "Challenge", value: "Growth without paid ads (CBD restrictions)" },
+                    { label: "Services", value: "SEO, Technical SEO, Content, Social Media, A/B Testing, CRO" },
                     { label: "Result", value: "500%+ MRR growth" },
                   ].map((item) => (
-                    <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0">
-                      <span className="text-sm text-gray-500">{item.label}</span>
-                      <span className="text-sm font-semibold text-beast-black text-right max-w-[60%]">{item.value}</span>
+                    <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
+                      <span className="text-sm text-gray-500 shrink-0">{item.label}</span>
+                      <span className="text-sm font-semibold text-beast-black text-right">{item.value}</span>
                     </div>
                   ))}
                 </div>
               </AnimatedSection>
-
               <AnimatedSection delay={0.1}>
                 <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">vs Industry Benchmark</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Channel Performance</h3>
                   {[
+                    { metric: "MRR Growth", beast: "566%", industry: "baseline", lift: "5.66x" },
                     { metric: "Email CTR", beast: "9.5%", industry: "0.82%", lift: "11.6x" },
-                    { metric: "Email Open", beast: "29.1%", industry: "24%", lift: "21% higher" },
-                    { metric: "MRR", beast: "500%+", industry: "baseline", lift: "5x growth" },
+                    { metric: "Paid Ad Spend", beast: "$0", industry: "standard", lift: "∞ ROAS" },
                   ].map((row) => (
-                    <div key={row.metric} className="mb-4">
-                      <p className="text-xs text-gray-600 uppercase tracking-widest mb-1">{row.metric}</p>
-                      <div className="flex items-center gap-3">
-                        <span className="font-display font-bold text-beast-pink text-xl">{row.beast}</span>
-                        <span className="text-xs text-gray-600">vs {row.industry}</span>
+                    <div key={row.metric} className="mb-4 last:mb-0 pb-4 last:pb-0 border-b border-white/5 last:border-0">
+                      <div className="flex justify-between items-center mb-1">
+                        <span className="text-xs text-gray-500 uppercase tracking-widest">{row.metric}</span>
+                        <span className="text-xs font-bold text-beast-pink">{row.lift}</span>
                       </div>
-                      <span className="text-xs bg-beast-pink/15 text-beast-pink px-2 py-0.5 rounded-full font-semibold">{row.lift}</span>
+                      <div className="flex justify-between">
+                        <span className="font-display font-bold text-white text-lg">{row.beast}</span>
+                        <span className="text-xs text-gray-600 self-end pb-0.5">{row.industry}</span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -141,12 +176,13 @@ export default function SweetSensiPage() {
         </div>
       </section>
 
-      <RelatedCaseStudies related={["sun-bird", "williams-bts", "coinline"]} />
+      <RelatedCaseStudies related={["coinline", "sun-bird", "williams-bts"]} />
 
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-white mb-4">Let&apos;s Build Your Story →</h2>
+            <h2 className="font-display text-3xl font-bold text-white mb-4">Ready to Build Revenue That Doesn&apos;t Stop When the Budget Does?</h2>
+            <p className="text-gray-400 mb-8">Whether you&apos;re in a restricted industry or just tired of paying for traffic you don&apos;t own — Beast builds marketing assets that compound over time.</p>
             <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
           </AnimatedSection>
         </div>

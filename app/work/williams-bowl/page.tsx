@@ -1,128 +1,185 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import StatCounter from "@/components/ui/StatCounter";
+import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 
 export const metadata: Metadata = {
-  title: "Williams Bowl NFL Case Study | Beast Creative Agency",
+  title: "Williams Bowl 2021 NFL Campaign | 6,020 Entries, $1,500 Budget | Beast Creative",
   description:
-    "The $1,500 Williams Bowl campaign that proved the sweepstakes model — 6,020 entries, 872 new page likes, $0.16 CPC.",
+    "How Beast Creative Agency launched the Williams Bowl — a 4-week NFL-style bracket sweepstakes for Williams Foods that generated 6,020 entries, 872 new Facebook followers, and proved the CPG sweepstakes model on a $1,500 budget.",
 };
-
-const results = [
-  { value: 6020, label: "Total Entries", sublabel: "NFL season" },
-  { value: 1500, prefix: "$", label: "Ad Budget", sublabel: "proof-of-concept" },
-  { value: 0.16, prefix: "$", decimals: 2, label: "CPC", sublabel: "vs $0.28 avg" },
-  { value: 872, label: "New Page Likes", sublabel: "Facebook" },
-];
 
 export default function WilliamsBowlPage() {
   return (
     <>
-      {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
-              {["CPG Marketing", "Paid Social", "Sweepstakes"].map((tag) => (
+              {["CPG Marketing", "Campaign Design", "Paid Social", "Consumer Data"].map((tag) => (
                 <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
             <p className="section-eyebrow text-gray-500 mb-3">Case Study — Williams Foods · 2021</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-              The $1,500 Campaign That{" "}
-              <span className="text-beast-pink">Proved the Model.</span>
+              The First Campaign.{" "}
+              <span className="text-beast-pink">The One That Proved Everything.</span>
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
-              Williams Bowl was Beast&apos;s entry point with Williams Foods — a lean budget that proved the sweepstakes playbook before scaling to larger campaigns.
+              6,020 entries on a $1,500 ad budget. $0.16 CPC. The proof-of-concept that launched an entire campaign series.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="bg-[#111111] py-12 lg:py-16">
+      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {results.map((r) => (
-              <StatCounter key={r.label} {...r} />
-            ))}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
+            <StatCounter value={6020} label="Total Entries" sublabel="on $1,500 budget" />
+            <StatCounter value={0.16} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" />
+            <StatCounter value={872} label="New Page Likes" sublabel="Facebook growth" />
+            <StatCounter value={4} label="Rounds Played" sublabel="bracket mechanic" />
           </div>
         </div>
       </section>
 
-      {/* CONTENT */}
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Main content */}
-            <div className="lg:col-span-2 space-y-10">
+            <div className="lg:col-span-2 space-y-12">
+
               <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Brief</h2>
+                <p className="section-eyebrow text-beast-pink mb-2">The Brief</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">NFL Season. Williams Seasonings. Let&apos;s Make It a Thing.</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Williams Foods wanted to test whether a digital sweepstakes mechanic could drive measurable consumer engagement during the NFL season — on a tight $1,500 budget. No guarantees. No precedent. Just a hypothesis that needed proving.
+                  This was the origin. Before the 22,000-entry back-to-school campaign. Before the 13,000-entry March Madness trading card collection. Before Beast had a thick CPG case study to point at — this was the campaign that started it all.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
-                  This was Beast&apos;s first campaign with Williams Foods — the one that opened the door to everything that followed.
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Williams Foods came to Beast with a modest budget and a clear opportunity: NFL season is the biggest food moment of the year. Tailgating, game day spreads, chili cook-offs, wing nights — Williams seasonings belong in every single one of those moments. The question was how to connect the brand to the cultural energy of the NFL in a way that felt authentic and drove real consumer engagement.
                 </p>
+                <div className="bg-white rounded-xl p-5 border border-gray-100">
+                  <p className="font-display font-bold text-beast-black text-sm mb-2">The Constraint</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">A $1,500 total ad budget. For the Beast team, this wasn&apos;t a limitation — it was a challenge to prove that creative mechanics could do what raw ad spend alone couldn&apos;t. The Williams Bowl would live or die on the strength of the concept, not the size of the media buy.</p>
+                </div>
               </AnimatedSection>
+
               <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Our Solution</h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  A football-season themed sweepstakes campaign tied to Williams Bowl — a Williams Foods branded NFL watching experience. Beast built the entry mechanic, ad creative, and targeting strategy, then executed with real-time optimization.
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  The campaign was designed to be lean: minimal production cost, maximum efficiency. Every dollar went to reach and entry volume.
-                </p>
+                <p className="section-eyebrow text-beast-pink mb-2">The Idea</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-6">16 Seasonings Enter. One Champion Emerges.</h2>
+                <div className="space-y-6">
+                  {[
+                    { step: "1", label: "The Concept: Williams Bowl", detail: "Beast designed the Williams Bowl as a four-round bracket tournament modeled directly on the NFL playoff structure. The 16 Williams seasoning products were seeded as \"teams\" and fans voted on head-to-head matchups each week — advancing their favorites through the bracket toward the Williams Bowl championship. Unlike a standard sweepstakes where you enter once and wait, the Williams Bowl gave fans a reason to come back four times." },
+                    { step: "2", label: "The Bracket", detail: "Wildcard Round: OG Chili vs. OG Taco, Tex Mex Chili vs. Brown Gravy, Spaghetti vs. Spicy Wing, Chipotle Chili vs. Sloppy Joe, Meatloaf vs. Country Gravy, Tex Mex Taco vs. White Chicken Chili. Divisional → Championship → Williams Bowl Grand Prize. Final matchup: OG Chili vs. Tex Mex Taco. The people spoke." },
+                    { step: "3", label: "The Prize Structure", detail: "Round-specific prizes escalated with the stakes. Wildcard: $25 Amazon gift card + Williams football + Williams gift pack. Divisional: $50 gift card + football + NFL hat. Championship: $75 gift card + hat & t-shirt. Williams Bowl Grand Prize: $100 gift card + football + hat, t-shirt, tumbler & jersey from favorite NFL team + Williams gift pack." },
+                    { step: "4", label: "Distribution Innovation", detail: "One of Beast's key strategic decisions was partnering with an external sweepstakes aggregator website — a distribution channel that extended reach beyond Williams' existing social audience and the paid media footprint. This partnership channel became a repeatable playbook element that Beast refined and used again in future Williams and Sun-Bird campaigns." },
+                  ].map((item) => (
+                    <div key={item.step} className="flex gap-4">
+                      <span className="w-8 h-8 rounded-full bg-beast-pink/10 border border-beast-pink/20 text-beast-pink font-display font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">{item.step}</span>
+                      <div>
+                        <p className="font-display font-bold text-beast-black mb-1">{item.label}</p>
+                        <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </AnimatedSection>
+
               <AnimatedSection>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Why It Mattered</h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  Williams Bowl was Beast&apos;s first campaign with Williams Foods — a proof-of-concept on a $1,500 budget. The results justified the more ambitious Back-to-School and March Madness campaigns that generated 22,043 and 13,660 entries respectively.
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  At $0.16 CPC against a $0.28 industry average, the campaign validated the sweepstakes model and established the Williams Foods relationship that became Beast&apos;s flagship CPG case study portfolio.
-                </p>
+                <p className="section-eyebrow text-beast-pink mb-2">The Results</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">$1,500 In. 6,020 New Consumer Records Out.</h2>
+                <div className="overflow-hidden rounded-xl border border-gray-100 mb-6">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-beast-black">
+                        <th className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
+                        <th className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Result</th>
+                        <th className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">vs Benchmark</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { metric: "Total Entries", result: "6,020", benchmark: "—" },
+                        { metric: "Total Ad Budget", result: "$1,500", benchmark: "—" },
+                        { metric: "Cost Per Click (CPC)", result: "$0.16", benchmark: "43% lower than $0.28 avg" },
+                        { metric: "New Facebook Page Likes", result: "872", benchmark: "—" },
+                        { metric: "Campaign Duration", result: "4 weeks", benchmark: "—" },
+                        { metric: "Rounds Completed", result: "4", benchmark: "—" },
+                      ].map((row, i) => (
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                          <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
+                          <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.result}</td>
+                          <td className="px-4 py-3 text-right text-beast-pink text-xs font-semibold">{row.benchmark}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Round by round */}
+                <div className="bg-white rounded-xl p-5 border border-gray-100 mb-6">
+                  <p className="font-display font-bold text-beast-black text-sm mb-3">Round-by-Round Participation</p>
+                  <div className="space-y-2">
+                    {[
+                      { round: "Wildcard (Week 1)", entries: "1,919", locations: "CA, TX, FL, NY, OH" },
+                      { round: "Divisional (Week 2)", entries: "1,300", locations: "TX, FL, CA, NY, OH" },
+                      { round: "Championship (Week 3)", entries: "805", locations: "TX, FL, CA, NY, MO" },
+                      { round: "Williams Bowl (Week 4)", entries: "1,996", locations: "CA, FL, TX, NY, PA" },
+                    ].map((r) => (
+                      <div key={r.round} className="flex justify-between text-sm py-1.5 border-b border-gray-50 last:border-0">
+                        <span className="text-gray-700 font-medium">{r.round}</span>
+                        <div className="text-right">
+                          <span className="font-display font-bold text-beast-black mr-3">{r.entries}</span>
+                          <span className="text-xs text-gray-400">{r.locations}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-[#111111] rounded-xl p-5">
+                  <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-2">Why This Campaign Matters</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">At $1,500, the Williams Bowl proved that Beast&apos;s creative mechanic approach could generate thousands of consumer records efficiently. The $0.16 CPC — 43% below industry average — showed that the concept itself was doing the work, not just the ad budget. Three months later, the BTS campaign ran on $4,000 and generated 22,043 entries. One year later, Williams All-Stars added 13,660 more with an email click rate 11x the industry average. The Williams Bowl is where that story started.</p>
+                </div>
               </AnimatedSection>
+
             </div>
 
-            {/* Sidebar */}
             <div className="space-y-6">
               <AnimatedSection>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-5">Campaign Overview</h3>
                   {[
                     { label: "Client", value: "Williams Foods" },
-                    { label: "Industry", value: "CPG / Food & Beverage" },
-                    { label: "Year", value: "2021" },
+                    { label: "Campaign", value: "Williams Bowl — NFL Bracket" },
+                    { label: "Year", value: "Fall / Winter 2021" },
+                    { label: "Duration", value: "4 weeks" },
                     { label: "Ad Budget", value: "$1,500" },
-                    { label: "Services", value: "Sweepstakes, Paid Social" },
-                    { label: "Result", value: "6,020 entries" },
+                    { label: "Platforms", value: "Facebook, Sweepstakes Partner" },
+                    { label: "Services", value: "Strategy, Creative, Polling Setup, Landing Page, Paid Social" },
                   ].map((item) => (
-                    <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0">
-                      <span className="text-sm text-gray-500">{item.label}</span>
-                      <span className="text-sm font-semibold text-beast-black text-right max-w-[60%]">{item.value}</span>
+                    <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
+                      <span className="text-sm text-gray-500 shrink-0">{item.label}</span>
+                      <span className="text-sm font-semibold text-beast-black text-right">{item.value}</span>
                     </div>
                   ))}
                 </div>
               </AnimatedSection>
-
               <AnimatedSection delay={0.1}>
                 <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">vs Industry Benchmark</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">The Williams Campaign Series</h3>
                   {[
-                    { metric: "CPC", beast: "$0.16", industry: "$0.28", lift: "43% lower" },
-                    { metric: "New Likes", beast: "872", industry: "organic growth", lift: "paid boost" },
+                    { campaign: "Williams Bowl", result: "6,020 entries", year: "2021" },
+                    { campaign: "Williams BTS", result: "22,043 entries", year: "2021" },
+                    { campaign: "Williams All-Stars", result: "13,660 entries", year: "2022" },
                   ].map((row) => (
-                    <div key={row.metric} className="mb-4">
-                      <p className="text-xs text-gray-600 uppercase tracking-widest mb-1">{row.metric}</p>
-                      <div className="flex items-center gap-3">
-                        <span className="font-display font-bold text-beast-pink text-xl">{row.beast}</span>
-                        <span className="text-xs text-gray-600">vs {row.industry}</span>
+                    <div key={row.campaign} className="mb-4 last:mb-0 pb-4 last:pb-0 border-b border-white/5 last:border-0">
+                      <div className="flex justify-between items-center mb-0.5">
+                        <span className="text-xs text-gray-500 uppercase tracking-widest">{row.campaign}</span>
+                        <span className="text-xs text-gray-600">{row.year}</span>
                       </div>
-                      <span className="text-xs bg-beast-pink/15 text-beast-pink px-2 py-0.5 rounded-full font-semibold">{row.lift}</span>
+                      <span className="font-display font-bold text-beast-yellow">{row.result}</span>
                     </div>
                   ))}
                 </div>
@@ -132,13 +189,14 @@ export default function WilliamsBowlPage() {
         </div>
       </section>
 
-      <RelatedCaseStudies related={["sun-bird", "williams-bts", "williams-allstars"]} />
+      <RelatedCaseStudies related={["williams-bts", "williams-allstars", "sun-bird"]} />
 
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-white mb-4">Let&apos;s Build Your Story →</h2>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <h2 className="font-display text-3xl font-bold text-white mb-4">Every Great Campaign Series Starts With the First One.</h2>
+            <p className="text-gray-400 mb-8">Beast&apos;s CPG sweepstakes playbook is proven across multiple campaigns, multiple clients, and multiple years. Ready to run your first — or your best yet?</p>
+            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Start My First Campaign →</Link>
           </AnimatedSection>
         </div>
       </section>

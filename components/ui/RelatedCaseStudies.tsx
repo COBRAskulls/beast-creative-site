@@ -56,6 +56,15 @@ const ALL_STUDIES = {
     href: "/work/coinline",
     accent: "from-[#1a1a1a] to-[#0a100a]",
   },
+  "pioneer": {
+    client: "Pioneer",
+    campaign: "Paid Media & ROAS Campaign",
+    stat: "7.03%",
+    statLabel: "CTR benchmark",
+    category: "Paid Media",
+    href: "/work/pioneer",
+    accent: "from-[#1a1a1a] to-[#0a0a1a]",
+  },
 };
 
 type StudyKey = keyof typeof ALL_STUDIES;

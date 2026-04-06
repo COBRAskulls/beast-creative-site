@@ -99,6 +99,21 @@ const caseStudies = [
       { label: "New Likes", value: "872", sub: "Facebook" },
     ],
   },
+  {
+    client: "Pioneer",
+    campaign: "Paid Media & ROAS Campaign",
+    heroStat: "ROAS",
+    heroStatLabel: "performance marketing built around measurable return",
+    year: "Ongoing",
+    categories: ["Paid Media", "Performance Marketing", "Facebook Ads"],
+    href: "/work/pioneer",
+    highlight: false,
+    stats: [
+      { label: "CTR", value: "7.03%", sub: "benchmark" },
+      { label: "CPC", value: "$0.12", sub: "benchmark" },
+      { label: "Platform", value: "Meta", sub: "FB + IG" },
+    ],
+  },
 ];
 
 export default function WorkPage() {
