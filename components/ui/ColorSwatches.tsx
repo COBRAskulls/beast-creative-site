@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 const colors = [
-  { name: "Coinline Pink", hex: "#E91E8C", desc: "Hero color. Electric, energetic — the neon pink of classic arcade marquees.", border: "#F5E642" },
-  { name: "Deep Purple", hex: "#1A0A2E", desc: "The foundation. Dark, atmospheric. The color of an arcade in low light.", border: "#E91E8C" },
+  { name: "Neon Magenta", hex: "#ed1564", desc: "Hero color. Electric, energetic — the neon pink of classic arcade marquees.", border: "#F5E642" },
+  { name: "Deep Purple", hex: "#1A0A2E", desc: "The foundation. Dark, atmospheric. The color of an arcade in low light.", border: "#ed1564" },
   { name: "Electric Yellow", hex: "#F5E642", desc: "The accent. The color of a coin, a scoreboard flash, a PLAYER 1 START prompt.", border: "#1A0A2E" },
   { name: "Black", hex: "#0A0A0A", desc: "Structure and depth. Grounds the palette and makes every color pop harder.", border: "#F5E642" },
 ];
