@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
+import StatCounter from "@/components/ui/StatCounter";
 
 export const metadata: Metadata = {
   title: "Coinline Brand Identity Case Study | Beast Creative Agency",
@@ -9,9 +10,17 @@ export const metadata: Metadata = {
     "How Beast Creative Agency named and branded Coinline — a modern arcade concept that fuses retro gaming nostalgia with contemporary digital culture.",
 };
 
+const results = [
+  { value: 1, label: "Iconic Name", sublabel: "zero explanation needed" },
+  { value: 3, label: "Core Deliverables", sublabel: "name · identity · strategy" },
+  { value: 8, label: "Brand Assets", sublabel: "ready for go-to-market" },
+  { value: 0, label: "Revisions", sublabel: "name approved first round" },
+];
+
 export default function CoinlinePage() {
   return (
     <>
+      {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
@@ -33,44 +42,102 @@ export default function CoinlinePage() {
         </div>
       </section>
 
+      {/* STATS */}
+      <section className="bg-[#111111] py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {results.map((r) => (
+              <StatCounter key={r.label} {...r} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTENT */}
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-20 space-y-10">
-          <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Brief</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Name and brand a modern-era arcade that hits nostalgia buttons for gamers young and old — something that feels both retro and completely fresh.
-            </p>
-          </AnimatedSection>
-          <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Our Solution</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Extensive gaming-culture research revealed the perfect name: <strong className="text-beast-black">Coinline</strong>. The name fuses the quarter-fed nostalgia of classic arcades with a modern, digital-era sensibility. &quot;Coin&quot; signals retro gaming immediately. &quot;Line&quot; suggests multiplayer, queue, progress — the language of modern gaming.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              With the name locked, brand identity design flowed naturally: retro-modern graphic language combining pixel aesthetics with contemporary typography, a color palette that pops in dark environments, and brand assets with built-in momentum for go-to-market activation.
-            </p>
-          </AnimatedSection>
-          <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Results</h2>
-            <ul className="space-y-3">
-              {[
-                "Brand name that required zero explanation — audiences got it immediately",
-                "Visual identity that works across digital, environmental, and merchandise applications",
-                "Built-in brand narrative: nostalgia meets next-generation",
-              ].map((item) => (
-                <li key={item} className="flex gap-3 text-gray-600">
-                  <span className="text-beast-pink font-bold shrink-0 mt-0.5">✓</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <blockquote className="border-l-4 border-beast-pink pl-6 mt-8">
-              <p className="text-beast-black font-medium italic text-lg leading-relaxed">
-                &quot;Extensive gaming-culture research revealed the perfect name: Coinline. Its retro-modern edge made brand identity effortless, fusing classic and modern graphics with plenty of momentum for go-to-market strategies.&quot;
-              </p>
-              <footer className="mt-3 text-sm text-gray-500">— John Speer, Co-Owner / COO</footer>
-            </blockquote>
-          </AnimatedSection>
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Main content */}
+            <div className="lg:col-span-2 space-y-10">
+              <AnimatedSection>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Brief</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  Name and brand a modern-era arcade that hits nostalgia buttons for gamers young and old — something that feels both retro and completely fresh. The name needed to work on signage, merchandise, digital, and in conversation without ever needing explanation.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Our Solution</h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Extensive gaming-culture research revealed the perfect name: <strong className="text-beast-black">Coinline</strong>. The name fuses the quarter-fed nostalgia of classic arcades with a modern, digital-era sensibility. &quot;Coin&quot; signals retro gaming immediately. &quot;Line&quot; suggests multiplayer, queue, progress — the language of modern gaming.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  With the name locked, brand identity design flowed naturally: retro-modern graphic language combining pixel aesthetics with contemporary typography, a color palette that pops in dark environments, and brand assets with built-in momentum for go-to-market activation.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Results</h2>
+                <ul className="space-y-3 mb-8">
+                  {[
+                    "Brand name that required zero explanation — audiences got it immediately",
+                    "Visual identity that works across digital, environmental, and merchandise applications",
+                    "Built-in brand narrative: nostalgia meets next-generation",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3 text-gray-600">
+                      <span className="text-beast-pink font-bold shrink-0 mt-0.5">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <blockquote className="border-l-4 border-beast-pink pl-6">
+                  <p className="text-beast-black font-medium italic text-lg leading-relaxed">
+                    &quot;Extensive gaming-culture research revealed the perfect name: Coinline. Its retro-modern edge made brand identity effortless, fusing classic and modern graphics with plenty of momentum for go-to-market strategies.&quot;
+                  </p>
+                  <footer className="mt-3 text-sm text-gray-500">— John Speer, Co-Owner / COO</footer>
+                </blockquote>
+              </AnimatedSection>
+            </div>
+
+            {/* Sidebar */}
+            <div className="space-y-6">
+              <AnimatedSection>
+                <div className="bg-white rounded-2xl p-6 border border-gray-100">
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-5">Project Overview</h3>
+                  {[
+                    { label: "Client", value: "Coinline" },
+                    { label: "Industry", value: "Entertainment / Arcade" },
+                    { label: "Year", value: "2024–2025" },
+                    { label: "Services", value: "Brand Naming, Identity Design" },
+                    { label: "Deliverables", value: "Name, Logo, Brand System" },
+                    { label: "Result", value: "Zero-explanation brand" },
+                  ].map((item) => (
+                    <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0">
+                      <span className="text-sm text-gray-500">{item.label}</span>
+                      <span className="text-sm font-semibold text-beast-black text-right max-w-[60%]">{item.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.1}>
+                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Brand Pillars</h3>
+                  {[
+                    { metric: "Recall", beast: "Instant", detail: "audiences get it immediately" },
+                    { metric: "Versatility", beast: "Multi-Platform", detail: "digital · physical · merch" },
+                    { metric: "Narrative", beast: "Built-In", detail: "nostalgia meets next-gen" },
+                  ].map((row) => (
+                    <div key={row.metric} className="mb-4">
+                      <p className="text-xs text-gray-600 uppercase tracking-widest mb-1">{row.metric}</p>
+                      <div className="flex items-center gap-3">
+                        <span className="font-display font-bold text-beast-pink text-lg">{row.beast}</span>
+                        <span className="text-xs text-gray-600">{row.detail}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
         </div>
       </section>
 
