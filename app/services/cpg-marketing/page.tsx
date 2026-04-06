@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { faqSchema, serviceSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "CPG Marketing Agency San Antonio | Sweepstakes & Consumer Data | Beast",
@@ -121,13 +122,8 @@ export default function CpgMarketingServicePage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-beast-black mb-8 text-center">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              {faqs.map((faq) => (
-                <div key={faq.question} className="bg-white rounded-2xl p-6 border border-gray-100">
-                  <h3 className="font-display text-lg font-bold text-beast-black mb-2">{faq.question}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
+            <div className="bg-white rounded-2xl border border-gray-100 px-6">
+              <FaqAccordion faqs={faqs} />
             </div>
           </AnimatedSection>
         </div>

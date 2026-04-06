@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import CpgLeadForm from "@/components/forms/CpgLeadForm";
 import Marquee from "@/components/ui/Marquee";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "CPG Marketing Agency | Beast Creative Agency San Antonio",
@@ -490,15 +491,8 @@ export default function CpgPage() {
               Common Questions
             </h2>
           </AnimatedSection>
-          <div className="space-y-4">
-            {faqs.map((faq) => (
-              <AnimatedSection key={faq.question}>
-                <div className="bg-white rounded-2xl p-6 border border-gray-100">
-                  <h3 className="font-display text-lg font-bold text-beast-black mb-3">{faq.question}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+          <div className="bg-white rounded-2xl border border-gray-100 px-6">
+            <FaqAccordion faqs={faqs} />
           </div>
         </div>
       </section>
