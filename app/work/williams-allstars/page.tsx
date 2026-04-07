@@ -105,15 +105,6 @@ export default function WilliamsAllstarsPage() {
                 </div>
               </AnimatedSection>
 
-              {/* Campaign Creative Section */}
-              <AnimatedSection>
-                <p className="section-eyebrow text-beast-pink mb-2">The Creative</p>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Ads That Ran.</h2>
-                <p className="text-gray-600 leading-relaxed mb-2">
-                  These are the actual social ads Beast designed and deployed across Facebook and Instagram. Bold, colorful, and impossible to scroll past.
-                </p>
-              </AnimatedSection>
-
               {/* Trading Cards Section — inserted between process and results */}
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Cards</p>
