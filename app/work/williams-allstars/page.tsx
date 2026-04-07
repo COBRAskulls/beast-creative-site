@@ -253,9 +253,11 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <div className="flex items-center justify-center gap-2 mt-4">
-                <span className="w-2 h-2 rounded-full bg-beast-yellow shrink-0" />
-                <span className="font-display font-bold text-sm text-beast-black tracking-wide">General Announcement</span>
+              <div className="flex items-center justify-center mt-4">
+                <span className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-beast-yellow shrink-0" />
+                  General Announcement
+                </span>
               </div>
             </AnimatedSection>
 
@@ -274,12 +276,11 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <div className="flex items-center justify-center gap-2 mt-4">
-                <span className="inline-flex items-center gap-1 bg-beast-pink/10 text-beast-pink border border-beast-pink/20 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest">
-                  <span className="w-1.5 h-1.5 rounded-full bg-beast-pink animate-pulse" />
-                  Motion Ad
+              <div className="flex items-center justify-center mt-4">
+                <span className="inline-flex items-center gap-2 bg-beast-pink/10 border border-beast-pink/25 rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-beast-pink animate-pulse shrink-0" />
+                  Chili Shoe — Motion Ad
                 </span>
-                <span className="font-display font-bold text-sm text-beast-black tracking-wide">Chili Shoe</span>
               </div>
             </AnimatedSection>
 
@@ -297,9 +298,11 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <div className="flex items-center justify-center gap-2 mt-4">
-                <span className="w-2 h-2 rounded-full bg-beast-pink shrink-0" />
-                <span className="font-display font-bold text-sm text-beast-black tracking-wide">Prize Reveal</span>
+              <div className="flex items-center justify-center mt-4">
+                <span className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-beast-pink shrink-0" />
+                  Prize Reveal
+                </span>
               </div>
             </AnimatedSection>
 
