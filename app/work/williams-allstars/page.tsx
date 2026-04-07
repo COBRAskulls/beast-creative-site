@@ -4,6 +4,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
+import TradingCard from "@/components/ui/TradingCard";
 
 export const metadata: Metadata = {
   title: "Williams All-Stars March Madness Campaign | 13,660 Entries in 24 Days | Beast Creative",
@@ -101,6 +102,38 @@ export default function WilliamsAllstarsPage() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </AnimatedSection>
+
+              {/* Trading Cards Section — inserted between process and results */}
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Cards</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Collectible. Digital. Theirs to Keep.</h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  Each entry earned fans a digital trading card — a custom Williams-branded sneaker design they could download and share. Here are three from the 8-card set. Hover to flip.
+                </p>
+                <div className="grid grid-cols-3 gap-8 py-4 overflow-visible">
+                  <TradingCard
+                    front="/assets/card-chili-front.png"
+                    back="/assets/card-chili-back.png"
+                    alt="Williams Chili"
+                    rotation={-4}
+                    floatDelay="0s"
+                  />
+                  <TradingCard
+                    front="/assets/card-taco-front.png"
+                    back="/assets/card-taco-back.png"
+                    alt="Williams Taco"
+                    rotation={2}
+                    floatDelay="0.4s"
+                  />
+                  <TradingCard
+                    front="/assets/card-sloppyjoe-front.png"
+                    back="/assets/card-sloppyjoe-back.png"
+                    alt="Sloppy Joe"
+                    rotation={-2}
+                    floatDelay="0.8s"
+                  />
                 </div>
               </AnimatedSection>
 
