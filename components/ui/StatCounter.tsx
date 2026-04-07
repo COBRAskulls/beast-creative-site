@@ -10,6 +10,9 @@ interface StatCounterProps {
   decimals?: number;
   label: string;
   sublabel?: string;
+  valueClassName?: string;
+  labelClassName?: string;
+  sublabelClassName?: string;
 }
 
 export default function StatCounter({
@@ -19,12 +22,15 @@ export default function StatCounter({
   decimals = 0,
   label,
   sublabel,
+  valueClassName = "text-beast-yellow",
+  labelClassName = "text-gray-400",
+  sublabelClassName = "text-gray-600",
 }: StatCounterProps) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <div ref={ref} className="flex flex-col items-center text-center px-6">
-      <div className="font-display text-4xl lg:text-5xl xl:text-6xl font-extrabold text-beast-yellow tracking-wide leading-none">
+      <div className={`font-display text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-wide leading-none ${valueClassName}`}>
         {prefix}
         {inView ? (
           <CountUp
@@ -40,11 +46,11 @@ export default function StatCounter({
           </span>
         )}
       </div>
-      <div className="font-body text-xs font-semibold tracking-widest uppercase text-gray-400 mt-2">
+      <div className={`font-body text-xs font-semibold tracking-widest uppercase mt-2 ${labelClassName}`}>
         {label}
       </div>
       {sublabel && (
-        <div className="font-body text-xs text-gray-600 mt-1">{sublabel}</div>
+        <div className={`font-body text-xs mt-1 ${sublabelClassName}`}>{sublabel}</div>
       )}
     </div>
   );

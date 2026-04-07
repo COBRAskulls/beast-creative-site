@@ -154,13 +154,13 @@ export default function HomePage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
-            <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" />
-            <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" />
-            <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" />
-            <StatCounter value={500} suffix="%+" label="MRR Growth" sublabel="Sweet Sensi" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-beast-black/10">
+            <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={500} suffix="%+" label="MRR Growth" sublabel="Sweet Sensi" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
