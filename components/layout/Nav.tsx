@@ -24,7 +24,6 @@ const services = [
   { name: "Web Design & CRO",     href: "/services/web-design"                        },
 ];
 
-const PILL = `M 28 0 C 14 0, 0 14, 0 28 C 0 42, 14 56, 28 56 L 752 56 C 766 56, 780 42, 780 28 C 780 14, 766 0, 752 0 Z`;
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen]     = useState(false);
@@ -50,47 +49,17 @@ export default function Nav() {
     <>
       {/* ── Desktop floating pill ── */}
       <div className="fixed top-4 left-0 right-0 z-50 hidden lg:flex justify-center px-6 pointer-events-none">
-        {/* SVG liquid glass shape — sits behind nav content */}
-        <div className="relative pointer-events-auto" style={{ width: 780 }}>
-
-          {/* The glass background rendered as an SVG */}
-          <svg
-            viewBox="0 0 780 56"
-            width="780"
-            height="56"
-            className="absolute top-0 left-0 w-full"
-            style={{ overflow: "visible" }}
-            aria-hidden
-          >
-            <defs>
-              <filter id="glass-blur" x="-20%" y="-20%" width="140%" height="140%">
-                <feGaussianBlur stdDeviation="0.5" />
-              </filter>
-            </defs>
-            {/* Frosted background fill */}
-            <path
-              d={PILL}
-              fill="rgba(255,255,255,0.10)"
-              style={{
-                transition: "d 0.7s cubic-bezier(0.34,1.4,0.64,1)",
-                backdropFilter: "blur(28px)",
-              }}
-            />
-            {/* Top highlight line */}
-            <path
-              d={PILL}
-              fill="none"
-              stroke="rgba(255,255,255,0.45)"
-              strokeWidth="1"
-              style={{ transition: "d 0.7s cubic-bezier(0.34,1.4,0.64,1)" }}
-            />
-          </svg>
-
-          {/* Nav content — sits on top of SVG */}
-          <nav
-            className="relative flex items-center h-14 px-3 gap-1"
-            style={{ width: 780 }}
-          >
+        <nav
+          className="pointer-events-auto relative flex items-center h-14 px-3 gap-1 w-full max-w-7xl"
+          style={{
+            borderRadius: "999px",
+            background: "rgba(8, 8, 8, 0.82)",
+            backdropFilter: "blur(24px) saturate(160%)",
+            WebkitBackdropFilter: "blur(24px) saturate(160%)",
+            border: "1px solid rgba(255,255,255,0.10)",
+            boxShadow: "inset 0 1px 0 rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)",
+          }}
+        >
             {/* Logo */}
             <Link
               href="/"
@@ -160,8 +129,7 @@ export default function Nav() {
             <Link href="/contact" className="shrink-0 px-4 py-1.5 text-sm font-bold text-beast-black bg-beast-yellow rounded-full hover:bg-beast-yellow/90 transition-colors ml-1">
               Free Strategy Call
             </Link>
-          </nav>
-        </div>
+        </nav>
       </div>
 
       {/* ── Mobile top bar ── */}
