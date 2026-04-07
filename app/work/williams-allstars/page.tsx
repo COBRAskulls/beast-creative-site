@@ -228,12 +228,12 @@ export default function WilliamsAllstarsPage() {
       </section>
 
       {/* Campaign Creative — Scattered Ad Showcase */}
-      <section className="bg-[#0D0D0D] py-20 overflow-hidden">
+      <section className="bg-[#F4F4F4] py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-14">
             <p className="section-eyebrow text-beast-pink mb-3">Campaign Creative</p>
-            <h2 className="font-display text-4xl font-extrabold text-white mb-4">The Ads Fans Couldn&apos;t Scroll Past.</h2>
-            <p className="text-gray-400 max-w-xl mx-auto">Bold creative built to stop thumbs mid-scroll. These ran across Facebook and Instagram throughout the 24-day campaign window.</p>
+            <h2 className="font-display text-4xl font-extrabold text-beast-black mb-4">The Ads Fans Couldn&apos;t Scroll Past.</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">Bold creative built to stop thumbs mid-scroll. These ran across Facebook and Instagram throughout the 24-day campaign window.</p>
           </AnimatedSection>
 
           {/* Scattered layout */}
@@ -253,7 +253,7 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <p className="text-center text-xs text-gray-600 mt-3 uppercase tracking-widest">General Announcement</p>
+              <p className="text-center text-xs text-gray-400 mt-3 uppercase tracking-widest">General Announcement</p>
             </AnimatedSection>
 
             {/* Center — Chili Shoe video, straight */}
@@ -271,7 +271,7 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <p className="text-center text-xs text-gray-600 mt-3 uppercase tracking-widest">Chili Shoe — Motion Ad</p>
+              <p className="text-center text-xs text-gray-400 mt-3 uppercase tracking-widest">Chili Shoe — Motion Ad</p>
             </AnimatedSection>
 
             {/* Ad 2 — Prizes, tilted right */}
@@ -288,7 +288,7 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <p className="text-center text-xs text-gray-600 mt-3 uppercase tracking-widest">Prize Reveal</p>
+              <p className="text-center text-xs text-gray-400 mt-3 uppercase tracking-widest">Prize Reveal</p>
             </AnimatedSection>
 
           </div>
