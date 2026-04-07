@@ -24,112 +24,13 @@ const services = [
   { name: "Web Design & CRO",     href: "/services/web-design"                        },
 ];
 
-// ── Organic liquid-glass paths ──────────────────────────────────────────────
-// All paths share the same cubic-bezier command count so CSS can morph between
-// them. W=780, H=56. Lobes shift based on the active section's position.
-const PATHS: Record<string, string> = {
-  // Symmetric pill — home
-  home: `
-    M 28 0
-    C 14 0, 0 14, 0 28
-    C 0 42, 14 56, 28 56
-    C 140 56, 240 60, 390 60
-    C 540 60, 640 56, 752 56
-    C 766 56, 780 42, 780 28
-    C 780 14, 766 0, 752 0
-    C 640 0, 540 -4, 390 -4
-    C 240 -4, 140 0, 28 0 Z
-  `,
-  // Lobe expands around Work (≈ 185–240px region) — top dips, bottom lifts
-  work: `
-    M 28 0
-    C 14 0, 0 14, 0 28
-    C 0 42, 14 56, 28 56
-    C 120 56, 185 68, 215 68
-    C 245 68, 310 56, 490 56
-    C 620 56, 680 56, 752 56
-    C 766 56, 780 42, 780 28
-    C 780 14, 766 0, 752 0
-    C 680 0, 620 0, 490 0
-    C 310 0, 245 -12, 215 -12
-    C 185 -12, 120 0, 28 0 Z
-  `,
-  // Lobe around Services (≈ 248–330px)
-  services: `
-    M 28 0
-    C 14 0, 0 14, 0 28
-    C 0 42, 14 56, 28 56
-    C 130 56, 230 56, 285 68
-    C 325 76, 360 68, 490 56
-    C 620 56, 680 56, 752 56
-    C 766 56, 780 42, 780 28
-    C 780 14, 766 0, 752 0
-    C 680 0, 620 0, 490 0
-    C 360 -12, 325 -20, 285 -12
-    C 230 0, 130 0, 28 0 Z
-  `,
-  // Lobe around CPG (≈ 333–378px)
-  cpg: `
-    M 28 0
-    C 14 0, 0 14, 0 28
-    C 0 42, 14 56, 28 56
-    C 150 56, 285 56, 355 66
-    C 385 72, 415 66, 490 56
-    C 620 56, 680 56, 752 56
-    C 766 56, 780 42, 780 28
-    C 780 14, 766 0, 752 0
-    C 680 0, 620 0, 490 0
-    C 415 -10, 385 -16, 355 -10
-    C 285 0, 150 0, 28 0 Z
-  `,
-  // Lobe around About (≈ 381–440px)
-  about: `
-    M 28 0
-    C 14 0, 0 14, 0 28
-    C 0 42, 14 56, 28 56
-    C 160 56, 310 56, 390 66
-    C 440 74, 460 66, 530 56
-    C 640 56, 700 56, 752 56
-    C 766 56, 780 42, 780 28
-    C 780 14, 766 0, 752 0
-    C 700 0, 640 0, 530 0
-    C 460 -10, 440 -18, 390 -10
-    C 310 0, 160 0, 28 0 Z
-  `,
-  // Lobe around Contact (≈ 439–510px)
-  contact: `
-    M 28 0
-    C 14 0, 0 14, 0 28
-    C 0 42, 14 56, 28 56
-    C 190 56, 360 56, 455 66
-    C 492 74, 520 66, 600 56
-    C 680 56, 720 56, 752 56
-    C 766 56, 780 42, 780 28
-    C 780 14, 766 0, 752 0
-    C 720 0, 680 0, 600 0
-    C 520 -10, 492 -18, 455 -10
-    C 360 0, 190 0, 28 0 Z
-  `,
-};
-
-function getShape(pathname: string): string {
-  if (pathname === "/")               return PATHS.home;
-  if (pathname.startsWith("/work"))   return PATHS.work;
-  if (pathname.startsWith("/services"))return PATHS.services;
-  if (pathname.startsWith("/cpg"))    return PATHS.cpg;
-  if (pathname.startsWith("/about"))  return PATHS.about;
-  if (pathname.startsWith("/contact"))return PATHS.contact;
-  return PATHS.home;
-}
+const PILL = `M 28 0 C 14 0, 0 14, 0 28 C 0 42, 14 56, 28 56 L 752 56 C 766 56, 780 42, 780 28 C 780 14, 766 0, 752 0 Z`;
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen]     = useState(false);
   const [workOpen, setWorkOpen]         = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [mounted, setMounted]           = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => { setMounted(true); }, []);
   useEffect(() => { setMobileOpen(false); }, [pathname]);
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -168,7 +69,7 @@ export default function Nav() {
             </defs>
             {/* Frosted background fill */}
             <path
-              d={mounted ? getShape(pathname) : PATHS.home}
+              d={PILL}
               fill="rgba(255,255,255,0.10)"
               style={{
                 transition: "d 0.7s cubic-bezier(0.34,1.4,0.64,1)",
@@ -177,7 +78,7 @@ export default function Nav() {
             />
             {/* Top highlight line */}
             <path
-              d={mounted ? getShape(pathname) : PATHS.home}
+              d={PILL}
               fill="none"
               stroke="rgba(255,255,255,0.45)"
               strokeWidth="1"
