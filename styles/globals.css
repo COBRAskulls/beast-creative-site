@@ -45,9 +45,14 @@
   50%       { transform: translateY(-10px); }
 }
 
-@keyframes rc-shine {
-  0%   { background-position: -100% 0; }
-  100% { background-position: 250% 0; }
+@property --rc-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rc-border-rotate {
+  to { --rc-angle: 360deg; }
 }
 
 @keyframes rc-pulse {
@@ -56,42 +61,37 @@
 }
 
 /* ── Related Case Study Cards ─────────────────────────── */
+
+/* Outer wrapper — holds the spinning border gradient */
+.rc-wrap {
+  position: relative;
+  border-radius: 16px;
+  padding: 1px;
+  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1),
+              box-shadow 0.5s cubic-bezier(0.16,1,0.3,1);
+  background: rgba(255,255,255,0.06); /* default subtle border */
+}
+.rc-wrap:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.55);
+  background: conic-gradient(
+    from var(--rc-angle),
+    transparent 0deg,
+    #FF1198 50deg,
+    rgba(255,17,152,0.4) 100deg,
+    transparent 180deg
+  );
+  animation: rc-border-rotate 2s linear infinite;
+}
+.rc-wrap:active { transform: translateY(-5px) scale(0.98); }
+
+/* Inner card — sits 1px inside, clips content */
 .rc-card {
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 15px;
   background: #0a0a0a;
-  border: 1px solid rgba(255,255,255,0.07);
-  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1),
-              box-shadow 0.5s cubic-bezier(0.16,1,0.3,1),
-              border-color 0.3s ease;
-}
-.rc-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 24px 48px rgba(0,0,0,0.5);
-  border-color: rgba(255,255,255,0.14);
-}
-.rc-card:active { transform: translateY(-5px) scale(0.98); }
-
-/* Shine sweep */
-.rc-shine {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg,
-    transparent 35%,
-    rgba(255,255,255,0.07) 50%,
-    transparent 65%
-  );
-  background-size: 200% 100%;
-  background-position: -100% 0;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 10;
-  transition: opacity 0.3s ease;
-}
-.rc-card:hover .rc-shine {
-  opacity: 1;
-  animation: rc-shine 0.8s ease forwards;
+  height: 100%;
 }
 
 /* Top glow */
@@ -104,17 +104,16 @@
   z-index: 1;
   transition: opacity 0.5s ease;
 }
-.rc-card:hover .rc-glow { opacity: 1; }
+.rc-wrap:hover .rc-glow { opacity: 1; }
 
 /* Image/stat area */
 .rc-image {
   position: relative;
-  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1),
-              box-shadow 0.4s ease;
+  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease;
   z-index: 2;
 }
-.rc-card:hover .rc-image {
-  transform: translateY(-5px) scale(1.03);
+.rc-wrap:hover .rc-image {
+  transform: translateY(-4px) scale(1.03);
   box-shadow: 0 10px 20px rgba(0,0,0,0.35);
 }
 
@@ -124,30 +123,25 @@
   opacity: 0;
   transition: transform 0.4s ease 0.1s, opacity 0.4s ease 0.1s;
 }
-.rc-card:hover .rc-badge {
-  transform: scale(1);
-  opacity: 1;
-}
+.rc-wrap:hover .rc-badge { transform: scale(1); opacity: 1; }
 
 /* Text slide */
 .rc-title, .rc-stat {
   transition: transform 0.3s ease, color 0.3s ease;
 }
-.rc-card:hover .rc-title { transform: translateX(3px); color: #FF1198; }
-.rc-card:hover .rc-stat  { transform: translateX(3px); }
+.rc-wrap:hover .rc-title { transform: translateX(3px); color: #FF1198; }
+.rc-wrap:hover .rc-stat  { transform: translateX(3px); }
 
 /* Arrow button */
 .rc-btn {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform: scale(0.9);
 }
-.rc-card:hover .rc-btn {
+.rc-wrap:hover .rc-btn {
   transform: scale(1);
-  box-shadow: 0 0 0 4px rgba(255,17,152,0.2);
+  box-shadow: 0 0 0 4px rgba(255,17,152,0.25);
 }
-.rc-card:hover .rc-btn svg {
-  animation: rc-pulse 1.5s infinite;
-}
+.rc-wrap:hover .rc-btn svg { animation: rc-pulse 1.5s infinite; }
 
 /* ── CSS variables for internal use ────────────────── */
 :root {

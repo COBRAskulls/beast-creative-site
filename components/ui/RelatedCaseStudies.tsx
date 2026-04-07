@@ -98,12 +98,12 @@ export default function RelatedCaseStudies({ related }: { related: StudyKey[] })
           {studies.map((cs, i) => (
             <AnimatedSection key={cs.href} delay={i * 0.08}>
               <Link href={cs.href} className="block">
-                <article
-                  className="rc-card"
+                <div
+                  className="rc-wrap"
                   style={{ "--rc-glow": cs.glow } as React.CSSProperties}
                 >
-                  {/* Shine + glow layers */}
-                  <div className="rc-shine" />
+                  <article className="rc-card">
+                  {/* Top glow */}
                   <div className="rc-glow" />
 
                   {/* Image / stat area */}
@@ -153,7 +153,8 @@ export default function RelatedCaseStudies({ related }: { related: StudyKey[] })
                       </div>
                     </div>
                   </div>
-                </article>
+                  </article>
+                </div>
               </Link>
             </AnimatedSection>
           ))}
