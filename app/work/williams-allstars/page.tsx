@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 export default function WilliamsAllstarsPage() {
   return (
     <>
-      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-0 overflow-hidden">
+      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Text */}
-            <AnimatedSection className="pb-20 lg:pb-28">
+            <AnimatedSection>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["CPG Marketing", "Sweepstakes", "Creative Campaign", "Paid Social", "Email Marketing"].map((tag) => (
                   <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
