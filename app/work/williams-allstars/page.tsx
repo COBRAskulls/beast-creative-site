@@ -242,7 +242,7 @@ export default function WilliamsAllstarsPage() {
             {/* Ad 1 — Announcement, tilted left */}
             <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
+                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
                 style={{ transform: "rotate(-4deg)" }}
               >
                 <Image
@@ -253,13 +253,16 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <p className="text-center text-xs text-gray-400 mt-3 uppercase tracking-widest">General Announcement</p>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <span className="w-2 h-2 rounded-full bg-beast-yellow shrink-0" />
+                <span className="font-display font-bold text-sm text-beast-black tracking-wide">General Announcement</span>
+              </div>
             </AnimatedSection>
 
-            {/* Center — Chili Shoe video, straight */}
+            {/* Center — Chili Shoe video */}
             <AnimatedSection delay={0.1} className="w-full max-w-[360px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_30px_80px_rgba(255,17,152,0.2),0_20px_60px_rgba(0,0,0,0.7)] ring-1 ring-beast-pink/20 transition-transform duration-300 hover:scale-105"
+                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105"
                 style={{ transform: "rotate(2deg)" }}
               >
                 <video
@@ -271,13 +274,19 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <p className="text-center text-xs text-gray-400 mt-3 uppercase tracking-widest">Chili Shoe — Motion Ad</p>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <span className="inline-flex items-center gap-1 bg-beast-pink/10 text-beast-pink border border-beast-pink/20 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest">
+                  <span className="w-1.5 h-1.5 rounded-full bg-beast-pink animate-pulse" />
+                  Motion Ad
+                </span>
+                <span className="font-display font-bold text-sm text-beast-black tracking-wide">Chili Shoe</span>
+              </div>
             </AnimatedSection>
 
             {/* Ad 2 — Prizes, tilted right */}
             <AnimatedSection delay={0.15} className="w-full max-w-[340px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
+                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
                 style={{ transform: "rotate(4deg)" }}
               >
                 <Image
@@ -288,7 +297,10 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <p className="text-center text-xs text-gray-400 mt-3 uppercase tracking-widest">Prize Reveal</p>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <span className="w-2 h-2 rounded-full bg-beast-pink shrink-0" />
+                <span className="font-display font-bold text-sm text-beast-black tracking-wide">Prize Reveal</span>
+              </div>
             </AnimatedSection>
 
           </div>
