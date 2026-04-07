@@ -84,10 +84,6 @@ export default function Nav() {
               strokeWidth="1"
               style={{ transition: "d 0.7s cubic-bezier(0.34,1.4,0.64,1)" }}
             />
-            {/* Inner shimmer spot */}
-            <ellipse cx="200" cy="8" rx="120" ry="10" fill="rgba(255,255,255,0.12)" />
-            {/* Iridescent tint */}
-            <ellipse cx="580" cy="8" rx="80" ry="8" fill="rgba(180,200,255,0.07)" />
           </svg>
 
           {/* Nav content — sits on top of SVG */}
