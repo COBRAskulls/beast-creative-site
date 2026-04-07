@@ -105,6 +105,15 @@ export default function WilliamsAllstarsPage() {
                 </div>
               </AnimatedSection>
 
+              {/* Campaign Creative Section */}
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Creative</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Ads That Ran.</h2>
+                <p className="text-gray-600 leading-relaxed mb-2">
+                  These are the actual social ads Beast designed and deployed across Facebook and Instagram. Bold, colorful, and impossible to scroll past.
+                </p>
+              </AnimatedSection>
+
               {/* Trading Cards Section — inserted between process and results */}
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Cards</p>
@@ -223,6 +232,74 @@ export default function WilliamsAllstarsPage() {
                 </div>
               </AnimatedSection>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Campaign Creative — Scattered Ad Showcase */}
+      <section className="bg-[#0D0D0D] py-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection className="text-center mb-14">
+            <p className="section-eyebrow text-beast-pink mb-3">Campaign Creative</p>
+            <h2 className="font-display text-4xl font-extrabold text-white mb-4">The Ads Fans Couldn&apos;t Scroll Past.</h2>
+            <p className="text-gray-400 max-w-xl mx-auto">Bold creative built to stop thumbs mid-scroll. These ran across Facebook and Instagram throughout the 24-day campaign window.</p>
+          </AnimatedSection>
+
+          {/* Scattered layout */}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-6">
+
+            {/* Ad 1 — Announcement, tilted left */}
+            <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
+              <div
+                className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
+                style={{ transform: "rotate(-4deg)" }}
+              >
+                <Image
+                  src="/assets/allstars-ad-announcement.png"
+                  alt="Williams All-Stars campaign announcement ad"
+                  width={680}
+                  height={680}
+                  className="w-full h-auto block"
+                />
+              </div>
+              <p className="text-center text-xs text-gray-600 mt-3 uppercase tracking-widest">General Announcement</p>
+            </AnimatedSection>
+
+            {/* Center — Chili Shoe video, straight */}
+            <AnimatedSection delay={0.1} className="w-full max-w-[360px] shrink-0">
+              <div
+                className="rounded-2xl overflow-hidden shadow-[0_30px_80px_rgba(255,17,152,0.2),0_20px_60px_rgba(0,0,0,0.7)] ring-1 ring-beast-pink/20 transition-transform duration-300 hover:scale-105"
+                style={{ transform: "rotate(2deg)" }}
+              >
+                <video
+                  src="/assets/allstars-ad-chili.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-auto block"
+                />
+              </div>
+              <p className="text-center text-xs text-gray-600 mt-3 uppercase tracking-widest">Chili Shoe — Motion Ad</p>
+            </AnimatedSection>
+
+            {/* Ad 2 — Prizes, tilted right */}
+            <AnimatedSection delay={0.15} className="w-full max-w-[340px] shrink-0">
+              <div
+                className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
+                style={{ transform: "rotate(4deg)" }}
+              >
+                <Image
+                  src="/assets/allstars-ad-prizes.png"
+                  alt="Williams All-Stars prizes ad — Become an All-Star"
+                  width={680}
+                  height={680}
+                  className="w-full h-auto block"
+                />
+              </div>
+              <p className="text-center text-xs text-gray-600 mt-3 uppercase tracking-widest">Prize Reveal</p>
+            </AnimatedSection>
+
           </div>
         </div>
       </section>
