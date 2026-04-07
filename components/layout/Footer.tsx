@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,10 +8,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Col 1: Brand */}
           <div>
-            <div className="font-display font-extrabold text-xl tracking-normal mb-4">
-              <span className="text-beast-green">BEAST</span>
-              <span className="text-white"> CREATIVE</span>
-            </div>
+            <Image
+              src="/assets/beast-logo.svg"
+              alt="Beast Creative Agency"
+              width={120}
+              height={40}
+              className="h-8 w-auto mb-4"
+            />
             <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
               AI-powered marketing that actually moves the needle. CPG and digital marketing for brands scaling nationally.
             </p>
