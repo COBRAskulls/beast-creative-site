@@ -9,7 +9,9 @@ const ALL_STUDIES = {
     statLabel: "consumer emails",
     category: "CPG Marketing",
     href: "/work/sun-bird",
-    accent: "from-[#1a1a2e] to-[#111122]",
+    gradientFrom: "#0d1a2e",
+    gradientTo: "#0a1220",
+    glow: "rgba(56,189,248,0.25)",
   },
   "williams-bts": {
     client: "Williams Foods",
@@ -18,7 +20,9 @@ const ALL_STUDIES = {
     statLabel: "entries on $4K",
     category: "CPG Marketing",
     href: "/work/williams-bts",
-    accent: "from-[#1a1a1a] to-[#1a1208]",
+    gradientFrom: "#1a1208",
+    gradientTo: "#110d00",
+    glow: "rgba(251,191,36,0.25)",
   },
   "williams-allstars": {
     client: "Williams Foods",
@@ -27,7 +31,9 @@ const ALL_STUDIES = {
     statLabel: "entries in 24 days",
     category: "Campaign Design",
     href: "/work/williams-allstars",
-    accent: "from-[#1a1a1a] to-[#0f1a1a]",
+    gradientFrom: "#0a1a10",
+    gradientTo: "#071208",
+    glow: "rgba(34,197,94,0.25)",
   },
   "williams-bowl": {
     client: "Williams Foods",
@@ -36,7 +42,9 @@ const ALL_STUDIES = {
     statLabel: "entries on $1.5K",
     category: "CPG Marketing",
     href: "/work/williams-bowl",
-    accent: "from-[#1a1214] to-[#0f0a0a]",
+    gradientFrom: "#1a0808",
+    gradientTo: "#0f0404",
+    glow: "rgba(239,68,68,0.25)",
   },
   "sweet-sensi": {
     client: "Sweet Sensi",
@@ -45,16 +53,20 @@ const ALL_STUDIES = {
     statLabel: "MRR growth",
     category: "SEO + Social",
     href: "/work/sweet-sensi",
-    accent: "from-[#1a1a2a] to-[#120a1a]",
+    gradientFrom: "#120a1a",
+    gradientTo: "#0d0812",
+    glow: "rgba(168,85,247,0.25)",
   },
   "coinline": {
     client: "Coinline",
     campaign: "Brand Naming & Identity",
-    stat: "0",
-    statLabel: "explanation needed",
+    stat: "100%",
+    statLabel: "built from zero",
     category: "Branding",
     href: "/work/coinline",
-    accent: "from-[#1a1a1a] to-[#0a100a]",
+    gradientFrom: "#1a0a14",
+    gradientTo: "#10060d",
+    glow: "rgba(237,21,100,0.25)",
   },
   "pioneer": {
     client: "Pioneer",
@@ -63,7 +75,9 @@ const ALL_STUDIES = {
     statLabel: "CTR benchmark",
     category: "Paid Media",
     href: "/work/pioneer",
-    accent: "from-[#1a1a1a] to-[#0a0a1a]",
+    gradientFrom: "#0a0a1a",
+    gradientTo: "#060612",
+    glow: "rgba(99,102,241,0.25)",
   },
 };
 
@@ -80,33 +94,63 @@ export default function RelatedCaseStudies({ related }: { related: StudyKey[] })
           <h2 className="font-display text-2xl font-bold text-white">Related Case Studies</h2>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {studies.map((cs, i) => (
             <AnimatedSection key={cs.href} delay={i * 0.08}>
-              <Link href={cs.href} className="group block">
-                <article className="bg-beast-black rounded-xl overflow-hidden border border-white/8 hover:border-beast-pink/40 hover:shadow-[0_0_30px_rgba(255,17,152,0.1)] transition-all duration-300 hover:-translate-y-0.5">
-                  {/* Image placeholder area */}
-                  <div className={`relative h-28 bg-gradient-to-br ${cs.accent} overflow-hidden flex items-center justify-center`}>
-                    <span className="font-display text-4xl font-extrabold text-beast-yellow tracking-wide opacity-15 select-none">
+              <Link href={cs.href} className="block">
+                <article
+                  className="rc-card"
+                  style={{ "--rc-glow": cs.glow } as React.CSSProperties}
+                >
+                  {/* Shine + glow layers */}
+                  <div className="rc-shine" />
+                  <div className="rc-glow" />
+
+                  {/* Image / stat area */}
+                  <div
+                    className="rc-image relative h-32 flex items-center justify-center overflow-hidden"
+                    style={{
+                      background: `linear-gradient(135deg, ${cs.gradientFrom} 0%, ${cs.gradientTo} 100%)`,
+                    }}
+                  >
+                    {/* Ghost watermark stat */}
+                    <span className="font-display text-5xl font-extrabold text-white/10 select-none tracking-wide">
                       {cs.stat}
                     </span>
-                    <span className="absolute top-3 right-3 text-xs font-semibold uppercase tracking-widest text-gray-500 bg-black/50 px-2 py-0.5 rounded-full">
+                    {/* Badge — appears on hover */}
+                    <span className="rc-badge absolute top-3 right-3 text-xs font-bold uppercase tracking-widest text-gray-300 bg-black/60 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10">
                       {cs.category}
                     </span>
                   </div>
+
                   {/* Content */}
-                  <div className="p-4">
-                    <p className="text-xs font-bold uppercase tracking-widest text-beast-pink mb-1">{cs.client}</p>
-                    <h3 className="font-display text-sm font-bold text-white mb-3 leading-tight">{cs.campaign}</h3>
-                    <div className="flex items-baseline gap-1.5 mb-3">
-                      <span className="font-display text-xl font-extrabold text-beast-yellow tracking-wide">{cs.stat}</span>
-                      <span className="text-xs text-gray-500 uppercase tracking-widest">{cs.statLabel}</span>
+                  <div className="relative z-10 p-4">
+                    <p className="rc-title text-xs font-bold uppercase tracking-widest text-beast-pink mb-1">
+                      {cs.client}
+                    </p>
+                    <h3 className="font-display text-sm font-bold text-white mb-3 leading-tight">
+                      {cs.campaign}
+                    </h3>
+                    <div className="rc-stat flex items-baseline gap-1.5 mb-4">
+                      <span className="font-display text-xl font-extrabold text-beast-yellow tracking-wide">
+                        {cs.stat}
+                      </span>
+                      <span className="text-xs text-gray-500 uppercase tracking-widest">
+                        {cs.statLabel}
+                      </span>
                     </div>
-                    <div className="flex items-center gap-1.5 text-xs font-bold text-beast-pink group-hover:text-white transition-colors">
-                      View Case Study
-                      <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                      </svg>
+
+                    {/* Footer */}
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-beast-pink">View Case Study</span>
+                      <div
+                        className="rc-btn w-7 h-7 rounded-full flex items-center justify-center text-white"
+                        style={{ background: "rgba(255,17,152,0.8)" }}
+                      >
+                        <svg height="14" width="14" viewBox="0 0 24 24" fill="none">
+                          <path stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </article>
