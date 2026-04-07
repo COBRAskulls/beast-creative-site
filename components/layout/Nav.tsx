@@ -126,8 +126,26 @@ export default function Nav() {
 
             <div className="w-px h-4 bg-white/15 mx-1 shrink-0" />
 
-            <Link href="/contact" className="shrink-0 px-4 py-1.5 text-sm font-bold text-beast-black bg-beast-yellow rounded-full hover:bg-beast-yellow/90 transition-colors ml-1">
-              Free Strategy Call
+            <Link
+              href="/contact"
+              className="group relative shrink-0 ml-1 px-4 py-1.5 text-sm font-bold text-white rounded-full overflow-hidden"
+              style={{
+                background: "rgba(255,255,255,0.12)",
+                border: "1px solid rgba(255,255,255,0.28)",
+                boxShadow: "inset 0 1.5px 0 rgba(255,255,255,0.35), 0 2px 8px rgba(0,0,0,0.25)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
+                transition: "box-shadow 0.3s ease, background 0.3s ease",
+              }}
+            >
+              {/* Shimmer sweep on hover */}
+              <span
+                className="pointer-events-none absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out"
+                style={{
+                  background: "linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.35) 50%, transparent 70%)",
+                }}
+              />
+              <span className="relative">Free Strategy Call</span>
             </Link>
         </nav>
       </div>
