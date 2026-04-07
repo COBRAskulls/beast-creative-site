@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -66,10 +67,13 @@ export default function Nav() {
               }
             }}
           >
-            <div className="font-display font-extrabold text-xl tracking-normal">
-              <span className="text-beast-green">BEAST</span>
-              <span className="text-white"> CREATIVE</span>
-            </div>
+            <Image
+              src="/assets/beast-logo.svg"
+              alt="Beast Creative Agency"
+              width={120}
+              height={40}
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}
