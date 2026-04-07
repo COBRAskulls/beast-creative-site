@@ -237,7 +237,7 @@ export default function WilliamsAllstarsPage() {
           </AnimatedSection>
 
           {/* Scattered layout */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-6">
+          <div className="flex flex-col lg:flex-row items-end justify-center gap-8 lg:gap-6">
 
             {/* Ad 1 — Announcement, tilted left */}
             <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
@@ -253,9 +253,9 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <div className="flex items-center justify-center mt-4">
-                <span className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-beast-yellow shrink-0" />
+              <div className="flex items-center justify-center mt-6">
+                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display">
+                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
                   General Announcement
                 </span>
               </div>
@@ -276,9 +276,9 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <div className="flex items-center justify-center mt-4">
-                <span className="inline-flex items-center gap-2 bg-beast-pink/10 border border-beast-pink/25 rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-beast-pink animate-pulse shrink-0" />
+              <div className="flex items-center justify-center mt-6">
+                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display">
+                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
                   Chili Shoe — Motion Ad
                 </span>
               </div>
@@ -298,9 +298,9 @@ export default function WilliamsAllstarsPage() {
                   className="w-full h-auto block"
                 />
               </div>
-              <div className="flex items-center justify-center mt-4">
-                <span className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-beast-pink shrink-0" />
+              <div className="flex items-center justify-center mt-6">
+                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-beast-black font-display">
+                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
                   Prize Reveal
                 </span>
               </div>
