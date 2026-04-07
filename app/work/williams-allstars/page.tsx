@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
-import ShoeCarousel from "@/components/ui/ShoeCarousel";
 
 export const metadata: Metadata = {
   title: "Williams All-Stars March Madness Campaign | 13,660 Entries in 24 Days | Beast Creative",
@@ -35,9 +35,18 @@ export default function WilliamsAllstarsPage() {
               </p>
             </AnimatedSection>
 
-            {/* Shoe Carousel */}
+            {/* Shoe GIF */}
             <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
-              <ShoeCarousel />
+              <div className="relative w-72 lg:w-96 xl:w-[440px]">
+                <Image
+                  src="/assets/williams-allstars-shoe.gif"
+                  alt="Williams All-Stars Spicy Wings trading card shoe"
+                  width={440}
+                  height={440}
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  unoptimized
+                />
+              </div>
             </AnimatedSection>
           </div>
         </div>
