@@ -212,7 +212,7 @@ export default function WilliamsAllstarsPage() {
               </AnimatedSection>
               <AnimatedSection delay={0.1}>
                 <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Email Performance</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">Email Performance</h3>
                   {[
                     { metric: "Open Rate", beast: "29.1%", industry: "24%", lift: "+21%" },
                     { metric: "Click Rate", beast: "9.5%", industry: "0.82%", lift: "11.6x" },
@@ -220,12 +220,12 @@ export default function WilliamsAllstarsPage() {
                   ].map((row) => (
                     <div key={row.metric} className="mb-4 last:mb-0 pb-4 last:pb-0 border-b border-white/5 last:border-0">
                       <div className="flex justify-between items-center mb-1">
-                        <span className="text-xs text-gray-500 uppercase tracking-widest">{row.metric}</span>
+                        <span className="text-xs text-white uppercase tracking-widest">{row.metric}</span>
                         <span className="text-xs font-bold text-beast-pink">{row.lift}</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="font-display font-bold text-beast-yellow text-lg">{row.beast}</span>
-                        <span className="text-xs text-gray-600 self-end pb-0.5">{row.industry !== "—" ? `avg: ${row.industry}` : ""}</span>
+                        <span className="text-xs text-white/70 self-end pb-0.5">{row.industry !== "—" ? `avg: ${row.industry}` : ""}</span>
                       </div>
                     </div>
                   ))}

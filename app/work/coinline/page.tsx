@@ -255,7 +255,7 @@ export default function CoinlinePage() {
 
               <AnimatedSection delay={0.1}>
                 <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Deliverables</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">Deliverables</h3>
                   <div className="space-y-3">
                     {[
                       "Brand Naming & Strategy",
@@ -278,7 +278,7 @@ export default function CoinlinePage() {
 
               <AnimatedSection delay={0.15}>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">Brand Pillars</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">Brand Pillars</h3>
                   {[
                     { label: "Insert Coin", detail: "Game-aware language, used naturally" },
                     { label: "Play Together", detail: "Community-first messaging" },

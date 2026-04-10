@@ -174,7 +174,7 @@ export default function PioneerPage() {
 
               <AnimatedSection delay={0.1}>
                 <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">What Beast Tracks</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">What Beast Tracks</h3>
                   <div className="space-y-3">
                     {[
                       "Ad spend vs. revenue generated",
