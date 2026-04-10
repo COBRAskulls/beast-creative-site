@@ -33,7 +33,7 @@ export default function SunBirdPage() {
                 <span className="text-beast-pink">at Scale.</span>
               </h1>
               <p className="text-body-lead text-gray-300 max-w-xl">
-                36,581 contest entries — 3.6x the goal — on a $6,000 budget. 7.03% CTR. $0.12 CPC. Nearly 8x the industry benchmark.
+                Sun-Bird expanded into Walmart nationwide — and drove 36,581 contest entries, 3.6x the goal, on a $6,000 budget. 7.03% CTR. $0.12 CPC. Nearly 8x the industry benchmark.
               </p>
             </AnimatedSection>
 
