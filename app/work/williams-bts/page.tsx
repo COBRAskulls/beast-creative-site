@@ -147,6 +147,32 @@ export default function WilliamsBtsPage() {
                 </div>
               </AnimatedSection>
 
+              {/* Mobile Story Ads */}
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">Mobile Creative</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Built for the Scroll. Made for Mobile.</h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  93.6% of paid reach came from mobile placements. Beast built story-format ads that met Williams fans in the feed with bold, eye-catching creative that made the sweepstakes impossible to scroll past.
+                </p>
+                <div className="flex gap-10 justify-center">
+                  <div className="w-[30%] max-w-[180px] [transform:rotate(-3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                      <Image src="/assets/williams-bts-story1.jpg" alt="Williams BTS mobile story — Williamize Your Food notebook" width={540} height={960} className="w-full h-auto block" />
+                    </div>
+                  </div>
+                  <div className="w-[30%] max-w-[180px] [transform:rotate(1deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                      <Image src="/assets/williams-bts-story2.jpg" alt="Williams BTS mobile story — Blue school supplies" width={540} height={960} className="w-full h-auto block" />
+                    </div>
+                  </div>
+                  <div className="w-[30%] max-w-[180px] [transform:rotate(3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                      <Image src="/assets/williams-bts-story3.jpg" alt="Williams BTS mobile story — Chalkboard lunchbox" width={540} height={960} className="w-full h-auto block" />
+                    </div>
+                  </div>
+                </div>
+              </AnimatedSection>
+
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Results</p>
                 <h2 className="font-display text-3xl font-bold text-beast-black mb-4">$4,000. 287,896 People. 22,043 Entries.</h2>
