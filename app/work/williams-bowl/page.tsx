@@ -125,20 +125,30 @@ export default function WilliamsBowlPage() {
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Every week, Williams fans voted head-to-head matchups — pitting seasonings against each other like playoff seeds. OG Chili vs. Sloppy Joe. Tex Mex Taco vs. Spaghetti. Each vote entered fans to win that round&apos;s prize, and advanced their favorite deeper into the bracket. Four rounds. Four chances to win. One Williams Bowl champion.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <TiltCard
-                    src="/assets/williams-bowl-bracket.jpg"
-                    alt="Williams Bowl championship bracket — seasoning matchups"
-                    width={1080}
-                    height={1080}
-                  />
-                  <TiltCard
-                    src="/assets/williams-bowl-bracket-final.jpg"
-                    alt="Williams Bowl finals — OG Chili vs Tex Mex Taco"
-                    width={1080}
-                    height={1080}
-                  />
+                <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                  <div className="flex-1 max-w-[320px] mx-auto sm:mx-0 [transform:rotate(-2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
+                    style={{animation: "bracketFloat1 4s ease-in-out infinite"}}>
+                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                      <Image src="/assets/williams-bowl-bracket.jpg" alt="Williams Bowl championship bracket — seasoning matchups" width={1080} height={1080} className="w-full h-auto block" />
+                    </div>
+                  </div>
+                  <div className="flex-1 max-w-[320px] mx-auto sm:mx-0 [transform:rotate(2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
+                    style={{animation: "bracketFloat2 4s ease-in-out infinite"}}>
+                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                      <Image src="/assets/williams-bowl-bracket-final.jpg" alt="Williams Bowl finals — OG Chili vs Tex Mex Taco" width={1080} height={1080} className="w-full h-auto block" />
+                    </div>
+                  </div>
                 </div>
+                <style>{`
+                  @keyframes bracketFloat1 {
+                    0%, 100% { transform: rotate(-2deg) translateY(0px); }
+                    50% { transform: rotate(-2deg) translateY(-10px); }
+                  }
+                  @keyframes bracketFloat2 {
+                    0%, 100% { transform: rotate(2deg) translateY(-5px); }
+                    50% { transform: rotate(2deg) translateY(5px); }
+                  }
+                `}</style>
               </AnimatedSection>
 
               <AnimatedSection>
@@ -199,38 +209,6 @@ export default function WilliamsBowlPage() {
                 </div>
               </AnimatedSection>
 
-              <AnimatedSection>
-                <p className="section-eyebrow text-beast-pink mb-2">The Winners</p>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Real Fans. Real Prizes. Announced Every Round.</h2>
-                <p className="text-gray-600 leading-relaxed mb-8">
-                  Every round, Beast designed and posted custom winner announcement graphics tagging the real fans who voted their way to victory. It kept the community engaged, gave winners a moment in the spotlight, and reminded everyone still in the bracket that the prizes were real and the next winner could be them.
-                </p>
-                <div className="grid grid-cols-2 gap-5">
-                  {[
-                    { src: "/assets/williams-bowl-winner-wildcard.jpg",      label: "Wildcard Round"   },
-                    { src: "/assets/williams-bowl-winner-divisional.jpg",    label: "Divisional Round" },
-                    { src: "/assets/williams-bowl-winner-championship.jpg",  label: "Championship Round" },
-                    { src: "/assets/williams-bowl-winner-grandprize.jpg",    label: "Grand Prize"      },
-                  ].map((card) => (
-                    <div key={card.label} className="group flex flex-col items-center gap-3">
-                      <div className="w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.10)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)] group-hover:scale-[1.02]">
-                        <Image
-                          src={card.src}
-                          alt={`Williams Bowl ${card.label} winner announcement`}
-                          width={1080}
-                          height={1080}
-                          className="w-full h-auto block"
-                        />
-                      </div>
-                      <span className="inline-flex items-center gap-2 bg-beast-pink text-white text-xs font-bold px-4 py-2 rounded-full tracking-wide transition-all duration-300 group-hover:bg-beast-black">
-                        <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
-                        {card.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </AnimatedSection>
-
             </div>
 
             <div className="space-y-6 order-1 lg:order-2">
@@ -272,6 +250,46 @@ export default function WilliamsBowlPage() {
                 </div>
               </AnimatedSection>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Winners — full-width section */}
+      <section className="bg-[#F4F4F4] py-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection className="text-center mb-14">
+            <p className="section-eyebrow text-beast-pink mb-3">The Winners</p>
+            <h2 className="font-display text-4xl font-extrabold text-beast-black mb-4">Real Fans. Real Prizes. Announced Every Round.</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">Every round, Beast designed and posted custom winner announcement graphics tagging the real fans who voted their way to victory — keeping the community engaged and the next entry feeling urgent.</p>
+          </AnimatedSection>
+          <div className="flex flex-col items-center lg:flex-row lg:items-end justify-center gap-8 lg:gap-6">
+            {[
+              { src: "/assets/williams-bowl-winner-wildcard.jpg",     label: "Wildcard Round",     rot: "-4deg", delay: 0.05 },
+              { src: "/assets/williams-bowl-winner-divisional.jpg",   label: "Divisional Round",   rot:  "2deg", delay: 0.1  },
+              { src: "/assets/williams-bowl-winner-championship.jpg", label: "Championship Round",  rot: "-2deg", delay: 0.15 },
+              { src: "/assets/williams-bowl-winner-grandprize.jpg",   label: "Grand Prize",         rot:  "4deg", delay: 0.2  },
+            ].map((card) => (
+              <AnimatedSection key={card.label} delay={card.delay} className="w-full max-w-[300px] shrink-0">
+                <div
+                  className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0"
+                  style={{ transform: `rotate(${card.rot})` }}
+                >
+                  <Image
+                    src={card.src}
+                    alt={`Williams Bowl ${card.label} winner announcement`}
+                    width={1080}
+                    height={1080}
+                    className="w-full h-auto block"
+                  />
+                </div>
+                <div className="flex items-center justify-center mt-6">
+                  <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
+                    <span className="w-2 h-2 rounded-full bg-white/60 animate-pulse shrink-0" />
+                    {card.label}
+                  </span>
+                </div>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
