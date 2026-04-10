@@ -36,7 +36,7 @@ const team = [
   },
   {
     name: "Edy",
-    title: "Strategy & Business Development",
+    title: "Owner & Business Development",
     bio: "The connective tissue of Beast's client relationships. Edy brings the market intelligence and relationship-building that keeps Beast's roster growing with the right brands.",
     initials: "ED",
   },
