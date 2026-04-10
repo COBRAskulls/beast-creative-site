@@ -27,7 +27,7 @@ const ALL_STUDIES = {
     gradientFrom: "#1a1208",
     gradientTo: "#110d00",
     glow: "rgba(251,191,36,0.25)",
-    image: "", // add: "/assets/williams-bts-hero.jpg"
+    image: "/assets/williams-bts-hero.jpg"
   },
   "williams-allstars": {
     client: "Williams Foods",
