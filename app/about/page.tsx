@@ -30,8 +30,8 @@ const team = [
   },
   {
     name: "Eric",
-    title: "AI Development & Strategy",
-    bio: "Beast's AI lead. Eric builds and maintains Segundo, Beast's proprietary AI agent, and develops the AI-powered workflows that give Beast a speed and cost advantage over traditional agencies.",
+    title: "Web Development",
+    bio: "Beast's web lead. Eric builds and maintains the client-facing digital experiences — from conversion-focused landing pages to full campaign sites — ensuring every build is fast, mobile-first, and on brand.",
     initials: "ER",
   },
   {
