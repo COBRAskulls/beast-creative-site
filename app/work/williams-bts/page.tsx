@@ -83,6 +83,11 @@ export default function WilliamsBtsPage() {
 
               {/* Campaign Ad Cards */}
               <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">Campaign Creative</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Spin to Win. Williamize Your Food.</h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  The creative leaned into the back-to-school energy with a bold, playful aesthetic — a Spin to Win mechanic paired with the "Williamize Your Food" sweepstakes concept. Eye-catching color and a clear prize hook made these impossible to scroll past.
+                </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <div className="flex-1 max-w-[280px] mx-auto sm:mx-0 [transform:rotate(-2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
                     style={{animation: "float1 4s ease-in-out infinite"}}>
