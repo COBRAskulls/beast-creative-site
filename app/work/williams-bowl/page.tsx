@@ -84,6 +84,11 @@ export default function WilliamsBowlPage() {
               </AnimatedSection>
 
               <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">Campaign Creative</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Built for the Bracket. Designed to Drive Votes.</h2>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Every round of the Williams Bowl needed creative that made fans feel the stakes. Beast designed the campaign around the NFL playoff energy — stadium atmosphere, bold typography, and a prize stack that escalated week over week. The creative made it easy to understand, impossible to ignore, and worth sharing.
+                </p>
                 <TiltCard
                   src="/assets/williams-bowl-banner.jpg"
                   alt="Williams Bowl — Vote and Win Big campaign banner"
@@ -110,6 +115,28 @@ export default function WilliamsBowlPage() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Bracket</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">16 Seasonings Enter. Fans Decide Who Wins.</h2>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Every week, Williams fans voted head-to-head matchups — pitting seasonings against each other like playoff seeds. OG Chili vs. Sloppy Joe. Tex Mex Taco vs. Spaghetti. Each vote entered fans to win that round&apos;s prize, and advanced their favorite deeper into the bracket. Four rounds. Four chances to win. One Williams Bowl champion.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <TiltCard
+                    src="/assets/williams-bowl-bracket.jpg"
+                    alt="Williams Bowl championship bracket — seasoning matchups"
+                    width={1080}
+                    height={1080}
+                  />
+                  <TiltCard
+                    src="/assets/williams-bowl-bracket-final.jpg"
+                    alt="Williams Bowl finals — OG Chili vs Tex Mex Taco"
+                    width={1080}
+                    height={1080}
+                  />
                 </div>
               </AnimatedSection>
 
