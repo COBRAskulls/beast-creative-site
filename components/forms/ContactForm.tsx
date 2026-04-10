@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import IconButton from "@/components/ui/IconButton";
 
 const schema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -138,13 +139,9 @@ export default function ContactForm({
         )}
       </div>
       {error && <p className="text-red-400 text-sm">{error}</p>}
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="btn-primary w-full text-center justify-center disabled:opacity-60 disabled:cursor-not-allowed"
-      >
+      <IconButton type="submit" icon="send" disabled={isSubmitting} className="w-full justify-center">
         {isSubmitting ? "Sending..." : submitLabel}
-      </button>
+      </IconButton>
       <p className={`text-xs text-center ${dark ? "text-gray-600" : "text-gray-400"}`}>
         No spam. No commitments. We&apos;ll respond within 1 business day.
       </p>

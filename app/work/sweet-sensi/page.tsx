@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Sweet Sensi CBD E-Commerce | 500%+ MRR Growth | Beast Creative Agency",
@@ -34,13 +35,13 @@ export default function SweetSensiPage() {
         </div>
       </section>
 
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
-            <StatCounter value={500} suffix="%+" label="MRR Growth" sublabel="e-commerce revenue" />
-            <StatCounter value={9.5} suffix="%" decimals={1} label="Email Click Rate" sublabel="vs 0.82% industry avg" />
-            <StatCounter value={2} label="Channels Combined" sublabel="SEO + Social as one system" />
-            <StatCounter value={0} label="Paid Ad Dependency" sublabel="built to work without them" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <StatCounter value={500} suffix="%+" label="MRR Growth" sublabel="e-commerce revenue" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={9.5} suffix="%" decimals={1} label="Email Click Rate" sublabel="vs 0.82% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={2} label="Channels Combined" sublabel="SEO + Social as one system" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={0} label="Paid Ad Dependency" sublabel="built to work without them" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
@@ -183,7 +184,7 @@ export default function SweetSensiPage() {
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Ready to Build Revenue That Doesn&apos;t Stop When the Budget Does?</h2>
             <p className="text-gray-400 mb-8">Whether you&apos;re in a restricted industry or just tired of paying for traffic you don&apos;t own — Beast builds marketing assets that compound over time.</p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

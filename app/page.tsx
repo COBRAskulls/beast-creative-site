@@ -5,6 +5,7 @@ import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import ContactForm from "@/components/forms/ContactForm";
 import ClientListSection from "@/components/ui/ClientListSection";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Beast Creative Agency | AI-Powered Digital Marketing in San Antonio, TX",
@@ -87,19 +88,42 @@ const services = [
 const whyBeast = [
   {
     title: "AI-Enhanced Campaigns",
-    desc: "Proprietary AI tools and Sagundo, our in-house AI agent, optimize targeting, generate creative variants, and surface insights that manual analysis misses.",
+    desc: "Proprietary AI tools and Segundo, our in-house AI agent, optimize targeting, generate creative variants, and surface insights that manual analysis misses.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+        <circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/>
+      </svg>
+    ),
   },
   {
     title: "Radical Transparency",
     desc: "Dedicated Slack channel, weekly Loom updates, Looker dashboards showing revenue — not vanity metrics. If something isn't working, you hear it from us first.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+        <circle cx="12" cy="12" r="3"/>
+      </svg>
+    ),
   },
   {
     title: "Proven CPG Results",
     desc: "22,043 entries on a $4,000 budget. 36,581 emails at $0.12 CPC. Our playbook is built on real CPG campaigns with named brands you can verify.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+      </svg>
+    ),
   },
   {
     title: "Senior-Level Focus",
     desc: "We keep our roster selective. Every account gets direct access to senior strategists — not handoffs to junior account managers.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+      </svg>
+    ),
   },
 ];
 
@@ -116,8 +140,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center bg-beast-black overflow-hidden">
         {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] via-beast-black to-[#111111]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(46,204,64,0.08)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-beast-black" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
@@ -142,12 +165,8 @@ export default function HomePage() {
 
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="btn-primary text-base px-8 py-4">
-                Get My Free Strategy Call →
-              </Link>
-              <Link href="/work" className="btn-secondary-dark text-base px-8 py-4">
-                See Our Work
-              </Link>
+              <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
+              <IconButton href="/work" icon="eye" variant="ghost">See Our Work</IconButton>
             </div>
           </AnimatedSection>
         </div>
@@ -156,7 +175,7 @@ export default function HomePage() {
       {/* STATS BAR */}
       <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-beast-black/10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
             <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
             <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
             <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
@@ -272,9 +291,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/work" className="btn-secondary-dark text-sm px-8 py-3">
-              View All Case Studies →
-            </Link>
+            <IconButton href="/work" icon="work" variant="white">View All Case Studies</IconButton>
           </div>
         </div>
       </section>
@@ -323,8 +340,8 @@ export default function HomePage() {
             {whyBeast.map((item, i) => (
               <AnimatedSection key={item.title} delay={i * 0.1}>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100 h-full">
-                  <div className="w-10 h-10 rounded-xl bg-beast-pink/10 flex items-center justify-center mb-4">
-                    <div className="w-2 h-2 rounded-full bg-beast-pink" />
+                  <div className="w-10 h-10 rounded-xl bg-beast-pink/10 flex items-center justify-center mb-4 text-beast-pink">
+                    {item.icon}
                   </div>
                   <h3 className="font-display text-lg font-bold text-beast-black mb-3">{item.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
@@ -348,9 +365,7 @@ export default function HomePage() {
             <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
               We&apos;ve helped CPG food and beverage brands build the consumer databases, engagement metrics, and retail-readiness proof that retail buyers demand. Walk in with data — not hope.
             </p>
-            <Link href="/cpg" className="btn-primary text-base px-10 py-4">
-              See Our CPG Playbook →
-            </Link>
+            <IconButton href="/cpg" icon="cpg">See Our CPG Playbook</IconButton>
           </AnimatedSection>
         </div>
       </section>
@@ -396,14 +411,7 @@ export default function HomePage() {
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
                 Book a free 15-minute strategy call. No pitch deck. No commitments. Just an honest conversation about what&apos;s working, what isn&apos;t, and what Beast can do for your brand.
               </p>
-              <a
-                href="https://calendar.app.google/9q1mcYgEdXNyjK8G6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-base px-8 py-4 inline-flex mb-4"
-              >
-                Book My Free Strategy Call →
-              </a>
+              <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer" className="mb-4">Book My Free Strategy Call</IconButton>
               <p className="text-gray-500 text-sm">
                 Or text us directly:{" "}
                 <a href="sms:+12103320567" className="text-beast-pink hover:underline">(210) 332-0567</a>

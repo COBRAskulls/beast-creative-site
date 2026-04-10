@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import GetStartedModal from "@/components/ui/GetStartedModal";
+import IconButton from "@/components/ui/IconButton";
 
 const clients = [
   "Williams Foods",
@@ -37,11 +38,12 @@ export default function ClientListSection() {
     <>
       <section className="bg-beast-black py-16 lg:py-20 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             {/* Left — client grid */}
             <div>
-              <p className="section-eyebrow text-gray-600 mb-8">Client List</p>
+              <p className="section-eyebrow text-gray-600 mb-3">Client List</p>
+              <h2 className="font-display text-3xl font-bold text-white mb-6">Proven. Not Promised.</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-white/5 border border-white/5 rounded-xl overflow-hidden">
                 {clients.map((client) => (
                   <div
@@ -79,7 +81,7 @@ export default function ClientListSection() {
                         active ? "bg-beast-pink border-beast-pink" : "border-gray-600"
                       }`}>
                         {active && (
-                          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <svg className="w-2.5 h-2.5 text-beast-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                           </svg>
                         )}
@@ -89,12 +91,9 @@ export default function ClientListSection() {
                   );
                 })}
               </div>
-              <button
-                onClick={() => setModalOpen(true)}
-                className="btn-primary w-full justify-center text-base py-4"
-              >
-                Get Started →
-              </button>
+              <IconButton onClick={() => setModalOpen(true)} icon="rocket" className="w-full justify-center">
+                Get Started
+              </IconButton>
             </div>
           </div>
         </div>

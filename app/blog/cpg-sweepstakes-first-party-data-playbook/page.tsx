@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { faqSchema } from "@/lib/schema";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "The CPG Sweepstakes Playbook: First-Party Data Strategy | Beast Creative Agency",
@@ -194,9 +195,8 @@ export default function SweepstakesPlaybookPost() {
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
                   The Sun-Bird Bird Herd campaign was Beast&apos;s flagship CPG sweepstakes — built to support Sun-Bird&apos;s national Walmart rollout announcement. 36,581 consumer emails on $6,000. 7.03% CTR. $0.12 CPC.
                 </p>
-                <Link href="/work/sun-bird" className="inline-flex btn-primary text-sm px-6 py-3">
-                  Read the Sun-Bird Case Study →
-                </Link>
+                <IconButton href="/work/sun-bird" icon="eye">
+                  Read the Sun-Bird Case Study </IconButton>
               </div>
 
             </div>
@@ -225,9 +225,8 @@ export default function SweepstakesPlaybookPost() {
             <p className="text-gray-400 mb-8">
               Beast designs sweepstakes campaigns that generate first-party consumer data at scale — built to support your retail pitch.
             </p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">
-              Get My Free Strategy Call →
-            </Link>
+            <IconButton href="/contact" icon="calendar">
+              Get My Free Strategy Call </IconButton>
           </AnimatedSection>
         </div>
       </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 interface TradingCardProps {
   front: string;
@@ -11,6 +12,19 @@ interface TradingCardProps {
 }
 
 export default function TradingCard({ front, back, alt, rotation, floatDelay }: TradingCardProps) {
+  const [flipped, setFlipped] = useState(false);
+
+  // Hover = desktop mouse only; tap = touch only
+  const handlePointerEnter = (e: React.PointerEvent) => {
+    if (e.pointerType === "mouse") setFlipped(true);
+  };
+  const handlePointerLeave = (e: React.PointerEvent) => {
+    if (e.pointerType === "mouse") setFlipped(false);
+  };
+  const handlePointerUp = (e: React.PointerEvent) => {
+    if (e.pointerType === "touch") setFlipped(f => !f);
+  };
+
   return (
     // Outer: handles floating animation only
     <div
@@ -22,18 +36,21 @@ export default function TradingCard({ front, back, alt, rotation, floatDelay }: 
     >
       {/* Middle: handles static tilt */}
       <div style={{ transform: `rotate(${rotation}deg)` }}>
-        {/* Inner group: handles 3D flip on hover */}
+        {/* Inner: handles 3D flip */}
         <div
-          className="group relative w-full"
+          className="relative w-full"
           style={{ perspective: "1000px", aspectRatio: "2.5 / 3.5" }}
+          onPointerEnter={handlePointerEnter}
+          onPointerLeave={handlePointerLeave}
+          onPointerUp={handlePointerUp}
         >
           <div
             className="
               relative w-full h-full
               transition-transform duration-700 ease-in-out
               [transform-style:preserve-3d]
-              group-hover:[transform:rotateY(180deg)]
             "
+            style={{ transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)" }}
           >
             {/* Front face */}
             <div

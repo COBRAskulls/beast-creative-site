@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { faqSchema, serviceSchema } from "@/lib/schema";
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "SEO Agency San Antonio + Answer Engine Optimization (AEO) | Beast Creative",
@@ -81,7 +82,7 @@ export default function SeoAeoPage() {
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Ready to Own Both Search and AI?</h2>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Services | Beast Creative Agency | National",
@@ -108,7 +109,7 @@ export default function ServicesPage() {
             <p className="text-gray-400 text-lg mb-8">
               Book a free 15-minute strategy call. We&apos;ll tell you exactly which service would move the needle most for your brand — no pitch, no commitment.
             </p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

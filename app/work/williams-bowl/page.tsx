@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Williams Bowl 2021 NFL Campaign | 6,020 Entries, $1,500 Budget | Beast Creative",
@@ -34,13 +35,13 @@ export default function WilliamsBowlPage() {
         </div>
       </section>
 
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
-            <StatCounter value={6020} label="Total Entries" sublabel="on $1,500 budget" />
-            <StatCounter value={0.16} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" />
-            <StatCounter value={872} label="New Page Likes" sublabel="Facebook growth" />
-            <StatCounter value={4} label="Rounds Played" sublabel="bracket mechanic" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <StatCounter value={6020} label="Total Entries" sublabel="on $1,500 budget" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={0.16} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={872} label="New Page Likes" sublabel="Facebook growth" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={4} label="Rounds Played" sublabel="bracket mechanic" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
@@ -196,7 +197,7 @@ export default function WilliamsBowlPage() {
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Every Great Campaign Series Starts With the First One.</h2>
             <p className="text-gray-400 mb-8">Beast&apos;s CPG sweepstakes playbook is proven across multiple campaigns, multiple clients, and multiple years. Ready to run your first — or your best yet?</p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Start My First Campaign →</Link>
+            <IconButton href="/contact" icon="rocket">Start My First Campaign</IconButton>
           </AnimatedSection>
         </div>
       </section>

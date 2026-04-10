@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import IconButton from "@/components/ui/IconButton";
 
 export default function Footer() {
   return (
@@ -72,9 +73,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-white font-semibold text-xs tracking-widest uppercase mb-5">Get Started</h4>
             <p className="text-sm text-gray-500 mb-5">No commitments. Just a free strategy conversation.</p>
-            <Link href="/contact" className="btn-primary mb-6 inline-flex text-sm">
-              Free Strategy Call →
-            </Link>
+            <IconButton href="/contact" icon="calendar" className="mb-6">Free Strategy Call</IconButton>
             <div className="mt-4 text-sm text-gray-600 space-y-1">
               <div>
                 <a href="sms:+12103320567" className="hover:text-beast-pink transition-colors">

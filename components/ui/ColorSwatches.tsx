@@ -19,7 +19,7 @@ export default function ColorSwatches() {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 items-start">
       {colors.map((c) => (
         <button
           key={c.name}

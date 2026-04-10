@@ -3,6 +3,7 @@ import Link from "next/link";
 import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import CpgLeadForm from "@/components/forms/CpgLeadForm";
+import IconButton from "@/components/ui/IconButton";
 import Marquee from "@/components/ui/Marquee";
 import { faqSchema } from "@/lib/schema";
 import FaqAccordion from "@/components/ui/FaqAccordion";
@@ -47,7 +48,7 @@ const faqs = [
   {
     question: "What makes Beast different from other CPG marketing agencies?",
     answer:
-      "Three things: real numbers from named brands (not 'a CPG client'), AI-native operations that cut costs and improve performance, and radical transparency — you see everything in real time. We've also built a proprietary AI agent (Sagundo) that gives Scale-tier clients automated content, analysis, and campaign intelligence.",
+      "Three things: real numbers from named brands (not 'a CPG client'), AI-native operations that cut costs and improve performance, and radical transparency — you see everything in real time. We've also built a proprietary AI agent (Segundo) that gives Scale-tier clients automated content, analysis, and campaign intelligence.",
   },
 ];
 
@@ -91,7 +92,7 @@ const pricing = [
     features: [
       "Everything in Growth",
       "Multi-brand SEO architecture",
-      "Sagundo AI agent integration",
+      "Segundo AI agent integration",
       "AI content production pipeline",
       "Retail readiness deck",
       "Quarterly campaign roadmap",
@@ -112,8 +113,7 @@ export default function CpgPage() {
 
       {/* HERO */}
       <section className="relative min-h-[90vh] flex items-center bg-beast-black overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] via-beast-black to-beast-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(46,204,64,0.1)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-beast-black" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
@@ -133,24 +133,19 @@ export default function CpgPage() {
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
-            <a
-              href="#contact"
-              className="btn-primary text-base px-10 py-4 inline-flex"
-            >
-              Get My Free CPG Marketing Audit →
-            </a>
+            <IconButton href="#contact" icon="chart">Get My Free CPG Marketing Audit</IconButton>
           </AnimatedSection>
         </div>
       </section>
 
       {/* CPG STATS BAR */}
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <StatCounter value={36581} label="Consumer Emails Collected" sublabel="Sun-Bird, $6K budget" />
-            <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" />
-            <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" />
-            <StatCounter value={22043} label="Entries on $4K Budget" sublabel="Williams Foods, 2.2x goal" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <StatCounter value={36581} label="Consumer Emails Collected" sublabel="Sun-Bird, $6K budget" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={22043} label="Entries on $4K Budget" sublabel="Williams Foods, 2.2x goal" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
@@ -268,9 +263,7 @@ export default function CpgPage() {
                 <p className="text-gray-600 leading-relaxed mb-8">
                   Beast&apos;s &quot;Bird Herd&quot; sweepstakes campaign delivered 3.6x the entry goal at <strong className="text-beast-black">7.03% CTR</strong> vs the 0.89% industry average — nearly 8x the benchmark. At <strong className="text-beast-black">$0.12 CPC</strong>, Sun-Bird walked into their Walmart meeting with 36,581 consumer emails and a geographic database proving national demand.
                 </p>
-                <Link href="/work/sun-bird" className="btn-primary inline-flex">
-                  Read the Full Case Study →
-                </Link>
+                <IconButton href="/work/sun-bird" icon="eye">Read the Full Case Study</IconButton>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -323,7 +316,7 @@ export default function CpgPage() {
                 stage: "Stage 3",
                 period: "Months 10–18",
                 title: "Scale",
-                desc: "Quarterly campaigns, national SEO, influencer/UGC programs, Sagundo AI integration, national launch assets.",
+                desc: "Quarterly campaigns, national SEO, influencer/UGC programs, Segundo AI integration, national launch assets.",
                 deliverable: "A brand that markets like a national player.",
               },
             ].map((stage, i) => (
@@ -341,54 +334,6 @@ export default function CpgPage() {
                     <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest mb-2">Key Deliverable</p>
                     <p className="text-sm text-beast-pink">{stage.deliverable}</p>
                   </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-pink mb-4">Investment</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
-              Transparent Pricing. No Surprises.
-            </h2>
-            <p className="text-gray-500 mt-4 text-lg">Ad spend is client-direct to platforms. Campaign production quoted separately.</p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {pricing.map((plan) => (
-              <AnimatedSection key={plan.tier}>
-                <div className={`rounded-2xl p-8 h-full flex flex-col ${plan.highlight ? "bg-beast-black text-white border-2 border-beast-pink" : "bg-[#FAFAFA] border border-gray-100"}`}>
-                  {plan.highlight && (
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/20 text-beast-pink mb-4 self-start">
-                      Most Popular
-                    </span>
-                  )}
-                  <h3 className={`font-display text-2xl font-bold mb-1 ${plan.highlight ? "text-white" : "text-beast-black"}`}>
-                    {plan.tier}
-                  </h3>
-                  <div className="flex items-baseline gap-1 mb-2">
-                    <span className={`font-display text-3xl font-extrabold tracking-normal ${plan.highlight ? "text-beast-pink" : "text-beast-black"}`}>
-                      {plan.price}
-                    </span>
-                    <span className={`text-sm ${plan.highlight ? "text-gray-400" : "text-gray-500"}`}>{plan.period}</span>
-                  </div>
-                  <p className={`text-sm mb-6 ${plan.highlight ? "text-gray-400" : "text-gray-500"}`}>{plan.best}</p>
-                  <ul className="space-y-3 flex-1 mb-8">
-                    {plan.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm">
-                        <span className="text-beast-pink mt-0.5 font-bold shrink-0">✓</span>
-                        <span className={plan.highlight ? "text-gray-300" : "text-gray-700"}>{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <a href="#contact" className={plan.highlight ? "btn-primary text-center justify-center" : "btn-secondary-dark text-center justify-center"}>
-                    {plan.cta} →
-                  </a>
                 </div>
               </AnimatedSection>
             ))}
@@ -418,9 +363,7 @@ export default function CpgPage() {
                 <p className="text-beast-pink font-medium text-sm mb-8">
                   → Start with our Starter tier. One sweepstakes campaign. Real data. Real results. Then we&apos;ll talk about what&apos;s next.
                 </p>
-                <a href="#contact" className="btn-primary inline-flex">
-                  I&apos;m an Emerging Brand →
-                </a>
+                <IconButton href="#contact" icon="rocket">I&apos;m an Emerging Brand</IconButton>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
@@ -435,9 +378,7 @@ export default function CpgPage() {
                 <p className="text-beast-pink font-medium text-sm mb-8">
                   → Our Growth and Scale tiers are built for this exact moment.
                 </p>
-                <a href="#contact" className="btn-primary inline-flex">
-                  I&apos;m Ready to Scale →
-                </a>
+                <IconButton href="#contact" icon="chart">I&apos;m Ready to Scale</IconButton>
               </div>
             </AnimatedSection>
           </div>
@@ -451,10 +392,10 @@ export default function CpgPage() {
             <div className="max-w-3xl">
               <p className="section-eyebrow text-beast-pink mb-4">Our Proprietary AI</p>
               <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-6">
-                Meet Sagundo — Beast&apos;s In-House AI Agent.
+                Meet Segundo — Beast&apos;s In-House AI Agent.
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                Sagundo isn&apos;t a chatbot. It&apos;s an internally-deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation for Beast and our Scale-tier clients. It&apos;s what makes our team faster, our content cheaper, and our campaigns smarter than agencies twice our size.
+                Segundo isn&apos;t a chatbot. It&apos;s an internally-deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation for Beast and our Scale-tier clients. It&apos;s what makes our team faster, our content cheaper, and our campaigns smarter than agencies twice our size.
               </p>
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
                 Available for Scale-tier CPG clients as a self-hosted deployment

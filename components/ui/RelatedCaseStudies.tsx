@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 const ALL_STUDIES = {
@@ -12,6 +15,7 @@ const ALL_STUDIES = {
     gradientFrom: "#0d1a2e",
     gradientTo: "#0a1220",
     glow: "rgba(56,189,248,0.25)",
+    image: "", // add: "/assets/sun-bird-hero.jpg"
   },
   "williams-bts": {
     client: "Williams Foods",
@@ -23,6 +27,7 @@ const ALL_STUDIES = {
     gradientFrom: "#1a1208",
     gradientTo: "#110d00",
     glow: "rgba(251,191,36,0.25)",
+    image: "", // add: "/assets/williams-bts-hero.jpg"
   },
   "williams-allstars": {
     client: "Williams Foods",
@@ -34,6 +39,7 @@ const ALL_STUDIES = {
     gradientFrom: "#0a1a10",
     gradientTo: "#071208",
     glow: "rgba(34,197,94,0.25)",
+    image: "/assets/allstars-ad-announcement.png",
   },
   "williams-bowl": {
     client: "Williams Foods",
@@ -45,6 +51,7 @@ const ALL_STUDIES = {
     gradientFrom: "#1a0808",
     gradientTo: "#0f0404",
     glow: "rgba(239,68,68,0.25)",
+    image: "", // add: "/assets/williams-bowl-hero.jpg"
   },
   "sweet-sensi": {
     client: "Sweet Sensi",
@@ -56,6 +63,7 @@ const ALL_STUDIES = {
     gradientFrom: "#120a1a",
     gradientTo: "#0d0812",
     glow: "rgba(168,85,247,0.25)",
+    image: "", // add: "/assets/sweet-sensi-hero.jpg"
   },
   "coinline": {
     client: "Coinline",
@@ -67,6 +75,7 @@ const ALL_STUDIES = {
     gradientFrom: "#1a0a14",
     gradientTo: "#10060d",
     glow: "rgba(237,21,100,0.25)",
+    image: "", // add: "/assets/coinline-hero.jpg"
   },
   "pioneer": {
     client: "Pioneer",
@@ -78,6 +87,7 @@ const ALL_STUDIES = {
     gradientFrom: "#0a0a1a",
     gradientTo: "#060612",
     glow: "rgba(99,102,241,0.25)",
+    image: "", // add: "/assets/pioneer-hero.jpg"
   },
 };
 
@@ -101,6 +111,11 @@ export default function RelatedCaseStudies({ related }: { related: StudyKey[] })
                 <div
                   className="rc-wrap"
                   style={{ "--rc-glow": cs.glow } as React.CSSProperties}
+                  onMouseMove={(e) => {
+                    const rect = e.currentTarget.getBoundingClientRect();
+                    e.currentTarget.style.setProperty("--x", `${e.clientX - rect.left}px`);
+                    e.currentTarget.style.setProperty("--y", `${e.clientY - rect.top}px`);
+                  }}
                 >
                   <article className="rc-card">
                   {/* Top glow */}
@@ -109,14 +124,24 @@ export default function RelatedCaseStudies({ related }: { related: StudyKey[] })
                   {/* Image / stat area */}
                   <div
                     className="rc-image relative h-32 flex items-center justify-center overflow-hidden"
-                    style={{
+                    style={!cs.image ? {
                       background: `linear-gradient(135deg, ${cs.gradientFrom} 0%, ${cs.gradientTo} 100%)`,
-                    }}
+                    } : undefined}
                   >
-                    {/* Ghost watermark stat */}
-                    <span className="font-display text-5xl font-extrabold text-white/10 select-none tracking-wide">
-                      {cs.stat}
-                    </span>
+                    {cs.image ? (
+                      <Image
+                        src={cs.image}
+                        alt={cs.campaign}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, 33vw"
+                      />
+                    ) : (
+                      /* Ghost watermark stat — shown when no image */
+                      <span className="font-display text-5xl font-extrabold text-white/10 select-none tracking-wide">
+                        {cs.stat}
+                      </span>
+                    )}
                     {/* Badge — appears on hover */}
                     <span className="rc-badge absolute top-3 right-3 text-xs font-bold uppercase tracking-widest text-gray-300 bg-black/60 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10">
                       {cs.category}

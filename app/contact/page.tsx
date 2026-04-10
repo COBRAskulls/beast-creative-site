@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import ContactForm from "@/components/forms/ContactForm";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Contact Beast Creative Agency | Free Strategy Call",
@@ -45,14 +46,7 @@ export default function ContactPage() {
                   <p className="text-gray-400 mb-6">
                     Prefer to talk directly? Book a free 15-minute call and we&apos;ll come prepared with an honest assessment of what we can do for your brand.
                   </p>
-                  <a
-                    href="https://calendar.app.google/9q1mcYgEdXNyjK8G6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary inline-flex text-base px-8 py-4"
-                  >
-                    Book a Free 15-Minute Call →
-                  </a>
+                  <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book a Free 15-Minute Call</IconButton>
                 </div>
 
                 <div className="border-t border-[#2E2E2E] pt-8 space-y-5">

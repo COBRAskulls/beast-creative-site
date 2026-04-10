@@ -5,6 +5,8 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import TradingCard from "@/components/ui/TradingCard";
+import IconButton from "@/components/ui/IconButton";
+import PhoneTilt from "@/components/ui/PhoneTilt";
 
 export const metadata: Metadata = {
   title: "Williams All-Stars March Madness Campaign | 13,660 Entries in 24 Days | Beast Creative",
@@ -53,13 +55,13 @@ export default function WilliamsAllstarsPage() {
         </div>
       </section>
 
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
-            <StatCounter value={13660} label="Total Entries" sublabel="across 8 card drops" />
-            <StatCounter value={200475} label="Total Reach" sublabel="Facebook + Instagram" />
-            <StatCounter value={9.5} suffix="%" decimals={1} label="Email Click Rate" sublabel="vs 0.82% industry avg" />
-            <StatCounter value={24} label="Day Campaign" sublabel="March Madness window" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <StatCounter value={13660} label="Total Entries" sublabel="across 8 card drops" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={200475} label="Total Reach" sublabel="Facebook + Instagram" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={9.5} suffix="%" decimals={1} label="Email Click Rate" sublabel="vs 0.82% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={24} label="Day Campaign" sublabel="March Madness window" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
@@ -179,6 +181,12 @@ export default function WilliamsAllstarsPage() {
                 </blockquote>
               </AnimatedSection>
 
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">Live In The Feed</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-6">What Fans Actually Saw.</h2>
+                <PhoneTilt />
+              </AnimatedSection>
+
             </div>
 
             <div className="space-y-6">
@@ -237,13 +245,12 @@ export default function WilliamsAllstarsPage() {
           </AnimatedSection>
 
           {/* Scattered layout */}
-          <div className="flex flex-col lg:flex-row items-end justify-center gap-8 lg:gap-6">
+          <div className="flex flex-col items-center lg:flex-row lg:items-end justify-center gap-8 lg:gap-6">
 
             {/* Ad 1 — Announcement, tilted left */}
             <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
-                style={{ transform: "rotate(-4deg)" }}
+                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-4deg)]"
               >
                 <Image
                   src="/assets/allstars-ad-announcement.png"
@@ -264,8 +271,7 @@ export default function WilliamsAllstarsPage() {
             {/* Center — Chili Shoe video */}
             <AnimatedSection delay={0.1} className="w-full max-w-[360px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105"
-                style={{ transform: "rotate(2deg)" }}
+                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 lg:[transform:rotate(2deg)]"
               >
                 <video
                   src="/assets/allstars-ad-chili.mp4"
@@ -287,8 +293,7 @@ export default function WilliamsAllstarsPage() {
             {/* Ad 2 — Prizes, tilted right */}
             <AnimatedSection delay={0.15} className="w-full max-w-[340px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:rotate-0"
-                style={{ transform: "rotate(4deg)" }}
+                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(4deg)]"
               >
                 <Image
                   src="/assets/allstars-ad-prizes.png"
@@ -317,7 +322,7 @@ export default function WilliamsAllstarsPage() {
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Ready to Turn Your Next Campaign Into a Collector&apos;s Item?</h2>
             <p className="text-gray-400 mb-8">Beast builds campaign mechanics that keep fans coming back. Let&apos;s build something your audience will actually want to collect.</p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Start My Campaign →</Link>
+            <IconButton href="/contact" icon="rocket">Start My Campaign</IconButton>
           </AnimatedSection>
         </div>
       </section>

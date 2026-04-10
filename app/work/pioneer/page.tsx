@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Pioneer Brand ROAS Campaign | Paid Media & Digital Marketing | Beast Creative",
@@ -35,12 +36,9 @@ export default function PioneerPage() {
       </section>
 
       {/* BEAST BENCHMARK STATS */}
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-6 text-center">Beast Paid Media Benchmarks — Across Comparable Campaigns</p>
-          </AnimatedSection>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
             {[
               { value: "7.03%", label: "Peak CTR", sub: "vs 0.89% industry avg" },
               { value: "$0.12", label: "Lowest CPC", sub: "vs $0.28 industry avg" },
@@ -48,9 +46,9 @@ export default function PioneerPage() {
               { value: "9.5%", label: "Email CTR", sub: "vs 0.82% industry avg" },
             ].map((s) => (
               <div key={s.label} className="text-center px-4">
-                <div className="font-display text-3xl lg:text-4xl font-extrabold text-beast-yellow tracking-wide mb-1">{s.value}</div>
-                <div className="text-sm font-semibold text-white mb-1">{s.label}</div>
-                <div className="text-xs text-gray-500">{s.sub}</div>
+                <div className="font-display text-3xl lg:text-4xl font-extrabold text-beast-black tracking-wide mb-1">{s.value}</div>
+                <div className="text-sm font-semibold text-beast-black/60 mb-1">{s.label}</div>
+                <div className="text-xs text-beast-black/40">{s.sub}</div>
               </div>
             ))}
           </div>
@@ -225,7 +223,7 @@ export default function PioneerPage() {
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Want Paid Social That Pays Back?</h2>
             <p className="text-gray-400 mb-8">Beast builds performance campaigns around ROAS — not vanity metrics. Let&apos;s look at your numbers and show you what&apos;s possible.</p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

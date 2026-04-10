@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Williams Foods Back-to-School Campaign | 22,043 Entries on $4,000 | Beast Creative",
@@ -34,13 +35,13 @@ export default function WilliamsBtsPage() {
         </div>
       </section>
 
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
-            <StatCounter value={22043} label="Total Entries" sublabel="vs 10,000 goal — 2.2x" />
-            <StatCounter value={3.89} suffix="%" decimals={2} label="Click-Through Rate" sublabel="vs 0.89% industry avg" />
-            <StatCounter value={0.18} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" />
-            <StatCounter value={287896} label="Paid Reach" sublabel="on $4,000 budget" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <StatCounter value={22043} label="Total Entries" sublabel="vs 10,000 goal — 2.2x" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={3.89} suffix="%" decimals={2} label="Click-Through Rate" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={0.18} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={287896} label="Paid Reach" sublabel="on $4,000 budget" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
@@ -195,7 +196,7 @@ export default function WilliamsBtsPage() {
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Double Your Entry Goal. On Half the Budget.</h2>
             <p className="text-gray-400 mb-8">That&apos;s not a pitch. That&apos;s what happened. Let&apos;s talk about what Beast&apos;s proven sweepstakes playbook can do for your brand.</p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free CPG Audit →</Link>
+            <IconButton href="/contact" icon="chart">Get My Free CPG Audit</IconButton>
           </AnimatedSection>
         </div>
       </section>

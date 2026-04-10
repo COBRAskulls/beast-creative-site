@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { faqSchema } from "@/lib/schema";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "AI Content Production for CPG Brands | Beast Creative Agency",
@@ -26,9 +27,9 @@ const faqs = [
       "Product descriptions, recipe content, social media captions, email nurture sequences, blog posts, FAQ pages, ad copy variations, and retailer-facing content like sell sheets. Beast's pipeline handles all of these through structured workflows that maintain brand voice.",
   },
   {
-    question: "How does Beast's Sagundo AI agent work?",
+    question: "How does Beast's Segundo AI agent work?",
     answer:
-      "Sagundo is Beast's internally deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It's built on top of foundational AI models and fine-tuned for marketing operations. Available to Scale-tier clients.",
+      "Segundo is Beast's internally deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It's built on top of foundational AI models and fine-tuned for marketing operations. Available to Scale-tier clients.",
   },
   {
     question: "How much cheaper is AI content production than traditional production?",
@@ -176,9 +177,8 @@ export default function AiContentProductionPost() {
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
                   Beast&apos;s AI Content Production service includes brand voice training, content pipeline setup, and ongoing production management — giving CPG brands the output of a full content team at a fraction of the cost.
                 </p>
-                <Link href="/services/content-production" className="inline-flex btn-primary text-sm px-6 py-3">
-                  See the Service →
-                </Link>
+                <IconButton href="/services/content-production" icon="arrow">
+                  See the Service </IconButton>
               </div>
 
             </div>
@@ -207,9 +207,8 @@ export default function AiContentProductionPost() {
             <p className="text-gray-400 mb-8">
               Beast builds AI-powered content pipelines for CPG brands that need to produce more, spend less, and actually rank.
             </p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">
-              Get My Free Strategy Call →
-            </Link>
+            <IconButton href="/contact" icon="calendar">
+              Get My Free Strategy Call </IconButton>
           </AnimatedSection>
         </div>
       </section>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Sun-Bird Seasonings Bird Herd Campaign | 36,581 Entries, 7.03% CTR | Beast Creative",
@@ -36,13 +37,13 @@ export default function SunBirdPage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-[#111111] border-y border-beast-pink/20 py-12 lg:py-16">
+      <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-white/5">
-            <StatCounter value={36581} label="Total Entries" sublabel="vs 10,000 goal — 3.6x" />
-            <StatCounter value={7.03} suffix="%" decimals={2} label="Click-Through Rate" sublabel="vs 0.89% industry avg" />
-            <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" />
-            <StatCounter value={208431} label="Paid Reach" sublabel="national" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <StatCounter value={36581} label="Total Entries" sublabel="vs 10,000 goal — 3.6x" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={7.03} suffix="%" decimals={2} label="Click-Through Rate" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={208431} label="Paid Reach" sublabel="national" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
@@ -224,7 +225,7 @@ export default function SunBirdPage() {
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Is Your Brand Ready for Walmart? Your Marketing Should Get There First.</h2>
             <p className="text-gray-400 mb-8">Sun-Bird walked into Walmart with 36,000 consumer records and a 7.03% CTR to back up every conversation. Beast builds that proof for CPG brands.</p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free CPG Audit →</Link>
+            <IconButton href="/contact" icon="chart">Get My Free CPG Audit</IconButton>
           </AnimatedSection>
         </div>
       </section>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { faqSchema, serviceSchema } from "@/lib/schema";
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "CPG Marketing Agency | Sweepstakes & Consumer Data | Beast Creative",
@@ -90,30 +91,7 @@ export default function CpgMarketingServicePage() {
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
               National Walmart rollout campaign. Nearly 8x industry CTR benchmark. Every entry = a consumer email + zip code for retail proof.
             </p>
-            <Link href="/work/sun-bird" className="btn-primary inline-flex">Read the Full Case Study →</Link>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <p className="section-eyebrow text-beast-pink mb-4 text-center">Pricing</p>
-            <h2 className="font-display text-3xl font-bold text-beast-black tracking-normal text-center mb-8">Starting Investment</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {[
-                { tier: "Starter", range: "$1,500–$3,000/mo", best: "Emerging CPG brands" },
-                { tier: "Growth", range: "$3,000–$7,000/mo", best: "Regional brands going national", highlight: true },
-                { tier: "Scale", range: "$7,000–$20,000/mo", best: "Multi-brand holding companies" },
-              ].map((p) => (
-                <div key={p.tier} className={`rounded-2xl p-6 text-center ${p.highlight ? "bg-beast-black text-white border-2 border-beast-pink" : "bg-gray-50 border border-gray-100"}`}>
-                  <h3 className={`font-display text-xl font-bold mb-2 ${p.highlight ? "text-white" : "text-beast-black"}`}>{p.tier}</h3>
-                  <p className={`font-display text-2xl font-extrabold mb-1 ${p.highlight ? "text-beast-pink" : "text-beast-black"}`}>{p.range}</p>
-                  <p className={`text-sm ${p.highlight ? "text-gray-400" : "text-gray-500"}`}>{p.best}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-center text-sm text-gray-500 mt-4">Ad spend is client-direct to platforms. Campaign production quoted separately.</p>
+            <IconButton href="/work/sun-bird" icon="eye">Read the Full Case Study</IconButton>
           </AnimatedSection>
         </div>
       </section>
@@ -133,7 +111,7 @@ export default function CpgMarketingServicePage() {
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Ready to Build Your Consumer Database?</h2>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

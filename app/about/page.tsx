@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "About Beast Creative Agency | National Digital Marketing",
@@ -30,7 +31,7 @@ const team = [
   {
     name: "Eric",
     title: "AI Development & Strategy",
-    bio: "Beast's AI lead. Eric builds and maintains Sagundo, Beast's proprietary AI agent, and develops the AI-powered workflows that give Beast a speed and cost advantage over traditional agencies.",
+    bio: "Beast's AI lead. Eric builds and maintains Segundo, Beast's proprietary AI agent, and develops the AI-powered workflows that give Beast a speed and cost advantage over traditional agencies.",
     initials: "ER",
   },
   {
@@ -156,10 +157,10 @@ export default function AboutPage() {
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Our Proprietary AI</p>
               <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-4">
-                Sagundo: Beast&apos;s AI Agent
+                Segundo: Beast&apos;s AI Agent
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Sagundo is an internally-deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It&apos;s what makes our team faster, our content cheaper, and our campaigns smarter than agencies twice our size.
+                Segundo is an internally-deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It&apos;s what makes our team faster, our content cheaper, and our campaigns smarter than agencies twice our size.
               </p>
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
                 In active development — available to Scale-tier clients
@@ -179,9 +180,7 @@ export default function AboutPage() {
             <p className="text-gray-400 text-lg max-w-xl mx-auto mb-8">
               Book a free 15-minute call. No pitch deck, no commitments — just an honest conversation about what Beast can do for your brand.
             </p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">
-              Get My Free Strategy Call →
-            </Link>
+            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

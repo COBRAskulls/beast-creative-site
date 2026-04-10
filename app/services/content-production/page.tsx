@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "AI Content Marketing Agency San Antonio | Beast Creative Agency",
@@ -58,7 +59,7 @@ export default function ContentProductionPage() {
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">Ready to Post Every Day Without the Production Budget?</h2>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">Get My Free Strategy Call →</Link>
+            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

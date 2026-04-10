@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import IconButton from "@/components/ui/IconButton";
 
 const schema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -107,13 +108,9 @@ export default function CpgLeadForm() {
         className="form-input"
       />
       {error && <p className="text-red-400 text-sm">{error}</p>}
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="btn-primary w-full text-center justify-center text-base py-4 disabled:opacity-60"
-      >
-        {isSubmitting ? "Sending..." : "Send My Message →"}
-      </button>
+      <IconButton type="submit" icon="send" disabled={isSubmitting} className="w-full justify-center">
+        {isSubmitting ? "Sending..." : "Send My Message"}
+      </IconButton>
       <p className="text-xs text-gray-600 text-center">
         No spam. No commitments. We&apos;ll respond within 1 business day.
       </p>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { faqSchema } from "@/lib/schema";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "Multi-Brand SEO for Holding Companies | Beast Creative Agency",
@@ -192,9 +193,8 @@ export default function MultiBrandSeoPost() {
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
                   Beast&apos;s SEO + AEO service includes multi-brand architecture audits, entity relationship mapping, and structured data implementation — designed specifically for holding companies managing portfolios of consumer brands.
                 </p>
-                <Link href="/services/seo-aeo" className="inline-flex btn-primary text-sm px-6 py-3">
-                  See Our SEO + AEO Service →
-                </Link>
+                <IconButton href="/services/seo-aeo" icon="arrow">
+                  See Our SEO + AEO Service </IconButton>
               </div>
 
             </div>
@@ -223,9 +223,8 @@ export default function MultiBrandSeoPost() {
             <p className="text-gray-400 mb-8">
               Beast builds multi-brand SEO architectures that stop the cannibalization and start compounding authority across your entire portfolio.
             </p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">
-              Get My Free Strategy Call →
-            </Link>
+            <IconButton href="/contact" icon="calendar">
+              Get My Free Strategy Call </IconButton>
           </AnimatedSection>
         </div>
       </section>

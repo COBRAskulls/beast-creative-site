@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { faqSchema } from "@/lib/schema";
+import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "What Is AEO (Answer Engine Optimization)? | Beast Creative Agency",
@@ -197,9 +198,8 @@ export default function AeoPost() {
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Beast Creative Agency is one of the few agencies offering AEO as a formal service — building integrated SEO + AEO strategies that optimize content for both Google rankings and AI citation. We&apos;ve built this practice because we believe it represents the next major shift in how brands get discovered.
                 </p>
-                <Link href="/services/seo-aeo" className="inline-flex mt-4 btn-primary text-sm px-6 py-3">
-                  See Our SEO + AEO Service →
-                </Link>
+                <IconButton href="/services/seo-aeo" icon="arrow">
+                  See Our SEO + AEO Service </IconButton>
               </div>
 
             </div>
@@ -230,9 +230,8 @@ export default function AeoPost() {
             <p className="text-gray-400 mb-8">
               Beast builds integrated SEO + AEO strategies for brands that want to win both channels.
             </p>
-            <Link href="/contact" className="btn-primary text-base px-10 py-4 inline-flex">
-              Get My Free Strategy Call →
-            </Link>
+            <IconButton href="/contact" icon="calendar">
+              Get My Free Strategy Call </IconButton>
           </AnimatedSection>
         </div>
       </section>

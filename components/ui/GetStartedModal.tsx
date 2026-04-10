@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import IconButton from "@/components/ui/IconButton";
 
 const services = [
   "CPG Marketing",
@@ -152,13 +153,9 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                 />
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="btn-primary w-full justify-center text-base py-4"
-                >
-                  {loading ? "Sending…" : "Book a Strategy Call →"}
-                </button>
+                <IconButton type="submit" icon="calendar" disabled={loading} className="w-full justify-center">
+                  {loading ? "Sending…" : "Book a Strategy Call"}
+                </IconButton>
               </form>
             </>
           )}
