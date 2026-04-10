@@ -51,7 +51,7 @@ const ALL_STUDIES = {
     gradientFrom: "#1a0808",
     gradientTo: "#0f0404",
     glow: "rgba(239,68,68,0.25)",
-    image: "", // add: "/assets/williams-bowl-hero.jpg"
+    image: "/assets/williams-bowl-banner.jpg",
   },
   "sweet-sensi": {
     client: "Sweet Sensi",

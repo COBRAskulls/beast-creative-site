@@ -76,7 +76,10 @@ export default function Nav() {
             <ul className="flex items-center flex-1">
               {/* Work */}
               <li className="relative" onMouseEnter={() => setWorkOpen(true)} onMouseLeave={() => setWorkOpen(false)}>
-                <button className="flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold text-white/80 hover:text-white transition-colors rounded-full hover:bg-white/8" onClick={() => setWorkOpen(!workOpen)}>
+                <button
+                  className={`flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${pathname.startsWith("/work") ? "text-white bg-white/12" : "text-white/80 hover:text-white hover:bg-white/8"}`}
+                  onClick={() => setWorkOpen(!workOpen)}
+                >
                   Work
                   <span className={`nav-chevron${workOpen ? " open" : ""}`}><span /></span>
                 </button>
@@ -87,8 +90,8 @@ export default function Nav() {
                         All Case Studies <span className="text-xs bg-white/10 text-gray-400 px-2 py-0.5 rounded-full">7</span>
                       </Link>
                       {caseStudies.map((cs) => (
-                        <Link key={cs.href} href={cs.href} className="flex items-center justify-between px-5 py-2.5 hover:bg-white/8 transition-colors group">
-                          <span className="text-sm text-gray-300 group-hover:text-white transition-colors truncate pr-3">{cs.name}</span>
+                        <Link key={cs.href} href={cs.href} className={`flex items-center justify-between px-5 py-2.5 hover:bg-white/8 transition-colors group ${pathname === cs.href ? "bg-white/8" : ""}`}>
+                          <span className={`text-sm transition-colors truncate pr-3 ${pathname === cs.href ? "text-white font-semibold" : "text-gray-300 group-hover:text-white"}`}>{cs.name}</span>
                           <span className="text-xs text-beast-yellow font-bold shrink-0">{cs.stat}</span>
                         </Link>
                       ))}
@@ -99,7 +102,10 @@ export default function Nav() {
 
               {/* Services */}
               <li className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-                <button className="flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold text-white/80 hover:text-white transition-colors rounded-full hover:bg-white/8" onClick={() => setServicesOpen(!servicesOpen)}>
+                <button
+                  className={`flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${pathname.startsWith("/services") ? "text-white bg-white/12" : "text-white/80 hover:text-white hover:bg-white/8"}`}
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                >
                   Services
                   <span className={`nav-chevron${servicesOpen ? " open" : ""}`}><span /></span>
                 </button>
@@ -107,7 +113,7 @@ export default function Nav() {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-64">
                     <div style={dropdownGlass} className="overflow-hidden">
                       {services.map((s) => (
-                        <Link key={s.href} href={s.href} className="flex items-center justify-between px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/8 transition-colors">
+                        <Link key={s.href} href={s.href} className={`flex items-center justify-between px-5 py-3 text-sm hover:text-white hover:bg-white/8 transition-colors ${pathname === s.href ? "text-white bg-white/8 font-semibold" : "text-gray-300"}`}>
                           {s.name}
                           {s.badge && <span className="text-xs bg-beast-pink/20 text-beast-pink border border-beast-pink/25 px-2 py-0.5 rounded-full font-semibold">{s.badge}</span>}
                         </Link>
@@ -117,11 +123,15 @@ export default function Nav() {
                 )}
               </li>
 
-              {["CPG", "About", "Contact"].map((name) => (
-                <li key={name}>
-                  <Link href={`/${name.toLowerCase()}`} className="block px-3.5 py-2 text-sm font-semibold text-white/80 hover:text-white transition-colors rounded-full hover:bg-white/8">{name}</Link>
-                </li>
-              ))}
+              {["CPG", "About", "Contact"].map((name) => {
+                const href = `/${name.toLowerCase()}`;
+                const isActive = pathname === href;
+                return (
+                  <li key={name}>
+                    <Link href={href} className={`block px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${isActive ? "text-white bg-white/12" : "text-white/80 hover:text-white hover:bg-white/8"}`}>{name}</Link>
+                  </li>
+                );
+              })}
             </ul>
 
             <div className="w-px h-4 bg-white/15 mx-1 shrink-0" />
