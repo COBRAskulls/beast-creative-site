@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
@@ -14,24 +15,38 @@ export const metadata: Metadata = {
 export default function WilliamsBtsPage() {
   return (
     <>
-      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["CPG Marketing", "Sweepstakes", "Paid Social", "Consumer Data", "Email Marketing"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
-              ))}
-            </div>
-            <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Williams Foods · 2021</p>
-            <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-              They Asked for 10,000 Entries.{" "}
-              <span className="text-beast-pink">We Delivered 22,043.</span>
-            </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
-              2.2x the stated goal. $0.18 CPC on a $4,000 budget. 287,896 people reached in 31 days.
-            </p>
-          </AnimatedSection>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <AnimatedSection>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["CPG Marketing", "Sweepstakes", "Paid Social", "Consumer Data", "Email Marketing"].map((tag) => (
+                  <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
+                ))}
+              </div>
+              <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Williams Foods · 2021</p>
+              <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
+                They Asked for 10,000 Entries.{" "}
+                <span className="text-beast-pink">We Delivered 22,043.</span>
+              </h1>
+              <p className="text-body-lead text-gray-300 max-w-xl">
+                2.2x the stated goal. $0.18 CPC on a $4,000 budget. 287,896 people reached in 31 days.
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
+              <div className="relative w-72 lg:w-96 xl:w-[440px]">
+                <Image
+                  src="/assets/williams-bts-hero.jpg"
+                  alt="Williams Back-to-School Chili Seasoning campaign ad"
+                  width={440}
+                  height={440}
+                  className="w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
