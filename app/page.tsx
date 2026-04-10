@@ -412,7 +412,7 @@ export default function HomePage() {
                 Book a free 15-minute strategy call. No pitch deck. No commitments. Just an honest conversation about what&apos;s working, what isn&apos;t, and what Beast can do for your brand.
               </p>
               <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-sm text-center mt-4">
                 Or text us directly:{" "}
                 <a href="sms:+12103320567" className="text-beast-pink hover:underline">(210) 332-0567</a>
               </p>
