@@ -40,6 +40,13 @@ const team = [
     bio: "The connective tissue of Beast's client relationships. Edy brings the market intelligence and relationship-building that keeps Beast's roster growing with the right brands.",
     initials: "ED",
   },
+  {
+    name: "Segundo",
+    title: "Proprietary AI Agent",
+    bio: "Not a person. Doesn't sleep. Never misses a deadline. Segundo is Beast's in-house AI agent — handling content production, campaign analysis, and workflow automation so the humans can focus on strategy. He's the reason we move faster than agencies twice our size.",
+    initials: "S2",
+    isAI: true,
+  },
 ];
 
 const values = [
@@ -137,11 +144,11 @@ export default function AboutPage() {
             {team.map((member, i) => (
               <AnimatedSection key={member.name} delay={i * 0.1}>
                 <div className="flex flex-col items-start">
-                  <div className="w-16 h-16 rounded-2xl bg-beast-black flex items-center justify-center mb-4">
-                    <span className="font-display font-bold text-beast-pink text-xl">{member.initials}</span>
+                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 ${(member as any).isAI ? "bg-beast-pink" : "bg-beast-black"}`}>
+                    <span className={`font-display font-bold text-xl ${(member as any).isAI ? "text-white" : "text-beast-pink"}`}>{member.initials}</span>
                   </div>
                   <h3 className="font-display text-xl font-bold text-beast-black mb-1">{member.name}</h3>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-beast-pink mb-3">{member.title}</p>
+                  <p className={`text-xs font-semibold uppercase tracking-widest mb-3 ${(member as any).isAI ? "text-beast-black" : "text-beast-pink"}`}>{member.title}</p>
                   <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
                 </div>
               </AnimatedSection>
