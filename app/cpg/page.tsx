@@ -352,7 +352,7 @@ export default function CpgPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <AnimatedSection>
-              <div className="bg-white rounded-2xl p-8 border border-gray-100 h-full">
+              <div className="bg-white rounded-2xl p-8 border border-gray-100 h-full flex flex-col">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-700 mb-6">
                   Path A
                 </span>
@@ -363,11 +363,13 @@ export default function CpgPage() {
                 <p className="text-beast-pink font-medium text-sm mb-8">
                   → Start with our Starter tier. One sweepstakes campaign. Real data. Real results. Then we&apos;ll talk about what&apos;s next.
                 </p>
-                <IconButton href="#contact" icon="rocket">I&apos;m an Emerging Brand</IconButton>
+                <div className="mt-auto">
+                  <IconButton href="#contact" icon="rocket">I&apos;m an Emerging Brand</IconButton>
+                </div>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
-              <div className="bg-beast-black rounded-2xl p-8 border border-[#2E2E2E] h-full">
+              <div className="bg-beast-black rounded-2xl p-8 border border-[#2E2E2E] h-full flex flex-col">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/15 text-beast-pink border border-beast-pink/20 mb-6">
                   Path B
                 </span>
@@ -378,7 +380,9 @@ export default function CpgPage() {
                 <p className="text-beast-pink font-medium text-sm mb-8">
                   → Our Growth and Scale tiers are built for this exact moment.
                 </p>
-                <IconButton href="#contact" icon="chart">I&apos;m Ready to Scale</IconButton>
+                <div className="mt-auto">
+                  <IconButton href="#contact" icon="chart">I&apos;m Ready to Scale</IconButton>
+                </div>
               </div>
             </AnimatedSection>
           </div>
