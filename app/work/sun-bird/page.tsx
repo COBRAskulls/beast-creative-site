@@ -16,24 +16,40 @@ export default function SunBirdPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["CPG Marketing", "National Retail Launch", "Sweepstakes", "Paid Social", "Consumer Data"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
-              ))}
-            </div>
-            <p className="section-eyebrow text-gray-500 mb-3">Case Study — Sun-Bird Seasonings · 2021</p>
-            <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-              Sun-Bird Flew Into Walmart Nationwide.{" "}
-              <span className="text-beast-pink">We Made Sure Everyone Knew.</span>
-            </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
-              36,581 contest entries — 3.6x the goal — on a $6,000 budget. 7.03% CTR. $0.12 CPC. Nearly 8x the industry benchmark.
-            </p>
-          </AnimatedSection>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Text */}
+            <AnimatedSection>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["CPG Marketing", "National Retail Launch", "Sweepstakes", "Paid Social", "Consumer Data"].map((tag) => (
+                  <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
+                ))}
+              </div>
+              <p className="section-eyebrow text-gray-500 mb-3">Case Study — Sun-Bird Seasonings · 2021</p>
+              <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
+                Sun-Bird Flew Into Walmart Nationwide.{" "}
+                <span className="text-beast-pink">We Made Sure Everyone Knew.</span>
+              </h1>
+              <p className="text-body-lead text-gray-300 max-w-xl">
+                36,581 contest entries — 3.6x the goal — on a $6,000 budget. 7.03% CTR. $0.12 CPC. Nearly 8x the industry benchmark.
+              </p>
+            </AnimatedSection>
+
+            {/* iMac mockup */}
+            <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
+              <div className="relative w-72 lg:w-96 xl:w-[480px]">
+                <Image
+                  src="/assets/sunbird-screen-mockup.png"
+                  alt="Sun-Bird Bird Herd sweepstakes landing page"
+                  width={480}
+                  height={400}
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
