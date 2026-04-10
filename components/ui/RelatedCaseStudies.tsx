@@ -15,7 +15,7 @@ const ALL_STUDIES = {
     gradientFrom: "#0d1a2e",
     gradientTo: "#0a1220",
     glow: "rgba(56,189,248,0.25)",
-    image: "", // add: "/assets/sun-bird-hero.jpg"
+    image: "/assets/sunbird-ad-green.jpg"
   },
   "williams-bts": {
     client: "Williams Foods",
