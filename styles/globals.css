@@ -570,3 +570,15 @@ select.form-input option {
 ::-webkit-scrollbar-track { background: #0A0A0A; }
 ::-webkit-scrollbar-thumb { background: #2E2E2E; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #FF1198; }
+
+/* ── Mobile button text fix ──────────────────────── */
+@media (max-width: 1023px) {
+  .btn-primary,
+  .btn-light,
+  .btn-ghost,
+  .btn-yellow {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
+  }
+}

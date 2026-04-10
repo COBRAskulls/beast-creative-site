@@ -210,7 +210,7 @@ export default function Nav() {
           </nav>
 
           <div className="mt-10 space-y-4">
-            <Link href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" target="_blank" rel="noopener noreferrer" className="btn-yellow w-full justify-center">
+            <Link href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" target="_blank" rel="noopener noreferrer" className="btn-yellow w-full justify-center !py-4 !px-6">
               Book My Free 15-Minute Strategy Call
             </Link>
             <a href="sms:+12103320567" className="block text-center text-sm text-gray-500 hover:text-beast-pink transition-colors">(210) 332-0567 — text or call</a>
