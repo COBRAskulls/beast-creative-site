@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
@@ -44,6 +45,49 @@ export default function SunBirdPage() {
             <StatCounter value={7.03} suffix="%" decimals={2} label="Click-Through Rate" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
             <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
             <StatCounter value={208431} label="Paid Reach" sublabel="national" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+          </div>
+        </div>
+      </section>
+
+      {/* CAMPAIGN CREATIVE */}
+      <section className="bg-[#111111] py-14 lg:py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection className="mb-8">
+            <p className="section-eyebrow text-beast-pink mb-2">Campaign Creative</p>
+            <h2 className="font-display text-2xl font-bold text-white">The Ads That Drove 36,581 Entries</h2>
+          </AnimatedSection>
+
+          {/* Social ads + winner */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+            <AnimatedSection delay={0}>
+              <div className="relative aspect-square rounded-2xl overflow-hidden">
+                <Image src="/assets/sunbird-ad-green.jpg" alt="Sun-Bird Bird Herd social ad" fill className="object-cover" sizes="(max-width: 640px) 100vw, 33vw" />
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.08}>
+              <div className="relative aspect-square rounded-2xl overflow-hidden">
+                <Image src="/assets/sunbird-ad-yellow.jpg" alt="Sun-Bird Flocking to a Store Near You social ad" fill className="object-cover" sizes="(max-width: 640px) 100vw, 33vw" />
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.16}>
+              <div className="relative aspect-square rounded-2xl overflow-hidden">
+                <Image src="/assets/sunbird-winner.png" alt="Sun-Bird campaign winner announcement" fill className="object-cover" sizes="(max-width: 640px) 100vw, 33vw" />
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* Mobile story ads */}
+          <div className="grid grid-cols-2 gap-4">
+            <AnimatedSection delay={0.1}>
+              <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
+                <Image src="/assets/sunbird-mobile-flocking.jpg" alt="Sun-Bird mobile story ad — Flocking to a Store Near You" fill className="object-cover" sizes="(max-width: 640px) 50vw, 25vw" />
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.18}>
+              <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
+                <Image src="/assets/sunbird-mobile-product.jpg" alt="Sun-Bird mobile story ad — Our Product Your Creation" fill className="object-cover" sizes="(max-width: 640px) 50vw, 25vw" />
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
