@@ -34,19 +34,20 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left: Form */}
             <AnimatedSection>
-              <h2 className="font-display text-2xl font-bold text-white mb-6">Send Us a Message</h2>
-              <ContactForm />
+              <h2 className="font-display text-2xl font-bold text-white mb-3">Prefer Email Instead?</h2>
+              <p className="text-gray-500 text-sm mb-6">Use the form below and we&apos;ll respond within 1 business day.</p>
+              <ContactForm submitLabel="Request Info by Email" />
             </AnimatedSection>
 
             {/* Right: Direct contact + booking */}
             <AnimatedSection delay={0.15}>
               <div className="space-y-8">
                 <div>
-                  <h2 className="font-display text-2xl font-bold text-white mb-6">Book a Strategy Call</h2>
+                  <h2 className="font-display text-2xl font-bold text-white mb-6">Book My Free 15-Minute Strategy Call</h2>
                   <p className="text-gray-400 mb-6">
                     Prefer to talk directly? Book a free 15-minute call and we&apos;ll come prepared with an honest assessment of what we can do for your brand.
                   </p>
-                  <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book a Free 15-Minute Call</IconButton>
+                  <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
                 </div>
 
                 <div className="border-t border-[#2E2E2E] pt-8 space-y-5">

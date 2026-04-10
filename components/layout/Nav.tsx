@@ -126,8 +126,8 @@ export default function Nav() {
 
             <div className="w-px h-4 bg-white/15 mx-1 shrink-0" />
 
-            <Link href="/contact" className="btn-primary shrink-0 ml-1 !py-2.5 !px-5 !text-[10px] !tracking-[2px]">
-              Free Strategy Call
+            <Link href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" target="_blank" rel="noopener noreferrer" className="btn-primary shrink-0 ml-1 !py-2.5 !px-5 !text-[10px] !tracking-[2px]">
+              Free 15-Min Strategy Call
             </Link>
         </nav>
       </div>
@@ -210,8 +210,8 @@ export default function Nav() {
           </nav>
 
           <div className="mt-10 space-y-4">
-            <Link href="/contact" className="btn-yellow w-full justify-center">
-              Get My Free Strategy Call
+            <Link href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" target="_blank" rel="noopener noreferrer" className="btn-yellow w-full justify-center">
+              Book My Free 15-Minute Strategy Call
             </Link>
             <a href="sms:+12103320567" className="block text-center text-sm text-gray-500 hover:text-beast-pink transition-colors">(210) 332-0567 — text or call</a>
           </div>

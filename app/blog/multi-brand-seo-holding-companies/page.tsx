@@ -223,8 +223,7 @@ export default function MultiBrandSeoPost() {
             <p className="text-gray-400 mb-8">
               Beast builds multi-brand SEO architectures that stop the cannibalization and start compounding authority across your entire portfolio.
             </p>
-            <IconButton href="/contact" icon="calendar">
-              Get My Free Strategy Call </IconButton>
+            <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

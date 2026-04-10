@@ -133,7 +133,7 @@ export default function CpgPage() {
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
-            <IconButton href="#contact" icon="chart">Get My Free CPG Marketing Audit</IconButton>
+            <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="chart" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>

@@ -109,7 +109,7 @@ export default function ServicesPage() {
             <p className="text-gray-400 text-lg mb-8">
               Book a free 15-minute strategy call. We&apos;ll tell you exactly which service would move the needle most for your brand — no pitch, no commitment.
             </p>
-            <IconButton href="/contact" icon="calendar">Get My Free Strategy Call</IconButton>
+            <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
           </AnimatedSection>
         </div>
       </section>
