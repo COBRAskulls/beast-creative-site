@@ -44,7 +44,7 @@ const team = [
     name: "Segundo",
     title: "Proprietary AI Agent",
     bio: "Not a person. Doesn't sleep. Never misses a deadline. Segundo is Beast's in-house AI agent — handling content production, campaign analysis, and workflow automation so the humans can focus on strategy. He's the reason we move faster than agencies twice our size.",
-    initials: "S2",
+    initials: "SEG",
     isAI: true,
   },
 ];
