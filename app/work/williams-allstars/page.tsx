@@ -183,7 +183,8 @@ export default function WilliamsAllstarsPage() {
 
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">Live In The Feed</p>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-6">What Fans Actually Saw.</h2>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">What Fans Actually Saw.</h2>
+                <p className="text-gray-600 leading-relaxed mb-6">Each card drop was announced via Facebook and Instagram — showing off the new design, reminding fans they had another chance to enter, and keeping the campaign alive for the full 24-day March Madness window. This is what it looked like in the feed.</p>
                 <PhoneTilt />
               </AnimatedSection>
 
