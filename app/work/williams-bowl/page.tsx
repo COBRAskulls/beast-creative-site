@@ -150,7 +150,7 @@ export default function WilliamsBowlPage() {
             <div className="space-y-6">
               <AnimatedSection>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-5">Campaign Overview</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-5">Campaign Overview</h3>
                   {[
                     { label: "Client", value: "Williams Foods" },
                     { label: "Campaign", value: "Williams Bowl — NFL Bracket" },
@@ -161,7 +161,7 @@ export default function WilliamsBowlPage() {
                     { label: "Services", value: "Strategy, Creative, Polling Setup, Landing Page, Paid Social" },
                   ].map((item) => (
                     <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
-                      <span className="text-sm text-gray-500 shrink-0">{item.label}</span>
+                      <span className="text-sm text-white shrink-0">{item.label}</span>
                       <span className="text-sm font-semibold text-beast-black text-right">{item.value}</span>
                     </div>
                   ))}
@@ -169,7 +169,7 @@ export default function WilliamsBowlPage() {
               </AnimatedSection>
               <AnimatedSection delay={0.1}>
                 <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-4">The Williams Campaign Series</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">The Williams Campaign Series</h3>
                   {[
                     { campaign: "Williams Bowl", result: "6,020 entries", year: "2021" },
                     { campaign: "Williams BTS", result: "22,043 entries", year: "2021" },
@@ -177,8 +177,8 @@ export default function WilliamsBowlPage() {
                   ].map((row) => (
                     <div key={row.campaign} className="mb-4 last:mb-0 pb-4 last:pb-0 border-b border-white/5 last:border-0">
                       <div className="flex justify-between items-center mb-0.5">
-                        <span className="text-xs text-gray-500 uppercase tracking-widest">{row.campaign}</span>
-                        <span className="text-xs text-gray-600">{row.year}</span>
+                        <span className="text-xs text-white uppercase tracking-widest">{row.campaign}</span>
+                        <span className="text-xs text-white">{row.year}</span>
                       </div>
                       <span className="font-display font-bold text-beast-yellow">{row.result}</span>
                     </div>

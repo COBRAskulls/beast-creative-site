@@ -135,7 +135,7 @@ export default function SweetSensiPage() {
             <div className="space-y-6">
               <AnimatedSection>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-gray-500 mb-5">Campaign Overview</h3>
+                  <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-5">Campaign Overview</h3>
                   {[
                     { label: "Client", value: "Sweet Sensi" },
                     { label: "Industry", value: "CBD / Wellness / E-Commerce" },
@@ -145,7 +145,7 @@ export default function SweetSensiPage() {
                     { label: "Result", value: "500%+ MRR growth" },
                   ].map((item) => (
                     <div key={item.label} className="flex justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
-                      <span className="text-sm text-gray-500 shrink-0">{item.label}</span>
+                      <span className="text-sm text-white shrink-0">{item.label}</span>
                       <span className="text-sm font-semibold text-beast-black text-right">{item.value}</span>
                     </div>
                   ))}
