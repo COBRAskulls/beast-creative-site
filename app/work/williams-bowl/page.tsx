@@ -17,21 +17,37 @@ export default function WilliamsBowlPage() {
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["CPG Marketing", "Campaign Design", "Paid Social", "Consumer Data"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
-              ))}
-            </div>
-            <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Williams Foods · 2021</p>
-            <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-              The First Campaign.{" "}
-              <span className="text-beast-pink">The One That Proved Everything.</span>
-            </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
-              6,020 entries on a $1,500 ad budget. $0.16 CPC. The proof-of-concept that launched an entire campaign series.
-            </p>
-          </AnimatedSection>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimatedSection>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["CPG Marketing", "Campaign Design", "Paid Social", "Consumer Data"].map((tag) => (
+                  <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
+                ))}
+              </div>
+              <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Williams Foods · 2021</p>
+              <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
+                The First Campaign.{" "}
+                <span className="text-beast-pink">The One That Proved Everything.</span>
+              </h1>
+              <p className="text-body-lead text-gray-300 max-w-2xl">
+                6,020 entries on a $1,500 ad budget. $0.16 CPC. The proof-of-concept that launched an entire campaign series.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection delay={0.15}>
+              <div className="flex justify-center lg:justify-end">
+                <div className="w-72 lg:w-96 xl:w-[440px]" style={{ filter: "drop-shadow(0 20px 50px rgba(0,0,0,0.45))" }}>
+                  <video
+                    src="/assets/williams-bowl-hero.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto rounded-2xl"
+                  />
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
