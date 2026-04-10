@@ -49,59 +49,6 @@ export default function SunBirdPage() {
         </div>
       </section>
 
-      {/* CAMPAIGN CREATIVE */}
-      <section className="bg-[#F4F4F4] py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection className="text-center mb-14">
-            <p className="section-eyebrow text-beast-pink mb-3">Campaign Creative</p>
-            <h2 className="font-display text-4xl font-extrabold text-beast-black mb-4">The Ads That Drove 36,581 Entries.</h2>
-            <p className="text-gray-500 max-w-xl mx-auto">Bold creative built to stop thumbs mid-scroll. These ran across Facebook and Instagram during the Bird Herd sweepstakes.</p>
-          </AnimatedSection>
-
-          {/* Scattered square ads */}
-          <div className="flex flex-col items-center lg:flex-row lg:items-end justify-center gap-8 lg:gap-6 mb-16">
-
-            <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-4deg)]">
-                <Image src="/assets/sunbird-ad-green.jpg" alt="Sun-Bird Bird Herd social ad" width={680} height={680} className="w-full h-auto block" />
-              </div>
-              <div className="flex items-center justify-center mt-6">
-                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
-                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
-                  Launch Ad
-                </span>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.1} className="w-full max-w-[360px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 lg:[transform:rotate(2deg)]">
-                <Image src="/assets/sunbird-winner.png" alt="Sun-Bird Bird Herd winner announcement" width={680} height={680} className="w-full h-auto block" />
-              </div>
-              <div className="flex items-center justify-center mt-6">
-                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
-                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
-                  Winner Reveal
-                </span>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.15} className="w-full max-w-[340px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(4deg)]">
-                <Image src="/assets/sunbird-ad-yellow.jpg" alt="Sun-Bird Flocking to a Store Near You ad" width={680} height={680} className="w-full h-auto block" />
-              </div>
-              <div className="flex items-center justify-center mt-6">
-                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
-                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
-                  Awareness Ad
-                </span>
-              </div>
-            </AnimatedSection>
-
-          </div>
-
-        </div>
-      </section>
-
       {/* MAIN CONTENT */}
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
@@ -294,6 +241,59 @@ export default function SunBirdPage() {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* CAMPAIGN CREATIVE */}
+      <section className="bg-[#F4F4F4] py-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection className="text-center mb-14">
+            <p className="section-eyebrow text-beast-pink mb-3">Campaign Creative</p>
+            <h2 className="font-display text-4xl font-extrabold text-beast-black mb-4">The Ads That Drove 36,581 Entries.</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">Bold creative built to stop thumbs mid-scroll. These ran across Facebook and Instagram during the Bird Herd sweepstakes.</p>
+          </AnimatedSection>
+
+          {/* Scattered square ads */}
+          <div className="flex flex-col items-center lg:flex-row lg:items-end justify-center gap-8 lg:gap-6 mb-16">
+
+            <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
+              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-4deg)]">
+                <Image src="/assets/sunbird-ad-green.jpg" alt="Sun-Bird Bird Herd social ad" width={680} height={680} className="w-full h-auto block" />
+              </div>
+              <div className="flex items-center justify-center mt-6">
+                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
+                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
+                  Launch Ad
+                </span>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.1} className="w-full max-w-[360px] shrink-0">
+              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 lg:[transform:rotate(2deg)]">
+                <Image src="/assets/sunbird-winner.png" alt="Sun-Bird Bird Herd winner announcement" width={680} height={680} className="w-full h-auto block" />
+              </div>
+              <div className="flex items-center justify-center mt-6">
+                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
+                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
+                  Winner Reveal
+                </span>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.15} className="w-full max-w-[340px] shrink-0">
+              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(4deg)]">
+                <Image src="/assets/sunbird-ad-yellow.jpg" alt="Sun-Bird Flocking to a Store Near You ad" width={680} height={680} className="w-full h-auto block" />
+              </div>
+              <div className="flex items-center justify-center mt-6">
+                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
+                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
+                  Awareness Ad
+                </span>
+              </div>
+            </AnimatedSection>
+
+          </div>
+
         </div>
       </section>
 
