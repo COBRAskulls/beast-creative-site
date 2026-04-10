@@ -28,7 +28,7 @@ export default function WilliamsAllstarsPage() {
                   <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
                 ))}
               </div>
-              <p className="section-eyebrow text-gray-500 mb-3">Case Study — Williams Foods · 2022</p>
+              <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Williams Foods · 2022</p>
               <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
                 Digital Trading Cards.{" "}
                 <span className="text-beast-pink">Real Fan Frenzy.</span>

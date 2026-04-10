@@ -27,7 +27,7 @@ export default function SunBirdPage() {
                   <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
                 ))}
               </div>
-              <p className="section-eyebrow text-gray-500 mb-3">Case Study — Sun-Bird Seasonings · 2021</p>
+              <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Sun-Bird Seasonings · 2021</p>
               <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
                 Delivering CPG Brand Awareness{" "}
                 <span className="text-beast-pink">at Scale.</span>

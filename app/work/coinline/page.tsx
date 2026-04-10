@@ -25,7 +25,7 @@ export default function CoinlinePage() {
                 <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
-            <p className="section-eyebrow text-gray-500 mb-3">Case Study — Coinline Barcade · 2022</p>
+            <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Coinline Barcade · 2022</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               From a Concept to a{" "}
               <span className="text-beast-pink">Complete Brand Universe.</span>

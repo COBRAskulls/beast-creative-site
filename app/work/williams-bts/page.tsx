@@ -23,7 +23,7 @@ export default function WilliamsBtsPage() {
                 <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
               ))}
             </div>
-            <p className="section-eyebrow text-gray-500 mb-3">Case Study — Williams Foods · 2021</p>
+            <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Williams Foods · 2021</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
               They Asked for 10,000 Entries.{" "}
               <span className="text-beast-pink">We Delivered 22,043.</span>
