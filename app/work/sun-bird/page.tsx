@@ -71,7 +71,7 @@ export default function SunBirdPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
             {/* MAIN — 2/3 */}
-            <div className="lg:col-span-2 space-y-12">
+            <div className="lg:col-span-2 space-y-12 order-2 lg:order-1">
 
               {/* The Brief */}
               <AnimatedSection>
@@ -213,7 +213,7 @@ export default function SunBirdPage() {
             </div>
 
             {/* SIDEBAR — 1/3 */}
-            <div className="space-y-6">
+            <div className="space-y-6 order-1 lg:order-2">
               <AnimatedSection>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-5">Campaign Overview</h3>

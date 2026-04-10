@@ -49,7 +49,7 @@ export default function SweetSensiPage() {
       <section className="bg-[#FAFAFA] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-12">
+            <div className="lg:col-span-2 space-y-12 order-2 lg:order-1">
 
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Brief</p>
@@ -132,7 +132,7 @@ export default function SweetSensiPage() {
 
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 order-1 lg:order-2">
               <AnimatedSection>
                 <div className="bg-white rounded-2xl p-6 border border-gray-100">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-5">Campaign Overview</h3>
