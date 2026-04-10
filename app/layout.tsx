@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
+    <html style={{overflowX:"hidden"}}
       lang="en"
       className={`${barlowCondensed.variable} ${inter.variable}`}
     >
@@ -47,7 +47,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-body bg-beast-black text-white antialiased">
+      <body className="font-body bg-beast-black text-white antialiased overflow-x-hidden">
         <Nav />
         <main>{children}</main>
         <Footer />
