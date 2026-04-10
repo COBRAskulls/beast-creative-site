@@ -99,32 +99,6 @@ export default function SunBirdPage() {
 
           </div>
 
-          {/* Mobile story ads */}
-          <div className="flex flex-col items-center lg:flex-row justify-center gap-8 lg:gap-12">
-            <AnimatedSection delay={0.1} className="w-full max-w-[240px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-2deg)]">
-                <Image src="/assets/sunbird-mobile-flocking.jpg" alt="Sun-Bird mobile story — Flocking to a Store Near You" width={540} height={960} className="w-full h-auto block" />
-              </div>
-              <div className="flex items-center justify-center mt-6">
-                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
-                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
-                  Mobile Story Ad
-                </span>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.18} className="w-full max-w-[240px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(2deg)]">
-                <Image src="/assets/sunbird-mobile-product.jpg" alt="Sun-Bird mobile story — Our Product Your Creation" width={540} height={960} className="w-full h-auto block" />
-              </div>
-              <div className="flex items-center justify-center mt-6">
-                <span className="inline-flex items-center gap-2 bg-beast-pink rounded-full px-4 py-1.5 text-sm font-bold text-white font-display">
-                  <span className="w-2 h-2 rounded-full bg-beast-yellow animate-pulse shrink-0" />
-                  Mobile Story Ad
-                </span>
-              </div>
-            </AnimatedSection>
-          </div>
-
         </div>
       </section>
 
@@ -196,6 +170,31 @@ export default function SunBirdPage() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </AnimatedSection>
+
+              {/* Mobile Story Ads */}
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-4">Mobile Creative</p>
+                <div className="flex gap-4">
+                  <div className="flex-1">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-[1.02]">
+                      <Image src="/assets/sunbird-mobile-flocking.jpg" alt="Sun-Bird mobile story — Flocking to a Store Near You" width={540} height={960} className="w-full h-auto block" />
+                    </div>
+                    <div className="flex items-center gap-2 mt-3">
+                      <span className="w-2 h-2 rounded-full bg-beast-pink shrink-0" />
+                      <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Mobile Story Ad</span>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-[1.02]">
+                      <Image src="/assets/sunbird-mobile-product.jpg" alt="Sun-Bird mobile story — Our Product Your Creation" width={540} height={960} className="w-full h-auto block" />
+                    </div>
+                    <div className="flex items-center gap-2 mt-3">
+                      <span className="w-2 h-2 rounded-full bg-beast-pink shrink-0" />
+                      <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Mobile Story Ad</span>
+                    </div>
+                  </div>
                 </div>
               </AnimatedSection>
 
