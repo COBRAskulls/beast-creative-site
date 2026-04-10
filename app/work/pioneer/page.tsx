@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import IconButton from "@/components/ui/IconButton";
+import StatCounter from "@/components/ui/StatCounter";
 
 export const metadata: Metadata = {
   title: "Pioneer Brand ROAS Campaign | Paid Media & Digital Marketing | Beast Creative",
@@ -38,19 +39,11 @@ export default function PioneerPage() {
       {/* BEAST BENCHMARK STATS */}
       <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
-            {[
-              { value: "7.03%", label: "Peak CTR", sub: "vs 0.89% industry avg" },
-              { value: "$0.12", label: "Lowest CPC", sub: "vs $0.28 industry avg" },
-              { value: "3.6x", label: "Over Goal", sub: "Sun-Bird campaign" },
-              { value: "9.5%", label: "Email CTR", sub: "vs 0.82% industry avg" },
-            ].map((s) => (
-              <div key={s.label} className="text-center px-4">
-                <div className="font-display text-3xl lg:text-4xl font-extrabold text-beast-black tracking-wide mb-1">{s.value}</div>
-                <div className="text-sm font-semibold text-beast-black/60 mb-1">{s.label}</div>
-                <div className="text-xs text-beast-black/40">{s.sub}</div>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <StatCounter value={7.03} suffix="%" decimals={2} label="Peak CTR" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={0.12} prefix="$" decimals={2} label="Lowest CPC" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={3.6} suffix="x" decimals={1} label="Over Goal" sublabel="Sun-Bird campaign" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <StatCounter value={9.5} suffix="%" decimals={1} label="Email CTR" sublabel="vs 0.82% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
           </div>
         </div>
       </section>
