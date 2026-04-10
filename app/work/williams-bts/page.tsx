@@ -251,7 +251,7 @@ export default function WilliamsBtsPage() {
                         <span className="text-xs font-bold text-beast-pink">{row.lift}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="font-display font-bold text-white text-lg">{row.beast}</span>
+                        <span className="font-display font-bold text-beast-yellow text-lg">{row.beast}</span>
                         <span className="text-xs text-gray-600 self-end pb-0.5">avg: {row.industry}</span>
                       </div>
                     </div>
