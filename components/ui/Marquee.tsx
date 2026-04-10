@@ -16,7 +16,7 @@ export default function Marquee({
   textColor = "text-beast-black",
   separator = "·",
 }: MarqueeProps) {
-  const doubled = [...items, ...items];
+  const doubled = [...items, ...items, ...items, ...items];
 
   return (
     <div className={`${bg} py-4 overflow-hidden`}>
