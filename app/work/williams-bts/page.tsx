@@ -81,6 +81,34 @@ export default function WilliamsBtsPage() {
                 </div>
               </AnimatedSection>
 
+              {/* Campaign Ad Cards */}
+              <AnimatedSection>
+                <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                  <div className="flex-1 max-w-[280px] mx-auto sm:mx-0 [transform:rotate(-2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
+                    style={{animation: "float1 4s ease-in-out infinite"}}>
+                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                      <Image src="/assets/williams-bts-ad1.jpg" alt="Williams Back-to-School Spin to Win ad" width={540} height={540} className="w-full h-auto block" />
+                    </div>
+                  </div>
+                  <div className="flex-1 max-w-[280px] mx-auto sm:mx-0 [transform:rotate(2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
+                    style={{animation: "float2 4s ease-in-out infinite"}}>
+                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                      <Image src="/assets/williams-bts-ad2.jpg" alt="Williams Back-to-School prize tiers ad" width={540} height={540} className="w-full h-auto block" />
+                    </div>
+                  </div>
+                </div>
+                <style>{`
+                  @keyframes float1 {
+                    0%, 100% { transform: rotate(-2deg) translateY(0px); }
+                    50% { transform: rotate(-2deg) translateY(-10px); }
+                  }
+                  @keyframes float2 {
+                    0%, 100% { transform: rotate(2deg) translateY(-5px); }
+                    50% { transform: rotate(2deg) translateY(5px); }
+                  }
+                `}</style>
+              </AnimatedSection>
+
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Idea</p>
                 <h2 className="font-display text-3xl font-bold text-beast-black mb-6">Williamize Your Food. And Tell Us What That Means to You.</h2>
