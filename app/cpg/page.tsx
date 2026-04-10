@@ -133,7 +133,7 @@ export default function CpgPage() {
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
-            <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="chart" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
+            <IconButton href="#contact" icon="chart">Get My Free CPG Marketing Audit</IconButton>
           </AnimatedSection>
         </div>
       </section>
@@ -254,27 +254,27 @@ export default function CpgPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal mb-6">
-                  36,581 Contest Entries.{" "}
-                  <span className="text-beast-pink">One $6,000 Budget.</span>
+                  13,660 Entries in 24 Days.{" "}
+                  <span className="text-beast-pink">March Madness. One Seasoning Brand.</span>
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Sun-Bird Seasonings was announcing their national rollout into Walmart. They needed consumer excitement, earned media, and first-party data that proves consumer demand for retail buyer meetings.
+                  Williams Foods came to Beast with a seasonal window and a creative challenge: make March Madness feel authentic for a CPG seasoning brand — and build a first-party consumer database while doing it.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  Beast&apos;s &quot;Bird Herd&quot; sweepstakes campaign delivered 3.6x the entry goal at <strong className="text-beast-black">7.03% CTR</strong> vs the 0.89% industry average — nearly 8x the benchmark. At <strong className="text-beast-black">$0.12 CPC</strong>, Sun-Bird walked into their Walmart meeting with 36,581 consumer emails and a geographic database proving national demand.
+                  Beast designed a digital trading card collectible campaign — 8 unique sneaker-themed cards dropped over 24 days, each tied to a Williams flavor. The mechanic drove repeat engagement and a <strong className="text-beast-black">9.5% email click rate</strong> — 11x the industry average — with <strong className="text-beast-black">200,475 total reach</strong> across Facebook and Instagram.
                 </p>
-                <IconButton href="/work/sun-bird" icon="eye">Read the Full Case Study</IconButton>
+                <IconButton href="/work/williams-allstars" icon="eye">Read the Full Case Study</IconButton>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: 36581, label: "Total Entries", sub: "vs 10K goal" },
-                  { value: 7.03, suffix: "%", decimals: 2, label: "CTR", sub: "vs 0.89% avg" },
-                  { value: 0.12, prefix: "$", decimals: 2, label: "CPC", sub: "vs $0.28 avg" },
-                  { value: 208431, label: "Paid Reach", sub: "national campaign" },
+                  { value: "13,660", label: "Total Entries", sub: "across 8 card drops" },
+                  { value: "9.5%", label: "Email Click Rate", sub: "vs 0.82% industry avg" },
+                  { value: "200,475", label: "Total Reach", sub: "Facebook + Instagram" },
+                  { value: "24", label: "Day Campaign", sub: "March Madness window" },
                 ].map((stat) => (
                   <div key={stat.label} className="bg-white rounded-2xl p-6 border border-gray-100 text-center">
                     <div className="font-display text-3xl font-extrabold text-beast-black tracking-normal mb-1">
-                      {stat.prefix}{stat.value.toLocaleString()}{stat.suffix}
+                      {stat.value}
                     </div>
                     <div className="text-xs font-semibold uppercase tracking-widest text-beast-pink">{stat.label}</div>
                     <div className="text-xs text-gray-400 mt-1">{stat.sub}</div>
