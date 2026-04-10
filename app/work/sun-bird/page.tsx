@@ -251,10 +251,10 @@ export default function SunBirdPage() {
       {/* CAMPAIGN CREATIVE */}
       <section className="bg-[#F4F4F4] py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection className="text-center mb-14">
+          <AnimatedSection className="mb-14">
             <p className="section-eyebrow text-beast-pink mb-3">Campaign Creative</p>
             <h2 className="font-display text-4xl font-extrabold text-beast-black mb-4">The Ads That Drove 36,581 Entries.</h2>
-            <p className="text-gray-500 max-w-xl mx-auto">Bold creative built to stop thumbs mid-scroll. These ran across Facebook and Instagram during the Bird Herd sweepstakes.</p>
+            <p className="text-gray-500 max-w-xl">Bold creative built to stop thumbs mid-scroll. These ran across Facebook and Instagram during the Bird Herd sweepstakes.</p>
           </AnimatedSection>
 
           {/* Scattered square ads */}
