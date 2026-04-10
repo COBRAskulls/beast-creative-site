@@ -127,13 +127,18 @@ export default function SunBirdPage() {
                 <p className="text-gray-600 leading-relaxed mb-8">
                   80% of total paid reach came from mobile placements. Beast built story-format ads specifically for the mobile feed — full-screen, thumb-stopping creative that met Sun-Bird fans exactly where they were scrolling.
                 </p>
-                <div className="flex gap-16 justify-center">
-                  <div className="w-[38%] max-w-[200px] [transform:rotate(-2deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                <div className="flex gap-10 justify-center">
+                  <div className="w-[30%] max-w-[180px] [transform:rotate(-3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
                     <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
                       <Image src="/assets/sunbird-mobile-flocking.jpg" alt="Sun-Bird mobile story — Flocking to a Store Near You" width={540} height={960} className="w-full h-auto block" />
                     </div>
                   </div>
-                  <div className="w-[38%] max-w-[200px] [transform:rotate(2deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                  <div className="w-[30%] max-w-[180px] [transform:rotate(1deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                      <Image src="/assets/sunbird-mobile-giftcard.jpg" alt="Sun-Bird mobile story — Flocking to a Store Near You sweepstakes" width={540} height={960} className="w-full h-auto block" />
+                    </div>
+                  </div>
+                  <div className="w-[30%] max-w-[180px] [transform:rotate(3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
                     <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
                       <Image src="/assets/sunbird-mobile-product.jpg" alt="Sun-Bird mobile story — Our Product Your Creation" width={540} height={960} className="w-full h-auto block" />
                     </div>
