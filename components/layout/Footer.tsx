@@ -73,7 +73,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-white font-semibold text-xs tracking-widest uppercase mb-5">Get Started</h4>
             <p className="text-sm text-gray-500 mb-5">No commitments. Just a free strategy conversation.</p>
-            <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer" className="mb-6">Book My Free 15-Minute Strategy Call</IconButton>
+            <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer" className="mb-6 !whitespace-normal text-center w-full">Book My Free 15-Minute Strategy Call</IconButton>
             <div className="mt-4 text-sm text-gray-600 space-y-1">
               <div>
                 <a href="sms:+12103320567" className="hover:text-beast-pink transition-colors">
