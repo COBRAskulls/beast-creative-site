@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
@@ -195,6 +196,38 @@ export default function WilliamsBowlPage() {
                 <div className="bg-[#111111] rounded-xl p-5">
                   <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-2">Why This Campaign Matters</p>
                   <p className="text-gray-300 text-sm leading-relaxed">At $1,500, the Williams Bowl proved that Beast&apos;s creative mechanic approach could generate thousands of consumer records efficiently. The $0.16 CPC — 43% below industry average — showed that the concept itself was doing the work, not just the ad budget. Three months later, the BTS campaign ran on $4,000 and generated 22,043 entries. One year later, Williams All-Stars added 13,660 more with an email click rate 11x the industry average. The Williams Bowl is where that story started.</p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Winners</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Real Fans. Real Prizes. Announced Every Round.</h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  Every round, Beast designed and posted custom winner announcement graphics tagging the real fans who voted their way to victory. It kept the community engaged, gave winners a moment in the spotlight, and reminded everyone still in the bracket that the prizes were real and the next winner could be them.
+                </p>
+                <div className="grid grid-cols-2 gap-5">
+                  {[
+                    { src: "/assets/williams-bowl-winner-wildcard.jpg",      label: "Wildcard Round"   },
+                    { src: "/assets/williams-bowl-winner-divisional.jpg",    label: "Divisional Round" },
+                    { src: "/assets/williams-bowl-winner-championship.jpg",  label: "Championship Round" },
+                    { src: "/assets/williams-bowl-winner-grandprize.jpg",    label: "Grand Prize"      },
+                  ].map((card) => (
+                    <div key={card.label} className="group flex flex-col items-center gap-3">
+                      <div className="w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.10)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)] group-hover:scale-[1.02]">
+                        <Image
+                          src={card.src}
+                          alt={`Williams Bowl ${card.label} winner announcement`}
+                          width={1080}
+                          height={1080}
+                          className="w-full h-auto block"
+                        />
+                      </div>
+                      <span className="inline-flex items-center gap-2 bg-beast-pink text-white text-xs font-bold px-4 py-2 rounded-full tracking-wide transition-all duration-300 group-hover:bg-beast-black">
+                        <span className="w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
+                        {card.label}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </AnimatedSection>
 
