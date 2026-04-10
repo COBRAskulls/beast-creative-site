@@ -36,14 +36,34 @@ export default function WilliamsBtsPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
-              <div className="relative w-72 lg:w-96 xl:w-[440px]">
-                <Image
-                  src="/assets/williams-bts-hero.jpg"
-                  alt="Williams Back-to-School Chili Seasoning campaign ad"
-                  width={440}
-                  height={440}
-                  className="w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
-                />
+              <div className="relative w-72 lg:w-96 xl:w-[440px]" style={{perspective: "1000px"}}>
+                <div className="relative w-full [transform:rotate(3deg)] hover:[transform:rotate(3deg)] group"
+                  style={{transformStyle: "preserve-3d", transition: "transform 0.7s ease"}}>
+                  <div className="w-full group-hover:[transform:rotateY(180deg)]"
+                    style={{transformStyle: "preserve-3d", transition: "transform 0.7s ease", position: "relative"}}>
+                    {/* Front */}
+                    <div style={{backfaceVisibility: "hidden"}} className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
+                      <Image
+                        src="/assets/williams-bts-hero.jpg"
+                        alt="Williams Back-to-School Chili Seasoning campaign ad"
+                        width={440}
+                        height={440}
+                        className="w-full h-auto block"
+                      />
+                    </div>
+                    {/* Back */}
+                    <div style={{backfaceVisibility: "hidden", transform: "rotateY(180deg)", position: "absolute", top: 0, left: 0, width: "100%"}}
+                      className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
+                      <Image
+                        src="/assets/williams-bts-hero-back.jpg"
+                        alt="Williams Back-to-School prize tiers ad"
+                        width={440}
+                        height={440}
+                        className="w-full h-auto block"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </AnimatedSection>
           </div>
