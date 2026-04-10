@@ -4,6 +4,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import IconButton from "@/components/ui/IconButton";
+import TiltCard from "@/components/ui/TiltCard";
 
 export const metadata: Metadata = {
   title: "Williams Bowl 2021 NFL Campaign | 6,020 Entries, $1,500 Budget | Beast Creative",
@@ -26,16 +27,16 @@ export default function WilliamsBowlPage() {
               </div>
               <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Williams Foods · 2021</p>
               <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-                The First Campaign.{" "}
-                <span className="text-beast-pink">The One That Proved Everything.</span>
+                The Campaign That Made{" "}
+                <span className="text-beast-pink">CPG Growth Inevitable.</span>
               </h1>
               <p className="text-body-lead text-gray-300 max-w-2xl">
-                6,020 entries on a $1,500 ad budget. $0.16 CPC. The proof-of-concept that launched an entire campaign series.
+                The first campaign. The one that proved everything. 6,020 entries on a $1,500 ad budget. $0.16 CPC. The proof-of-concept that launched an entire campaign series.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <div className="flex justify-center lg:justify-end">
-                <div className="w-72 lg:w-96 xl:w-[440px]" style={{ filter: "drop-shadow(0 20px 50px rgba(0,0,0,0.45))" }}>
+                <div className="w-[346px] lg:w-[460px] xl:w-[528px]" style={{ filter: "drop-shadow(0 20px 50px rgba(0,0,0,0.45))" }}>
                   <video
                     src="/assets/williams-bowl-hero.mp4"
                     autoPlay
@@ -80,6 +81,15 @@ export default function WilliamsBowlPage() {
                   <p className="font-display font-bold text-beast-black text-sm mb-2">The Constraint</p>
                   <p className="text-gray-600 text-sm leading-relaxed">A $1,500 total ad budget. For the Beast team, this wasn&apos;t a limitation — it was a challenge to prove that creative mechanics could do what raw ad spend alone couldn&apos;t. The Williams Bowl would live or die on the strength of the concept, not the size of the media buy.</p>
                 </div>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <TiltCard
+                  src="/assets/williams-bowl-banner.jpg"
+                  alt="Williams Bowl — Vote and Win Big campaign banner"
+                  width={1500}
+                  height={788}
+                />
               </AnimatedSection>
 
               <AnimatedSection>
