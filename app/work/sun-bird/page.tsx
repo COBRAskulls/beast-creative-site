@@ -122,10 +122,14 @@ export default function SunBirdPage() {
 
               {/* Mobile Story Ads */}
               <AnimatedSection>
-                <p className="section-eyebrow text-beast-pink mb-4">Mobile Creative</p>
-                <div className="flex gap-4">
-                  <div className="flex-1">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-[1.02]">
+                <p className="section-eyebrow text-beast-pink mb-2">Mobile Creative</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Built for the Scroll. Made for Mobile.</h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  80% of total paid reach came from mobile placements. Beast built story-format ads specifically for the mobile feed — full-screen, thumb-stopping creative that met Sun-Bird fans exactly where they were scrolling.
+                </p>
+                <div className="flex gap-8 justify-center">
+                  <div className="w-[38%] max-w-[200px] [transform:rotate(-2deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.14)]">
                       <Image src="/assets/sunbird-mobile-flocking.jpg" alt="Sun-Bird mobile story — Flocking to a Store Near You" width={540} height={960} className="w-full h-auto block" />
                     </div>
                     <div className="flex items-center gap-2 mt-3">
@@ -133,8 +137,8 @@ export default function SunBirdPage() {
                       <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Mobile Story Ad</span>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-[1.02]">
+                  <div className="w-[38%] max-w-[200px] [transform:rotate(2deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
+                    <div className="rounded-2xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.14)]">
                       <Image src="/assets/sunbird-mobile-product.jpg" alt="Sun-Bird mobile story — Our Product Your Creation" width={540} height={960} className="w-full h-auto block" />
                     </div>
                     <div className="flex items-center gap-2 mt-3">
