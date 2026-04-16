@@ -15,7 +15,16 @@ export default function SweetSensiPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        {/* Video background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          src="/assets/sweet-sensi-hero.mp4"
+        />
+        <div className="absolute inset-0 bg-beast-black/60" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
