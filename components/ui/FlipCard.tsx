@@ -17,7 +17,9 @@ export default function FlipCard({ front, back, alt, tilt = 3 }: FlipCardProps) 
     <div
       className="relative w-full cursor-pointer"
       style={{ perspective: "1000px" }}
-      onClick={() => setFlipped((f) => !f)}
+      onPointerEnter={(e) => { if (e.pointerType === "mouse") setFlipped(true); }}
+      onPointerLeave={(e) => { if (e.pointerType === "mouse") setFlipped(false); }}
+      onPointerUp={(e) => { if (e.pointerType === "touch") setFlipped((f) => !f); }}
     >
       <div
         style={{
@@ -52,7 +54,8 @@ export default function FlipCard({ front, back, alt, tilt = 3 }: FlipCardProps) 
           <Image src={back} alt={alt + " — back"} width={440} height={440} className="w-full h-auto block" />
         </div>
       </div>
-      <p className="text-xs text-gray-400 text-center mt-3">Tap to flip</p>
+      {/* Hint: mobile only */}
+      <p className="text-xs text-gray-400 text-center mt-3 md:hidden">Tap to flip</p>
     </div>
   );
 }
