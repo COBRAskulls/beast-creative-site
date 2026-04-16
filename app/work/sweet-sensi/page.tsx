@@ -21,7 +21,7 @@ export default function SweetSensiPage() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover opacity-10"
           src="/assets/sweet-sensi-hero.mp4"
         />
         <div className="absolute inset-0 bg-beast-black/60" />
