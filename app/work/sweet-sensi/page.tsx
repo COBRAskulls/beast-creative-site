@@ -15,8 +15,11 @@ export default function SweetSensiPage() {
   return (
     <>
       <section className="relative bg-beast-black min-h-[560px] lg:min-h-[680px] overflow-hidden">
-        {/* Right half: full-height video */}
-        <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-1/2">
+        {/* Right half: diagonal clip-path video */}
+        <div
+          className="hidden lg:block absolute right-0 top-0 bottom-0 w-[58%]"
+          style={{ clipPath: "polygon(12% 0, 100% 0, 100% 100%, 0% 100%)" }}
+        >
           <video
             autoPlay
             loop
