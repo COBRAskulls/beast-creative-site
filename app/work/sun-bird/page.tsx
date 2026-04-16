@@ -39,7 +39,7 @@ export default function SunBirdPage() {
 
             {/* iMac mockup */}
             <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
-              <div className="relative w-96 lg:w-[528px] xl:w-[662px]">
+              <div className="relative w-[460px] lg:w-[634px] xl:w-[794px]">
                 <Image
                   src="/assets/sunbird-screen-mockup.png"
                   alt="Sun-Bird Bird Herd sweepstakes landing page"
