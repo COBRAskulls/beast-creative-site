@@ -14,10 +14,21 @@ export const metadata: Metadata = {
 export default function SweetSensiPage() {
   return (
     <>
-      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: text */}
+      <section className="relative bg-beast-black min-h-[560px] lg:min-h-[680px] overflow-hidden">
+        {/* Right half: full-height video */}
+        <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-1/2">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            src="/assets/sweet-sensi-hero.mp4"
+          />
+        </div>
+        {/* Left: text */}
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-20 lg:pt-40 lg:pb-28">
+          <div className="lg:w-1/2 lg:pr-16">
             <AnimatedSection>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["SEO", "Social Media Marketing", "E-Commerce", "CBD Industry", "Content Strategy"].map((tag) => (
@@ -25,28 +36,26 @@ export default function SweetSensiPage() {
                 ))}
               </div>
               <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Sweet Sensi · 2023–2024</p>
-              <h1 className="text-display-hero font-display font-extrabold text-white max-w-2xl mb-6 leading-tight">
+              <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
                 500% MRR Growth.{" "}
                 <span className="text-beast-pink">In the Industry That Bans Most Ads.</span>
               </h1>
-              <p className="text-body-lead text-gray-300 max-w-xl">
+              <p className="text-body-lead text-gray-300">
                 CBD brands can&apos;t run Google or Facebook ads. So Beast built an organic engine instead — and grew Sweet Sensi&apos;s monthly recurring revenue by over 500%.
               </p>
             </AnimatedSection>
-            {/* Right: video */}
-            <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
-              <div className="relative w-full rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto block"
-                  src="/assets/sweet-sensi-hero.mp4"
-                />
-              </div>
-            </AnimatedSection>
           </div>
+        </div>
+        {/* Mobile: video below text */}
+        <div className="lg:hidden w-full aspect-video">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            src="/assets/sweet-sensi-hero.mp4"
+          />
         </div>
       </section>
 
