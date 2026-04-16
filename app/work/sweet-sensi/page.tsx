@@ -15,32 +15,38 @@ export default function SweetSensiPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        {/* Video background */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-80"
-          src="/assets/sweet-sensi-hero.mp4"
-        />
-        <div className="absolute inset-0 bg-beast-black/60" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["SEO", "Social Media Marketing", "E-Commerce", "CBD Industry", "Content Strategy"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
-              ))}
-            </div>
-            <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Sweet Sensi · 2023–2024</p>
-            <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-              500% MRR Growth.{" "}
-              <span className="text-beast-pink">In the Industry That Bans Most Ads.</span>
-            </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
-              CBD brands can&apos;t run Google or Facebook ads. So Beast built an organic engine instead — and grew Sweet Sensi&apos;s monthly recurring revenue by over 500%.
-            </p>
-          </AnimatedSection>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: text */}
+            <AnimatedSection>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["SEO", "Social Media Marketing", "E-Commerce", "CBD Industry", "Content Strategy"].map((tag) => (
+                  <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
+                ))}
+              </div>
+              <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Sweet Sensi · 2023–2024</p>
+              <h1 className="text-display-hero font-display font-extrabold text-white max-w-2xl mb-6 leading-tight">
+                500% MRR Growth.{" "}
+                <span className="text-beast-pink">In the Industry That Bans Most Ads.</span>
+              </h1>
+              <p className="text-body-lead text-gray-300 max-w-xl">
+                CBD brands can&apos;t run Google or Facebook ads. So Beast built an organic engine instead — and grew Sweet Sensi&apos;s monthly recurring revenue by over 500%.
+              </p>
+            </AnimatedSection>
+            {/* Right: video */}
+            <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto block"
+                  src="/assets/sweet-sensi-hero.mp4"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
