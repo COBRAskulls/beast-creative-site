@@ -77,7 +77,7 @@ export default function Nav() {
               {/* Work */}
               <li className="relative" onMouseEnter={() => setWorkOpen(true)} onMouseLeave={() => setWorkOpen(false)}>
                 <button
-                  className={`flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${pathname.startsWith("/work") ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-white hover:bg-white/8"}`}
+                  className={`flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${pathname.startsWith("/work") ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-beast-yellow hover:bg-white/8"}`}
                   onClick={() => setWorkOpen(!workOpen)}
                 >
                   Work
@@ -103,7 +103,7 @@ export default function Nav() {
               {/* Services */}
               <li className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
                 <button
-                  className={`flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${pathname.startsWith("/services") ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-white hover:bg-white/8"}`}
+                  className={`flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${pathname.startsWith("/services") ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-beast-yellow hover:bg-white/8"}`}
                   onClick={() => setServicesOpen(!servicesOpen)}
                 >
                   Services
@@ -113,7 +113,7 @@ export default function Nav() {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-64">
                     <div style={dropdownGlass} className="overflow-hidden">
                       {services.map((s) => (
-                        <Link key={s.href} href={s.href} className={`flex items-center justify-between px-5 py-3 text-sm hover:text-white hover:bg-white/8 transition-colors ${pathname === s.href ? "text-white bg-white/8 font-semibold" : "text-gray-300"}`}>
+                        <Link key={s.href} href={s.href} className={`flex items-center justify-between px-5 py-3 text-sm hover:text-beast-yellow hover:bg-white/8 transition-colors ${pathname === s.href ? "text-white bg-white/8 font-semibold" : "text-gray-300"}`}>
                           {s.name}
                           {s.badge && <span className="text-xs bg-beast-pink/20 text-beast-pink border border-beast-pink/25 px-2 py-0.5 rounded-full font-semibold">{s.badge}</span>}
                         </Link>
@@ -128,7 +128,7 @@ export default function Nav() {
                 const isActive = pathname === href;
                 return (
                   <li key={name}>
-                    <Link href={href} className={`block px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${isActive ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-white hover:bg-white/8"}`}>{name}</Link>
+                    <Link href={href} className={`block px-3.5 py-2 text-sm font-semibold transition-colors rounded-full ${isActive ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-beast-yellow hover:bg-white/8"}`}>{name}</Link>
                   </li>
                 );
               })}
