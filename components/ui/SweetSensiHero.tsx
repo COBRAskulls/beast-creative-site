@@ -13,46 +13,24 @@ export default function SweetSensiHero() {
     () => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-      // Text items stagger up
-      tl.from(".hero-text-item", {
-        y: 36,
+      // Full-bg video fades in + scales down
+      tl.from(".hero-video-bg", {
+        scale: 1.08,
         opacity: 0,
-        duration: 0.75,
-        stagger: 0.13,
+        duration: 1.2,
+        ease: "power3.inOut",
       });
 
-      // Clip-path wipes open diagonally (right edge → full diagonal)
+      // Text items stagger up, overlapping with video reveal
       tl.from(
-        ".hero-video-wrapper",
+        ".hero-text-item",
         {
-          clipPath: "polygon(100% 0, 100% 0, 100% 100%, 88% 100%)",
-          duration: 1.1,
-          ease: "power3.inOut",
-        },
-        "-=0.5"
-      );
-
-      // Video scales down from slightly zoomed in
-      tl.from(
-        ".hero-video-inner",
-        {
-          scale: 1.08,
+          y: 36,
           opacity: 0,
-          duration: 1.1,
-          ease: "power3.inOut",
+          duration: 0.75,
+          stagger: 0.13,
         },
-        "<"
-      );
-
-      // Mobile video fades up
-      tl.from(
-        ".hero-video-mobile",
-        {
-          opacity: 0,
-          y: 20,
-          duration: 0.7,
-        },
-        "-=0.8"
+        "-=0.7"
       );
     },
     { scope: containerRef }
@@ -63,25 +41,19 @@ export default function SweetSensiHero() {
       ref={containerRef}
       className="relative bg-beast-black min-h-[560px] lg:min-h-[680px] overflow-hidden"
     >
-      {/* Right half: diagonal clip-path video */}
-      <div
-        className="hero-video-wrapper hidden lg:block absolute right-0 top-0 bottom-0 w-[58%]"
-        style={{ clipPath: "polygon(12% 0, 100% 0, 100% 100%, 0% 100%)" }}
-      >
-        <div className="hero-video-inner w-full h-full">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-            src="/assets/sweet-sensi-hero.mp4"
-          />
-        </div>
-      </div>
+      {/* Full-bleed background video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hero-video-bg absolute inset-0 w-full h-full object-cover"
+        style={{ opacity: 0.8 }}
+        src="/assets/sweet-sensi-hero.mp4"
+      />
 
-      {/* Left: text */}
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-20 lg:pt-40 lg:pb-28">
+      {/* Text */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-20 lg:pt-40 lg:pb-28">
         <div className="lg:w-1/2 lg:pr-16">
           <div className="hero-text-item flex flex-wrap gap-2 mb-4">
             {[
@@ -114,18 +86,6 @@ export default function SweetSensiHero() {
             recurring revenue by over 500%.
           </p>
         </div>
-      </div>
-
-      {/* Mobile: video below text */}
-      <div className="hero-video-mobile lg:hidden w-full aspect-video">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-          src="/assets/sweet-sensi-hero.mp4"
-        />
       </div>
     </section>
   );
