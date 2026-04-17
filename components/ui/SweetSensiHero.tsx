@@ -81,7 +81,7 @@ export default function SweetSensiHero() {
             </span>
           </h1>
           <p className="hero-text-item text-body-lead text-gray-300">
-            CBD brands can&apos;t run Google or Facebook ads. So Beast built an
+            CBD brands couldn&apos;t run Google or Facebook ads. So Beast built an
             organic engine instead — and grew Sweet Sensi&apos;s monthly
             recurring revenue by over 500%.
           </p>
