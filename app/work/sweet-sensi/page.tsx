@@ -269,7 +269,7 @@ export default function SweetSensiPage() {
         <img
           src="/assets/sweet-sensi-gummies.jpg"
           alt="Sweet Sensi Elevated Edibles gummy product line"
-          className="w-full h-auto lg:h-[500px] lg:object-cover lg:object-[center_40%]"
+          className="w-full h-auto lg:h-[650px] lg:object-cover lg:object-[center_40%]"
         />
 
         {/* Desktop: text overlaid on blank top portion of image */}
