@@ -17,10 +17,10 @@ export default function TradingCard({ front, back, alt, rotation, floatDelay, de
 
   // Hover = desktop mouse only; tap = touch only
   const handlePointerEnter = (e: React.PointerEvent) => {
-    if (e.pointerType === "mouse") setFlipped(true);
+    if (e.pointerType === "mouse") setFlipped(!defaultFlipped);
   };
   const handlePointerLeave = (e: React.PointerEvent) => {
-    if (e.pointerType === "mouse") setFlipped(false);
+    if (e.pointerType === "mouse") setFlipped(defaultFlipped);
   };
   const handlePointerUp = (e: React.PointerEvent) => {
     if (e.pointerType === "touch") setFlipped(f => !f);
