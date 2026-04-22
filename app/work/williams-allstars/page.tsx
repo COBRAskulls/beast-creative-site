@@ -126,6 +126,7 @@ export default function WilliamsAllstarsPage() {
                     front="/assets/card-taco-front.png"
                     back="/assets/card-taco-back.png"
                     alt="Williams Taco"
+                    defaultFlipped={true}
                     rotation={2}
                     floatDelay="0.4s"
                   />

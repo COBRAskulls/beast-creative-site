@@ -7,12 +7,13 @@ interface TradingCardProps {
   front: string;
   back: string;
   alt: string;
-  rotation: number;   // initial tilt in degrees
-  floatDelay: string; // e.g. "0s", "0.4s", "0.8s"
+  rotation: number;
+  floatDelay: string;
+  defaultFlipped?: boolean;
 }
 
-export default function TradingCard({ front, back, alt, rotation, floatDelay }: TradingCardProps) {
-  const [flipped, setFlipped] = useState(false);
+export default function TradingCard({ front, back, alt, rotation, floatDelay, defaultFlipped = false }: TradingCardProps) {
+  const [flipped, setFlipped] = useState(defaultFlipped);
 
   // Hover = desktop mouse only; tap = touch only
   const handlePointerEnter = (e: React.PointerEvent) => {
