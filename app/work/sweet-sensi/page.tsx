@@ -259,12 +259,21 @@ export default function SweetSensiPage() {
       </section>
 
       <section className="relative overflow-hidden">
+        {/* Mobile: text in gray block above image */}
+        <div className="lg:hidden bg-[#F4F4F4] py-10 px-6 text-center">
+          <p className="section-eyebrow text-beast-pink mb-2">The Creative</p>
+          <h2 className="font-display text-3xl font-bold text-beast-black mb-3">Product Photography That Sold the Brand.</h2>
+          <p className="text-beast-black/60 max-w-xl mx-auto text-sm leading-relaxed">Premium visuals built to communicate quality at a glance — the kind of creative that earns consumer trust before a single word is read.</p>
+        </div>
+
         <img
           src="/assets/sweet-sensi-gummies.jpg"
           alt="Sweet Sensi Elevated Edibles gummy product line"
           className="w-full h-auto object-cover"
         />
-        <div className="absolute top-0 left-0 right-0 pt-12 lg:pt-20 px-6 text-center">
+
+        {/* Desktop: text overlaid on blank top portion of image */}
+        <div className="hidden lg:block absolute top-0 left-0 right-0 pt-20 px-6 text-center">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-2">The Creative</p>
             <h2 className="font-display text-3xl font-bold text-beast-black mb-3">Product Photography That Sold the Brand.</h2>
