@@ -5,6 +5,7 @@ import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import IconButton from "@/components/ui/IconButton";
 import SweetSensiHero from "@/components/ui/SweetSensiHero";
+import TradingCard from "@/components/ui/TradingCard";
 
 export const metadata: Metadata = {
   title: "Sweet Sensi CBD E-Commerce | 500%+ MRR Growth | Beast Creative Agency",
@@ -223,6 +224,32 @@ export default function SweetSensiPage() {
               </AnimatedSection>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F4F4F4] py-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="section-eyebrow text-beast-pink mb-2 text-center">The Product Line</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-16 text-center">Elevated Edibles. Built to Stand Out on the Shelf.</h2>
+          </AnimatedSection>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
+            <TradingCard
+              front="/assets/sweet-sensi-can-melon.jpg"
+              back="/assets/sweet-sensi-can-purple.jpg"
+              alt="Sweet Sensi Elevated Edibles cans"
+              rotation={-4}
+              floatDelay="0s"
+            />
+            <TradingCard
+              front="/assets/sweet-sensi-can-pineapple-a.jpg"
+              back="/assets/sweet-sensi-can-pineapple-b.jpg"
+              alt="Sweet Sensi Pineapple Kiwi Express"
+              rotation={3}
+              floatDelay="0.4s"
+            />
+          </div>
+          <p className="text-center text-sm text-gray-400 mt-10 md:hidden">Tap a card to flip it</p>
         </div>
       </section>
 
