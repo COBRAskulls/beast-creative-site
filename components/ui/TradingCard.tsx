@@ -10,9 +10,10 @@ interface TradingCardProps {
   rotation: number;
   floatDelay: string;
   defaultFlipped?: boolean;
+  noFloat?: boolean;
 }
 
-export default function TradingCard({ front, back, alt, rotation, floatDelay, defaultFlipped = false }: TradingCardProps) {
+export default function TradingCard({ front, back, alt, rotation, floatDelay, defaultFlipped = false, noFloat = false }: TradingCardProps) {
   const [flipped, setFlipped] = useState(defaultFlipped);
 
   // Hover = desktop mouse only; tap = touch only
@@ -27,10 +28,9 @@ export default function TradingCard({ front, back, alt, rotation, floatDelay, de
   };
 
   return (
-    // Outer: handles floating animation only
     <div
       className="cursor-pointer"
-      style={{
+      style={noFloat ? undefined : {
         animation: "card-float 3s ease-in-out infinite",
         animationDelay: floatDelay,
       }}

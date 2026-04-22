@@ -56,22 +56,24 @@ export default function SweetSensiPage() {
                   Sweet Sensi&apos;s Elevated Edibles line — premium THC and CBD drinks crafted with full-spectrum rosin — gave Beast&apos;s content strategy something genuinely worth talking about. Products this distinct make every piece of organic content more credible. When the product is legitimately elevated, the marketing compounds faster.
                 </p>
                 <div className="flex flex-row items-start justify-center gap-8">
-                  <div className="w-44 lg:w-52">
+                  <div className="w-56 lg:w-64">
                     <TradingCard
                       front="/assets/sweet-sensi-can-melon.jpg"
                       back="/assets/sweet-sensi-can-purple.jpg"
                       alt="Sweet Sensi Elevated Edibles cans"
                       rotation={-4}
                       floatDelay="0s"
+                      noFloat
                     />
                   </div>
-                  <div className="w-44 lg:w-52">
+                  <div className="w-56 lg:w-64">
                     <TradingCard
                       front="/assets/sweet-sensi-can-pineapple-a.jpg"
                       back="/assets/sweet-sensi-can-pineapple-b.jpg"
                       alt="Sweet Sensi Pineapple Kiwi Express"
                       rotation={3}
                       floatDelay="0.4s"
+                      noFloat
                     />
                   </div>
                 </div>
