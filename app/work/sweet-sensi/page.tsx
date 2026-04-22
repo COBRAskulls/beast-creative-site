@@ -90,6 +90,14 @@ export default function SweetSensiPage() {
                   0%, 100% { transform: rotate(3deg) translateY(0px); }
                   50% { transform: rotate(3deg) translateY(-14px); }
                 }
+                @keyframes sensiFloat3 {
+                  0%, 100% { transform: rotate(-3deg) translateY(0px); }
+                  50% { transform: rotate(-3deg) translateY(-12px); }
+                }
+                @keyframes sensiFloat4 {
+                  0%, 100% { transform: rotate(4deg) translateY(0px); }
+                  50% { transform: rotate(4deg) translateY(-16px); }
+                }
               `}</style>
               <AnimatedSection>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
@@ -104,6 +112,25 @@ export default function SweetSensiPage() {
                     <img
                       src="/assets/sweet-sensi-tincture.jpg"
                       alt="Sweet Sensi Pet Tincture product"
+                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                    />
+                  </div>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
+                  <div style={{ animation: "sensiFloat3 6.2s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
+                    <img
+                      src="/assets/sweet-sensi-storefront.jpg"
+                      alt="Sweet Sensi storefront at night"
+                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div style={{ animation: "sensiFloat4 5.4s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
+                    <img
+                      src="/assets/sweet-sensi-shirt.jpg"
+                      alt="Sweet Sensi brand ambassador"
                       className="w-64 lg:w-72 rounded-2xl object-cover"
                     />
                   </div>
