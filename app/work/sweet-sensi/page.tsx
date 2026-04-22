@@ -105,14 +105,14 @@ export default function SweetSensiPage() {
                     <img
                       src="/assets/sweet-sensi-store.jpg"
                       alt="Sweet Sensi in-store product display"
-                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
                     />
                   </div>
                   <div style={{ animation: "sensiFloat2 5.8s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
                     <img
                       src="/assets/sweet-sensi-tincture.jpg"
                       alt="Sweet Sensi Pet Tincture product"
-                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
                     />
                   </div>
                 </div>
@@ -124,14 +124,14 @@ export default function SweetSensiPage() {
                     <img
                       src="/assets/sweet-sensi-storefront.jpg"
                       alt="Sweet Sensi storefront at night"
-                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
                     />
                   </div>
                   <div style={{ animation: "sensiFloat4 5.4s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
                     <img
                       src="/assets/sweet-sensi-shirt.jpg"
                       alt="Sweet Sensi brand ambassador"
-                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
                     />
                   </div>
                 </div>
