@@ -50,28 +50,6 @@ export default function SweetSensiPage() {
               </AnimatedSection>
 
               <AnimatedSection>
-                <p className="section-eyebrow text-beast-pink mb-2">The Strategy</p>
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-6">When You Can&apos;t Buy Attention, You Have to Earn It.</h2>
-                <div className="space-y-6">
-                  {[
-                    { step: "1", label: "The Diagnosis", detail: "Beast started with a full audit of Sweet Sensi's digital presence: website technical health, content depth, keyword positioning, social media performance, and conversion funnel from traffic to purchase. The audit revealed the pattern Beast sees across most small e-commerce brands: significant organic search traffic being left on the table, social media presence without a clear content strategy, no tested messaging framework, and two channels that could work — SEO and organic social — being used without coordination." },
-                    { step: "2", label: "The SEO Foundation", detail: "Beast built Sweet Sensi's SEO strategy around one core insight: CBD consumers are searchers, not browsers. When someone wants to try CBD for sleep, anxiety, pain, or wellness, they search. They research. They read. Beast delivered: technical optimization (speed, mobile, structured data), a keyword strategy around high-purchase-intent queries, content development building trust and depth, and domain authority signals that told search engines Sweet Sensi was legitimate — not a fly-by-night operation in a category full of low-quality players." },
-                    { step: "3", label: "The Social Media Strategy", detail: "Social media for a CBD brand requires a completely different playbook. Direct product promotion is restricted on most platforms. Beast developed a content strategy built around wellness content that genuinely served Sweet Sensi's audience — sleep, stress, recovery — without hitting CBD advertising policy tripwires. Brand storytelling that built the trust CBD consumers need before they buy. User-generated content amplification within platform guidelines. Community building that converts, not just vanity follower counts." },
-                    { step: "4", label: "The A/B Testing Engine", detail: "Beast ran continuous A/B tests across both channels — identifying the combinations of message, creative, and audience that drove actual purchases rather than just traffic. Which SEO content drove the highest purchase-intent traffic. Which social content formats drove website clicks. Which product page variations converted best. Which email follow-up sequences turned site visitors into buyers. This rigorous, iterative approach is what separated Beast's results from what most agencies deliver." },
-                    { step: "5", label: "The Compounding Effect", detail: "The most important discovery was what Beast came to call the SEO + Social combo effect. SEO content that ranks and drives traffic also gets shared on social. Social content builds brand awareness that increases branded search volume, which improves SEO signals. Email capture from SEO-driven traffic gets nurtured through social retargeting. Brand trust built through social content increases the conversion rate of organic search visitors. Each channel amplified the other. The longer the system ran, the more efficient it got." },
-                  ].map((item) => (
-                    <div key={item.step} className="flex gap-4">
-                      <span className="w-8 h-8 rounded-full bg-beast-pink/10 border border-beast-pink/20 text-beast-pink font-display font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">{item.step}</span>
-                      <div>
-                        <p className="font-display font-bold text-beast-black mb-1">{item.label}</p>
-                        <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </AnimatedSection>
-
-              <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Product Line</p>
                 <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Elevated Edibles. Built to Stand Out.</h2>
                 <p className="text-gray-600 leading-relaxed mb-10">
@@ -98,6 +76,28 @@ export default function SweetSensiPage() {
                   </div>
                 </div>
                 <p className="text-center text-sm text-gray-400 mt-6 md:hidden">Tap a card to flip it</p>
+              </AnimatedSection>
+
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Strategy</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-6">When You Can&apos;t Buy Attention, You Have to Earn It.</h2>
+                <div className="space-y-6">
+                  {[
+                    { step: "1", label: "The Diagnosis", detail: "Beast started with a full audit of Sweet Sensi's digital presence: website technical health, content depth, keyword positioning, social media performance, and conversion funnel from traffic to purchase. The audit revealed the pattern Beast sees across most small e-commerce brands: significant organic search traffic being left on the table, social media presence without a clear content strategy, no tested messaging framework, and two channels that could work — SEO and organic social — being used without coordination." },
+                    { step: "2", label: "The SEO Foundation", detail: "Beast built Sweet Sensi's SEO strategy around one core insight: CBD consumers are searchers, not browsers. When someone wants to try CBD for sleep, anxiety, pain, or wellness, they search. They research. They read. Beast delivered: technical optimization (speed, mobile, structured data), a keyword strategy around high-purchase-intent queries, content development building trust and depth, and domain authority signals that told search engines Sweet Sensi was legitimate — not a fly-by-night operation in a category full of low-quality players." },
+                    { step: "3", label: "The Social Media Strategy", detail: "Social media for a CBD brand requires a completely different playbook. Direct product promotion is restricted on most platforms. Beast developed a content strategy built around wellness content that genuinely served Sweet Sensi's audience — sleep, stress, recovery — without hitting CBD advertising policy tripwires. Brand storytelling that built the trust CBD consumers need before they buy. User-generated content amplification within platform guidelines. Community building that converts, not just vanity follower counts." },
+                    { step: "4", label: "The A/B Testing Engine", detail: "Beast ran continuous A/B tests across both channels — identifying the combinations of message, creative, and audience that drove actual purchases rather than just traffic. Which SEO content drove the highest purchase-intent traffic. Which social content formats drove website clicks. Which product page variations converted best. Which email follow-up sequences turned site visitors into buyers. This rigorous, iterative approach is what separated Beast's results from what most agencies deliver." },
+                    { step: "5", label: "The Compounding Effect", detail: "The most important discovery was what Beast came to call the SEO + Social combo effect. SEO content that ranks and drives traffic also gets shared on social. Social content builds brand awareness that increases branded search volume, which improves SEO signals. Email capture from SEO-driven traffic gets nurtured through social retargeting. Brand trust built through social content increases the conversion rate of organic search visitors. Each channel amplified the other. The longer the system ran, the more efficient it got." },
+                  ].map((item) => (
+                    <div key={item.step} className="flex gap-4">
+                      <span className="w-8 h-8 rounded-full bg-beast-pink/10 border border-beast-pink/20 text-beast-pink font-display font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">{item.step}</span>
+                      <div>
+                        <p className="font-display font-bold text-beast-black mb-1">{item.label}</p>
+                        <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </AnimatedSection>
 
               <AnimatedSection>
