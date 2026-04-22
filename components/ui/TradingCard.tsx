@@ -79,6 +79,7 @@ export default function TradingCard({ front, back, alt, rotation, floatDelay, de
           </div>
         </div>
       </div>
+      <p className="text-xs text-gray-400 text-center mt-3 md:hidden">Tap to flip</p>
     </div>
   );
 }
