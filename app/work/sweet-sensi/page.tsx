@@ -70,6 +70,35 @@ export default function SweetSensiPage() {
                 </div>
               </AnimatedSection>
 
+              <style>{`
+                @keyframes sensiFloat1 {
+                  0%, 100% { transform: rotate(-4deg) translateY(0px); }
+                  50% { transform: rotate(-4deg) translateY(-14px); }
+                }
+                @keyframes sensiFloat2 {
+                  0%, 100% { transform: rotate(3deg) translateY(0px); }
+                  50% { transform: rotate(3deg) translateY(-14px); }
+                }
+              `}</style>
+              <AnimatedSection>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
+                  <div style={{ animation: "sensiFloat1 5s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
+                    <img
+                      src="/assets/sweet-sensi-store.jpg"
+                      alt="Sweet Sensi in-store product display"
+                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div style={{ animation: "sensiFloat2 5.8s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
+                    <img
+                      src="/assets/sweet-sensi-tincture.jpg"
+                      alt="Sweet Sensi Pet Tincture product"
+                      className="w-64 lg:w-72 rounded-2xl object-cover"
+                    />
+                  </div>
+                </div>
+              </AnimatedSection>
+
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Results</p>
                 <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Over 500% MRR Growth. In the Industry That Said It Couldn&apos;t Be Done With Ads.</h2>
