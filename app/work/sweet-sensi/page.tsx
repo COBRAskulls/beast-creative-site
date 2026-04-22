@@ -258,21 +258,17 @@ export default function SweetSensiPage() {
         </div>
       </section>
 
-      <section className="bg-[#F4F4F4] py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+      <section className="relative overflow-hidden">
+        <img
+          src="/assets/sweet-sensi-gummies.jpg"
+          alt="Sweet Sensi Elevated Edibles gummy product line"
+          className="w-full h-auto object-cover"
+        />
+        <div className="absolute top-0 left-0 right-0 pt-12 lg:pt-20 px-6 text-center">
           <AnimatedSection>
-            <p className="section-eyebrow text-beast-pink mb-2 text-center">The Creative</p>
-            <h2 className="font-display text-3xl font-bold text-beast-black mb-4 text-center">Product Photography That Sold the Brand.</h2>
-            <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">Premium visuals built to communicate quality at a glance — the kind of creative that earns consumer trust before a single word is read.</p>
-          </AnimatedSection>
-          <AnimatedSection>
-            <div className="w-full rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="/assets/sweet-sensi-gummies.jpg"
-                alt="Sweet Sensi Elevated Edibles gummy product line"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+            <p className="section-eyebrow text-beast-pink mb-2">The Creative</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-3">Product Photography That Sold the Brand.</h2>
+            <p className="text-beast-black/60 max-w-xl mx-auto text-sm leading-relaxed">Premium visuals built to communicate quality at a glance — the kind of creative that earns consumer trust before a single word is read.</p>
           </AnimatedSection>
         </div>
       </section>
