@@ -63,7 +63,7 @@ const ALL_STUDIES = {
     gradientFrom: "#120a1a",
     gradientTo: "#0d0812",
     glow: "rgba(168,85,247,0.25)",
-    image: "", // add: "/assets/sweet-sensi-hero.jpg"
+    image: "/assets/sweet-sensi-gummies.jpg"
   },
   "coinline": {
     client: "Coinline",
