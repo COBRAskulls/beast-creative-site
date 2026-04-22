@@ -72,6 +72,35 @@ export default function SweetSensiPage() {
               </AnimatedSection>
 
               <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Product Line</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Elevated Edibles. Built to Stand Out.</h2>
+                <p className="text-gray-600 leading-relaxed mb-10">
+                  Sweet Sensi&apos;s Elevated Edibles line — premium THC and CBD drinks crafted with full-spectrum rosin — gave Beast&apos;s content strategy something genuinely worth talking about. Products this distinct make every piece of organic content more credible. When the product is legitimately elevated, the marketing compounds faster.
+                </p>
+                <div className="flex flex-row items-start justify-center gap-8">
+                  <div className="w-44 lg:w-52">
+                    <TradingCard
+                      front="/assets/sweet-sensi-can-melon.jpg"
+                      back="/assets/sweet-sensi-can-purple.jpg"
+                      alt="Sweet Sensi Elevated Edibles cans"
+                      rotation={-4}
+                      floatDelay="0s"
+                    />
+                  </div>
+                  <div className="w-44 lg:w-52">
+                    <TradingCard
+                      front="/assets/sweet-sensi-can-pineapple-a.jpg"
+                      back="/assets/sweet-sensi-can-pineapple-b.jpg"
+                      alt="Sweet Sensi Pineapple Kiwi Express"
+                      rotation={3}
+                      floatDelay="0.4s"
+                    />
+                  </div>
+                </div>
+                <p className="text-center text-sm text-gray-400 mt-6 md:hidden">Tap a card to flip it</p>
+              </AnimatedSection>
+
+              <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">The Brand</p>
                 <h2 className="font-display text-3xl font-bold text-beast-black mb-4">A Premium Product That Deserved a Premium Presence.</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -224,36 +253,6 @@ export default function SweetSensiPage() {
               </AnimatedSection>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-[#F4F4F4] py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <p className="section-eyebrow text-beast-pink mb-2 text-center">The Product Line</p>
-            <h2 className="font-display text-3xl font-bold text-beast-black mb-16 text-center">Elevated Edibles. Built to Stand Out on the Shelf.</h2>
-          </AnimatedSection>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
-            <div className="w-64 lg:w-72">
-              <TradingCard
-                front="/assets/sweet-sensi-can-melon.jpg"
-                back="/assets/sweet-sensi-can-purple.jpg"
-                alt="Sweet Sensi Elevated Edibles cans"
-                rotation={-4}
-                floatDelay="0s"
-              />
-            </div>
-            <div className="w-64 lg:w-72">
-              <TradingCard
-                front="/assets/sweet-sensi-can-pineapple-a.jpg"
-                back="/assets/sweet-sensi-can-pineapple-b.jpg"
-                alt="Sweet Sensi Pineapple Kiwi Express"
-                rotation={3}
-                floatDelay="0.4s"
-              />
-            </div>
-          </div>
-          <p className="text-center text-sm text-gray-400 mt-10 md:hidden">Tap a card to flip it</p>
         </div>
       </section>
 
