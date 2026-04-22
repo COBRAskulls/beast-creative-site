@@ -138,6 +138,7 @@ export default function WilliamsAllstarsPage() {
                     floatDelay="0.8s"
                   />
                 </div>
+                <p className="text-xs text-gray-400 text-center mt-4 md:hidden">Tap to flip</p>
               </AnimatedSection>
 
               <AnimatedSection>
