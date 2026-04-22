@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import IconButton from "@/components/ui/IconButton";
+import FlipCard from "@/components/ui/FlipCard";
 
 export const metadata: Metadata = {
   title: "Sun-Bird Seasonings Bird Herd Campaign | 36,581 Entries, 7.03% CTR | Beast Creative",
@@ -37,15 +38,14 @@ export default function SunBirdPage() {
               </p>
             </AnimatedSection>
 
-            {/* iMac mockup */}
+            {/* Flip card */}
             <AnimatedSection delay={0.15} className="flex justify-center lg:justify-end">
-              <div className="relative w-[460px] lg:w-[634px] xl:w-[794px]">
-                <Image
-                  src="/assets/sunbird-screen-mockup.png"
-                  alt="Sun-Bird Bird Herd sweepstakes landing page"
-                  width={480}
-                  height={400}
-                  className="w-full h-auto object-contain drop-shadow-2xl"
+              <div className="w-full max-w-[460px] lg:max-w-[500px]">
+                <FlipCard
+                  front="/assets/sunbird-flip-front.png"
+                  back="/assets/sunbird-flip-back.png"
+                  alt="Sun-Bird Seasonings campaign creative"
+                  tilt={3}
                 />
               </div>
             </AnimatedSection>
