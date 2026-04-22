@@ -70,6 +70,17 @@ export default function SweetSensiPage() {
                 </div>
               </AnimatedSection>
 
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Brand</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">A Premium Product That Deserved a Premium Presence.</h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Sweet Sensi wasn&apos;t just a CBD brand — they were a premium wellness company with a distinct aesthetic and a genuine product story to tell. Beast&apos;s strategy leaned into that. Rather than defaulting to the generic wellness tropes that flood the CBD space, the work centered on what made Sweet Sensi different: carefully crafted formulations, boutique retail placement, and a brand identity that communicated quality at every touchpoint.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  That foundation made every piece of content more credible. Consumers researching CBD don&apos;t just buy products — they buy brands they trust. When the brand signals quality at the shelf and on the screen, SEO traffic converts. Social content resonates. Email gets opened. The visuals below are a reflection of what Beast was working to amplify — a brand already worth discovering. The job was making sure people found it.
+                </p>
+              </AnimatedSection>
+
               <style>{`
                 @keyframes sensiFloat1 {
                   0%, 100% { transform: rotate(-4deg) translateY(0px); }
