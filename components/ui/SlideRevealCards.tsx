@@ -84,33 +84,12 @@ export default function SlideRevealCards() {
           width: 100%;
           padding: 1.25rem;
           z-index: 3;
-          transition: transform 0.75s cubic-bezier(0.19,1,0.22,1);
+          transition: opacity 0.35s ease, transform 0.75s cubic-bezier(0.19,1,0.22,1);
         }
         .src-card:hover .src-header,
         .src-card.is-active .src-header {
-          transform: translateY(-80px);
-        }
-        .src-tag {
-          display: inline-block;
-          background: #ed1564;
-          color: white;
-          font-size: 0.65rem;
-          font-weight: 700;
-          padding: 3px 10px;
-          border-radius: 20px;
-          margin-bottom: 8px;
-          text-transform: uppercase;
-          letter-spacing: 0.06em;
-          transform: translateY(30px);
           opacity: 0;
-          transition: transform 0.75s cubic-bezier(0.19,1,0.22,1),
-                      opacity 0.75s cubic-bezier(0.19,1,0.22,1);
-        }
-        .src-card:hover .src-tag,
-        .src-card.is-active .src-tag {
-          transform: translateY(0);
-          opacity: 1;
-          transition-delay: 0.08s;
+          transform: translateY(-20px);
         }
         .src-title {
           font-size: 1.35rem;
@@ -126,31 +105,41 @@ export default function SlideRevealCards() {
         }
         .src-content {
           position: absolute;
-          bottom: 0; left: 0;
+          inset: 0;
           width: 100%;
-          padding: 1.25rem;
+          padding: 1.5rem;
           z-index: 4;
-          transform: translateY(100%);
-          transition: transform 0.75s cubic-bezier(0.19,1,0.22,1);
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          opacity: 0;
+          transform: translateY(12px);
+          transition: opacity 0.45s cubic-bezier(0.19,1,0.22,1),
+                      transform 0.45s cubic-bezier(0.19,1,0.22,1);
         }
         .src-card:hover .src-content,
         .src-card.is-active .src-content {
-          transform: translateY(0);
-        }
-        .src-description {
-          font-size: 0.82rem;
-          line-height: 1.55;
-          color: rgba(255,255,255,0.85);
-          opacity: 0;
-          transform: translateY(16px);
-          transition: transform 0.75s cubic-bezier(0.19,1,0.22,1),
-                      opacity 0.75s cubic-bezier(0.19,1,0.22,1);
-        }
-        .src-card:hover .src-description,
-        .src-card.is-active .src-description {
           opacity: 1;
           transform: translateY(0);
-          transition-delay: 0.22s;
+          transition-delay: 0.15s;
+        }
+        .src-tag {
+          display: inline-block;
+          background: #ed1564;
+          color: white;
+          font-size: 0.65rem;
+          font-weight: 700;
+          padding: 3px 10px;
+          border-radius: 20px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          width: fit-content;
+        }
+        .src-description {
+          font-size: 0.84rem;
+          line-height: 1.6;
+          color: rgba(255,255,255,0.9);
         }
       `}</style>
 
@@ -167,15 +156,15 @@ export default function SlideRevealCards() {
             />
             <div className="src-overlay" />
 
-            {/* Always-visible header slides up on hover */}
+            {/* Default state: title + subtitle at bottom, fades out on hover */}
             <div className="src-header">
-              <div className="src-tag">{card.tag}</div>
               <div className="src-title">{card.title}</div>
               <div className="src-subtitle">{card.subtitle}</div>
             </div>
 
-            {/* Description slides up from bottom on hover */}
+            {/* Hover state: tag + description fade in over full card */}
             <div className="src-content">
+              <div className="src-tag">{card.tag}</div>
               <p className="src-description">{card.description}</p>
             </div>
           </div>
