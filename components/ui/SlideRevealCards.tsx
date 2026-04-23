@@ -64,7 +64,7 @@ export default function SlideRevealCards() {
         }
         .src-card:hover .src-image,
         .src-card.is-active .src-image {
-          transform: translateY(-80px);
+          transform: scale(1.04);
         }
         .src-overlay {
           position: absolute;
@@ -129,7 +129,6 @@ export default function SlideRevealCards() {
         @media (hover: none) {
           .src-content { opacity: 1; transform: translateY(0); }
           .src-overlay { height: 100%; }
-          .src-image { transform: translateY(-80px); }
         }
         .src-tag {
           display: inline-block;
