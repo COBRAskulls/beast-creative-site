@@ -9,27 +9,43 @@ const CAM_SPEED = 2.5;
 const PROXY_PX = 2200;
 const STAR_LOOP = 7000;
 
+const CARD_DATA = [
+  { id: "CAB-001", name: "GALAGA",        stat1: "TOKENS: 847",   stat2: "PLAYS: 1,204", num: "01" },
+  { id: "CAB-002", name: "PAC-MAN",       stat1: "TOKENS: 1,033", stat2: "PLAYS: 892",   num: "02" },
+  { id: "CAB-003", name: "STR. FIGHTER",  stat1: "TOKENS: 2,441", stat2: "PLAYS: 3,100", num: "03" },
+  { id: "CAB-004", name: "MK II",         stat1: "TOKENS: 990",   stat2: "PLAYS: 1,871", num: "04" },
+  { id: "CAB-005", name: "DONKEY KONG",   stat1: "TOKENS: 612",   stat2: "PLAYS: 444",   num: "05" },
+  { id: "CAB-006", name: "TEKKEN 3",      stat1: "TOKENS: 1,788", stat2: "PLAYS: 2,290", num: "06" },
+];
+
+// Z positions for cards — interspersed before/between/after each word
+const CARD_Z    = [-700, -1200, -2200, -2700, -3700, -4800];
+// Spread angles so cards appear to the sides, not dead center
+const CARD_ANG  = [0.8,   2.1,   3.7,   5.2,   1.5,   4.3];
+const CARD_ROT  = [-8,    12,    -5,    10,    -14,    7];
+
 export default function CoinlineHero() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const heroRef = useRef<HTMLDivElement>(null);
-  const worldRef = useRef<HTMLDivElement>(null);
-  const viewportRef = useRef<HTMLDivElement>(null);
+  const containerRef  = useRef<HTMLDivElement>(null);
+  const heroRef       = useRef<HTMLDivElement>(null);
+  const worldRef      = useRef<HTMLDivElement>(null);
+  const viewportRef   = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = containerRef.current;
-    const hero = heroRef.current;
-    const world = worldRef.current;
-    const vp = viewportRef.current;
+    const hero      = heroRef.current;
+    const world     = worldRef.current;
+    const vp        = viewportRef.current;
     if (!container || !hero || !world || !vp) return;
-    const heroEl: HTMLDivElement = hero;
-    const worldEl: HTMLDivElement = world;
-    const vpEl: HTMLDivElement = vp;
 
-    // Track scroll to pin/unpin hero
-    // Fixed while scrolling through proxy budget; absolute at end so it scrolls away
+    // Typed aliases — TypeScript doesn't narrow refs across closures
+    const heroEl: HTMLDivElement  = hero;
+    const worldEl: HTMLDivElement = world;
+    const vpEl: HTMLDivElement    = vp;
+
+    // Fixed → absolute pin swap (works around overflow-x:hidden breaking position:sticky)
     function updatePin() {
-      const scrollY = window.scrollY;
-      if (scrollY < PROXY_PX) {
+      const y = window.scrollY;
+      if (y < PROXY_PX) {
         heroEl.style.position = "fixed";
         heroEl.style.top = "0";
       } else {
@@ -40,29 +56,59 @@ export default function CoinlineHero() {
     updatePin();
     window.addEventListener("scroll", updatePin, { passive: true });
 
+    // ── Scene items ─────────────────────────────────────────────────────────
     type Item = {
       el: HTMLElement;
       x: number;
       y: number;
       baseZ: number;
-      type: "text" | "star";
+      type: "text" | "star" | "card";
+      rot: number;
     };
-
     const items: Item[] = [];
+    const W = window.innerWidth;
+    const H = window.innerHeight;
 
+    // Text words
     WORDS.forEach((word, i) => {
       const wrapper = document.createElement("div");
       wrapper.className = "hs-item";
-
       const txt = document.createElement("div");
       txt.className = "hs-big-text";
       txt.innerText = word;
-
       wrapper.appendChild(txt);
       worldEl.appendChild(wrapper);
-      items.push({ el: wrapper, x: 0, y: 0, baseZ: WORD_BASE_Z[i], type: "text" });
+      items.push({ el: wrapper, x: 0, y: 0, baseZ: WORD_BASE_Z[i], type: "text", rot: 0 });
     });
 
+    // Cards
+    CARD_DATA.forEach((data, i) => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "hs-item";
+
+      const card = document.createElement("div");
+      card.className = "hs-card";
+      card.innerHTML = `
+        <div class="hs-card-header">
+          <span class="hs-card-id">${data.id}</span>
+          <div class="hs-card-dot"></div>
+        </div>
+        <div class="hs-card-name">${data.name}</div>
+        <div class="hs-card-footer">
+          <span>${data.stat1}</span>
+          <span>${data.stat2}</span>
+        </div>
+        <div class="hs-card-num">${data.num}</div>
+      `;
+      wrapper.appendChild(card);
+      worldEl.appendChild(wrapper);
+
+      const x = Math.cos(CARD_ANG[i]) * W * 0.32;
+      const y = Math.sin(CARD_ANG[i]) * H * 0.26;
+      items.push({ el: wrapper, x, y, baseZ: CARD_Z[i], type: "card", rot: CARD_ROT[i] });
+    });
+
+    // Stars
     for (let i = 0; i < 130; i++) {
       const el = document.createElement("div");
       el.className = "hs-star";
@@ -73,32 +119,27 @@ export default function CoinlineHero() {
         y: (Math.random() - 0.5) * 1600,
         baseZ: -Math.random() * STAR_LOOP,
         type: "star",
+        rot: 0,
       });
     }
 
-    let mouseX = 0;
-    let mouseY = 0;
-    let lastScrollY = 0;
-    let smoothVel = 0;
-    let rafId: number;
-
-    const velEl = document.getElementById("hs-vel");
+    let mouseX = 0, mouseY = 0, lastScrollY = 0, smoothVel = 0, rafId: number;
+    const velEl   = document.getElementById("hs-vel");
     const coordEl = document.getElementById("hs-coord");
 
     const onMouseMove = (e: MouseEvent) => {
-      mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+      mouseX = (e.clientX / window.innerWidth  - 0.5) * 2;
       mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
     };
     window.addEventListener("mousemove", onMouseMove);
 
-    function tick() {
+    function tick(time: number) {
       const scrollY = window.scrollY;
-      const rawVel = scrollY - lastScrollY;
-      lastScrollY = scrollY;
-      smoothVel += (rawVel - smoothVel) * 0.12;
+      const rawVel  = scrollY - lastScrollY;
+      lastScrollY   = scrollY;
+      smoothVel    += (rawVel - smoothVel) * 0.12;
 
       const cameraZ = scrollY * CAM_SPEED;
-
       const fov = 1000 - Math.min(Math.abs(smoothVel) * 10, 600);
       vpEl.style.perspective = `${fov}px`;
 
@@ -107,8 +148,10 @@ export default function CoinlineHero() {
         rotateY(${mouseX * 5}deg)
       `;
 
-      if (velEl) velEl.innerText = Math.abs(smoothVel).toFixed(2);
+      if (velEl)   velEl.innerText   = Math.abs(smoothVel).toFixed(2);
       if (coordEl) coordEl.innerText = String(scrollY).padStart(7, "0");
+
+      const t = time * 0.001;
 
       items.forEach((item) => {
         let vizZ: number;
@@ -121,27 +164,30 @@ export default function CoinlineHero() {
           vizZ = item.baseZ + cameraZ;
         }
 
+        // Opacity: fade in from far, fade out when close
         let alpha = 1;
         if (vizZ < -4000) alpha = 0;
         else if (vizZ < -2500) alpha = (vizZ + 4000) / 1500;
-        if (item.type === "text" && vizZ > 80) alpha = 1 - (vizZ - 80) / 400;
+        if (item.type !== "star" && vizZ > 80) alpha = 1 - (vizZ - 80) / 400;
         alpha = Math.max(0, Math.min(1, alpha));
         item.el.style.opacity = String(alpha);
 
         if (item.type === "star") {
           const stretch = Math.max(1, Math.min(1 + Math.abs(smoothVel) * 0.12, 8));
           item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px) scale3d(1,1,${stretch})`;
-        } else {
+        } else if (item.type === "text") {
           const txtEl = item.el.firstChild as HTMLElement;
-          if (txtEl) {
-            if (Math.abs(smoothVel) > 2) {
-              const o = smoothVel * 2;
-              txtEl.style.textShadow = `${o}px 0 #ff003c, ${-o}px 0 #00f3ff`;
-            } else {
-              txtEl.style.textShadow = "none";
-            }
+          if (txtEl && Math.abs(smoothVel) > 2) {
+            const o = smoothVel * 2;
+            txtEl.style.textShadow = `${o}px 0 #ff003c, ${-o}px 0 #00f3ff`;
+          } else if (txtEl) {
+            txtEl.style.textShadow = "none";
           }
           item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px)`;
+        } else {
+          // Cards: gentle float rotation
+          const floatY = Math.sin(t + item.x * 0.001) * 8;
+          item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px) rotateZ(${item.rot}deg) rotateY(${floatY}deg)`;
         }
       });
 
@@ -174,19 +220,99 @@ export default function CoinlineHero() {
           font-size: clamp(56px, 14vw, 210px);
           font-weight: 800;
           color: transparent;
-          -webkit-text-stroke: 2px rgba(255,255,255,0.18);
+          -webkit-text-stroke: 2px rgba(255,255,255,0.55);
           text-transform: uppercase;
           white-space: nowrap;
           transform: translate(-50%, -50%);
           pointer-events: none;
           letter-spacing: -0.04em;
-          mix-blend-mode: overlay;
+          font-family: sans-serif;
         }
         .hs-star {
           position: absolute;
           width: 2px; height: 2px;
           background: white;
           transform: translate(-50%, -50%);
+        }
+        .hs-card {
+          width: 300px;
+          height: 400px;
+          background: rgba(8, 8, 8, 0.7);
+          border: 1px solid rgba(255,255,255,0.1);
+          padding: 1.75rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+          transform: translate(-50%, -50%);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          box-shadow: 0 0 0 1px rgba(0,0,0,0.5), 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .hs-card::before {
+          content: '';
+          position: absolute;
+          top: -1px; left: -1px;
+          width: 12px; height: 12px;
+          border-top: 1px solid rgba(255,255,255,0.5);
+          border-left: 1px solid rgba(255,255,255,0.5);
+        }
+        .hs-card::after {
+          content: '';
+          position: absolute;
+          bottom: -1px; right: -1px;
+          width: 12px; height: 12px;
+          border-bottom: 1px solid rgba(255,255,255,0.5);
+          border-right: 1px solid rgba(255,255,255,0.5);
+        }
+        .hs-card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+        }
+        .hs-card-id {
+          font-family: monospace;
+          font-size: 10px;
+          color: #ff003c;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+        }
+        .hs-card-dot {
+          width: 8px; height: 8px;
+          background: #ff003c;
+        }
+        .hs-card-name {
+          font-size: 2.2rem;
+          font-weight: 800;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: -0.02em;
+          line-height: 0.95;
+          font-family: sans-serif;
+          mix-blend-mode: hard-light;
+        }
+        .hs-card-footer {
+          font-family: monospace;
+          font-size: 9px;
+          color: rgba(255,255,255,0.35);
+          display: flex;
+          justify-content: space-between;
+          padding-top: 0.75rem;
+          border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .hs-card-num {
+          position: absolute;
+          bottom: 1.5rem;
+          right: 1.5rem;
+          font-size: 3.5rem;
+          font-weight: 900;
+          opacity: 0.07;
+          line-height: 1;
+          font-family: monospace;
+          color: white;
         }
         .hs-scanlines {
           background: linear-gradient(
@@ -212,12 +338,12 @@ export default function CoinlineHero() {
         }
       `}</style>
 
-      {/* Scroll budget container — creates the proxy scroll space */}
+      {/* Scroll budget — creates proxy scroll space for the animation */}
       <div
         ref={containerRef}
         style={{ height: `calc(100vh + ${PROXY_PX}px)`, position: "relative" }}
       >
-        {/* Hero — fixed to viewport while scrolling through budget, then absolute so it scrolls away */}
+        {/* Hero — fixed to viewport until budget exhausted, then scrolls away */}
         <div
           ref={heroRef}
           className="relative overflow-hidden"
@@ -232,18 +358,12 @@ export default function CoinlineHero() {
           }}
         >
           {/* Scanlines */}
-          <div
-            className="hs-scanlines absolute inset-0 pointer-events-none"
-            style={{ zIndex: 10 }}
-          />
+          <div className="hs-scanlines absolute inset-0 pointer-events-none" style={{ zIndex: 10 }} />
 
           {/* Vignette */}
           <div
             className="absolute inset-0 pointer-events-none"
-            style={{
-              background: "radial-gradient(circle, transparent 40%, #000 120%)",
-              zIndex: 11,
-            }}
+            style={{ background: "radial-gradient(circle, transparent 40%, #000 120%)", zIndex: 11 }}
           />
 
           {/* Noise */}
@@ -271,20 +391,10 @@ export default function CoinlineHero() {
             <div className="flex justify-between items-center">
               <span>SYS.READY</span>
               <div className="hs-hud-line" />
-              <span>
-                SCROLL VEL:{" "}
-                <strong id="hs-vel" style={{ color: "#00f3ff" }}>
-                  0.00
-                </strong>
-              </span>
+              <span>SCROLL VEL: <strong id="hs-vel" style={{ color: "#00f3ff" }}>0.00</strong></span>
             </div>
             <div className="flex justify-between items-center">
-              <span>
-                COORD:{" "}
-                <strong id="hs-coord" style={{ color: "#00f3ff" }}>
-                  0000000
-                </strong>
-              </span>
+              <span>COORD: <strong id="hs-coord" style={{ color: "#00f3ff" }}>0000000</strong></span>
               <div className="hs-hud-line" />
               <span>COINLINE BARCADE · EST. 2022</span>
             </div>
@@ -299,26 +409,15 @@ export default function CoinlineHero() {
             <div
               ref={worldRef}
               className="absolute"
-              style={{
-                top: "50%",
-                left: "50%",
-                transformStyle: "preserve-3d",
-                willChange: "transform",
-              }}
+              style={{ top: "50%", left: "50%", transformStyle: "preserve-3d", willChange: "transform" }}
             />
           </div>
 
           {/* Hero text — sits above the 3D scene */}
-          <div
-            className="absolute inset-0 flex flex-col justify-end"
-            style={{ zIndex: 30 }}
-          >
+          <div className="absolute inset-0 flex flex-col justify-end" style={{ zIndex: 30 }}>
             <div
               className="absolute inset-x-0 bottom-0 pointer-events-none"
-              style={{
-                height: "60%",
-                background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%)",
-              }}
+              style={{ height: "60%", background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%)" }}
             />
             <div className="relative max-w-7xl mx-auto w-full px-6 lg:px-20 pb-20 lg:pb-28">
               <AnimatedSection>
