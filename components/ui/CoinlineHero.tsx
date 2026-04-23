@@ -447,14 +447,21 @@ export default function CoinlineHero() {
             />
           </div>
 
-          {/* Hero text — just below top HUD bar on both mobile and desktop */}
-          <div className="absolute inset-0 flex flex-col justify-start" style={{ zIndex: 30 }}>
-            {/* Gradient fading down from top */}
+          {/* Hero text — title at top, description at bottom */}
+          <div className="absolute inset-0 flex flex-col justify-between" style={{ zIndex: 30 }}>
+            {/* Top gradient behind title */}
             <div
               className="absolute inset-x-0 top-0 pointer-events-none"
-              style={{ height: "60%", background: "linear-gradient(to bottom, rgba(0,0,0,0.88) 0%, transparent 100%)" }}
+              style={{ height: "55%", background: "linear-gradient(to bottom, rgba(0,0,0,0.88) 0%, transparent 100%)" }}
             />
-            <div className="relative max-w-7xl mx-auto w-full px-6 lg:px-20 pt-20 lg:pt-24 pb-4">
+            {/* Bottom gradient behind description */}
+            <div
+              className="absolute inset-x-0 bottom-0 pointer-events-none"
+              style={{ height: "35%", background: "linear-gradient(to top, rgba(0,0,0,0.88) 0%, transparent 100%)" }}
+            />
+
+            {/* Top: tags + eyebrow + h1 */}
+            <div className="relative max-w-7xl mx-auto w-full px-6 lg:px-20 pt-20 lg:pt-24">
               <AnimatedSection>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {["Branding", "Naming", "Identity Design", "Digital", "Apparel"].map((tag) => (
@@ -469,16 +476,20 @@ export default function CoinlineHero() {
                 <p className="section-eyebrow text-beast-yellow mb-3">
                   Case Study — Coinline Barcade · 2022
                 </p>
-                <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
+                <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl leading-tight">
                   From a Concept to a{" "}
                   <span className="text-beast-pink">Complete Brand Universe.</span>
                 </h1>
-                <p className="text-body-lead text-gray-300 max-w-2xl">
-                  Named, designed, and launched from scratch — Beast built the full brand
-                  identity for Coinline Barcade, a retro-modern arcade concept built to own
-                  every surface it touches.
-                </p>
               </AnimatedSection>
+            </div>
+
+            {/* Bottom: description */}
+            <div className="relative max-w-7xl mx-auto w-full px-6 lg:px-20 pb-24 lg:pb-16">
+              <p className="text-body-lead text-gray-300 max-w-2xl">
+                Named, designed, and launched from scratch — Beast built the full brand
+                identity for Coinline Barcade, a retro-modern arcade concept built to own
+                every surface it touches.
+              </p>
             </div>
           </div>
         </div>
