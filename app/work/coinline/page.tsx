@@ -77,7 +77,7 @@ export default function CoinlinePage() {
 
               <div
                 className="rounded-2xl overflow-hidden bg-black"
-                style={{ boxShadow: "0px 20px 40px 0px rgba(0,0,0,0.5)" }}
+                style={{ boxShadow: "0px 20px 25px 0px rgba(0,0,0,0.5)" }}
               >
                 <video
                   autoPlay
