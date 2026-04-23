@@ -447,19 +447,14 @@ export default function CoinlineHero() {
             />
           </div>
 
-          {/* Hero text — top on mobile, bottom on desktop */}
-          <div className="absolute inset-0 flex flex-col justify-start lg:justify-end" style={{ zIndex: 30 }}>
-            {/* Mobile: gradient fading down from top */}
+          {/* Hero text — just below top HUD bar on both mobile and desktop */}
+          <div className="absolute inset-0 flex flex-col justify-start" style={{ zIndex: 30 }}>
+            {/* Gradient fading down from top */}
             <div
-              className="absolute inset-x-0 top-0 pointer-events-none lg:hidden"
-              style={{ height: "55%", background: "linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, transparent 100%)" }}
+              className="absolute inset-x-0 top-0 pointer-events-none"
+              style={{ height: "60%", background: "linear-gradient(to bottom, rgba(0,0,0,0.88) 0%, transparent 100%)" }}
             />
-            {/* Desktop: gradient fading up from bottom */}
-            <div
-              className="absolute inset-x-0 bottom-0 pointer-events-none hidden lg:block"
-              style={{ height: "60%", background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%)" }}
-            />
-            <div className="relative max-w-7xl mx-auto w-full px-6 lg:px-20 pt-20 lg:pt-0 pb-4 lg:pb-28">
+            <div className="relative max-w-7xl mx-auto w-full px-6 lg:px-20 pt-20 lg:pt-24 pb-4">
               <AnimatedSection>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {["Branding", "Naming", "Identity Design", "Digital", "Apparel"].map((tag) => (
