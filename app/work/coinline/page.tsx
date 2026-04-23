@@ -5,6 +5,7 @@ import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
 import StatCounter from "@/components/ui/StatCounter";
 import ColorSwatches from "@/components/ui/ColorSwatches";
 import IconButton from "@/components/ui/IconButton";
+import CoinlineHero from "@/components/ui/CoinlineHero";
 
 export const metadata: Metadata = {
   title: "Coinline Barcade Brand Identity | Beast Creative Agency Case Study",
@@ -15,27 +16,7 @@ export const metadata: Metadata = {
 export default function CoinlinePage() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["Branding", "Naming", "Identity Design", "Digital", "Apparel"].map((tag) => (
-                <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">{tag}</span>
-              ))}
-            </div>
-            <p className="section-eyebrow text-beast-yellow mb-3">Case Study — Coinline Barcade · 2022</p>
-            <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6 leading-tight">
-              From a Concept to a{" "}
-              <span className="text-beast-pink">Complete Brand Universe.</span>
-            </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
-              Named, designed, and launched from scratch — Beast built the full brand identity for Coinline Barcade, a retro-modern arcade concept built to own every surface it touches.
-            </p>
-          </AnimatedSection>
-        </div>
-      </section>
+      <CoinlineHero />
 
       {/* STATS BAR */}
       <section className="bg-beast-yellow py-12 lg:py-16">
