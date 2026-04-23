@@ -380,7 +380,7 @@ export default function CoinlineHero() {
           <div
             className="absolute inset-8 pointer-events-none flex flex-col justify-between"
             style={{
-              zIndex: 20,
+              zIndex: 40,
               fontFamily: "monospace",
               fontSize: "10px",
               color: "rgba(255,255,255,0.45)",
