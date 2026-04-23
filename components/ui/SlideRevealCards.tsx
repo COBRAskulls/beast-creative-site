@@ -91,6 +91,9 @@ export default function SlideRevealCards() {
           opacity: 0;
           transform: translateY(-20px);
         }
+        @media (hover: none) {
+          .src-header { opacity: 0; transform: translateY(-20px); }
+        }
         .src-title {
           font-size: 1.35rem;
           font-weight: 800;
@@ -122,6 +125,11 @@ export default function SlideRevealCards() {
           opacity: 1;
           transform: translateY(0);
           transition-delay: 0.15s;
+        }
+        @media (hover: none) {
+          .src-content { opacity: 1; transform: translateY(0); }
+          .src-overlay { height: 100%; }
+          .src-image { transform: translateY(-80px); }
         }
         .src-tag {
           display: inline-block;
