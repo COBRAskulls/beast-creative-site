@@ -75,7 +75,10 @@ export default function CoinlinePage() {
                 </p>
               </AnimatedSection>
 
-              <div className="rounded-2xl overflow-hidden bg-black">
+              <div
+                className="rounded-2xl overflow-hidden bg-black"
+                style={{ boxShadow: "0 40px 80px rgba(0,0,0,0.45), 0 16px 32px rgba(0,0,0,0.3)" }}
+              >
                 <video
                   autoPlay
                   loop
