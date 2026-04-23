@@ -89,7 +89,7 @@ export default function CoinlineHero() {
     logoWrapper.className = "hs-item";
     const logoInner = document.createElement("div");
     logoInner.className = "hs-logo";
-    logoInner.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 329.5" class="hs-logo-svg"><path fill="rgba(255,255,255,0.55)" d="${COINLINE_SVG_PATH}"/></svg>`;
+    logoInner.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 329.5" class="hs-logo-svg"><path fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" stroke-linejoin="miter" d="${COINLINE_SVG_PATH}"/></svg>`;
     logoWrapper.appendChild(logoInner);
     worldEl.appendChild(logoWrapper);
     items.push({ el: logoWrapper, x: 0, y: 0, baseZ: LOGO_BASE_Z, type: "logo", rot: 0 });
@@ -198,6 +198,15 @@ export default function CoinlineHero() {
           }
           item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px)`;
         } else if (item.type === "logo") {
+          const svgEl = item.el.querySelector("svg") as SVGElement | null;
+          if (svgEl) {
+            if (Math.abs(smoothVel) > 2) {
+              const o = smoothVel * 2;
+              svgEl.style.filter = `drop-shadow(${o}px 0 0 #ff003c) drop-shadow(${-o}px 0 0 #00f3ff)`;
+            } else {
+              svgEl.style.filter = "none";
+            }
+          }
           item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px)`;
         } else {
           // Cards: gentle float rotation
