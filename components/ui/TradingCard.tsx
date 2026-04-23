@@ -55,7 +55,7 @@ export default function TradingCard({ front, back, alt, rotation, floatDelay, de
           >
             {/* Front face */}
             <div
-              className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl [backface-visibility:hidden]"
+              className="absolute inset-0 rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] [backface-visibility:hidden]"
             >
               <Image
                 src={front}
@@ -67,7 +67,7 @@ export default function TradingCard({ front, back, alt, rotation, floatDelay, de
 
             {/* Back face */}
             <div
-              className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl [backface-visibility:hidden] [transform:rotateY(180deg)]"
+              className="absolute inset-0 rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] [backface-visibility:hidden] [transform:rotateY(180deg)]"
             >
               <Image
                 src={back}

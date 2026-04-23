@@ -37,15 +37,17 @@ export default function WilliamsBowlPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
               <div className="flex justify-center lg:justify-end">
-                <div className="w-[346px] lg:w-[460px] xl:w-[528px]" style={{ filter: "drop-shadow(0 20px 50px rgba(0,0,0,0.45))" }}>
-                  <video
-                    src="/assets/williams-bowl-hero.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-auto rounded-2xl"
-                  />
+                <div className="w-[346px] lg:w-[460px] xl:w-[528px]">
+                  <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
+                    <video
+                      src="/assets/williams-bowl-hero.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto"
+                    />
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
@@ -128,13 +130,13 @@ export default function WilliamsBowlPage() {
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <div className="flex-1 max-w-[320px] mx-auto sm:mx-0 [transform:rotate(-2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
                     style={{animation: "bracketFloat1 4s ease-in-out infinite"}}>
-                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bowl-bracket.jpg" alt="Williams Bowl championship bracket — seasoning matchups" width={1080} height={1080} className="w-full h-auto block" />
                     </div>
                   </div>
                   <div className="flex-1 max-w-[320px] mx-auto sm:mx-0 [transform:rotate(2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
                     style={{animation: "bracketFloat2 4s ease-in-out infinite"}}>
-                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bowl-bracket-final.jpg" alt="Williams Bowl finals — OG Chili vs Tex Mex Taco" width={1080} height={1080} className="w-full h-auto block" />
                     </div>
                   </div>
@@ -271,7 +273,7 @@ export default function WilliamsBowlPage() {
             ].map((card) => (
               <AnimatedSection key={card.label} delay={card.delay} className="w-full max-w-[300px] shrink-0">
                 <div
-                  className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0"
+                  className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0"
                   style={{ transform: `rotate(${card.rot})` }}
                 >
                   <Image

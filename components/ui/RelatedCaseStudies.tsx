@@ -126,7 +126,7 @@ export default function RelatedCaseStudies({ related }: { related: StudyKey[] })
                     className="rc-image relative h-32 flex items-center justify-center overflow-hidden"
                     style={!cs.image ? {
                       background: `linear-gradient(135deg, ${cs.gradientFrom} 0%, ${cs.gradientTo} 100%)`,
-                    } : undefined}
+                    } : { boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}
                   >
                     {cs.image ? (
                       <Image

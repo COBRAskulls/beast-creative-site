@@ -133,38 +133,46 @@ export default function SweetSensiPage() {
               `}</style>
               <AnimatedSection>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
-                  <div style={{ animation: "sensiFloat1 5s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
-                    <img
-                      src="/assets/sweet-sensi-store.jpg"
-                      alt="Sweet Sensi in-store product display"
-                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
-                    />
+                  <div style={{ animation: "sensiFloat1 5s ease-in-out infinite" }}>
+                    <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
+                      <img
+                        src="/assets/sweet-sensi-store.jpg"
+                        alt="Sweet Sensi in-store product display"
+                        className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
+                      />
+                    </div>
                   </div>
-                  <div style={{ animation: "sensiFloat2 5.8s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
-                    <img
-                      src="/assets/sweet-sensi-tincture.jpg"
-                      alt="Sweet Sensi Pet Tincture product"
-                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
-                    />
+                  <div style={{ animation: "sensiFloat2 5.8s ease-in-out infinite" }}>
+                    <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
+                      <img
+                        src="/assets/sweet-sensi-tincture.jpg"
+                        alt="Sweet Sensi Pet Tincture product"
+                        className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
-                  <div style={{ animation: "sensiFloat3 6.2s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
-                    <img
-                      src="/assets/sweet-sensi-storefront.jpg"
-                      alt="Sweet Sensi storefront at night"
-                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
-                    />
+                  <div style={{ animation: "sensiFloat3 6.2s ease-in-out infinite" }}>
+                    <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
+                      <img
+                        src="/assets/sweet-sensi-storefront.jpg"
+                        alt="Sweet Sensi storefront at night"
+                        className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
+                      />
+                    </div>
                   </div>
-                  <div style={{ animation: "sensiFloat4 5.4s ease-in-out infinite", filter: "drop-shadow(0 24px 40px rgba(0,0,0,0.22))" }}>
-                    <img
-                      src="/assets/sweet-sensi-shirt.jpg"
-                      alt="Sweet Sensi brand ambassador"
-                      className="w-64 lg:w-72 h-64 lg:h-72 rounded-2xl object-cover"
-                    />
+                  <div style={{ animation: "sensiFloat4 5.4s ease-in-out infinite" }}>
+                    <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
+                      <img
+                        src="/assets/sweet-sensi-shirt.jpg"
+                        alt="Sweet Sensi brand ambassador"
+                        className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>

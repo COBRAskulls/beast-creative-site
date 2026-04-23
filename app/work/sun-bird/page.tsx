@@ -145,17 +145,17 @@ export default function SunBirdPage() {
                 </p>
                 <div className="flex gap-10 justify-center">
                   <div className="w-[30%] max-w-[180px] [transform:rotate(-3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/sunbird-mobile-flocking.jpg" alt="Sun-Bird mobile story — Flocking to a Store Near You" width={540} height={960} className="w-full h-auto block" />
                     </div>
                   </div>
                   <div className="w-[30%] max-w-[180px] [transform:rotate(1deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/sunbird-mobile-giftcard.jpg" alt="Sun-Bird mobile story — Flocking to a Store Near You sweepstakes" width={540} height={960} className="w-full h-auto block" />
                     </div>
                   </div>
                   <div className="w-[30%] max-w-[180px] [transform:rotate(3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/sunbird-mobile-product.jpg" alt="Sun-Bird mobile story — Our Product Your Creation" width={540} height={960} className="w-full h-auto block" />
                     </div>
                   </div>
@@ -274,7 +274,7 @@ export default function SunBirdPage() {
           <div className="flex flex-col items-center lg:flex-row lg:items-end justify-center gap-8 lg:gap-6 mb-16">
 
             <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-4deg)]">
+              <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-4deg)]">
                 <Image src="/assets/sunbird-ad-green.jpg" alt="Sun-Bird Bird Herd social ad" width={680} height={680} className="w-full h-auto block" />
               </div>
               <div className="flex items-center justify-center mt-6">
@@ -286,7 +286,7 @@ export default function SunBirdPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.1} className="w-full max-w-[360px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 lg:[transform:rotate(2deg)]">
+              <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105 lg:[transform:rotate(2deg)]">
                 <Image src="/assets/sunbird-winner.png" alt="Sun-Bird Bird Herd winner announcement" width={680} height={680} className="w-full h-auto block" />
               </div>
               <div className="flex items-center justify-center mt-6">
@@ -298,7 +298,7 @@ export default function SunBirdPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.15} className="w-full max-w-[340px] shrink-0">
-              <div className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(4deg)]">
+              <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(4deg)]">
                 <Image src="/assets/sunbird-ad-yellow.jpg" alt="Sun-Bird Flocking to a Store Near You ad" width={680} height={680} className="w-full h-auto block" />
               </div>
               <div className="flex items-center justify-center mt-6">

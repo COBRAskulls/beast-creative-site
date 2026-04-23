@@ -253,7 +253,7 @@ export default function WilliamsAllstarsPage() {
             {/* Ad 1 — Announcement, tilted left */}
             <AnimatedSection delay={0.05} className="w-full max-w-[340px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-4deg)]"
+                className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(-4deg)]"
               >
                 <Image
                   src="/assets/allstars-ad-announcement.png"
@@ -274,7 +274,7 @@ export default function WilliamsAllstarsPage() {
             {/* Center — Chili Shoe video */}
             <AnimatedSection delay={0.1} className="w-full max-w-[360px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 lg:[transform:rotate(2deg)]"
+                className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105 lg:[transform:rotate(2deg)]"
               >
                 <video
                   src="/assets/allstars-ad-chili.mp4"
@@ -296,7 +296,7 @@ export default function WilliamsAllstarsPage() {
             {/* Ad 2 — Prizes, tilted right */}
             <AnimatedSection delay={0.15} className="w-full max-w-[340px] shrink-0">
               <div
-                className="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(4deg)]"
+                className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-105 hover:lg:rotate-0 lg:[transform:rotate(4deg)]"
               >
                 <Image
                   src="/assets/allstars-ad-prizes.png"

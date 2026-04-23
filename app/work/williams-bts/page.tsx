@@ -91,13 +91,13 @@ export default function WilliamsBtsPage() {
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <div className="flex-1 max-w-[280px] mx-auto sm:mx-0 [transform:rotate(-2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
                     style={{animation: "float1 4s ease-in-out infinite"}}>
-                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bts-ad1.jpg" alt="Williams Back-to-School Spin to Win ad" width={540} height={540} className="w-full h-auto block" />
                     </div>
                   </div>
                   <div className="flex-1 max-w-[280px] mx-auto sm:mx-0 [transform:rotate(2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
                     style={{animation: "float2 4s ease-in-out infinite"}}>
-                    <div className="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bts-ad2.jpg" alt="Williams Back-to-School prize tiers ad" width={540} height={540} className="w-full h-auto block" />
                     </div>
                   </div>
@@ -161,17 +161,17 @@ export default function WilliamsBtsPage() {
                 </p>
                 <div className="flex gap-10 justify-center">
                   <div className="w-[30%] max-w-[180px] [transform:rotate(-3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bts-story1.jpg" alt="Williams BTS mobile story — Williamize Your Food notebook" width={540} height={960} className="w-full h-auto block" />
                     </div>
                   </div>
                   <div className="w-[30%] max-w-[180px] [transform:rotate(1deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bts-story2.jpg" alt="Williams BTS mobile story — Blue school supplies" width={540} height={960} className="w-full h-auto block" />
                     </div>
                   </div>
                   <div className="w-[30%] max-w-[180px] [transform:rotate(3deg)] hover:[transform:rotate(0deg)_scale(1.03)] transition-transform duration-300">
-                    <div className="rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+                    <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bts-story3.jpg" alt="Williams BTS mobile story — Chalkboard lunchbox" width={540} height={960} className="w-full h-auto block" />
                     </div>
                   </div>
