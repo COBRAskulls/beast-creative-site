@@ -23,6 +23,8 @@ export default function CoinlineHero() {
     const world = worldRef.current;
     const viewport = viewportRef.current;
     if (!world || !viewport) return;
+    const vp: HTMLDivElement = viewport;
+    const wd: HTMLDivElement = world;
 
     type Item = {
       el: HTMLElement;
@@ -87,10 +89,10 @@ export default function CoinlineHero() {
 
       // Dynamic perspective warp on fast scroll
       const fov = 1000 - Math.min(Math.abs(smoothVel) * 10, 600);
-      viewport.style.perspective = `${fov}px`;
+      vp.style.perspective = `${fov}px`;
 
       // World tilt from mouse + velocity
-      world.style.transform = `
+      wd.style.transform = `
         rotateX(${mouseY * 5 - smoothVel * 0.5}deg)
         rotateY(${mouseX * 5}deg)
       `;
