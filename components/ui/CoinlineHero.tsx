@@ -412,7 +412,7 @@ export default function CoinlineHero() {
 
           {/* HUD */}
           <div
-            className="absolute left-8 right-8 bottom-8 top-20 pointer-events-none flex flex-col justify-between"
+            className="absolute left-8 right-8 bottom-8 top-20 pointer-events-none flex flex-col justify-end lg:justify-between gap-2 lg:gap-0"
             style={{
               zIndex: 40,
               fontFamily: "monospace",
