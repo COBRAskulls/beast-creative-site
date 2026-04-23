@@ -65,6 +65,19 @@ export default function CoinlinePage() {
                 </div>
               </AnimatedSection>
 
+              {/* Logo Animation */}
+              <div className="rounded-2xl overflow-hidden bg-black">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto block"
+                >
+                  <source src="/assets/coinline-logo-animation.mp4" type="video/mp4" />
+                </video>
+              </div>
+
               {/* The Process */}
               <AnimatedSection>
                 <p className="section-eyebrow text-beast-pink mb-2">Our Approach</p>
