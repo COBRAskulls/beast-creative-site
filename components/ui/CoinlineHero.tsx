@@ -4,27 +4,38 @@ import { useEffect, useRef } from "react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 const WORDS = ["ARCADE", "PRESS START", "PIXEL"];
-
-// Z position each word starts at (negative = behind camera)
 const WORD_BASE_Z = [-1500, -3000, -4500];
 const CAM_SPEED = 2.5;
-
-// Total px of scroll consumed by the animation before page scrolls
 const PROXY_PX = 2200;
-
-// Stars loop over this Z range
 const STAR_LOOP = 7000;
 
 export default function CoinlineHero() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
   const worldRef = useRef<HTMLDivElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const container = containerRef.current;
+    const hero = heroRef.current;
     const world = worldRef.current;
-    const viewport = viewportRef.current;
-    if (!world || !viewport) return;
-    const vp: HTMLDivElement = viewport;
-    const wd: HTMLDivElement = world;
+    const vp = viewportRef.current;
+    if (!container || !hero || !world || !vp) return;
+
+    // Track scroll to pin/unpin hero
+    // Fixed while scrolling through proxy budget; absolute at end so it scrolls away
+    function updatePin() {
+      const scrollY = window.scrollY;
+      if (scrollY < PROXY_PX) {
+        hero.style.position = "fixed";
+        hero.style.top = "0";
+      } else {
+        hero.style.position = "absolute";
+        hero.style.top = `${PROXY_PX}px`;
+      }
+    }
+    updatePin();
+    window.addEventListener("scroll", updatePin, { passive: true });
 
     type Item = {
       el: HTMLElement;
@@ -36,7 +47,6 @@ export default function CoinlineHero() {
 
     const items: Item[] = [];
 
-    // ── Text items ──────────────────────────────────────────────────────────
     WORDS.forEach((word, i) => {
       const wrapper = document.createElement("div");
       wrapper.className = "hs-item";
@@ -50,7 +60,6 @@ export default function CoinlineHero() {
       items.push({ el: wrapper, x: 0, y: 0, baseZ: WORD_BASE_Z[i], type: "text" });
     });
 
-    // ── Stars ────────────────────────────────────────────────────────────────
     for (let i = 0; i < 130; i++) {
       const el = document.createElement("div");
       el.className = "hs-star";
@@ -87,17 +96,14 @@ export default function CoinlineHero() {
 
       const cameraZ = scrollY * CAM_SPEED;
 
-      // Dynamic perspective warp on fast scroll
       const fov = 1000 - Math.min(Math.abs(smoothVel) * 10, 600);
       vp.style.perspective = `${fov}px`;
 
-      // World tilt from mouse + velocity
-      wd.style.transform = `
+      world.style.transform = `
         rotateX(${mouseY * 5 - smoothVel * 0.5}deg)
         rotateY(${mouseX * 5}deg)
       `;
 
-      // HUD
       if (velEl) velEl.innerText = Math.abs(smoothVel).toFixed(2);
       if (coordEl) coordEl.innerText = String(scrollY).padStart(7, "0");
 
@@ -112,7 +118,6 @@ export default function CoinlineHero() {
           vizZ = item.baseZ + cameraZ;
         }
 
-        // Opacity
         let alpha = 1;
         if (vizZ < -4000) alpha = 0;
         else if (vizZ < -2500) alpha = (vizZ + 4000) / 1500;
@@ -120,12 +125,10 @@ export default function CoinlineHero() {
         alpha = Math.max(0, Math.min(1, alpha));
         item.el.style.opacity = String(alpha);
 
-        // Transform
         if (item.type === "star") {
           const stretch = Math.max(1, Math.min(1 + Math.abs(smoothVel) * 0.12, 8));
           item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px) scale3d(1,1,${stretch})`;
         } else {
-          // RGB chromatic split on fast scroll
           const txtEl = item.el.firstChild as HTMLElement;
           if (txtEl) {
             if (Math.abs(smoothVel) > 2) {
@@ -146,6 +149,7 @@ export default function CoinlineHero() {
 
     return () => {
       cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", updatePin);
       window.removeEventListener("mousemove", onMouseMove);
       while (world.firstChild) world.removeChild(world.firstChild);
     };
@@ -205,13 +209,24 @@ export default function CoinlineHero() {
         }
       `}</style>
 
-      {/* ── Scroll wrapper — creates the scroll budget for the animation ── */}
-      <div style={{ height: `calc(100vh + ${PROXY_PX}px)` }}>
-
-        {/* ── Sticky hero — pins to top while proxy is being consumed ── */}
-        <section
+      {/* Scroll budget container — creates the proxy scroll space */}
+      <div
+        ref={containerRef}
+        style={{ height: `calc(100vh + ${PROXY_PX}px)`, position: "relative" }}
+      >
+        {/* Hero — fixed to viewport while scrolling through budget, then absolute so it scrolls away */}
+        <div
+          ref={heroRef}
           className="relative overflow-hidden"
-          style={{ position: "sticky", top: 0, height: "100vh", background: "#030303" }}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100vh",
+            background: "#030303",
+            zIndex: 5,
+          }}
         >
           {/* Scanlines */}
           <div
@@ -295,7 +310,6 @@ export default function CoinlineHero() {
             className="absolute inset-0 flex flex-col justify-end"
             style={{ zIndex: 30 }}
           >
-            {/* gradient to keep text legible over the 3D words */}
             <div
               className="absolute inset-x-0 bottom-0 pointer-events-none"
               style={{
@@ -330,7 +344,7 @@ export default function CoinlineHero() {
               </AnimatedSection>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </>
   );
