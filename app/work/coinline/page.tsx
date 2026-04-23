@@ -66,6 +66,14 @@ export default function CoinlinePage() {
               </AnimatedSection>
 
               {/* Logo Animation */}
+              <AnimatedSection>
+                <p className="section-eyebrow text-beast-pink mb-2">The Mark</p>
+                <h2 className="font-display text-3xl font-bold text-beast-black mb-4">A Logo Built to Move.</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  The Coinline wordmark was engineered for motion from day one. Every letterform — geometric, modular, and pixel-exact — was designed to animate as fluidly as it prints. This is the logo in its element.
+                </p>
+              </AnimatedSection>
+
               <div className="rounded-2xl overflow-hidden bg-black">
                 <video
                   autoPlay
