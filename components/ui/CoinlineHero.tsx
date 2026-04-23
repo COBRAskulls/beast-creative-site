@@ -3,11 +3,14 @@
 import { useEffect, useRef } from "react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
-const WORDS = ["ARCADE", "PRESS START", "PIXEL"];
+const WORDS = ["INSERT COIN", "BARCADE", "PRESS START"];
 const WORD_BASE_Z = [-1500, -3000, -4500];
+const LOGO_BASE_Z = -6000;
 const CAM_SPEED = 2.5;
-const PROXY_PX = 2200;
-const STAR_LOOP = 7000;
+const PROXY_PX = 3200;
+const STAR_LOOP = 8000;
+
+const COINLINE_SVG_PATH = "M71.6,78.5v171.9H14.3V78.5l57.3-57.3h171.9l-57.3,57.3h-114.6ZM243.5,307.8v-57.3H71.6v57.3h171.9ZM644.7,21.2v57.3l57.3-57.3h-57.3ZM530.1,21.2h-171.9v57.3h171.9V21.2ZM358.1,307.8h171.9v-57.3h-171.9v57.3ZM300.8,78.5v171.9h57.3V78.5h-57.3ZM530.1,250.5h57.3V78.5h-57.3v171.9ZM1848.3,78.5V21.2h-114.6l-57.3,57.3v171.9l57.3,57.3h114.6l-57.3-57.3h-57.3V78.5h114.6ZM702,307.8V78.5h-57.3v229.2h57.3ZM1275.1,307.8h57.3V78.5h-57.3v229.2ZM1332.4,78.5V21.2h-57.3l57.3,57.3ZM759.3,21.2v286.6h57.3V21.2h-57.3ZM873.9,21.2l-57.3,57.3h114.6v229.2h57.3V78.5l-57.3-57.3h-57.3ZM1389.8,21.2v286.6h57.3V21.2h-57.3ZM1504.4,21.2l-57.3,57.3h114.6v229.2h57.3V78.5l-57.3-57.3h-57.3ZM1103.2,21.2h-57.3v229.2l57.3,57.3h114.6v-57.3h-114.6V21.2ZM1848.3,78.5v57.3h-114.6l57.3,57.3h57.3l57.3-57.3v-57.3h-57.3ZM415.4,193.1h57.3v-57.3h-57.3v57.3Z";
 
 const CARD_DATA = [
   { id: "CAB-001", name: "GALAGA",        stat1: "TOKENS: 847",   stat2: "PLAYS: 1,204", num: "01" },
@@ -62,7 +65,7 @@ export default function CoinlineHero() {
       x: number;
       y: number;
       baseZ: number;
-      type: "text" | "star" | "card";
+      type: "text" | "star" | "card" | "logo";
       rot: number;
     };
     const items: Item[] = [];
@@ -80,6 +83,16 @@ export default function CoinlineHero() {
       worldEl.appendChild(wrapper);
       items.push({ el: wrapper, x: 0, y: 0, baseZ: WORD_BASE_Z[i], type: "text", rot: 0 });
     });
+
+    // Logo item — flies in after the 3 text words
+    const logoWrapper = document.createElement("div");
+    logoWrapper.className = "hs-item";
+    const logoInner = document.createElement("div");
+    logoInner.className = "hs-logo";
+    logoInner.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 329.5" class="hs-logo-svg"><path fill="rgba(255,255,255,0.55)" d="${COINLINE_SVG_PATH}"/></svg>`;
+    logoWrapper.appendChild(logoInner);
+    worldEl.appendChild(logoWrapper);
+    items.push({ el: logoWrapper, x: 0, y: 0, baseZ: LOGO_BASE_Z, type: "logo", rot: 0 });
 
     // Cards
     CARD_DATA.forEach((data, i) => {
@@ -183,6 +196,8 @@ export default function CoinlineHero() {
           } else if (txtEl) {
             txtEl.style.textShadow = "none";
           }
+          item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px)`;
+        } else if (item.type === "logo") {
           item.el.style.transform = `translate3d(${item.x}px,${item.y}px,${vizZ}px)`;
         } else {
           // Cards: gentle float rotation
@@ -313,6 +328,16 @@ export default function CoinlineHero() {
           line-height: 1;
           font-family: monospace;
           color: white;
+        }
+        .hs-logo {
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+        }
+        .hs-logo-svg {
+          width: 70vw;
+          max-width: 1000px;
+          height: auto;
+          display: block;
         }
         .hs-scanlines {
           background: linear-gradient(
