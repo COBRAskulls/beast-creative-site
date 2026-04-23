@@ -21,17 +21,20 @@ export default function CoinlineHero() {
     const world = worldRef.current;
     const vp = viewportRef.current;
     if (!container || !hero || !world || !vp) return;
+    const heroEl: HTMLDivElement = hero;
+    const worldEl: HTMLDivElement = world;
+    const vpEl: HTMLDivElement = vp;
 
     // Track scroll to pin/unpin hero
     // Fixed while scrolling through proxy budget; absolute at end so it scrolls away
     function updatePin() {
       const scrollY = window.scrollY;
       if (scrollY < PROXY_PX) {
-        hero.style.position = "fixed";
-        hero.style.top = "0";
+        heroEl.style.position = "fixed";
+        heroEl.style.top = "0";
       } else {
-        hero.style.position = "absolute";
-        hero.style.top = `${PROXY_PX}px`;
+        heroEl.style.position = "absolute";
+        heroEl.style.top = `${PROXY_PX}px`;
       }
     }
     updatePin();
@@ -56,14 +59,14 @@ export default function CoinlineHero() {
       txt.innerText = word;
 
       wrapper.appendChild(txt);
-      world.appendChild(wrapper);
+      worldEl.appendChild(wrapper);
       items.push({ el: wrapper, x: 0, y: 0, baseZ: WORD_BASE_Z[i], type: "text" });
     });
 
     for (let i = 0; i < 130; i++) {
       const el = document.createElement("div");
       el.className = "hs-star";
-      world.appendChild(el);
+      worldEl.appendChild(el);
       items.push({
         el,
         x: (Math.random() - 0.5) * 3200,
@@ -97,9 +100,9 @@ export default function CoinlineHero() {
       const cameraZ = scrollY * CAM_SPEED;
 
       const fov = 1000 - Math.min(Math.abs(smoothVel) * 10, 600);
-      vp.style.perspective = `${fov}px`;
+      vpEl.style.perspective = `${fov}px`;
 
-      world.style.transform = `
+      worldEl.style.transform = `
         rotateX(${mouseY * 5 - smoothVel * 0.5}deg)
         rotateY(${mouseX * 5}deg)
       `;
@@ -151,7 +154,7 @@ export default function CoinlineHero() {
       cancelAnimationFrame(rafId);
       window.removeEventListener("scroll", updatePin);
       window.removeEventListener("mousemove", onMouseMove);
-      while (world.firstChild) world.removeChild(world.firstChild);
+      while (worldEl.firstChild) worldEl.removeChild(worldEl.firstChild);
     };
   }, []);
 
