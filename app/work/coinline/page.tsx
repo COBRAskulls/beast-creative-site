@@ -7,6 +7,7 @@ import ColorSwatches from "@/components/ui/ColorSwatches";
 import IconButton from "@/components/ui/IconButton";
 import CoinlineHero from "@/components/ui/CoinlineHero";
 import SlideRevealCards from "@/components/ui/SlideRevealCards";
+import ExpandingFlexCards from "@/components/ui/ExpandingFlexCards";
 
 export const metadata: Metadata = {
   title: "Coinline Barcade Brand Identity | Beast Creative Agency Case Study",
@@ -159,6 +160,13 @@ export default function CoinlinePage() {
                     <h3 className="font-display text-xl font-bold text-beast-black mb-3">What Shaped the Wordmark.</h3>
                     <p className="text-gray-600 leading-relaxed mb-5">Every design decision has a source. These are the visual references and cultural artifacts that directly informed the geometry, texture, and feel of the Coinline logo system. Hover or tap each card to explore.</p>
                     <SlideRevealCards />
+                  </div>
+
+                  <div>
+                    <p className="text-gray-600 text-sm font-semibold uppercase tracking-widest mb-3 text-beast-pink">Visual Influences</p>
+                    <h3 className="font-display text-xl font-bold text-beast-black mb-3">The References That Built the Mark.</h3>
+                    <p className="text-gray-600 leading-relaxed mb-5">Every creative decision traces back to a specific visual source. Click or tap each card to see what shaped the Coinline logo system and why.</p>
+                    <ExpandingFlexCards />
                   </div>
 
                   <div>
