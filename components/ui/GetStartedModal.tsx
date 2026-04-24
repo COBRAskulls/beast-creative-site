@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import IconButton from "@/components/ui/IconButton";
 
 const services = [
@@ -31,6 +31,14 @@ export default function GetStartedModal({ selected, onClose }: Props) {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    titleRef.current?.focus();
+    const handleKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
+  }, [onClose]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,6 +60,9 @@ export default function GetStartedModal({ selected, onClose }: Props) {
 
   return (
     <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="gs-modal-title"
       className="fixed inset-0 z-[100] flex items-center justify-center p-4"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
@@ -63,6 +74,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
         {/* Close */}
         <button
           onClick={onClose}
+          aria-label="Close dialog"
           className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors text-gray-600"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -84,7 +96,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
           ) : (
             <>
               <div className="text-center mb-8">
-                <h2 className="font-display text-3xl font-bold text-beast-black mb-2">
+                <h2 ref={titleRef} id="gs-modal-title" tabIndex={-1} className="font-display text-3xl font-bold text-beast-black mb-2 outline-none">
                   Let&apos;s Talk About Better Results.
                 </h2>
                 <p className="text-gray-500 text-sm">
@@ -103,14 +115,18 @@ export default function GetStartedModal({ selected, onClose }: Props) {
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <label htmlFor="gs-name" className="sr-only">Full Name</label>
                   <input
+                    id="gs-name"
                     required
                     className="form-input-light"
                     placeholder="Full Name"
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                   />
+                  <label htmlFor="gs-email" className="sr-only">Email Address</label>
                   <input
+                    id="gs-email"
                     required
                     type="email"
                     className="form-input-light"
@@ -120,13 +136,17 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                   />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <label htmlFor="gs-company" className="sr-only">Company or Brand</label>
                   <input
+                    id="gs-company"
                     className="form-input-light"
                     placeholder="Company / Brand"
                     value={form.company}
                     onChange={(e) => setForm({ ...form, company: e.target.value })}
                   />
+                  <label htmlFor="gs-phone" className="sr-only">Phone Number</label>
                   <input
+                    id="gs-phone"
                     type="tel"
                     className="form-input-light"
                     placeholder="Phone Number"
@@ -134,7 +154,9 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
                   />
                 </div>
+                <label htmlFor="gs-budget" className="sr-only">Monthly Marketing Budget</label>
                 <select
+                  id="gs-budget"
                   className="form-input-light"
                   value={form.budget}
                   onChange={(e) => setForm({ ...form, budget: e.target.value })}
@@ -146,7 +168,9 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                   <option>$10,000 – $25,000</option>
                   <option>$25,000+</option>
                 </select>
+                <label htmlFor="gs-message" className="sr-only">Tell us about your brand and goals</label>
                 <textarea
+                  id="gs-message"
                   className="form-input-light resize-none"
                   rows={3}
                   placeholder="Tell us about your brand and goals (optional)"

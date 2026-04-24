@@ -14,7 +14,7 @@ export default function ContactPage() {
     <>
       {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Let&apos;s Talk</p>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                   <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
                 </div>
 
-                <div className="border-t border-[#2E2E2E] pt-8 space-y-5">
+                <div className="border-t border-dark-border pt-8 space-y-5">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-1">Phone / SMS</p>
                     <a
@@ -74,7 +74,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Quick stats */}
-                <div className="bg-[#1A1A1A] rounded-2xl p-6 border border-[#2E2E2E]">
+                <div className="bg-dark-surface rounded-2xl p-6 border border-dark-border">
                   <p className="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-4">Why Talk to Beast</p>
                   <ul className="space-y-3">
                     {[

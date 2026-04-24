@@ -16,7 +16,7 @@ export default function PioneerPage() {
     <>
       {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex flex-wrap gap-2 mb-4">
@@ -49,7 +49,7 @@ export default function PioneerPage() {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
@@ -137,7 +137,7 @@ export default function PioneerPage() {
                         { metric: "Email Open Rate", beast: "29.1%", industry: "24%" },
                         { metric: "Email Click Rate", beast: "9.5%", industry: "0.82%" },
                       ].map((row, i) => (
-                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-section-offwhite"}>
                           <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
                           <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.beast}</td>
                           <td className="px-4 py-3 text-right text-gray-400">{row.industry}</td>
@@ -173,7 +173,7 @@ export default function PioneerPage() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                <div className="bg-near-black rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">What Beast Tracks</h3>
                   <div className="space-y-3">
                     {[

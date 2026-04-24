@@ -13,7 +13,7 @@ export default function PaidMediaPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Service — Paid Media</p>
@@ -28,7 +28,7 @@ export default function PaidMediaPage() {
         </div>
       </section>
 
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <AnimatedSection>

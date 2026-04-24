@@ -26,7 +26,7 @@ export default function CpgMarketingServicePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: "CPG Marketing", description: "AI-powered CPG marketing campaigns, sweepstakes, first-party data collection, and retail readiness.", url: "https://beastcreativeagency.com/services/cpg-marketing" })) }} />
 
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Service — CPG Marketing</p>
@@ -41,7 +41,7 @@ export default function CpgMarketingServicePage() {
         </div>
       </section>
 
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <AnimatedSection>
@@ -96,7 +96,7 @@ export default function CpgMarketingServicePage() {
         </div>
       </section>
 
-      <section className="bg-[#FAFAFA] py-16 lg:py-20">
+      <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-beast-black mb-8 text-center">Frequently Asked Questions</h2>

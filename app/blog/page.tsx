@@ -47,7 +47,7 @@ export default function BlogPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Blog</p>
@@ -62,7 +62,7 @@ export default function BlogPage() {
       </section>
 
       {/* Featured post */}
-      <section className="bg-[#FAFAFA] py-12 lg:py-16">
+      <section className="bg-section-offwhite py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <Link href={`/blog/${posts[0].slug}`} className="group block">
@@ -88,7 +88,7 @@ export default function BlogPage() {
       </section>
 
       {/* Post grid */}
-      <section className="bg-[#FAFAFA] pb-16 lg:pb-24">
+      <section className="bg-section-offwhite pb-16 lg:pb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.slice(1).map((post, i) => (

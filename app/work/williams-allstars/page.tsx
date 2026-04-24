@@ -18,7 +18,7 @@ export default function WilliamsAllstarsPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Text */}
@@ -66,7 +66,7 @@ export default function WilliamsAllstarsPage() {
         </div>
       </section>
 
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-12 order-2 lg:order-1">
@@ -165,7 +165,7 @@ export default function WilliamsAllstarsPage() {
                         { metric: "New Website Users", result: "4,632", benchmark: "90.4% of all users" },
                         { metric: "Superfan Winners", result: "25", benchmark: "—" },
                       ].map((row, i) => (
-                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-section-offwhite"}>
                           <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
                           <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.result}</td>
                           <td className="px-4 py-3 text-right text-beast-pink text-xs font-semibold">{row.benchmark}</td>
@@ -213,7 +213,7 @@ export default function WilliamsAllstarsPage() {
                 </div>
               </AnimatedSection>
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                <div className="bg-near-black rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">Email Performance</h3>
                   {[
                     { metric: "Open Rate", beast: "29.1%", industry: "24%", lift: "+21%" },

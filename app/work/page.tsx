@@ -122,7 +122,7 @@ export default function WorkPage() {
     <>
       {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Our Work</p>
@@ -137,7 +137,7 @@ export default function WorkPage() {
       </section>
 
       {/* CASE STUDIES GRID */}
-      <section className="bg-[#FAFAFA] py-12 lg:py-20">
+      <section className="bg-section-offwhite py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {caseStudies.map((cs, i) => (

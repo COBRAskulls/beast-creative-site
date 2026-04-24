@@ -17,7 +17,7 @@ export default function WilliamsBowlPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
@@ -66,7 +66,7 @@ export default function WilliamsBowlPage() {
         </div>
       </section>
 
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-12 order-2 lg:order-1">
@@ -174,7 +174,7 @@ export default function WilliamsBowlPage() {
                         { metric: "Campaign Duration", result: "4 weeks", benchmark: "—" },
                         { metric: "Rounds Completed", result: "4", benchmark: "—" },
                       ].map((row, i) => (
-                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-section-offwhite"}>
                           <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
                           <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.result}</td>
                           <td className="px-4 py-3 text-right text-beast-pink text-xs font-semibold">{row.benchmark}</td>
@@ -205,7 +205,7 @@ export default function WilliamsBowlPage() {
                   </div>
                 </div>
 
-                <div className="bg-[#111111] rounded-xl p-5">
+                <div className="bg-near-black rounded-xl p-5">
                   <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-2">Why This Campaign Matters</p>
                   <p className="text-gray-300 text-sm leading-relaxed">At $1,500, the Williams Bowl proved that Beast&apos;s creative mechanic approach could generate thousands of consumer records efficiently. The $0.16 CPC — 43% below industry average — showed that the concept itself was doing the work, not just the ad budget. Three months later, the BTS campaign ran on $4,000 and generated 22,043 entries. One year later, Williams All-Stars added 13,660 more with an email click rate 11x the industry average. The Williams Bowl is where that story started.</p>
                 </div>
@@ -234,7 +234,7 @@ export default function WilliamsBowlPage() {
                 </div>
               </AnimatedSection>
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                <div className="bg-near-black rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">The Williams Campaign Series</h3>
                   {[
                     { campaign: "Williams Bowl", result: "6,020 entries", year: "2021" },

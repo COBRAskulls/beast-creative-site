@@ -32,7 +32,7 @@ export default function CoinlinePage() {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
@@ -266,7 +266,7 @@ export default function CoinlinePage() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                <div className="bg-near-black rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">Deliverables</h3>
                   <div className="space-y-3">
                     {[

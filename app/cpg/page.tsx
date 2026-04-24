@@ -236,7 +236,7 @@ export default function CpgPage() {
               },
             ].map((svc, i) => (
               <AnimatedSection key={svc.title} delay={i * 0.07}>
-                <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-pink/30 transition-colors h-full">
+                <div className="p-6 rounded-2xl bg-dark-surface border border-dark-border hover:border-beast-pink/30 transition-colors h-full">
                   <h3 className="font-display text-lg font-bold text-white mb-3">{svc.title}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed">{svc.desc}</p>
                 </div>
@@ -247,7 +247,7 @@ export default function CpgPage() {
       </section>
 
       {/* WILLIAMS CASE STUDY FEATURE */}
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">Case Study — CPG Marketing</p>
@@ -321,7 +321,7 @@ export default function CpgPage() {
               },
             ].map((stage, i) => (
               <AnimatedSection key={stage.stage} delay={i * 0.1}>
-                <div className="bg-[#1A1A1A] rounded-2xl p-8 border border-[#2E2E2E] h-full">
+                <div className="bg-dark-surface rounded-2xl p-8 border border-dark-border h-full">
                   <div className="flex items-center gap-3 mb-6">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
                       {stage.stage}
@@ -330,7 +330,7 @@ export default function CpgPage() {
                   </div>
                   <h3 className="font-display text-2xl font-bold text-white mb-3">{stage.title}</h3>
                   <p className="text-gray-400 text-sm leading-relaxed mb-6">{stage.desc}</p>
-                  <div className="border-t border-[#2E2E2E] pt-4">
+                  <div className="border-t border-dark-border pt-4">
                     <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest mb-2">Key Deliverable</p>
                     <p className="text-sm text-beast-pink">{stage.deliverable}</p>
                   </div>
@@ -369,7 +369,7 @@ export default function CpgPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
-              <div className="bg-beast-black rounded-2xl p-8 border border-[#2E2E2E] h-full flex flex-col">
+              <div className="bg-beast-black rounded-2xl p-8 border border-dark-border h-full flex flex-col">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/15 text-beast-pink border border-beast-pink/20 mb-6">
                   Path B
                 </span>
@@ -390,7 +390,7 @@ export default function CpgPage() {
       </section>
 
       {/* SAGUNDO */}
-      <section className="bg-[#111111] py-16 lg:py-20">
+      <section className="bg-near-black py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="max-w-3xl">
@@ -428,7 +428,7 @@ export default function CpgPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">FAQ</p>

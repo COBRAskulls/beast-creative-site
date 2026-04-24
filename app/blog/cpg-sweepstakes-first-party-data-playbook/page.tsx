@@ -71,7 +71,7 @@ export default function SweepstakesPlaybookPost() {
       />
 
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-6">
@@ -165,7 +165,7 @@ export default function SweepstakesPlaybookPost() {
               <div className="overflow-hidden rounded-xl border border-gray-100 mb-8">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="bg-[#FAFAFA] border-b border-gray-100">
+                    <tr className="bg-section-offwhite border-b border-gray-100">
                       <th className="text-left px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Campaign</th>
                       <th className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Entries</th>
                       <th className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Budget</th>
@@ -179,7 +179,7 @@ export default function SweepstakesPlaybookPost() {
                       { campaign: "Williams All-Stars", entries: "13,660", budget: "—", ctr: "—" },
                       { campaign: "Williams Bowl", entries: "6,020", budget: "$1.5K", ctr: "—" },
                     ].map((row, i) => (
-                      <tr key={row.campaign} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                      <tr key={row.campaign} className={i % 2 === 0 ? "bg-white" : "bg-section-offwhite"}>
                         <td className="px-4 py-3 text-gray-700 font-medium">{row.campaign}</td>
                         <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.entries}</td>
                         <td className="px-4 py-3 text-right text-gray-500">{row.budget}</td>
@@ -206,7 +206,7 @@ export default function SweepstakesPlaybookPost() {
             <h2 className="font-display text-3xl font-bold text-beast-black mb-6 mt-4">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {faqs.map((faq) => (
-                <div key={faq.question} className="bg-[#FAFAFA] rounded-xl p-6 border border-gray-100">
+                <div key={faq.question} className="bg-section-offwhite rounded-xl p-6 border border-gray-100">
                   <p className="font-display font-bold text-beast-black mb-2">{faq.question}</p>
                   <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
                 </div>

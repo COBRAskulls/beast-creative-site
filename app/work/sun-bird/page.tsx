@@ -18,7 +18,7 @@ export default function SunBirdPage() {
     <>
       {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Text */}
@@ -66,7 +66,7 @@ export default function SunBirdPage() {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
@@ -187,7 +187,7 @@ export default function SunBirdPage() {
                         { metric: "Post Shares", result: "647", benchmark: "—" },
                         { metric: "New FB Page Likes", result: "739", benchmark: "—" },
                       ].map((row, i) => (
-                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-section-offwhite"}>
                           <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
                           <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.result}</td>
                           <td className="px-4 py-3 text-right text-beast-pink text-xs font-semibold">{row.benchmark}</td>
@@ -197,7 +197,7 @@ export default function SunBirdPage() {
                   </table>
                 </div>
 
-                <div className="bg-[#111111] rounded-xl p-6 mb-8">
+                <div className="bg-near-black rounded-xl p-6 mb-8">
                   <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">The First-Party Data Story</p>
                   <p className="text-gray-300 text-sm leading-relaxed">36,581 email addresses. 36,581 ZIP codes. 36,581 people who raised their hand and said &quot;I&apos;m interested in Sun-Bird.&quot; That database is a direct email channel to over 36,000 consumers — no platform algorithm in the way. Geographic demand data mapped to specific US markets. Proof of consumer awareness to present to retail buyers.</p>
                 </div>
@@ -235,7 +235,7 @@ export default function SunBirdPage() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                <div className="bg-near-black rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">Industry Benchmarks</h3>
                   {[
                     { metric: "CTR", beast: "7.03%", industry: "0.89%", lift: "7.9x" },

@@ -17,7 +17,7 @@ export default function WilliamsBtsPage() {
   return (
     <>
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <AnimatedSection>
@@ -61,7 +61,7 @@ export default function WilliamsBtsPage() {
         </div>
       </section>
 
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-12 order-2 lg:order-1">
@@ -200,7 +200,7 @@ export default function WilliamsBtsPage() {
                         { metric: "Paid Link Clicks", result: "22,065", benchmark: "—" },
                         { metric: "New FB Page Likes", result: "268", benchmark: "—" },
                       ].map((row, i) => (
-                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-[#FAFAFA]"}>
+                        <tr key={row.metric} className={i % 2 === 0 ? "bg-white" : "bg-section-offwhite"}>
                           <td className="px-4 py-3 text-gray-700 font-medium">{row.metric}</td>
                           <td className="px-4 py-3 text-right font-display font-bold text-beast-black">{row.result}</td>
                           <td className="px-4 py-3 text-right text-beast-pink text-xs font-semibold">{row.benchmark}</td>
@@ -209,7 +209,7 @@ export default function WilliamsBtsPage() {
                     </tbody>
                   </table>
                 </div>
-                <div className="bg-[#111111] rounded-xl p-5">
+                <div className="bg-near-black rounded-xl p-5">
                   <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-2">What Happened Next</p>
                   <p className="text-gray-300 text-sm leading-relaxed">The data captured in this campaign — geographic distribution, demographic profile, engagement behavior — fed directly into the strategy for the <strong className="text-white">Williams All-Stars March Madness 2022</strong> campaign, which generated another 13,660 entries. Each campaign built on the last. Each database grew.</p>
                 </div>
@@ -238,7 +238,7 @@ export default function WilliamsBtsPage() {
                 </div>
               </AnimatedSection>
               <AnimatedSection delay={0.1}>
-                <div className="bg-[#111111] rounded-2xl p-6 border border-beast-pink/20">
+                <div className="bg-near-black rounded-2xl p-6 border border-beast-pink/20">
                   <h3 className="font-display font-bold text-sm uppercase tracking-widest text-beast-pink mb-4">Industry Benchmarks</h3>
                   {[
                     { metric: "CTR", beast: "3.89%", industry: "0.89%", lift: "4.4x" },

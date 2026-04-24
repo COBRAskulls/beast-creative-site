@@ -69,7 +69,7 @@ export default function AboutPage() {
     <>
       {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">About Us</p>
@@ -84,7 +84,7 @@ export default function AboutPage() {
       </section>
 
       {/* OUR STORY */}
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="max-w-3xl">
             <AnimatedSection>
@@ -118,7 +118,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {values.map((val, i) => (
               <AnimatedSection key={val.name} delay={i * 0.1}>
-                <div className="bg-[#1A1A1A] rounded-2xl p-8 border border-[#2E2E2E] h-full">
+                <div className="bg-dark-surface rounded-2xl p-8 border border-dark-border h-full">
                   <div className="w-12 h-12 rounded-xl bg-beast-pink/10 flex items-center justify-center mb-6">
                     <span className="text-beast-pink font-bold text-lg">{i + 1}</span>
                   </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
       </section>
 
       {/* SAGUNDO */}
-      <section className="bg-[#111111] py-16 lg:py-20">
+      <section className="bg-near-black py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="max-w-3xl">
             <AnimatedSection>

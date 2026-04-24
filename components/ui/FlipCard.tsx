@@ -15,11 +15,16 @@ export default function FlipCard({ front, back, alt, tilt = 3 }: FlipCardProps) 
 
   return (
     <div
+      role="button"
+      tabIndex={0}
+      aria-pressed={flipped}
+      aria-label={`${alt} — press to flip`}
       className="relative w-full cursor-pointer"
       style={{ perspective: "1000px" }}
       onPointerEnter={(e) => { if (e.pointerType === "mouse") setFlipped(true); }}
       onPointerLeave={(e) => { if (e.pointerType === "mouse") setFlipped(false); }}
       onPointerUp={(e) => { if (e.pointerType === "touch") setFlipped((f) => !f); }}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setFlipped((f) => !f); } }}
     >
       <div
         style={{

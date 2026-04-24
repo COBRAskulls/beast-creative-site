@@ -71,7 +71,7 @@ export default function MultiBrandSeoPost() {
       />
 
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-beast-black" />
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-6">
@@ -115,7 +115,7 @@ export default function MultiBrandSeoPost() {
                 A holding company with three brands — each building domain authority independently — is spending three times the budget and producing one-third of the SEO result compared to a unified architecture. This effect compounds over time as competitors consolidate.
               </p>
 
-              <div className="bg-[#FAFAFA] rounded-2xl p-6 mb-8 border border-gray-100">
+              <div className="bg-section-offwhite rounded-2xl p-6 mb-8 border border-gray-100">
                 <p className="font-display font-bold text-beast-black text-sm mb-4">Example: Fragmented vs. Unified Architecture</p>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
@@ -204,7 +204,7 @@ export default function MultiBrandSeoPost() {
             <h2 className="font-display text-3xl font-bold text-beast-black mb-6 mt-4">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {faqs.map((faq) => (
-                <div key={faq.question} className="bg-[#FAFAFA] rounded-xl p-6 border border-gray-100">
+                <div key={faq.question} className="bg-section-offwhite rounded-xl p-6 border border-gray-100">
                   <p className="font-display font-bold text-beast-black mb-2">{faq.question}</p>
                   <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
                 </div>
