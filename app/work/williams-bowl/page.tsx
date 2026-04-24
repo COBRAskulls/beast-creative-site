@@ -130,13 +130,13 @@ export default function WilliamsBowlPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <div className="flex-1 max-w-[320px] mx-auto sm:mx-0 [transform:rotate(-2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
-                    style={{willChange: "transform", animation: "bracketFloat1 4s ease-in-out infinite"}}>
+                    style={{animation: "bracketFloat1 4s ease-in-out infinite"}}>
                     <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bowl-bracket.jpg" alt="Williams Bowl championship bracket — seasoning matchups" width={1080} height={1080} className="w-full h-auto block" />
                     </div>
                   </div>
                   <div className="flex-1 max-w-[320px] mx-auto sm:mx-0 [transform:rotate(2deg)_translateY(0px)] hover:[transform:rotate(0deg)_translateY(-8px)] transition-all duration-300 cursor-default"
-                    style={{willChange: "transform", animation: "bracketFloat2 4s ease-in-out infinite"}}>
+                    style={{animation: "bracketFloat2 4s ease-in-out infinite"}}>
                     <div className="rounded-2xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)]">
                       <Image src="/assets/williams-bowl-bracket-final.jpg" alt="Williams Bowl finals — OG Chili vs Tex Mex Taco" width={1080} height={1080} className="w-full h-auto block" />
                     </div>

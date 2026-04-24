@@ -217,6 +217,7 @@ Used on the Work page category filter bar.
 **Related Case Study cards** (`.rc-wrap` + `.rc-card` pattern):
 - Outer wrapper: 1px padding, 16px radius, subtle white/6% resting background. On hover: translateY(-10px), deep lift shadow, mouse-tracked rotating Magenta gradient border via CSS custom property `--x/--y`.
 - Inner card: Obsidian Stage background (#0A0A0A), 15px radius (one less than wrapper to inset correctly), overflow hidden.
+- **No-image fallback:** When a case study has no image yet, the card image area uses a per-study linear gradient. These are intentional per-brand color choices — not design token violations. Each study has a `gradientFrom` / `gradientTo` hex pair that evokes the brand's color palette (e.g. blue-tinted dark for Sun-Bird, amber-tinted for Williams, purple-tinted for Sweet Sensi). A ghost watermark stat renders on top at `text-white/10`. New case study pages should follow this convention: choose a `gradientFrom`/`gradientTo` pair in the brand's hue family, keep both values dark (lightness < 15%), and pair them with a matching `glow` value in `rgba(hue, 0.25)` format.
 
 ### Inputs / Fields
 
