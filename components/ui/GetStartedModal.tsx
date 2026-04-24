@@ -28,6 +28,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
     phone: "",
     budget: "",
     message: "",
+    website: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -141,12 +142,24 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                 )}
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+                {/* Honeypot */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="sr-only"
+                  value={form.website}
+                  onChange={(e) => setForm({ ...form, website: e.target.value })}
+                />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <label htmlFor="gs-name" className="sr-only">Full Name</label>
                   <input
                     id="gs-name"
                     required
+                    maxLength={100}
                     className="form-input-light"
                     placeholder="Full Name"
                     value={form.name}
@@ -157,6 +170,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                     id="gs-email"
                     required
                     type="email"
+                    maxLength={254}
                     className="form-input-light"
                     placeholder="Email Address"
                     value={form.email}
@@ -167,6 +181,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                   <label htmlFor="gs-company" className="sr-only">Company or Brand</label>
                   <input
                     id="gs-company"
+                    maxLength={200}
                     className="form-input-light"
                     placeholder="Company / Brand"
                     value={form.company}
@@ -176,6 +191,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                   <input
                     id="gs-phone"
                     type="tel"
+                    maxLength={30}
                     className="form-input-light"
                     placeholder="Phone Number"
                     value={form.phone}
@@ -191,14 +207,15 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                 >
                   <option value="">Monthly Marketing Budget</option>
                   <option>Under $2,500</option>
-                  <option>$2,500 – $5,000</option>
-                  <option>$5,000 – $10,000</option>
-                  <option>$10,000 – $25,000</option>
+                  <option>$2,500 - $5,000</option>
+                  <option>$5,000 - $10,000</option>
+                  <option>$10,000 - $25,000</option>
                   <option>$25,000+</option>
                 </select>
                 <label htmlFor="gs-message" className="sr-only">Tell us about your brand and goals</label>
                 <textarea
                   id="gs-message"
+                  maxLength={2000}
                   className="form-input-light resize-none"
                   rows={3}
                   placeholder="Tell us about your brand and goals (optional)"
@@ -209,7 +226,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                   <p className="text-red-500 text-sm text-center" role="alert">{error}</p>
                 )}
                 <IconButton type="submit" icon="calendar" disabled={loading} className="w-full justify-center">
-                  {loading ? "Sending…" : "Book a Strategy Call"}
+                  {loading ? "Sending..." : "Book a Strategy Call"}
                 </IconButton>
               </form>
             </>
