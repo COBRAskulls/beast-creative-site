@@ -5,24 +5,28 @@ import { useState } from "react";
 const CARDS = [
   {
     image: "/assets/coinline-expand-joystick.jpg",
+    tag: "Visual Reference",
     title: "Motion at the Core",
     caption:
       "The arcade joystick's four-directional geometry became the structural DNA of the Coinline letterforms. Angular cuts, precise axes, and directional energy — every letter built like a cabinet built to move.",
   },
   {
     image: "/assets/coinline-expand-font.jpg",
+    tag: "Typography",
     title: "Type as Geometry",
     caption:
       "Geometric typefaces showed us the direction: modular, angular letterforms that feel assembled rather than drawn. We studied what made them feel digital and purpose-built, then pushed further into something fully custom.",
   },
   {
     image: "/assets/coinline-expand-coin.jpg",
+    tag: "The Name",
     title: "Currency of Play",
     caption:
       "The pixel coin is the universal symbol of arcade culture. It gave us 'Coinline' and the pixel-precision construction philosophy embedded into every letterform — the O in the wordmark is literally a coin.",
   },
   {
     image: "/assets/coinline-expand-gameover.jpg",
+    tag: "Aesthetic DNA",
     title: "Pixel Perfect",
     caption:
       "The glowing, blocky game-over screen defined an entire era's visual grammar. We didn't replicate it — we inherited its DNA and rebuilt it for 2022: sharper, modular, and built for every surface the brand would touch.",

@@ -6,7 +6,6 @@ import StatCounter from "@/components/ui/StatCounter";
 import ColorSwatches from "@/components/ui/ColorSwatches";
 import IconButton from "@/components/ui/IconButton";
 import CoinlineHero from "@/components/ui/CoinlineHero";
-import SlideRevealCards from "@/components/ui/SlideRevealCards";
 import ExpandingFlexCards from "@/components/ui/ExpandingFlexCards";
 
 export const metadata: Metadata = {
@@ -152,14 +151,6 @@ export default function CoinlinePage() {
                         </div>
                       ))}
                     </div>
-                  </div>
-
-                  {/* Logo Design Inspiration Cards */}
-                  <div>
-                    <p className="text-gray-600 text-sm font-semibold uppercase tracking-widest mb-3 text-beast-pink">Design References</p>
-                    <h3 className="font-display text-xl font-bold text-beast-black mb-3">What Shaped the Wordmark.</h3>
-                    <p className="text-gray-600 leading-relaxed mb-5">Every design decision has a source. These are the visual references and cultural artifacts that directly informed the geometry, texture, and feel of the Coinline logo system. Hover or tap each card to explore.</p>
-                    <SlideRevealCards />
                   </div>
 
                   <div>
