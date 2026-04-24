@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, useReducedMotion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ReactNode } from "react";
 
@@ -51,7 +51,16 @@ export default function AnimatedSection({
   delay = 0,
   variant = "fadeUp",
 }: AnimatedSectionProps) {
+  const prefersReducedMotion = useReducedMotion();
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+
+  if (prefersReducedMotion) {
+    return (
+      <div ref={ref} className={className}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div

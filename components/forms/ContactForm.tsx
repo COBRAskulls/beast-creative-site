@@ -73,47 +73,70 @@ export default function ContactForm({
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
+          <label htmlFor="contact-name" className="sr-only">Your Name</label>
           <input
             {...register("name")}
+            id="contact-name"
             type="text"
             placeholder="Your Name *"
             className={inputClass}
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "contact-name-error" : undefined}
           />
           {errors.name && (
-            <p className="text-red-400 text-xs mt-1">{errors.name.message}</p>
+            <p id="contact-name-error" className="text-red-400 text-xs mt-1" role="alert">{errors.name.message}</p>
           )}
         </div>
         <div>
+          <label htmlFor="contact-email" className="sr-only">Email Address</label>
           <input
             {...register("email")}
+            id="contact-email"
             type="email"
             placeholder="Email Address *"
             className={inputClass}
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "contact-email-error" : undefined}
           />
           {errors.email && (
-            <p className="text-red-400 text-xs mt-1">{errors.email.message}</p>
+            <p id="contact-email-error" className="text-red-400 text-xs mt-1" role="alert">{errors.email.message}</p>
           )}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input
-          {...register("phone")}
-          type="tel"
-          placeholder="Phone Number"
-          className={inputClass}
-        />
-        <input
-          {...register("company")}
-          type="text"
-          placeholder="Company / Brand Name"
-          className={inputClass}
-        />
+        <div>
+          <label htmlFor="contact-phone" className="sr-only">Phone Number</label>
+          <input
+            {...register("phone")}
+            id="contact-phone"
+            type="tel"
+            placeholder="Phone Number"
+            className={inputClass}
+          />
+        </div>
+        <div>
+          <label htmlFor="contact-company" className="sr-only">Company or Brand Name</label>
+          <input
+            {...register("company")}
+            id="contact-company"
+            type="text"
+            placeholder="Company / Brand Name"
+            className={inputClass}
+          />
+        </div>
       </div>
       <div>
-        <select {...register("service")} className={inputClass}>
+        <label htmlFor="contact-service" className="sr-only">Service you are interested in</label>
+        <select
+          {...register("service")}
+          id="contact-service"
+          className={inputClass}
+          aria-invalid={!!errors.service}
+          aria-describedby={errors.service ? "contact-service-error" : undefined}
+        >
           <option value="">What are you most interested in? *</option>
           <option>CPG Marketing &amp; Campaigns</option>
           <option>SEO + Answer Engine Optimization</option>
@@ -124,21 +147,25 @@ export default function ContactForm({
           <option>Not sure — let&apos;s talk</option>
         </select>
         {errors.service && (
-          <p className="text-red-400 text-xs mt-1">{errors.service.message}</p>
+          <p id="contact-service-error" className="text-red-400 text-xs mt-1" role="alert">{errors.service.message}</p>
         )}
       </div>
       <div>
+        <label htmlFor="contact-message" className="sr-only">Tell us about your brand and goals</label>
         <textarea
           {...register("message")}
+          id="contact-message"
           rows={4}
           placeholder="Tell us about your brand and goals..."
           className={inputClass}
+          aria-invalid={!!errors.message}
+          aria-describedby={errors.message ? "contact-message-error" : undefined}
         />
         {errors.message && (
-          <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>
+          <p id="contact-message-error" className="text-red-400 text-xs mt-1" role="alert">{errors.message.message}</p>
         )}
       </div>
-      {error && <p className="text-red-400 text-sm">{error}</p>}
+      {error && <p className="text-red-400 text-sm" role="alert">{error}</p>}
       <IconButton type="submit" icon="send" disabled={isSubmitting} className="w-full justify-center">
         {isSubmitting ? "Sending..." : submitLabel}
       </IconButton>

@@ -22,7 +22,6 @@ const caseStudies = [
     description: "Precision targeting + low-friction mechanic drove 2.2x over the 10,000-entry goal at $0.18 CPC.",
     category: "CPG Marketing",
     href: "/work/williams-bts",
-    bgColor: "bg-[#1A1A1A]",
   },
   {
     client: "Sun-Bird Seasonings",
@@ -32,7 +31,6 @@ const caseStudies = [
     description: "36,581 consumer emails collected on $6,000 — nearly 8x industry benchmark CTR.",
     category: "CPG Marketing",
     href: "/work/sun-bird",
-    bgColor: "bg-[#111111]",
   },
   {
     client: "Sweet Sensi",
@@ -42,43 +40,37 @@ const caseStudies = [
     description: "SEO + social combo cracked the code on CBD marketing restrictions — monthly revenue up 500%+.",
     category: "SEO + Social",
     href: "/work/sweet-sensi",
-    bgColor: "bg-[#1A1A1A]",
   },
 ];
 
 const services = [
   {
-    icon: "🎯",
     name: "CPG Marketing",
     desc: "Sweepstakes, first-party data collection, and retail-ready campaigns for food and beverage brands.",
     href: "/services/cpg-marketing",
+    featured: true,
   },
   {
-    icon: "🔍",
     name: "SEO + AEO",
     desc: "Rank in Google AND get cited by ChatGPT, Gemini, and Perplexity — traditional SEO meets AI search.",
     href: "/services/seo-aeo",
   },
   {
-    icon: "📈",
     name: "Paid Media",
     desc: "AI-optimized Facebook, Instagram, TikTok, and Google campaigns with real-time creative testing.",
     href: "/services/paid-media",
   },
   {
-    icon: "⚡",
     name: "AI Content Production",
     desc: "Recipe videos, product demos, and social content at scale — produced with AI at 90%+ lower cost.",
     href: "/services/content-production",
   },
   {
-    icon: "✦",
     name: "Branding & Identity",
     desc: "Brand naming, visual systems, and identities that create instant recognition and lasting recall.",
     href: "/services/branding",
   },
   {
-    icon: "💻",
     name: "Web Design & CRO",
     desc: "Conversion-focused builds, mobile-first, performance-optimized to turn traffic into revenue.",
     href: "/services/web-design",
@@ -90,7 +82,7 @@ const whyBeast = [
     title: "AI-Enhanced Campaigns",
     desc: "Proprietary AI tools and Segundo, our in-house AI agent, optimize targeting, generate creative variants, and surface insights that manual analysis misses.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
         <circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/>
       </svg>
@@ -100,7 +92,7 @@ const whyBeast = [
     title: "Radical Transparency",
     desc: "Dedicated Slack channel, weekly Loom updates, Looker dashboards showing revenue — not vanity metrics. If something isn't working, you hear it from us first.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
         <circle cx="12" cy="12" r="3"/>
       </svg>
@@ -110,7 +102,7 @@ const whyBeast = [
     title: "Proven CPG Results",
     desc: "22,043 entries on a $4,000 budget. 36,581 emails at $0.12 CPC. Our playbook is built on real CPG campaigns with named brands you can verify.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
       </svg>
     ),
@@ -119,7 +111,7 @@ const whyBeast = [
     title: "Senior-Level Focus",
     desc: "We keep our roster selective. Every account gets direct access to senior strategists — not handoffs to junior account managers.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
         <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
       </svg>
@@ -139,7 +131,6 @@ export default function HomePage() {
     <>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center bg-beast-black overflow-hidden">
-        {/* Background gradient */}
         <div className="absolute inset-0 bg-beast-black" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
@@ -175,7 +166,7 @@ export default function HomePage() {
       {/* STATS BAR */}
       <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 ">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
             <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
             <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
@@ -187,7 +178,7 @@ export default function HomePage() {
       <ClientListSection />
 
       {/* INTRO COPY */}
-      <section className="bg-[#FAFAFA] py-16 lg:py-24">
+      <section className="bg-section-offwhite py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
             <AnimatedSection>
@@ -213,7 +204,7 @@ export default function HomePage() {
                     "Ambitious brands ready to grow nationally",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-beast-pink mt-0.5 font-bold text-lg leading-none">→</span>
+                      <span className="text-beast-pink mt-0.5 font-bold text-lg leading-none" aria-hidden="true">→</span>
                       <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
@@ -248,7 +239,6 @@ export default function HomePage() {
                 <Link href={cs.href} className="group block h-full">
                   <article className="h-full bg-beast-black rounded-2xl overflow-hidden border border-white/10 hover:border-beast-pink/50 hover:shadow-[0_0_40px_rgba(255,17,152,0.15)] transition-all duration-300 hover:-translate-y-1 flex flex-col">
                     <div className="p-7 flex flex-col flex-1">
-                      {/* Client + category */}
                       <div className="flex items-center justify-between mb-5">
                         <p className="text-xs font-bold uppercase tracking-widest text-beast-pink">
                           {cs.client}
@@ -257,11 +247,9 @@ export default function HomePage() {
                           {cs.category}
                         </span>
                       </div>
-                      {/* Campaign title */}
                       <h3 className="font-display text-xl font-bold text-white mb-6 leading-tight">
                         {cs.campaign}
                       </h3>
-                      {/* Hero stat — large + prominent */}
                       <div className="mb-5">
                         <div className="font-display text-5xl font-extrabold text-beast-yellow tracking-wide leading-none mb-1">
                           {cs.heroStat}
@@ -270,14 +258,12 @@ export default function HomePage() {
                           {cs.heroStatLabel}
                         </div>
                       </div>
-                      {/* Description */}
                       <p className="text-sm text-gray-400 leading-relaxed flex-1">{cs.description}</p>
-                      {/* CTA */}
                       <div className="mt-6 pt-5 border-t border-white/8 flex items-center justify-between">
                         <span className="text-sm font-bold text-beast-pink group-hover:text-white transition-colors">
                           View Case Study
                         </span>
-                        <span className="w-8 h-8 rounded-full bg-beast-pink/15 border border-beast-pink/30 flex items-center justify-center group-hover:bg-beast-pink transition-all duration-200">
+                        <span className="w-8 h-8 rounded-full bg-beast-pink/15 border border-beast-pink/30 flex items-center justify-center group-hover:bg-beast-pink transition-all duration-200" aria-hidden="true">
                           <svg className="w-3.5 h-3.5 text-beast-pink group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                           </svg>
@@ -296,25 +282,51 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVICES GRID */}
+      {/* SERVICES */}
       <section className="bg-beast-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection className="text-center mb-12">
+          <AnimatedSection className="mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">What We Do</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-white tracking-normal">
               Full-Service. Full Commitment.
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((svc, i) => (
-              <AnimatedSection key={svc.href} delay={i * 0.07}>
-                <Link href={svc.href} className="group block">
-                  <div className="p-6 rounded-2xl bg-[#1A1A1A] border border-[#2E2E2E] hover:border-beast-pink/40 hover:bg-[#111111] transition-all duration-300 h-full">
-                    <div className="text-2xl mb-4">{svc.icon}</div>
+          {/* CPG Marketing — Flagship featured card */}
+          <AnimatedSection className="mb-4">
+            <Link href="/services/cpg-marketing" className="group block">
+              <div className="relative rounded-2xl overflow-hidden bg-beast-pink p-8 lg:p-12 flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+                <div>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-white border border-white/25 mb-5">
+                    Flagship Service
+                  </span>
+                  <div aria-hidden="true" className="font-display text-8xl lg:text-[10rem] font-black text-white/10 leading-none -mb-2 select-none">01</div>
+                  <h3 className="font-display text-3xl lg:text-5xl font-black text-white leading-tight">CPG Marketing</h3>
+                </div>
+                <div className="lg:max-w-sm shrink-0">
+                  <p className="text-white/80 leading-relaxed mb-6">
+                    Sweepstakes, first-party data collection, and retail-ready campaigns for food and beverage brands going national.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-white font-bold group-hover:gap-4 transition-[gap] duration-200">
+                    Explore Service <span aria-hidden="true">→</span>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </AnimatedSection>
+
+          {/* Remaining 5 services — numbered grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {services.slice(1).map((svc, i) => (
+              <AnimatedSection key={svc.href} delay={(i + 1) * 0.07}>
+                <Link href={svc.href} className="group block h-full">
+                  <div className="h-full p-6 rounded-2xl bg-dark-surface border border-dark-border hover:border-beast-pink/40 hover:bg-near-black transition-all duration-300 flex flex-col">
+                    <div aria-hidden="true" className="font-display text-5xl font-black text-beast-yellow/20 leading-none mb-4 select-none">
+                      0{i + 2}
+                    </div>
                     <h3 className="font-display text-xl font-bold text-white mb-2">{svc.name}</h3>
-                    <p className="text-sm text-gray-400 leading-relaxed mb-4">{svc.desc}</p>
-                    <span className="text-beast-pink text-sm font-semibold group-hover:underline">
+                    <p className="text-sm text-gray-400 leading-relaxed mb-4 flex-1">{svc.desc}</p>
+                    <span className="text-beast-pink text-sm font-semibold group-hover:text-white transition-colors">
                       Learn More →
                     </span>
                   </div>
@@ -326,7 +338,7 @@ export default function HomePage() {
       </section>
 
       {/* WHY BEAST */}
-      <section className="bg-[#F5F5F5] py-16 lg:py-24">
+      <section className="bg-section-light py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">Why Beast</p>
@@ -353,8 +365,8 @@ export default function HomePage() {
       </section>
 
       {/* CPG CALLOUT BANNER */}
-      <section className="bg-[#0D0D0D] relative overflow-hidden py-16 lg:py-20">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(46,204,64,0.06)_0%,transparent_70%)]" />
+      <section className="bg-section-near-dark relative overflow-hidden py-16 lg:py-20">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(46,204,64,0.06)_0%,transparent_70%)]" aria-hidden="true" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">For CPG Brands</p>
@@ -400,7 +412,7 @@ export default function HomePage() {
       />
 
       {/* FINAL CTA */}
-      <section className="bg-[#111111] py-16 lg:py-24">
+      <section className="bg-near-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <AnimatedSection>

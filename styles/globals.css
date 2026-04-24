@@ -27,6 +27,11 @@
   --color-beast-green-dark:  #00C44E;
   --color-beast-green-light: #4DFF8A;
 
+  /* === Section Backgrounds === */
+  --color-section-offwhite: #FAFAFA;
+  --color-section-light:    #F5F5F5;
+  --color-section-near-dark: #0D0D0D;
+
   /* === Font Families === */
   --font-display: var(--font-display), "Arial Narrow", "Arial", sans-serif;
   --font-body:    var(--font-body), "Arial", sans-serif;
@@ -147,20 +152,25 @@
 
 .mob-menu-btn {
   position: relative;
-  width: 40px;
-  height: 22px;
+  width: 44px;
+  height: 44px;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Clipping wrapper — only the bars get clipped, not the text */
 .mob-bars-clip {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  width: 40px;
+  height: 22px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .mob-bar-top,
@@ -355,12 +365,7 @@ body {
 }
 
 /* ── Gradient helpers ────────────────────────────── */
-.gradient-text-pink {
-  background: linear-gradient(135deg, #FFFFFF 40%, #FF1198 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+/* gradient-text-pink removed — use text-beast-pink + font-weight instead */
 
 /* ── Form inputs ─────────────────────────────────── */
 .form-input {
@@ -571,6 +576,21 @@ select.form-input option {
 ::-webkit-scrollbar-thumb { background: #2E2E2E; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #FF1198; }
 
+/* ── Focus visible (global) ─────────────────── */
+:focus-visible {
+  outline: 2px solid #FF1198;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Don't show focus ring on mouse click — only keyboard */
+.btn-primary:focus:not(:focus-visible),
+.btn-light:focus:not(:focus-visible),
+.btn-ghost:focus:not(:focus-visible),
+.btn-yellow:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* ── Mobile button text fix ──────────────────────── */
 @media (max-width: 1023px) {
   .btn-primary,
@@ -580,5 +600,17 @@ select.form-input option {
     white-space: normal;
     text-align: center;
     line-height: 1.4;
+  }
+}
+
+/* ── Prefers reduced motion ─────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
