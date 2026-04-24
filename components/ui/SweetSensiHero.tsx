@@ -39,7 +39,7 @@ export default function SweetSensiHero() {
   return (
     <section
       ref={containerRef}
-      className="relative bg-beast-black min-h-[560px] lg:min-h-[680px] overflow-hidden"
+      className="relative bg-beast-black min-h-screen overflow-hidden flex items-center"
     >
       {/* Full-bleed background video */}
       <video
@@ -53,7 +53,7 @@ export default function SweetSensiHero() {
       />
 
       {/* Text */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-20 lg:pt-40 lg:pb-28">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-20 py-24 w-full">
         <div className="lg:w-1/2 lg:pr-16">
           <div className="hero-text-item flex flex-wrap gap-2 mb-4">
             {[
