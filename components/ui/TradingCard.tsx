@@ -31,6 +31,7 @@ export default function TradingCard({ front, back, alt, rotation, floatDelay, de
     <div
       className="cursor-pointer"
       style={noFloat ? undefined : {
+        willChange: "transform",
         animation: "card-float 3s ease-in-out infinite",
         animationDelay: floatDelay,
       }}

@@ -133,7 +133,7 @@ export default function SweetSensiPage() {
               `}</style>
               <AnimatedSection>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
-                  <div style={{ animation: "sensiFloat1 5s ease-in-out infinite" }}>
+                  <div style={{ willChange: "transform", animation: "sensiFloat1 5s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
                       <img
                         src="/assets/sweet-sensi-store.jpg"
@@ -142,7 +142,7 @@ export default function SweetSensiPage() {
                       />
                     </div>
                   </div>
-                  <div style={{ animation: "sensiFloat2 5.8s ease-in-out infinite" }}>
+                  <div style={{ willChange: "transform", animation: "sensiFloat2 5.8s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
                       <img
                         src="/assets/sweet-sensi-tincture.jpg"
@@ -156,7 +156,7 @@ export default function SweetSensiPage() {
 
               <AnimatedSection>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
-                  <div style={{ animation: "sensiFloat3 6.2s ease-in-out infinite" }}>
+                  <div style={{ willChange: "transform", animation: "sensiFloat3 6.2s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
                       <img
                         src="/assets/sweet-sensi-storefront.jpg"
@@ -165,7 +165,7 @@ export default function SweetSensiPage() {
                       />
                     </div>
                   </div>
-                  <div style={{ animation: "sensiFloat4 5.4s ease-in-out infinite" }}>
+                  <div style={{ willChange: "transform", animation: "sensiFloat4 5.4s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
                       <img
                         src="/assets/sweet-sensi-shirt.jpg"

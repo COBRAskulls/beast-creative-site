@@ -4,7 +4,7 @@ import IconButton from "@/components/ui/IconButton";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080808] pt-20 pb-8">
+    <footer className="bg-footer-black pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Col 1: Brand */}

@@ -315,7 +315,7 @@ export default function CoinlineHero() {
         .hs-card-name {
           font-size: 2.2rem;
           font-weight: 800;
-          color: #fff;
+          color: var(--color-beast-white);
           text-transform: uppercase;
           letter-spacing: -0.02em;
           line-height: 0.95;
@@ -401,7 +401,7 @@ export default function CoinlineHero() {
           {/* Vignette */}
           <div
             className="absolute inset-0 pointer-events-none"
-            style={{ background: "radial-gradient(circle, transparent 40%, #000 120%)", zIndex: 11 }}
+            style={{ background: "radial-gradient(circle, transparent 40%, var(--color-beast-black) 120%)", zIndex: 11 }}
           />
 
           {/* Noise */}
