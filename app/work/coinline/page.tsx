@@ -84,6 +84,7 @@ export default function CoinlinePage() {
                   loop
                   muted
                   playsInline
+                  aria-label="Coinline logo animation"
                   className="w-full h-auto block"
                 >
                   <source src="/assets/coinline-logo-animation.mp4" type="video/mp4" />

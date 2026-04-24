@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import StatCounter from "@/components/ui/StatCounter";
 import RelatedCaseStudies from "@/components/ui/RelatedCaseStudies";
@@ -133,20 +134,24 @@ export default function SweetSensiPage() {
               `}</style>
               <AnimatedSection>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
-                  <div style={{ willChange: "transform", animation: "sensiFloat1 5s ease-in-out infinite" }}>
+                  <div style={{ animation: "sensiFloat1 5s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
-                      <img
+                      <Image
                         src="/assets/sweet-sensi-store.jpg"
                         alt="Sweet Sensi in-store product display"
+                        width={288}
+                        height={288}
                         className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
                       />
                     </div>
                   </div>
-                  <div style={{ willChange: "transform", animation: "sensiFloat2 5.8s ease-in-out infinite" }}>
+                  <div style={{ animation: "sensiFloat2 5.8s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
-                      <img
+                      <Image
                         src="/assets/sweet-sensi-tincture.jpg"
                         alt="Sweet Sensi Pet Tincture product"
+                        width={288}
+                        height={288}
                         className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
                       />
                     </div>
@@ -156,20 +161,24 @@ export default function SweetSensiPage() {
 
               <AnimatedSection>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-10 py-4">
-                  <div style={{ willChange: "transform", animation: "sensiFloat3 6.2s ease-in-out infinite" }}>
+                  <div style={{ animation: "sensiFloat3 6.2s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
-                      <img
+                      <Image
                         src="/assets/sweet-sensi-storefront.jpg"
                         alt="Sweet Sensi storefront at night"
+                        width={288}
+                        height={288}
                         className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
                       />
                     </div>
                   </div>
-                  <div style={{ willChange: "transform", animation: "sensiFloat4 5.4s ease-in-out infinite" }}>
+                  <div style={{ animation: "sensiFloat4 5.4s ease-in-out infinite" }}>
                     <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}>
-                      <img
+                      <Image
                         src="/assets/sweet-sensi-shirt.jpg"
                         alt="Sweet Sensi brand ambassador"
+                        width={288}
+                        height={288}
                         className="w-64 lg:w-72 h-64 lg:h-72 object-cover"
                       />
                     </div>
@@ -182,11 +191,12 @@ export default function SweetSensiPage() {
                 <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Over 500% MRR Growth. In the Industry That Said It Couldn&apos;t Be Done With Ads.</h2>
                 <div className="overflow-hidden rounded-xl border border-gray-100 mb-6">
                   <table className="w-full text-sm">
+<caption className="sr-only">Sweet Sensi Performance Results</caption>
                     <thead>
                       <tr className="bg-beast-black">
-                        <th className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
-                        <th className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Result</th>
-                        <th className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">vs Benchmark</th>
+                        <th scope="col" className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
+                        <th scope="col" className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Result</th>
+                        <th scope="col" className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">vs Benchmark</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -215,7 +225,7 @@ export default function SweetSensiPage() {
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                     &quot;Beast improved our monthly recurring revenue — it jumped by 566%, thanks to their SEO and social media strategy. They didn&apos;t just drive traffic — they brought the right people to us consistently. It&apos;s the most impactful marketing investment we&apos;ve made.&quot;
                   </p>
-                  <footer className="mt-3 text-sm text-gray-500">— Sweet Sensi</footer>
+                  <footer className="mt-3 text-sm text-gray-500">Sweet Sensi</footer>
                 </blockquote>
               </AnimatedSection>
 
@@ -274,10 +284,14 @@ export default function SweetSensiPage() {
           <p className="text-beast-black/60 max-w-xl mx-auto text-sm leading-relaxed">Premium visuals built to communicate quality at a glance — the kind of creative that earns consumer trust before a single word is read.</p>
         </div>
 
-        <img
+        <Image
           src="/assets/sweet-sensi-gummies.jpg"
           alt="Sweet Sensi Elevated Edibles gummy product line"
           className="w-full h-auto lg:h-[650px] lg:object-cover lg:object-[center_40%]"
+        
+          width={1920}
+          height={650}
+          sizes="100vw"
         />
 
         {/* Desktop: text overlaid on blank top portion of image */}

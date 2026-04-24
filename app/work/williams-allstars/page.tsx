@@ -278,6 +278,7 @@ export default function WilliamsAllstarsPage() {
               >
                 <video
                   src="/assets/allstars-ad-chili.mp4"
+                  aria-hidden="true"
                   autoPlay
                   muted
                   loop

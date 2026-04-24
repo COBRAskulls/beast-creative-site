@@ -122,11 +122,12 @@ export default function PioneerPage() {
                 </p>
                 <div className="overflow-hidden rounded-xl border border-gray-100">
                   <table className="w-full text-sm">
+<caption className="sr-only">Pioneer Paid Media Results</caption>
                     <thead>
                       <tr className="bg-beast-black">
-                        <th className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
-                        <th className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Beast Average</th>
-                        <th className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Industry Avg</th>
+                        <th scope="col" className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
+                        <th scope="col" className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Beast Average</th>
+                        <th scope="col" className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Industry Avg</th>
                       </tr>
                     </thead>
                     <tbody>

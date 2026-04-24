@@ -31,8 +31,11 @@ export default function GetStartedModal({ selected, onClose }: Props) {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
+  // Initial focus + Escape key
   useEffect(() => {
     titleRef.current?.focus();
     const handleKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
@@ -40,19 +43,44 @@ export default function GetStartedModal({ selected, onClose }: Props) {
     return () => document.removeEventListener("keydown", handleKey);
   }, [onClose]);
 
+  // Focus trap — re-runs when submitted changes (different focusable set after success)
+  useEffect(() => {
+    const modal = modalRef.current;
+    if (!modal) return;
+    const focusable = Array.from(
+      modal.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      )
+    );
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    };
+    document.addEventListener("keydown", handleTab);
+    return () => document.removeEventListener("keydown", handleTab);
+  }, [submitted]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
     try {
-      await fetch("/api/contact", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, services: selected }),
       });
+      if (!res.ok) throw new Error("Failed to send");
       setSubmitted(true);
     } catch {
-      // fail silently — still show success
-      setSubmitted(true);
+      setError("Something went wrong. Please try again or text us at (210) 332-0567.");
     } finally {
       setLoading(false);
     }
@@ -70,7 +98,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
       <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+      <div ref={modalRef} className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
         {/* Close */}
         <button
           onClick={onClose}
@@ -177,6 +205,9 @@ export default function GetStartedModal({ selected, onClose }: Props) {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                 />
+                {error && (
+                  <p className="text-red-500 text-sm text-center" role="alert">{error}</p>
+                )}
                 <IconButton type="submit" icon="calendar" disabled={loading} className="w-full justify-center">
                   {loading ? "Sending…" : "Book a Strategy Call"}
                 </IconButton>

@@ -164,12 +164,13 @@ export default function SweepstakesPlaybookPost() {
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Results Across Beast&apos;s Sweepstakes Portfolio</h2>
               <div className="overflow-hidden rounded-xl border border-gray-100 mb-8">
                 <table className="w-full text-sm">
+<caption className="sr-only">CPG Sweepstakes Campaign Comparison</caption>
                   <thead>
                     <tr className="bg-section-offwhite border-b border-gray-100">
-                      <th className="text-left px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Campaign</th>
-                      <th className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Entries</th>
-                      <th className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Budget</th>
-                      <th className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">CTR</th>
+                      <th scope="col" className="text-left px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Campaign</th>
+                      <th scope="col" className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Entries</th>
+                      <th scope="col" className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">Budget</th>
+                      <th scope="col" className="text-right px-4 py-3 font-display font-bold text-beast-black text-xs uppercase tracking-wide">CTR</th>
                     </tr>
                   </thead>
                   <tbody>

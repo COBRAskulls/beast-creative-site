@@ -1,6 +1,7 @@
 "use client";
 
 import { useInView } from "react-intersection-observer";
+import { useReducedMotion } from "framer-motion";
 import CountUp from "react-countup";
 
 interface StatCounterProps {
@@ -27,12 +28,13 @@ export default function StatCounter({
   sublabelClassName = "text-gray-600",
 }: StatCounterProps) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <div ref={ref} className="flex flex-col items-center text-center px-6">
       <div className={`font-display text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-wide leading-none ${valueClassName}`}>
         {prefix}
-        {inView ? (
+        {inView && !prefersReducedMotion ? (
           <CountUp
             end={value}
             duration={2}
@@ -41,9 +43,7 @@ export default function StatCounter({
             suffix={suffix}
           />
         ) : (
-          <span>
-            {prefix}0{suffix}
-          </span>
+          <span>{prefix}{inView ? value.toLocaleString() : "0"}{suffix}</span>
         )}
       </div>
       <div className={`font-body text-xs font-semibold tracking-widest uppercase mt-2 ${labelClassName}`}>

@@ -209,7 +209,7 @@ export default function Nav() {
                 <span className={`nav-chevron scale-150 mr-1 transition-transform duration-300${workOpen ? " open" : ""}`} aria-hidden="true"><span /></span>
               </button>
               <div className={`overflow-hidden transition-all duration-300 ${workOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
-                <div className="pl-2 pb-3 space-y-0.5 border-l-2 border-white/10 ml-1 mt-1">
+                <div className="pl-2 pb-3 space-y-0.5 pl-2 ml-1 mt-1">
                   <Link href="/work" className="block text-sm font-semibold text-gray-400 hover:text-white py-3 px-3 transition-colors focus-visible:outline-2 focus-visible:outline-beast-pink rounded">
                     All Case Studies
                   </Link>
@@ -234,7 +234,7 @@ export default function Nav() {
                 <span className={`nav-chevron scale-150 mr-1 transition-transform duration-300${servicesOpen ? " open" : ""}`} aria-hidden="true"><span /></span>
               </button>
               <div className={`overflow-hidden transition-all duration-300 ${servicesOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}>
-                <div className="pl-2 pb-3 space-y-0.5 border-l-2 border-white/10 ml-1 mt-1">
+                <div className="pl-2 pb-3 space-y-0.5 pl-2 ml-1 mt-1">
                   {services.map((s) => (
                     <Link key={s.href} href={s.href} className="flex items-center justify-between py-3 px-3 rounded-lg hover:bg-white/5 transition-colors group focus-visible:outline-2 focus-visible:outline-beast-pink">
                       <span className="text-sm text-gray-400 group-hover:text-white transition-colors">{s.name}</span>

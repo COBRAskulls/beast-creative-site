@@ -168,11 +168,12 @@ export default function SunBirdPage() {
                 <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Numbers That Changed How Sun-Bird Talks to Retailers.</h2>
                 <div className="overflow-hidden rounded-xl border border-gray-100 mb-8">
                   <table className="w-full text-sm">
+<caption className="sr-only">Sun-Bird Campaign Results</caption>
                     <thead>
                       <tr className="bg-beast-black">
-                        <th className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
-                        <th className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Result</th>
-                        <th className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">vs Benchmark</th>
+                        <th scope="col" className="text-left px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">Metric</th>
+                        <th scope="col" className="text-right px-4 py-3 font-display font-bold text-beast-yellow text-xs uppercase tracking-wide">Result</th>
+                        <th scope="col" className="text-right px-4 py-3 font-display font-bold text-gray-400 text-xs uppercase tracking-wide">vs Benchmark</th>
                       </tr>
                     </thead>
                     <tbody>
