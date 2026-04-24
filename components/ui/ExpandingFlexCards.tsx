@@ -99,7 +99,7 @@ export default function ExpandingFlexCards() {
         .efc-card:not(.efc-active) .efc-label { opacity: 0; }
         .efc-tag {
           display: inline-block;
-          background: #ed1564;
+          background: var(--color-coinline-pink);
           color: white;
           font-size: 0.62rem;
           font-weight: 700;

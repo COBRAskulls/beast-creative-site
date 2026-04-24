@@ -204,11 +204,11 @@ export default function Nav() {
               </button>
               <div className={`overflow-hidden transition-all duration-300 ${workOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className="pl-2 pb-3 space-y-0.5 border-l-2 border-white/10 ml-1 mt-1">
-                  <Link href="/work" className="block text-sm font-semibold text-gray-400 hover:text-white py-1.5 px-3 transition-colors focus-visible:outline-2 focus-visible:outline-beast-pink rounded">
+                  <Link href="/work" className="block text-sm font-semibold text-gray-400 hover:text-white py-3 px-3 transition-colors focus-visible:outline-2 focus-visible:outline-beast-pink rounded">
                     All Case Studies
                   </Link>
                   {caseStudies.map((cs) => (
-                    <Link key={cs.href} href={cs.href} className="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-white/5 transition-colors group focus-visible:outline-2 focus-visible:outline-beast-pink">
+                    <Link key={cs.href} href={cs.href} className="flex items-center justify-between py-3 px-3 rounded-lg hover:bg-white/5 transition-colors group focus-visible:outline-2 focus-visible:outline-beast-pink">
                       <span className="text-sm text-gray-400 group-hover:text-white transition-colors">{cs.name}</span>
                       <span className="text-xs text-beast-yellow font-bold ml-3">{cs.stat}</span>
                     </Link>
@@ -230,7 +230,7 @@ export default function Nav() {
               <div className={`overflow-hidden transition-all duration-300 ${servicesOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className="pl-2 pb-3 space-y-0.5 border-l-2 border-white/10 ml-1 mt-1">
                   {services.map((s) => (
-                    <Link key={s.href} href={s.href} className="flex items-center justify-between py-1.5 px-3 rounded-lg hover:bg-white/5 transition-colors group focus-visible:outline-2 focus-visible:outline-beast-pink">
+                    <Link key={s.href} href={s.href} className="flex items-center justify-between py-3 px-3 rounded-lg hover:bg-white/5 transition-colors group focus-visible:outline-2 focus-visible:outline-beast-pink">
                       <span className="text-sm text-gray-400 group-hover:text-white transition-colors">{s.name}</span>
                       {s.badge && <span className="text-xs bg-beast-pink/20 text-beast-pink border border-beast-pink/25 px-2 py-0.5 rounded-full font-semibold">{s.badge}</span>}
                     </Link>

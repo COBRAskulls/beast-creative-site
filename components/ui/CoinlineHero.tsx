@@ -1,5 +1,9 @@
 "use client";
 
+const CHROMA_RED = "#ff003c";
+const CHROMA_CYAN = "#00f3ff";
+const COINLINE_DARK = "#030303";
+
 import { useEffect, useRef } from "react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
@@ -192,7 +196,7 @@ export default function CoinlineHero() {
           const txtEl = item.el.firstChild as HTMLElement;
           if (txtEl && Math.abs(smoothVel) > 2) {
             const o = smoothVel * 2;
-            txtEl.style.textShadow = `${o}px 0 #ff003c, ${-o}px 0 #00f3ff`;
+            txtEl.style.textShadow = `${o}px 0 ${CHROMA_RED}, ${-o}px 0 ${CHROMA_CYAN}`;
           } else if (txtEl) {
             txtEl.style.textShadow = "none";
           }
@@ -202,7 +206,7 @@ export default function CoinlineHero() {
           if (svgEl) {
             if (Math.abs(smoothVel) > 2) {
               const o = smoothVel * 2;
-              svgEl.style.filter = `drop-shadow(${o}px 0 0 #ff003c) drop-shadow(${-o}px 0 0 #00f3ff)`;
+              svgEl.style.filter = `drop-shadow(${o}px 0 0 ${CHROMA_RED}) drop-shadow(${-o}px 0 0 ${CHROMA_CYAN})`;
             } else {
               svgEl.style.filter = "none";
             }
@@ -300,13 +304,13 @@ export default function CoinlineHero() {
         .hs-card-id {
           font-family: monospace;
           font-size: 10px;
-          color: #ff003c;
+          color: var(--color-coinline-red);
           letter-spacing: 0.1em;
           text-transform: uppercase;
         }
         .hs-card-dot {
           width: 8px; height: 8px;
-          background: #ff003c;
+          background: var(--color-coinline-red);
         }
         .hs-card-name {
           font-size: 2.2rem;
@@ -368,7 +372,7 @@ export default function CoinlineHero() {
           position: absolute;
           right: 0; top: -2px;
           width: 5px; height: 5px;
-          background: #ff003c;
+          background: var(--color-coinline-red);
         }
       `}</style>
 
@@ -387,7 +391,7 @@ export default function CoinlineHero() {
             left: 0,
             width: "100%",
             height: "100vh",
-            background: "#030303",
+            background: COINLINE_DARK,
             zIndex: 5,
           }}
         >
@@ -425,10 +429,10 @@ export default function CoinlineHero() {
             <div className="flex justify-between items-center">
               <span>SYS.READY</span>
               <div className="hs-hud-line" />
-              <span>SCROLL VEL: <strong id="hs-vel" style={{ color: "#00f3ff" }}>0.00</strong></span>
+              <span>SCROLL VEL: <strong id="hs-vel" style={{ color: COINLINE_CYAN }}>0.00</strong></span>
             </div>
             <div className="flex justify-between items-center">
-              <span>COORD: <strong id="hs-coord" style={{ color: "#00f3ff" }}>0000000</strong></span>
+              <span>COORD: <strong id="hs-coord" style={{ color: COINLINE_CYAN }}>0000000</strong></span>
               <div className="hs-hud-line" />
               <span>COINLINE BARCADE · EST. 2022</span>
             </div>

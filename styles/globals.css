@@ -296,6 +296,11 @@
   --color-text-on-dark:           #FFFFFF;
   --color-text-on-dark-secondary: #C8C8C8;
   --color-text-on-dark-muted:     #888888;
+  --color-coinline-red:    #ff003c;
+  --color-coinline-cyan:   #00f3ff;
+  --color-coinline-pink:   #ed1564;
+  --color-coinline-dark:   #030303;
+
   --color-pink-tint:              rgba(255,17,152,0.10);
   --color-pink-tint-20:           rgba(255,17,152,0.20);
   --color-pink-glow:              rgba(255,17,152,0.35);
@@ -568,6 +573,7 @@ select.form-input option {
   animation: marquee 30s linear infinite;
   gap: 48px;
   width: max-content;
+  will-change: transform;
 }
 
 /* ── Scrollbar ───────────────────────────────────── */
