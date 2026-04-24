@@ -97,6 +97,18 @@ export default function ExpandingFlexCards() {
         }
         .efc-card.efc-active .efc-label { opacity: 1; }
         .efc-card:not(.efc-active) .efc-label { opacity: 0; }
+        .efc-tag {
+          display: inline-block;
+          background: #ed1564;
+          color: white;
+          font-size: 0.62rem;
+          font-weight: 700;
+          padding: 3px 10px;
+          border-radius: 20px;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
         .efc-title {
           font-weight: 800;
           font-size: 1.05rem;
@@ -147,6 +159,7 @@ export default function ExpandingFlexCards() {
             >
               <div className="efc-shadow" />
               <div className="efc-label">
+                <div className="efc-tag">{card.tag}</div>
                 <div className="efc-title">{card.title}</div>
                 <div className="efc-caption">{card.caption}</div>
               </div>
