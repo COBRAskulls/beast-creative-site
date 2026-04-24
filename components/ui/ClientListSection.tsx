@@ -74,7 +74,7 @@ export default function ClientListSection() {
                       className={`flex items-center gap-2.5 px-3 py-3 rounded-xl border text-sm font-medium text-left transition-all duration-150 ${
                         active
                           ? "bg-beast-pink/15 border-beast-pink text-beast-pink"
-                          : "bg-white/4 border-white/10 text-gray-400 hover:border-white/25 hover:text-white"
+                          : "bg-white/4 border-white/10 text-gray-400 hover:border-white/25 hover:text-white active:scale-[0.97]"
                       }`}
                     >
                       <span className={`w-4 h-4 rounded flex-shrink-0 border-2 flex items-center justify-center transition-colors ${

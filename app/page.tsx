@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import HeroHeadline from "@/components/ui/HeroHeadline";
 import ContactForm from "@/components/forms/ContactForm";
 import ClientListSection from "@/components/ui/ClientListSection";
 import IconButton from "@/components/ui/IconButton";
@@ -89,6 +90,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center bg-beast-black overflow-hidden">
         <div className="absolute inset-0 bg-beast-black" />
+        <div className="hero-ambient-glow" aria-hidden="true" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
@@ -97,13 +99,7 @@ export default function HomePage() {
             </p>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.1}>
-            <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6">
-              We Don&apos;t Claim Results.
-              <br />
-              <span className="text-beast-pink">We Document Them.</span>
-            </h1>
-          </AnimatedSection>
+          <HeroHeadline />
 
           <AnimatedSection delay={0.2}>
             <p className="text-body-lead text-gray-300 max-w-2xl mb-10">
@@ -124,10 +120,18 @@ export default function HomePage() {
       <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
-            <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
-            <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
-            <StatCounter value={500} suffix="%+" label="MRR Growth" sublabel="Sweet Sensi" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            <AnimatedSection delay={0} variant="fadeUp">
+              <StatCounter value={36581} label="Contest Entries" sublabel="vs 10K goal — 3.6x" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            </AnimatedSection>
+            <AnimatedSection delay={0.08} variant="fadeUp">
+              <StatCounter value={7.03} suffix="%" decimals={2} label="CTR Achieved" sublabel="vs 0.89% industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            </AnimatedSection>
+            <AnimatedSection delay={0.16} variant="fadeUp">
+              <StatCounter value={0.12} prefix="$" decimals={2} label="Cost Per Click" sublabel="vs $0.28 industry avg" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            </AnimatedSection>
+            <AnimatedSection delay={0.24} variant="fadeUp">
+              <StatCounter value={500} suffix="%+" label="MRR Growth" sublabel="Sweet Sensi" valueClassName="text-beast-black" labelClassName="text-beast-black/60" sublabelClassName="text-beast-black/40" />
+            </AnimatedSection>
           </div>
         </div>
       </section>
