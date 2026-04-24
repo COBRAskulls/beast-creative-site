@@ -55,7 +55,7 @@ const values = [
     desc: "We never stop asking why. Why did that ad perform? Why did consumers respond to that hook? Why is your competitor growing faster? The answers live in the data — and we go find them.",
   },
   {
-    name: "Radical Transparency",
+    name: "Open Books",
     desc: "You'll never get a report full of graphs without context. You get Slack access, weekly Loom updates, and dashboards showing revenue — not vanity metrics. If something isn't working, we tell you before you notice.",
   },
   {
@@ -74,7 +74,7 @@ export default function AboutPage() {
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-4">About Us</p>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-3xl mb-6">
-              Born to Dominate Digital.
+              Built on Proof, Not Promises.
             </h1>
             <p className="text-body-lead text-gray-300 max-w-2xl">
               Beast Creative Agency was founded on a simple belief: marketing should be measurable, transparent, and powerful enough to actually change the trajectory of a business. We built the agency we wished existed — where creative energy and data-driven strategy aren&apos;t in tension, they&apos;re the same thing.

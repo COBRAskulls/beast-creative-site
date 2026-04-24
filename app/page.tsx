@@ -9,7 +9,7 @@ import IconButton from "@/components/ui/IconButton";
 export const metadata: Metadata = {
   title: "Beast Creative Agency | AI-Powered Digital Marketing in San Antonio, TX",
   description:
-    "Beast Creative Agency helps CPG brands and ambitious businesses dominate their markets — with campaigns backed by real data, AI-enhanced execution, and results you can take to the boardroom.",
+    "Beast Creative Agency runs AI-enhanced CPG campaigns for brands going national — sweepstakes, paid social, SEO, and content production. Every result on this site is real, named, and verified.",
 };
 
 const caseStudies = [
@@ -99,15 +99,15 @@ export default function HomePage() {
 
           <AnimatedSection delay={0.1}>
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6">
-              Marketing That Doesn&apos;t Just Look Good.
+              We Don&apos;t Claim Results.
               <br />
-              <span className="text-beast-pink">It Performs.</span>
+              <span className="text-beast-pink">We Document Them.</span>
             </h1>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
             <p className="text-body-lead text-gray-300 max-w-2xl mb-10">
-              Beast Creative Agency helps CPG brands and ambitious businesses dominate their markets — with campaigns backed by real data, AI-enhanced execution, and results you can take to the boardroom.
+              Beast Creative Agency runs CPG campaigns for brands going national. Every result on this site is real, named, and verified — sweepstakes, paid social, SEO, and AI-enhanced content backed by numbers that hold up under scrutiny.
             </p>
           </AnimatedSection>
 
@@ -318,7 +318,7 @@ export default function HomePage() {
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">How We Work</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
-              From Discovery to Domination.
+              Four Steps. No Black Box.
             </h2>
           </AnimatedSection>
 
