@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import IconButton from "@/components/ui/IconButton";
+import WorkGrid from "@/components/ui/WorkGrid";
 
 export const metadata: Metadata = {
   title: "Our Work | Case Studies | Beast Creative Agency",
@@ -120,7 +120,6 @@ const caseStudies = [
 export default function WorkPage() {
   return (
     <>
-      {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20">
@@ -136,63 +135,8 @@ export default function WorkPage() {
         </div>
       </section>
 
-      {/* CASE STUDIES GRID */}
-      <section className="bg-section-offwhite py-12 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {caseStudies.map((cs, i) => (
-              <AnimatedSection key={cs.href} delay={i * 0.08}>
-                <Link href={cs.href} className="group block h-full">
-                  <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
-                    <div className="p-6 flex-1 flex flex-col">
-                      <div className="flex items-start justify-between mb-3">
-                        <p className="text-xs font-semibold uppercase tracking-widest text-beast-pink">
-                          {cs.client}
-                        </p>
-                        <span className="text-xs text-gray-400">{cs.year}</span>
-                      </div>
-                      <h3 className="font-display text-lg font-bold text-beast-black mb-4 leading-tight">
-                        {cs.campaign}
-                      </h3>
-                      <div className="flex items-baseline gap-2 mb-2">
-                        <span className="font-display text-4xl font-extrabold text-beast-black tracking-normal">
-                          {cs.heroStat}
-                        </span>
-                        <span className="text-sm text-gray-500 font-medium">{cs.heroStatLabel}</span>
-                      </div>
+      <WorkGrid caseStudies={caseStudies} />
 
-                      {/* Mini stats */}
-                      <div className="grid grid-cols-3 gap-2 my-4 py-4 border-y border-gray-100">
-                        {cs.stats.map((stat) => (
-                          <div key={stat.label} className="text-center">
-                            <div className="font-display text-base font-bold text-beast-black">{stat.value}</div>
-                            <div className="text-xs text-gray-500">{stat.sub}</div>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Tags */}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {cs.categories.map((cat) => (
-                          <span key={cat} className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600">
-                            {cat}
-                          </span>
-                        ))}
-                      </div>
-
-                      <div className="mt-auto">
-                        <span className="btn-ghost-pink text-sm">View Case Study →</span>
-                      </div>
-                    </div>
-                  </article>
-                </Link>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA STRIP */}
       <section className="bg-beast-black py-16 lg:py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>

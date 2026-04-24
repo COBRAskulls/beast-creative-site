@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import Marquee from "@/components/ui/Marquee";
 import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import ContactForm from "@/components/forms/ContactForm";
@@ -74,48 +73,6 @@ const services = [
     name: "Web Design & CRO",
     desc: "Conversion-focused builds, mobile-first, performance-optimized to turn traffic into revenue.",
     href: "/services/web-design",
-  },
-];
-
-const whyBeast = [
-  {
-    title: "AI-Enhanced Campaigns",
-    desc: "Proprietary AI tools and Segundo, our in-house AI agent, optimize targeting, generate creative variants, and surface insights that manual analysis misses.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
-        <circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/>
-      </svg>
-    ),
-  },
-  {
-    title: "Radical Transparency",
-    desc: "Dedicated Slack channel, weekly Loom updates, Looker dashboards showing revenue — not vanity metrics. If something isn't working, you hear it from us first.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
-        <circle cx="12" cy="12" r="3"/>
-      </svg>
-    ),
-  },
-  {
-    title: "Proven CPG Results",
-    desc: "22,043 entries on a $4,000 budget. 36,581 emails at $0.12 CPC. Our playbook is built on real CPG campaigns with named brands you can verify.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
-      </svg>
-    ),
-  },
-  {
-    title: "Senior-Level Focus",
-    desc: "We keep our roster selective. Every account gets direct access to senior strategists — not handoffs to junior account managers.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
-        <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-      </svg>
-    ),
   },
 ];
 
@@ -337,33 +294,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHY BEAST */}
-      <section className="bg-section-light py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <AnimatedSection className="text-center mb-12">
-            <p className="section-eyebrow text-beast-pink mb-4">Why Beast</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
-              Not Just Another Agency.{" "}
-              <span className="text-beast-pink">Your Partners in Growth.</span>
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyBeast.map((item, i) => (
-              <AnimatedSection key={item.title} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl p-6 border border-gray-100 h-full">
-                  <div className="w-10 h-10 rounded-xl bg-beast-pink/10 flex items-center justify-center mb-4 text-beast-pink">
-                    {item.icon}
-                  </div>
-                  <h3 className="font-display text-lg font-bold text-beast-black mb-3">{item.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CPG CALLOUT BANNER */}
       <section className="bg-section-near-dark relative overflow-hidden py-16 lg:py-20">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(46,204,64,0.06)_0%,transparent_70%)]" aria-hidden="true" />
@@ -405,11 +335,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* MARQUEE DIVIDER */}
-      <Marquee
-        items={["AI-Powered Results", "Real Numbers", "Proven CPG Growth", "Data-Driven Strategy", "Radical Transparency"]}
-      />
 
       {/* FINAL CTA */}
       <section className="bg-near-black py-16 lg:py-24">

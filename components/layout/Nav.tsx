@@ -35,6 +35,12 @@ export default function Nav() {
 
   useEffect(() => { setMobileOpen(false); }, [pathname]);
   useEffect(() => {
+    if (!mobileOpen) return;
+    const handleKey = (e: KeyboardEvent) => { if (e.key === "Escape") setMobileOpen(false); };
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
+  }, [mobileOpen]);
+  useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
@@ -157,7 +163,7 @@ export default function Nav() {
             <div className="w-px h-4 bg-white/15 mx-1 shrink-0" />
 
             <Link href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" target="_blank" rel="noopener noreferrer" className="btn-primary shrink-0 ml-1 !py-2.5 !px-5 !text-[10px] !tracking-[2px] focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2">
-              Free 15-Min Strategy Call
+              Book Free 15-Min Call
             </Link>
         </nav>
       </div>
