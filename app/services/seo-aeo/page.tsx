@@ -57,7 +57,7 @@ export default function SeoAeoPage() {
               <ul className="space-y-3">
                 {["Technical SEO audit and remediation", "Keyword and topic cluster strategy", "On-page optimization", "Schema.org structured data implementation", "FAQ markup for People Also Ask", "AEO content strategy and formatting", "Entity and relationship mapping", "Local SEO (national + regional)", "Monthly ranking reports", "Competitor gap analysis"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-pink font-bold shrink-0">✓</span>
+                    <svg className="w-4 h-4 text-beast-pink shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

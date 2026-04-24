@@ -202,7 +202,7 @@ export default function SunBirdPage() {
                   <p className="text-gray-300 text-sm leading-relaxed">36,581 email addresses. 36,581 ZIP codes. 36,581 people who raised their hand and said &quot;I&apos;m interested in Sun-Bird.&quot; That database is a direct email channel to over 36,000 consumers — no platform algorithm in the way. Geographic demand data mapped to specific US markets. Proof of consumer awareness to present to retail buyers.</p>
                 </div>
 
-                <blockquote className="border-l-4 border-beast-pink pl-6">
+                <blockquote className="border border-beast-pink/20 bg-beast-pink/5 rounded-xl px-6 py-4">
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                     &quot;No competitor can walk into a pitch meeting with a 7.03% CTR and $0.12 CPC on a $6,000 budget. That&apos;s our proof of concept.&quot;
                   </p>

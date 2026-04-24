@@ -45,7 +45,7 @@ export default function BrandingPage() {
               <ul className="space-y-3">
                 {["Brand naming (primary + tagline)", "Logo design + variations", "Color palette with usage rules", "Typography system", "Brand voice and tone guide", "Visual identity system", "Brand standards document", "Go-to-market assets package"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-pink font-bold shrink-0">✓</span>
+                    <svg className="w-4 h-4 text-beast-pink shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

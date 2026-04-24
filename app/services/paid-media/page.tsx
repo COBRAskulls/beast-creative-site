@@ -45,7 +45,7 @@ export default function PaidMediaPage() {
               <ul className="space-y-3">
                 {["Facebook + Instagram ad management", "TikTok ads (organic + paid)", "Google Search + Display campaigns", "AI-powered audience segmentation", "Dynamic creative testing (A/B + multivariate)", "Daily monitoring and real-time optimization", "Retargeting and lookalike audiences", "Monthly performance reporting with revenue attribution"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-pink font-bold shrink-0">✓</span>
+                    <svg className="w-4 h-4 text-beast-pink shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

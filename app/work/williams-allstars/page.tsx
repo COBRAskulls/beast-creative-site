@@ -175,7 +175,7 @@ export default function WilliamsAllstarsPage() {
                   </table>
                 </div>
 
-                <blockquote className="border-l-4 border-beast-pink pl-6">
+                <blockquote className="border border-beast-pink/20 bg-beast-pink/5 rounded-xl px-6 py-4">
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                     &quot;Working with Beast was a game changer. Their custom social media campaign didn&apos;t just build awareness — it delivered over 13,000 real email subscribers.&quot;
                   </p>

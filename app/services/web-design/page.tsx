@@ -45,7 +45,7 @@ export default function WebDesignPage() {
               <ul className="space-y-3">
                 {["Marketing and landing pages", "E-commerce stores (Shopify, Next.js)", "CPG brand websites with multi-brand architecture", "Lead generation funnels", "CRO audits and optimization", "Mobile-first responsive design", "Lighthouse Performance 90+", "SEO-optimized from day one", "GA4 + conversion tracking setup"].map((item) => (
                   <li key={item} className="flex gap-3 text-sm">
-                    <span className="text-beast-pink font-bold shrink-0">✓</span>
+                    <svg className="w-4 h-4 text-beast-pink shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

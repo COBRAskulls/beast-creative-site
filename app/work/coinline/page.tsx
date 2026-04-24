@@ -76,7 +76,7 @@ export default function CoinlinePage() {
               </AnimatedSection>
 
               <div
-                className="rounded-2xl overflow-hidden bg-black"
+                className="rounded-2xl overflow-hidden bg-beast-black"
                 style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.3)" }}
               >
                 <video
@@ -146,7 +146,7 @@ export default function CoinlinePage() {
                         { label: "Flexibility Built In", detail: "Beast designed the logo to work across every surface the brand would touch: neon signage, embroidered apparel, digital screens, printed tokens, merchandise. Eight logo variants were developed covering every use case." },
                       ].map((item) => (
                         <div key={item.label} className="flex gap-3">
-                          <span className="text-beast-pink font-bold mt-0.5 shrink-0">✓</span>
+                          <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                           <p className="text-gray-600 text-sm leading-relaxed"><strong className="text-beast-black">{item.label}:</strong> {item.detail}</p>
                         </div>
                       ))}
@@ -227,14 +227,14 @@ export default function CoinlinePage() {
                     { label: "Merchandise That Markets", detail: "The apparel design system turns every staff member and loyal customer into a walking billboard. The geometric pattern works as a standalone graphic without the wordmark — a mark of a truly mature brand identity." },
                   ].map((item) => (
                     <li key={item.label} className="flex gap-3">
-                      <span className="text-beast-pink font-bold mt-0.5 shrink-0">✓</span>
+                      <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                       <p className="text-gray-600 text-sm leading-relaxed"><strong className="text-beast-black">{item.label} —</strong> {item.detail}</p>
                     </li>
                   ))}
                 </ul>
 
                 {/* Testimonial */}
-                <blockquote className="border-l-4 border-beast-pink pl-6">
+                <blockquote className="border border-beast-pink/20 bg-beast-pink/5 rounded-xl px-6 py-4">
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                     &quot;I came to Beast Creative with just an idea. They helped turn it into a full brand — logo, voice, website strategy, everything. What I have now isn&apos;t just a product, it&apos;s a brand people connect with. I couldn&apos;t have built this without them.&quot;
                   </p>

@@ -6,20 +6,28 @@ import IconButton from "@/components/ui/IconButton";
 export const metadata: Metadata = {
   title: "About Beast Creative Agency | National Digital Marketing",
   description:
-    "Meet the Beast team — strategists, creatives, and AI-powered operators working with brands nationwide. Built on radical transparency and proven CPG results.",
+    "Meet the Beast team: strategists, creatives, and AI-powered operators working with brands nationwide. Built on proven CPG results and the kind of reporting most agencies avoid.",
 };
 
-const team = [
+interface TeamMember {
+  name: string;
+  title: string;
+  bio: string;
+  initials: string;
+  isAI?: boolean;
+}
+
+const team: TeamMember[] = [
   {
     name: "Kyle Ossinger",
     title: "Creative Director",
-    bio: "The creative force behind Beast's campaigns. Kyle translates brand briefs into campaign mechanics that people actually engage with — like the Williams All-Stars trading card system that generated 13,660 entries in 24 days.",
+    bio: "The creative force behind Beast's campaigns. Kyle translates brand briefs into campaign mechanics that people actually engage with, like the Williams All-Stars trading card system that generated 13,660 entries in 24 days.",
     initials: "KO",
   },
   {
     name: "John Speer",
     title: "Co-Owner / COO",
-    bio: "The operational architect of Beast. John ensures every campaign runs on time, on budget, and on brand — and he's the one who walks into client meetings with the numbers that close deals.",
+    bio: "The operational architect of Beast. John ensures every campaign runs on time, on budget, and on brand. He's the one who walks into client meetings with the numbers that close deals.",
     initials: "JS",
   },
   {
@@ -31,7 +39,7 @@ const team = [
   {
     name: "Eric",
     title: "Web Development",
-    bio: "Beast's web lead. Eric builds and maintains the client-facing digital experiences — from conversion-focused landing pages to full campaign sites — ensuring every build is fast, mobile-first, and on brand.",
+    bio: "Beast's web lead. Eric builds and maintains the client-facing digital experiences — from conversion-focused landing pages to full campaign sites, ensuring every build is fast, mobile-first, and on brand.",
     initials: "ER",
   },
   {
@@ -43,7 +51,7 @@ const team = [
   {
     name: "Segundo",
     title: "Proprietary AI Agent",
-    bio: "Not a person. Doesn't sleep. Never misses a deadline. Segundo is Beast's in-house AI agent — handling content production, campaign analysis, and workflow automation so the humans can focus on strategy. He's the reason we move faster than agencies twice our size.",
+    bio: "Not a person. Doesn't sleep. Never misses a deadline. Segundo is Beast's in-house AI agent — handling content production, campaign analysis, and workflow automation so the humans can focus on strategy; he's the reason we move faster than agencies twice our size.",
     initials: "SEG",
     isAI: true,
   },
@@ -52,11 +60,11 @@ const team = [
 const values = [
   {
     name: "Relentless Curiosity",
-    desc: "We never stop asking why. Why did that ad perform? Why did consumers respond to that hook? Why is your competitor growing faster? The answers live in the data — and we go find them.",
+    desc: "We never stop asking why. Why did that ad perform? Why did consumers respond to that hook? Why is your competitor growing faster? The answers live in the data: we go find them.",
   },
   {
     name: "Open Books",
-    desc: "You'll never get a report full of graphs without context. You get Slack access, weekly Loom updates, and dashboards showing revenue — not vanity metrics. If something isn't working, we tell you before you notice.",
+    desc: "You'll never get a report full of graphs without context. You get Slack access, weekly Loom updates, and dashboards showing revenue, not vanity metrics. If something isn't working, we tell you before you notice.",
   },
   {
     name: "Data Driven Strategy",
@@ -93,13 +101,13 @@ export default function AboutPage() {
                 Built for Performance. Built for Scale.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                Founded in San Antonio, TX and serving brands nationwide — our specialty is CPG marketing, but our expertise spans everything a modern brand needs to compete and win.
+                Founded in San Antonio, TX and serving brands nationwide. Our specialty is CPG marketing, but our expertise spans everything a modern brand needs to compete and win.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 We believe the best agencies are the ones that treat every campaign like it&apos;s their own money on the line — because the transparency we demand of ourselves is the same transparency we deliver to clients. You&apos;ll always know exactly where your budget went and what it returned.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                From a $1,500 Williams Bowl campaign that proved a model, to a $6,000 Sun-Bird sweepstakes that generated 36,581 consumer emails for a national Walmart pitch — everything we do is built on proof, not promises.
+                From a $1,500 Williams Bowl campaign that proved a model, to a $6,000 Sun-Bird sweepstakes that generated 36,581 consumer emails for a national Walmart pitch. Everything we do is built on proof, not promises.
               </p>
             </AnimatedSection>
           </div>
@@ -144,11 +152,11 @@ export default function AboutPage() {
             {team.map((member, i) => (
               <AnimatedSection key={member.name} delay={i * 0.1}>
                 <div className="flex flex-col items-start">
-                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 ${(member as any).isAI ? "bg-beast-pink" : "bg-beast-black"}`}>
-                    <span className={`font-display font-bold text-xl ${(member as any).isAI ? "text-white" : "text-beast-pink"}`}>{member.initials}</span>
+                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 ${member.isAI ? "bg-beast-pink" : "bg-beast-black"}`}>
+                    <span className={`font-display font-bold text-xl ${member.isAI ? "text-white" : "text-beast-pink"}`}>{member.initials}</span>
                   </div>
                   <h3 className="font-display text-xl font-bold text-beast-black mb-1">{member.name}</h3>
-                  <p className={`text-xs font-semibold uppercase tracking-widest mb-3 ${(member as any).isAI ? "text-beast-black" : "text-beast-pink"}`}>{member.title}</p>
+                  <p className={`text-xs font-semibold uppercase tracking-widest mb-3 ${member.isAI ? "text-beast-black" : "text-beast-pink"}`}>{member.title}</p>
                   <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
                 </div>
               </AnimatedSection>

@@ -211,7 +211,7 @@ export default function SweetSensiPage() {
                   <p className="text-gray-300 text-sm leading-relaxed">Paid advertising stops working the moment you stop paying. A well-executed SEO strategy keeps generating organic traffic and revenue for years after the initial investment. Sweet Sensi&apos;s content rankings, domain authority, and social community are assets that continue to compound — making each future dollar of marketing investment more efficient than the last. Beast built Sweet Sensi an engine, not a campaign. That&apos;s the difference.</p>
                 </div>
 
-                <blockquote className="border-l-4 border-beast-pink pl-6">
+                <blockquote className="border border-beast-pink/20 bg-beast-pink/5 rounded-xl px-6 py-4">
                   <p className="text-beast-black font-medium italic text-lg leading-relaxed">
                     &quot;Beast improved our monthly recurring revenue — it jumped by 566%, thanks to their SEO and social media strategy. They didn&apos;t just drive traffic — they brought the right people to us consistently. It&apos;s the most impactful marketing investment we&apos;ve made.&quot;
                   </p>
