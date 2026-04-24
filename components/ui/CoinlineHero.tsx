@@ -429,10 +429,10 @@ export default function CoinlineHero() {
             <div className="flex justify-between items-center">
               <span>SYS.READY</span>
               <div className="hs-hud-line" />
-              <span>SCROLL VEL: <strong id="hs-vel" style={{ color: COINLINE_CYAN }}>0.00</strong></span>
+              <span>SCROLL VEL: <strong id="hs-vel" style={{ color: CHROMA_CYAN }}>0.00</strong></span>
             </div>
             <div className="flex justify-between items-center">
-              <span>COORD: <strong id="hs-coord" style={{ color: COINLINE_CYAN }}>0000000</strong></span>
+              <span>COORD: <strong id="hs-coord" style={{ color: CHROMA_CYAN }}>0000000</strong></span>
               <div className="hs-hud-line" />
               <span>COINLINE BARCADE · EST. 2022</span>
             </div>
