@@ -154,6 +154,8 @@ export default function CoinlinePage() {
                   </div>
 
                   <div>
+                    <h3 className="font-display text-xl font-bold text-beast-black mb-3">The References That Built the Mark.</h3>
+                    <p className="text-gray-600 leading-relaxed mb-5">Every creative decision traces back to a specific visual source. Click or tap each card to see what shaped the Coinline logo system and why.</p>
                     <ExpandingFlexCards />
                   </div>
 
