@@ -7,25 +7,25 @@ const CARDS = [
     image: "/assets/coinline-expand-joystick.jpg",
     title: "Motion at the Core",
     caption:
-      "The joystick became our motion brief — directional, physical, iconic. Its geometry drove the angular cuts built into every letterform.",
+      "The arcade joystick's four-directional geometry became the structural DNA of the Coinline letterforms. Angular cuts, precise axes, and directional energy — every letter built like a cabinet built to move.",
   },
   {
     image: "/assets/coinline-expand-font.jpg",
     title: "Type as Geometry",
     caption:
-      "We studied structural typefaces built on pure precision. The Coinline wordmark inherits this language — engineered, not drawn.",
+      "Geometric typefaces showed us the direction: modular, angular letterforms that feel assembled rather than drawn. We studied what made them feel digital and purpose-built, then pushed further into something fully custom.",
   },
   {
     image: "/assets/coinline-expand-coin.jpg",
     title: "Currency of Play",
     caption:
-      "The coin is Coinline's core symbol — embedded as a pixel-perfect square cutout directly inside the 'O' of the wordmark.",
+      "The pixel coin is the universal symbol of arcade culture. It gave us 'Coinline' and the pixel-precision construction philosophy embedded into every letterform — the O in the wordmark is literally a coin.",
   },
   {
     image: "/assets/coinline-expand-gameover.jpg",
     title: "Pixel Perfect",
     caption:
-      "High-contrast pixel lettering shaped the wordmark's weight and optical spacing — bold enough to dominate any screen.",
+      "The glowing, blocky game-over screen defined an entire era's visual grammar. We didn't replicate it — we inherited its DNA and rebuilt it for 2022: sharper, modular, and built for every surface the brand would touch.",
   },
 ];
 
