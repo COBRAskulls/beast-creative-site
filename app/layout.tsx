@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { barlowCondensed, inter } from "@/lib/fonts";
 import "@/styles/globals.css";
 import Nav from "@/components/layout/Nav";
+import ConsoleBranding from "@/components/ui/ConsoleBranding";
 import Footer from "@/components/layout/Footer";
 import { organizationSchema, localBusinessSchema } from "@/lib/schema";
 
@@ -48,6 +49,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body bg-beast-black text-white antialiased overflow-x-hidden">
+        <ConsoleBranding />
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-1/2 focus:-translate-x-1/2 focus:z-[200] focus:bg-beast-pink focus:text-white focus:px-6 focus:py-3 focus:rounded-full focus:font-bold focus:text-sm focus:tracking-wide">Skip to main content</a>
         <Nav />
         <main id="main-content">{children}</main>

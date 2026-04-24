@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import IconButton from "@/components/ui/IconButton";
+import AnimatedCheckmark from "@/components/ui/AnimatedCheckmark";
 
 const services = [
   "CPG Marketing",
@@ -115,9 +116,7 @@ export default function GetStartedModal({ selected, onClose }: Props) {
           {submitted ? (
             <div className="text-center py-8">
               <div className="w-14 h-14 rounded-full bg-beast-pink/10 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-7 h-7 text-beast-pink" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
+                <AnimatedCheckmark className="w-7 h-7" />
               </div>
               <h3 className="font-display text-2xl font-bold text-beast-black mb-2">You&apos;re on our radar.</h3>
               <p className="text-gray-500">We&apos;ll reach out within one business day.</p>

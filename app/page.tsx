@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import HeroHeadline from "@/components/ui/HeroHeadline";
+import MagneticButton from "@/components/ui/MagneticButton";
 import ContactForm from "@/components/forms/ContactForm";
 import ClientListSection from "@/components/ui/ClientListSection";
 import IconButton from "@/components/ui/IconButton";
@@ -109,7 +110,9 @@ export default function HomePage() {
 
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4">
-              <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
+              <MagneticButton>
+                <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
+              </MagneticButton>
               <IconButton href="/work" icon="eye" variant="ghost">See Our Work</IconButton>
             </div>
           </AnimatedSection>

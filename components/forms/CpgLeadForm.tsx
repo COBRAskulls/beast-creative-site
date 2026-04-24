@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import IconButton from "@/components/ui/IconButton";
+import AnimatedCheckmark from "@/components/ui/AnimatedCheckmark";
 
 const schema = z.object({
   name: z.string().min(2, "Name is required").max(100),
@@ -48,9 +49,7 @@ export default function CpgLeadForm() {
     return (
       <div className="flex flex-col items-center text-center py-12 gap-4">
         <div className="w-16 h-16 rounded-full bg-beast-pink/20 border border-beast-pink/40 flex items-center justify-center">
-          <svg className="w-8 h-8 text-beast-pink" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
+          <AnimatedCheckmark className="w-8 h-8" />
         </div>
         <h3 className="font-display text-2xl font-bold text-white">We Got It!</h3>
         <p className="text-gray-400 text-sm max-w-sm">
