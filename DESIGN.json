@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-24T00:00:00Z",
+  "title": "Design System: Beast Creative Agency",
+  "extensions": {
+    "colorMeta": {
+      "obsidian-stage": {
+        "role": "primary",
+        "displayName": "Obsidian Stage",
+        "canonical": "oklch(0.05 0.001 0)",
+        "tonalRamp": [
+          "oklch(0.05 0.001 0)",
+          "oklch(0.10 0.001 0)",
+          "oklch(0.15 0.001 0)",
+          "oklch(0.22 0.001 0)",
+          "oklch(0.35 0.001 0)",
+          "oklch(0.50 0.001 0)",
+          "oklch(0.70 0.001 0)",
+          "oklch(0.90 0.001 0)"
+        ]
+      },
+      "electric-magenta": {
+        "role": "primary",
+        "displayName": "Electric Magenta",
+        "canonical": "oklch(0.62 0.31 340)",
+        "tonalRamp": [
+          "oklch(0.15 0.08 340)",
+          "oklch(0.25 0.13 340)",
+          "oklch(0.35 0.19 340)",
+          "oklch(0.45 0.25 340)",
+          "oklch(0.55 0.29 340)",
+          "oklch(0.62 0.31 340)",
+          "oklch(0.72 0.25 340)",
+          "oklch(0.85 0.14 340)"
+        ]
+      },
+      "voltage-yellow": {
+        "role": "secondary",
+        "displayName": "Voltage Yellow",
+        "canonical": "oklch(0.97 0.21 103)",
+        "tonalRamp": [
+          "oklch(0.20 0.06 103)",
+          "oklch(0.35 0.09 103)",
+          "oklch(0.50 0.13 103)",
+          "oklch(0.65 0.17 103)",
+          "oklch(0.80 0.20 103)",
+          "oklch(0.97 0.21 103)",
+          "oklch(0.98 0.15 103)",
+          "oklch(0.99 0.07 103)"
+        ]
+      },
+      "signal-green": {
+        "role": "tertiary",
+        "displayName": "Signal Green",
+        "canonical": "oklch(0.85 0.28 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.08 155)",
+          "oklch(0.25 0.13 155)",
+          "oklch(0.38 0.19 155)",
+          "oklch(0.50 0.23 155)",
+          "oklch(0.65 0.26 155)",
+          "oklch(0.85 0.28 155)",
+          "oklch(0.90 0.20 155)",
+          "oklch(0.95 0.10 155)"
+        ]
+      },
+      "carbon": {
+        "role": "neutral",
+        "displayName": "Carbon",
+        "canonical": "oklch(0.14 0.001 0)",
+        "tonalRamp": [
+          "oklch(0.08 0.001 0)",
+          "oklch(0.12 0.001 0)",
+          "oklch(0.16 0.001 0)",
+          "oklch(0.22 0.001 0)",
+          "oklch(0.35 0.001 0)",
+          "oklch(0.50 0.001 0)",
+          "oklch(0.68 0.001 0)",
+          "oklch(0.88 0.001 0)"
+        ]
+      },
+      "case-study-white": {
+        "role": "neutral",
+        "displayName": "Case Study White",
+        "canonical": "oklch(0.98 0.001 0)",
+        "tonalRamp": [
+          "oklch(0.06 0.001 0)",
+          "oklch(0.18 0.001 0)",
+          "oklch(0.32 0.001 0)",
+          "oklch(0.50 0.001 0)",
+          "oklch(0.68 0.001 0)",
+          "oklch(0.82 0.001 0)",
+          "oklch(0.93 0.001 0)",
+          "oklch(0.98 0.001 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headlines on dark sections. Primary first-impression instrument." },
+      "headline": { "displayName": "Headline", "purpose": "Section openers, case study titles, work page h1s." },
+      "title": { "displayName": "Title", "purpose": "Subsection headers, card headings, sidebar titles." },
+      "body": { "displayName": "Body", "purpose": "Case study and service page body copy. Max line length 65-75ch." },
+      "label": { "displayName": "Label", "purpose": "Section eyebrows, metadata labels, form field labels. Always uppercase." }
+    },
+    "shadows": [
+      {
+        "name": "card-shadow",
+        "value": "0px 5px 15px 0px rgba(0,0,0,0.3)",
+        "purpose": "Standard image/video card wrapper on light sections. The only resting-state shadow."
+      },
+      {
+        "name": "hover-lift",
+        "value": "0 24px 48px rgba(0,0,0,0.55)",
+        "purpose": "Related case study cards on hover, paired with translateY(-10px)."
+      },
+      {
+        "name": "button-glow-yellow",
+        "value": "0 15px 30px rgba(255,255,0,0.3)",
+        "purpose": "Primary button on hover when transitioning to Voltage Yellow fill."
+      },
+      {
+        "name": "button-glow-magenta",
+        "value": "0 15px 30px rgba(255,17,152,0.4)",
+        "purpose": "Light button on hover when transitioning to Electric Magenta fill."
+      },
+      {
+        "name": "focus-ring",
+        "value": "0 0 0 3px rgba(255,17,152,0.15)",
+        "purpose": "Form input focus state, paired with Magenta border-color."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Card hover transitions and AnimatedSection reveals. Fast in, slow out."
+      },
+      {
+        "name": "ease-standard",
+        "value": "all 0.3s ease",
+        "purpose": "Default button and link transitions."
+      },
+      {
+        "name": "ease-fast",
+        "value": "200ms",
+        "purpose": "Input focus border transitions. Snappy feedback."
+      },
+      {
+        "name": "card-float",
+        "value": "card-float 3s ease-in-out infinite",
+        "purpose": "Product and ad card floating animation on hero sections. 10px vertical travel."
+      },
+      {
+        "name": "scroll-reveal",
+        "value": "fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "purpose": "AnimatedSection component — fade-in from 24px below, opacity 0 to 1."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" },
+      { "name": "2xl", "value": "1536px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary CTA on dark backgrounds. Color-swaps from Magenta to Yellow on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Book Free 15-Min Call</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 1em 2.4em; font-size: 12px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; border-radius: 45px; border: none; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all 0.3s ease; background-color: #FF1198; color: #FFFFFF; box-shadow: 0 8px 15px rgba(0,0,0,0.15); font-family: Arial, sans-serif; } .ds-btn-primary:hover { background-color: #FFFF00; color: #000000; box-shadow: 0 15px 30px rgba(255,255,0,0.3); transform: translateY(-5px); } .ds-btn-primary:active { transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #FF1198; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary CTA on dark backgrounds. White border, white text, fills white on hover.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">View Case Studies</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 1em 2.4em; font-size: 12px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; border-radius: 45px; border: 1.5px solid rgba(255,255,255,0.45); white-space: nowrap; text-decoration: none; cursor: pointer; transition: all 0.3s ease; background: transparent; color: #FFFFFF; box-shadow: none; font-family: Arial, sans-serif; } .ds-btn-ghost:hover { background: #FFFFFF; color: #0A0A0A; border-color: #FFFFFF; box-shadow: 0 15px 30px rgba(255,255,255,0.18); transform: translateY(-5px); } .ds-btn-ghost:active { transform: translateY(-1px); } .ds-btn-ghost:focus-visible { outline: 2px solid #FF1198; outline-offset: 2px; }"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Primary CTA on light/white backgrounds. White fill, color-swaps to Magenta on hover.",
+      "html": "<a class=\"ds-btn-light\" href=\"#\">Get Started</a>",
+      "css": ".ds-btn-light { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 1em 2.4em; font-size: 12px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; border-radius: 45px; border: none; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all 0.3s ease; background-color: #FFFFFF; color: #0A0A0A; box-shadow: 0 8px 15px rgba(0,0,0,0.10); font-family: Arial, sans-serif; } .ds-btn-light:hover { background-color: #FF1198; color: #FFFFFF; box-shadow: 0 15px 30px rgba(255,17,152,0.40); transform: translateY(-5px); } .ds-btn-light:active { transform: translateY(-1px); } .ds-btn-light:focus-visible { outline: 2px solid #FF1198; outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Work page category filter. Transparent at rest, Magenta fill when active.",
+      "html": "<div class=\"ds-chip-bar\"><button class=\"ds-chip ds-chip-active\" aria-pressed=\"true\">All</button><button class=\"ds-chip\" aria-pressed=\"false\">CPG Marketing</button><button class=\"ds-chip\" aria-pressed=\"false\">Branding</button><button class=\"ds-chip\" aria-pressed=\"false\">Paid Media</button></div>",
+      "css": ".ds-chip-bar { display: flex; gap: 8px; flex-wrap: wrap; } .ds-chip { display: inline-flex; align-items: center; padding: 6px 16px; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; border-radius: 9999px; border: 1px solid #2E2E2E; background: transparent; color: #C8C8C8; cursor: pointer; transition: all 0.2s ease; font-family: Arial, sans-serif; } .ds-chip:hover { border-color: #FF1198; color: #FF1198; } .ds-chip-active { background-color: #FF1198; color: #FFFFFF; border-color: #FF1198; }"
+    },
+    {
+      "name": "Dark Form Input",
+      "kind": "input",
+      "refersTo": "form-input",
+      "description": "Text input for dark-background forms. Magenta focus ring.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-ex-input\">Full Name</label><input class=\"ds-input\" id=\"ds-ex-input\" type=\"text\" placeholder=\"Your name\" /></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; } .ds-field-label { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C8C8C8; font-family: Arial, sans-serif; } .ds-input { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid #2E2E2E; border-radius: 8px; padding: 12px 16px; color: white; font-size: 14px; transition: border-color 200ms, box-shadow 200ms; font-family: Arial, sans-serif; box-sizing: border-box; } .ds-input:focus { outline: none; border-color: #FF1198; box-shadow: 0 0 0 3px rgba(255,17,152,0.15); } .ds-input::placeholder { color: #525252; }"
+    },
+    {
+      "name": "Section Eyebrow + Heading",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Recurring pattern: Magenta uppercase overline above an uppercase display heading.",
+      "html": "<div class=\"ds-section-header\"><p class=\"ds-eyebrow\">Case Studies</p><h2 class=\"ds-heading\">The Work</h2></div>",
+      "css": ".ds-section-header { display: flex; flex-direction: column; gap: 12px; } .ds-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #FF1198; margin: 0; font-family: Arial, sans-serif; } .ds-heading { font-size: clamp(2.25rem, 5vw + 0.5rem, 4rem); font-weight: 800; line-height: 1.05; letter-spacing: 0.02em; text-transform: uppercase; color: #FFFFFF; margin: 0; font-family: \"Arial Narrow\", Arial, sans-serif; }"
+    },
+    {
+      "name": "Stat Bar Item",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Statistics displayed in the yellow stats bar on work/case study pages.",
+      "html": "<div class=\"ds-stat\"><div class=\"ds-stat-number\">36,581</div><div class=\"ds-stat-label\">Consumer Emails Collected</div></div>",
+      "css": ".ds-stat { display: flex; flex-direction: column; gap: 8px; text-align: center; padding: 16px; } .ds-stat-number { font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 900; line-height: 0.95; letter-spacing: 0.01em; color: #0A0A0A; font-family: \"Arial Narrow\", Arial, sans-serif; } .ds-stat-label { font-size: 11px; font-weight: 600; letter-spacing: 0.10em; text-transform: uppercase; color: #0A0A0A; font-family: Arial, sans-serif; opacity: 0.7; }"
+    },
+    {
+      "name": "Dark Content Card",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Sidebar and stat panel cards on work pages. Carbon background, Magenta label, Yellow values.",
+      "html": "<div class=\"ds-dark-card\"><p class=\"ds-dark-card-category\">Campaign Results</p><div class=\"ds-dark-card-row\"><span class=\"ds-dark-card-label\">Consumer Emails</span><span class=\"ds-dark-card-value\">36,581</span></div><div class=\"ds-dark-card-row\"><span class=\"ds-dark-card-label\">Ad Budget</span><span class=\"ds-dark-card-value\">$6,000</span></div><div class=\"ds-dark-card-row\"><span class=\"ds-dark-card-label\">CTR</span><span class=\"ds-dark-card-value\">7.03%</span></div></div>",
+      "css": ".ds-dark-card { background: #1A1A1A; border: 1px solid #2E2E2E; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 4px; } .ds-dark-card-category { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #FF1198; margin: 0 0 12px 0; font-family: Arial, sans-serif; } .ds-dark-card-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #2E2E2E; font-family: Arial, sans-serif; } .ds-dark-card-row:last-child { border-bottom: none; } .ds-dark-card-label { font-size: 14px; color: #C8C8C8; } .ds-dark-card-value { font-size: 16px; font-weight: 700; color: #FFFF00; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Navigation link at rest and active state. Active shows Magenta pill + Yellow text.",
+      "html": "<nav class=\"ds-nav-demo\"><a class=\"ds-nav-link\" href=\"#\">Services</a><a class=\"ds-nav-link\" href=\"#\">Work</a><a class=\"ds-nav-link ds-nav-active\" href=\"#\">About</a><a class=\"ds-nav-link\" href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav-demo { display: flex; align-items: center; gap: 4px; background: rgba(10,10,10,0.95); padding: 8px; border-radius: 9999px; } .ds-nav-link { font-weight: 500; font-size: 14px; color: #C8C8C8; transition: color 150ms; background: none; border: none; cursor: pointer; text-decoration: none; padding: 8px 16px; border-radius: 9999px; } .ds-nav-link:hover { color: #FF1198; } .ds-nav-active { background-color: #FF1198; color: #FFFF00; font-weight: 600; } .ds-nav-active:hover { color: #FFFF00; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Black Ledger",
+    "overview": "Beast Creative Agency's visual system is a documented record of performance, not a style exercise. The Obsidian Stage — a near-true black (#0A0A0A) canvas — exists to give Electric Magenta and Voltage Yellow the contrast they need to hit like data points, not decoration. Every color choice, every shadow, every uppercase headline is calibrated to signal one thing: this agency delivers, and the numbers prove it.\n\nThe system refuses softness. There are no gradients on text, no glass cards, no ambient blurs, no pastel accents. Dark surfaces carry structure through tonal steps, light sections are neutral near-white, and the two electric accents do all the emotive work. Motion is present but purposeful.\n\nThis is a brand-register site. Its job is to convert skeptical CPG buyers who are vetting agencies for national campaigns. The design has to demonstrate what it claims.",
+    "keyCharacteristics": [
+      "Obsidian-first: black is the canvas, not the accent",
+      "Electric accents are earned, not sprinkled — Magenta appears on ≤15% of any screen",
+      "All display type is uppercase — authority is baked into the letterform",
+      "Buttons transform on hover via color-swap: Magenta to Yellow",
+      "Cards lift vertically on hover; never scale or blur",
+      "Real numbers appear early and visually prominent — stat counters in yellow",
+      "Light sections exist to breathe between dark sequences, never as defaults"
+    ],
+    "rules": [
+      { "name": "The One Stage Rule", "body": "The Obsidian Stage is the default. Every page opens dark. Light sections are deliberate breaks — never the opening surface.", "section": "colors" },
+      { "name": "The Yellow Discipline Rule", "body": "Voltage Yellow is a data color, not a brand flourish. It appears in stat bars, stat counters, and button hover states. It never colors body text, decorative elements, or headings outside of statistics.", "section": "colors" },
+      { "name": "The No-Split Rule", "body": "Electric Magenta and Voltage Yellow never appear adjacent as large fills. They may share a hover state (Magenta to Yellow on a button) but not a layout grid side-by-side.", "section": "colors" },
+      { "name": "The Uppercase Mandate", "body": "All display-level type (Display, Headline, Title) is uppercase. This is a system-level rule enforced via CSS text-transform: uppercase. Never render a hero or section heading in sentence case or title case.", "section": "typography" },
+      { "name": "The Stat Exception", "body": "Stat Jumbo is the only display-level role that renders in Voltage Yellow on dark backgrounds. All other display-level type renders in white on dark, or Obsidian Stage on light.", "section": "typography" },
+      { "name": "The Flat-by-Default Rule", "body": "Dark surface components are flat at rest. Shadows and lifts appear only as hover responses. Resting dark components use tonal surface shifts (Carbon, Dark Elevated) — not drop shadows.", "section": "elevation" },
+      { "name": "The Inner Shadow Rule", "body": "When an element carries a CSS animation (float, pulse, card-float keyframes), the shadow wrapper must be an inner child element, not the animated parent. filter: drop-shadow() on an animated wrapper causes GPU compositing issues and flicker on Safari.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the Obsidian Stage (#0A0A0A) as the default canvas. Every page opens dark.",
+      "Do use Electric Magenta (#FF1198) for interactive affordances exclusively: CTAs, hover states, focus rings, active nav.",
+      "Do express statistics with large Stat Jumbo type in Voltage Yellow, animated via StatCounter on scroll.",
+      "Do apply the standard card shadow (0px 5px 15px 0px rgba(0,0,0,0.3)) to all image and video card wrappers on light sections.",
+      "Do force all display-level headings uppercase via text-transform: uppercase.",
+      "Do use the button hover color-swap: Magenta to Yellow on dark backgrounds, White to Magenta on light.",
+      "Do put shadow wrappers on inner child elements when the outer element has a CSS float or pulse animation.",
+      "Do add prefers-reduced-motion guards around GSAP animations.",
+      "Do use Ash (#C8C8C8) for secondary text on dark surfaces — never pure white for secondary copy."
+    ],
+    "donts": [
+      "Don't use gradient text (background-clip: text with a gradient background). Prohibited system-wide.",
+      "Don't use side-stripe borders (border-left or border-right > 1px as a colored accent on cards or callouts).",
+      "Don't use Voltage Yellow as body text, heading text, or decorative color.",
+      "Don't use glassmorphism — blurred or frosted cards used decoratively.",
+      "Don't build anything that looks like a generic agency template, a pastel soft-sell site, or a WordPress layout with stock imagery.",
+      "Don't use the hero-metric template (big number, small label, gradient accent in a card).",
+      "Don't add an em dash (—) in any copy, headings, or UI text.",
+      "Don't render a Unicode checkmark (✓) as text. Use the inline SVG path M5 13l4 4L19 7.",
+      "Don't add new top-level color accents. The four-color palette is the complete system.",
+      "Don't use filter: drop-shadow() on any element that has a float or pulse CSS animation."
+    ]
+  }
+}
