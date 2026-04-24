@@ -122,7 +122,7 @@ export default function CoinlineHero() {
     });
 
     // Stars
-    for (let i = 0; i < 130; i++) {
+    for (let i = 0; i < 260; i++) {
       const el = document.createElement("div");
       el.className = "hs-star";
       worldEl.appendChild(el);
