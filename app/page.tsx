@@ -141,6 +141,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* TODO: Add agency-level stats bar when verified: total clients served, team headcount, total articles published */}
       {/* STATS BAR */}
       <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
@@ -176,7 +177,7 @@ export default function HomePage() {
                 At Beast Creative Agency, we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We&apos;re a team of strategists, creatives, and AI-powered operators working with brands nationwide. We specialize in CPG brands scaling from regional to national — and with ambitious businesses who are tired of agencies that talk more than they deliver.
+                Founded in 2020 in San Antonio, TX, we&apos;re a team of strategists, creatives, and AI-powered operators working with food, beverage, and consumer brands nationwide. We specialize in CPG brands scaling from regional to national — and with ambitious businesses who are tired of agencies that talk more than they deliver.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
