@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { faqSchema } from "@/lib/schema";
 import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import HeroHeadline from "@/components/ui/HeroHeadline";
@@ -29,6 +30,34 @@ export const metadata: Metadata = {
     canonical: "https://beastcreativeagency.com",
   },
 };
+
+
+const homepageFaqs = [
+  {
+    q: "What does a CPG marketing agency do?",
+    a: "A CPG marketing agency helps food, beverage, and consumer packaged goods brands grow distribution, build consumer databases, and scale revenue through targeted campaigns. At Beast Creative, we specialize in sweepstakes, paid social, SEO, and AI-driven content that generates the consumer proof retailers like Walmart, H-E-B, and Target require before expanding shelf space.",
+  },
+  {
+    q: "How much does CPG marketing cost?",
+    a: "Our CPG campaigns typically start at $2,500/month in ad spend with agency fees on top. For context, our Sun-Bird Seasonings Walmart rollout campaign generated 36,581 consumer emails on a $6,000 total budget — nearly 8x industry benchmark CTR. We don't take on accounts below that threshold; the math doesn't work for either side.",
+  },
+  {
+    q: "What's the difference between SEO and AEO?",
+    a: "SEO (Search Engine Optimization) helps your brand rank in Google's traditional search results. AEO (Answer Engine Optimization) goes further — structuring your content so AI tools like ChatGPT, Perplexity, and Google AI Overviews cite your brand when consumers ask questions. Both are essential for modern brand visibility.",
+  },
+  {
+    q: "How do I market a Walmart rollout?",
+    a: "A successful Walmart rollout campaign starts with consumer proof: email lists, engagement data, and brand awareness metrics that retail buyers want to see before approving expansion. We run sweepstakes and targeted paid campaigns to build that proof before your pitch. Our Sun-Bird Seasonings campaign collected 36,581 consumer emails specifically for their national Walmart distribution push.",
+  },
+  {
+    q: "Do you work outside San Antonio?",
+    a: "Yes. Beast Creative is headquartered in San Antonio, TX and works with brands across the United States. All of our active case study clients are national brands, and we collaborate fully remotely with client teams in any market.",
+  },
+  {
+    q: "What makes Beast Creative different?",
+    a: "We publish our results by name. No anonymous case studies, no inflated projections. Every number on our site — 7.03% CTR, 36,581 entries, 500%+ MRR growth — is attributed to a real client and a real campaign you can ask us about on a free 15-minute strategy call.",
+  },
+];
 
 const caseStudies = [
   {
@@ -107,8 +136,13 @@ const process = [
 ];
 
 export default function HomePage() {
+  const faqJsonLd = faqSchema(homepageFaqs.map((f) => ({ question: f.q, answer: f.a })));
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* HERO */}
       <section className="relative min-h-screen flex items-center bg-beast-black overflow-hidden">
         <div className="absolute inset-0 bg-beast-black" />
@@ -365,6 +399,41 @@ export default function HomePage() {
                   <h3 className="font-display text-xl font-bold text-beast-black mb-3">{step.name}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed flex-1">{step.desc}</p>
                 </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* FAQ — AEO + AI RANKING */}
+      <section className="bg-section-offwhite py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-6 lg:px-20">
+          <AnimatedSection className="text-center mb-12">
+            <p className="section-eyebrow text-beast-pink mb-4">Common Questions</p>
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
+              Everything You Want to Know.
+            </h2>
+          </AnimatedSection>
+          <div className="space-y-3">
+            {homepageFaqs.map((faq, i) => (
+              <AnimatedSection key={faq.q} delay={i * 0.06}>
+                <details className="group bg-white rounded-2xl border border-gray-100 overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none font-display font-semibold text-beast-black text-base select-none">
+                    {faq.q}
+                    <svg
+                      className="w-5 h-5 text-beast-pink shrink-0 ml-4 transition-transform duration-200 group-open:rotate-45"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14M5 12h14" />
+                    </svg>
+                  </summary>
+                  <p className="px-6 pb-6 text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                </details>
               </AnimatedSection>
             ))}
           </div>
