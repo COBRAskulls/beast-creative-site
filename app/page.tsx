@@ -9,9 +9,25 @@ import ClientListSection from "@/components/ui/ClientListSection";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
-  title: "Beast Creative Agency | AI-Powered Digital Marketing in San Antonio, TX",
+  title: "CPG Marketing Agency in San Antonio, TX | Beast Creative",
   description:
-    "Beast Creative Agency runs AI-enhanced CPG campaigns for brands going national — sweepstakes, paid social, SEO, and content production. Every result on this site is real, named, and verified.",
+    "San Antonio CPG marketing agency helping food, beverage, and consumer brands scale to Walmart and beyond with SEO, paid media, and AI-driven campaigns.",
+  openGraph: {
+    title: "CPG Marketing Agency in San Antonio, TX | Beast Creative",
+    description:
+      "San Antonio CPG marketing agency helping food, beverage, and consumer brands scale to Walmart and beyond with SEO, paid media, and AI-driven campaigns.",
+    type: "website",
+    url: "https://beastcreativeagency.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CPG Marketing Agency in San Antonio, TX | Beast Creative",
+    description:
+      "San Antonio CPG marketing agency helping food, beverage, and consumer brands scale to Walmart and beyond with SEO, paid media, and AI-driven campaigns.",
+  },
+  alternates: {
+    canonical: "https://beastcreativeagency.com",
+  },
 };
 
 const caseStudies = [
