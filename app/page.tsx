@@ -387,7 +387,7 @@ export default function HomePage() {
           <AnimatedSection className="text-center mb-12">
             <p className="section-eyebrow text-beast-pink mb-4">How We Work</p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
-              Four Steps. No Black Box.
+              Four Steps to Data-Driven Results.
             </h2>
           </AnimatedSection>
 
