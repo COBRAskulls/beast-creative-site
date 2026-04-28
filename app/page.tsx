@@ -173,10 +173,10 @@ export default function HomePage() {
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Who We Are</p>
               <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal mb-6">
-                We Are Beast.
+                Beast Creative.
               </h2>
               <p className="text-body-lead text-gray-600 mb-4">
-                At Beast Creative Agency, we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
+                At Beast Creative Agency — San Antonio&apos;s CPG-specialist marketing team — we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Founded in 2020 in San Antonio, TX, we&apos;re a team of strategists, creatives, and AI-powered operators working with food, beverage, and consumer brands nationwide. We specialize in CPG brands scaling from regional to national — and with ambitious businesses who are tired of agencies that talk more than they deliver.
@@ -187,7 +187,7 @@ export default function HomePage() {
                 <p className="font-display font-semibold text-beast-black text-sm uppercase tracking-widest mb-5">Who We Serve:</p>
                 <ul className="space-y-4">
                   {[
-                    "CPG food & beverage brands going from regional to national distribution",
+                    "CPG food & beverage brands scaling from regional to national retail distribution",
                     "Emerging CPG brands breaking into Walmart, Target, Kroger, or regional chains",
                     "Multi-brand holding companies with fragmented digital presence",
                     "Ambitious brands ready to grow nationally",
@@ -337,7 +337,7 @@ export default function HomePage() {
               <span className="text-beast-pink">Your Marketing Should Be First.</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-              We&apos;ve helped CPG food and beverage brands build the consumer databases, engagement metrics, and retail-readiness proof that retail buyers demand. Walk in with data — not hope.
+              We&apos;ve helped CPG food and beverage brands build the consumer databases, engagement metrics, and retail-readiness proof that retail buyers at Walmart, Target, H-E-B, and Kroger demand. Walk in with data — not hope.
             </p>
             <IconButton href="/cpg" icon="cpg">See Our CPG Playbook</IconButton>
           </AnimatedSection>
