@@ -112,19 +112,25 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-6">
-              AI-Powered Digital Marketing Agency · National
+              CPG Marketing Agency · San Antonio, TX · Serving Brands Nationally
             </p>
           </AnimatedSection>
 
           <HeroHeadline />
 
-          <AnimatedSection delay={0.2}>
+          <AnimatedSection delay={0.15}>
+            <h2 className="font-display text-2xl lg:text-3xl font-bold text-white/60 max-w-3xl mb-6">
+              We Don&apos;t Claim Results. We Document Them.
+            </h2>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.25}>
             <p className="text-body-lead text-gray-300 max-w-2xl mb-10">
-              Beast Creative Agency runs CPG campaigns for brands going national. Every result on this site is real, named, and verified — sweepstakes, paid social, SEO, and AI-enhanced content backed by numbers that hold up under scrutiny.
+              Beast Creative Agency is a CPG marketing agency based in San Antonio, TX helping food, beverage, and consumer brands go national. Every result on this site is real, named, and verified — sweepstakes, paid social, SEO, and AI-enhanced content backed by numbers that hold up under scrutiny.
             </p>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.3}>
+          <AnimatedSection delay={0.35}>
             <div className="flex flex-col sm:flex-row gap-4">
               <MagneticButton>
                 <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

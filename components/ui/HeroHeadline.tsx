@@ -14,20 +14,20 @@ export default function HeroHeadline() {
 
   if (prefersReduced) {
     return (
-      <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6">
-        We Don&apos;t Claim Results.
+      <h1 className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-4">
+        San Antonio&apos;s Full-Service
         <br />
-        <span className="text-beast-pink">We Document Them.</span>
+        <span className="text-beast-pink">CPG Marketing Agency</span>
       </h1>
     );
   }
 
-  const line1 = ["We", "Don't", "Claim", "Results."];
-  const line2 = ["We", "Document", "Them."];
+  const line1 = ["San", "Antonio's", "Full-Service"];
+  const line2 = ["CPG", "Marketing", "Agency"];
 
   return (
     <motion.h1
-      className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-6"
+      className="text-display-hero font-display font-extrabold text-white max-w-4xl mb-4"
       initial="hidden"
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } } }}
