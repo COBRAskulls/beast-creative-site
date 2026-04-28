@@ -59,7 +59,6 @@ export function localBusinessSchema() {
     },
     openingHours: "Mo-Fr 09:00-18:00",
     priceRange: "$$",
-    email: "hello@beastcreativeagency.com",
     foundingDate: "2020",
     serviceArea: {
       "@type": "Country",
