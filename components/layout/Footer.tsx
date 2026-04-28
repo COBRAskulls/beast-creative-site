@@ -16,8 +16,11 @@ export default function Footer() {
               height={40}
               className="h-8 w-auto mb-4"
             />
-            <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
+            <p className="text-sm text-gray-500 leading-relaxed mb-3 max-w-xs">
               AI-powered marketing that actually moves the needle. CPG and digital marketing for brands scaling nationally.
+            </p>
+            <p className="text-xs text-gray-600 font-medium">
+              Beast Creative Agency · San Antonio, TX
             </p>
           </div>
 

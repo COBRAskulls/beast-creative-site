@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { faqSchema } from "@/lib/schema";
 import StatCounter from "@/components/ui/StatCounter";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import HeroHeadline from "@/components/ui/HeroHeadline";
@@ -9,10 +10,54 @@ import ClientListSection from "@/components/ui/ClientListSection";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
-  title: "Beast Creative Agency | AI-Powered Digital Marketing in San Antonio, TX",
+  title: "CPG Marketing Agency in San Antonio, TX | Beast Creative",
   description:
-    "Beast Creative Agency runs AI-enhanced CPG campaigns for brands going national — sweepstakes, paid social, SEO, and content production. Every result on this site is real, named, and verified.",
+    "San Antonio CPG marketing agency helping food, beverage, and consumer brands scale to Walmart and beyond with SEO, paid media, and AI-driven campaigns.",
+  openGraph: {
+    title: "CPG Marketing Agency in San Antonio, TX | Beast Creative",
+    description:
+      "San Antonio CPG marketing agency helping food, beverage, and consumer brands scale to Walmart and beyond with SEO, paid media, and AI-driven campaigns.",
+    type: "website",
+    url: "https://beastcreativeagency.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CPG Marketing Agency in San Antonio, TX | Beast Creative",
+    description:
+      "San Antonio CPG marketing agency helping food, beverage, and consumer brands scale to Walmart and beyond with SEO, paid media, and AI-driven campaigns.",
+  },
+  alternates: {
+    canonical: "https://beastcreativeagency.com",
+  },
 };
+
+
+const homepageFaqs = [
+  {
+    q: "What does a CPG marketing agency do?",
+    a: "A CPG marketing agency helps food, beverage, and consumer packaged goods brands grow distribution, build consumer databases, and scale revenue through targeted campaigns. At Beast Creative, we specialize in sweepstakes, paid social, SEO, and AI-driven content that generates the consumer proof retailers like Walmart, H-E-B, and Target require before expanding shelf space.",
+  },
+  {
+    q: "How much does CPG marketing cost?",
+    a: "Our CPG campaigns typically start at $2,500/month in ad spend with agency fees on top. For context, our Sun-Bird Seasonings Walmart rollout campaign generated 36,581 consumer emails on a $6,000 total budget — nearly 8x industry benchmark CTR. We don't take on accounts below that threshold; the math doesn't work for either side.",
+  },
+  {
+    q: "What's the difference between SEO and AEO?",
+    a: "SEO (Search Engine Optimization) helps your brand rank in Google's traditional search results. AEO (Answer Engine Optimization) goes further — structuring your content so AI tools like ChatGPT, Perplexity, and Google AI Overviews cite your brand when consumers ask questions. Both are essential for modern brand visibility.",
+  },
+  {
+    q: "How do I market a Walmart rollout?",
+    a: "A successful Walmart rollout campaign starts with consumer proof: email lists, engagement data, and brand awareness metrics that retail buyers want to see before approving expansion. We run sweepstakes and targeted paid campaigns to build that proof before your pitch. Our Sun-Bird Seasonings campaign collected 36,581 consumer emails specifically for their national Walmart distribution push.",
+  },
+  {
+    q: "Do you work outside San Antonio?",
+    a: "Yes. Beast Creative is headquartered in San Antonio, TX and works with brands across the United States. All of our active case study clients are national brands, and we collaborate fully remotely with client teams in any market.",
+  },
+  {
+    q: "What makes Beast Creative different?",
+    a: "We publish our results by name. No anonymous case studies, no inflated projections. Every number on our site — 7.03% CTR, 36,581 entries, 500%+ MRR growth — is attributed to a real client and a real campaign you can ask us about on a free 15-minute strategy call.",
+  },
+];
 
 const caseStudies = [
   {
@@ -76,7 +121,12 @@ const services = [
     desc: "Conversion-focused builds, mobile-first, performance-optimized to turn traffic into revenue.",
     href: "/services/web-design",
   },
+  // TODO: Add Email Marketing service page at /services/email-marketing
+  // TODO: Add Social Media service page at /services/social-media
 ];
+
+// TODO: Consider promoting Williams All-Stars (13,660 entries), Williams Bowl ($1,500 budget),
+// Pioneer (ROAS), or Coinline (branding) to homepage grid when 4-column layout is desired
 
 const process = [
   { step: "01", name: "Discover", desc: "Deep-dive audit and competitor gap analysis. We find where your brand is losing ground and where the fastest wins are hiding." },
@@ -86,8 +136,13 @@ const process = [
 ];
 
 export default function HomePage() {
+  const faqJsonLd = faqSchema(homepageFaqs.map((f) => ({ question: f.q, answer: f.a })));
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* HERO */}
       <section className="relative min-h-screen flex items-center bg-beast-black overflow-hidden">
         <div className="absolute inset-0 bg-beast-black" />
@@ -96,19 +151,25 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-20 pt-28 pb-24 lg:pt-40 lg:pb-32 w-full">
           <AnimatedSection>
             <p className="section-eyebrow text-beast-pink mb-6">
-              AI-Powered Digital Marketing Agency · National
+              CPG Marketing Agency · San Antonio, TX · Serving Brands Nationally
             </p>
           </AnimatedSection>
 
           <HeroHeadline />
 
-          <AnimatedSection delay={0.2}>
+          <AnimatedSection delay={0.15}>
+            <h2 className="font-display text-2xl lg:text-3xl font-bold text-white/60 max-w-3xl mb-6">
+              We Don&apos;t Claim Results. We Document Them.
+            </h2>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.25}>
             <p className="text-body-lead text-gray-300 max-w-2xl mb-10">
-              Beast Creative Agency runs CPG campaigns for brands going national. Every result on this site is real, named, and verified — sweepstakes, paid social, SEO, and AI-enhanced content backed by numbers that hold up under scrutiny.
+              Beast Creative Agency is a CPG marketing agency based in San Antonio, TX helping food, beverage, and consumer brands go national. Every result on this site is real, named, and verified — sweepstakes, paid social, SEO, and AI-enhanced content backed by numbers that hold up under scrutiny.
             </p>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.3}>
+          <AnimatedSection delay={0.35}>
             <div className="flex flex-col sm:flex-row gap-4">
               <MagneticButton>
                 <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
@@ -119,6 +180,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* TODO: Add agency-level stats bar when verified: total clients served, team headcount, total articles published */}
       {/* STATS BAR */}
       <section className="bg-beast-yellow py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
@@ -148,13 +210,13 @@ export default function HomePage() {
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Who We Are</p>
               <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal mb-6">
-                We Are Beast.
+                Beast Creative.
               </h2>
               <p className="text-body-lead text-gray-600 mb-4">
-                At Beast Creative Agency, we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
+                At Beast Creative Agency — San Antonio&apos;s CPG-specialist marketing team, founded in 2020 by Edy (Owner) and John Speer (COO) — we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We&apos;re a team of strategists, creatives, and AI-powered operators working with brands nationwide. We specialize in CPG brands scaling from regional to national — and with ambitious businesses who are tired of agencies that talk more than they deliver.
+                Founded in 2020 in San Antonio, TX, we&apos;re a team of strategists, creatives, and AI-powered operators working with food, beverage, and consumer brands nationwide. We specialize in CPG brands scaling from regional to national — and with ambitious businesses who are tired of agencies that talk more than they deliver.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
@@ -162,7 +224,7 @@ export default function HomePage() {
                 <p className="font-display font-semibold text-beast-black text-sm uppercase tracking-widest mb-5">Who We Serve:</p>
                 <ul className="space-y-4">
                   {[
-                    "CPG food & beverage brands going from regional to national distribution",
+                    "CPG food & beverage brands scaling from regional to national retail distribution",
                     "Emerging CPG brands breaking into Walmart, Target, Kroger, or regional chains",
                     "Multi-brand holding companies with fragmented digital presence",
                     "Ambitious brands ready to grow nationally",
@@ -312,7 +374,7 @@ export default function HomePage() {
               <span className="text-beast-pink">Your Marketing Should Be First.</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-              We&apos;ve helped CPG food and beverage brands build the consumer databases, engagement metrics, and retail-readiness proof that retail buyers demand. Walk in with data — not hope.
+              We&apos;ve helped CPG food and beverage brands build the consumer databases, engagement metrics, and retail-readiness proof that retail buyers at Walmart, Target, H-E-B, and Kroger demand. Walk in with data — not hope.
             </p>
             <IconButton href="/cpg" icon="cpg">See Our CPG Playbook</IconButton>
           </AnimatedSection>
@@ -337,6 +399,41 @@ export default function HomePage() {
                   <h3 className="font-display text-xl font-bold text-beast-black mb-3">{step.name}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed flex-1">{step.desc}</p>
                 </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* FAQ — AEO + AI RANKING */}
+      <section className="bg-section-offwhite py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-6 lg:px-20">
+          <AnimatedSection className="text-center mb-12">
+            <p className="section-eyebrow text-beast-pink mb-4">Common Questions</p>
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-beast-black tracking-normal">
+              Everything You Want to Know.
+            </h2>
+          </AnimatedSection>
+          <div className="space-y-3">
+            {homepageFaqs.map((faq, i) => (
+              <AnimatedSection key={faq.q} delay={i * 0.06}>
+                <details className="group bg-white rounded-2xl border border-gray-100 overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none font-display font-semibold text-beast-black text-base select-none">
+                    {faq.q}
+                    <svg
+                      className="w-5 h-5 text-beast-pink shrink-0 ml-4 transition-transform duration-200 group-open:rotate-45"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14M5 12h14" />
+                    </svg>
+                  </summary>
+                  <p className="px-6 pb-6 text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                </details>
               </AnimatedSection>
             ))}
           </div>

@@ -14,19 +14,26 @@ export function organizationSchema() {
       addressCountry: "US",
     },
     telephone: "+12103320567",
+    email: "hello@beastcreativeagency.com",
     sameAs: [
       "https://www.facebook.com/beastcreativeagency",
       "https://www.instagram.com/beastcreativeagency",
       "https://www.linkedin.com/company/beast-creative-agency",
     ],
+    foundingDate: "2020",
     areaServed: "United States",
     serviceType: [
       "CPG Marketing",
       "Digital Marketing",
       "SEO",
+      "AEO",
+      "Answer Engine Optimization",
       "Paid Media",
       "Branding",
       "Web Design",
+      "AI Content Production",
+      "Food and Beverage Marketing",
+      "Consumer Packaged Goods Marketing",
     ],
   };
 }
@@ -38,6 +45,7 @@ export function localBusinessSchema() {
     name: "Beast Creative Agency",
     url: "https://beastcreativeagency.com",
     telephone: "+12103320567",
+    email: "hello@beastcreativeagency.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "San Antonio",
@@ -51,6 +59,19 @@ export function localBusinessSchema() {
     },
     openingHours: "Mo-Fr 09:00-18:00",
     priceRange: "$$",
+    foundingDate: "2020",
+    serviceArea: {
+      "@type": "Country",
+      "name": "United States",
+    },
+    knowsAbout: [
+      "CPG Marketing",
+      "Food and Beverage Marketing",
+      "Walmart Retail Marketing",
+      "Search Engine Optimization",
+      "Answer Engine Optimization",
+      "Sweepstakes Marketing",
+    ],
   };
 }
 
@@ -86,5 +107,9 @@ export function serviceSchema(service: {
       url: "https://beastcreativeagency.com",
     },
     areaServed: "United States",
+    serviceArea: {
+      "@type": "Country",
+      "name": "United States",
+    },
   };
 }
