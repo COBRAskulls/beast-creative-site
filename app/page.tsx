@@ -213,7 +213,7 @@ export default function HomePage() {
                 Beast Creative.
               </h2>
               <p className="text-body-lead text-gray-600 mb-4">
-                At Beast Creative Agency — San Antonio&apos;s CPG-specialist marketing team — we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
+                At Beast Creative Agency — San Antonio&apos;s CPG-specialist marketing team, founded in 2020 by Edy (Owner) and John Speer (COO) — we don&apos;t hide behind strategy decks and vanity metrics. We show you the numbers, the work, and the results — every single month.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Founded in 2020 in San Antonio, TX, we&apos;re a team of strategists, creatives, and AI-powered operators working with food, beverage, and consumer brands nationwide. We specialize in CPG brands scaling from regional to national — and with ambitious businesses who are tired of agencies that talk more than they deliver.
