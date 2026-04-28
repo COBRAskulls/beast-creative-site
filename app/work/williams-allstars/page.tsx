@@ -118,14 +118,14 @@ export default function WilliamsAllstarsPage() {
                   <TradingCard
                     front="/assets/card-chili-front.png"
                     back="/assets/card-chili-back.png"
-                    alt="Williams Chili"
+                    alt="Williams All-Stars Chili trading card — Beast Creative Agency"
                     rotation={-4}
                     floatDelay="0s"
                   />
                   <TradingCard
                     front="/assets/card-taco-front.png"
                     back="/assets/card-taco-back.png"
-                    alt="Williams Taco"
+                    alt="Williams All-Stars Taco trading card — Beast Creative Agency"
                     defaultFlipped={true}
                     rotation={2}
                     floatDelay="0.4s"
@@ -133,7 +133,7 @@ export default function WilliamsAllstarsPage() {
                   <TradingCard
                     front="/assets/card-sloppyjoe-front.png"
                     back="/assets/card-sloppyjoe-back.png"
-                    alt="Sloppy Joe"
+                    alt="Williams All-Stars Sloppy Joe trading card — Beast Creative Agency"
                     rotation={-2}
                     floatDelay="0.8s"
                   />

@@ -131,7 +131,7 @@ export default function RelatedCaseStudies({ related }: { related: StudyKey[] })
                     {cs.image ? (
                       <Image
                         src={cs.image}
-                        alt={cs.campaign}
+                        alt={`${cs.client} — ${cs.campaign} | Beast Creative Agency`}
                         fill
                         className="object-cover"
                         sizes="(max-width: 640px) 100vw, 33vw"
