@@ -96,6 +96,9 @@ const services = [
   // TODO: Add Social Media service page at /services/social-media
 ];
 
+// TODO: Consider promoting Williams All-Stars (13,660 entries), Williams Bowl ($1,500 budget),
+// Pioneer (ROAS), or Coinline (branding) to homepage grid when 4-column layout is desired
+
 const process = [
   { step: "01", name: "Discover", desc: "Deep-dive audit and competitor gap analysis. We find where your brand is losing ground and where the fastest wins are hiding." },
   { step: "02", name: "Strategize", desc: "A campaign plan built around your specific goals, audience, and budget — not a template pulled from a drawer." },
