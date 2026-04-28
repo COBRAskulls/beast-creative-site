@@ -92,6 +92,8 @@ const services = [
     desc: "Conversion-focused builds, mobile-first, performance-optimized to turn traffic into revenue.",
     href: "/services/web-design",
   },
+  // TODO: Add Email Marketing service page at /services/email-marketing
+  // TODO: Add Social Media service page at /services/social-media
 ];
 
 const process = [
