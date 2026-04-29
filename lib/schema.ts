@@ -19,6 +19,7 @@ export function organizationSchema() {
       "https://www.facebook.com/beastcreativeagency",
       "https://www.instagram.com/beastcreativeagency",
       "https://www.linkedin.com/company/beast-creative-agency",
+      "https://www.tiktok.com/@beastcreativeagency",
     ],
     foundingDate: "2020",
     areaServed: "United States",
