@@ -1,0 +1,311 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import AnimatedSection from "@/components/ui/AnimatedSection";
+import IconButton from "@/components/ui/IconButton";
+
+export const metadata: Metadata = {
+  title: "Building a CPG Brand Community: Email, SMS, and Loyalty Programs for Packaged Goods | Beast Creative Agency",
+  description:
+    "CPG brands that rely solely on retail partnerships are missing 73% of potential customer lifetime value, according to recent industry data. The key difference? Direct-to-consumer relationship building through strategic email, SMS, and loyalty programs.",
+};
+
+export default function CpgBrandCommunityPost() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({{
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Building a CPG Brand Community: Email, SMS, and Loyalty Programs for Packaged Goods",
+            description: "CPG brands that rely solely on retail partnerships are missing 73% of potential customer lifetime value, according to recent industry data. The key difference? Direct-to-consumer relationship building through strategic email, SMS, and loyalty programs.",
+            datePublished: "2026-01-21",
+            author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
+            publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
+          }}),
+        }}
+      />
+
+      {/* HERO */}
+      <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
+                CPG Marketing
+              </span>
+              <span className="text-xs text-gray-500">January 21, 2026 · 6 min read</span>
+            </div>
+            <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
+              Building a CPG Brand Community:{" "}
+              <span className="text-beast-pink">Email, SMS, and Loyalty Programs for Packaged Goods</span>
+            </h1>
+            <p className="text-body-lead text-gray-300 max-w-2xl">
+              CPG brands that rely solely on retail partnerships are missing 73% of potential customer lifetime value, according to recent industry data. The key difference? Direct-to-consumer relationship building through strategic email, SMS, and loyalty programs that transform one-time buyers into brand advocates.
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ARTICLE BODY */}
+      <section className="bg-white py-16 lg:py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
+                <Image
+                  src="/assets/blog/contentcraft-6944e69d18025-1-1024x585.png"
+                  alt="Building a CPG brand community email SMS and loyalty programs for packaged goods"
+                  width={1024}
+                  height={585}
+                  className="w-full h-auto"
+                />
+              </div>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Why CPG Brands Need Direct Customer Relationships Traditional CPG marketing meant putting products on shelves and hoping for the best. You&apos;d run some ads, maybe sponsor an event, and cross your fingers that customers would remember your brand next time they&apos;re shopping.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">That approach doesn&apos;t work anymore. Here&apos;s the thing – when customers buy your product through a retailer, you&apos;re essentially invisible in that transaction. You don&apos;t know who bought it, why they chose your brand, or whether they&apos;ll buy again.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Building a direct community changes everything. You gain:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer data and purchase insights</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Direct communication channels</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ability to influence repeat purchases</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Higher profit margins on direct sales</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Protection against retailer dependencies</li>
+              </ul>
+
+              <p className="text-gray-700 leading-relaxed mb-4">The reality is that CPG brands with strong community programs see 25% higher customer retention rates and 15% better profit margins compared to those relying solely on traditional retail channels.</p>
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Email Marketing for CPG Brand Community Building</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Starting Your Email Strategy</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Email remains the backbone of CPG community building. Unlike social media, where algorithms control reach, email lands directly in your customer&apos;s inbox. You&apos;re not competing with a cluttered feed – you have their attention.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Most businesses miss this: successful CPG email marketing isn&apos;t about selling products in every message. It&apos;s about providing value that makes customers excited to hear from you.</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Content That Builds Community</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Your email content should educate, entertain, and engage. Here&apos;s what works:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Recipe ideas and usage tips: If you sell food products, share creative recipes. For cleaning products, provide cleaning hacks.</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Behind-the-scenes content: Show your production process, introduce team members, share your brand story.</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer spotlights: Feature customers using your products in creative ways.</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Industry insights: Share trends and news relevant to your product category.</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Exclusive previews: Give subscribers first looks at new products or flavors.</li>
+              </ul>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Segmentation for Better Results</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Not all customers are the same, and your emails shouldn&apos;t be either. Smart segmentation improves open rates by up to 39% and click-through rates by 28%.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Consider these CPG-specific segments:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Purchase frequency (frequent vs. occasional buyers)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product preferences (specific flavors, sizes, or product lines)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Geographic location (for regional products or promotions)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Engagement level (highly engaged vs. inactive subscribers)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer lifecycle stage (new, returning, at-risk, churned)</li>
+              </ul>
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">SMS Marketing: The Direct Line to Customers</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Why SMS Works for CPG Brands</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">SMS has a 98% open rate compared to email&apos;s 22%. That&apos;s powerful, but it comes with responsibility. Customers give you permission to text them – don&apos;t abuse it.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">SMS works best for:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Time-sensitive promotions</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Restock notifications</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Flash sales and limited-time offers</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Important product updates or recalls</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Loyalty program notifications</li>
+              </ul>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">SMS Best Practices for CPG</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Keep messages short, valuable, and actionable. Here&apos;s what good CPG SMS looks like:</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Product restock: &quot;Your favorite vanilla protein powder is back in stock! Get yours before we sell out again. Shop now: [link]&quot;</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Flash sale: &quot;24-hour flash sale: 30% off all energy bars. Use code FLASH30. Ends tomorrow at midnight.&quot;</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">New product launch: &quot;Be the first to try our new chocolate chip flavor! Early access for VIP customers starts now.&quot;</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Timing and Frequency</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Most businesses get SMS frequency wrong. Too many messages and customers unsubscribe. Too few and you lose impact.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Start with 2-4 messages per month and adjust based on engagement rates. Send messages between 10 AM and 8 PM in your customer&apos;s time zone. Avoid early mornings and late evenings unless it&apos;s truly urgent.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Building Effective CPG Loyalty Programs Points-Based vs. Tier-Based Systems The most common loyalty program mistake? Making it too complicated. Customers should understand your program immediately.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Points-based programs work well for CPG brands because they&apos;re simple: buy products, earn points, redeem rewards. Customers earn points for purchases, referrals, social media engagement, and other brand interactions.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Tier-based programs create more engagement by offering increasing benefits as customers reach higher tiers. Bronze members might get early sale access, while Gold members receive free shipping and exclusive products.</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Reward Types That Drive Engagement</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">This might surprise you: discounts aren&apos;t always the most effective rewards. Consider these options:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Free products: Sample sizes of new items or full-size products</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Exclusive access: Limited-edition flavors or early product launches</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Experiences: Virtual cooking classes, behind-the-scenes tours</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Charitable donations: Let customers donate points to causes you support</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Co-branded rewards: Partner with complementary brands for unique offerings</li>
+              </ul>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Program Integration</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Your loyalty program shouldn&apos;t exist in isolation. Connect it to your email and SMS campaigns:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Send welcome emails to new loyalty members</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Text customers when they&apos;re close to earning rewards</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Email monthly point summaries and available rewards</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Use SMS for time-sensitive loyalty promotions</li>
+              </ul>
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Creating Synergy Between Email, SMS, and Loyalty</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Unified Customer Journey</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Here&apos;s where most brands fall short: they treat email, SMS, and loyalty as separate channels instead of parts of a connected experience.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Smart CPG brands create customer journeys that span all three channels:</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">New customer sequence: Welcome email with brand story and first-purchase loyalty bonus. Follow-up email with usage tips and recipes. SMS opt-in offer with exclusive discount. Email introducing loyalty program benefits. SMS reminder about expiring welcome bonus.</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Cross-Channel Messaging</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Your messaging should feel consistent across channels while using each channel&apos;s strengths:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Email: Detailed product information, recipes, brand stories</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> SMS: Quick updates, urgent offers, simple reminders</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Loyalty program: Exclusive perks, member-only communications</li>
+              </ul>
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Success and Optimization</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Metrics for CPG Community Building</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Track metrics that matter for your business goals:</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Email metrics:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Open rates (aim for 20-25% in CPG)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Click-through rates (2-4% is typical)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Conversion rates from email to purchase</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> List growth rate</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Unsubscribe rate (keep below 0.5%)</li>
+              </ul>
+
+              <p className="text-gray-700 leading-relaxed mb-4">SMS metrics:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Delivery rates (should be 95%+)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Open rates (typically 95%+)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Click-through rates (6-8% is good)</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Opt-out rates (keep under 5%)</li>
+              </ul>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Loyalty program metrics:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Program enrollment rate</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Active member percentage</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Points redemption rates</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Member vs. non-member purchase frequency</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer lifetime value by tier</li>
+              </ul>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Testing and Improvement</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Continuous testing drives better results. Test these elements regularly:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Subject lines and send times for emails</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> SMS message timing and frequency</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Reward types and point values</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Loyalty tier benefits and requirements</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cross-channel message sequencing</li>
+              </ul>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Common CPG Community Building Mistakes Over-Promotion The biggest mistake? Making every message a sales pitch. Follow the 80/20 rule: 80% valuable content, 20% promotional messages.</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Ignoring Mobile Optimization</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Over 70% of consumers read emails on mobile devices. If your emails don&apos;t look good on phones, you&apos;re losing customers.</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Weak Loyalty Program Value</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Loyalty programs fail when rewards take too long to earn or aren&apos;t valuable enough. If customers need to spend $500 to earn a $5 reward, they won&apos;t engage.</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Inconsistent Messaging</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Your brand voice should be consistent across email, SMS, and loyalty communications. Mixed messaging confuses customers and weakens brand trust.</p>
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Advanced Strategies for Mature Programs</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Predictive Analytics</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Use customer data to predict behavior and send proactive messages:</p>
+
+              <ul className="space-y-2 mb-8">
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Reorder reminders based on purchase history</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Churn prevention campaigns for declining engagement</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Personalized product recommendations</li>
+                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal preference predictions</li>
+              </ul>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">User-Generated Content Campaigns</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Encourage customers to create content featuring your products. Run campaigns that reward customers for sharing photos, recipes, or reviews. This creates authentic marketing material while building community engagement.</p>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Referral Program Integration</h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Turn loyal customers into brand advocates with referral programs. Reward both the referrer and new customer, and promote your referral program through email and SMS channels.</p>
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Building Your CPG Community Strategy</h2>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Creating a thriving CPG brand community through email, SMS, and loyalty programs isn&apos;t just about technology – it&apos;s about building genuine relationships with customers who love your products. The brands that succeed focus on providing value, maintaining consistency, and treating each channel as part of a connected customer experience.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Start with email marketing to build your foundation, add SMS for direct engagement, and create a loyalty program that rewards your best customers. Most importantly, remember that community building is a long-term strategy. The relationships you build today will drive sales and advocacy for years to come.</p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">Ready to build a community that transforms your CPG brand&apos;s customer relationships? At Beast Creative Agency, our certified specialists use AI-enhanced campaigns and radical transparency to deliver personalized strategies that maximize ROI. Let&apos;s create a community-building strategy that turns your customers into your biggest advocates.</p>
+
+            </div>
+          </AnimatedSection>
+
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-beast-black py-16 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <AnimatedSection>
+            <h2 className="font-display text-3xl font-bold text-white mb-4">
+              Building Your CPG Community Strategy
+            </h2>
+            <p className="text-gray-400 mb-8">
+              Creating a thriving CPG brand community through email, SMS, and loyalty programs isn&apos;t just about technology – it&apos;s about building genuine relationships with customers who love your products. The brands that succeed focus on providing value, maintaining consistency, and treating each channel as part of a connected customer experience.
+            </p>
+            <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
+          </AnimatedSection>
+        </div>
+      </section>
+    </>
+  );
+}
