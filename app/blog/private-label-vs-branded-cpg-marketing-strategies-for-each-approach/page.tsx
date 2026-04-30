@@ -61,13 +61,13 @@ export default function PrivateLabelVsBrandedCpgPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 CPG Marketing
               </span>
-              <span className="text-xs text-gray-500">January 31, 2026 · 6 min read</span>
+              <span className="text-xs text-[#888888]">January 31, 2026 · 6 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               Private Label vs. Branded CPG:{" "}
               <span className="text-beast-pink">Marketing Strategies for Each Approach</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               Consumer packaged goods revenue reached $2.2 trillion globally in 2023, yet most CPG companies struggle with one fundamental decision: should they build their own brand or create private label products? This choice shapes every marketing dollar you&apos;ll spend and determines whether you&apos;re competing on brand loyalty or shelf space.
             </p>
           </AnimatedSection>
@@ -75,26 +75,26 @@ export default function PrivateLabelVsBrandedCpgPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <p className="text-gray-700 leading-relaxed mb-4">Understanding the CPG Landscape: Two Distinct Paths The consumer packaged goods industry operates on two primary business models, each requiring completely different marketing approaches. Branded CPG companies invest heavily in consumer recognition, emotional connection, and premium positioning. Private label manufacturers focus on retailer relationships, cost efficiency, and meeting specific market gaps.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Understanding the CPG Landscape: Two Distinct Paths The consumer packaged goods industry operates on two primary business models, each requiring completely different marketing approaches. Branded CPG companies invest heavily in consumer recognition, emotional connection, and premium positioning. Private label manufacturers focus on retailer relationships, cost efficiency, and meeting specific market gaps.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Here&apos;s the thing: both approaches can be incredibly profitable, but they demand different expertise, resources, and long-term strategies. Most businesses fail because they try to blend these approaches instead of committing fully to one path.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Here&apos;s the thing: both approaches can be incredibly profitable, but they demand different expertise, resources, and long-term strategies. Most businesses fail because they try to blend these approaches instead of committing fully to one path.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Branded CPG Model</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Branded CPG companies own their destiny through direct consumer relationships. They control messaging, pricing strategies, and brand perception. Think of companies like Unilever, Procter &amp; Gamble, or smaller success stories like Dollar Shave Club before their acquisition.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Branded CPG companies own their destiny through direct consumer relationships. They control messaging, pricing strategies, and brand perception. Think of companies like Unilever, Procter &amp; Gamble, or smaller success stories like Dollar Shave Club before their acquisition.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">These companies invest 10-15% of revenue in marketing because they&apos;re building long-term brand equity. Every marketing campaign serves dual purposes: driving immediate sales and strengthening brand recognition for future purchases.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">These companies invest 10-15% of revenue in marketing because they&apos;re building long-term brand equity. Every marketing campaign serves dual purposes: driving immediate sales and strengthening brand recognition for future purchases.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Private Label Model</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Private label manufacturers operate behind the scenes, creating products that retailers sell under their own brands. Target&apos;s Goodfellow &amp; Co., Costco&apos;s Kirkland Signature, and Amazon&apos;s AmazonBasics all represent private label partnerships.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Private label manufacturers operate behind the scenes, creating products that retailers sell under their own brands. Target&apos;s Goodfellow &amp; Co., Costco&apos;s Kirkland Signature, and Amazon&apos;s AmazonBasics all represent private label partnerships.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">These companies typically spend 2-5% of revenue on marketing, focusing primarily on B2B relationship building rather than consumer awareness. Their success depends on operational excellence and retailer satisfaction.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">These companies typically spend 2-5% of revenue on marketing, focusing primarily on B2B relationship building rather than consumer awareness. Their success depends on operational excellence and retailer satisfaction.</p>
 
             </div>
           </AnimatedSection>
@@ -104,118 +104,118 @@ export default function PrivateLabelVsBrandedCpgPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Marketing Strategies for Branded CPG Companies</h2>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Branded CPG marketing centers on building consumer preference and driving purchase decisions at the point of sale. You&apos;re not just selling a product; you&apos;re selling an experience, a lifestyle, or a solution to a specific problem.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Branded CPG marketing centers on building consumer preference and driving purchase decisions at the point of sale. You&apos;re not just selling a product; you&apos;re selling an experience, a lifestyle, or a solution to a specific problem.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Brand Building and Emotional Connection</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Successful branded CPG companies create emotional connections that transcend product features. Nike doesn&apos;t sell shoes; they sell athletic achievement. Dove doesn&apos;t sell soap; they sell self-confidence and real beauty.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Successful branded CPG companies create emotional connections that transcend product features. Nike doesn&apos;t sell shoes; they sell athletic achievement. Dove doesn&apos;t sell soap; they sell self-confidence and real beauty.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Your marketing strategy should include:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Your marketing strategy should include:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Storytelling campaigns that connect with consumer values</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consistent visual identity across all touchpoints</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Influencer partnerships that align with brand personality</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> User-generated content that builds community</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cause marketing that demonstrates corporate values</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Storytelling campaigns that connect with consumer values</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consistent visual identity across all touchpoints</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Influencer partnerships that align with brand personality</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> User-generated content that builds community</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cause marketing that demonstrates corporate values</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Multi-Channel Consumer Acquisition</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Branded CPG companies must reach consumers wherever they make purchasing decisions. This might surprise you: the average consumer sees your product 7-12 times before making their first purchase.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Branded CPG companies must reach consumers wherever they make purchasing decisions. This might surprise you: the average consumer sees your product 7-12 times before making their first purchase.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Essential channels include:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Essential channels include:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Digital advertising: Facebook, Instagram, and Google ads targeting specific demographics</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Content marketing: Blogs, videos, and educational content that provide value</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retail partnerships: Co-op advertising and in-store promotional support</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> PR and earned media: Product reviews, media coverage, and industry recognition</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Email marketing: Direct communication with existing customers</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Digital advertising: Facebook, Instagram, and Google ads targeting specific demographics</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Content marketing: Blogs, videos, and educational content that provide value</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retail partnerships: Co-op advertising and in-store promotional support</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> PR and earned media: Product reviews, media coverage, and industry recognition</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Email marketing: Direct communication with existing customers</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Premium Positioning and Value Communication</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Branded products typically command higher prices than private label alternatives. Your marketing must justify this premium through clear value propositions.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Branded products typically command higher prices than private label alternatives. Your marketing must justify this premium through clear value propositions.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Focus on:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Focus on:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product innovation and unique features</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality certifications and testing results</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand heritage and company story</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer testimonials and reviews</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Warranty and customer service superiority</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product innovation and unique features</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality certifications and testing results</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand heritage and company story</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer testimonials and reviews</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Warranty and customer service superiority</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Data-Driven Personalization</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Modern CPG brands use customer data to create personalized experiences. Amazon&apos;s recommendation engine, Spotify&apos;s playlists, and Netflix&apos;s content suggestions demonstrate how personalization drives engagement and sales.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Modern CPG brands use customer data to create personalized experiences. Amazon&apos;s recommendation engine, Spotify&apos;s playlists, and Netflix&apos;s content suggestions demonstrate how personalization drives engagement and sales.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Key personalization strategies:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Key personalization strategies:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Segmented email campaigns based on purchase history</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Dynamic website content that adapts to visitor behavior</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Personalized product recommendations</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customized social media advertising</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Loyalty programs with individualized rewards</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Segmented email campaigns based on purchase history</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Dynamic website content that adapts to visitor behavior</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Personalized product recommendations</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customized social media advertising</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Loyalty programs with individualized rewards</li>
               </ul>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Marketing Strategies for Private Label CPG Companies Private label success depends on retailer relationships and operational excellence. Your marketing efforts focus on B2B sales, supply chain capabilities, and demonstrating value to retail partners.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Marketing Strategies for Private Label CPG Companies Private label success depends on retailer relationships and operational excellence. Your marketing efforts focus on B2B sales, supply chain capabilities, and demonstrating value to retail partners.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Retailer Relationship Marketing</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Your primary customers are buyers at major retailers, not end consumers. These professionals make decisions based on data, profit margins, and risk management.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Your primary customers are buyers at major retailers, not end consumers. These professionals make decisions based on data, profit margins, and risk management.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Effective B2B marketing includes:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Effective B2B marketing includes:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Trade show participation and industry networking</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Case studies demonstrating successful partnerships</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Category management expertise and support</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Supply chain transparency and reliability metrics</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Co-innovation opportunities for new products</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Trade show participation and industry networking</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Case studies demonstrating successful partnerships</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Category management expertise and support</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Supply chain transparency and reliability metrics</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Co-innovation opportunities for new products</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Operational Excellence Communication</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Retailers choose private label partners based on capability, not creativity. Your marketing materials should emphasize:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Retailers choose private label partners based on capability, not creativity. Your marketing materials should emphasize:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Manufacturing capacity: Production volume and scalability</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality certifications: FDA, ISO, and industry-specific standards</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Supply chain reliability: On-time delivery and inventory management</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cost competitiveness: Pricing models and cost reduction capabilities</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Innovation support: R&amp;D capabilities and new product development</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Manufacturing capacity: Production volume and scalability</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality certifications: FDA, ISO, and industry-specific standards</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Supply chain reliability: On-time delivery and inventory management</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cost competitiveness: Pricing models and cost reduction capabilities</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Innovation support: R&amp;D capabilities and new product development</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Category Expertise and Insights</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">The best private label partners become strategic advisors to their retail clients. They provide market insights, trend analysis, and category optimization recommendations.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">The best private label partners become strategic advisors to their retail clients. They provide market insights, trend analysis, and category optimization recommendations.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Develop expertise in:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Develop expertise in:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consumer behavior trends within your categories</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Competitive landscape analysis</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Pricing optimization strategies</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product assortment recommendations</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal demand forecasting</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consumer behavior trends within your categories</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Competitive landscape analysis</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Pricing optimization strategies</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product assortment recommendations</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal demand forecasting</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Regulatory Compliance and Risk Management</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Retailers face significant liability when selling private label products. Your marketing should emphasize risk mitigation and compliance expertise.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Retailers face significant liability when selling private label products. Your marketing should emphasize risk mitigation and compliance expertise.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Key areas to highlight:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Key areas to highlight:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product liability insurance and coverage</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Regulatory compliance documentation</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality control processes and testing</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Recall procedures and crisis management</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ingredient sourcing and traceability</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product liability insurance and coverage</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Regulatory compliance documentation</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality control processes and testing</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Recall procedures and crisis management</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ingredient sourcing and traceability</li>
               </ul>
 
             </div>
@@ -226,32 +226,32 @@ export default function PrivateLabelVsBrandedCpgPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Hybrid Approaches and Market Considerations</h2>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Some companies successfully operate both models simultaneously, but this requires careful resource allocation and distinct operational teams.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Some companies successfully operate both models simultaneously, but this requires careful resource allocation and distinct operational teams.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">When to Consider a Hybrid Model</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">A hybrid approach makes sense when:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">A hybrid approach makes sense when:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> You have excess manufacturing capacity</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Your brand covers only premium market segments</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retailers specifically request private label partnerships</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> You want to diversify revenue streams</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Your brand faces seasonal demand fluctuations</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> You have excess manufacturing capacity</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Your brand covers only premium market segments</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retailers specifically request private label partnerships</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> You want to diversify revenue streams</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Your brand faces seasonal demand fluctuations</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Managing Potential Conflicts</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">The reality is that hybrid models create inherent conflicts. Your branded products compete directly with your private label offerings on retailer shelves.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">The reality is that hybrid models create inherent conflicts. Your branded products compete directly with your private label offerings on retailer shelves.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Successful hybrid companies address this through:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Successful hybrid companies address this through:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Clear product differentiation strategies</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Separate sales teams for each business model</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Transparent communication with retail partners</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Different distribution channels when possible</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Distinct marketing messages and positioning</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Clear product differentiation strategies</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Separate sales teams for each business model</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Transparent communication with retail partners</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Different distribution channels when possible</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Distinct marketing messages and positioning</li>
               </ul>
 
             </div>
@@ -262,56 +262,56 @@ export default function PrivateLabelVsBrandedCpgPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring Success: Different Metrics for Different Models</h2>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Success metrics vary significantly between branded and private label approaches.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Success metrics vary significantly between branded and private label approaches.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Branded CPG Key Performance Indicators</h3>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand awareness: Unaided and aided brand recognition</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market share: Category penetration and growth</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer lifetime value: Long-term revenue per customer</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Net promoter score: Customer satisfaction and advocacy</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Price premium: Pricing power versus competitors</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand awareness: Unaided and aided brand recognition</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market share: Category penetration and growth</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer lifetime value: Long-term revenue per customer</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Net promoter score: Customer satisfaction and advocacy</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Price premium: Pricing power versus competitors</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Private Label Success Metrics</h3>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retailer retention: Long-term partnership duration</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Volume growth: Production capacity utilization</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Operational efficiency: Cost per unit and margin improvement</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality metrics: Defect rates and customer complaints</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Category expansion: New product launches and retailer adoption</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retailer retention: Long-term partnership duration</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Volume growth: Production capacity utilization</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Operational efficiency: Cost per unit and margin improvement</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality metrics: Defect rates and customer complaints</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Category expansion: New product launches and retailer adoption</li>
               </ul>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Technology and Innovation in CPG Marketing Modern CPG marketing relies heavily on technology and data analytics, regardless of your business model.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Technology and Innovation in CPG Marketing Modern CPG marketing relies heavily on technology and data analytics, regardless of your business model.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">AI-Enhanced Campaign Optimization</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Artificial intelligence transforms how CPG companies understand consumer behavior and optimize marketing spend. Machine learning algorithms analyze purchase patterns, predict demand fluctuations, and identify the most effective marketing channels.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Artificial intelligence transforms how CPG companies understand consumer behavior and optimize marketing spend. Machine learning algorithms analyze purchase patterns, predict demand fluctuations, and identify the most effective marketing channels.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Practical AI applications include:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Practical AI applications include:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Predictive analytics for inventory management</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Dynamic pricing optimization</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Personalized product recommendations</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Automated A/B testing for ad creative</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Sentiment analysis of customer feedback</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Predictive analytics for inventory management</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Dynamic pricing optimization</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Personalized product recommendations</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Automated A/B testing for ad creative</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Sentiment analysis of customer feedback</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Data Integration and Analytics</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Successful CPG companies integrate data from multiple sources to create complete customer profiles and optimize marketing performance.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Successful CPG companies integrate data from multiple sources to create complete customer profiles and optimize marketing performance.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Essential data sources:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Essential data sources:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Point-of-sale data from retail partners</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Digital marketing platform analytics</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer service interactions and feedback</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Social media engagement metrics</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market research and consumer surveys</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Point-of-sale data from retail partners</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Digital marketing platform analytics</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer service interactions and feedback</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Social media engagement metrics</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market research and consumer surveys</li>
               </ul>
 
             </div>
@@ -322,34 +322,34 @@ export default function PrivateLabelVsBrandedCpgPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Future Trends in CPG Marketing</h2>
 
-              <p className="text-gray-700 leading-relaxed mb-4">The CPG industry continues evolving rapidly, driven by changing consumer expectations and technological advancement.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">The CPG industry continues evolving rapidly, driven by changing consumer expectations and technological advancement.</p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Sustainability and Transparency</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Consumers increasingly demand environmental responsibility and supply chain transparency. Both branded and private label companies must adapt their marketing strategies accordingly.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Consumers increasingly demand environmental responsibility and supply chain transparency. Both branded and private label companies must adapt their marketing strategies accordingly.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Key trends include:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Key trends include:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Sustainable packaging and materials</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Carbon footprint reduction and reporting</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ethical sourcing certifications</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ingredient transparency and clean labeling</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Circular economy initiatives</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Sustainable packaging and materials</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Carbon footprint reduction and reporting</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ethical sourcing certifications</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ingredient transparency and clean labeling</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Circular economy initiatives</li>
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Direct-to-Consumer Integration</h3>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Even traditional CPG companies are developing direct-to-consumer capabilities to build stronger customer relationships and gather better data.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Even traditional CPG companies are developing direct-to-consumer capabilities to build stronger customer relationships and gather better data.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">D2C strategies complement traditional retail through:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">D2C strategies complement traditional retail through:</p>
 
               <ul className="space-y-2 mb-6">
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Subscription-based repeat purchases</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Limited edition and exclusive products</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Enhanced customer data collection</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Direct feedback and product development insights</li>
-                <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Higher margin sales channels</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Subscription-based repeat purchases</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Limited edition and exclusive products</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Enhanced customer data collection</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Direct feedback and product development insights</li>
+                <li className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Higher margin sales channels</li>
               </ul>
 
             </div>
@@ -360,11 +360,11 @@ export default function PrivateLabelVsBrandedCpgPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Conclusion: Choosing Your Path Forward</h2>
 
-              <p className="text-gray-700 leading-relaxed mb-4">The choice between branded and private label CPG approaches isn&apos;t just about products—it&apos;s about building a business model that aligns with your resources, expertise, and long-term goals. Branded companies invest in consumer relationships and emotional connections, while private label manufacturers focus on operational excellence and retailer partnerships.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">The choice between branded and private label CPG approaches isn&apos;t just about products—it&apos;s about building a business model that aligns with your resources, expertise, and long-term goals. Branded companies invest in consumer relationships and emotional connections, while private label manufacturers focus on operational excellence and retailer partnerships.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Here&apos;s what works: commit fully to your chosen approach. Half-hearted brand building fails against established competitors, and unreliable private label partners lose retailer trust quickly. Success requires focused execution and continuous optimization based on clear performance metrics.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Here&apos;s what works: commit fully to your chosen approach. Half-hearted brand building fails against established competitors, and unreliable private label partners lose retailer trust quickly. Success requires focused execution and continuous optimization based on clear performance metrics.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">The most successful CPG companies, regardless of their model, share common traits: they understand their customers deeply, use data to drive decisions, and adapt quickly to market changes. They also recognize that great marketing isn&apos;t just about creative campaigns—it&apos;s about building sustainable competitive advantages through consistent value delivery.</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">The most successful CPG companies, regardless of their model, share common traits: they understand their customers deeply, use data to drive decisions, and adapt quickly to market changes. They also recognize that great marketing isn&apos;t just about creative campaigns—it&apos;s about building sustainable competitive advantages through consistent value delivery.</p>
 
             </div>
           </AnimatedSection>
@@ -383,44 +383,44 @@ export default function PrivateLabelVsBrandedCpgPost() {
       </section>
 
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising—a stat</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 16, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising—a stat</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 16, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/digital-marketing-strategies-for-cpg-brands-a-complete-2025-guide" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/digital-marketing-strategies-for-cpg-brands-a-complete-2025-guide" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">9 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Digital Marketing Strategies for CPG Brands: A Complete 2025 Guide</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">Consumer packaged goods brands face a unique challenge that most other industries don&apos;t: convincing shoppers to choose t</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 11, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Consumer packaged goods brands face a unique challenge that most other industries don&apos;t: convincing shoppers to choose t</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 11, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -435,7 +435,7 @@ export default function PrivateLabelVsBrandedCpgPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Conclusion: Choosing Your Path Forward
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               The most successful CPG companies, regardless of their model, share common traits: they understand their customers deeply, use data to drive decisions, and adapt quickly to market changes.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

@@ -390,7 +390,7 @@ export default function BlogPage() {
             <h1 className="text-display-hero font-display font-extrabold text-white max-w-3xl mb-6">
               Insights & Strategy From the Beast Team.
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               Data-driven thinking on CPG marketing, SEO/AEO, AI content, and what actually moves the needle.
             </p>
           </AnimatedSection>
@@ -402,19 +402,19 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <Link href={`/blog/${posts[0].slug}`} className="group block">
-              <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300">
+              <article className="bg-beast-white rounded-2xl overflow-hidden border border-light-border hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300">
                 <div className="p-8 lg:p-12">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                       {posts[0].category}
                     </span>
-                    <span className="text-xs text-gray-400">{posts[0].date}</span>
-                    <span className="text-xs text-gray-400">{posts[0].readTime}</span>
+                    <span className="text-xs text-[#717171]">{posts[0].date}</span>
+                    <span className="text-xs text-[#717171]">{posts[0].readTime}</span>
                   </div>
                   <h2 className="font-display text-3xl lg:text-4xl font-bold text-beast-black mb-4 leading-tight group-hover:text-beast-pink transition-colors">
                     {posts[0].title}
                   </h2>
-                  <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-3xl">{posts[0].excerpt}</p>
+                  <p className="text-[#4A4A4A] text-lg leading-relaxed mb-6 max-w-3xl">{posts[0].excerpt}</p>
                   <span className="btn-ghost-pink">Read Article →</span>
                 </div>
               </article>
@@ -430,20 +430,20 @@ export default function BlogPage() {
             {posts.slice(1).map((post, i) => (
               <AnimatedSection key={post.slug} delay={i * 0.04}>
                 <Link href={`/blog/${post.slug}`} className="group block h-full">
-                  <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                  <article className="bg-beast-white rounded-2xl overflow-hidden border border-light-border hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
                     <div className="p-6 flex-1 flex flex-col">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">
+                        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">
                           {post.category}
                         </span>
-                        <span className="text-xs text-gray-400">{post.readTime}</span>
+                        <span className="text-xs text-[#717171]">{post.readTime}</span>
                       </div>
                       <h3 className="font-display text-xl font-bold text-beast-black mb-3 leading-tight flex-1 group-hover:text-beast-pink transition-colors">
                         {post.title}
                       </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{post.excerpt}</p>
-                      <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
-                        <span className="text-xs text-gray-400">{post.date}</span>
+                      <p className="text-[#717171] text-sm leading-relaxed mb-4">{post.excerpt}</p>
+                      <div className="flex items-center justify-between mt-auto pt-4 border-t border-light-border">
+                        <span className="text-xs text-[#717171]">{post.date}</span>
                         <span className="btn-ghost-pink text-sm">Read →</span>
                       </div>
                     </div>
