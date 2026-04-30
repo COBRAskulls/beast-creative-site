@@ -24,14 +24,21 @@ const services = [
   { name: "Web Design & CRO",     href: "/services/web-design"                        },
 ];
 
+const aboutLinks = [
+  { name: "About",  href: "/about" },
+  { name: "Blog",   href: "/blog"  },
+];
+
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen]     = useState(false);
   const [workOpen, setWorkOpen]         = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [aboutOpen, setAboutOpen]       = useState(false);
   const pathname = usePathname();
-  const workRef = useRef<HTMLLIElement>(null);
+  const workRef     = useRef<HTMLLIElement>(null);
   const servicesRef = useRef<HTMLLIElement>(null);
+  const aboutRef    = useRef<HTMLLIElement>(null);
 
   useEffect(() => { setMobileOpen(false); }, [pathname]);
   useEffect(() => {
@@ -149,15 +156,55 @@ export default function Nav() {
                 )}
               </li>
 
-              {["CPG", "About", "Contact"].map((name) => {
-                const href = `/${name.toLowerCase()}`;
-                const isActive = pathname === href;
-                return (
-                  <li key={name}>
-                    <Link href={href} className={`block px-3.5 py-3 text-sm font-semibold transition-colors rounded-full min-h-[44px] flex items-center focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 ${isActive ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-beast-yellow hover:bg-white/8"}`}>{name}</Link>
-                  </li>
-                );
-              })}
+              {/* CPG plain link */}
+              <li>
+                <Link
+                  href="/cpg"
+                  className={`block px-3.5 py-3 text-sm font-semibold transition-colors rounded-full min-h-[44px] flex items-center focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 ${pathname === "/cpg" ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-beast-yellow hover:bg-white/8"}`}
+                >
+                  CPG
+                </Link>
+              </li>
+
+              {/* About dropdown */}
+              <li
+                ref={aboutRef}
+                className="relative"
+                onMouseEnter={() => setAboutOpen(true)}
+                onMouseLeave={() => setAboutOpen(false)}
+                onKeyDown={(e) => { if (e.key === "Escape") setAboutOpen(false); }}
+              >
+                <button
+                  className={`flex items-center gap-1.5 px-3.5 py-3 text-sm font-semibold transition-colors rounded-full min-h-[44px] focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 ${(pathname === "/about" || pathname.startsWith("/blog")) ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-beast-yellow hover:bg-white/8"}`}
+                  onClick={() => setAboutOpen(!aboutOpen)}
+                  aria-expanded={aboutOpen}
+                  aria-haspopup="true"
+                >
+                  About
+                  <span className={`nav-chevron${aboutOpen ? " open" : ""}`} aria-hidden="true"><span /></span>
+                </button>
+                {aboutOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-44">
+                    <div style={dropdownGlass} className="overflow-hidden">
+                      {aboutLinks.map((link) => (
+                        <Link key={link.href} href={link.href} className={`flex items-center px-5 py-3 text-sm hover:text-beast-yellow hover:bg-white/8 transition-colors focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-[-2px] ${pathname === link.href ? "text-white bg-white/8 font-semibold" : "text-gray-300"}`}>
+                          {link.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </li>
+
+              {/* Contact plain link */}
+              <li>
+                <Link
+                  href="/contact"
+                  className={`block px-3.5 py-3 text-sm font-semibold transition-colors rounded-full min-h-[44px] flex items-center focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 ${pathname === "/contact" ? "text-beast-yellow border border-beast-pink" : "text-white/80 hover:text-beast-yellow hover:bg-white/8"}`}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
 
             <div className="w-px h-4 bg-white/15 mx-1 shrink-0" />
@@ -245,12 +292,36 @@ export default function Nav() {
               </div>
             </div>
 
-            {/* Plain links */}
-            {[{ name: "CPG", href: "/cpg" }, { name: "About", href: "/about" }, { name: "Contact", href: "/contact" }].map((item) => (
-              <Link key={item.href} href={item.href} className="block font-display text-4xl font-bold text-white hover:text-beast-pink transition-colors py-2 focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 rounded">
-                {item.name}
-              </Link>
-            ))}
+            {/* CPG plain link */}
+            <Link href="/cpg" className="block font-display text-4xl font-bold text-white hover:text-beast-pink transition-colors py-2 focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 rounded">
+              CPG
+            </Link>
+
+            {/* About accordion */}
+            <div>
+              <button
+                className="flex items-center justify-between w-full font-display text-4xl font-bold text-white py-2 focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 rounded"
+                onClick={() => setAboutOpen(!aboutOpen)}
+                aria-expanded={aboutOpen}
+              >
+                About
+                <span className={`nav-chevron scale-150 mr-1 transition-transform duration-300${aboutOpen ? " open" : ""}`} aria-hidden="true"><span /></span>
+              </button>
+              <div className={`overflow-hidden transition-all duration-300 ${aboutOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="pl-2 pb-3 space-y-0.5 ml-1 mt-1">
+                  {aboutLinks.map((link) => (
+                    <Link key={link.href} href={link.href} className="block py-3 px-3 rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-2 focus-visible:outline-beast-pink">
+                      <span className="text-sm text-gray-400 hover:text-white transition-colors">{link.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Contact plain link */}
+            <Link href="/contact" className="block font-display text-4xl font-bold text-white hover:text-beast-pink transition-colors py-2 focus-visible:outline-2 focus-visible:outline-beast-pink focus-visible:outline-offset-2 rounded">
+              Contact
+            </Link>
           </nav>
 
           <div className="mt-10 space-y-4">
