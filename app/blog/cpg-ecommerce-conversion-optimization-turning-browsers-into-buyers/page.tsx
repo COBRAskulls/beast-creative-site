@@ -51,21 +51,21 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding the CPG Ecommerce Buyer Journey</h2>
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Understanding the CPG Ecommerce Buyer Journey</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods shoppers behave differently online than in physical stores. They can’t touch products, smell fragrances, or examine packaging up close. This creates unique challenges that smart brands turn into conversion opportunities.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">The typical CPG buyer journey involves multiple touchpoints. Shoppers research products, compare options, read reviews, and often abandon their carts before returning days later to complete purchases. Understanding this non-linear path is essential for optimizing each interaction point.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Identifying Key Conversion Barriers</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Identifying Key Conversion Barriers</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Most CPG brands focus on driving traffic but ignore the friction points that prevent purchases. Common barriers include:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Insufficient product information and imagery</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Unclear value propositions and benefits</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Complicated checkout processes</li>
@@ -76,15 +76,21 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s the thing: each barrier represents an optimization opportunity. When you systematically address these issues, conversion rates improve dramatically.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Product Page Optimization Strategies</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Product Page Optimization Strategies</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your product pages are digital salespeople working 24/7. They need to inform, persuade, and guide shoppers toward purchase decisions.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Visual Storytelling Through Images and Videos</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Visual Storytelling Through Images and Videos</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">CPG products rely heavily on visual appeal. High-quality images from multiple angles, lifestyle shots showing products in use, and demonstration videos significantly boost conversions. Consider these elements:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> 360-degree product views</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Before/after comparison images</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Size comparison photos</li>
@@ -94,11 +100,11 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This might surprise you, but product videos can increase conversion rates by up to 80%. They’re particularly effective for CPG items where demonstrating usage or results matters.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Compelling Product Descriptions</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Compelling Product Descriptions</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Don’t just list features—explain benefits and solve problems. Effective CPG product descriptions:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Lead with the primary benefit customers care about</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Use sensory language that helps shoppers imagine the experience</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Address common objections and concerns</li>
@@ -108,15 +114,21 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Write descriptions that speak to your target audience’s specific needs and language preferences. A skincare product for teenagers requires different messaging than anti-aging cream for adults.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Building Trust and Social Proof</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Building Trust and Social Proof</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Trust is the foundation of online purchases, especially for consumable products. Shoppers need confidence in product quality, brand reliability, and purchase security.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Customer Reviews and Ratings</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Customer Reviews and Ratings</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Reviews influence 93% of purchase decisions. Here’s what works:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Display average ratings prominently on product pages</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Show review counts to demonstrate popularity</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Include photo and video reviews when possible</li>
@@ -126,11 +138,11 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that products with some negative reviews often convert better than those with perfect ratings. Mixed reviews appear more authentic and trustworthy.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Trust Signals and Security Features</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Trust Signals and Security Features</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Display security badges, certifications, and guarantees prominently. CPG shoppers particularly value:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Money-back guarantees</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Organic or quality certifications</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Secure payment indicators</li>
@@ -138,15 +150,21 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand heritage and story elements</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Streamlining the Checkout Experience</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Streamlining the Checkout Experience</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Cart abandonment rates for CPG ecommerce hover around 70%. Most abandonment happens during checkout due to unexpected costs, complicated forms, or security concerns.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Reducing Checkout Friction</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Reducing Checkout Friction</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Simplify your checkout process with these proven strategies:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Offer guest checkout options</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Minimize form fields to essential information only</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Provide multiple payment methods</li>
@@ -157,24 +175,30 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what most brands miss: mobile checkout optimization. Over 60% of CPG purchases happen on mobile devices, yet many checkout processes aren’t mobile-friendly.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Transparent Pricing and Shipping</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Transparent Pricing and Shipping</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Surprise costs are conversion killers. Display shipping costs early and consider offering:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Free shipping thresholds</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Subscription options with shipping benefits</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Express shipping for urgent needs</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Local delivery in key markets</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Personalization and Recommendation Engines</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Personalization and Recommendation Engines</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Personalized shopping experiences can increase conversion rates by 15-20%. For CPG brands, effective personalization includes:</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Product Recommendations</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Product Recommendations</h3>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> “Frequently bought together” suggestions</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Complementary product recommendations</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Replenishment reminders for consumables</li>
@@ -182,24 +206,30 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Browse abandonment recovery campaigns</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Dynamic Content Optimization</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Dynamic Content Optimization</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Tailor content based on visitor behavior, demographics, and preferences:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Location-based product availability</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Previous purchase history influences</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Browsing behavior adaptations</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Time-sensitive offers and promotions</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Mobile-First Conversion Strategies</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Mobile-First Conversion Strategies</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Mobile commerce represents the future of CPG shopping. Your mobile experience needs to be fast, intuitive, and conversion-focused.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Mobile-Specific Optimizations</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Mobile-Specific Optimizations</h3>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Thumb-friendly navigation and buttons</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Simplified product filtering options</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> One-thumb checkout processes</li>
@@ -208,13 +238,19 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Progressive web app functionality</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Data-Driven Testing and Optimization</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Data-Driven Testing and Optimization</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Successful conversion optimization requires continuous testing and refinement. Set up proper analytics and testing frameworks to measure what works.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Metrics to Monitor</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Key Metrics to Monitor</h3>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Overall conversion rate by traffic source</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product page bounce rates</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cart abandonment rates by step</li>
@@ -223,11 +259,11 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Return customer conversion rates</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">A/B Testing Priorities</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">A/B Testing Priorities</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Focus your testing efforts on high-impact areas:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product page layouts and imagery</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Call-to-action button colors and text</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Pricing display and promotion strategies</li>
@@ -235,11 +271,17 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Email campaign subject lines and content</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Creating Urgency Without Being Pushy</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Creating Urgency Without Being Pushy</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">CPG products often involve repeat purchases, so maintaining customer relationships matters more than one-time sales pressure. Create authentic urgency through:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Limited-time introductory pricing</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal availability messaging</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Low stock notifications</li>
@@ -247,13 +289,19 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Bundle offers with expiration dates</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Post-Purchase Experience and Retention</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Post-Purchase Experience and Retention</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Conversion optimization doesn’t end at checkout. The post-purchase experience influences repeat purchases and customer lifetime value.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Onboarding and Usage Support</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Onboarding and Usage Support</h3>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Send usage tips and tutorials</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Provide customer support contact information</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Share complementary product suggestions</li>
@@ -263,30 +311,42 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what works: brands that optimize the complete customer journey see 25% higher customer lifetime values than those focusing only on initial conversions.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Advanced Conversion Tactics</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Advanced Conversion Tactics</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Once you’ve optimized the basics, consider these advanced strategies:</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">AI-Powered Personalization</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">AI-Powered Personalization</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Machine learning algorithms can predict customer preferences and optimize experiences in real-time. This includes dynamic pricing, personalized product recommendations, and customized content delivery.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Subscription and Auto-Replenishment</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Subscription and Auto-Replenishment</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">For consumable CPG products, subscription models increase customer lifetime value while providing predictable revenue streams. Optimize subscription conversion through:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Flexible delivery schedules</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Easy pause and modification options</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Subscriber-only discounts and perks</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Smart reorder predictions</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Long-Term Success</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring Long-Term Success</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Track both immediate conversion metrics and long-term business impact. Key performance indicators include:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer acquisition cost trends</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Return on advertising spend improvements</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer satisfaction scores</li>
@@ -296,7 +356,13 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that sustainable conversion optimization requires ongoing commitment and resources. Brands that treat it as a continuous process rather than a one-time project see the best results.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Turning Insights Into Action</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Turning Insights Into Action</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">CPG ecommerce conversion optimization combines art and science. While data guides decisions, understanding customer psychology and behavior patterns drives breakthrough results. The most successful brands focus on removing friction, building trust, and creating seamless shopping experiences that make buying feel natural and rewarding.</p>
 

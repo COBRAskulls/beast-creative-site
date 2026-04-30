@@ -51,11 +51,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Hidden Marketing Goldmine in Your Supply Chain</h2>
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The Hidden Marketing Goldmine in Your Supply Chain</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your shipping and fulfillment process touches every single customer who buys your product. Think about it – while your ads might reach thousands, your fulfillment experience reaches everyone who actually converts. Yet most CPG brands treat this touchpoint like an afterthought instead of the marketing channel it really is.</p>
 
@@ -63,15 +63,21 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Smart CPG brands are flipping this challenge into an opportunity. They’re turning their logistics operations into marketing machines that create positive experiences, generate user-generated content, and build the kind of customer relationships that drive long-term growth.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Transforming Fulfillment Touchpoints into Marketing Moments</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Transforming Fulfillment Touchpoints into Marketing Moments</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Every step of your fulfillment process is a chance to reinforce your brand message and create a positive experience. Most brands miss these opportunities entirely, but here’s how to capture them:</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Order Confirmation: Setting Expectations Right</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Order Confirmation: Setting Expectations Right</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your order confirmation email is the first post-purchase touchpoint. Instead of a boring receipt, use this moment to:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Reinforce the customer’s smart purchase decision with benefit reminders</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Set clear delivery expectations with specific timelines</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Include your brand story or mission to deepen the connection</li>
@@ -80,11 +86,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The key is making customers feel good about their purchase while managing expectations proactively.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Shipping Notifications: Building Anticipation</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Shipping Notifications: Building Anticipation</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Tracking emails don’t have to be sterile logistics updates. Transform them into anticipation-building marketing messages that:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Include usage tips or recipes for food and beverage brands</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Share customer reviews or testimonials</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Provide preparation instructions for the product’s arrival</li>
@@ -93,11 +99,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This keeps your brand top-of-mind during the waiting period and adds value beyond just tracking information.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Delivery Experience: The Moment of Truth</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Delivery Experience: The Moment of Truth</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The unboxing experience has become social media gold. Brands that nail this create customers who do their marketing for them. Consider:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Packaging design that photographs well and reflects your brand values</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Inserts that encourage social sharing with branded hashtags</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Thank you notes that feel personal, not mass-produced</li>
@@ -106,15 +112,21 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Remember, people share experiences that make them look good. Give them something worth posting about.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Speed vs. Cost: Finding Your Brand’s Sweet Spot</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Speed vs. Cost: Finding Your Brand’s Sweet Spot</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Not every CPG brand needs to compete on Amazon-level speed, but you need to be intentional about your shipping strategy. The right approach depends on your brand positioning and customer expectations.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">When Speed Matters Most</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">When Speed Matters Most</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Fast shipping makes sense for brands that position themselves as premium or convenient solutions. Categories where speed adds real value include:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Replenishment products customers need regularly</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Impulse purchases where excitement fades quickly</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Perishable or time-sensitive items</li>
@@ -123,11 +135,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">For these brands, investing in faster fulfillment directly supports the brand promise and justifies premium pricing.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">When Communication Beats Speed</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">When Communication Beats Speed</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Some brands can turn slower shipping into an advantage by reframing it properly:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Artisanal brands can emphasize “made to order” craftsmanship</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Sustainable brands can highlight eco-friendly shipping consolidation</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Luxury brands can build anticipation with “worth the wait” messaging</li>
@@ -136,15 +148,21 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The key is managing expectations upfront and delivering consistently on your promises.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Subscription and Auto-Replenishment Marketing</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Subscription and Auto-Replenishment Marketing</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">For CPG brands with consumable products, subscription fulfillment becomes a retention marketing channel. Done well, it prevents churn and increases lifetime value. Done poorly, it becomes a source of customer service headaches.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Timing Intelligence</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Timing Intelligence</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Smart subscription programs use data to optimize delivery timing:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Track usage patterns to predict when customers actually need refills</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Send “low inventory” notifications before automatic shipments</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Allow easy postponement or advancement of delivery dates</li>
@@ -153,11 +171,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This prevents the frustration of receiving products too early or too late, which is the main reason people cancel subscriptions.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Surprise and Delight Moments</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Surprise and Delight Moments</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Regular shipments can become routine and forgettable. Break the pattern with:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal packaging variations</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Bonus items or samples of new products</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Exclusive subscriber-only products</li>
@@ -166,17 +184,23 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">These moments remind customers why they subscribed and give them reasons to stay engaged with your brand.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Returns and Exchanges: Turning Problems into Loyalty</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Returns and Exchanges: Turning Problems into Loyalty</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">How you handle returns reveals your true brand values. A generous, hassle-free return policy can actually increase sales by reducing purchase risk, while a difficult return process can destroy customer relationships permanently.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Psychology of Return Policies</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Psychology of Return Policies</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Customers who know they can return something easily are more likely to buy in the first place. But here’s what most brands miss: the return experience itself is a retention opportunity.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">When someone returns a product, they’re giving you data about what didn’t work and a chance to make it right. Use this opportunity to:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Understand why the return happened through brief surveys</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Offer alternatives that might work better</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Provide refunds quickly to build trust</li>
@@ -185,15 +209,21 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Customers who have a positive return experience often become more loyal than those who never had problems in the first place.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Technology Integration for Seamless Experiences</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Technology Integration for Seamless Experiences</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Modern CPG brands need fulfillment technology that supports marketing goals, not just operational efficiency. The right systems create opportunities for personalization and data collection that drive future sales.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Customer Data Platform Integration</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Customer Data Platform Integration</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your fulfillment system should feed data back into your marketing stack:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Purchase frequency data for email segmentation</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Geographic data for localized messaging</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Product preference data for personalized recommendations</li>
@@ -202,11 +232,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This creates a feedback loop where fulfillment experiences improve marketing relevance, which drives better business outcomes.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Multi-Channel Fulfillment Consistency</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Multi-Channel Fulfillment Consistency</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Whether customers buy from your website, Amazon, Target, or any other channel, the fulfillment experience should reinforce your brand consistently. This means:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Standardized packaging across all channels when possible</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consistent messaging and brand voice in all communications</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Unified customer service experiences regardless of purchase channel</li>
@@ -215,13 +245,19 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Inconsistent experiences across channels confuse customers and weaken brand recognition.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Success: Fulfillment Marketing Metrics</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring Success: Fulfillment Marketing Metrics</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Traditional fulfillment metrics focus on operational efficiency – cost per shipment, delivery times, and accuracy rates. Marketing-focused fulfillment requires additional metrics that connect logistics performance to business outcomes.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Customer Experience Metrics</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Customer Experience Metrics</h3>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Net Promoter Score (NPS) by fulfillment method:</strong> Are customers who receive faster shipping more likely to recommend you?</span>
@@ -240,9 +276,9 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
                 </li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Revenue Impact Metrics</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Revenue Impact Metrics</h3>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Customer lifetime value by shipping option:</strong> Do customers who choose faster shipping spend more over time?</span>
@@ -263,15 +299,21 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">These metrics help you understand the true ROI of fulfillment investments and identify opportunities for improvement.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Building Your Fulfillment Marketing Strategy</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Building Your Fulfillment Marketing Strategy</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Creating a fulfillment experience that drives marketing results requires coordination between operations, marketing, and customer service teams. Here’s how to get started:</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Audit Your Current Experience</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Audit Your Current Experience</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Walk through your entire fulfillment process from a customer’s perspective:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Order something from your own website</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Track all communications you receive</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Note the unboxing experience</li>
@@ -281,11 +323,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Most brands are shocked by what they discover during this exercise.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Identify Quick Wins</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Identify Quick Wins</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Some fulfillment marketing improvements don’t require major operational changes:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Rewrite transactional emails to include brand personality</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Add tracking page customization to reinforce brand messaging</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Include simple inserts that encourage social sharing</li>
@@ -294,11 +336,11 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">These changes can improve customer experience immediately while you work on bigger operational improvements.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Plan Strategic Investments</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Plan Strategic Investments</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Bigger fulfillment marketing wins require more significant changes:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Custom packaging design that enhances unboxing</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Technology integration that enables personalization</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Fulfillment network optimization for improved delivery speeds</li>
@@ -307,7 +349,13 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Prioritize these based on your brand’s unique positioning and customer needs.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Future of Fulfillment Marketing</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The Future of Fulfillment Marketing</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">The lines between logistics and marketing will continue to blur as customer expectations rise and technology improves. CPG brands that recognize this early will build sustainable competitive advantages that are difficult for competitors to copy.</p>
 

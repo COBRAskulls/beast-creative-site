@@ -51,21 +51,21 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Hidden Complexity of CPG Profit Margins</h2>
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The Hidden Complexity of CPG Profit Margins</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods profitability isn’t just about manufacturing costs versus selling price. The reality is much more nuanced. Every successful CPG brand needs to account for dozens of cost factors that can make the difference between a thriving product line and one that’s secretly bleeding money.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what makes CPG profitability analysis particularly challenging: your costs are constantly shifting. Raw material prices fluctuate, shipping rates change, promotional spending varies by season, and retailer fees evolve. Without a complete understanding of these moving parts, you’re flying blind.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Why Traditional Margin Calculations Fall Short</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Why Traditional Margin Calculations Fall Short</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Most businesses calculate gross margin using this simple formula: (Revenue – Cost of Goods Sold) / Revenue. But this approach misses critical elements that can dramatically impact your true profitability:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Trade promotion costs and retailer allowances</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Distribution and logistics expenses</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Marketing and advertising spend</li>
@@ -74,17 +74,23 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal demand fluctuations</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Building a Complete CPG Profitability Framework</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Building a Complete CPG Profitability Framework</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">To understand your true product margins, you need a systematic approach that captures all cost elements. Here’s how to build a framework that gives you accurate, actionable insights.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Step 1: Map Your Complete Cost Structure</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Step 1: Map Your Complete Cost Structure</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Start by identifying every cost that touches your product from conception to consumer purchase. This might surprise you, but most CPG brands underestimate their true costs by 10-30%.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Direct Product Costs:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Raw materials and ingredients</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Packaging materials</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Manufacturing labor</li>
@@ -94,7 +100,7 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Distribution and Logistics:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Warehousing and storage</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Transportation to distributors/retailers</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Third-party logistics fees</li>
@@ -104,7 +110,7 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Trade and Marketing Expenses:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Trade promotions and discounts</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Slotting fees and promotional allowances</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Advertising and marketing campaigns</li>
@@ -112,21 +118,27 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Broker commissions</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Step 2: Allocate Costs Accurately by Product Line</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Step 2: Allocate Costs Accurately by Product Line</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s where many CPG brands get tripped up. They know their total costs, but they don’t allocate them properly across different products, sizes, or channels. A 12-pack of your product might seem more profitable than individual units, but when you factor in the specialized packaging, different distribution requirements, and unique promotional costs, the numbers might tell a different story.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Use activity-based costing to assign expenses based on what actually drives costs, not just simple volume splits. This approach reveals which products, package sizes, and sales channels are your real profit drivers.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Advanced Margin Analysis Techniques</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Contribution Margin by Channel</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Advanced Margin Analysis Techniques</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Contribution Margin by Channel</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Different sales channels have dramatically different cost structures. Selling to Walmart involves different trade terms, logistics requirements, and support costs compared to selling through specialty food distributors or direct-to-consumer channels.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Calculate contribution margins for each major channel:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Mass retail (grocery chains, big box stores)</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Specialty retail</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Food service</li>
@@ -136,24 +148,24 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This analysis often reveals surprising insights. You might discover that your smallest volume channel is actually your most profitable, or that a major retail relationship is destroying your margins despite high sales volume.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Seasonal Profitability Patterns</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Seasonal Profitability Patterns</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">CPG profitability fluctuates throughout the year based on demand patterns, promotional calendars, and supply chain dynamics. Map your margins by quarter or month to identify:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Peak profitability periods</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal cost spikes (raw materials, transportation)</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Heavy promotional periods that compress margins</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Inventory buildup costs before peak seasons</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Product Portfolio Optimization</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Product Portfolio Optimization</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Once you have accurate margin data, you can make strategic decisions about your product portfolio. This doesn’t always mean cutting low-margin products – sometimes they serve as traffic drivers or complement high-margin items.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consider these portfolio strategies:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Margin Enhancement:</strong> Reformulate or repackage low-margin products</span>
@@ -172,13 +184,19 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
                 </li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Tools and Systems for Ongoing Analysis</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Data Integration Requirements</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Tools and Systems for Ongoing Analysis</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Data Integration Requirements</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Effective CPG profitability analysis requires pulling data from multiple sources:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> ERP systems for manufacturing and operational costs</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Trade promotion management platforms</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retailer data feeds (EDI, syndicated data)</li>
@@ -188,11 +206,11 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The key is creating automated data flows so you can track margins in real-time, not just during quarterly reviews.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Performance Indicators to Monitor</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Key Performance Indicators to Monitor</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Track these metrics consistently across your product portfolio:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Gross Margin:</strong> Basic profitability after direct costs</span>
@@ -215,35 +233,53 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
                 </li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Common Profitability Pitfalls to Avoid</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The “Revenue Growth at Any Cost” Trap</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Common Profitability Pitfalls to Avoid</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The “Revenue Growth at Any Cost” Trap</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Many CPG brands focus so heavily on top-line growth that they sacrifice profitability. This often happens when brands accept unprofitable promotional terms to gain distribution or volume. Always calculate the true cost of growth initiatives.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Ignoring Opportunity Costs</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Ignoring Opportunity Costs</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Manufacturing capacity, working capital, and management attention are limited resources. A product line that breaks even financially might still be unprofitable if those resources could generate better returns elsewhere.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Static Cost Assumptions</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Static Cost Assumptions</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your cost structure changes constantly. Set up quarterly reviews to update your profitability models with current costs, especially for volatile inputs like commodities, transportation, and promotional spending.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Turning Analysis into Action</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Pricing Strategy Optimization</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Turning Analysis into Action</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Pricing Strategy Optimization</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">With accurate margin data, you can make informed pricing decisions. This might mean raising prices on high-demand products, offering strategic discounts to move slow-turning inventory, or restructuring trade terms with retailers.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Cost Reduction Initiatives</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Cost Reduction Initiatives</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Focus cost reduction efforts where they’ll have the biggest impact. If packaging represents 15% of your product cost but promotional allowances are 25%, which deserves more attention?</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Resource Allocation Decisions</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Resource Allocation Decisions</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Direct your marketing spend, innovation resources, and sales efforts toward your most profitable products and channels. This doesn’t mean abandoning everything else, but it ensures you’re maximizing returns on your investments.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Conclusion</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Conclusion</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Understanding true CPG profitability requires looking beyond simple cost accounting to capture the complete picture of what drives margins in your business. The brands that invest in sophisticated profitability analysis gain a significant competitive advantage – they know which products, channels, and strategies actually generate profits.</p>
 

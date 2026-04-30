@@ -50,49 +50,53 @@ export default function CpgPremiumVsValuePost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <p className="text-gray-700 leading-relaxed mb-4">Coca-Cola commands $4.50 for a premium glass bottle while store brands sell similar cola for $0.89. Both strategies work, but they require fundamentally different approaches to succeed. The choice between premium and value positioning in consumer packaged goods isn’t just about price—it’s about building an entire brand ecosystem that supports your chosen market position.</p>
-
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding CPG Market Positioning Fundamentals</h2>
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Understanding CPG Market Positioning Fundamentals</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods positioning sits on a spectrum, but most successful brands cluster around two distinct poles: premium positioning that emphasizes quality, exclusivity, and experience, or value positioning that focuses on affordability, accessibility, and practical benefits.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what many business owners miss: positioning isn’t just a marketing decision—it’s a business model choice that affects everything from product development to supply chain management. Your positioning determines which customers you’ll attract, how much you can charge, and what marketing messages will resonate.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Premium Positioning Model</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Premium Positioning Model</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium CPG brands don’t just charge more—they create perceived value that justifies higher prices. Think about brands like Method cleaning products, which transformed boring household cleaners into design objects worth displaying on kitchen counters.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium positioning works through several key mechanisms:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality signaling: Higher prices often signal better quality in consumers’ minds</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Exclusivity appeal: Limited availability or higher prices create desirability</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Identity alignment: Consumers use premium brands to express personal values or status</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Experience enhancement: Premium packaging and presentation elevate the user experience</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Value Positioning Advantage</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Value Positioning Advantage</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value positioning isn’t about being cheap—it’s about being smart. Successful value brands like Kirkland Signature or Great Value focus on delivering essential benefits without unnecessary frills.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brands succeed by:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cost efficiency: Streamlined operations and smart sourcing keep prices low</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Mass appeal: Broader customer base drives volume sales</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Practical benefits: Clear, functional value propositions</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market penetration: Lower prices enable faster market share growth</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Pricing Strategy Implications</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Pricing Strategy Implications</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your positioning choice fundamentally shapes your pricing strategy. Here’s how each approach affects your pricing decisions:</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Premium Pricing Strategies</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Premium Pricing Strategies</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium CPG brands can’t just set high prices and hope for the best. They need pricing strategies that reinforce their positioning while maximizing profitability.</p>
 
@@ -102,7 +106,7 @@ export default function CpgPremiumVsValuePost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Limited Edition Pricing: Seasonal or limited releases allow premium brands to test higher price points and create urgency. This strategy works particularly well in food and beverage categories.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Value Pricing Approaches</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Value Pricing Approaches</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brands need pricing strategies that emphasize savings while maintaining profitability through volume.</p>
 
@@ -112,11 +116,17 @@ export default function CpgPremiumVsValuePost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Bundle Pricing: Offering multiple products together at a discount encourages larger basket sizes and increases customer lifetime value.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Marketing Strategy Differences</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Marketing Strategy Differences</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">The marketing implications of your positioning choice extend far beyond advertising copy. Each approach requires different channels, messages, and measurement strategies.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Premium Brand Marketing</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Premium Brand Marketing</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium CPG marketing focuses on building desire and reinforcing quality perceptions. This might surprise you: premium brands often spend less on traditional advertising but invest heavily in experiential marketing and influencer partnerships.</p>
 
@@ -126,7 +136,7 @@ export default function CpgPremiumVsValuePost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Visual Identity: Premium packaging and visual design become marketing tools themselves. Every touchpoint must reinforce quality perceptions.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Value Brand Marketing</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Value Brand Marketing</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brand marketing emphasizes accessibility, practicality, and smart choices. The most successful value brands avoid looking “cheap” while clearly communicating savings.</p>
 
@@ -136,129 +146,159 @@ export default function CpgPremiumVsValuePost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Comparison Messaging: Value brands benefit from direct comparisons that highlight equivalent quality at lower prices, though this must be done carefully to avoid appearing defensive.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Brand Building Considerations</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Brand Building Considerations</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s the thing: both premium and value positioning can build strong brands, but they require different approaches to brand building.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Premium Brand Development</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Premium Brand Development</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium CPG brands build equity through exclusivity and aspiration. They create communities around shared values and lifestyle choices.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Brand building focuses on:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Emotional connections: Premium brands invest in creating emotional relationships that transcend functional benefits</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consistency: Every interaction must reinforce premium positioning—one off-brand experience can damage carefully built perceptions</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Innovation leadership: Premium brands often introduce new features or categories that justify their price premium</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Value Brand Equity</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Value Brand Equity</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brands build trust through reliability and consistency. Customers develop loyalty when value brands consistently deliver on their promises.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brand building emphasizes:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Reliability: Consistent quality and availability build trust over time</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Transparency: Clear communication about value propositions and honest marketing messages</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Category authority: Becoming the go-to choice for practical, budget-conscious consumers</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Market Research and Consumer Insights</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Market Research and Consumer Insights</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Different positioning strategies require different approaches to understanding your market and customers.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Premium Market Research</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Premium Market Research</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium brands need deep insights into customer motivations, aspirations, and decision-making processes. Quantitative data tells you what’s happening, but qualitative research reveals why customers choose premium options.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Focus on researching:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Emotional drivers behind purchase decisions</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Lifestyle and value alignments</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Price sensitivity thresholds</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Competitive comparison behaviors</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Value Market Analysis</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Value Market Analysis</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brands benefit from clear understanding of functional needs, purchase patterns, and price sensitivity across different customer segments.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Key research areas include:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Price elasticity analysis</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Feature importance rankings</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Shopping behavior patterns</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Category switching triggers</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Operational and Supply Chain Implications</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Operational and Supply Chain Implications</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Most businesses underestimate how positioning affects operations. Your market position determines everything from supplier relationships to inventory management.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Premium Operations</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Premium Operations</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium brands often accept higher costs to maintain quality standards and brand perception. This includes:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Premium ingredient sourcing and supplier partnerships</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Smaller production runs to maintain exclusivity</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Enhanced packaging and presentation requirements</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Quality control processes that exceed industry standards</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Value Operations</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Value Operations</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brands optimize for efficiency and cost control while maintaining acceptable quality levels:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Streamlined product lines to maximize production efficiency</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Strategic supplier partnerships focused on cost optimization</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Packaging designs that minimize costs while protecting products</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Inventory management systems that reduce carrying costs</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Success</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring Success</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium and value positioned brands require different metrics to measure success effectively.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Premium Brand Metrics</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Premium Brand Metrics</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Premium brands should focus on metrics that reflect their positioning:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Price premium maintenance: Tracking price gaps versus competitors</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand equity measures: Awareness, consideration, and preference metrics</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer lifetime value: Premium customers should generate more long-term value</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Net Promoter Score: Premium brands should generate stronger advocacy</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Value Brand Success Indicators</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Value Brand Success Indicators</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Value brands should track metrics that reflect efficiency and market penetration:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market share growth: Value brands should gain share over time</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Distribution expansion: Availability across retail channels</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cost per acquisition: Efficient customer acquisition is crucial for value brands</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Repeat purchase rates: Value brands rely on consistent customer retention</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Avoiding Positioning Pitfalls</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Avoiding Positioning Pitfalls</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that many CPG brands fail because they try to straddle both positions or change positioning without understanding the implications.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Middle Market Trap</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Middle Market Trap</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Brands stuck in the middle—not premium enough to justify high prices, not value-oriented enough to compete on price—often struggle to maintain market share. This “middle market” position requires exceptional execution to succeed.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Positioning Migration Challenges</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Positioning Migration Challenges</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Moving from value to premium positioning is extremely difficult. Customers resist paying more for brands they perceive as budget options. Moving from premium to value can damage brand equity permanently.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Consistency Requirements</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Consistency Requirements</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Whatever positioning you choose, consistency across all touchpoints is essential. Mixed messages confuse customers and weaken your market position.</p>
 

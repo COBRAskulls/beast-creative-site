@@ -51,7 +51,7 @@ export default function CpgBrandStrategyPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -59,17 +59,23 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This reality means your brand strategy can&apos;t rely on lengthy explanations or complex value propositions. Everything about your positioning must be instantly clear and compelling. The brands that succeed understand this fundamental truth: clarity beats cleverness every time.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Shelf Space Reality</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Shelf Space Reality</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Traditional retail channels offer limited real estate, but the principles of positioning apply everywhere your products appear. Whether you&apos;re targeting grocery chains, convenience stores, or e-commerce platforms, you need a strategy that makes your brand stand out within seconds.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here&apos;s what works: focus on one primary differentiator that&apos;s immediately obvious. Trying to communicate multiple benefits dilutes your message and confuses consumers who are making quick decisions.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Defining Your Brand Position in the CPG Market</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Defining Your Brand Position in the CPG Market</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Effective CPG positioning starts with brutal honesty about where you fit in the market. This isn&apos;t about where you want to be—it&apos;s about identifying the specific space you can own and defend.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Three Pillars of CPG Positioning</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Three Pillars of CPG Positioning</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">1. Category Definition Are you creating a new category or competing in an existing one? New categories require education and patience. Existing categories demand clear differentiation from established players.</p>
 
@@ -77,11 +83,11 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">3. Unique Value Proposition What do you offer that competitors can&apos;t or won&apos;t match? This goes beyond product features to include brand personality, values, and the complete consumer experience.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Positioning Framework for CPG Success</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Positioning Framework for CPG Success</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Use this framework to clarify your brand position:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> For [specific target consumer]</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Who [specific need or frustration]</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> [Your brand] is the [category] that [unique benefit]</li>
@@ -91,15 +97,21 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This framework forces you to make hard choices about who you serve and how you&apos;re different. Those constraints become your competitive advantage.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Market Research and Consumer Insights</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Market Research and Consumer Insights</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Most CPG brands make the mistake of researching what consumers say they want instead of observing what they actually do. Behavior trumps stated preferences every time.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Beyond Traditional Focus Groups</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Beyond Traditional Focus Groups</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">While focus groups have their place, they don&apos;t capture real shopping behavior. Consider these research methods:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Shop-alongs: Observe consumers making actual purchase decisions in real environments</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Digital behavior analysis: Track online shopping patterns and search behavior</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Social listening: Monitor conversations about your category and competitors</li>
@@ -108,11 +120,11 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The goal isn&apos;t to collect data—it&apos;s to uncover insights that reveal opportunities your competitors miss.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Identifying White Space Opportunities</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Identifying White Space Opportunities</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Every crowded market has gaps. These white spaces represent positioning opportunities where consumer needs aren&apos;t fully met. Look for:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Underserved demographic segments</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Unmet functional needs</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Emotional connections competitors ignore</li>
@@ -122,15 +134,21 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The key is finding gaps large enough to build a business around but specific enough to defend.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Competitive Analysis for CPG Brands</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Competitive Analysis for CPG Brands</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your competitive analysis should go far beyond product features and pricing. You need to understand how competitors position themselves and where their strategies create vulnerabilities.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Complete Competitive Picture</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Complete Competitive Picture</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Analyze competitors across these dimensions:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand messaging: What promises do they make?</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Visual identity: How do they look on shelf or online?</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Distribution strategy: Where and how do they sell?</li>
@@ -141,7 +159,7 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This analysis reveals patterns and gaps. Maybe everyone in your category uses similar messaging, creating an opportunity to stand out with a different approach.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Direct vs. Indirect Competition</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Direct vs. Indirect Competition</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Don&apos;t just analyze obvious competitors. Consider indirect alternatives that solve the same consumer problem. A premium snack brand competes with other snacks, but also with restaurants, meal delivery services, and even entertainment options for discretionary spending.</p>
 
@@ -149,7 +167,7 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Developing Your Unique Value Proposition Your value proposition must be unique, relevant, and believable. In CPG markets, it also needs to be immediately apparent to time-pressed consumers.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The CPG Value Proposition Formula</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The CPG Value Proposition Formula</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Effective CPG value propositions combine functional and emotional benefits in a way that&apos;s instantly clear. Here&apos;s the formula that works:</p>
 
@@ -157,13 +175,13 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">For example: &quot;30% less sugar&quot; (functional) + &quot;without sacrificing taste&quot; (emotional) + &quot;winner of three taste tests&quot; (proof) creates a complete value proposition.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Testing Your Value Proposition</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Testing Your Value Proposition</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Before you commit to packaging, marketing, and distribution, test your value proposition with real consumers in realistic settings. This might surprise you: what sounds compelling in a conference room often falls flat in the real world.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Test these elements:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Message comprehension: Do consumers understand what you&apos;re offering?</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Relevance: Do they care about the benefits you highlight?</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Believability: Do they trust your claims?</li>
@@ -171,21 +189,27 @@ export default function CpgBrandStrategyPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Purchase intent: Would they buy based on this positioning?</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Brand Messaging and Communication Strategy</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Brand Messaging and Communication Strategy</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">CPG messaging must work across multiple touchpoints, from packaging to digital ads to in-store displays. Consistency isn&apos;t just nice to have—it&apos;s essential for building recognition in crowded markets.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Creating Message Architecture</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Creating Message Architecture</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your message architecture should flow from broad positioning to specific claims: Brand promise: The overarching benefit you deliver. Key messages: Three to five supporting points. Proof points: Evidence that supports each message. Personality traits: How you sound and feel as a brand.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">This architecture ensures consistent communication while allowing flexibility for different channels and audiences.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Channel-Specific Messaging</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Channel-Specific Messaging</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">While your core positioning remains constant, the emphasis and execution should adapt to different channels:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Packaging: Lead with primary benefit, support with key proof points</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Digital advertising: Focus on emotional connection and brand personality</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retail partnerships: Emphasize category growth and profit potential</li>
@@ -193,15 +217,21 @@ export default function CpgBrandStrategyPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> PR and partnerships: Highlight brand story and founder mission</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Packaging and Visual Identity Strategy</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Packaging and Visual Identity Strategy</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">In CPG, your package is your primary marketing tool. It needs to attract attention, communicate value, and trigger purchase decisions—all within seconds.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Shelf Impact Test</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Shelf Impact Test</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your packaging must pass the shelf impact test: it should be visible and appealing even when surrounded by competitors. This means:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Bold, distinctive colors that pop in your category</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Clear hierarchy of information</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Immediate benefit communication</li>
@@ -211,26 +241,32 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Most importantly, your packaging should make your positioning obvious at a glance. If consumers need to study your package to understand what you offer, you&apos;ve already lost.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Digital-First Considerations</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Digital-First Considerations</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">With e-commerce growing rapidly, your packaging must also work online. This means:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> High contrast elements that show up in small thumbnails</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Clear product photography that highlights key features</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Readable text even when compressed</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Distinctive silhouette that stands out in grid layouts</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Distribution and Retail Strategy</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Distribution and Retail Strategy</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your distribution strategy should align with your brand positioning. Premium positioning demands selective distribution, while mass market positioning requires broad availability.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Matching Distribution to Position</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Matching Distribution to Position</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consider how distribution choices reinforce or undermine your positioning:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Premium brands: Start with high-end retailers and specialty channels</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Value brands: Focus on mass merchants and discount retailers</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Natural/organic brands: Begin with health food stores and natural chains</li>
@@ -240,13 +276,13 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The wrong distribution strategy can confuse consumers and dilute your brand equity before you&apos;ve had a chance to establish it.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Building Retail Relationships</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Building Retail Relationships</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Retailers are partners in your positioning strategy. They need to understand and believe in your brand position to give you the support and shelf space you need to succeed.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Develop retailer presentations that clearly communicate:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Your target consumer and why they&apos;ll buy</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> How you differentiate from existing options</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Expected sales velocity and profit margins</li>
@@ -256,11 +292,11 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Digital Marketing and E-commerce Integration Digital channels offer CPG brands new ways to connect with consumers and build brand equity beyond the physical shelf. The key is creating cohesive experiences that reinforce your positioning across all touchpoints.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Content Marketing for CPG</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Content Marketing for CPG</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Content marketing allows you to tell your brand story and demonstrate value in ways that packaging constraints don&apos;t allow. Focus on:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Usage inspiration and recipe ideas</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Behind-the-scenes brand stories</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Educational content about your category</li>
@@ -270,11 +306,11 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The goal isn&apos;t just awareness—it&apos;s building brand preference and loyalty that translates to retail sales.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">E-commerce Optimization</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">E-commerce Optimization</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Whether you&apos;re selling directly or through retail partners online, your digital presence must clearly communicate your positioning. This includes:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Optimized product listings with compelling copy</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> High-quality images that showcase key benefits</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer reviews and ratings management</li>
@@ -282,13 +318,19 @@ export default function CpgBrandStrategyPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Social proof and trust signals</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Brand Position Success</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring Brand Position Success</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Successful positioning shows up in measurable results. Track both leading indicators (awareness, perception) and lagging indicators (sales, market share) to gauge your progress.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Positioning Metrics</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Key Positioning Metrics</h3>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Unaided brand awareness: Do consumers think of you spontaneously?</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand attribute association: Do they connect you with your desired benefits?</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Purchase consideration: Are you in their consideration set?</li>
@@ -299,13 +341,13 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">These metrics help you understand whether your positioning is working and where you need to adjust.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Continuous Optimization</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Continuous Optimization</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Brand positioning isn&apos;t set-it-and-forget-it. Markets evolve, competitors respond, and consumer needs shift. Regular assessment and refinement ensure your positioning stays relevant and compelling.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Schedule quarterly positioning reviews that examine:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Competitive landscape changes</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consumer feedback and behavior shifts</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Sales performance across channels</li>
@@ -313,27 +355,39 @@ export default function CpgBrandStrategyPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Retailer feedback and support levels</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Common CPG Positioning Mistakes to Avoid</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Common CPG Positioning Mistakes to Avoid</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Even experienced marketers make positioning mistakes that can derail CPG success. Here are the most common pitfalls and how to avoid them.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The &quot;Everything to Everyone&quot; Trap</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The &quot;Everything to Everyone&quot; Trap</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Trying to appeal to everyone usually means appealing to no one. Successful CPG brands start narrow and expand gradually. It&apos;s better to own a small segment completely than to have weak positioning across multiple segments.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Overcomplicating the Message</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Overcomplicating the Message</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Complex positioning might work in B2B markets with lengthy sales cycles, but CPG consumers make quick decisions. If you can&apos;t explain your key benefit in five words or less, your positioning is probably too complicated.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Ignoring Emotional Connection</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Ignoring Emotional Connection</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">CPG purchases often involve emotion, even for seemingly rational products. Successful brands understand the emotional job their product performs and incorporate that into their positioning.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Inconsistent Execution</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Inconsistent Execution</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Strong positioning executed inconsistently is worse than average positioning executed consistently. Make sure everyone involved in your brand—from product development to customer service—understands and reinforces your position.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Conclusion</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Conclusion</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Successful CPG brand positioning requires clarity, consistency, and courage. Clarity about who you serve and how you&apos;re different. Consistency in how you execute that positioning across all touchpoints. Courage to make hard choices and resist the temptation to be everything to everyone.</p>
 

@@ -51,21 +51,21 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Current CPG Regulatory Environment</h2>
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The Current CPG Regulatory Environment</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods companies face an unprecedented wave of regulatory changes across multiple jurisdictions. From stricter labeling requirements to enhanced product safety standards, the regulatory framework governing CPG products continues to expand and evolve at a rapid pace.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s the thing—regulatory compliance isn’t just about avoiding fines anymore. It’s become a competitive advantage for brands that get it right. Companies that stay ahead of regulatory changes can enter new markets faster, build stronger consumer trust, and avoid the costly product recalls that plague reactive competitors.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Regulatory Areas Under Scrutiny</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Key Regulatory Areas Under Scrutiny</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The most significant changes are happening in these critical areas:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Product labeling and claims substantiation:</strong> – New requirements for transparency in ingredient listings and marketing claims</span>
@@ -88,15 +88,21 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
                 </li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding Regional Variations in CPG Regulations</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Understanding Regional Variations in CPG Regulations</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">One of the biggest challenges CPG companies face is navigating the patchwork of regulations across different markets. What’s compliant in one region might violate regulations in another, creating complex compliance matrices for multi-market brands.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">North American Market Dynamics</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">North American Market Dynamics</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">In the United States, regulatory changes are primarily driven by the FDA, FTC, and state-level agencies. Recent focus areas include:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Enhanced nutritional labeling requirements</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Stricter advertising claim substantiation</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> New chemical safety assessments under updated TSCA guidelines</li>
@@ -105,11 +111,11 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Canada’s regulatory environment has seen parallel developments, with Health Canada implementing new natural health product regulations and enhanced food labeling requirements that often exceed U.S. standards.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">European Union Compliance Challenges</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">European Union Compliance Challenges</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The EU continues to set global standards for CPG regulation through comprehensive frameworks like:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> The Single-Use Plastics Directive affecting packaging choices</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> REACH regulations for chemical substances</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Enhanced product liability frameworks</li>
@@ -118,15 +124,21 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Most businesses miss this crucial point: EU regulations often serve as templates for emerging markets, making EU compliance a strategic investment for global expansion.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Building Proactive Compliance Systems</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Building Proactive Compliance Systems</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Rather than reacting to regulatory changes as they occur, successful CPG companies are building anticipatory compliance frameworks that can adapt to new requirements quickly.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Regulatory Intelligence Networks</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Regulatory Intelligence Networks</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Smart companies don’t wait for regulations to be finalized before taking action. They’re investing in regulatory intelligence systems that track:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Proposed legislation in key markets</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Industry consultation periods and comment opportunities</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Enforcement trend analysis</li>
@@ -135,11 +147,11 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">This might surprise you, but the companies that influence regulatory development most effectively are those that participate actively in the consultation process, rather than simply responding to finalized rules.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Cross-Functional Compliance Teams</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Cross-Functional Compliance Teams</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The days of leaving compliance solely to legal teams are over. Modern CPG compliance requires input from:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Product development:</strong> – Ensuring new formulations meet anticipated regulatory requirements</span>
@@ -162,15 +174,21 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
                 </li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Technology Solutions for Compliance Management</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Technology Solutions for Compliance Management</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what works: using technology to automate compliance monitoring and management processes. Manual compliance tracking simply can’t keep pace with the current rate of regulatory change.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Regulatory Change Management Platforms</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Regulatory Change Management Platforms</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Advanced CPG companies are implementing platforms that:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Monitor regulatory databases across multiple jurisdictions</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Analyze impact on specific product lines and formulations</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Generate compliance timelines and action plans</li>
@@ -178,21 +196,27 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Maintain audit trails for regulatory inspections</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Product Information Management Integration</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Product Information Management Integration</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Smart compliance management integrates directly with product information systems to ensure that regulatory requirements are embedded in product development workflows from the earliest stages.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">This integration enables automatic flagging of potential compliance issues during product development, rather than discovering problems during final regulatory review.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Managing Compliance Costs and Resources</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Managing Compliance Costs and Resources</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that compliance costs are increasing across the CPG industry. However, companies that approach compliance strategically often find that upfront investments in robust systems reduce long-term costs significantly.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Cost-Effective Compliance Strategies</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Cost-Effective Compliance Strategies</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Rather than treating each regulatory requirement as a separate compliance exercise, efficient companies are:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Standardizing processes:</strong> – Creating scalable compliance workflows that work across multiple jurisdictions</span>
@@ -211,26 +235,32 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
                 </li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">ROI Metrics for Compliance Investment</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">ROI Metrics for Compliance Investment</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Smart CPG companies track compliance ROI through metrics like:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Time-to-market improvements for compliant products</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Reduction in product recall incidents and associated costs</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market access expansion enabled by proactive compliance</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand reputation protection and trust-building outcomes</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Future-Proofing Your Compliance Strategy</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Future-Proofing Your Compliance Strategy</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">The pace of regulatory change shows no signs of slowing. If anything, increasing consumer awareness and environmental concerns are driving accelerated regulatory development across all CPG categories.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Emerging Regulatory Trends</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Emerging Regulatory Trends</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Based on current regulatory development patterns, CPG companies should prepare for:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Enhanced sustainability requirements:</strong> – More comprehensive lifecycle assessments and carbon footprint reporting</span>
@@ -249,28 +279,34 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
                 </li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Building Adaptive Capacity</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Building Adaptive Capacity</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The most resilient CPG companies are building what we call “adaptive compliance capacity”—the ability to quickly understand, evaluate, and implement new regulatory requirements without disrupting core business operations.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">This requires investment in:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Flexible product formulation platforms that can accommodate new restrictions</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Modular packaging systems that adapt to different regulatory requirements</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Data management systems that support various reporting requirements</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Staff training programs that build regulatory literacy across the organization</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Working with Regulatory Consultants and Partners</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Working with Regulatory Consultants and Partners</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Most CPG companies can’t build complete regulatory expertise in-house for every market they serve. Strategic partnerships with regulatory consultants, legal experts, and compliance technology providers often provide better coverage at lower cost than internal teams.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Selecting the Right Compliance Partners</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Selecting the Right Compliance Partners</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">When evaluating compliance partners, look for:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Demonstrated expertise in your specific CPG categories</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Multi-jurisdictional experience and relationships</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Technology platforms that integrate with your systems</li>
@@ -280,15 +316,21 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what many companies get wrong: they select compliance partners based primarily on cost rather than strategic value. The cheapest compliance support often becomes the most expensive when it fails to prevent costly violations or delays.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Compliance Performance</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring Compliance Performance</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Effective compliance management requires clear metrics and regular performance assessment. Leading CPG companies track both leading and lagging indicators of compliance performance.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Performance Indicators</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Key Performance Indicators</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Essential compliance KPIs include:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Regulatory response time:</strong> – How quickly you adapt to new requirements</span>
@@ -311,13 +353,19 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
                 </li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Continuous Improvement Frameworks</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Continuous Improvement Frameworks</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The best-performing CPG companies treat compliance as a continuous improvement discipline, regularly reviewing and optimizing their compliance processes based on performance data and emerging best practices.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">This includes quarterly compliance reviews, annual compliance strategy assessments, and ongoing benchmarking against industry peers and regulatory leaders.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Conclusion: Turning Compliance into Competitive Advantage</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Conclusion: Turning Compliance into Competitive Advantage</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">CPG regulatory compliance isn’t just about avoiding penalties—it’s about building systems that enable faster market entry, stronger consumer trust, and more efficient operations. Companies that view compliance as a strategic capability rather than a cost center consistently outperform those that treat it as an afterthought.</p>
 

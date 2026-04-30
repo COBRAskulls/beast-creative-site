@@ -51,21 +51,21 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding the CPG Reformulation Landscape</h2>
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Understanding the CPG Reformulation Landscape</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods reformulation has evolved far beyond simple recipe tweaks or cost-cutting measures. Today’s reformulation efforts represent a strategic response to rapidly changing market dynamics, consumer preferences, and regulatory requirements.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">The modern CPG landscape demands agility. Consumer preferences shift faster than ever, influenced by social media trends, health discoveries, and cultural movements. What worked five years ago—or even last year—might not resonate with today’s buyers.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Drivers Behind Modern Reformulation</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Key Drivers Behind Modern Reformulation</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Several forces are pushing CPG brands toward reformulation:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Health and wellness trends:</strong> Consumers increasingly demand clean labels, functional ingredients, and nutritional transparency</span>
@@ -88,11 +88,17 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
                 </li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Strategic Approaches to Product Reformulation</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Strategic Approaches to Product Reformulation</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Successful reformulation requires more than just tweaking ingredients. It demands a strategic approach that balances consumer needs, business objectives, and market realities.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Consumer-Centric Reformulation</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Consumer-Centric Reformulation</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The most successful reformulations start with deep consumer insights. This means going beyond traditional market research to understand the emotional and functional needs driving purchase decisions.</p>
 
@@ -100,13 +106,13 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
 
               <p className="text-gray-700 leading-relaxed mb-4">Social listening tools can reveal emerging trends and consumer pain points before they show up in traditional research. Monitor conversations around your product categories to identify reformulation opportunities early.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Ingredient Innovation and Sourcing</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Ingredient Innovation and Sourcing</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Modern reformulation often centers on ingredient innovation. Consumers want products that deliver superior performance while aligning with their values—whether that’s organic sourcing, minimal processing, or environmental sustainability.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consider these ingredient strategies:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Functional ingredients:</strong> Add components that provide health benefits beyond basic nutrition</span>
@@ -125,11 +131,17 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
                 </li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Market Research and Consumer Testing</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Market Research and Consumer Testing</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Effective reformulation requires robust testing throughout the development process. This isn’t just about taste tests—it’s about understanding how reformulated products perform across all consumer touchpoints.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Multi-Phase Testing Strategy</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Multi-Phase Testing Strategy</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that most reformulation failures happen because brands don’t test early or thoroughly enough. A comprehensive testing strategy includes multiple phases and methodologies.</p>
 
@@ -139,23 +151,29 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
 
               <p className="text-gray-700 leading-relaxed mb-4">Market Testing: Limited market releases help identify real-world performance issues before full launch. This phase reveals problems that laboratory testing might miss.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Digital Testing Methods</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Digital Testing Methods</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Traditional testing methods remain important, but digital tools now offer faster, more cost-effective insights. Online panels, mobile surveys, and social media testing can accelerate the research process while maintaining quality insights.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Virtual reality and augmented reality technologies are emerging as powerful testing tools, allowing consumers to experience products in simulated real-world environments.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Regulatory Compliance and Safety Considerations</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Regulatory Compliance and Safety Considerations</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Product reformulation must navigate an increasingly complex regulatory landscape. Different markets have varying requirements for ingredients, labeling, and safety testing.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Global Regulatory Frameworks</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Global Regulatory Frameworks</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">If you’re selling across multiple markets, regulatory compliance becomes exponentially more complex. What’s approved in one country might be restricted or banned in another.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Key regulatory considerations include:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Ingredient approvals:</strong> Ensure all ingredients meet regulatory requirements in target markets</span>
@@ -174,17 +192,23 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
                 </li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Documentation and Traceability</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Documentation and Traceability</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Modern reformulation requires meticulous documentation. Regulatory agencies increasingly demand detailed records of ingredient sourcing, testing protocols, and safety assessments.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Establish systems that track every aspect of the reformulation process, from initial concept through market launch. This documentation protects your brand and facilitates regulatory approvals.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Supply Chain and Manufacturing Challenges</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Supply Chain and Manufacturing Challenges</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Reformulation success depends heavily on supply chain management and manufacturing capabilities. New ingredients might require different suppliers, storage conditions, or processing equipment.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Supplier Relationships and Sourcing</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Supplier Relationships and Sourcing</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Building strong supplier relationships becomes critical when reformulating products. New ingredients might come from unfamiliar suppliers, requiring careful vetting and relationship building.</p>
 
@@ -192,17 +216,23 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
 
               <p className="text-gray-700 leading-relaxed mb-4">Consider supplier diversification to reduce risk. Having multiple sources for key ingredients protects against supply disruptions that could derail reformulation efforts.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Manufacturing Adaptations</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Manufacturing Adaptations</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Reformulated products might require changes to manufacturing processes, equipment, or quality control procedures. These changes can significantly impact production costs and timelines.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Work closely with manufacturing teams early in the reformulation process. Their insights can prevent costly surprises and help optimize new formulations for efficient production.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Marketing and Communication Strategies</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Marketing and Communication Strategies</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Even the best reformulation can fail without effective marketing and communication. Consumers need to understand and appreciate the changes you’ve made to their favorite products.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Messaging Strategy</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Messaging Strategy</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Your reformulation messaging should focus on benefits, not features. Instead of listing ingredient changes, explain how these changes improve the consumer experience.</p>
 
@@ -210,7 +240,7 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
 
               <p className="text-gray-700 leading-relaxed mb-4">Consider these messaging approaches:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Health benefits:</strong> Emphasize nutritional improvements or removal of unwanted ingredients</span>
@@ -229,21 +259,27 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
                 </li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Channel Strategy</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Channel Strategy</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Different communication channels work better for different types of reformulation messages. Social media excels at building excitement around innovation, while packaging changes communicate benefits at the point of purchase.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Digital marketing campaigns can provide detailed information about reformulation benefits, while traditional advertising builds broad awareness. The key is coordinating messages across all channels for maximum impact.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Success and ROI</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring Success and ROI</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Reformulation success requires clear metrics and ongoing measurement. This goes beyond simple sales figures to include consumer satisfaction, market share, and long-term brand health.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Key Performance Indicators</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Key Performance Indicators</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Establish KPIs that reflect both short-term and long-term success:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">Sales performance:</strong> Track volume and revenue changes following reformulation</span>
@@ -266,29 +302,35 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
                 </li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Long-Term Impact Assessment</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Long-Term Impact Assessment</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The true success of reformulation efforts often takes months or years to fully materialize. Establish systems for long-term tracking and analysis.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer behavior changes gradually. A reformulation that shows modest initial results might deliver significant long-term benefits as consumer awareness grows and purchase patterns shift.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Future-Proofing Through Continuous Innovation</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Future-Proofing Through Continuous Innovation</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Successful CPG brands treat reformulation as an ongoing process rather than a one-time project. Consumer needs continue evolving, requiring continuous adaptation and innovation.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Building Innovation Capabilities</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Building Innovation Capabilities</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Develop internal capabilities that support ongoing reformulation efforts. This includes consumer research competencies, ingredient sourcing expertise, and agile development processes.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that brands with strong innovation capabilities can respond more quickly to changing market conditions and consumer needs. This agility becomes a competitive advantage in rapidly evolving markets.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Technology Integration</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Technology Integration</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Emerging technologies are transforming reformulation processes. Artificial intelligence can analyze consumer data to identify reformulation opportunities, while advanced testing methods accelerate product development timelines.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consider how technology can enhance your reformulation capabilities:</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-6">
                 <li className="flex gap-3">
                   <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   <span className="text-gray-700 text-sm leading-relaxed"><strong className="text-beast-black">AI-powered consumer insights:</strong> Use machine learning to identify patterns in consumer behavior and preferences</span>

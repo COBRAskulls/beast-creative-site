@@ -51,21 +51,21 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
       {/* ARTICLE BODY */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Why Test Marketing Matters More Than Ever in CPG</h2>
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Why Test Marketing Matters More Than Ever in CPG</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">The CPG landscape has become increasingly competitive and expensive. With retail shelf space at a premium and marketing costs rising, brands can’t afford to launch products based on gut feelings alone. Test marketing provides the data-driven insights needed to make informed decisions about product viability, pricing strategies, and marketing effectiveness.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s the thing: test marketing isn’t just about reducing risk—it’s about optimizing for success. When done correctly, it reveals critical insights that can transform a mediocre product launch into a market winner.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Real Cost of Skipping Test Marketing</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">The Real Cost of Skipping Test Marketing</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consider the financial implications of a failed national launch. Beyond the direct costs of manufacturing, distribution, and marketing, there are hidden costs that many brands overlook:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Damaged relationships with key retailers</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Diminished brand equity and consumer trust</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Opportunity costs from delayed successful product launches</li>
@@ -74,15 +74,21 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Most businesses miss this: a failed national launch doesn’t just cost money—it can set your brand back years in terms of retailer confidence and market positioning.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Essential Components of Effective CPG Test Marketing</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Market Selection Strategy</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Essential Components of Effective CPG Test Marketing</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Market Selection Strategy</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Choosing the right test markets is crucial for accurate results. The best test markets share key demographic and behavioral characteristics with your target national audience while remaining geographically contained enough to control variables.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what works when selecting test markets:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Population size between 50,000-500,000 for meaningful data without excessive costs</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Media markets that don’t spill into other regions</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Demographic profiles that mirror your national target audience</li>
@@ -90,13 +96,13 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Historical stability in consumer behavior patterns</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Product Validation Metrics That Matter</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Product Validation Metrics That Matter</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Not all metrics are created equal in test marketing. Focus on indicators that predict long-term success rather than short-term spikes. The reality is that many brands get distracted by vanity metrics that don’t translate to sustainable growth.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Primary Success Indicators:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Repeat purchase rates within first 90 days</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Customer lifetime value projections</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Market share capture relative to competitive set</li>
@@ -106,16 +112,22 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Secondary Performance Metrics:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Brand awareness and aided/unaided recall</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Consumer sentiment and Net Promoter Score</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Cross-selling impact on existing product lines</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Seasonal variation in demand patterns</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Building Your Test Marketing Framework</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Phase 1: Pre-Launch Preparation</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Building Your Test Marketing Framework</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Phase 1: Pre-Launch Preparation</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Success starts before your product hits shelves. This phase typically takes 6-8 weeks and involves critical groundwork that determines the quality of your results.</p>
 
@@ -131,7 +143,7 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Establish pre-launch benchmarks for category performance, competitor activity, and consumer behavior patterns in your test markets.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Phase 2: Launch Execution</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Phase 2: Launch Execution</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The launch phase typically runs 12-16 weeks, providing enough time to capture initial trial, repeat purchases, and seasonal variations if applicable.</p>
 
@@ -147,7 +159,7 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Set up systems to capture ongoing consumer feedback through surveys, social listening, and point-of-sale interactions.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Phase 3: Data Analysis and Decision Making</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Phase 3: Data Analysis and Decision Making</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">This is where many brands stumble. Raw data doesn’t make decisions—thoughtful analysis does. Here’s how to extract actionable insights from your test marketing results.</p>
 
@@ -159,9 +171,15 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Evaluate your performance relative to category benchmarks and competitive activity during the test period. External factors can significantly impact results.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Advanced Test Marketing Strategies</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Multi-Market Testing Approaches</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Advanced Test Marketing Strategies</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Multi-Market Testing Approaches</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">For brands with larger budgets and higher stakes, multi-market testing provides more robust insights and reduces single-market bias.</p>
 
@@ -173,7 +191,7 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Test different pricing, packaging, or positioning strategies across multiple markets simultaneously. This accelerates learning and optimization.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Digital-First Testing Models</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Digital-First Testing Models</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Modern test marketing increasingly incorporates digital channels and e-commerce platforms for faster, more cost-effective validation.</p>
 
@@ -185,33 +203,45 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Use targeted social campaigns to test messaging, gather feedback, and build pre-launch awareness in specific geographic markets.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Common Test Marketing Pitfalls to Avoid</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Timing and Duration Mistakes</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Common Test Marketing Pitfalls to Avoid</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Timing and Duration Mistakes</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Many brands rush their test marketing or don’t allow sufficient time for meaningful data collection. Here’s what most companies get wrong:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Launching during atypical seasonal periods</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Ending tests before repeat purchase cycles complete</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Overlapping test periods with major competitive launches</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Insufficient time for distribution optimization</li>
               </ul>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Sample Size and Market Selection Errors</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Sample Size and Market Selection Errors</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that poorly chosen test markets can provide misleading results that don’t translate to national success. Avoid these common mistakes:</p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-6">
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Markets too small to generate statistical significance</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Unrepresentative demographic or behavioral profiles</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Unusual competitive dynamics not found nationally</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Limited retail channel representation</li>
               </ul>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Technology and Tools for Modern Test Marketing</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Data Collection and Analytics Platforms</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Technology and Tools for Modern Test Marketing</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Data Collection and Analytics Platforms</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Today’s test marketing relies heavily on technology to capture, analyze, and interpret consumer behavior data. The right tools can dramatically improve the accuracy and speed of your insights.</p>
 
@@ -227,31 +257,43 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Monitor brand mentions, sentiment, and consumer conversations to supplement quantitative data with qualitative insights.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Predictive Modeling and Forecasting</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Predictive Modeling and Forecasting</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Advanced analytics can help extrapolate test market results to predict national performance more accurately.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Machine learning algorithms can identify patterns and correlations that human analysts might miss, improving the reliability of launch predictions.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring ROI on Test Marketing Investments</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Measuring ROI on Test Marketing Investments</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Test marketing requires significant upfront investment, but the ROI can be substantial when measured correctly. Here’s how to quantify the value:</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Direct Cost Avoidance</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Direct Cost Avoidance</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Calculate the potential losses prevented by identifying product issues before national launch. This includes manufacturing waste, distribution costs, and marketing spend on unsuccessful products.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Optimization Value</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Optimization Value</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Measure the incremental revenue generated by optimizing pricing, positioning, and marketing strategies based on test results.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Speed to Market Benefits</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Speed to Market Benefits</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Test marketing can actually accelerate successful launches by providing retailers and stakeholders with performance data that builds confidence and support.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Scaling Successful Test Results</h2>
+            </div>
+          </AnimatedSection>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">National Launch Planning</h3>
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Scaling Successful Test Results</h2>
+
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">National Launch Planning</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Once your test marketing validates product viability, the transition to national rollout requires careful planning and resource allocation.</p>
 
@@ -267,11 +309,17 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Apply lessons learned from test market campaigns to develop national advertising and promotional strategies.</p>
 
-              <h3 className="font-display text-xl font-bold text-beast-black mb-2">Continuous Optimization</h3>
+              <h3 className="font-display text-xl font-bold text-beast-black mb-2 mt-6">Continuous Optimization</h3>
 
               <p className="text-gray-700 leading-relaxed mb-4">Even after national launch, maintain the analytical mindset developed during test marketing. Continue monitoring performance and optimizing based on market feedback.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Future of CPG Test Marketing</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The Future of CPG Test Marketing</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Test marketing continues to evolve with advances in technology, changes in consumer behavior, and new retail channels. Successful brands adapt their testing approaches to stay ahead of these trends.</p>
 
@@ -279,7 +327,13 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">The brands that master modern test marketing approaches will have significant competitive advantages in bringing successful products to market faster and more reliably than their competitors.</p>
 
-              <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Making Test Marketing Work for Your Brand</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="prose prose-lg max-w-none">
+
+              <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Making Test Marketing Work for Your Brand</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Effective test marketing isn’t just about following a checklist—it’s about building a culture of data-driven decision making and continuous optimization. The most successful CPG brands treat test marketing as an essential capability, not just a project phase.</p>
 
