@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What is a retail media network?",
-    answer:
-      "A retail media network is an advertising platform operated by a retailer — like Walmart Connect, Target Roundel, or Instacart Ads — that lets brands advertise directly to shoppers on the retailer's own properties. These networks are valuable because they offer closed-loop attribution: you can see exactly which ad exposures led to purchases within that retailer.",
+    answer: "A retail media network is an advertising platform operated by a retailer — like Walmart Connect, Target Roundel, or Instacart Ads — that lets brands advertise directly to shoppers on the retailer's own properties. These networks are valuable because they offer closed-loop attribution: you can see exactly which ad exposures led to purchases within that retailer.",
   },
   {
     question: "Which retail media network should CPG brands start with?",
-    answer:
-      "Start with the retailer where you already have the most distribution and sales. If you sell at Walmart, Walmart Connect gives you the most direct impact. If you're on Instacart, that platform reaches high-income grocery shoppers actively building a cart. Only expand to additional platforms after you've established a baseline ROAS on your primary retailer.",
+    answer: "Start with the retailer where you already have the most distribution and sales. If you sell at Walmart, Walmart Connect gives you the most direct impact. If you're on Instacart, that platform reaches high-income grocery shoppers actively building a cart. Only expand to additional platforms after you've established a baseline ROAS on your primary retailer.",
   },
   {
     question: "What ROAS should I expect from retail media advertising?",
-    answer:
-      "Major CPG brands report 3–5x ROAS from retail media networks compared to other digital channels, because the intent is so high — shoppers are already on the platform to buy. However, results vary by category, competition level, and campaign type. Sponsored Products typically outperform Display ads in immediate ROAS.",
+    answer: "Major CPG brands report 3–5x ROAS from retail media networks compared to other digital channels, because the intent is so high — shoppers are already on the platform to buy. However, results vary by category, competition level, and campaign type. Sponsored Products typically outperform Display ads in immediate ROAS.",
   },
   {
     question: "How is Instacart different from Walmart Connect and Target Roundel?",
-    answer:
-      "Instacart gives you access to shoppers across 80,000+ retail locations from a single platform — you're not limited to one retailer's shoppers. It skews toward high-income, convenience-focused consumers. Walmart Connect has the broadest demographic reach and lowest CPCs. Target Roundel reaches a premium, predominantly female, higher-income audience with strong brand safety standards.",
+    answer: "Instacart gives you access to shoppers across 80,000+ retail locations from a single platform — you're not limited to one retailer's shoppers. It skews toward high-income, convenience-focused consumers. Walmart Connect has the broadest demographic reach and lowest CPCs. Target Roundel reaches a premium, predominantly female, higher-income audience with strong brand safety standards.",
   },
   {
     question: "How much budget should CPG brands allocate to retail media?",
-    answer:
-      "A recommended starting allocation is 60/30/10: 60% to your primary retail platform, 30% to a secondary platform, and 10% to test a third. Many CPG brands allocate 15–25% of their total paid media budget to retail media networks, scaling up as ROAS data accumulates.",
+    answer: "A recommended starting allocation is 60/30/10: 60% to your primary retail platform, 30% to a secondary platform, and 10% to test a third. Many CPG brands allocate 15–25% of their total paid media budget to retail media networks, scaling up as ROAS data accumulates.",
   },
 ];
 
@@ -53,8 +48,7 @@ export default function RetailMediaPost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Retail Media Networks for CPG: Walmart Connect, Target Roundel, and Instacart Ads",
-            description:
-              "A practical guide to advertising on Walmart Connect, Target Roundel, and Instacart Ads for CPG brands.",
+            description: "A practical guide to advertising on Walmart Connect, Target Roundel, and Instacart Ads — including platform comparisons, budget allocation, and ROAS benchmarks for CPG brands.",
             datePublished: "2025-10-08",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
@@ -71,14 +65,14 @@ export default function RetailMediaPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Retail Media
               </span>
-              <span className="text-xs text-[#717171]">October 8, 2025 · 10 min read</span>
+              <span className="text-xs text-[#888888]">October 8, 2025 · 10 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               Retail Media Networks for CPG:{" "}
               <span className="text-beast-pink">Walmart Connect, Target Roundel, and Instacart Ads</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              Retail media meets shoppers exactly when they&apos;re ready to buy — generating 3–5x higher ROAS than traditional digital channels. Here&apos;s how to build your multi-platform strategy.
+              Retail media meets shoppers exactly when they&amp;apos;re ready to buy — generating 3–5x higher ROAS than traditional digital channels. Here&amp;apos;s how to build your multi-platform strategy.
             </p>
           </AnimatedSection>
         </div>
@@ -86,7 +80,7 @@ export default function RetailMediaPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -213,7 +207,6 @@ export default function RetailMediaPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -224,45 +217,46 @@ export default function RetailMediaPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">AI Content Production for CPG Brands</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s a</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 16, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 14, 2026</span>
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -277,7 +271,7 @@ export default function RetailMediaPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Win on Walmart, Target, and Instacart?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast builds multi-platform retail media strategies for CPG brands scaling to national distribution.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

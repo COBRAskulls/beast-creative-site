@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What paid advertising channels are most important for CPG brands?",
-    answer:
-      "Google Ads (Search, Shopping, Display, YouTube) should anchor most CPG paid strategies at 40–50% of budget. Facebook and Instagram are essential for awareness and conversion. Amazon Advertising is critical for brands selling on the platform. Retail media networks (Walmart Connect, Target Roundel, Instacart) are increasingly valuable as the highest-intent advertising environment available.",
+    answer: "Google Ads (Search, Shopping, Display, YouTube) should anchor most CPG paid strategies at 40–50% of budget. Facebook and Instagram are essential for awareness and conversion. Amazon Advertising is critical for brands selling on the platform. Retail media networks (Walmart Connect, Target Roundel, Instacart) are increasingly valuable as the highest-intent advertising environment available.",
   },
   {
     question: "How should CPG brands split their paid media budget?",
-    answer:
-      "The 70-20-10 framework works well for established brands: 70% to proven performance channels, 20% to growth and expansion within those channels, 10% to innovation and testing of new platforms or formats. Emerging brands may benefit from a 40-40-20 split to find their highest-performing channel faster.",
+    answer: "The 70-20-10 framework works well for established brands: 70% to proven performance channels, 20% to growth and expansion within those channels, 10% to innovation and testing of new platforms or formats. Emerging brands may benefit from a 40-40-20 split to find their highest-performing channel faster.",
   },
   {
     question: "Should CPG brands advertise on TikTok?",
-    answer:
-      "TikTok is worth testing for CPG brands targeting 18–34 demographics, especially in food, beauty, and lifestyle categories. Start with 5–10% of budget. TikTok's algorithm rewards organic-styled content — Spark Ads promoting existing organic posts often outperform traditional ad formats. If your brand can produce authentic short-form content, the platform can deliver strong results.",
+    answer: "TikTok is worth testing for CPG brands targeting 18–34 demographics, especially in food, beauty, and lifestyle categories. Start with 5–10% of budget. TikTok's algorithm rewards organic-styled content — Spark Ads promoting existing organic posts often outperform traditional ad formats. If your brand can produce authentic short-form content, the platform can deliver strong results.",
   },
   {
     question: "What is the biggest CPG paid media budget mistake?",
-    answer:
-      "Spreading budget too thin across too many channels. Weak presence across five platforms consistently underperforms strong presence across two or three. Identify the platforms where your specific audience is most active and most likely to convert, dominate those, then expand only after establishing a baseline.",
+    answer: "Spreading budget too thin across too many channels. Weak presence across five platforms consistently underperforms strong presence across two or three. Identify the platforms where your specific audience is most active and most likely to convert, dominate those, then expand only after establishing a baseline.",
   },
   {
     question: "How do CPG brands measure paid media success beyond ROAS?",
-    answer:
-      "ROAS alone is incomplete. Complement it with: brand lift studies measuring awareness and consideration improvements, market share growth tracking competitive positioning, customer retention rates monitoring repeat purchase behavior, and cross-sell effectiveness measuring whether new product trial campaigns expand basket size.",
+    answer: "ROAS alone is incomplete. Complement it with: brand lift studies measuring awareness and consideration improvements, market share growth tracking competitive positioning, customer retention rates monitoring repeat purchase behavior, and cross-sell effectiveness measuring whether new product trial campaigns expand basket size.",
   },
 ];
 
@@ -53,7 +48,7 @@ export default function CpgAdvertisingStrategyPost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Advertising Strategy: Choosing the Right Paid Channels for Your Budget",
-            description: "Learn how CPG brands should allocate paid media across Google, Meta, Amazon, and emerging platforms.",
+            description: "Stop burning budget on the wrong channels. Learn how CPG brands should allocate paid media across Google, Meta, Amazon, and emerging platforms — with a proven 70-20-10 framework.",
             datePublished: "2025-06-09",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
@@ -70,14 +65,14 @@ export default function CpgAdvertisingStrategyPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Paid Media Strategy
               </span>
-              <span className="text-xs text-[#717171]">June 9, 2025 · 8 min read</span>
+              <span className="text-xs text-[#888888]">June 9, 2025 · 8 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG Advertising Strategy:{" "}
               <span className="text-beast-pink">Choosing the Right Paid Channels for Your Budget</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              CPG brands burn through 73% of their advertising budget on channels that deliver minimal returns. The problem isn&apos;t the creative — it&apos;s the allocation. Here&apos;s how to fix it.
+              CPG brands burn through 73% of their advertising budget on channels that deliver minimal returns. The problem isn&amp;apos;t the creative — it&amp;apos;s the allocation. Here&amp;apos;s how to fix it.
             </p>
           </AnimatedSection>
         </div>
@@ -85,7 +80,7 @@ export default function CpgAdvertisingStrategyPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -237,7 +232,6 @@ export default function CpgAdvertisingStrategyPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -248,45 +242,46 @@ export default function CpgAdvertisingStrategyPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">AI Content Production for CPG Brands</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s a</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 16, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 14, 2026</span>
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -301,7 +296,7 @@ export default function CpgAdvertisingStrategyPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Stop Wasting Budget and Start Scaling?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast helps CPG brands build channel strategies that match where their customers actually are — and their budget to what actually converts.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

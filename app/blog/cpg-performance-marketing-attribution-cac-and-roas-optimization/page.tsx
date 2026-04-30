@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What attribution model works best for CPG brands?",
-    answer:
-      "Multi-touch attribution with extended windows works best for CPG — typically 90–180 days for awareness campaigns and 7–30 days for promotional campaigns. Single-touch last-click attribution dramatically undervalues upper-funnel activity and leads to budget cuts in exactly the channels that build long-term growth.",
+    answer: "Multi-touch attribution with extended windows works best for CPG — typically 90–180 days for awareness campaigns and 7–30 days for promotional campaigns. Single-touch last-click attribution dramatically undervalues upper-funnel activity and leads to budget cuts in exactly the channels that build long-term growth.",
   },
   {
     question: "How do I calculate true CAC for a CPG brand?",
-    answer:
-      "True CPG CAC includes all paid media spend, content creation costs, retail partnership investments, and measurement technology — divided by new customers acquired. Critically, it should account for the repeat purchase behavior of the cohort, since a customer who buys 6 times per year has a very different LTV than one who buys once.",
+    answer: "True CPG CAC includes all paid media spend, content creation costs, retail partnership investments, and measurement technology — divided by new customers acquired. Critically, it should account for the repeat purchase behavior of the cohort, since a customer who buys 6 times per year has a very different LTV than one who buys once.",
   },
   {
     question: "What ROAS should CPG brands target?",
-    answer:
-      "Target ROAS varies significantly by product margin, category, and stage of growth. A 3x blended ROAS is a common benchmark for established CPG brands, but early-stage brands building awareness may run efficiently at lower ROAS while building the customer base. Always calculate against contribution margin, not revenue.",
+    answer: "Target ROAS varies significantly by product margin, category, and stage of growth. A 3x blended ROAS is a common benchmark for established CPG brands, but early-stage brands building awareness may run efficiently at lower ROAS while building the customer base. Always calculate against contribution margin, not revenue.",
   },
   {
     question: "How do I measure offline sales driven by digital marketing?",
-    answer:
-      "The most reliable methods are: geo-fencing retail locations to track store visits after digital exposure, panel-based purchase data correlating digital ad exposure to in-store purchases, matched market testing where you run campaigns in some markets and hold others out as controls, and post-purchase surveys asking customers how they discovered the brand.",
+    answer: "The most reliable methods are: geo-fencing retail locations to track store visits after digital exposure, panel-based purchase data correlating digital ad exposure to in-store purchases, matched market testing where you run campaigns in some markets and hold others out as controls, and post-purchase surveys asking customers how they discovered the brand.",
   },
   {
     question: "What is incrementality testing and should CPG brands do it?",
-    answer:
-      "Incrementality testing uses holdout groups — audiences that don't see your ads — to measure the true lift your campaigns generate versus organic sales. It's the most accurate way to understand if your ads are driving new purchases or just claiming credit for purchases that would have happened anyway. Yes, CPG brands should do it at least quarterly.",
+    answer: "Incrementality testing uses holdout groups — audiences that don't see your ads — to measure the true lift your campaigns generate versus organic sales. It's the most accurate way to understand if your ads are driving new purchases or just claiming credit for purchases that would have happened anyway. Yes, CPG brands should do it at least quarterly.",
   },
 ];
 
@@ -53,19 +48,10 @@ export default function CpgPerformanceMarketingPost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Performance Marketing: Attribution, CAC, and ROAS Optimization",
-            description:
-              "Master CPG performance marketing with attribution models that bridge digital and in-store, calculate true customer acquisition cost, and optimize blended ROAS.",
+            description: "Master CPG performance marketing with attribution models that bridge digital and in-store, calculate true customer acquisition cost, and optimize blended ROAS.",
             datePublished: "2025-11-10",
-            author: {
-              "@type": "Organization",
-              name: "Beast Creative Agency",
-              url: "https://beastcreativeagency.com",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Beast Creative Agency",
-              url: "https://beastcreativeagency.com",
-            },
+            author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
+            publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
           }),
         }}
       />
@@ -79,14 +65,14 @@ export default function CpgPerformanceMarketingPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Performance Marketing
               </span>
-              <span className="text-xs text-[#717171]">November 10, 2025 · 9 min read</span>
+              <span className="text-xs text-[#888888]">November 10, 2025 · 9 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG Performance Marketing:{" "}
               <span className="text-beast-pink">Attribution, CAC, and ROAS Optimization</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              The CPG attribution gap is real — digital ads drive in-store purchases that never show up in your dashboard. Here&apos;s how to measure and optimize across that gap.
+              The CPG attribution gap is real — digital ads drive in-store purchases that never show up in your dashboard. Here&amp;apos;s how to measure and optimize across that gap.
             </p>
           </AnimatedSection>
         </div>
@@ -94,7 +80,7 @@ export default function CpgPerformanceMarketingPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -248,7 +234,6 @@ export default function CpgPerformanceMarketingPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -259,45 +244,46 @@ export default function CpgPerformanceMarketingPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">AI Content Production for CPG Brands</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s a</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 16, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 14, 2026</span>
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -312,7 +298,7 @@ export default function CpgPerformanceMarketingPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Measure What Actually Drives CPG Growth?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast builds performance marketing systems that account for the full CPG customer journey — online and off.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "How often should CPG brands refresh their ad creative?",
-    answer:
-      "Most CPG brands should refresh creative every 4–8 weeks on social platforms. Monitor frequency and CTR — when frequency exceeds 3–4 and CTR starts declining, it's time for new creative. High-purchase-frequency categories may need refreshes more often.",
+    answer: "Most CPG brands should refresh creative every 4–8 weeks on social platforms. Monitor frequency and CTR — when frequency exceeds 3–4 and CTR starts declining, it's time for new creative. High-purchase-frequency categories may need refreshes more often.",
   },
   {
     question: "What creative elements should CPG brands test first?",
-    answer:
-      "Start with the hook — the first 3 seconds of video or the primary visual in static ads. This single variable has the highest impact on whether a user stops scrolling. Once you have a winning hook format, then test headlines, CTAs, and offers.",
+    answer: "Start with the hook — the first 3 seconds of video or the primary visual in static ads. This single variable has the highest impact on whether a user stops scrolling. Once you have a winning hook format, then test headlines, CTAs, and offers.",
   },
   {
     question: "What's the difference between product-focused and lifestyle creative for CPG?",
-    answer:
-      "Product-focused creative highlights packaging, ingredients, or usage scenarios — ideal for new product launches. Lifestyle creative shows the product integrated into the consumer's daily life, which builds emotional resonance and works well for growing awareness among cold audiences.",
+    answer: "Product-focused creative highlights packaging, ingredients, or usage scenarios — ideal for new product launches. Lifestyle creative shows the product integrated into the consumer's daily life, which builds emotional resonance and works well for growing awareness among cold audiences.",
   },
   {
     question: "How long should a CPG creative test run before drawing conclusions?",
-    answer:
-      "CPG purchase cycles can span days to weeks — a shopper might see your ad Monday and buy at the store Saturday. Run tests for at least 2–4 weeks with a minimum of 1,000 impressions and 50 clicks per variant before making optimization decisions.",
+    answer: "CPG purchase cycles can span days to weeks — a shopper might see your ad Monday and buy at the store Saturday. Run tests for at least 2–4 weeks with a minimum of 1,000 impressions and 50 clicks per variant before making optimization decisions.",
   },
   {
     question: "Does UGC really outperform professional CPG creative?",
-    answer:
-      "Often, yes — especially on social platforms. Authentic customer content carries more trust signals than polished ads. The best approach is structured UGC: give creators light brand guidelines and let them produce in their natural style. This performs better than either raw UGC or fully produced brand content.",
+    answer: "Often, yes — especially on social platforms. Authentic customer content carries more trust signals than polished ads. The best approach is structured UGC: give creators light brand guidelines and let them produce in their natural style. This performs better than either raw UGC or fully produced brand content.",
   },
 ];
 
@@ -53,19 +48,10 @@ export default function CpgAdCreativePost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Ad Creative That Converts: Testing, Iteration, and Best Practices",
-            description:
-              "Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning elements across paid channels.",
+            description: "Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning elements across paid channels.",
             datePublished: "2025-12-15",
-            author: {
-              "@type": "Organization",
-              name: "Beast Creative Agency",
-              url: "https://beastcreativeagency.com",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Beast Creative Agency",
-              url: "https://beastcreativeagency.com",
-            },
+            author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
+            publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
           }),
         }}
       />
@@ -79,14 +65,14 @@ export default function CpgAdCreativePost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 CPG Marketing
               </span>
-              <span className="text-xs text-[#717171]">December 15, 2025 · 8 min read</span>
+              <span className="text-xs text-[#888888]">December 15, 2025 · 8 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG Ad Creative That Converts:{" "}
               <span className="text-beast-pink">Testing, Iteration, and Best Practices</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              The brands that win consistently treat creative testing as an ongoing strategic advantage — not a one-time project. Here&apos;s the framework that drives results.
+              The brands that win consistently treat creative testing as an ongoing strategic advantage — not a one-time project. Here&amp;apos;s the framework that drives results.
             </p>
           </AnimatedSection>
         </div>
@@ -94,7 +80,7 @@ export default function CpgAdCreativePost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -265,7 +251,6 @@ export default function CpgAdCreativePost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -276,8 +261,9 @@ export default function CpgAdCreativePost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
@@ -287,8 +273,8 @@ export default function CpgAdCreativePost() {
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: First-Party Data Strategy</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How to design sweepstakes campaigns that build consumer databases retail buyers trust. Includes the exact framework behi</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
                   <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
@@ -300,7 +286,7 @@ export default function CpgAdCreativePost() {
                   <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising—a stat</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
                   <span className="text-xs text-[#717171]">February 16, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
@@ -329,7 +315,7 @@ export default function CpgAdCreativePost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Build a Creative Testing Machine?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast builds systematic CPG creative frameworks that drive consistent growth — not one-off wins.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

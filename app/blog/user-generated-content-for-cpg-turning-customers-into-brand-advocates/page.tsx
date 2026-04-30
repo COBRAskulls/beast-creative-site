@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "Why does UGC work so well for CPG brands specifically?",
-    answer:
-      "CPG products create natural UGC opportunities because of high purchase frequency, visual appeal in lifestyle settings, and strong emotional connections around daily rituals. Every usage occasion is a potential content moment — cooking, fitness routines, meal prep, product unboxings. This frequency gives CPG brands an ongoing UGC pipeline that service businesses don't have.",
+    answer: "CPG products create natural UGC opportunities because of high purchase frequency, visual appeal in lifestyle settings, and strong emotional connections around daily rituals. Every usage occasion is a potential content moment — cooking, fitness routines, meal prep, product unboxings. This frequency gives CPG brands an ongoing UGC pipeline that service businesses don't have.",
   },
   {
     question: "How do CPG brands encourage customers to create content without it feeling forced?",
-    answer:
-      "The most effective approach is structuring campaigns around natural product use moments rather than staged photography. Recipe contests for food brands, transformation stories for health products, and daily routine features for personal care create authentic content frameworks. Non-monetary incentives — features on brand channels, early product access, community membership — often outperform cash rewards for authenticity.",
+    answer: "The most effective approach is structuring campaigns around natural product use moments rather than staged photography. Recipe contests for food brands, transformation stories for health products, and daily routine features for personal care create authentic content frameworks. Non-monetary incentives — features on brand channels, early product access, community membership — often outperform cash rewards for authenticity.",
   },
   {
     question: "Does CPG UGC need to be FTC-compliant?",
-    answer:
-      "Yes. When you incentivize content creation or repost customer content in advertising contexts, FTC guidelines require clear disclosure. This means #ad or #sponsored for incentivized posts, prohibition of fake testimonials, proper influencer partnership disclosure, and transparent contest rules. Authentic organic UGC that you share with credit generally doesn't require disclosure, but anything you paid for or incentivized does.",
+    answer: "Yes. When you incentivize content creation or repost customer content in advertising contexts, FTC guidelines require clear disclosure. This means #ad or #sponsored for incentivized posts, prohibition of fake testimonials, proper influencer partnership disclosure, and transparent contest rules. Authentic organic UGC that you share with credit generally doesn't require disclosure, but anything you paid for or incentivized does.",
   },
   {
     question: "What platforms are best for CPG UGC?",
-    answer:
-      "Instagram excels for visual lifestyle content and purchase-intent audiences. TikTok performs best for authentic, unpolished demonstrations — quick product reviews, creative challenges, before/after content. YouTube is best for in-depth reviews and tutorials that drive considered purchases. The right platform depends on your product category and target demographic.",
+    answer: "Instagram excels for visual lifestyle content and purchase-intent audiences. TikTok performs best for authentic, unpolished demonstrations — quick product reviews, creative challenges, before/after content. YouTube is best for in-depth reviews and tutorials that drive considered purchases. The right platform depends on your product category and target demographic.",
   },
   {
     question: "How do you measure the ROI of a CPG UGC program?",
-    answer:
-      "Track conversion rate from UGC viewers to customers (using UTM parameters and unique discount codes for creators), customer acquisition cost impact versus other channels, brand sentiment analysis comparing before/after UGC program launch, and content volume — how much UGC your program generates without direct payment. UGC programs that succeed generate organic content creation that far exceeds the incentive investment.",
+    answer: "Track conversion rate from UGC viewers to customers (using UTM parameters and unique discount codes for creators), customer acquisition cost impact versus other channels, brand sentiment analysis comparing before/after UGC program launch, and content volume — how much UGC your program generates without direct payment. UGC programs that succeed generate organic content creation that far exceeds the incentive investment.",
   },
 ];
 
@@ -53,7 +48,7 @@ export default function UgcPost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "User-Generated Content for CPG: Turning Customers Into Brand Advocates",
-            description: "Learn how CPG brands build proactive UGC programs that drive trust, conversion, and organic brand growth.",
+            description: "92% of consumers trust UGC over traditional advertising. Learn how CPG brands build proactive UGC programs — from campaign types and incentive structures to platform strategy and legal compliance.",
             datePublished: "2025-03-10",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
@@ -70,14 +65,14 @@ export default function UgcPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 UGC Strategy
               </span>
-              <span className="text-xs text-[#717171]">March 10, 2025 · 8 min read</span>
+              <span className="text-xs text-[#888888]">March 10, 2025 · 8 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               User-Generated Content for CPG:{" "}
               <span className="text-beast-pink">Turning Customers Into Brand Advocates</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              92% of consumers trust UGC over traditional advertising. Here&apos;s how to build a proactive UGC program — not just monitor mentions, but systematically generate content that converts.
+              92% of consumers trust UGC over traditional advertising. Here&amp;apos;s how to build a proactive UGC program — not just monitor mentions, but systematically generate content that converts.
             </p>
           </AnimatedSection>
         </div>
@@ -85,7 +80,7 @@ export default function UgcPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -227,7 +222,6 @@ export default function UgcPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -238,45 +232,46 @@ export default function UgcPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">AI Content Production for CPG Brands</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s a</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 16, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 14, 2026</span>
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -291,7 +286,7 @@ export default function UgcPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Turn Your Customers Into Content Creators?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast designs CPG campaigns that generate authentic UGC at scale — building trust, driving conversions, and fueling your content pipeline simultaneously.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

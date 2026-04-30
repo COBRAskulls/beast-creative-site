@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What makes SEO for CPG brands different from other industries?",
-    answer:
-      "CPG brands compete against retail giants (Amazon, Walmart, Target) for basic product terms — often a losing battle. Effective CPG SEO shifts focus toward problem-solution keywords, ingredient and benefit queries, and educational content where brand sites can establish authority that retail platforms can't match. Local SEO through store locator optimization is also uniquely powerful for distributed CPG brands.",
+    answer: "CPG brands compete against retail giants (Amazon, Walmart, Target) for basic product terms — often a losing battle. Effective CPG SEO shifts focus toward problem-solution keywords, ingredient and benefit queries, and educational content where brand sites can establish authority that retail platforms can't match. Local SEO through store locator optimization is also uniquely powerful for distributed CPG brands.",
   },
   {
     question: "What types of keywords should CPG brands target?",
-    answer:
-      "Three categories work well: Product Category Keywords (broad descriptive terms your target customer searches, e.g., 'natural energy drinks'), Problem-Solution Keywords (long-tail queries that convert well, e.g., 'how to get energy without coffee'), and Ingredient/Benefit Keywords (e.g., 'products with ashwagandha') that attract qualified, intent-rich traffic.",
+    answer: "Three categories work well: Product Category Keywords (broad descriptive terms your target customer searches, e.g., 'natural energy drinks'), Problem-Solution Keywords (long-tail queries that convert well, e.g., 'how to get energy without coffee'), and Ingredient/Benefit Keywords (e.g., 'products with ashwagandha') that attract qualified, intent-rich traffic.",
   },
   {
     question: "How should CPG brands optimize product page titles for SEO?",
-    answer:
-      "Lead with the benefit or key descriptor, not just the brand name. 'High Protein Energy Bar – Chocolate PowerBar Original' outperforms 'PowerBar Original – Chocolate' by capturing both branded and non-branded searches. Keep titles under 60 characters to avoid truncation in search results.",
+    answer: "Lead with the benefit or key descriptor, not just the brand name. 'High Protein Energy Bar – Chocolate PowerBar Original' outperforms 'PowerBar Original – Chocolate' by capturing both branded and non-branded searches. Keep titles under 60 characters to avoid truncation in search results.",
   },
   {
     question: "Can recipe and usage content really drive CPG sales?",
-    answer:
-      "Yes — it's one of the most effective CPG content strategies. Recipe content targets informational queries that naturally showcase your product, generates backlinks from food blogs and media, and attracts social shares. A hot sauce brand targeting 'easy spicy dinner recipes' reaches highly relevant consumers who need exactly that product, without competing directly with retail giant product listings.",
+    answer: "Yes — it's one of the most effective CPG content strategies. Recipe content targets informational queries that naturally showcase your product, generates backlinks from food blogs and media, and attracts social shares. A hot sauce brand targeting 'easy spicy dinner recipes' reaches highly relevant consumers who need exactly that product, without competing directly with retail giant product listings.",
   },
   {
     question: "How do CPG brands measure SEO success given offline purchase attribution challenges?",
-    answer:
-      "Beyond rankings and traffic, track: product page conversion rates for DTC channels, store locator usage (a strong signal of in-store purchase intent), branded search volume growth over time, and survey customers about how they discovered your brand. Customer lifetime value of organic visitors is often significantly higher than paid acquisition cohorts.",
+    answer: "Beyond rankings and traffic, track: product page conversion rates for DTC channels, store locator usage (a strong signal of in-store purchase intent), branded search volume growth over time, and survey customers about how they discovered your brand. Customer lifetime value of organic visitors is often significantly higher than paid acquisition cohorts.",
   },
 ];
 
@@ -53,7 +48,7 @@ export default function CpgSeoPost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG SEO Strategy: How to Rank for Product Keywords and Drive Organic Discovery",
-            description: "Learn the CPG SEO strategy that drives organic discovery through problem-solution keywords, product page optimization, and content authority.",
+            description: "87% of product searches start online. Learn the CPG SEO strategy that drives organic discovery — from problem-solution keywords and product page optimization to local SEO and content authority.",
             datePublished: "2025-05-13",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
@@ -70,14 +65,14 @@ export default function CpgSeoPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 SEO Strategy
               </span>
-              <span className="text-xs text-[#717171]">May 13, 2025 · 8 min read</span>
+              <span className="text-xs text-[#888888]">May 13, 2025 · 8 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG SEO Strategy:{" "}
               <span className="text-beast-pink">How to Rank for Product Keywords and Drive Organic Discovery</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              87% of product searches start online, yet most CPG companies still treat SEO as an afterthought. Here&apos;s how to build organic discovery that compounds over time.
+              87% of product searches start online, yet most CPG companies still treat SEO as an afterthought. Here&amp;apos;s how to build organic discovery that compounds over time.
             </p>
           </AnimatedSection>
         </div>
@@ -85,7 +80,7 @@ export default function CpgSeoPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -218,7 +213,6 @@ export default function CpgSeoPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -229,45 +223,46 @@ export default function CpgSeoPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">AI Content Production for CPG Brands</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s a</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 16, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 14, 2026</span>
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -282,7 +277,7 @@ export default function CpgSeoPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Build Organic Discovery for Your CPG Brand?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast builds SEO and AEO strategies that position CPG brands as the authoritative answer — in Google and in AI search tools.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

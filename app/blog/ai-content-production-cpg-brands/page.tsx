@@ -1,41 +1,36 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
   title: "AI Content Production for CPG Brands | Beast Creative Agency",
   description:
-    "How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast's approach to AI-native content production.",
+    "How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s approach to AI-native content production.",
 };
 
 const faqs = [
   {
     question: "What is AI content production for CPG brands?",
-    answer:
-      "AI content production for CPG brands is the use of AI-powered pipelines to generate product descriptions, social media content, recipe variations, email sequences, and ad copy at scale — dramatically faster and cheaper than traditional human-only production.",
+    answer: "AI content production for CPG brands is the use of AI-powered pipelines to generate product descriptions, social media content, recipe variations, email sequences, and ad copy at scale — dramatically faster and cheaper than traditional human-only production.",
   },
   {
     question: "Can AI-generated content rank in SEO and get cited by AI tools?",
-    answer:
-      "Yes, when properly structured and human-reviewed for accuracy. AI-generated content that is factually dense, entity-rich, and structured with proper schema markup performs as well as human-written content for both Google rankings and AI citation. The key is editorial oversight — not removing AI from the process.",
+    answer: "Yes, when properly structured and human-reviewed for accuracy. AI-generated content that is factually dense, entity-rich, and structured with proper schema markup performs as well as human-written content for both Google rankings and AI citation. The key is editorial oversight — not removing AI from the process.",
   },
   {
     question: "What types of content can AI produce for CPG brands?",
-    answer:
-      "Product descriptions, recipe content, social media captions, email nurture sequences, blog posts, FAQ pages, ad copy variations, and retailer-facing content like sell sheets. Beast's pipeline handles all of these through structured workflows that maintain brand voice.",
+    answer: "Product descriptions, recipe content, social media captions, email nurture sequences, blog posts, FAQ pages, ad copy variations, and retailer-facing content like sell sheets. Beast's pipeline handles all of these through structured workflows that maintain brand voice.",
   },
   {
     question: "How does Beast's Segundo AI agent work?",
-    answer:
-      "Segundo is Beast's internally deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It's built on top of foundational AI models and fine-tuned for marketing operations. Available to Scale-tier clients.",
+    answer: "Segundo is Beast's internally deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It's built on top of foundational AI models and fine-tuned for marketing operations. Available to Scale-tier clients.",
   },
   {
     question: "How much cheaper is AI content production than traditional production?",
-    answer:
-      "Depending on content type, AI-powered pipelines reduce content production costs by 60–80% while increasing volume 10–30x. A brand that previously produced 20 social posts per month can produce 200+ with AI-assisted workflows at a fraction of the cost.",
+    answer: "Depending on content type, AI-powered pipelines reduce content production costs by 60–80% while increasing volume 10–30x. A brand that previously produced 20 social posts per month can produce 200+ with AI-assisted workflows at a fraction of the cost.",
   },
 ];
 
@@ -52,24 +47,16 @@ export default function AiContentProductionPost() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "How CPG Brands Can Create 30x More Content Without 30x the Budget",
-            description:
-              "AI-powered content pipelines for CPG brands — how to scale content production without scaling costs.",
+            headline: "AI Content Production for CPG Brands",
+            description: "How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s approach to AI-native content production.",
             datePublished: "2026-02-22",
-            author: {
-              "@type": "Organization",
-              name: "Beast Creative Agency",
-              url: "https://beastcreativeagency.com",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Beast Creative Agency",
-              url: "https://beastcreativeagency.com",
-            },
+            author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
+            publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
           }),
         }}
       />
 
+      {/* HERO */}
       <section className="relative bg-beast-black pt-28 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-near-black to-beast-black" />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-20">
@@ -78,22 +65,22 @@ export default function AiContentProductionPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 AI Marketing
               </span>
-              <span className="text-xs text-[#717171]">February 22, 2026 · 5 min read</span>
+              <span className="text-xs text-[#888888]">February 22, 2026 · 5 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               How CPG Brands Can Create{" "}
-              <span className="text-beast-pink">30x More Content</span>{" "}
-              Without 30x the Budget
+              <span className="text-beast-pink">30x More Content</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into months of social assets.
+              900 recipes. 50 SKUs. AI-powered content pipelines. Here&amp;apos;s how Beast processes a client&amp;apos;s entire content library into months of social assets.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
+      {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -187,7 +174,6 @@ export default function AiContentProductionPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -198,45 +184,46 @@ export default function AiContentProductionPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">SEO/AEO</span>
-                  <span className="text-xs text-[#717171]">6 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">What Is AEO? How to Make Your Brand Appear in ChatGPT, Gemini, and Perplexity</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 28, 2026</span>
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-advertising-strategy-choosing-the-right-paid-channels-for-your-budget" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Paid Media Strategy</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Advertising Strategy: Choosing the Right Paid Channels for Your Budget</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Stop burning budget on the wrong channels. Learn how CPG brands should allocate paid media across Google, Meta, Amazon, </p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 16, 2026</span>
+                  <span className="text-xs text-[#717171]">June 9, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -244,13 +231,14 @@ export default function AiContentProductionPost() {
           </AnimatedSection>
         </div>
       </section>
+      {/* CTA */}
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Scale Your Content?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast builds AI-powered content pipelines for CPG brands that need to produce more, spend less, and actually rank.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

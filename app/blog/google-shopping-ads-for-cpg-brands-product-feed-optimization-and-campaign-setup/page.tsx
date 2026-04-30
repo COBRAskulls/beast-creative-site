@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "Why are Google Shopping ads important for CPG brands?",
-    answer:
-      "Google Shopping drives 60–80% of retail search ad clicks, and properly optimized product feeds deliver 150–300% ROAS improvements over poorly structured competitors. For CPG brands with retail distribution, Shopping ads are often the highest-intent touchpoint in the digital funnel.",
+    answer: "Google Shopping drives 60–80% of retail search ad clicks, and properly optimized product feeds deliver 150–300% ROAS improvements over poorly structured competitors. For CPG brands with retail distribution, Shopping ads are often the highest-intent touchpoint in the digital funnel.",
   },
   {
     question: "What makes a good CPG product title for Google Shopping?",
-    answer:
-      "Lead with your brand name, then include key attributes in the first 70 characters: size, flavor, pack count, and primary benefit. Use language consumers actually search for. \"Kellogg's Frosted Flakes Original Family Size Cereal 24 oz Box\" outperforms \"Morning Crunch Breakfast Cereal SKU#12345\" every time.",
+    answer: "Lead with your brand name, then include key attributes in the first 70 characters: size, flavor, pack count, and primary benefit. Use language consumers actually search for. \\\"Kellogg's Frosted Flakes Original Family Size Cereal 24 oz Box\\\" outperforms \\\"Morning Crunch Breakfast Cereal SKU#12345\\\" every time.",
   },
   {
     question: "How should CPG brands structure Google Shopping campaigns?",
-    answer:
-      "Use a three-tier structure: Campaign Level 1 (Brand Protection) for core branded terms with elevated bids, Campaign Level 2 (Product Category) separating major lines like breakfast, snacks, and beverages, and Campaign Level 3 (Performance Tiers) for high-performers, new products, and clearance with differentiated bidding.",
+    answer: "Use a three-tier structure: Campaign Level 1 (Brand Protection) for core branded terms with elevated bids, Campaign Level 2 (Product Category) separating major lines like breakfast, snacks, and beverages, and Campaign Level 3 (Performance Tiers) for high-performers, new products, and clearance with differentiated bidding.",
   },
   {
     question: "What bidding strategy should CPG brands use for Google Shopping?",
-    answer:
-      "Target ROAS works well for established products with clear conversion metrics. Maximize Conversion Value suits seasonally variable products. Enhanced CPC is appropriate for new product launches that need more control while building conversion history. Match the strategy to your product's data maturity.",
+    answer: "Target ROAS works well for established products with clear conversion metrics. Maximize Conversion Value suits seasonally variable products. Enhanced CPC is appropriate for new product launches that need more control while building conversion history. Match the strategy to your product's data maturity.",
   },
   {
     question: "How do I prevent my CPG Shopping campaign from spending on irrelevant queries?",
-    answer:
-      "Build a thorough negative keyword list. Essential exclusions for CPG include competitor brand names (unless competitive bidding is intentional), 'free,' 'sample,' 'coupon,' 'DIY,' 'homemade,' 'recipe,' and 'wholesale' or 'bulk' if you don't sell B2B. Review search term reports weekly, especially in the first 30 days.",
+    answer: "Build a thorough negative keyword list. Essential exclusions for CPG include competitor brand names (unless competitive bidding is intentional), 'free,' 'sample,' 'coupon,' 'DIY,' 'homemade,' 'recipe,' and 'wholesale' or 'bulk' if you don't sell B2B. Review search term reports weekly, especially in the first 30 days.",
   },
 ];
 
@@ -53,7 +48,7 @@ export default function GoogleShoppingPost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Google Shopping Ads for CPG Brands: Product Feed Optimization and Campaign Setup",
-            description: "Learn how to optimize CPG product feeds and structure Google Shopping campaigns for maximum ROAS.",
+            description: "Google Shopping drives 60–80% of retail search ad clicks. Learn how to optimize CPG product feeds, structure campaigns by tier, and achieve 150–300% ROAS improvements.",
             datePublished: "2025-09-12",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
@@ -70,14 +65,14 @@ export default function GoogleShoppingPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Paid Search
               </span>
-              <span className="text-xs text-[#717171]">September 12, 2025 · 9 min read</span>
+              <span className="text-xs text-[#888888]">September 12, 2025 · 9 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               Google Shopping Ads for CPG Brands:{" "}
               <span className="text-beast-pink">Product Feed Optimization and Campaign Setup</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              Google Shopping drives 60–80% of retail search ad clicks. Your product feed is your primary advertising strategy — here&apos;s how to build one that wins.
+              Google Shopping drives 60–80% of retail search ad clicks. Your product feed is your primary advertising strategy — here&amp;apos;s how to build one that wins.
             </p>
           </AnimatedSection>
         </div>
@@ -85,7 +80,7 @@ export default function GoogleShoppingPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -220,7 +215,6 @@ export default function GoogleShoppingPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -231,45 +225,46 @@ export default function GoogleShoppingPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">AI Content Production for CPG Brands</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s a</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
                   <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 16, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">10 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">February 14, 2026</span>
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -284,7 +279,7 @@ export default function GoogleShoppingPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Win Google Shopping for Your CPG Brand?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast builds and optimizes Google Shopping campaigns that scale with your distribution — from regional to national.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

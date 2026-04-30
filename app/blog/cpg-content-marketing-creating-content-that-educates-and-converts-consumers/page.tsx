@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What is CPG content marketing?",
-    answer:
-      "CPG content marketing is the practice of creating educational, entertaining, or useful content — blog posts, videos, recipes, guides, and social content — that attracts, engages, and converts target consumers without directly advertising. Rather than interrupting consumers with ads, content marketing earns their attention by genuinely helping them.",
+    answer: "CPG content marketing is the practice of creating educational, entertaining, or useful content — blog posts, videos, recipes, guides, and social content — that attracts, engages, and converts target consumers without directly advertising. Rather than interrupting consumers with ads, content marketing earns their attention by genuinely helping them.",
   },
   {
     question: "What content formats work best for CPG brands?",
-    answer:
-      "Video content dominates — quick tips on social (15–30 seconds), how-to videos showing real product use (1–3 minutes), and behind-the-scenes content building brand transparency. Recipe and usage content drives SEO traffic and product integration simultaneously. Comparison guides and ingredient education build category authority. Interactive quizzes help consumers identify the right product for their needs.",
+    answer: "Video content dominates — quick tips on social (15–30 seconds), how-to videos showing real product use (1–3 minutes), and behind-the-scenes content building brand transparency. Recipe and usage content drives SEO traffic and product integration simultaneously. Comparison guides and ingredient education build category authority. Interactive quizzes help consumers identify the right product for their needs.",
   },
   {
     question: "How should CPG brands balance promotional and educational content?",
-    answer:
-      "The 80/20 rule works well: 80% genuinely helpful content, 20% product promotion. Constant sales pitches drive unsubscribes and unfollows. The brands that win in content marketing are the ones consumers want to hear from — because the content consistently makes their lives better or their product experience richer.",
+    answer: "The 80/20 rule works well: 80% genuinely helpful content, 20% product promotion. Constant sales pitches drive unsubscribes and unfollows. The brands that win in content marketing are the ones consumers want to hear from — because the content consistently makes their lives better or their product experience richer.",
   },
   {
     question: "How do CPG brands distribute content effectively?",
-    answer:
-      "Platform selection should match where your target consumer spends time: Instagram and TikTok for visual demonstrations and lifestyle integration, Facebook for longer-form educational content and community building, Pinterest for recipes and seasonal inspiration, YouTube for tutorials and brand storytelling, and email for personalized educational content based on purchase history.",
+    answer: "Platform selection should match where your target consumer spends time: Instagram and TikTok for visual demonstrations and lifestyle integration, Facebook for longer-form educational content and community building, Pinterest for recipes and seasonal inspiration, YouTube for tutorials and brand storytelling, and email for personalized educational content based on purchase history.",
   },
   {
     question: "How do you measure whether CPG content marketing is working?",
-    answer:
-      "Beyond likes and shares, measure engagement depth: comments, saves, and time spent consuming content. Track brand lift indicators — branded search volume increases, social mention sentiment, and return visitor rates. Correlate content consumption with customer lifetime value. The clearest signal: do consumers who engage with your content buy more often and spend more per order than those who don't?",
+    answer: "Beyond likes and shares, measure engagement depth: comments, saves, and time spent consuming content. Track brand lift indicators — branded search volume increases, social mention sentiment, and return visitor rates. Correlate content consumption with customer lifetime value. The clearest signal: do consumers who engage with your content buy more often and spend more per order than those who don't?",
   },
 ];
 
@@ -53,7 +48,7 @@ export default function CpgContentMarketingPost() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Content Marketing: Creating Content That Educates and Converts Consumers",
-            description: "Learn how CPG brands create educational content that builds authority, drives organic discovery, and converts consumers.",
+            description: "Educated customers become loyal customers. Learn how CPG brands create content that builds authority, drives organic discovery, and converts consumers at every stage of the buying journey.",
             datePublished: "2025-01-08",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
@@ -70,14 +65,14 @@ export default function CpgContentMarketingPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Content Marketing
               </span>
-              <span className="text-xs text-[#717171]">January 8, 2025 · 7 min read</span>
+              <span className="text-xs text-[#888888]">January 8, 2025 · 7 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG Content Marketing:{" "}
               <span className="text-beast-pink">Creating Content That Educates and Converts Consumers</span>
             </h1>
             <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
-              Educated customers become loyal customers — and loyal customers drive sustainable growth. Here&apos;s how to build a content strategy that earns attention and converts it into revenue.
+              Educated customers become loyal customers — and loyal customers drive sustainable growth. Here&amp;apos;s how to build a content strategy that earns attention and converts it into revenue.
             </p>
           </AnimatedSection>
         </div>
@@ -85,7 +80,7 @@ export default function CpgContentMarketingPost() {
 
       {/* ARTICLE BODY */}
       <section className="bg-beast-white py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20 space-y-8">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
@@ -233,7 +228,6 @@ export default function CpgContentMarketingPost() {
         </div>
       </section>
 
-
       {/* FAQ */}
       <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
@@ -244,45 +238,46 @@ export default function CpgContentMarketingPost() {
           </AnimatedSection>
         </div>
       </section>
+
       {/* RELATED POSTS */}
-      <section className="bg-section-offwhite py-16">
+      <section className="bg-section-light py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">SEO/AEO</span>
-                  <span className="text-xs text-[#717171]">6 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">What Is AEO? How to Make Your Brand Appear in ChatGPT, Gemini, and Perplexity</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 28, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
-                  <span className="text-xs text-[#717171]">8 min read</span>
-                </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-light-border">
-                  <span className="text-xs text-[#717171]">March 14, 2026</span>
-                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
-                </div>
-              </a>
               <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
                   <span className="text-xs text-[#717171]">5 min read</span>
                 </div>
-                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">How CPG Brands Can Create 30x More Content Without 30x the Budget</h3>
-                <p className="text-[#717171] text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">AI Content Production for CPG Brands</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">How CPG brands can create 30x more content without 30x the budget using AI-powered content pipelines. Includes Beast&apos;s a</p>
                 <div className="flex items-center justify-between pt-3 border-t border-light-border">
                   <span className="text-xs text-[#717171]">February 22, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/amazon-advertising-for-cpg-brands-ppc-strategies-to-win-the-buy-box" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">Amazon Ads</span>
+                  <span className="text-xs text-[#717171]">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Amazon Advertising for CPG Brands: PPC Strategies to Win the Buy Box</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">The Buy Box drives 82% of Amazon sales. Learn how CPG brands can use Sponsored Products, Sponsored Brands, and strategic</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">July 11, 2025</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-ad-creative-that-converts-testing-iteration-and-best-practices" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Ad Creative That Converts: Testing, Iteration, and Best Practices</h3>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Learn how to build a systematic CPG creative testing framework — from defining creative buckets to scaling winning eleme</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">December 15, 2025</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -297,7 +292,7 @@ export default function CpgContentMarketingPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Build Content That Grows Your CPG Brand?
             </h2>
-            <p className="text-[#717171] mb-8">
+            <p className="text-[#C8C8C8] mb-8">
               Beast creates CPG content strategies that educate your audience, earn organic discovery, and convert readers into repeat customers.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
