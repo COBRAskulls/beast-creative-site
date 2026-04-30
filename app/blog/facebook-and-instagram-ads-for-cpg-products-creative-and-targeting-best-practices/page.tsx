@@ -70,13 +70,13 @@ export default function FacebookInstagramPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Social Media Ads
               </span>
-              <span className="text-xs text-gray-500">August 14, 2025 · 10 min read</span>
+              <span className="text-xs text-[#717171]">August 14, 2025 · 10 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               Facebook and Instagram Ads for CPG Products:{" "}
               <span className="text-beast-pink">Creative and Targeting Best Practices</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               CPG ads on social must earn attention before they sell — consumers are scrolling for entertainment, not solutions. Here&apos;s the creative and targeting framework that converts.
             </p>
           </AnimatedSection>
@@ -84,7 +84,7 @@ export default function FacebookInstagramPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
@@ -100,21 +100,21 @@ export default function FacebookInstagramPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The CPG Social Media Challenge</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 CPG brands face a distinct obstacle on social platforms: consumers aren&apos;t actively problem-solving when they see your ad. They&apos;re consuming entertainment. You&apos;re not meeting intent — you&apos;re interrupting a habit. Research consistently shows audiences respond better to platform-native content than overtly promotional material. UGC-style content frequently outperforms professional product photography.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 The purchasing dynamic adds another layer: most CPG products involve short consideration periods but extended repurchase cycles. Someone who sees an energy drink ad today won&apos;t need another purchase for weeks — requiring a fundamentally different approach than direct-response advertising for high-consideration products.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Creative Best Practices That Drive CPG Conversions</h2>
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Lead With Benefits, Not Features</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 &quot;Fuel your 6 AM workout without the afternoon crash&quot; converts better than &quot;Contains advanced amino acid technology.&quot; Launch videos with end results — not products. Use conversational customer language, not marketing terminology. Emphasize emotional outcomes over technical attributes.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Video Structure That Actually Converts</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">The opening 3 seconds determine campaign success. Most CPG brands waste this interval with logo animations. Instead:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">The opening 3 seconds determine campaign success. Most CPG brands waste this interval with logo animations. Instead:</p>
               <ul className="space-y-2 mb-8">
                 {[
                   "Hook (0–3s): Generate curiosity or demonstrate an immediate benefit",
@@ -122,7 +122,7 @@ export default function FacebookInstagramPost() {
                   "Proof (8–12s): Display results, testimonials, or demonstrations",
                   "CTA (12–15s): Clear next step with urgency",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -139,14 +139,14 @@ export default function FacebookInstagramPost() {
               </div>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Platform-Specific Creative</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">Facebook and Instagram demand different creative despite reaching similar audiences:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Facebook and Instagram demand different creative despite reaching similar audiences:</p>
               <ul className="space-y-2 mb-8">
                 {[
                   "Facebook: longer-form educational content, product-as-solution framing, detailed explanations",
                   "Instagram: instant visual impact, lifestyle-focused material, aspirational integration",
                   "Both: platform-native look — not transplanted print advertising",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -154,7 +154,7 @@ export default function FacebookInstagramPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Advanced Targeting Strategies</h2>
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Interest Stacking for Precision Targeting</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Single interests create excessively broad audiences. Stack them to build qualified segments. Rather than targeting &quot;fitness,&quot; combine &quot;meal prep,&quot; &quot;time management,&quot; and &quot;health supplements&quot; to find their intersection.
               </p>
               <ul className="space-y-2 mb-6">
@@ -163,14 +163,14 @@ export default function FacebookInstagramPost() {
                   "Snack Foods: healthy eating + busy lifestyle + specific dietary preferences",
                   "Beverages: energy + productivity + specific activities or sports",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Lookalike Audiences That Actually Work</h3>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Don&apos;t build lookalikes from website visitors — they demonstrated interest, not purchase behavior. Build from your highest-value customer segments: repeat purchasers, above-average spenders, or LTV-qualified customers. These seed audiences produce significantly better-performing lookalikes.
               </p>
 
@@ -185,26 +185,26 @@ export default function FacebookInstagramPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Budget Distribution and Seasonal Strategy</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Allocate budgets as follows:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Allocate budgets as follows:</p>
               <ul className="space-y-2 mb-6">
                 {[
                   "60% to proven winners — campaigns hitting target ROAS",
                   "30% for scaling successful campaigns to new audiences",
                   "10% for completely novel approaches and creative experiments",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
               </ul>
-              <p className="text-gray-700 leading-relaxed mb-4">Align seasonal campaigns with retail calendars. Category-specific patterns to plan around:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Align seasonal campaigns with retail calendars. Category-specific patterns to plan around:</p>
               <ul className="space-y-2 mb-8">
                 {[
                   "Health and wellness products: peak January, September, and pre-summer",
                   "Food and beverages: holidays, weather shifts, and cultural events",
                   "Beauty products: fashion seasons and special occasion calendars",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -212,7 +212,7 @@ export default function FacebookInstagramPost() {
 
               <div className="bg-beast-black rounded-2xl p-8 mb-8">
                 <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">Beast Creative Agency</p>
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                <p className="text-[#C8C8C8] text-sm leading-relaxed mb-4">
                   We&apos;ve run Facebook and Instagram campaigns for CPG brands including Sun-Bird Seasonings, Williams Foods, and Sweet Sensi — generating hundreds of thousands of consumer entries and significant revenue growth through data-driven creative and targeting.
                 </p>
                 <IconButton href="/work" icon="arrow">See Our CPG Work</IconButton>
@@ -240,39 +240,39 @@ export default function FacebookInstagramPost() {
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">8 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 16, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 16, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -287,7 +287,7 @@ export default function FacebookInstagramPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Build CPG Campaigns That Actually Convert?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#717171] mb-8">
               Beast builds data-driven Facebook and Instagram campaigns for CPG brands — creative that earns attention and targeting that finds buyers.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

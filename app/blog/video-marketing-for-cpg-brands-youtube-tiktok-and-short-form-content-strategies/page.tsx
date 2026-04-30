@@ -70,13 +70,13 @@ export default function VideoMarketingPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Video Marketing
               </span>
-              <span className="text-xs text-gray-500">February 12, 2025 · 9 min read</span>
+              <span className="text-xs text-[#717171]">February 12, 2025 · 9 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               Video Marketing for CPG Brands:{" "}
               <span className="text-beast-pink">YouTube, TikTok, and Short-Form Content Strategies</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               Consumers scroll past polished commercials but stop for authentic product demonstrations. Here&apos;s the platform-specific video framework that builds brand authority and drives CPG sales.
             </p>
           </AnimatedSection>
@@ -84,7 +84,7 @@ export default function VideoMarketingPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
@@ -100,7 +100,7 @@ export default function VideoMarketingPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">YouTube: Building Long-Term Brand Authority</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 YouTube functions as the internet&apos;s second-largest search engine. Users visit specifically to learn, compare products, and explore topics thoroughly. Content strategies should align with these research-oriented intentions — solving problems, not promoting features.
               </p>
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Content Types That Drive CPG Sales on YouTube</h3>
@@ -112,14 +112,14 @@ export default function VideoMarketingPost() {
                   "User-generated content compilations featuring real customers using your product",
                   "Recipe or usage tutorial demonstrations showing the product in action",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">YouTube SEO for CPG Brands</h3>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Keyword research tools like TubeBuddy and VidIQ identify what your target audience actually searches for. Include primary keywords in the first 60 characters of titles, write descriptions over 200 words with relevant keywords, add timestamps to improve watch time, and develop custom thumbnails that stand out in search results.
               </p>
 
@@ -134,7 +134,7 @@ export default function VideoMarketingPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">TikTok: Authenticity Over Production Value</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 TikTok inverts traditional marketing principles. Native-looking content — authentic, unpolished, genuinely entertaining — performs best. Expensive commercials consistently underperform compared to genuine product demonstrations.
               </p>
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">TikTok Content That Converts for CPG</h3>
@@ -146,26 +146,26 @@ export default function VideoMarketingPost() {
                   "Employee takeovers showing team personality and behind-the-scenes culture",
                   "Reaction content responding authentically to customer reviews",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Understanding TikTok&apos;s Algorithm</h3>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 TikTok prioritizes completion rate and engagement rate over follower count — a brand with 1,000 engaged followers can outperform one with 100,000 disengaged followers. The key insight: reveal the result first, then explain how your product achieved it. Most brands make the mistake of leading with their logo or product shot.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Short-Form Strategy Across Platforms</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Instagram Reels, YouTube Shorts, and TikTok serve different audiences. The same product demonstration adapts differently per platform:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Instagram Reels, YouTube Shorts, and TikTok serve different audiences. The same product demonstration adapts differently per platform:</p>
               <ul className="space-y-2 mb-6">
                 {[
                   "TikTok: handheld, authentic, trend-conscious — use popular sounds and challenge formats",
                   "Instagram Reels: enhanced lighting and composition, more refined aesthetic than TikTok",
                   "YouTube Shorts: educational framing, clear audio, informational positioning",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -182,7 +182,7 @@ export default function VideoMarketingPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Content Production at Scale</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Successful CPG brands adopt assembly-line thinking for video content. A single product demonstration becomes five distinct videos through varying angles and hooks. Practical approach:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Successful CPG brands adopt assembly-line thinking for video content. A single product demonstration becomes five distinct videos through varying angles and hooks. Practical approach:</p>
               <ul className="space-y-2 mb-6">
                 {[
                   "Designate batch shooting days to produce multiple videos at once",
@@ -190,7 +190,7 @@ export default function VideoMarketingPost() {
                   "Encourage customer UGC with incentives — create a sharing community",
                   "Use cross-platform repurposing: one shoot, multiple platform versions",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -205,7 +205,7 @@ export default function VideoMarketingPost() {
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">
                     <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm leading-relaxed">
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">
                       <strong className="text-beast-black">{item.label}:</strong> {item.detail}
                     </span>
                   </li>
@@ -214,7 +214,7 @@ export default function VideoMarketingPost() {
 
               <div className="bg-beast-black rounded-2xl p-8 mb-8">
                 <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">Beast Creative Agency</p>
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                <p className="text-[#C8C8C8] text-sm leading-relaxed mb-4">
                   We produce video content and run video advertising campaigns for CPG brands — from short-form social content to full campaign production. We know what drives results on each platform and build creative systems that scale.
                 </p>
                 <IconButton href="/services/content-production" icon="arrow">See Our Content Production</IconButton>
@@ -242,39 +242,39 @@ export default function VideoMarketingPost() {
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">SEO/AEO</span>
-                  <span className="text-xs text-gray-400">6 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">SEO/AEO</span>
+                  <span className="text-xs text-[#717171]">6 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">What Is AEO? How to Make Your Brand Appear in ChatGPT, Gemini, and Perplexity</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 28, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 28, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">8 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">AI Marketing</span>
-                  <span className="text-xs text-gray-400">5 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">How CPG Brands Can Create 30x More Content Without 30x the Budget</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 22, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -289,7 +289,7 @@ export default function VideoMarketingPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Build a Video Strategy That Actually Drives CPG Sales?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#717171] mb-8">
               Beast creates and distributes video content for CPG brands — platform-native creative built to earn attention and convert viewers into buyers.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

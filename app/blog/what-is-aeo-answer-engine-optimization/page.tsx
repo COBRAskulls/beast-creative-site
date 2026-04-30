@@ -80,13 +80,13 @@ export default function AeoPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 SEO/AEO
               </span>
-              <span className="text-xs text-gray-500">March 28, 2026 · 6 min read</span>
+              <span className="text-xs text-[#717171]">March 28, 2026 · 6 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               What Is AEO? How to Make Your Brand Appear in{" "}
               <span className="text-beast-pink">ChatGPT, Gemini, and Perplexity</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cited — not just ranked.
             </p>
           </AnimatedSection>
@@ -94,36 +94,36 @@ export default function AeoPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The Short Answer</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 <strong>AEO (Answer Engine Optimization)</strong> is the practice of structuring your content so that AI-powered tools — ChatGPT, Gemini, Perplexity, and Google AI Overviews — cite your brand as the authoritative answer to questions in your category.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Traditional SEO gets you ranked. AEO gets you <em>cited</em>. Those are increasingly different things.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Why AEO Is No Longer Optional</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Search behavior has fundamentally shifted. When someone wants to know "what&apos;s the best CPG marketing agency" or "how do I build first-party consumer data," a growing percentage of them type that question directly into ChatGPT or Perplexity — not Google.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 The brands that appear in those answers aren&apos;t just getting traffic. They&apos;re being positioned as the authoritative source in their category — by an AI tool that millions of people trust to give them the best answer.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Brands that only optimize for Google are now invisible to that entire channel.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">How AEO Is Different From SEO</h2>
-              <div className="bg-section-offwhite rounded-2xl p-6 mb-8 border border-gray-100">
+              <div className="bg-section-offwhite rounded-2xl p-6 mb-8 border border-light-border">
                 <div className="grid grid-cols-2 gap-6">
                   <div>
                     <p className="font-display font-bold text-beast-black text-sm uppercase tracking-widest mb-3">Traditional SEO</p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-[#717171]">
                       <li>→ Rank in Google results</li>
                       <li>→ Optimize for keywords</li>
                       <li>→ Drive click-through traffic</li>
@@ -132,7 +132,7 @@ export default function AeoPost() {
                   </div>
                   <div>
                     <p className="font-display font-bold text-beast-pink text-sm uppercase tracking-widest mb-3">AEO</p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-[#717171]">
                       <li>→ Get cited in AI answers</li>
                       <li>→ Optimize for questions &amp; entities</li>
                       <li>→ Build category authority</li>
@@ -141,12 +141,12 @@ export default function AeoPost() {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 These aren&apos;t mutually exclusive — a strong SEO foundation supports AEO. But AEO requires its own content strategy layer on top of traditional optimization.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">What AI Systems Prefer to Cite</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Based on how large language models work and how citation logic is built into tools like Perplexity and Google AI Overviews, AI systems consistently favor content that:
               </p>
               <ul className="space-y-3 mb-8">
@@ -160,7 +160,7 @@ export default function AeoPost() {
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">
                     <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm leading-relaxed">
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">
                       <strong className="text-beast-black">{item.label}:</strong> {item.detail}
                     </span>
                   </li>
@@ -170,33 +170,33 @@ export default function AeoPost() {
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The 5 Core AEO Tactics</h2>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">1. FAQ Sections With Schema Markup</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 FAQ sections that use Schema.org FAQPage markup are directly indexed by Google for AI Overviews and People Also Ask. They also provide the question-answer format that language models are specifically trained to extract and cite. Every service page and every blog post should have a FAQ section.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">2. Entity Definition Pages</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 Create dedicated content that definitively answers "what is X" for every key term in your category. "What is CPG marketing," "What is first-party consumer data," "What is a retail readiness deck." These pages become citation targets when users ask those questions to AI tools.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">3. Named, Verified Case Studies</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 AI systems trust named entities over anonymous claims. "A CPG brand achieved 36,581 email entries" is much weaker than "Sun-Bird Seasonings generated 36,581 consumer email addresses on a $6,000 budget for their national Walmart rollout in 2021." The specificity and verifiability of named case studies dramatically increases citation probability.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">4. Consistent Topical Authority</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 Publish multiple pieces of content that cover a topic from multiple angles. An agency that has 8 pages covering CPG marketing — a service page, a blog post, a case study, an FAQ page, an about-page mention, a glossary entry — signals stronger topical authority than one with a single service page.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">5. Organization and Article Schema</h3>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Organization schema tells Google and AI systems who you are, what you do, where you&apos;re located, and what your authoritative sources are. Article schema on blog posts signals authorship, publication date, and content type — all signals that feed into citation decisions.
               </p>
 
               <div className="bg-beast-black rounded-2xl p-8 mb-8">
                 <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">Beast&apos;s AEO Practice</p>
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-[#C8C8C8] text-sm leading-relaxed">
                   Beast Creative Agency is one of the few agencies offering AEO as a formal service — building integrated SEO + AEO strategies that optimize content for both Google rankings and AI citation. We&apos;ve built this practice because we believe it represents the next major shift in how brands get discovered.
                 </p>
                 <IconButton href="/services/seo-aeo" icon="arrow">
@@ -225,39 +225,39 @@ export default function AeoPost() {
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/multi-brand-seo-holding-companies" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/multi-brand-seo-holding-companies" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">SEO/AEO</span>
-                  <span className="text-xs text-gray-400">7 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">SEO/AEO</span>
+                  <span className="text-xs text-[#717171]">7 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Multi-Brand SEO: Why Holding Companies Are Cannibalizing Their Own Search Rankings</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">If you manage 3+ consumer brands on separate domains, you&apos;re probably hurting your SEO. Here&apos;s the unified domain archit</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 8, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">If you manage 3+ consumer brands on separate domains, you&apos;re probably hurting your SEO. Here&apos;s the unified domain archit</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 8, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">8 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">AI Marketing</span>
-                  <span className="text-xs text-gray-400">5 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">How CPG Brands Can Create 30x More Content Without 30x the Budget</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 22, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -272,7 +272,7 @@ export default function AeoPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Show Up in AI Search?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#717171] mb-8">
               Beast builds integrated SEO + AEO strategies for brands that want to win both channels.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

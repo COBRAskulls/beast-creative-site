@@ -79,92 +79,92 @@ export default function MultiBrandSeoPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 SEO/AEO
               </span>
-              <span className="text-xs text-gray-500">February 8, 2026 · 7 min read</span>
+              <span className="text-xs text-[#717171]">February 8, 2026 · 7 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               Multi-Brand SEO:{" "}
               <span className="text-beast-pink">Why Holding Companies Are Hurting Their Own Rankings</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               If you manage 3+ consumer brands on separate domains, you&apos;re probably cannibalizing your own search authority. Here&apos;s the architecture that fixes it.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The Problem Nobody Talks About</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Multi-brand holding companies in CPG, food and beverage, and consumer goods face a structural SEO problem that their individual brand managers typically don&apos;t see: they&apos;re competing against themselves.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 When three brands under the same parent company each maintain separate domains targeting similar keywords — say, "hot sauce recipe," "seasoning mix recipes," "easy weeknight dinner ideas" — they split the domain authority that would otherwise consolidate into a dominant ranking entity.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Google doesn&apos;t give extra credit because you own all three. It sees three medium-authority domains competing for the same query and ranks whichever competitor has consolidated that authority on a single domain.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">How Domain Authority Gets Diluted</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Domain authority is accumulated through inbound links, topical depth, content volume, engagement signals, and technical performance. Every piece of that authority is domain-specific.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 A holding company with three brands — each building domain authority independently — is spending three times the budget and producing one-third of the SEO result compared to a unified architecture. This effect compounds over time as competitors consolidate.
               </p>
 
-              <div className="bg-section-offwhite rounded-2xl p-6 mb-8 border border-gray-100">
+              <div className="bg-section-offwhite rounded-2xl p-6 mb-8 border border-light-border">
                 <p className="font-display font-bold text-beast-black text-sm mb-4">Example: Fragmented vs. Unified Architecture</p>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
                     <p className="text-xs font-semibold text-red-500 uppercase tracking-wide mb-2">Fragmented (common)</p>
-                    <ul className="space-y-1 text-sm text-gray-600">
+                    <ul className="space-y-1 text-sm text-[#717171]">
                       <li>brand-a.com — DA 28</li>
                       <li>brand-b.com — DA 24</li>
                       <li>brand-c.com — DA 19</li>
-                      <li className="pt-2 text-xs text-gray-400">Three competing entities, none dominant</li>
+                      <li className="pt-2 text-xs text-[#717171]">Three competing entities, none dominant</li>
                     </ul>
                   </div>
                   <div>
                     <p className="text-xs font-semibold text-beast-pink uppercase tracking-wide mb-2">Unified (correct)</p>
-                    <ul className="space-y-1 text-sm text-gray-600">
+                    <ul className="space-y-1 text-sm text-[#717171]">
                       <li>holdingco.com — DA 52+</li>
                       <li>/brands/brand-a</li>
                       <li>/brands/brand-b</li>
-                      <li className="pt-2 text-xs text-gray-400">One entity with compounding authority</li>
+                      <li className="pt-2 text-xs text-[#717171]">One entity with compounding authority</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Multi-Brand SEO Architecture</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 The right architecture depends on the relationship between brands and their keyword universes. Beast maps three scenarios:
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Scenario 1: Overlapping audiences, similar keywords</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 Sub-brand architecture on a shared domain. Each brand gets its own section (/brands/brand-name), its own landing pages, and its own content cluster — but all authority accumulates to the parent domain. Internal linking between brands compounds authority across the portfolio.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Scenario 2: Distinct audiences, separate keyword universes</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 Separate domains may be appropriate here, but with a deliberate interlinking strategy and a shared holding company authority source. The holding company domain should still exist and link to each brand, passing authority downward.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Scenario 3: Mixed portfolio</h3>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Some brands consolidate under the parent; others maintain separate domains. This requires an entity relationship map that defines exactly how each brand relates to the others in Google&apos;s Knowledge Graph — implemented through schema.org structured data.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Entity Mapping for AI Search</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Beyond Google, multi-brand holdings have an AEO problem. When ChatGPT or Perplexity tries to answer "what brands does [holding company] own," they need clear entity relationships to give an accurate answer. Without proper schema.org markup defining those relationships, AI tools either give incomplete answers or omit your brands entirely.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Beast&apos;s multi-brand SEO architecture includes Organization schema that defines the parent-child relationship between holding company and brands, BreadcrumbList markup for navigation context, and SameAs links connecting each entity to its authoritative external records.
               </p>
 
@@ -183,7 +183,7 @@ export default function MultiBrandSeoPost() {
                     </span>
                     <div>
                       <p className="font-display font-bold text-beast-black text-sm">{item.label}</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
+                      <p className="text-[#717171] text-sm leading-relaxed">{item.detail}</p>
                     </div>
                   </li>
                 ))}
@@ -191,7 +191,7 @@ export default function MultiBrandSeoPost() {
 
               <div className="bg-beast-black rounded-2xl p-8 mb-8">
                 <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">Beast SEO + AEO</p>
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                <p className="text-[#C8C8C8] text-sm leading-relaxed mb-4">
                   Beast&apos;s SEO + AEO service includes multi-brand architecture audits, entity relationship mapping, and structured data implementation — designed specifically for holding companies managing portfolios of consumer brands.
                 </p>
                 <IconButton href="/services/seo-aeo" icon="arrow">
@@ -220,39 +220,39 @@ export default function MultiBrandSeoPost() {
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">SEO/AEO</span>
-                  <span className="text-xs text-gray-400">6 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">SEO/AEO</span>
+                  <span className="text-xs text-[#717171]">6 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">What Is AEO? How to Make Your Brand Appear in ChatGPT, Gemini, and Perplexity</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 28, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 28, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">8 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">AI Marketing</span>
-                  <span className="text-xs text-gray-400">5 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">How CPG Brands Can Create 30x More Content Without 30x the Budget</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 22, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -266,7 +266,7 @@ export default function MultiBrandSeoPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Managing Multiple Brands?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#717171] mb-8">
               Beast builds multi-brand SEO architectures that stop the cannibalization and start compounding authority across your entire portfolio.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

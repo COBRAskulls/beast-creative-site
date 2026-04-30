@@ -70,13 +70,13 @@ export default function CpgSeoPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 SEO Strategy
               </span>
-              <span className="text-xs text-gray-500">May 13, 2025 · 8 min read</span>
+              <span className="text-xs text-[#717171]">May 13, 2025 · 8 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG SEO Strategy:{" "}
               <span className="text-beast-pink">How to Rank for Product Keywords and Drive Organic Discovery</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               87% of product searches start online, yet most CPG companies still treat SEO as an afterthought. Here&apos;s how to build organic discovery that compounds over time.
             </p>
           </AnimatedSection>
@@ -84,7 +84,7 @@ export default function CpgSeoPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
@@ -100,10 +100,10 @@ export default function CpgSeoPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The CPG SEO Landscape</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Consumer packaged goods brands compete against retail giants — Amazon, Walmart, Target — for basic product search terms. This is often a losing battle. Effective CPG SEO requires a different approach: dominate the search queries that retail platforms can&apos;t or won&apos;t answer.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Customers research through various channels before purchasing — discovering brands through search queries, comparing on product pages, reading reviews, then completing purchases online or in stores. Your content must influence those discovery moments, even when the sale happens off your site.
               </p>
 
@@ -116,7 +116,7 @@ export default function CpgSeoPost() {
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">
                     <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm leading-relaxed">
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">
                       <strong className="text-beast-black">{item.label}:</strong> {item.detail}
                     </span>
                   </li>
@@ -135,13 +135,13 @@ export default function CpgSeoPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">On-Page Optimization for Product Pages</h2>
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Title Tag Optimization</h3>
-              <div className="bg-section-offwhite rounded-xl p-5 mb-6 border border-gray-100">
-                <p className="text-sm text-gray-500 mb-1"><span className="text-red-500 font-bold">✗ Weak:</span> &quot;PowerBar Original – Chocolate&quot;</p>
-                <p className="text-sm text-gray-700"><span className="text-green-600 font-bold">✓ Strong:</span> &quot;High Protein Energy Bar – Chocolate PowerBar Original&quot;</p>
+              <div className="bg-section-offwhite rounded-xl p-5 mb-6 border border-light-border">
+                <p className="text-sm text-[#717171] mb-1"><span className="text-red-500 font-bold">✗ Weak:</span> &quot;PowerBar Original – Chocolate&quot;</p>
+                <p className="text-sm text-[#4A4A4A]"><span className="text-green-600 font-bold">✓ Strong:</span> &quot;High Protein Energy Bar – Chocolate PowerBar Original&quot;</p>
               </div>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Product Descriptions That Convert and Rank</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">Effective descriptions follow a four-part formula:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Effective descriptions follow a four-part formula:</p>
               <ul className="space-y-2 mb-6">
                 {[
                   "Lead with benefits before features",
@@ -149,14 +149,14 @@ export default function CpgSeoPost() {
                   "Address common customer questions proactively",
                   "Use structured data for price, availability, and reviews",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Image Optimization</h3>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Replace generic filenames with descriptive ones: &quot;organic-protein-powder-vanilla-flavor.jpg&quot; instead of &quot;IMG_001.jpg.&quot; Alt text should describe images while incorporating keywords naturally.
               </p>
 
@@ -169,7 +169,7 @@ export default function CpgSeoPost() {
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">
                     <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm leading-relaxed">
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">
                       <strong className="text-beast-black">{item.label}:</strong> {item.detail}
                     </span>
                   </li>
@@ -187,7 +187,7 @@ export default function CpgSeoPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Local SEO for CPG Brands</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 Store locator pages optimized with city and retailer names capture high-intent local searches: &quot;Buy Organic Energy Bars in Seattle – Available at Whole Foods Capitol Hill, PCC Natural Markets, and 15+ local stores.&quot; This type of page captures purchase-intent traffic that brand pages don&apos;t.
               </p>
 
@@ -199,7 +199,7 @@ export default function CpgSeoPost() {
                   "Ignoring seasonal opportunities — plan content 8–12 weeks ahead of peak seasons",
                   "Underestimating voice search — target conversational question-based queries ('What&apos;s the healthiest energy drink?')",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -207,7 +207,7 @@ export default function CpgSeoPost() {
 
               <div className="bg-beast-black rounded-2xl p-8 mb-8">
                 <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">Beast Creative Agency</p>
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                <p className="text-[#C8C8C8] text-sm leading-relaxed mb-4">
                   Our SEO and AEO practice helps CPG brands build the kind of organic presence that compounds over time — ranking on Google and getting cited in AI tools like ChatGPT, Perplexity, and Gemini.
                 </p>
                 <IconButton href="/services/seo-aeo" icon="arrow">See Our SEO + AEO Service</IconButton>
@@ -235,39 +235,39 @@ export default function CpgSeoPost() {
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">8 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 16, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 16, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -282,7 +282,7 @@ export default function CpgSeoPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Build Organic Discovery for Your CPG Brand?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#717171] mb-8">
               Beast builds SEO and AEO strategies that position CPG brands as the authoritative answer — in Google and in AI search tools.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

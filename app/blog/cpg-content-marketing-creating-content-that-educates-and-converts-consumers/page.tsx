@@ -70,13 +70,13 @@ export default function CpgContentMarketingPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Content Marketing
               </span>
-              <span className="text-xs text-gray-500">January 8, 2025 · 7 min read</span>
+              <span className="text-xs text-[#717171]">January 8, 2025 · 7 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG Content Marketing:{" "}
               <span className="text-beast-pink">Creating Content That Educates and Converts Consumers</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               Educated customers become loyal customers — and loyal customers drive sustainable growth. Here&apos;s how to build a content strategy that earns attention and converts it into revenue.
             </p>
           </AnimatedSection>
@@ -84,7 +84,7 @@ export default function CpgContentMarketingPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
@@ -100,7 +100,7 @@ export default function CpgContentMarketingPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">Understanding the CPG Consumer Journey</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 CPG consumers follow a distinct purchasing pattern: your content influences them during the crucial moments when they&apos;re forming brand preferences, even though individual decisions happen quickly. The modern CPG journey includes:
               </p>
               <ul className="space-y-2 mb-8">
@@ -111,28 +111,28 @@ export default function CpgContentMarketingPost() {
                   "Purchase decision: final selection at point of sale",
                   "Post-purchase: usage, satisfaction, and repeat buying behavior",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
               </ul>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Effective CPG content targets each stage — not just the purchase moment. Brands that only create promotional content miss every stage except the final one.
               </p>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Educational Content Framework</h2>
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Problem-Solution Content</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 Rather than directly promoting products, create content addressing real consumer problems. &quot;5-Minute Breakfast Ideas for Busy Parents&quot; outperforms &quot;Our Energy Bars Are Great&quot; — the former earns search traffic, social shares, and product integration simultaneously. The product becomes the solution, not the subject.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Comparison and Selection Guides</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 Some of the most effective CPG content marketing includes honest mentions of alternatives — demonstrating confidence in your product while respecting audience intelligence. A brand confident enough to compare itself to competitors signals quality and earns trust that promotional content never achieves.
               </p>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Usage and Application Content</h3>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-[#4A4A4A] leading-relaxed mb-8">
                 Expanding consumer awareness of multiple product applications increases purchase frequency and customer lifetime value. Seasonal cleaning content, meal planning guides, and creative recipe ideas all serve existing customers while attracting new ones through search and social discovery.
               </p>
 
@@ -156,7 +156,7 @@ export default function CpgContentMarketingPost() {
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">
                     <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm leading-relaxed">
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">
                       <strong className="text-beast-black">{item.label}:</strong> {item.detail}
                     </span>
                   </li>
@@ -164,7 +164,7 @@ export default function CpgContentMarketingPost() {
               </ul>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Distribution Strategies for Maximum Impact</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Platform selection should match where your target consumer spends time:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Platform selection should match where your target consumer spends time:</p>
               <ul className="space-y-2 mb-8">
                 {[
                   "Instagram: visual demonstrations and lifestyle integration",
@@ -174,7 +174,7 @@ export default function CpgContentMarketingPost() {
                   "YouTube: tutorials, comparisons, and brand storytelling",
                   "Email: personalized educational content based on purchase history and preferences",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -191,7 +191,7 @@ export default function CpgContentMarketingPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Measuring Educational Content Success</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Beyond vanity metrics, these signals indicate your content is working:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Beyond vanity metrics, these signals indicate your content is working:</p>
               <ul className="space-y-2 mb-6">
                 {[
                   "Engagement depth: comments, saves, and time spent (not just likes and views)",
@@ -200,7 +200,7 @@ export default function CpgContentMarketingPost() {
                   "Return visitor rates to content — audiences coming back for more",
                   "Conversion correlation: do content consumers buy more and spend more?",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -214,7 +214,7 @@ export default function CpgContentMarketingPost() {
                   "Inconsistent publishing — readers and algorithms both reward consistency over viral moments",
                   "No distribution plan — great content with no amplification strategy reaches no one",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -222,7 +222,7 @@ export default function CpgContentMarketingPost() {
 
               <div className="bg-beast-black rounded-2xl p-8 mb-8">
                 <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">Beast Creative Agency</p>
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                <p className="text-[#C8C8C8] text-sm leading-relaxed mb-4">
                   We build content marketing strategies for CPG brands that compound over time — organic discovery, social authority, and email engagement working together to build the kind of brand that consumers seek out, not just encounter.
                 </p>
                 <IconButton href="/services/content-production" icon="arrow">See Our Content Production</IconButton>
@@ -250,39 +250,39 @@ export default function CpgContentMarketingPost() {
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/what-is-aeo-answer-engine-optimization" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">SEO/AEO</span>
-                  <span className="text-xs text-gray-400">6 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">SEO/AEO</span>
+                  <span className="text-xs text-[#717171]">6 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">What Is AEO? How to Make Your Brand Appear in ChatGPT, Gemini, and Perplexity</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 28, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">AI search tools are answering 30%+ of queries that used to go to Google. Here&apos;s how to structure your content to get cit</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 28, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">8 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/ai-content-production-cpg-brands" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">AI Marketing</span>
-                  <span className="text-xs text-gray-400">5 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">AI Marketing</span>
+                  <span className="text-xs text-[#717171]">5 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">How CPG Brands Can Create 30x More Content Without 30x the Budget</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 22, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">900 recipes. 50 SKUs. AI-powered content pipelines. Here&apos;s how Beast processes a client&apos;s entire content library into mo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 22, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -297,7 +297,7 @@ export default function CpgContentMarketingPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Build Content That Grows Your CPG Brand?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#717171] mb-8">
               Beast creates CPG content strategies that educate your audience, earn organic discovery, and convert readers into repeat customers.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>

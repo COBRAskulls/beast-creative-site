@@ -79,13 +79,13 @@ export default function CpgPerformanceMarketingPost() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-beast-pink/10 text-beast-pink border border-beast-pink/20">
                 Performance Marketing
               </span>
-              <span className="text-xs text-gray-500">November 10, 2025 · 9 min read</span>
+              <span className="text-xs text-[#717171]">November 10, 2025 · 9 min read</span>
             </div>
             <h1 className="text-display-hero font-display font-extrabold text-white mb-6 leading-tight">
               CPG Performance Marketing:{" "}
               <span className="text-beast-pink">Attribution, CAC, and ROAS Optimization</span>
             </h1>
-            <p className="text-body-lead text-gray-300 max-w-2xl">
+            <p className="text-body-lead text-[#C8C8C8] max-w-2xl">
               The CPG attribution gap is real — digital ads drive in-store purchases that never show up in your dashboard. Here&apos;s how to measure and optimize across that gap.
             </p>
           </AnimatedSection>
@@ -93,7 +93,7 @@ export default function CpgPerformanceMarketingPost() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-beast-white py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-20">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
@@ -109,10 +109,10 @@ export default function CpgPerformanceMarketingPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mt-0 mb-4">The CPG Attribution Challenge</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 CPG brands allocate significantly more resources toward performance marketing than other sectors, yet face a fundamental measurement problem: digital marketing efforts don&apos;t directly correlate with in-store transactions. Unlike DTC models with clear conversion tracking, CPG spans digital research and physical retail purchases.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">The key complications:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">The key complications:</p>
               <ul className="space-y-2 mb-8">
                 {[
                   "Online research contrasting with offline retail purchases",
@@ -121,14 +121,14 @@ export default function CpgPerformanceMarketingPost() {
                   "Seasonal variations affecting attribution windows",
                   "Retailer promotions masking brand marketing impact",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
               </ul>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Attribution Models That Actually Work for CPG</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">Different campaign types require different attribution windows:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Different campaign types require different attribution windows:</p>
               <ul className="space-y-3 mb-6">
                 {[
                   { label: "Brand Awareness Attribution", detail: "90–180 day windows for upper-funnel initiatives, tracking branded search increases and demographic website visits." },
@@ -137,7 +137,7 @@ export default function CpgPerformanceMarketingPost() {
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">
                     <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm leading-relaxed">
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">
                       <strong className="text-beast-black">{item.label}:</strong> {item.detail}
                     </span>
                   </li>
@@ -145,7 +145,7 @@ export default function CpgPerformanceMarketingPost() {
               </ul>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Probabilistic Attribution for Offline Purchases</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">Bridge the digital-to-physical gap through:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Bridge the digital-to-physical gap through:</p>
               <ul className="space-y-2 mb-8">
                 {[
                   "Geo-fencing retail locations for visit tracking post-digital exposure",
@@ -153,7 +153,7 @@ export default function CpgPerformanceMarketingPost() {
                   "Direct consumer surveys about discovery processes",
                   "Matched market testing isolating campaign effects geographically",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -170,10 +170,10 @@ export default function CpgPerformanceMarketingPost() {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Calculating True CAC for CPG Brands</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">
                 True CPG CAC requires accounting for repeat purchases across customer households — not just single transactions. The formula must encompass paid media, content creation, retail partnership investments, and measurement technology costs.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">Segment CAC analysis by cohort:</p>
+              <p className="text-[#4A4A4A] leading-relaxed mb-4">Segment CAC analysis by cohort:</p>
               <ul className="space-y-2 mb-8">
                 {[
                   "Acquisition channel: social, search, display, influencer, PR",
@@ -181,7 +181,7 @@ export default function CpgPerformanceMarketingPost() {
                   "Seasonal timing patterns",
                   "Product category or initial SKU purchased",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -189,7 +189,7 @@ export default function CpgPerformanceMarketingPost() {
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">ROAS Optimization Strategies</h2>
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Blended vs. Channel-Specific ROAS</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-[#4A4A4A] leading-relaxed mb-6">
                 Successful brands monitor both: blended ROAS guides overall budget allocation while channel-specific ROAS identifies individual channel efficiency. Don&apos;t cut a high-ROAS channel if it&apos;s only capturing demand that other channels created.
               </p>
 
@@ -202,7 +202,7 @@ export default function CpgPerformanceMarketingPost() {
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">
                     <svg className="w-4 h-4 text-beast-pink shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm leading-relaxed">
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">
                       <strong className="text-beast-black">{item.label}:</strong> {item.detail}
                     </span>
                   </li>
@@ -229,7 +229,7 @@ export default function CpgPerformanceMarketingPost() {
                   "Over-crediting easily trackable channels like search",
                   "Excluding retail partnership costs from CAC calculations",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-gray-700 text-sm leading-relaxed">
+                  <li key={item} className="flex gap-3 text-[#4A4A4A] text-sm leading-relaxed">
                     <span className="text-beast-pink font-bold shrink-0">→</span> {item}
                   </li>
                 ))}
@@ -237,7 +237,7 @@ export default function CpgPerformanceMarketingPost() {
 
               <div className="bg-beast-black rounded-2xl p-8 mb-8">
                 <p className="font-display font-bold text-beast-pink text-xs uppercase tracking-widest mb-3">Beast Creative Agency</p>
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                <p className="text-[#C8C8C8] text-sm leading-relaxed mb-4">
                   We&apos;ve run performance marketing for CPG brands at every stage — from $4K sweepstakes campaigns to national Walmart rollouts. Our attribution frameworks account for the full CPG customer journey, not just what&apos;s easy to track.
                 </p>
                 <IconButton href="/work" icon="arrow">See Our CPG Results</IconButton>
@@ -265,39 +265,39 @@ export default function CpgPerformanceMarketingPost() {
           <AnimatedSection>
             <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/cpg-sweepstakes-first-party-data-playbook" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">8 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">8 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">The CPG Sweepstakes Playbook: How to Build a Consumer Database That Impresses Retail Buyers</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">March 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">We&apos;ve run sweepstakes campaigns that generated 36,581 entries on $6,000. Here&apos;s the exact framework — from mechanic desi</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">March 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 16, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising.</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 16, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
-              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-beast-white rounded-2xl border border-light-border p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
-                  <span className="text-xs text-gray-400">10 min read</span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-light-surface text-[#717171]">CPG Marketing</span>
+                  <span className="text-xs text-[#717171]">10 min read</span>
                 </div>
                 <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">February 14, 2026</span>
+                <p className="text-[#717171] text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-light-border">
+                  <span className="text-xs text-[#717171]">February 14, 2026</span>
                   <span className="text-beast-pink text-sm font-semibold">Read →</span>
                 </div>
               </a>
@@ -312,7 +312,7 @@ export default function CpgPerformanceMarketingPost() {
             <h2 className="font-display text-3xl font-bold text-white mb-4">
               Ready to Measure What Actually Drives CPG Growth?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#717171] mb-8">
               Beast builds performance marketing systems that account for the full CPG customer journey — online and off.
             </p>
             <IconButton href="https://calendar.app.google/9q1mcYgEdXNyjK8G6" icon="calendar" target="_blank" rel="noopener noreferrer">Book My Free 15-Minute Strategy Call</IconButton>
