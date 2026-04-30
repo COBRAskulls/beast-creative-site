@@ -54,27 +54,7 @@ export default function CpgSocialMediaMarketingPost() {
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944e0eaa8229-1-1024x585.png"
-                  alt="Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales"
-                  width={1024}
-                  height={585}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <p className="text-gray-700 leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed for engagement and discovery. While a software company can nurture leads for months, consumer packaged goods need to capture attention and drive immediate purchase decisions in crowded social feeds.</p>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944e0f577f0d-1.png"
-                  alt="Understanding the CPG Social Media Landscape"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding the CPG Social Media Landscape</h2>
 
@@ -157,16 +137,6 @@ export default function CpgSocialMediaMarketingPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what works: Pinterest users often save content to reference later, so your pins can continue driving traffic and sales long after you post them. This makes Pinterest content incredibly cost-effective compared to other platforms where posts have short lifespans.</p>
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944e0ff18b8a-1.png"
-                  alt="Content Strategies That Drive Purchase Decisions"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Content Strategies That Drive Purchase Decisions</h2>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">The Problem-Solution Framework</h3>
@@ -229,16 +199,6 @@ export default function CpgSocialMediaMarketingPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">A smaller, engaged audience is much more valuable than a large, passive one. Don’t get caught up in vanity metrics. Focus on building genuine connections with people who are actually interested in your products.</p>
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944e10c32481-1.png"
-                  alt="Advanced Strategies for Scaling Success"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Advanced Strategies for Scaling Success</h2>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">Cross-Platform Content Syndication</h3>
@@ -275,6 +235,52 @@ export default function CpgSocialMediaMarketingPost() {
         </div>
       </section>
 
+      {/* RELATED POSTS */}
+      <section className="bg-section-offwhite py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising—a stat</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/digital-marketing-strategies-for-cpg-brands-a-complete-2025-guide" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Digital Marketing Strategies for CPG Brands: A Complete 2025 Guide</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Consumer packaged goods brands face a unique challenge that most other industries don&apos;t: convincing shoppers to choose t</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 11, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-brand-refresh-when-and-how-to-rebrand-your-consumer-packaged-goods" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">8 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Brand Refresh: When and How to Rebrand Your Consumer Packaged Goods</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 73% of CPG brands that undergo strategic rebranding see measurable sales growth within 18 months, yet most consum</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 9, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
       {/* CTA */}
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">

@@ -54,27 +54,7 @@ export default function CpgPremiumVsValuePost() {
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df7e9840c-1-1024x585.png"
-                  alt="Premium vs. Value CPG Positioning: Pricing Strategy and Marketing Implications"
-                  width={1024}
-                  height={585}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <p className="text-gray-700 leading-relaxed mb-4">Coca-Cola commands $4.50 for a premium glass bottle while store brands sell similar cola for $0.89. Both strategies work, but they require fundamentally different approaches to succeed. The choice between premium and value positioning in consumer packaged goods isn’t just about price—it’s about building an entire brand ecosystem that supports your chosen market position.</p>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df89383b0-1.png"
-                  alt="Understanding CPG Market Positioning Fundamentals"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding CPG Market Positioning Fundamentals</h2>
 
@@ -131,16 +111,6 @@ export default function CpgPremiumVsValuePost() {
               <p className="text-gray-700 leading-relaxed mb-4">Penetration Pricing: Launching at very low prices to quickly gain market share, then gradually increasing prices as the brand establishes itself.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Bundle Pricing: Offering multiple products together at a discount encourages larger basket sizes and increases customer lifetime value.</p>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df93c34e0-1.png"
-                  alt="Marketing Strategy Differences"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Marketing Strategy Differences</h2>
 
@@ -224,16 +194,6 @@ export default function CpgPremiumVsValuePost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Category switching triggers</li>
               </ul>
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df9d44b9b-1.png"
-                  alt="Operational and Supply Chain Implications"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Operational and Supply Chain Implications</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Most businesses underestimate how positioning affects operations. Your market position determines everything from supplier relationships to inventory management.</p>
@@ -314,6 +274,52 @@ export default function CpgPremiumVsValuePost() {
         </div>
       </section>
 
+      {/* RELATED POSTS */}
+      <section className="bg-section-offwhite py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising—a stat</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 14, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/digital-marketing-strategies-for-cpg-brands-a-complete-2025-guide" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Digital Marketing Strategies for CPG Brands: A Complete 2025 Guide</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Consumer packaged goods brands face a unique challenge that most other industries don&apos;t: convincing shoppers to choose t</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 11, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
       {/* CTA */}
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">

@@ -55,26 +55,6 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944c8da9b063-1-1024x585.png"
-                  alt="CPG Reformulation: Improving Products to Meet Changing Needs"
-                  width={1024}
-                  height={585}
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944c8e6e2369-1.png"
-                  alt="Understanding the CPG Reformulation Landscape"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding the CPG Reformulation Landscape</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods reformulation has evolved far beyond simple recipe tweaks or cost-cutting measures. Today’s reformulation efforts represent a strategic response to rapidly changing market dynamics, consumer preferences, and regulatory requirements.</p>
@@ -218,16 +198,6 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
 
               <p className="text-gray-700 leading-relaxed mb-4">Work closely with manufacturing teams early in the reformulation process. Their insights can prevent costly surprises and help optimize new formulations for efficient production.</p>
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944c8f252323-1.png"
-                  alt="Marketing and Communication Strategies"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Marketing and Communication Strategies</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Even the best reformulation can fail without effective marketing and communication. Consumers need to understand and appreciate the changes you’ve made to their favorite products.</p>
@@ -351,6 +321,52 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
         </div>
       </section>
 
+      {/* RELATED POSTS */}
+      <section className="bg-section-offwhite py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a href="/blog/cpg-regulatory-changes-staying-compliant-in-evolving-markets" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">7 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Regulatory Changes: Staying Compliant in Evolving Markets</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Federal regulatory shifts in the CPG industry have accelerated by 400% over the past three years, leaving many brands sc</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 17, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-counterfeit-products-protecting-your-brand-from-fraud" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Counterfeit Products: Protecting Your Brand from Fraud</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Global counterfeit trade reached $509 billion in 2019, with consumer packaged goods representing the largest target cate</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-supply-chain-disruptions-building-resilience-and-flexibility" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Supply Chain Disruptions: Building Resilience and Flexibility</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Recent data reveals that 73% of CPG companies experienced at least one major supply chain disruption in the past two yea</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
       {/* CTA */}
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">

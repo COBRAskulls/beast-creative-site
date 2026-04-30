@@ -55,26 +55,6 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944cc714db3c-1-1024x585.png"
-                  alt="CPG Profitability Analysis: Understanding True Product Margins"
-                  width={1024}
-                  height={585}
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944cc7c8fcb0-1.png"
-                  alt="The Hidden Complexity of CPG Profit Margins"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Hidden Complexity of CPG Profit Margins</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods profitability isn’t just about manufacturing costs versus selling price. The reality is much more nuanced. Every successful CPG brand needs to account for dozens of cost factors that can make the difference between a thriving product line and one that’s secretly bleeding money.</p>
@@ -137,16 +117,6 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
               <p className="text-gray-700 leading-relaxed mb-4">Here’s where many CPG brands get tripped up. They know their total costs, but they don’t allocate them properly across different products, sizes, or channels. A 12-pack of your product might seem more profitable than individual units, but when you factor in the specialized packaging, different distribution requirements, and unique promotional costs, the numbers might tell a different story.</p>
 
               <p className="text-gray-700 leading-relaxed mb-4">Use activity-based costing to assign expenses based on what actually drives costs, not just simple volume splits. This approach reveals which products, package sizes, and sales channels are your real profit drivers.</p>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944cc864be10-1.png"
-                  alt="Advanced Margin Analysis Techniques"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Advanced Margin Analysis Techniques</h2>
 
@@ -245,16 +215,6 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
                 </li>
               </ul>
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944cc903f60d-1.png"
-                  alt="Common Profitability Pitfalls to Avoid"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Common Profitability Pitfalls to Avoid</h2>
 
               <h3 className="font-display text-xl font-bold text-beast-black mb-2">The “Revenue Growth at Any Cost” Trap</h3>
@@ -297,6 +257,52 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
         </div>
       </section>
 
+      {/* RELATED POSTS */}
+      <section className="bg-section-offwhite py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a href="/blog/cpg-regulatory-changes-staying-compliant-in-evolving-markets" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">7 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Regulatory Changes: Staying Compliant in Evolving Markets</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Federal regulatory shifts in the CPG industry have accelerated by 400% over the past three years, leaving many brands sc</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 17, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-counterfeit-products-protecting-your-brand-from-fraud" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Counterfeit Products: Protecting Your Brand from Fraud</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Global counterfeit trade reached $509 billion in 2019, with consumer packaged goods representing the largest target cate</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-supply-chain-disruptions-building-resilience-and-flexibility" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Supply Chain Disruptions: Building Resilience and Flexibility</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Recent data reveals that 73% of CPG companies experienced at least one major supply chain disruption in the past two yea</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
       {/* CTA */}
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">

@@ -55,26 +55,6 @@ export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944cec58e617-1-1024x585.png"
-                  alt="CPG Supply Chain Disruptions: Building Resilience and Flexibility"
-                  width={1024}
-                  height={585}
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944cecdecce1-1.png"
-                  alt="Understanding Modern CPG Supply Chain Vulnerabilities"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Understanding Modern CPG Supply Chain Vulnerabilities</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Today’s consumer packaged goods industry operates in an interconnected web of dependencies that can unravel quickly. A single point of failure—whether it’s a port closure, factory shutdown, or raw material shortage—creates ripple effects across multiple product lines and markets.</p>
@@ -157,16 +137,6 @@ export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Supplier risk monitoring and alert systems</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Inventory optimization tools with multi-location awareness</li>
               </ul>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944ced786a31-1.png"
-                  alt="Flexibility Strategies That Work"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Flexibility Strategies That Work</h2>
 
@@ -264,16 +234,6 @@ export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Optimal inventory positioning and safety stock levels</li>
                 <li className="flex gap-3 text-gray-700 text-sm leading-relaxed"><span className="text-beast-pink font-bold shrink-0">→</span> Automated responses to routine disruption events</li>
               </ul>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944cee08ed78-1.png"
-                  alt="Building Strategic Partnerships"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Building Strategic Partnerships</h2>
 
@@ -403,6 +363,52 @@ export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
         </div>
       </section>
 
+      {/* RELATED POSTS */}
+      <section className="bg-section-offwhite py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a href="/blog/cpg-regulatory-changes-staying-compliant-in-evolving-markets" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">7 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Regulatory Changes: Staying Compliant in Evolving Markets</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Federal regulatory shifts in the CPG industry have accelerated by 400% over the past three years, leaving many brands sc</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 17, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-counterfeit-products-protecting-your-brand-from-fraud" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Counterfeit Products: Protecting Your Brand from Fraud</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Global counterfeit trade reached $509 billion in 2019, with consumer packaged goods representing the largest target cate</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/cpg-retail-consolidation-adapting-to-fewer-larger-customers" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG</span>
+                  <span className="text-xs text-gray-400">6 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">CPG Retail Consolidation: Adapting to Fewer, Larger Customers</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">The retail landscape has shifted dramatically: Walmart now controls 24% of US grocery sales, while the top ten retailers</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">January 15, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
       {/* CTA */}
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">

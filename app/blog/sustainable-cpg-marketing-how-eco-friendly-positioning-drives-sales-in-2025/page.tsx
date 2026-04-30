@@ -54,27 +54,7 @@ export default function SustainableCpgMarketingPost() {
           <AnimatedSection>
             <div className="prose prose-lg max-w-none">
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df0b5200d-1-1024x585.png"
-                  alt="Sustainable CPG Marketing: How Eco-Friendly Positioning Drives Sales in 2025"
-                  width={1024}
-                  height={585}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <p className="text-gray-700 leading-relaxed mb-4">Consumer packaged goods brands are discovering what tech companies learned a decade ago: sustainability isn’t just good PR—it’s a profit driver. In 2025, eco-friendly positioning has become the fastest-growing segment in CPG marketing, with sustainable brands capturing 73% more market share than traditional competitors. The question isn’t whether to embrace sustainable marketing, but how to do it authentically and profitably.</p>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df13baa56-1.png"
-                  alt="The Financial Reality of Sustainable CPG Marketing"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">The Financial Reality of Sustainable CPG Marketing</h2>
 
@@ -116,16 +96,6 @@ export default function SustainableCpgMarketingPost() {
               </ul>
 
               <p className="text-gray-700 leading-relaxed mb-4">These certifications don’t just validate your claims—they become powerful marketing tools that communicate your commitment without requiring lengthy explanations.</p>
-
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df1d99ffc-1.png"
-                  alt="Messaging Strategies That Drive Sales"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
 
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Messaging Strategies That Drive Sales</h2>
 
@@ -226,16 +196,6 @@ export default function SustainableCpgMarketingPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Here’s what works: sharing these metrics in your marketing creates transparency that builds trust and differentiates your brand from greenwashing competitors.</p>
 
-              <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0px 5px 15px 0px rgba(0,0,0,0.15)" }}>
-                <Image
-                  src="/assets/blog/contentcraft-6944df28292bd-1.png"
-                  alt="Common Pitfalls and How to Avoid Them"
-                  width={1344}
-                  height={768}
-                  className="w-full h-auto"
-                />
-              </div>
-
               <h2 className="font-display text-3xl font-bold text-beast-black mb-4">Common Pitfalls and How to Avoid Them</h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">Even well-intentioned sustainable marketing campaigns can backfire. Here are the most common mistakes and how to sidestep them:</p>
@@ -298,6 +258,52 @@ export default function SustainableCpgMarketingPost() {
         </div>
       </section>
 
+      {/* RELATED POSTS */}
+      <section className="bg-section-offwhite py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <h2 className="font-display text-2xl font-bold text-beast-black mb-8">More From the Blog</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a href="/blog/influencer-marketing-for-cpg-products-finding-and-working-with-content-creators" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Influencer Marketing for CPG Products: Finding and Working With Content Creators</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising—a stat</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 16, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/social-media-marketing-for-cpg-brands-platform-strategies-that-drive-sales" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">10 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed fo</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 14, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+              <a href="/blog/digital-marketing-strategies-for-cpg-brands-a-complete-2025-guide" className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-600">CPG Marketing</span>
+                  <span className="text-xs text-gray-400">9 min read</span>
+                </div>
+                <h3 className="font-display text-base font-bold text-beast-black mb-2 leading-snug group-hover:text-beast-pink transition-colors">Digital Marketing Strategies for CPG Brands: A Complete 2025 Guide</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">Consumer packaged goods brands face a unique challenge that most other industries don&apos;t: convincing shoppers to choose t</p>
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-400">February 11, 2026</span>
+                  <span className="text-beast-pink text-sm font-semibold">Read →</span>
+                </div>
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
       {/* CTA */}
       <section className="bg-beast-black py-16 text-center">
         <div className="max-w-2xl mx-auto px-6">
