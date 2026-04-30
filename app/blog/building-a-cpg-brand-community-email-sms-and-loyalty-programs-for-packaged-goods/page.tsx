@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "CPG brands that rely solely on retail partnerships are missing 73% of potential customer lifetime value, according to recent industry data. The key difference? Direct-to-consumer relationship building through strategic email, SMS, and loyalty programs.",
 };
 
+const faqs = [
+  {
+    question: "Why should a CPG brand bother building an email list if most sales happen in retail stores?",
+    answer: "Your email list is the only customer asset you own outright — retailer relationships, social followings, and Amazon rankings can disappear overnight. An email list gives you a direct line to activate for new product launches, promotion pushes, and DTC sales without paying a third-party platform.",
+  },
+  {
+    question: "What conversion rates should CPG brands expect from loyalty programs?",
+    answer: "Loyalty program enrollment rates of 15–25% of active purchasers are typical for CPG brands with a strong community angle; repeat purchase rate lifts of 20–35% among enrolled members are commonly reported. Programs tied to experiential rewards (events, early access) outperform pure points-for-discounts structures.",
+  },
+  {
+    question: "When does SMS marketing make sense for a CPG brand vs. email alone?",
+    answer: "SMS is most effective for time-sensitive offers (flash sales, limited drops) and post-purchase engagement (reorder reminders, shipping updates) because open rates are 90%+ vs. 20–30% for email. Use SMS sparingly — more than 2–4 messages per month drives unsubscribes at a rate that erodes list value quickly.",
+  },
+  {
+    question: "What is the simplest loyalty mechanic a small CPG brand can implement without a major tech investment?",
+    answer: "A receipt-upload program using a tool like Fetch or a simple Typeform-based submission with a manual reward fulfillment is a low-cost way to start. It captures purchase data from any retail channel, not just DTC, which is critical for CPG brands where most volume is through retail.",
+  },
+];
+
 export default function CpgBrandCommunityPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -326,11 +351,19 @@ export default function CpgBrandCommunityPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Start with email marketing to build your foundation, add SMS for direct engagement, and create a loyalty program that rewards your best customers. Most importantly, remember that community building is a long-term strategy. The relationships you build today will drive sales and advocacy for years to come.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Ready to build a community that transforms your CPG brand&apos;s customer relationships? At Beast Creative Agency, our certified specialists use AI-enhanced campaigns and radical transparency to deliver personalized strategies that maximize ROI. Let&apos;s create a community-building strategy that turns your customers into your biggest advocates.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

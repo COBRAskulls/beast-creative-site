@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Consumer packaged goods companies command valuations ranging from 1x to 15x revenue, yet most business owners can&apos;t explain why this massive gap exists. The",
 };
 
+const faqs = [
+  {
+    question: "What EBITDA multiple range should a CPG brand expect in an acquisition?",
+    answer: "High-growth CPG brands with strong retail velocity and DTC traction typically transact at 6–14x EBITDA; commodity-driven or private-label manufacturers with low growth are valued at 3–6x. The multiple premium comes from brand equity, repeat purchase rates, and channel diversification — not revenue size alone.",
+  },
+  {
+    question: "What non-financial factors most affect CPG brand acquisition valuations?",
+    answer: "Retail distribution breadth and velocity (sales per point of distribution), customer retention and repeat purchase rates, and proprietary formulas or IP are the top value drivers beyond the financials. Concentration risk — one retailer, one product, one geography — consistently discounts valuations regardless of profitability.",
+  },
+  {
+    question: "How does DTC revenue affect a CPG brand's valuation relative to pure retail revenue?",
+    answer: "DTC revenue is typically valued at a premium because it comes with owned customer data, higher margins, and a direct relationship that the acquirer can leverage post-acquisition. A brand doing 20% of revenue DTC with strong retention metrics will command a higher multiple than an identical brand selling exclusively through retail.",
+  },
+  {
+    question: "When should a CPG brand owner start thinking about valuation and exit planning?",
+    answer: "Ideally three to five years before a planned exit — that is when operational and financial decisions made today will show up in the trailing twelve-month numbers that buyers use to set valuation. Waiting until six months before a desired sale gives you almost no time to address the margin, concentration, or documentation issues that compress valuations.",
+  },
+];
+
 export default function CpgValuationMethodsDrivesCompanyWorthPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -389,11 +414,19 @@ export default function CpgValuationMethodsDrivesCompanyWorthPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The most successful CPG companies understand that valuation isn’t just about current performance – it’s about demonstrating sustainable competitive advantages and growth potential that buyers will pay premium multiples to access.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Professional marketing support becomes essential when positioning your CPG company for maximum valuation. The right marketing strategy doesn’t just drive sales – it builds brand equity, demonstrates market traction, and creates the growth trajectory that commands premium valuations. At Beast Creative Agency, we help CPG companies develop marketing strategies that not only drive immediate results but also build the long-term brand value that translates directly to higher company valuations.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

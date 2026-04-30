@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "CPG brands are facing an unprecedented shift: traditional retail partnerships that once guaranteed shelf space and sales are no longer enough. Today&apos;s",
 };
 
+const faqs = [
+  {
+    question: "What is the main reason CPG brands should consider a DTC channel even if retail is the primary revenue driver?",
+    answer: "DTC gives you owned customer data — email, purchase history, preferences — that retail channels never share with you, and this data makes every other marketing investment more effective. Brands with even a small DTC channel acquire customers 30–50% more efficiently on paid social than pure-retail brands because they can target lookalikes from their own buyer list.",
+  },
+  {
+    question: "What CPG categories are best suited for DTC, and which categories struggle?",
+    answer: "Subscription-friendly categories (supplements, pet food, coffee, personal care) are the strongest DTC fits because the repeat purchase model justifies customer acquisition costs over time. Low-price, low-involvement CPG (commoditized snacks, household consumables) struggles with DTC because the unit economics rarely support the shipping cost relative to price point.",
+  },
+  {
+    question: "What customer acquisition cost is sustainable for a CPG DTC brand?",
+    answer: "A CAC-to-LTV ratio of 1:3 or better is the standard benchmark — if it costs you $30 to acquire a customer, that customer should generate at least $90 in lifetime gross profit. For subscription CPG with predictable churn, this is achievable; for one-time-purchase CPG, achieving a 1:3 ratio is extremely difficult and most brands subsidize DTC as a data and brand-building investment rather than a profit center.",
+  },
+  {
+    question: "How do you decide whether to invest in DTC or put that budget into retail trade spend?",
+    answer: "If your retail velocity is below category average, fix it with trade spend and sampling before opening a DTC channel — a DTC site requires consistent traffic investment and will not generate meaningful data if it is under-resourced. If your retail velocity is strong and you want to own the customer relationship and build a higher-value business, DTC investment is the right next step.",
+  },
+];
+
 export default function DtcMarketingForCpgBrandsShouldYourPackagedGoodsBrandSellDirectToConsumerPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -480,11 +505,19 @@ export default function DtcMarketingForCpgBrandsShouldYourPackagedGoodsBrandSell
 
               <p className="text-gray-700 leading-relaxed mb-4">Most importantly, don’t try to do everything at once. Start with your most promising products and most loyal customers. Test, learn, and iterate your way to a sustainable DTC strategy that complements your existing retail relationships.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">If you’re ready to explore how DTC marketing can transform your CPG brand’s relationship with customers, Beast Creative Agency’s certified specialists can help you develop a data-driven strategy that delivers measurable ROI. Our AI-enhanced campaigns and radical transparency approach ensure you’ll know exactly what’s working—and what isn’t—every step of the way.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

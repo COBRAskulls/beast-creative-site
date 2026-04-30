@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "A staggering 97% of CPG ecommerce visitors leave without making a purchase, yet the most successful brands consistently convert 3-5x more browsers than their",
 };
 
+const faqs = [
+  {
+    question: "What is the biggest conversion killer on CPG product pages?",
+    answer: "Insufficient social proof — shoppers need to see reviews, ratings, and real-use photography before they will buy a consumable product they cannot physically inspect. A product page with fewer than 25 reviews and no lifestyle imagery will underperform regardless of how good the product copy is.",
+  },
+  {
+    question: "How should CPG brands structure their product page to maximize add-to-cart rates?",
+    answer: "Lead with the hero image (product in use, not just on white background), follow with the key benefit statement, then size/flavor selector, then the add-to-cart button — all above the fold on mobile. Push ingredients, nutrition facts, and long-form copy below the fold where interested buyers will find them.",
+  },
+  {
+    question: "What checkout optimizations have the biggest impact on CPG DTC conversion?",
+    answer: "Offering a subscribe-and-save option at checkout is the single highest-impact CPG-specific optimization, as it reduces the perceived risk of a new purchase and increases LTV simultaneously. Removing forced account creation and offering Apple Pay/Google Pay are table-stakes friction reducers.",
+  },
+  {
+    question: "How do you use A/B testing effectively for CPG product pages without huge traffic?",
+    answer: "With low traffic volumes, focus tests on the highest-impact single element — usually the hero image or primary benefit headline — and run tests for at least four weeks to reach statistical significance. Do not test multiple elements simultaneously; you need clean data to know what actually moved the needle.",
+  },
+];
+
 export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -368,11 +393,19 @@ export default function CpgEcommerceConversionOptimizationBrowsersBuyersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Start with your biggest conversion barriers and systematically address each one. Test everything, measure results, and refine your approach based on actual customer behavior rather than assumptions. Remember that small improvements compound over time—a 0.5% conversion rate increase can translate to significant revenue growth at scale.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Ready to transform your CPG ecommerce performance? At Beast Creative Agency, we combine data-driven insights with creative strategy to help brands optimize every step of their customer journey. Our AI-enhanced campaigns and personalization expertise have helped CPG clients increase conversion rates by an average of 40% while maintaining the transparency and measurable ROI that growing businesses demand.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

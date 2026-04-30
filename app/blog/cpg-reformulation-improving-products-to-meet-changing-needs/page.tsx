@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Over 85% of CPG brands will reformulate at least one product in the next 18 months, driven by everything from supply chain disruptions to evolving consumer",
 };
 
+const faqs = [
+  {
+    question: "What triggers should prompt a CPG brand to consider reformulating an existing product?",
+    answer: "Sustained negative review themes around taste, texture, or efficacy, a regulatory change affecting a current ingredient, or a competitor innovation that makes your formula feel dated are the three most common valid triggers. Cost-reduction reformulations driven purely by margin pressure — without consumer validation — are the highest-risk category and most often result in sales decline.",
+  },
+  {
+    question: "How do you test a reformulated CPG product before committing to a full production run?",
+    answer: "Blind triangle testing (can consumers tell the difference between current and reformulated?) plus preference testing (do they prefer the new version?) with a minimum of 100 target consumers is the standard before committing to reformulation. If consumers can detect a change and prefer the original, the reformulation is not viable regardless of the cost savings.",
+  },
+  {
+    question: "Should a CPG brand disclose a reformulation to consumers and retail buyers?",
+    answer: "Proactively disclosing to retail buyers is always the right call — they will find out through ingredient panel changes on new packaging and feel blindsided if not told. Consumer disclosure depends on the magnitude of change: a significant recipe improvement is worth announcing as a feature, while a minor process adjustment does not require communication.",
+  },
+  {
+    question: "How long does a CPG reformulation project typically take from concept to shelf?",
+    answer: "A meaningful formula change with full consumer testing, regulatory review of any new label claims, packaging artwork updates, and co-manufacturer qualification typically takes 9–18 months. Brands that rush this process to hit a cost-reduction target frequently launch a reformulation that hurts velocity more than the cost savings benefit.",
+  },
+];
+
 export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -355,11 +380,19 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
 
               <p className="text-gray-700 leading-relaxed mb-4">The CPG landscape will continue evolving, driven by changing demographics, emerging technologies, and shifting cultural values. Brands that embrace reformulation as a strategic tool—rather than a necessary evil—will be best positioned to meet these changing needs and capture new growth opportunities.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands develop and execute reformulation strategies that drive real business results. Our AI-enhanced campaigns and personalization expertise ensure your reformulated products reach the right consumers with the right message. Ready to transform your product portfolio to meet changing consumer needs? Contact our team to discuss how we can help accelerate your reformulation success.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

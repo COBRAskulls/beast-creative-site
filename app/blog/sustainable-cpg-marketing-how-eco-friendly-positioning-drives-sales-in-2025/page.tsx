@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Consumer packaged goods brands are discovering what tech companies learned a decade ago: sustainability isn&apos;t just good PR—it&apos;s a profit driver. In 2025,",
 };
 
+const faqs = [
+  {
+    question: "Does sustainable packaging actually influence CPG purchase decisions in 2025?",
+    answer: "Yes, but primarily for shoppers already in the consideration set — sustainability is a tiebreaker, not usually the primary purchase driver. The exception is categories like cleaning products and personal care where environmental claims have become a category norm and absence is a disqualifier for certain consumer segments.",
+  },
+  {
+    question: "How do you market sustainability claims without running into greenwashing accusations?",
+    answer: "Be specific and quantifiable: \"made with 50% post-consumer recycled plastic\" is defensible, \"eco-friendly\" is not. Back claims with third-party certifications (B Corp, USDA Organic, How2Recycle) and make your sourcing data publicly available on your website.",
+  },
+  {
+    question: "Which sustainability certifications have the most consumer recognition for CPG brands?",
+    answer: "USDA Organic and Fair Trade are the most recognized by general consumers, while B Corp certification carries weight with the values-driven segment. Category-specific certifications (Rainforest Alliance for coffee/chocolate, Marine Stewardship Council for seafood) perform well within their niches.",
+  },
+  {
+    question: "How should a CPG brand prioritize sustainability investments when budget is limited?",
+    answer: "Start with the claim that most directly affects your target consumer's purchase decision in your category — packaging recyclability for household goods, ingredient sourcing for food and beverage. Do not spread investment across every sustainability dimension; one strong, verifiable claim outperforms five vague ones.",
+  },
+];
+
 export default function SustainableCpgMarketingPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -294,7 +319,17 @@ export default function SustainableCpgMarketingPost() {
 
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

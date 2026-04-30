@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Over 30,000 new consumer packaged goods hit store shelves every year, yet 95% fail within their first 12 months. The difference between brands that break through and those that blend into the background isn&apos;t luck—it&apos;s strategic positioning.",
 };
 
+const faqs = [
+  {
+    question: "How do you identify a defensible positioning for a CPG brand in a crowded category?",
+    answer: "Map all competitors on two axes that matter to your target consumer and find the white space — the combination of attributes no one else owns. The positioning must be true (you can actually deliver it), relevant (consumers care about it), and defensible (competitors cannot easily copy it).",
+  },
+  {
+    question: "What is the difference between a CPG brand's positioning and its messaging?",
+    answer: "Positioning is the internal strategic choice about where you sit in the competitive landscape relative to consumer needs — it rarely changes. Messaging is how you express that positioning in copy, creative, and campaigns — it evolves with trends, seasons, and channels.",
+  },
+  {
+    question: "How specific should a CPG brand's target consumer definition be?",
+    answer: "Specific enough that you can picture a real person making a real purchase decision and say definitively whether your brand is or is not for them. A target definition of \"adults 25–54 who care about health\" is not actionable; \"millennial parents who scan ingredients on every product they buy for their kids\" is.",
+  },
+  {
+    question: "How long should a CPG brand maintain the same positioning before reconsidering it?",
+    answer: "Positioning should be stable for at least three to five years — frequent changes confuse consumers and waste the equity you have built. Reconsider only if the category fundamentally shifts, a competitor occupies your space with more resources, or your target consumer's needs materially change.",
+  },
+];
+
 export default function CpgBrandStrategyPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -393,11 +418,19 @@ export default function CpgBrandStrategyPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The brands that break through crowded markets aren&apos;t necessarily those with the biggest budgets or the most innovative products. They&apos;re the ones with positioning so clear and compelling that consumers can&apos;t ignore them.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we&apos;ve helped numerous CPG brands cut through the noise with strategic positioning that drives real business results. Our AI-enhanced campaigns and radical transparency approach ensures your brand strategy is built on data-driven insights, not guesswork. Ready to position your CPG brand for breakthrough success? Let&apos;s create a strategy that makes your brand impossible to ignore.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

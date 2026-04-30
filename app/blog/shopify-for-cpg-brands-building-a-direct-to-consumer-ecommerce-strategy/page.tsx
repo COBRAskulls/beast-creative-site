@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Consumer Packaged Goods brands are abandoning traditional retail gatekeepers at record speed, with 73% planning to increase their direct-to-consumer",
 };
 
+const faqs = [
+  {
+    question: "Is Shopify the right DTC platform for a CPG brand, or are there better alternatives?",
+    answer: "Shopify is the correct choice for most CPG DTC builds because its app ecosystem covers subscribe-and-save (Recharge, Stay AI), loyalty programs, and bundle builders without custom development. The only reason to consider alternatives is if you have extreme scale (10K+ orders per day) or need deep ERP integration that Shopify's API cannot support.",
+  },
+  {
+    question: "What Shopify apps are essential for a CPG brand's DTC store?",
+    answer: "Subscribe-and-save (Recharge or Stay AI), post-purchase upsell (AfterSell or ReConvert), reviews (Okendo or Yotpo), and email/SMS (Klaviyo) are the four non-negotiable app categories for a CPG DTC store. Everything else is optimization; these four directly impact repeat purchase rate and LTV.",
+  },
+  {
+    question: "How do you optimize a Shopify CPG store for subscription conversion vs. one-time purchase?",
+    answer: "Present the subscription option as the default on the product page with the one-time purchase as a secondary option — this simple default switch increases subscription attach rates by 30–50% for most CPG brands. Reinforce the value with a clear savings callout and a flexible cancel-anytime message to reduce perceived risk.",
+  },
+  {
+    question: "What Shopify analytics should CPG DTC operators review weekly?",
+    answer: "Track: conversion rate by traffic source, subscription vs. one-time purchase ratio, churn rate on active subscriptions, and average order value. These four metrics tell you whether you are acquiring the right customers, converting them effectively, and keeping them long enough to be profitable.",
+  },
+];
+
 export default function ShopifyForCpgBrandsBuildingADirectToConsumerEcommerceStrategyPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -225,11 +250,19 @@ export default function ShopifyForCpgBrandsBuildingADirectToConsumerEcommerceStr
 
               <p className="text-gray-700 leading-relaxed mb-4">Remember, the brands winning in the DTC CPG space aren’t just selling products—they’re building relationships with customers who choose them over countless alternatives available in traditional retail channels. Success comes from combining Shopify’s technical capabilities with deep customer insight and relentless focus on experience optimization.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands navigate the complexities of DTC ecommerce strategy, from initial Shopify setup through advanced marketing automation and conversion optimization. Our AI-enhanced campaigns and data-driven approach ensure your DTC strategy delivers measurable ROI from day one.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

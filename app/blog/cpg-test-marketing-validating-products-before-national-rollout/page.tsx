@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Nearly 95% of new consumer packaged goods fail within their first year—yet most of these failures could be prevented with proper test marketing. Smart CPG",
 };
 
+const faqs = [
+  {
+    question: "What is the most cost-effective way for a CPG brand to test market a new product?",
+    answer: "A regional retail test in 50–150 doors of a single chain, combined with DTC sales through your own site, gives you both retailer velocity data and direct consumer feedback at a fraction of the cost of a national launch. Choose a region that over-indexes for your target consumer rather than defaulting to your home geography.",
+  },
+  {
+    question: "How long should a CPG test market run before making a national rollout decision?",
+    answer: "Minimum 16 weeks of in-market data is needed to see through promotional sell-in effects and get a read on true repeat purchase — initial velocity is almost always higher than sustainable velocity because of novelty and introductory promotion. Brands that pull the trigger on national rollout at 8 weeks frequently get delisted when the promotional period ends and reorder rates disappoint.",
+  },
+  {
+    question: "What metrics determine whether a CPG test market result justifies national expansion?",
+    answer: "The primary metric is velocity (units sold per store per week) benchmarked against category averages — if your product is in the top quartile of its category, it earns national distribution. Secondary metrics are repeat purchase rate (are first-time buyers coming back?), margin at full promotional depth, and category incrementality (are you bringing new buyers rather than stealing share).",
+  },
+  {
+    question: "How do you use DTC as a test market vehicle for new CPG products?",
+    answer: "A DTC soft launch lets you iterate on product, packaging, and messaging based on real consumer feedback before committing to retail minimums and co-man production runs. Brands that run 3–6 months of DTC before retail pitches show up to buyer meetings with actual velocity data, review sentiment, and consumer insights that win placements faster.",
+  },
+];
+
 export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -339,11 +364,19 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
 
               <p className="text-gray-700 leading-relaxed mb-4">Your test marketing success depends on having the right strategy, tools, and expertise to design meaningful tests and extract actionable insights. With proper planning and execution, test marketing transforms from a cost center into a competitive advantage that drives long-term growth.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands design and execute test marketing programs that provide clear, actionable insights for confident launch decisions. Our AI-enhanced analytics and transparent reporting ensure you get maximum value from your test marketing investments. Ready to validate your next product with confidence? Let’s discuss how our proven test marketing framework can set your brand up for national success.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

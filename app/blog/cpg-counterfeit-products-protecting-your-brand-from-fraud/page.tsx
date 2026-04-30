@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Global counterfeit trade reached $509 billion in 2019, with consumer packaged goods representing the largest target category. For CPG brands, fake products",
 };
 
+const faqs = [
+  {
+    question: "How do counterfeit CPG products typically enter the market and harm legitimate brands?",
+    answer: "Most CPG counterfeits enter through third-party marketplaces (Amazon, Walmart.com, Alibaba) where unauthorized sellers list fake products under your brand's ASIN or a near-identical listing. The consumer harm is obvious, but the brand harm is equally damaging — fake products that underperform erode your reviews and reputation.",
+  },
+  {
+    question: "What is the most effective tool for protecting a CPG brand from counterfeits on Amazon?",
+    answer: "Amazon Brand Registry is the baseline requirement — it gives you access to automated IP protection tools and faster takedown of counterfeit listings. Pair it with serialized QR codes or authentication labels on your physical packaging so consumers and Amazon can verify authenticity.",
+  },
+  {
+    question: "What legal steps should a CPG brand take before counterfeits appear, not after?",
+    answer: "Register your trademarks in every market you sell in before launch — trademark registration is the legal foundation for all counterfeit enforcement actions. File in the US, EU, and any manufacturing country (especially China) because IP protection does not cross borders automatically.",
+  },
+  {
+    question: "How do you alert consumers to watch for counterfeit versions of your product?",
+    answer: "A dedicated \"buy authentic\" page on your website listing authorized retailers and red flags of counterfeit packaging is a low-cost, high-credibility tool. Some brands also use packaging authentication features (holographic seals, scratch-off codes) that give consumers a verifiable way to confirm legitimacy.",
+  },
+];
+
 export default function CpgCounterfeitProductsBrandFraudPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -328,11 +353,19 @@ export default function CpgCounterfeitProductsBrandFraudPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Building effective protection requires expertise across multiple disciplines—from legal and technology to marketing and operations. The complexity of modern counterfeiting threats means that many businesses benefit from partnering with specialists who understand both the technical and strategic aspects of brand protection.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we understand how counterfeiting threats can undermine even the most well-crafted marketing strategies. Our team combines deep anti-counterfeiting expertise with innovative digital marketing approaches to help CPG brands build resilient, protected market positions. Ready to strengthen your brand’s defenses while growing your authentic market presence? Let’s discuss how our integrated approach can protect and promote your brand simultaneously.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

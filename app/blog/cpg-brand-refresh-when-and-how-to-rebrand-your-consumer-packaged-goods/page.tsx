@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Nearly 73% of CPG brands that undergo strategic rebranding see measurable sales growth within 18 months, yet most consumer packaged goods companies hesitate",
 };
 
+const faqs = [
+  {
+    question: "What signals indicate a CPG brand needs a refresh rather than just a packaging update?",
+    answer: "If your brand positioning, target consumer, or core value proposition has shifted, that is a refresh — a packaging update alone will not fix a strategic misalignment. If only the visual system feels dated but the brand story still resonates, a design evolution (not a rebrand) is usually sufficient.",
+  },
+  {
+    question: "How do you rebrand a CPG product without losing existing loyal customers?",
+    answer: "Maintain enough visual continuity — color, shape, or key brand equities — that loyal buyers recognize the product on shelf even if everything else changes. A phased rollout and proactive communication through email and social can prepare existing customers before the new packaging hits stores.",
+  },
+  {
+    question: "What does a CPG brand refresh typically cost and how long does it take?",
+    answer: "A packaging redesign with a brand strategy component typically runs $50K–$250K for mid-size brands depending on the scope of the agency and number of SKUs. Timeline from strategy to shelf-ready artwork is usually six to twelve months, accounting for retailer resets and inventory burn-off.",
+  },
+  {
+    question: "Can a CPG brand refresh hurt sales, and how do you minimize that risk?",
+    answer: "Yes — shoppers who cannot find their familiar product will switch to a competitor rather than search. Running new and old packaging in parallel during transition, flagging the change on-pack with \"new look, same great product,\" and timing the switch to a category reset minimizes the risk.",
+  },
+];
+
 export default function CpgBrandRefreshPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -311,7 +336,17 @@ export default function CpgBrandRefreshPost() {
 
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

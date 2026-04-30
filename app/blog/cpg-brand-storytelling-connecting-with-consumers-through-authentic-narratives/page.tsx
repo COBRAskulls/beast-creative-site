@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Ninety-one percent of consumers say they&apos;re more likely to buy from brands with authentic stories, yet most CPG companies still rely on product features and price points to drive sales.",
 };
 
+const faqs = [
+  {
+    question: "What makes a CPG brand story feel authentic vs. manufactured?",
+    answer: "Authentic stories are specific and verifiable — a founder's actual problem, a real sourcing relationship, a documented community impact. Generic narratives about \"passion\" or \"quality\" without specifics read as marketing copy and consumers tune them out.",
+  },
+  {
+    question: "How do you tell a brand story across packaging, social, and retail when space is limited?",
+    answer: "Identify the one-sentence core story (your brand's reason for existing) and express it differently at each touchpoint — a QR code on pack that links to the full origin story, a three-word tagline on shelf, and a 60-second video on social. Each layer should add depth, not repeat the same content.",
+  },
+  {
+    question: "Should CPG founders be the face of the brand story?",
+    answer: "Founder-led storytelling is highly effective for brands under $50M in revenue because consumers connect with a real person, but it creates dependency risk as the brand scales. Build founder story into brand origin materials early, then gradually expand the narrative to include customers and community so the brand can stand independently.",
+  },
+  {
+    question: "What role does customer storytelling play in CPG brand narrative?",
+    answer: "Customer stories — reviews, testimonials, user-generated content — are the most credible form of brand storytelling because they are not filtered through marketing. Actively soliciting and featuring real customer outcomes (weight loss, energy, convenience) is more persuasive than any copy your team can write.",
+  },
+];
+
 export default function CpgBrandStorytellingPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -247,11 +272,19 @@ export default function CpgBrandStorytellingPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The brands that succeed in this space don&apos;t just tell better stories; they become better brands by staying true to their narratives through every business decision. They understand that authenticity isn&apos;t a marketing tactic—it&apos;s a business strategy that influences everything from product development to customer service.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Ready to transform your CPG brand&apos;s story into a competitive advantage? At Beast Creative Agency, we specialize in helping brands discover and amplify their authentic narratives through AI-enhanced campaigns that deliver personalized ROI. Our certified specialists work with you to develop storytelling strategies that connect with your audience and drive measurable results. Contact us to start building your brand&apos;s story today.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

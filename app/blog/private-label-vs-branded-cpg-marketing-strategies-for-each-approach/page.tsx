@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Consumer packaged goods revenue reached $2.2 trillion globally in 2023, yet most CPG companies struggle with one fundamental decision: should they build their own brand or create private label products?",
 };
 
+const faqs = [
+  {
+    question: "What is the core marketing difference between a branded CPG and a private label product?",
+    answer: "Branded CPG marketing builds equity in the brand name itself so consumers seek it out across multiple retail channels. Private label marketing is entirely managed by the retailer — the manufacturer's job is operational excellence and pricing, not consumer brand building.",
+  },
+  {
+    question: "Can a CPG manufacturer successfully sell both branded and private label from the same facility?",
+    answer: "Yes, and many do — private label provides volume and capacity utilization while the branded line builds long-term margin and exit valuation. The risk is that your retail partner learns your formula and replaces your branded product with their private label version, so IP protection and formula differentiation matter.",
+  },
+  {
+    question: "How does marketing spend differ between branded and private label CPG businesses?",
+    answer: "Branded CPG companies typically spend 10–20% of revenue on marketing; private label manufacturers spend near zero on consumer marketing but invest heavily in sales and account management to win and retain retailer contracts. Private label is a B2B sales model, not a B2C marketing model.",
+  },
+  {
+    question: "What are the margin implications of private label vs. branded CPG?",
+    answer: "Private label contracts are typically won on price, compressing gross margins to 20–35% while branded products in strong categories can achieve 50–70% gross margins. The branded premium is only sustainable if supported by marketing investment that drives consumer pull-through at retail.",
+  },
+];
+
 export default function PrivateLabelVsBrandedCpgPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -341,11 +366,19 @@ export default function PrivateLabelVsBrandedCpgPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The most successful CPG companies, regardless of their model, share common traits: they understand their customers deeply, use data to drive decisions, and adapt quickly to market changes. They also recognize that great marketing isn&apos;t just about creative campaigns—it&apos;s about building sustainable competitive advantages through consistent value delivery.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">If you&apos;re ready to develop a marketing strategy that aligns with your CPG business model and drives measurable results, Beast Creative Agency&apos;s certified specialists can help you build campaigns that combine strategic thinking with AI-enhanced optimization. Our radical transparency approach ensures you always understand what&apos;s working and why, maximizing your ROI while building long-term business value.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Consumer packaged goods companies burn through $1.2 trillion in working capital annually, yet most don&apos;t realize they&apos;re sitting on a goldmine of untapped",
 };
 
+const faqs = [
+  {
+    question: "What is the biggest working capital challenge unique to CPG brands?",
+    answer: "The cash conversion cycle — the gap between paying for ingredients and manufacturing and receiving payment from retailers — is typically 90–150 days for brands selling through grocery, creating a chronic cash strain as brands scale. Every new retail account you win requires more working capital before it generates cash.",
+  },
+  {
+    question: "What financing tools are most appropriate for CPG brands needing working capital?",
+    answer: "Purchase order financing and inventory-backed lines of credit are the most common CPG-specific working capital tools because the collateral (purchase orders from creditworthy retailers, finished inventory) is understood by lenders who specialize in the category. Revenue-based financing is an alternative for DTC-heavy brands with predictable monthly revenue.",
+  },
+  {
+    question: "How do you negotiate better payment terms with retailers to improve CPG cash flow?",
+    answer: "Offering a 2% early payment discount (net 10 instead of net 60) is often the most practical lever — many retailers will take it, improving your cash position at a cost lower than a line of credit. For larger accounts, factoring your invoices through a specialty CPG factor is an alternative when early payment discounts are not available.",
+  },
+  {
+    question: "What inventory practices most directly improve working capital for CPG brands?",
+    answer: "Rationalizing your SKU count to focus production runs on your top-velocity products reduces the cash tied up in slow-moving finished goods. Minimum order quantities with co-manufacturers should be negotiated down as you gain leverage — lower MOQs mean less cash tied up per production run.",
+  },
+];
+
 export default function CpgWorkingCapitalManagementCashFlowPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -295,11 +320,19 @@ export default function CpgWorkingCapitalManagementCashFlowPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The key is starting with accurate data, building robust forecasting capabilities, and creating organizational alignment around cash flow objectives. Remember, working capital optimization isn’t a one-time project—it’s an ongoing process that adapts to changing market conditions and business priorities.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we understand that effective working capital management often requires clear communication with stakeholders, from suppliers to customers to internal teams. Our marketing expertise helps CPG companies build stronger relationships that support better payment terms, more flexible supplier arrangements, and clearer internal alignment around cash flow objectives. Ready to optimize your working capital story? Let’s talk about how strategic communication can support your financial goals.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

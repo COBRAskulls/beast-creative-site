@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Successful CPG brands share one powerful secret: they don&apos;t just create products, they multiply them. Line extensions have driven 76% of new product launches",
 };
 
+const faqs = [
+  {
+    question: "When is a CPG brand ready to launch a line extension vs. needing to strengthen its core first?",
+    answer: "The core SKU should be achieving strong velocity (above category average sales per point of distribution) and have consistent retail placement before you add complexity. Launching extensions to compensate for weak core performance almost always spreads resources too thin and accelerates delisting.",
+  },
+  {
+    question: "What types of line extensions have the highest success rate in CPG?",
+    answer: "Flavor and variety extensions within an established form factor have the highest success rate because they leverage existing brand trust and manufacturing capabilities with minimal new investment. New form factor extensions (e.g., a bar brand launching a beverage) have far lower success rates because they require separate consumer education and often a different retail buyer relationship.",
+  },
+  {
+    question: "How many SKUs is too many for a growing CPG brand?",
+    answer: "Most CPG operators and investors consider 3–8 active SKUs the optimal range for a brand under $20M in revenue — enough to offer variety without fragmenting production runs and trade spend. Above 12 SKUs at this scale, brands consistently find that the bottom 40% of their line generates less than 5% of revenue while consuming disproportionate operational resources.",
+  },
+  {
+    question: "How do you pitch a line extension to a retail buyer who already carries your core product?",
+    answer: "Lead with velocity data on your existing SKU showing it earns its shelf space, then present the extension with a clear consumer insight (\"our reviews show 40% of buyers asking for a lower-sugar option\") and a specific incremental sales projection. Buyers are most receptive to extensions that bring in new buyers to the category rather than simply fragmenting your existing volume.",
+  },
+];
+
 export default function CpgLineExtensionsGrowingBrandsThroughNewVariantsPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -263,11 +288,19 @@ export default function CpgLineExtensionsGrowingBrandsThroughNewVariantsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The key lies in balancing innovation with consistency, meeting diverse consumer needs while strengthening core brand equity. As markets continue fragmenting and consumer expectations evolve, line extensions become even more critical for maintaining relevance and driving growth.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands develop and execute extension strategies that drive measurable results. Our AI-enhanced campaigns and data-driven approach ensure your extensions reach the right consumers with compelling messages that convert. Ready to unlock your brand’s extension potential? Let’s discuss how strategic line extensions can accelerate your growth.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

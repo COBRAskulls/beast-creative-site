@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "CPG brands face a unique challenge: selling products that consumers often buy on autopilot through platforms designed for engagement and discovery. While a",
 };
 
+const faqs = [
+  {
+    question: "Which social platform delivers the best ROI for CPG brands in 2025?",
+    answer: "TikTok Shop has become the strongest direct-sales channel for impulse and lifestyle CPG products, while Instagram remains best for brand-building and Pinterest drives high purchase intent in food, home, and beauty. The right answer depends on your category and target demographic.",
+  },
+  {
+    question: "How often should a CPG brand post on social media to stay relevant without burning out?",
+    answer: "Three to five posts per week on your primary platform is a sustainable baseline that maintains algorithmic presence without sacrificing quality. Consistency matters more than frequency — a regular cadence of good content outperforms a burst-and-ghost strategy.",
+  },
+  {
+    question: "What content types perform best for CPG brands on social media?",
+    answer: "Recipe and use-case content consistently outperforms pure product shots because it gives consumers a reason to engage and share. User-generated content reposts and behind-the-scenes manufacturing or sourcing content also build trust and perform well organically.",
+  },
+  {
+    question: "Should CPG brands run paid ads on social, or focus on organic first?",
+    answer: "Organic content validates your creative before you pay to amplify it — if a post performs well organically, it is almost always a winner as a paid ad too. For CPG brands with retail distribution, paid social is most effective when used to drive trial via a specific offer rather than pure awareness.",
+  },
+];
+
 export default function CpgSocialMediaMarketingPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -271,7 +296,17 @@ export default function CpgSocialMediaMarketingPost() {
 
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

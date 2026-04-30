@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Raw material costs for consumer packaged goods jumped 23% in the past year alone, turning profit margins into moving targets for even the most established",
 };
 
+const faqs = [
+  {
+    question: "What is the most practical hedging strategy for a mid-size CPG brand facing commodity price swings?",
+    answer: "Forward contracts with your primary ingredient suppliers — locking in price and volume 6–12 months out — are the most accessible hedging tool for brands without treasury departments. Formal commodity futures markets are typically too complex and capital-intensive for brands under $50M in revenue.",
+  },
+  {
+    question: "How do you pass commodity cost increases to retail customers without losing shelf space?",
+    answer: "Lead with data — present cost-build analysis showing the specific input cost increase and its direct margin impact before asking for a price increase. Timing price increases to coincide with category resets or new packaging introductions reduces buyer resistance because there is a visual rationale for the change.",
+  },
+  {
+    question: "What reformulation strategies help CPG brands manage input cost volatility?",
+    answer: "Reducing the fill weight or portion size (\"shrinkflation\") is the most common consumer-packaged response, but it carries reputational risk if consumers notice and publicize it. Substituting a lower-cost but functionally equivalent ingredient is lower visibility but requires careful consumer testing to ensure the product experience holds.",
+  },
+  {
+    question: "How should CPG brands structure supplier contracts to protect against unexpected cost spikes?",
+    answer: "Include a price escalation clause with a defined cap (e.g., no more than 5% increase per quarter without 60-day notice) and a corresponding de-escalation clause for when commodity prices fall — the latter is often skipped and costs brands significantly in down cycles. Index-linked pricing tied to a published commodity index is the most transparent and defensible structure.",
+  },
+];
+
 export default function CpgCommodityPriceVolatilityInputCostPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -256,11 +281,19 @@ export default function CpgCommodityPriceVolatilityInputCostPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Success requires more than just financial hedging or supplier negotiations. It demands integrated strategies that span operations, innovation, marketing, and organizational development. Companies that master this integration don’t just survive volatile markets—they use volatility as a competitive advantage.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands navigate these complex challenges through AI-enhanced campaigns and data-driven strategies that maintain brand strength even during turbulent cost environments. Our personalized approach ensures your marketing investments continue delivering strong ROI, regardless of commodity market conditions.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

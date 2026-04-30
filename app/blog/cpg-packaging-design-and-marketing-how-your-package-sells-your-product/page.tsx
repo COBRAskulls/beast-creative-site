@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Your product could be revolutionary, but if consumers walk past it on the shelf without a second glance, you&apos;ve already lost the sale. In the consumer packaged goods industry, your package isn&apos;t just protection—it&apos;s your most powerful sales tool.",
 };
 
+const faqs = [
+  {
+    question: "How much of CPG purchase decisions are driven by packaging at the point of sale?",
+    answer: "Research consistently shows that 70–80% of purchase decisions for CPG products are made at shelf, making the package the most important marketing asset in the physical retail environment. In e-commerce, the product image (essentially a package photo) plays the same role.",
+  },
+  {
+    question: "What information hierarchy should CPG packaging prioritize?",
+    answer: "The front panel hierarchy should be: brand name → what the product is (descriptor) → the key benefit or differentiator → any critical claims or certifications. Everything else belongs on the side or back panel — cluttered fronts lose to clean ones at shelf.",
+  },
+  {
+    question: "How does packaging affect CPG performance on Amazon specifically?",
+    answer: "On Amazon, the hero image (a photo of your package on white background) is your primary conversion lever — it must communicate what the product is and its key benefit within a thumbnail. Brands that invest in lifestyle imagery for secondary images see significantly higher add-to-cart rates than those using only studio shots.",
+  },
+  {
+    question: "What are the most common CPG packaging mistakes that hurt sales?",
+    answer: "The top mistakes are: too much copy competing for attention on the front panel, font sizes too small to read at arm's length, and benefit claims that are vague or indistinguishable from every competitor in the set. Testing packaging in a simulated shelf environment before printing is the single best investment to catch these issues.",
+  },
+];
+
 export default function CpgPackagingDesignPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -309,11 +334,19 @@ export default function CpgPackagingDesignPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Success requires balancing multiple priorities: standing out while fitting in, communicating clearly without overwhelming, creating emotional connection while providing practical information. It&apos;s a complex challenge that benefits from both creative expertise and strategic marketing insight.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands create packaging designs that don&apos;t just protect products—they sell them. Our team combines design expertise with data-driven marketing strategy to create packages that work as hard as the rest of your marketing efforts. Ready to make your package your best salesperson? Let&apos;s start a conversation about how strategic design can drive your CPG success.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Nearly 90% of consumer packaged goods startups exhaust their initial capital within the first two years, yet the survivors who master funding diversification",
 };
 
+const faqs = [
+  {
+    question: "What are the most realistic funding sources for a CPG brand doing $500K–$5M in revenue?",
+    answer: "At this stage, the most accessible capital comes from SBA loans, specialty CPG lenders (AccelFoods, Assembled Brands), and revenue-based financing — not venture capital, which typically requires faster growth trajectories than CPG allows. Strategic angel investors with CPG operator experience are also valuable at this stage because they bring distribution relationships alongside capital.",
+  },
+  {
+    question: "Is venture capital a good fit for CPG brands?",
+    answer: "VC is a poor fit for most CPG brands because the category's growth curves and exit multiples rarely deliver the 10x returns VCs require — even a $50M exit is a failure for a fund that invested at a $10M valuation. The exception is CPG brands with a genuinely disruptive platform (novel ingredients, direct-to-professional distribution, strong IP) that can support a software-like growth narrative.",
+  },
+  {
+    question: "What do CPG lenders look for that traditional bank lenders miss?",
+    answer: "Specialty CPG lenders underwrite against purchase orders, retailer relationships, and velocity data — assets that traditional bank credit officers do not know how to value. They also understand that CPG brands have naturally lumpy cash flow due to retail payment terms and do not penalize for it the way a conventional line of credit would.",
+  },
+  {
+    question: "How much equity should a CPG founder expect to give up in a Series A round?",
+    answer: "A CPG-focused institutional round (typically $3M–$10M) usually results in 20–30% equity dilution for the founder, depending on valuation and competitive tension in the deal. Founders who approach investors with strong velocity data, multiple term sheets, and a clear use of proceeds retain better terms than those who approach from a position of need.",
+  },
+];
+
 export default function CpgFundingOptionsBootstrappingVentureCapitalPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -319,11 +344,19 @@ export default function CpgFundingOptionsBootstrappingVentureCapitalPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Your funding strategy isn’t just about raising capital – it’s about building a sustainable business that creates value for all stakeholders. The most successful CPG companies view funding as a strategic tool rather than just a financial necessity.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we’ve seen how the right funding strategy, combined with effective marketing and brand positioning, accelerates CPG growth beyond what either element could achieve alone. Our AI-enhanced campaigns help funded CPG brands maximize their marketing ROI while building the transparent, data-driven relationships that investors value. Ready to align your funding success with marketing excellence? Let’s discuss how our certified specialists can amplify your growth trajectory.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

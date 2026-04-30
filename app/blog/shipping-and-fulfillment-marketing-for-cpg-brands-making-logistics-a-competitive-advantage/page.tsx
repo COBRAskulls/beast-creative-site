@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "While most CPG brands obsess over product development and advertising spend, the smartest companies are discovering their secret weapon hiding in plain sight:",
 };
 
+const faqs = [
+  {
+    question: "How can a CPG brand use its shipping experience as a marketing moment?",
+    answer: "The unboxing experience — custom tissue, a handwritten note, a sample of a new SKU — is your highest-engagement brand touchpoint because the customer is already excited and paying attention. Brands that invest $0.50–$1.50 per order in packaging inserts consistently see higher review rates and repeat purchase than those shipping plain brown boxes.",
+  },
+  {
+    question: "What shipping speed do DTC CPG customers expect in 2025?",
+    answer: "Two to three day delivery is the baseline expectation set by Amazon Prime — DTC CPG brands that cannot hit this threshold for most of the US should be transparent about lead times at checkout to avoid cart abandonment and negative reviews. Regional 3PLs placed strategically can close the speed gap without Amazon fulfillment fees.",
+  },
+  {
+    question: "How do you turn fulfillment reliability into a marketing message?",
+    answer: "Highlight your shipping guarantees, average delivery time, and order accuracy rate on product pages and in email sequences — these are purchase-decision factors that most CPG brands leave unaddressed. A \"ships in 24 hours\" badge or \"99.8% order accuracy\" stat is more persuasive than most promotional copy.",
+  },
+  {
+    question: "At what DTC order volume should a CPG brand move from self-fulfillment to a 3PL?",
+    answer: "Most brands find that 200–500 orders per month is where self-fulfillment labor costs exceed 3PL fees and where errors begin to hurt review scores. The right trigger is not just volume — it is when fulfillment is consuming founder or key employee time that should be spent on growth.",
+  },
+];
+
 export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -363,11 +388,19 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Your fulfillment operations touch every customer who converts. Make sure those touchpoints are working as hard as your advertising to build your brand and drive long-term growth. The investment in turning logistics into a competitive advantage pays dividends in customer loyalty, social proof, and sustainable business growth that compounds over time.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands identify and capitalize on these often-overlooked marketing opportunities. Our AI-enhanced approach to campaign development includes fulfillment experience optimization that turns operational necessities into brand-building opportunities. Ready to transform your logistics into a competitive advantage? Let’s discuss how our certified specialists can create a fulfillment marketing strategy that drives real ROI for your brand.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

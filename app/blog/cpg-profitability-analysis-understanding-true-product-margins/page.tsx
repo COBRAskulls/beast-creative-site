@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Most CPG brands think they know their profit margins, but hidden costs are quietly eroding their bottom line by an average of 15-20%. True profitability",
 };
 
+const faqs = [
+  {
+    question: "What costs do CPG brands commonly miss when calculating true product margins?",
+    answer: "Trade spend (slotting fees, promotional allowances, co-op advertising) is the most frequently underestimated cost — it routinely runs 15–25% of gross revenue for brands in major retail channels. When trade spend is excluded from margin calculations, brands believe they are profitable at price points where they are actually losing money.",
+  },
+  {
+    question: "What is contribution margin and why is it more useful for CPG decisions than gross margin?",
+    answer: "Contribution margin is gross margin minus variable selling costs (trade spend, broker commissions, shipping) — it tells you how much each unit actually contributes to covering fixed overhead. Gross margin looks at production cost only; contribution margin tells you whether a channel or SKU is actually making you money.",
+  },
+  {
+    question: "How do you calculate the true cost of a promotional price reduction in retail?",
+    answer: "A 20% promotional price reduction on a product with 50% gross margin does not reduce your profit by 20% — it reduces it by 40% because you are giving up margin on full revenue while still incurring full COGS. The formula: impact = (promo discount %) / (gross margin %) gives you the real profit hit.",
+  },
+  {
+    question: "At what gross margin threshold should a CPG brand be concerned about long-term viability?",
+    answer: "Below 40% gross margin, most CPG brands cannot cover trade spend, broker fees, and brand marketing costs while remaining profitable — it becomes a race to scale that many never win. Food and beverage brands below 45% gross margin should prioritize cost reduction or price increase before investing in distribution expansion.",
+  },
+];
+
 export default function CpgProfitabilityAnalysisProductMarginsPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -285,11 +310,19 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The complexity of modern CPG operations means this analysis requires both analytical rigor and strategic thinking. You need systems that can handle large volumes of data from multiple sources, but you also need the business insight to interpret that data and act on it effectively.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands build marketing strategies that enhance profitability, not just drive volume. Our AI-enhanced campaigns and radical transparency approach ensure your marketing investments support your most profitable products and channels. Ready to turn your profitability insights into growth? Let’s talk about how our certified specialists can help optimize your marketing ROI.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

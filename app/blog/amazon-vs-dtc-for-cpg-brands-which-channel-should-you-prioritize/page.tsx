@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "The choice between Amazon and direct-to-consumer (DTC) channels can make or break a CPG brand&apos;s growth trajectory. While 73% of CPG brands sell on Amazon,",
 };
 
+const faqs = [
+  {
+    question: "What are the margin differences between selling on Amazon vs. DTC for a CPG brand?",
+    answer: "Amazon typically nets CPG brands 25–40% of retail price after fees, advertising, and fulfillment — comparable to selling through a traditional retailer. DTC gross margins are typically 55–70% but require customer acquisition cost investment that often brings net contribution margins closer to Amazon's in the early years.",
+  },
+  {
+    question: "Which channel is better for launching a new CPG product — Amazon or DTC?",
+    answer: "Amazon is better for validating product-market fit quickly because the built-in search intent means you can reach purchase-ready customers without building an audience first. DTC is better for building brand relationship and collecting customer data, but requires significant upfront marketing investment to drive traffic.",
+  },
+  {
+    question: "What is the biggest strategic risk of prioritizing Amazon over DTC for a CPG brand?",
+    answer: "Amazon controls the customer relationship entirely — you have no access to buyer emails, no ability to retarget, and Amazon can suppress your listing or introduce a competing private label at any time. Brands that grow almost exclusively on Amazon find themselves in a weak negotiating position and vulnerable to algorithmic changes.",
+  },
+  {
+    question: "Can a CPG brand successfully run both Amazon and DTC without cannibalizing either channel?",
+    answer: "Yes — the most effective approach is using Amazon for trial and discovery while DTC converts one-time buyers into subscribers and loyal customers. Price parity between channels is critical; if your DTC site is priced higher than Amazon, most customers will buy on Amazon even after discovering you elsewhere.",
+  },
+];
+
 export default function AmazonDtcCpgBrandsChannelPrioritizePost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -297,11 +322,19 @@ export default function AmazonDtcCpgBrandsChannelPrioritizePost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Your channel strategy should support your overall business strategy, not drive it. Whether you prioritize Amazon’s scale or DTC’s control, the key is executing your chosen approach with focus and expertise.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands navigate these channel decisions with data-driven strategies tailored to your specific market position and growth goals. Our certified specialists work with you to optimize whichever channel you prioritize, ensuring your marketing investment delivers maximum ROI through personalized, transparent campaigns that adapt as your business grows.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

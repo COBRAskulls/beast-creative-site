@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Nearly 92% of consumers trust recommendations from people they don&apos;t personally know over traditional advertising—a statistic that&apos;s reshaping how CPG brands",
 };
 
+const faqs = [
+  {
+    question: "What follower count should a CPG brand target when choosing influencers?",
+    answer: "Micro-influencers (10K–100K followers) typically outperform mega-influencers for CPG because their audiences are more engaged and trust their recommendations. For a new product launch, a mix of 10–20 micro-influencers usually beats one celebrity partnership on both cost and conversion.",
+  },
+  {
+    question: "How do you structure a CPG influencer deal to actually drive retail sales?",
+    answer: "Include a specific call to action tied to a retail location or link, such as a store finder or exclusive promo code redeemable at checkout. Avoid generic awareness posts — require the creator to show the product in context of use and mention where to buy it.",
+  },
+  {
+    question: "What should a CPG brand own vs. leave to the creator in a content brief?",
+    answer: "Own the key claims, the product shot requirements, and any compliance language (especially in food, supplement, or personal care categories). Leave the format, tone, and storytelling to the creator — over-scripted content kills engagement and makes the post look like an ad.",
+  },
+  {
+    question: "How do you measure ROI on influencer campaigns when most sales happen in stores?",
+    answer: "Use unique promo codes, branded hashtag tracking, and lift studies comparing sales velocity in markets with influencer activity vs. control markets. Some brands also use post-campaign surveys asking customers how they first heard about the product.",
+  },
+];
+
 export default function CpgInfluencerMarketingPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -291,7 +316,17 @@ export default function CpgInfluencerMarketingPost() {
 
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

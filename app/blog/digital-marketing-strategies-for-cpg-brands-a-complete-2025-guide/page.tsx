@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Consumer packaged goods brands face a unique challenge that most other industries don&apos;t: convincing shoppers to choose their product in the three seconds it",
 };
 
+const faqs = [
+  {
+    question: "What digital marketing channels should a CPG brand prioritize in 2025?",
+    answer: "Retail media networks (Amazon, Walmart Connect, Instacart Ads) should be the first dollar spent because they reach shoppers at the point of purchase with the highest purchase intent. Pair retail media with social content and email to build a full-funnel approach.",
+  },
+  {
+    question: "How does first-party data collection fit into a CPG digital strategy?",
+    answer: "CPG brands that rely solely on retail partners have no customer data — building a DTC channel, loyalty program, or recipe site lets you collect emails and purchase history directly. This data makes your ad targeting sharper and reduces dependence on third-party cookies and retail algorithms.",
+  },
+  {
+    question: "What is retail media and why does it matter for CPG digital marketing?",
+    answer: "Retail media is advertising sold by retailers (Amazon, Walmart, Kroger, etc.) that lets brands buy ad placements inside the retailer's own search results and product pages. It is the fastest-growing CPG ad channel because the shopper is already in a buying mindset.",
+  },
+  {
+    question: "How should CPG brands think about SEO in their digital strategy?",
+    answer: "Content targeting recipe, ingredient, and how-to searches drives product discovery from consumers who are not yet brand-aware. A well-optimized recipe blog or ingredient education hub can generate consistent organic traffic that converts to both DTC and retail sales.",
+  },
+];
+
 export default function CpgDigitalMarketingStrategyPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -373,7 +398,17 @@ export default function CpgDigitalMarketingStrategyPost() {
 
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

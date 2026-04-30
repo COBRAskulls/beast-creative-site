@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "The retail landscape has shifted dramatically: Walmart now controls 24% of US grocery sales, while the top ten retailers command over 60% of total market",
 };
 
+const faqs = [
+  {
+    question: "How does retail consolidation affect CPG brand leverage in buyer negotiations?",
+    answer: "As the number of major retail buyers shrinks, each individual buyer relationship becomes higher stakes — losing one account can mean losing 20–30% of revenue overnight. This shifts negotiating power toward retailers and makes diversification across channels (DTC, foodservice, international) a strategic necessity, not a nice-to-have.",
+  },
+  {
+    question: "What strategies help CPG brands stay relevant to mega-retailers who are de-listing smaller brands?",
+    answer: "Velocity data is your best defense — if your brand drives disproportionate sales per linear foot relative to your shelf space, you are harder to delist than a slow-moving brand regardless of your size. Investing in retail media spend within the retailer's own platform also signals commitment and buys goodwill with category managers.",
+  },
+  {
+    question: "How should a small CPG brand approach a large national retailer in a consolidating environment?",
+    answer: "Lead with a regional test pitch rather than asking for national distribution — buyers at Walmart and Target have more authority and appetite for regional rollouts, and strong regional performance data is the most persuasive path to national expansion. Going in asking for all 4,700 stores with no performance history is a non-starter.",
+  },
+  {
+    question: "What is the risk of being overly dependent on one retail partner, and how do you measure it?",
+    answer: "A healthy rule of thumb is no single retail customer should account for more than 30% of revenue; above 40% creates existential risk if that relationship sours. Review your revenue concentration quarterly and treat any customer above 25% as a diversification priority in your sales strategy.",
+  },
+];
+
 export default function CpgRetailConsolidationCustomersPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -310,11 +335,19 @@ export default function CpgRetailConsolidationCustomersPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The reality is that retail consolidation creates both challenges and opportunities. Companies that adapt quickly and thoughtfully will find themselves with stronger, more profitable customer relationships. Those that don’t risk becoming marginalized in an increasingly competitive landscape.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we help CPG brands navigate these complex retail relationships through data-driven marketing strategies that work for both consumers and retail partners. Our AI-enhanced campaigns and personalized approach help brands maintain relevance and drive growth in the consolidated retail environment. Ready to adapt your marketing strategy for fewer, larger customers? Let’s discuss how our certified specialists can help you build stronger retail partnerships while driving consumer engagement.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

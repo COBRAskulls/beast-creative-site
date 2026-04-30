@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Federal regulatory shifts in the CPG industry have accelerated by 400% over the past three years, leaving many brands scrambling to keep pace with compliance",
 };
 
+const faqs = [
+  {
+    question: "What are the most common regulatory compliance failures for CPG brands?",
+    answer: "Label claim violations — nutrient content claims, health claims, and structure/function claims that do not meet FDA or USDA standards — are the most frequent issue and can result in warning letters, retailer delisting, and costly reformulations. The second most common is allergen labeling errors, which create product liability exposure.",
+  },
+  {
+    question: "How should a CPG brand monitor regulatory changes across multiple states?",
+    answer: "California (Prop 65, Prop 12, CCPA), New York, and Colorado consistently lead state-level CPG regulation — tracking these three states catches most regulatory changes before they spread nationally. A regulatory counsel retainer of $500–$2,000 per month is usually more cost-effective than reactive crisis management.",
+  },
+  {
+    question: "What new federal CPG regulations are most likely to affect brands in 2025–2026?",
+    answer: "Front-of-package nutrition labeling rules proposed by FDA are moving toward finalization and will require major packaging updates for food and beverage brands. FTC green claims guidance is also tightening, specifically targeting \"compostable,\" \"biodegradable,\" and \"sustainable\" packaging claims.",
+  },
+  {
+    question: "How do you prepare a CPG brand for entry into international markets from a compliance standpoint?",
+    answer: "EU and UK markets require different ingredient labeling, allergen formats, and nutritional panels than US FDA standards — treat them as separate SKU projects, not a simple label swap. Canada (SFCA), Australia (FSANZ), and EU all have distinct approval timelines; budget 12–18 months for a full international compliance build-out.",
+  },
+];
+
 export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -371,11 +396,19 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">The key is building proactive, technology-enabled compliance systems that can adapt quickly to regulatory changes while maintaining operational efficiency. This requires investment in the right people, processes, and technology platforms, but the return on that investment comes through reduced risk, faster market access, and enhanced brand reputation.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we understand that regulatory compliance directly impacts your marketing strategies and market positioning. Our certified specialists can help you develop marketing approaches that not only meet current regulatory requirements but position your brand as a compliance leader in your category. Contact us to learn how our AI-enhanced campaigns can help you communicate your compliance commitments effectively while driving ROI through transparent, trustworthy marketing strategies.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Global CPG manufacturers lose over $50 billion annually to quality failures and recalls – a staggering figure that underscores why excellence in manufacturing",
 };
 
+const faqs = [
+  {
+    question: "What quality systems should a CPG brand require from a co-manufacturer before signing a contract?",
+    answer: "At minimum, require SQF Level 2 or BRC Global Standard certification, current COAs (certificates of analysis) for all incoming ingredients, and documented allergen control procedures. For food and beverage, also require a HACCP plan and documentation of their most recent regulatory audit results.",
+  },
+  {
+    question: "How do you maintain product consistency when scaling production across multiple co-manufacturing facilities?",
+    answer: "A master formulation document with precise specifications for every ingredient (source, grade, particle size where relevant), processing parameters, and finished product attributes is the foundation — without it, each facility will drift. Third-party sensory panel testing comparing batches across facilities is the most reliable early-warning system.",
+  },
+  {
+    question: "What are the most common quality failures when a CPG brand transitions from small batch to scale manufacturing?",
+    answer: "The most frequent issues are flavor or texture changes caused by different equipment (industrial mixers behave differently than small batch) and inconsistency from ingredient source substitutions your co-man makes without telling you. Specifying approved ingredient vendors by name in your supply agreement is the most effective control.",
+  },
+  {
+    question: "How many co-manufacturing facilities should a CPG brand qualify before it needs them?",
+    answer: "Qualifying a backup co-manufacturer before you need one is the most important supply chain resilience step a brand can take — most brands learn this lesson after their primary co-man has a fire, audit failure, or capacity problem at the worst possible time. Two qualified facilities for your top three SKUs is a reasonable minimum standard.",
+  },
+];
+
 export default function CpgManufacturingExcellenceEnsuringQualityAndConsistencyAtScalePost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -314,11 +339,19 @@ export default function CpgManufacturingExcellenceEnsuringQualityAndConsistencyA
 
               <p className="text-gray-700 leading-relaxed mb-4">The companies that master this balance don’t just avoid the $50 billion in losses we mentioned at the start – they build competitive advantages that translate directly to market share, customer loyalty, and profitable growth.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Success in today’s competitive marketplace requires more than just excellent manufacturing. You need marketing strategies that effectively communicate your quality story to consumers. At Beast Creative Agency, we help CPG manufacturers translate their operational excellence into compelling brand narratives that drive sales and build lasting customer relationships. Our data-driven approach ensures your quality investments generate maximum return through strategic marketing campaigns that resonate with your target audience.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

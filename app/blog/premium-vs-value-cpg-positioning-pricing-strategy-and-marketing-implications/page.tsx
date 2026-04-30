@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Coca-Cola commands $4.50 for a premium glass bottle while store brands sell similar cola for $0.89. Both strategies work, but they require fundamentally",
 };
 
+const faqs = [
+  {
+    question: "How do you decide whether to position a new CPG product as premium or value?",
+    answer: "Start with the consumer and channel: if you are entering Whole Foods or specialty retail, premium positioning is expected and value pricing will undermine your credibility. If you are targeting mass or discount retail, aggressive pricing and everyday-value messaging will outperform premium aspirational branding.",
+  },
+  {
+    question: "What are the marketing cost implications of a premium CPG strategy vs. a value one?",
+    answer: "Premium brands spend more per unit on packaging, sampling, and brand storytelling because the perceived value must be justified before a consumer pays a higher price. Value brands offset lower margins with higher volume and spend more on trade promotions and shelf placement to drive velocity.",
+  },
+  {
+    question: "Can a CPG brand successfully compete in both premium and value segments?",
+    answer: "It is difficult — dual positioning usually dilutes both. The more common and successful approach is a tiered sub-brand strategy (think Good/Better/Best lines) where each sub-brand has its own distinct identity and channel strategy.",
+  },
+  {
+    question: "How does premium CPG positioning hold up during a recession or inflation cycle?",
+    answer: "Premium CPG categories see trading-down during economic pressure, but brands with strong loyalty and genuine functional differentiation retain more customers than aspirational-only premiums. Investing in loyalty programs and emphasizing cost-per-use rather than sticker price helps premium brands weather downturns.",
+  },
+];
+
 export default function CpgPremiumVsValuePost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -310,7 +335,17 @@ export default function CpgPremiumVsValuePost() {
 
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import { faqSchema } from "@/lib/schema";
 import IconButton from "@/components/ui/IconButton";
 
@@ -229,23 +230,20 @@ export default function CpgContentMarketingPost() {
 
             </div>
           </AnimatedSection>
-
-          {/* FAQ */}
-          <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-beast-black mb-6 mt-4">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              {faqs.map((faq) => (
-                <div key={faq.question} className="bg-section-offwhite rounded-xl p-6 border border-gray-100">
-                  <p className="font-display font-bold text-beast-black mb-2">{faq.question}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
+        </div>
+      </section>
       {/* RELATED POSTS */}
       <section className="bg-section-offwhite py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">

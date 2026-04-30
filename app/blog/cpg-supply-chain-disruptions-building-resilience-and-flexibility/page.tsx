@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Recent data reveals that 73% of CPG companies experienced at least one major supply chain disruption in the past two years, with recovery times averaging 3-6",
 };
 
+const faqs = [
+  {
+    question: "What is the most effective way for a CPG brand to reduce supply chain vulnerability?",
+    answer: "Dual-sourcing critical ingredients and components — qualifying a backup supplier before you need one — is the highest-leverage resilience investment a CPG brand can make. Brands that sole-source were the ones that went out of stock for months during COVID and post-pandemic disruptions.",
+  },
+  {
+    question: "How much safety stock should a CPG brand carry to buffer against supply disruptions?",
+    answer: "The standard rule of thumb is 30–60 days of finished goods inventory for high-velocity SKUs, but the right number depends on your supplier lead times and how quickly you can airfreight components in an emergency. For seasonal products or those with long production runs, 90 days is more appropriate.",
+  },
+  {
+    question: "How should a CPG brand communicate supply chain delays to retail partners?",
+    answer: "Contact your retail buyer proactively — before they notice an out-of-stock — with a specific restock date and a proposed action plan (priority allocation, substitute SKU). Buyers who find out about supply issues through their replenishment system rather than from you directly lose trust and may replace your shelf space.",
+  },
+  {
+    question: "What supply chain data should CPG brand operators review weekly?",
+    answer: "Track: days of supply on hand for every active SKU, purchase order status vs. expected receipt dates, and out-of-stock rates by retailer and channel. These three numbers give you early warning on the problems that cause the most brand damage — stockouts and missed fill rates.",
+  },
+];
+
 export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -409,11 +434,19 @@ export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Building resilient supply chains requires strategic thinking, systematic implementation, and ongoing commitment. Start with the biggest risks and quick wins, then gradually build more sophisticated capabilities over time. The investment you make today in supply chain resilience will pay dividends for years to come.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">At Beast Creative Agency, we understand that supply chain resilience extends beyond operations to include marketing agility and customer communication strategies. When disruptions occur, having flexible marketing campaigns and transparent communication channels helps maintain brand loyalty during challenging periods. Our AI-enhanced campaigns and personalized messaging capabilities help CPG brands navigate supply challenges while maintaining strong customer relationships.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 

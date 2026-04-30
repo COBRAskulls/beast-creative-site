@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { faqSchema } from "@/lib/schema";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import IconButton from "@/components/ui/IconButton";
 
 export const metadata: Metadata = {
@@ -9,9 +11,32 @@ export const metadata: Metadata = {
     "Over 40,000 new CPG products launch annually, yet 95% fail within their first year—often because they blend into the noise rather than breaking through it.",
 };
 
+const faqs = [
+  {
+    question: "What is the single most important element of CPG brand identity for shelf performance?",
+    answer: "Color blocking is the most powerful shelf signal — shoppers scan at 3–5 feet and color is what they register first, before logo or copy. Own a distinctive color that competitors in your set do not use, and apply it consistently across all SKUs.",
+  },
+  {
+    question: "How do you design a CPG brand identity that works both on-shelf and as a social media profile?",
+    answer: "Design the logo mark and color system for small applications first — a 1-inch favicon or Instagram profile circle — because if it works small, it works large. Many CPG brands make the mistake of designing for the full package face and then discovering the logo is illegible at digital sizes.",
+  },
+  {
+    question: "How much of your category's visual conventions should you follow vs. break?",
+    answer: "Follow enough that consumers immediately understand what category you are in — category cues (color families, typography styles) are learned shortcuts that help shoppers file your product correctly. Break one or two conventions intentionally to create distinctiveness, but disrupting all of them creates confusion that works against purchase.",
+  },
+  {
+    question: "When should a CPG brand invest in professional brand identity work vs. starting scrappy?",
+    answer: "If you are entering retail channels (especially grocery), invest in professional design before you pitch buyers — a weak visual identity will cost you the placement. If you are only selling DTC and testing product-market fit, start scrappy and invest in brand identity once you have validated demand.",
+  },
+];
+
 export default function CpgBrandIdentityPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -295,11 +320,19 @@ export default function CpgBrandIdentityPost() {
 
               <p className="text-gray-700 leading-relaxed mb-4">Creating a CPG brand identity that truly stands out requires strategic thinking, creative execution, and ongoing optimization. The brands that succeed are those that understand their dual-channel challenge and create flexible systems that work beautifully everywhere their customers encounter them.</p>
 
-              <p className="text-gray-700 leading-relaxed mb-4">Your brand identity is one of your most valuable business assets. When done right, it doesn&apos;t just help products stand out on shelf—it builds lasting relationships with consumers who become loyal advocates for your brand. At Beast Creative Agency, we specialize in developing data-driven brand identities that deliver measurable ROI across both physical and digital channels. Our AI-enhanced approach ensures your brand connects with the right audience while our radical transparency keeps you informed every step of the way.</p>
-
             </div>
           </AnimatedSection>
+        </div>
+      </section>
 
+      {/* FAQ */}
+      <section className="bg-section-offwhite py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-20">
+          <AnimatedSection>
+            <p className="text-beast-pink text-xs font-bold uppercase tracking-widest mb-3 text-center">FAQ</p>
+            <h2 className="font-display text-3xl font-bold text-beast-black mb-10 text-center">Common Questions</h2>
+            <FaqAccordion faqs={faqs} />
+          </AnimatedSection>
         </div>
       </section>
 
