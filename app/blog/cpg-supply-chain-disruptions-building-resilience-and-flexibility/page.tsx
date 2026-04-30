@@ -15,7 +15,7 @@ export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Supply Chain Disruptions: Building Resilience and Flexibility",
@@ -23,7 +23,7 @@ export default function CpgSupplyChainDisruptionsResilienceFlexibilityPost() {
             datePublished: "2026-01-16",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

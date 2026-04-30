@@ -15,7 +15,7 @@ export default function CpgDigitalMarketingStrategyPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Digital Marketing Strategies for CPG Brands: A Complete 2025 Guide",
@@ -23,7 +23,7 @@ export default function CpgDigitalMarketingStrategyPost() {
             datePublished: "2026-02-11",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

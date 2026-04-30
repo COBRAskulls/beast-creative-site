@@ -15,7 +15,7 @@ export default function CpgPackagingDesignPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Packaging Design and Marketing: How Your Package Sells Your Product",
@@ -23,7 +23,7 @@ export default function CpgPackagingDesignPost() {
             datePublished: "2026-01-26",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

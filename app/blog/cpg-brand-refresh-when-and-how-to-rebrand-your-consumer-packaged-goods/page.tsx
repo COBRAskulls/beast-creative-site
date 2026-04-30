@@ -15,7 +15,7 @@ export default function CpgBrandRefreshPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Brand Refresh: When and How to Rebrand Your Consumer Packaged Goods",
@@ -23,7 +23,7 @@ export default function CpgBrandRefreshPost() {
             datePublished: "2026-02-09",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

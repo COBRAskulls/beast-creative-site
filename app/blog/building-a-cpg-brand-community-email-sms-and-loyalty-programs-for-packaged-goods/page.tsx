@@ -15,7 +15,7 @@ export default function CpgBrandCommunityPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Building a CPG Brand Community: Email, SMS, and Loyalty Programs for Packaged Goods",
@@ -23,7 +23,7 @@ export default function CpgBrandCommunityPost() {
             datePublished: "2026-01-21",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

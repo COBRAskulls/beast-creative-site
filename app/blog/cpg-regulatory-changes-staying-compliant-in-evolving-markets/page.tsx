@@ -15,7 +15,7 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Regulatory Changes: Staying Compliant in Evolving Markets",
@@ -23,7 +23,7 @@ export default function CpgRegulatoryChangesCompliantEvolvingMarketsPost() {
             datePublished: "2026-01-17",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

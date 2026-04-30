@@ -15,7 +15,7 @@ export default function ShopifyForCpgBrandsBuildingADirectToConsumerEcommerceStr
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Shopify for CPG Brands: Building a Direct-to-Consumer Ecommerce Strategy",
@@ -23,7 +23,7 @@ export default function ShopifyForCpgBrandsBuildingADirectToConsumerEcommerceStr
             datePublished: "2026-01-09",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

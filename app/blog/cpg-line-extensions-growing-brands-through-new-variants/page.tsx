@@ -15,7 +15,7 @@ export default function CpgLineExtensionsGrowingBrandsThroughNewVariantsPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Line Extensions: Growing Brands Through New Variants",
@@ -23,7 +23,7 @@ export default function CpgLineExtensionsGrowingBrandsThroughNewVariantsPost() {
             datePublished: "2026-01-08",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

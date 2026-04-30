@@ -15,7 +15,7 @@ export default function DtcMarketingForCpgBrandsShouldYourPackagedGoodsBrandSell
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "DTC Marketing for CPG Brands: Should Your Packaged Goods Brand Sell Direct-to-Consumer?",
@@ -23,7 +23,7 @@ export default function DtcMarketingForCpgBrandsShouldYourPackagedGoodsBrandSell
             datePublished: "2026-01-01",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

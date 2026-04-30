@@ -15,7 +15,7 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Shipping and Fulfillment Marketing for CPG Brands: Making Logistics a Competitive Advantage",
@@ -23,7 +23,7 @@ export default function ShippingFulfillmentMarketingCpgBrandsLogisticsPost() {
             datePublished: "2026-01-19",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

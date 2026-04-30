@@ -15,7 +15,7 @@ export default function CpgPremiumVsValuePost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Premium vs. Value CPG Positioning: Pricing Strategy and Marketing Implications",
@@ -23,7 +23,7 @@ export default function CpgPremiumVsValuePost() {
             datePublished: "2026-02-07",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

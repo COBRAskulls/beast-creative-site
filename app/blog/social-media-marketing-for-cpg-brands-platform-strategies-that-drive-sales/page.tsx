@@ -15,7 +15,7 @@ export default function CpgSocialMediaMarketingPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Social Media Marketing for CPG Brands: Platform Strategies That Drive Sales",
@@ -23,7 +23,7 @@ export default function CpgSocialMediaMarketingPost() {
             datePublished: "2026-02-14",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

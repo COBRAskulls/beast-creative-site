@@ -15,7 +15,7 @@ export default function PrivateLabelVsBrandedCpgPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Private Label vs. Branded CPG: Marketing Strategies for Each Approach",
@@ -23,7 +23,7 @@ export default function PrivateLabelVsBrandedCpgPost() {
             datePublished: "2026-01-31",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

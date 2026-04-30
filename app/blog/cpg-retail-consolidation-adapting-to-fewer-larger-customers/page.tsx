@@ -15,7 +15,7 @@ export default function CpgRetailConsolidationCustomersPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Retail Consolidation: Adapting to Fewer, Larger Customers",
@@ -23,7 +23,7 @@ export default function CpgRetailConsolidationCustomersPost() {
             datePublished: "2026-01-15",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

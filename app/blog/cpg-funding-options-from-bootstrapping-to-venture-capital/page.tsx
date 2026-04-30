@@ -15,7 +15,7 @@ export default function CpgFundingOptionsBootstrappingVentureCapitalPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Funding Options: From Bootstrapping to Venture Capital",
@@ -23,7 +23,7 @@ export default function CpgFundingOptionsBootstrappingVentureCapitalPost() {
             datePublished: "2026-01-12",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

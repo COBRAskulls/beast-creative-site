@@ -15,7 +15,7 @@ export default function CpgBrandStrategyPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Brand Strategy: How to Position Your Consumer Packaged Goods in a Crowded Market",
@@ -23,7 +23,7 @@ export default function CpgBrandStrategyPost() {
             datePublished: "2026-01-23",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

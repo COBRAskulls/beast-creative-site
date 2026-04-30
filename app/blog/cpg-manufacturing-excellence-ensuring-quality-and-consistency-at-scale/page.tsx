@@ -15,7 +15,7 @@ export default function CpgManufacturingExcellenceEnsuringQualityAndConsistencyA
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Manufacturing Excellence: Ensuring Quality and Consistency at Scale",
@@ -23,7 +23,7 @@ export default function CpgManufacturingExcellenceEnsuringQualityAndConsistencyA
             datePublished: "2026-01-09",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

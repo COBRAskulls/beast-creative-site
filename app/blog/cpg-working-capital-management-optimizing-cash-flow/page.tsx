@@ -15,7 +15,7 @@ export default function CpgWorkingCapitalManagementCashFlowPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Working Capital Management: Optimizing Cash Flow",
@@ -23,7 +23,7 @@ export default function CpgWorkingCapitalManagementCashFlowPost() {
             datePublished: "2026-01-14",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

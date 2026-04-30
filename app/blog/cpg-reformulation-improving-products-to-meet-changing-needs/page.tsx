@@ -15,7 +15,7 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Reformulation: Improving Products to Meet Changing Needs",
@@ -23,7 +23,7 @@ export default function CpgReformulationImprovingProductsToMeetChangingNeedsPost
             datePublished: "2026-01-08",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

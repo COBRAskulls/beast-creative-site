@@ -15,7 +15,7 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Profitability Analysis: Understanding True Product Margins",
@@ -23,7 +23,7 @@ export default function CpgProfitabilityAnalysisProductMarginsPost() {
             datePublished: "2026-01-13",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

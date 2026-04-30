@@ -15,7 +15,7 @@ export default function CpgCommodityPriceVolatilityInputCostPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Commodity Price Volatility: Managing Input Cost Fluctuations",
@@ -23,7 +23,7 @@ export default function CpgCommodityPriceVolatilityInputCostPost() {
             datePublished: "2026-01-15",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

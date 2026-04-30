@@ -15,7 +15,7 @@ export default function SustainableCpgMarketingPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Sustainable CPG Marketing: How Eco-Friendly Positioning Drives Sales in 2025",
@@ -23,7 +23,7 @@ export default function SustainableCpgMarketingPost() {
             datePublished: "2026-02-04",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

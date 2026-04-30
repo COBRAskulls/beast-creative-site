@@ -15,7 +15,7 @@ export default function AmazonDtcCpgBrandsChannelPrioritizePost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Amazon vs. DTC for CPG Brands: Which Channel Should You Prioritize?",
@@ -23,7 +23,7 @@ export default function AmazonDtcCpgBrandsChannelPrioritizePost() {
             datePublished: "2026-01-14",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

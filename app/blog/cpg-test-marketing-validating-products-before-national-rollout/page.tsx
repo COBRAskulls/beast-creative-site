@@ -15,7 +15,7 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Test Marketing: Validating Products Before National Rollout",
@@ -23,7 +23,7 @@ export default function CpgTestMarketingValidatingProductsBeforeNationalRolloutP
             datePublished: "2026-01-07",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

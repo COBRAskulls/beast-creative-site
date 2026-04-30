@@ -15,7 +15,7 @@ export default function CpgCounterfeitProductsBrandFraudPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "CPG Counterfeit Products: Protecting Your Brand from Fraud",
@@ -23,7 +23,7 @@ export default function CpgCounterfeitProductsBrandFraudPost() {
             datePublished: "2026-01-16",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 

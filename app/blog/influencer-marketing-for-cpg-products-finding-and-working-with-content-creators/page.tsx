@@ -15,7 +15,7 @@ export default function CpgInfluencerMarketingPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Influencer Marketing for CPG Products: Finding and Working With Content Creators",
@@ -23,7 +23,7 @@ export default function CpgInfluencerMarketingPost() {
             datePublished: "2026-02-16",
             author: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
             publisher: { "@type": "Organization", name: "Beast Creative Agency", url: "https://beastcreativeagency.com" },
-          }}),
+          }),
         }}
       />
 
