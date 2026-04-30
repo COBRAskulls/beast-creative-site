@@ -166,18 +166,18 @@ export default function AboutPage() {
       </section>
 
       {/* SAGUNDO */}
-      <section className="bg-near-black py-16 lg:py-20">
+      <section className="bg-section-offwhite py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <div className="max-w-3xl">
             <AnimatedSection>
               <p className="section-eyebrow text-beast-pink mb-4">Our Proprietary AI</p>
-              <h2 className="font-display text-4xl font-bold text-white tracking-normal mb-4">
+              <h2 className="font-display text-4xl font-bold text-beast-black tracking-normal mb-4">
                 Segundo: Beast&apos;s AI Agent
               </h2>
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Segundo is an internally-deployed AI agent that handles content updates, campaign analysis, meeting intelligence, and workflow automation. It&apos;s what makes our team faster, our content cheaper, and our campaigns smarter than agencies twice our size.
               </p>
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-pink/15 text-beast-pink border border-beast-pink/20">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-beast-pink/10 text-beast-pink border border-beast-pink/25">
                 In active development — available to Scale-tier clients
               </span>
             </AnimatedSection>
